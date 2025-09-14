@@ -6,6 +6,7 @@ StartupEvents.registry("block", event => {
 
     // Compressed Blocks
     event.create("compressed_sand")
+        .textureAll("kubejs:block/misc/compressed/sand")
         .displayName("Compressed Sand")
         .soundType("sand")
         .resistance(1).hardness(1)
@@ -13,6 +14,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("double_compressed_sand")
+        .textureAll("kubejs:block/misc/compressed/sand_double")
         .displayName("Double Compressed Sand")
         .soundType("sand")
         .resistance(2).hardness(2)
@@ -20,6 +22,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("compressed_red_sand")
+        .textureAll("kubejs:block/misc/compressed/red_sand")
         .displayName("Compressed Red Sand")
         .soundType("sand")
         .resistance(1).hardness(1)
@@ -27,6 +30,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("double_compressed_red_sand")
+        .textureAll("kubejs:block/misc/compressed/red_sand_double")
         .displayName("Double Compressed Red Sand")
         .soundType("sand")
         .resistance(2).hardness(2)
@@ -96,6 +100,7 @@ StartupEvents.registry("block", event => {
         .defaultCutout();
 
     event.create("warp_core")
+        .textureAll("kubejs:block/microverse/component/warp_core")
         .displayName("Warp Core")
         .soundType("metal")
         .resistance(6).hardness(5)
@@ -104,6 +109,7 @@ StartupEvents.registry("block", event => {
         .requiresTool(true);
 
     event.create("warp_controller")
+        .textureAll("kubejs:block/microverse/component/warp_controller")
         .displayName("Warp Controller")
         .soundType("metal")
         .resistance(6).hardness(5)
@@ -112,6 +118,7 @@ StartupEvents.registry("block", event => {
         .requiresTool(true);
 
     event.create("universal_warp_core")
+        .textureAll("kubejs:block/microverse/component/universal_warp_core")
         .displayName("Universal Warp Core")
         .soundType("metal")
         .resistance(6).hardness(5)
@@ -120,6 +127,7 @@ StartupEvents.registry("block", event => {
         .requiresTool(true);
 
     event.create("universal_warp_controller")
+        .textureAll("kubejs:block/microverse/component/universal_warp_controller")
         .displayName("Universal Warp Controller")
         .soundType("metal")
         .resistance(6).hardness(5)
@@ -144,6 +152,7 @@ StartupEvents.registry("block", event => {
 
     ores.forEach(ore => {
         event.create(`dense_${ore}_ore`)
+            .textureAll(`kubejs:block/may_be_removed/dense_${ore}_ore`)
             .soundType("stone")
             .resistance(6)
             .hardness(5)
@@ -154,6 +163,7 @@ StartupEvents.registry("block", event => {
     });
 
     event.create("dense_magma_block")
+        .textureAll("kubejs:block/may_be_removed/dense_magma_block")
         .soundType("stone")
         .resistance(6)
         .hardness(5)
@@ -167,11 +177,13 @@ StartupEvents.registry("block", event => {
     // Machine Casings
     const casings = [
         "dark_soularium",
-        "omnic_matrix_machine",
+        "omnic_matrix",
+        "dark_steel",
     ]
 
     casings.forEach(casing => {
         event.create(`${casing}_casing`)
+            .textureAll(`kubejs:block/casing/${casing}/casing`)
             .soundType("metal")
             .resistance(6).hardness(5)
             .tagBlock("mineable/pickaxe")
@@ -195,21 +207,14 @@ StartupEvents.registry("block", event => {
         .soundType("metal")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true)
-        .textureAll("kubejs:block/microverse/starry_diamond_block")
+        .textureAll("kubejs:block/may_be_removed/starry_diamond_block")
 
     event.create("dust", "falling")
+        .textureAll("kubejs:block/misc/dust")
         .soundType("sand")
         .resistance(0.4).hardness(0.4)
         .tag("mineable/shovel").displayName("Dust Block")
         .property(BlockProperties.FALLING);
-
-    event.create("dark_steel_machine_hull")
-        .displayName("Dark Steel Machine Hull")
-        .soundType("metal")
-        .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock("forge:mineable/wrench")
-        .requiresTool(true);
 
     event.create("excitationcoil", "cardinal")
         .displayName("Excitation Coil")
@@ -227,7 +232,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/prismac/lyso_ce_glass")
+        .textureAll("kubejs:block/casing/prism/lyso_ce_glass")
         .defaultCutout()
 
     event.create("red_aligned_glass")
@@ -235,7 +240,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/prismac/red_aligned_glass")
+        .textureAll("kubejs:block/casing/prism/red_aligned_glass")
         .defaultCutout()
 
     event.create("green_aligned_glass")
@@ -243,7 +248,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/prismac/green_aligned_glass")
+        .textureAll("kubejs:block/casing/prism/green_aligned_glass")
         .defaultCutout()
 
     event.create("blue_aligned_glass")
@@ -251,7 +256,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/prismac/blue_aligned_glass")
+        .textureAll("kubejs:block/casing/prism/blue_aligned_glass")
         .defaultCutout()
 
     event.create("prism_glass")
@@ -260,9 +265,11 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/casing/prism/prism_frame")
         .defaultCutout()
 
     event.create("omnic_matrix_coil_block", "gtceu:coil")
+        .textureAll("kubejs:block/casing/omnic_matrix_machine/coil")
         .temperature(12600)
         .level(16)
         .energyDiscount(16)

@@ -166,12 +166,12 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .aisle("C@C", "CEC", "CCC")
                 .where("@", Predicates.controller(Predicates.blocks(definition.get())))
                 .where("E", Predicates.blocks("gtceu:pulsating_alloy_block"))
-                .where("C", Predicates.blocks("kubejs:dark_steel_machine_hull").setMinGlobalLimited(18)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(18)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_machine_hull",
+            .workableCasingModel("kubejs:block/dark_steel_casing",
                 "gtceu:block/multiblock/simulation_chamber")
 
         // Loot Superfabricator
@@ -186,12 +186,12 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .aisle("C@C", "CEC", "CCC")
                 .where("@", Predicates.controller(Predicates.blocks(definition.get())))
                 .where("E", Predicates.blocks("gtceu:energetic_alloy_block"))
-                .where("C", Predicates.blocks("kubejs:dark_steel_machine_hull").setMinGlobalLimited(18)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(18)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_machine_hull",
+            .workableCasingModel("kubejs:block/dark_steel_casing",
                 "gtceu:block/multiblock/loot_fabricator")
 
 
@@ -677,7 +677,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("F", Predicates.blocks("monilabs:bioalloy_fusion_casing"))
             .where("R", Predicates.blocks(GTBlocks.CASING_GRATE.get())
                 .or(Predicates.abilities(PartAbility.DATA_ACCESS).setExactLimit(1)))
-            .where("M", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
+            .where("M", Predicates.blocks("kubejs:omnic_matrix_casing"))
             .where("I", Predicates.blocks("monilabs:eltz_frame"))
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
