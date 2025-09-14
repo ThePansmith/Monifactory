@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer0":"kubejs:item/lines/naquadah_fuel/dust_glow_blue",
+      "layer1":"kubejs:item/lines/naquadah_fuel/depleted_naquadah_fuel_dust"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer0":"kubejs:item/lines/naquadah_fuel/pellet_glow_purple",
+      "layer1":"kubejs:item/lines/naquadah_fuel/naquadah_fuel_pellet"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer0":"kubejs:item/microverse/misc/universe_creation_data",
+      "layer1":"kubejs:item/mod/hostilenetworks/data/overlay"
+    }
+}

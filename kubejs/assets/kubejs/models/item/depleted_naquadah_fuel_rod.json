@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer0":"kubejs:item/lines/naquadah_fuel/empty_fuel_rod",
+      "layer1":"kubejs:item/lines/naquadah_fuel/depleted_naquadah_fuel_rod"
+    }
+}

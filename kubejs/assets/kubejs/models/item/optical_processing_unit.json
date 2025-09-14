@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer0":"kubejs:item/circuit/theme/optical/board/optical_processing_unit",
+      "layer1":"kubejs:item/circuit/theme/optical/board/optical_processing_unit_overlay"
+    }
+}

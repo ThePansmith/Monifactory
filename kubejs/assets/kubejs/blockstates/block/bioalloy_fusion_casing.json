@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/bioalloy/fusion_casing.json"
+    }
+  }
+}

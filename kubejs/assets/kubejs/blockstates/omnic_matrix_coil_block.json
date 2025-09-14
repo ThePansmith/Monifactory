@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "kubejs:block/omnic_matrix_coil_block"
+    },
+    "active=true": {
+      "model": "kubejs:block/omnic_matrix_coil_block_active"
+    }
+  }
+}
