@@ -32,6 +32,8 @@ moni_titlescreen_difficulty_text_normal = Playing &9&lNormal&r Mode
 moni_titlescreen_difficulty_text_hard = Playing &9&lHard&r Mode
 moni_titlescreen_difficulty_text_expert = Playing &9&lExpert&r Mode
 
+moni_titlescreen_version = Version
+
 moni_bases_screen_back_to_menu_button = Back to Menu
 moni_bases_screen_back_to_menu_button_hover = &9Back to Menu
 

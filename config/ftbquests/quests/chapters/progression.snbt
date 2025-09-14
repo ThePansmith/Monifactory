@@ -999,17 +999,14 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"0C9A9F33EEA3AB5E"
-				"4DED2A24CB1A56F5"
-			]
+			dependencies: ["0C9A9F33EEA3AB5E"]
 			description: ["{moni.quest.5601A05D8361551D.description1}"]
 			id: "5601A05D8361551D"
 			shape: "hexagon"
 			subtitle: "{moni.quest.5601A05D8361551D.subtitle}"
 			tasks: [{
 				id: "7C6BFAE0BEAADEA4"
-				item: "kubejs:monic_processor_mainframe"
+				item: "kubejs:extradimensional_processor_mainframe"
 				type: "item"
 			}]
 			title: "{moni.quest.5601A05D8361551D.title}"
@@ -1100,7 +1097,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "12DD7DF8ACAA29E5"
-				item: "kubejs:monic_processor_computer"
+				item: "kubejs:extradimensional_processor_computer"
 				type: "item"
 			}]
 			title: "{moni.quest.0C9A9F33EEA3AB5E.title}"
@@ -1117,7 +1114,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "36FE3694B99326BE"
-				item: "kubejs:monic_processor_assembly"
+				item: "kubejs:extradimensional_processor_assembly"
 				type: "item"
 			}]
 			title: "{moni.quest.3D7924B550A1BBA0.title}"
@@ -1127,7 +1124,6 @@
 		{
 			dependencies: [
 				"7979D07FBDC6D170"
-				"68734C70E2D19616"
 				"1E36AFB19932C805"
 				"0B51A633811472A2"
 			]
@@ -1137,7 +1133,7 @@
 			subtitle: "{moni.quest.5A8D2BFAF02E6325.subtitle}"
 			tasks: [{
 				id: "3EFB11DA4735807C"
-				item: "kubejs:monic_processor"
+				item: "kubejs:extradimensional_processor"
 				type: "item"
 			}]
 			title: "{moni.quest.5A8D2BFAF02E6325.title}"
@@ -1168,7 +1164,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3B038F650DFA2526"
-				item: "kubejs:monic_processing_unit"
+				item: "kubejs:extradimensional_processing_unit"
 				type: "item"
 			}]
 			title: "{moni.quest.7979D07FBDC6D170.title}"

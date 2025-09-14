@@ -205,7 +205,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("charged_certus_quartz")
         .gem()
-        .dust()
         .color(0x9fd5e8)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -278,7 +277,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("microversium")
         .ingot().liquid()
         .color(0x9b61b8).iconSet("dull")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("2x steel", "glowstone", "redstone", "deuterium")
         .blastTemp(1700, "mid", 120, 600)
         .cableProperties(128, 4, 2, false)

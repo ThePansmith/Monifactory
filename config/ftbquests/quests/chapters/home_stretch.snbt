@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "home_stretch"
 	group: "18F0ED1F9A002C08"
-	icon: "kubejs:monic_processor_mainframe"
+	icon: "kubejs:extradimensional_processor_mainframe"
 	id: "457D17593A814D73"
 	order_index: 7
 	quest_links: [
@@ -539,23 +539,6 @@
 			y: -7.25d
 		}
 		{
-			dependencies: ["060A5766B021FC77"]
-			description: [
-				"{moni.quest.68734C70E2D19616.description1}"
-				""
-				"{moni.quest.68734C70E2D19616.description2}"
-			]
-			id: "68734C70E2D19616"
-			shape: "hexagon"
-			tasks: [{
-				id: "5299B82EB34822E2"
-				item: "kubejs:contained_singularity"
-				type: "item"
-			}]
-			x: 11.25d
-			y: -7.25d
-		}
-		{
 			dependencies: ["113E9543ADB1666B"]
 			description: ["{moni.quest.7C9C91EC9F3930C2.description1}"]
 			id: "7C9C91EC9F3930C2"
@@ -731,7 +714,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "5475E609759AF888"
-				item: "kubejs:monic_circuit_board"
+				item: "kubejs:null_infused_circuit_board"
 				type: "item"
 			}]
 			x: 8.25d
@@ -782,23 +765,6 @@
 			}]
 			x: -1.25d
 			y: -1.75d
-		}
-		{
-			dependencies: ["39A09DA3903C5564"]
-			description: [
-				"{moni.quest.4DED2A24CB1A56F5.description1}"
-				""
-				"{moni.quest.4DED2A24CB1A56F5.description2}"
-			]
-			id: "4DED2A24CB1A56F5"
-			shape: "hexagon"
-			tasks: [{
-				id: "464708B6E0231084"
-				item: "kubejs:quantum_soc_chip"
-				type: "item"
-			}]
-			x: 11.25d
-			y: 9.5d
 		}
 		{
 			dependencies: ["0FD9B533BB402B17"]

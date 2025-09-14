@@ -19,6 +19,12 @@
 			x: 2.0d
 			y: -4.0d
 		}
+		{
+			id: "44C91F8846785E1E"
+			linked_quest: "01CC71429CFCAE0B"
+			x: 2.75d
+			y: -12.5d
+		}
 	]
 	quests: [
 		{
@@ -164,7 +170,7 @@
 				"{moni.quest.648B1E09AA648798.description2}"
 				"{moni.quest.648B1E09AA648798.description3}"
 				"{moni.quest.648B1E09AA648798.description4}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.648B1E09AA648798.description5}"
 				""
 				"{moni.quest.648B1E09AA648798.description6}"
@@ -402,6 +408,7 @@
 				"4669C1DCEE4AA563"
 				"5EB185AD9BD0D069"
 				"4672EE66D51C32FF"
+				"24415A26E5A0FD72"
 			]
 			description: [
 				"{moni.quest.281C7940CD437B69.description1}"
@@ -423,7 +430,6 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "{moni.quest.281C7940CD437B69.subtitle}"
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"
@@ -460,7 +466,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.131EAE1541E9C780.title}"
-			x: 9.0d
+			x: 7.5d
 			y: 1.5d
 		}
 		{
@@ -654,6 +660,7 @@
 			dependencies: [
 				"247F4985B9ACE568"
 				"2181102841205407"
+				"01CC71429CFCAE0B"
 			]
 			description: ["{moni.quest.193B7038EAB6EFA3.description1}"]
 			id: "193B7038EAB6EFA3"
@@ -674,7 +681,7 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["24415A26E5A0FD72"]
+			dependencies: ["17312BF0197B87A8"]
 			description: ["{moni.quest.247F4985B9ACE568.description1}"]
 			id: "247F4985B9ACE568"
 			rewards: [{
@@ -688,7 +695,7 @@
 				item: "gtceu:double_steel_plate"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.25d
 			y: -12.5d
 		}
 		{
@@ -707,8 +714,8 @@
 				item: "gtceu:rocket_fuel_bucket"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -14.5d
+			x: 7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -731,8 +738,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5E2489DE2E840738.title}"
-			x: 2.5d
-			y: -14.5d
+			x: 7.5d
+			y: -8.75d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
@@ -754,8 +761,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.374EB1BB1E2F6B9C.title}"
-			x: 0.0d
-			y: -14.5d
+			x: 7.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
@@ -778,8 +785,8 @@
 				item: "gtceu:hypochlorous_acid_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -13.5d
+			x: 6.25d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
@@ -797,8 +804,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5878D53EB85F3881.title}"
-			x: 0.0d
-			y: -15.5d
+			x: 8.75d
+			y: -10.5d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
@@ -816,8 +823,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7A09229ACC000B09.title}"
-			x: -1.5d
-			y: -14.5d
+			x: 7.5d
+			y: -12.5d
 		}
 		{
 			dependencies: [
@@ -833,7 +840,7 @@
 				"{moni.quest.7DE2C9292A09FC76.description3}"
 				""
 				"{moni.quest.7DE2C9292A09FC76.description4}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.7DE2C9292A09FC76.description5}"
 				""
 				"{moni.quest.7DE2C9292A09FC76.description6}"
@@ -1029,8 +1036,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5EB185AD9BD0D069.title}"
-			x: 9.0d
-			y: -6.0d
+			x: 7.5d
+			y: -4.5d
 		}
 		{
 			description: ["{moni.quest.6A8764DDD3489EE8.description1}"]
@@ -1041,8 +1048,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.6A8764DDD3489EE8.title}"
-			x: 9.0d
-			y: -8.5d
+			x: 8.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["77582C534A994D7C"]
@@ -1143,29 +1150,31 @@
 		{
 			dependencies: ["281C7940CD437B69"]
 			description: [
-				"{moni.quest.7AEA6EF1408B003B.description1}"
+				"{moni.quest.62C85A1F451C4855.description1}"
 				""
-				"{moni.quest.7AEA6EF1408B003B.description2}"
+				"{moni.quest.62C85A1F451C4855.description2}"
+				"{@pagebreak}"
+				"{moni.quest.62C85A1F451C4855.description3}"
 				""
-				"{moni.quest.7AEA6EF1408B003B.description3}"
+				"{moni.quest.62C85A1F451C4855.description4}"
 				""
-				"{moni.quest.7AEA6EF1408B003B.description4}"
-				""
-				"{moni.quest.7AEA6EF1408B003B.description5}"
+				"{moni.quest.62C85A1F451C4855.description5}"
 			]
 			icon: "ad_astra:glacio_globe"
 			id: "62C85A1F451C4855"
+			invisible: true
 			rewards: [{
 				id: "148F206D2B3F2EAF"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "One must imagine Frank Sinatra happy."
+			subtitle: "{moni.quest.62C85A1F451C4855.subtitle}"
 			tasks: [{
-				id: "1A50E8C487F936C7"
-				type: "checkmark"
+				dimension: "ad_astra:moon"
+				id: "199AA113DCFEBFDD"
+				type: "dimension"
 			}]
-			title: "{moni.quest.7AEA6EF1408B003B.title}"
+			title: "{moni.quest.62C85A1F451C4855.title}"
 			x: 1.75d
 			y: -6.0d
 		}

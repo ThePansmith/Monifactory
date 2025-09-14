@@ -44,6 +44,13 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(GTValues.VHA[GTValues.EV])
 
+    event.recipes.gtceu.chemical_bath("uranic_solution_carnotite")
+        .inputFluids("gtceu:hypochlorous_acid 1000")
+        .itemInputs("2x gtceu:purified_carnotite_ore")
+        .outputFluids("gtceu:uranic_solution 1000")
+        .duration(320)
+        .EUt(GTValues.VHA[GTValues.EV])
+
     event.recipes.gtceu.electrolyzer("actinium_from_uranic_solution")
         .inputFluids("gtceu:uranic_solution 2000")
         .chancedInput("kubejs:neutron_emitter", 50, 0)
@@ -96,11 +103,11 @@ ServerEvents.recipes(event => {
 
     // Helical Fusion Reactor
     event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
-        .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
+        .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "16x gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_double_wire")
         .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(6000)
-        .EUt(13920000)
+        .EUt(GTValues.VA[GTValues.UEV])
         .stationResearch(b => b
             .researchStack("gtceu:uv_fusion_reactor")
             .CWUt(160, 1024000)
@@ -381,19 +388,19 @@ ServerEvents.recipes(event => {
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
         "BMMMMMMMMMB",
-        "MEWwmkmwYEM",
-        "MEGCCoCCGEp",
+        "MEWwmfmwYEM",
+        "MEGCCcCCGEp",
         "MePFIIIFPsp",
         "hbRIDQDIRgp",
         "hbqSGHGSZgp",
         "hbRIDQDIRgp",
         "MtPFIIIFPdp",
-        "MEGCCfCCGEp",
-        "MEXwmcmwVEM",
+        "MEGCCoCCGEp",
+        "MEXwmkmwVEM",
         "BMMMMMMMMMB"
     ], {
         B: "gtceu:monium_block",
-        C: "kubejs:monic_processor_mainframe",
+        C: "kubejs:extradimensional_processor_mainframe",
         D: "monilabs:double_eltz_plate",
         E: "monilabs:eltz_frame",
         F: "gtceu:uev_field_generator",
@@ -426,12 +433,6 @@ ServerEvents.recipes(event => {
         p: "kubejs:prism_pane",
         w: "gtceu:monium_quadruple_wire",
     })
-
-    event.recipes.gtceu.canner("contained_singularity")
-        .itemInputs("kubejs:singularity_containment_unit", "ae2:singularity")
-        .itemOutputs("kubejs:contained_singularity")
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.UEV])
 
     // Knowledge Transmission Array
     event.recipes.gtceu.assembly_line("knowledge_transmission_array")
@@ -484,12 +485,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x monilabs:bioalloy_fusion_casing")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.assembler("singularity_containment_unit")
-        .itemInputs("4x gtceu:monium_plate", "4x gtceu:neutron_reflector", "1x gtceu:uev_sensor", "2x gtceu:uhv_sensor", "gtceu:uev_field_generator")
-        .itemOutputs("64x kubejs:singularity_containment_unit")
-        .duration(300)
-        .EUt(16380)
 
     event.recipes.gtceu.assembler("fieldstabilizedcompound")
         .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")

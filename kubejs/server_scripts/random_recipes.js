@@ -66,11 +66,6 @@ ServerEvents.recipes(event => {
     // Slime ball from plant ball
     event.smelting("2x minecraft:slime_ball", "gtceu:plant_ball")
 
-    // Infinity Dust Blocks
-    compacting(event, "kubejs:infinity_dust_block", "enderio:grains_of_infinity");
-    compacting(event, "kubejs:compressed_infinity_dust_block", "kubejs:infinity_dust_block");
-    compacting(event, "kubejs:double_compressed_infinity_dust_block", "kubejs:compressed_infinity_dust_block");
-
     // Blazerod Shenanigans
     event.shapeless("minecraft:blaze_rod", "minecraft:brewing_stand")
     event.replaceInput({ input: "gtceu:wood_plate" }, "gtceu:wood_plate", "#minecraft:planks")

@@ -11,6 +11,7 @@ const zManifestFile = z.object({
 export type ManifestFileEntry = z.infer<typeof zManifestFile>
 
 const zManifest = z.object({
+    version: z.string().nonempty(),
     files: zManifestFile.array()
 })
 export type Manifest = z.infer<typeof zManifest>
