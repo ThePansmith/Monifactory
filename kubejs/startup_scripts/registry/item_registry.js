@@ -785,7 +785,7 @@ StartupEvents.registry("item", event => {
 
             food.alwaysEdible();
 
-        }).maxStackSize(64).texture(`kubejs:item/misc/smore/smore_${2 ** i}`)
+        }).texture(`kubejs:item/misc/smore/smore_${2 ** i}`)
 
         effDuration *= 2;
     }
