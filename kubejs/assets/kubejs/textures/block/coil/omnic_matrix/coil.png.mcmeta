@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/omnium/coil_ctm"
+    },
+    "animation": {
+        "interpolate": true,
+        "frametime": 20
+    }
+}

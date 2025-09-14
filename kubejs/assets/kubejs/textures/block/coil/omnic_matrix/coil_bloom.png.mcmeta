@@ -1,0 +1,13 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/omnium/coil_bloom_ctm",
+        "emissive": true
+    },
+    "shimmer": {
+        "bloom": true
+    },
+    "animation": {
+        "interpolate": true,
+        "frametime": 20
+    }
+}
