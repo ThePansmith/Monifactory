@@ -1,9 +1,0 @@
-{
-    "ldlib": {
-        "connection": "kubejs:block/omnium/casing_ctm"
-    },
-    "animation": {
-        "interpolate": true,
-        "frametime": 20
-    }
-}

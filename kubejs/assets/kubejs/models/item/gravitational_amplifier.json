@@ -1,7 +1,0 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-      "layer0": "kubejs:item/miner_kits/gravitational_amplifier_frame",
-      "layer1": "kubejs:item/miner_kits/gravitational_amplifier_core"
-    }
-  }

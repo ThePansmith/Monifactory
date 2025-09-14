@@ -1,7 +1,0 @@
-{
-    "parent":"item/generated",
-    "textures": {
-      "layer0":"gtceu:item/petri_dish",
-      "layer1":"kubejs:item/sterile_shine"
-    }
-}

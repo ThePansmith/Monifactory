@@ -1,7 +1,0 @@
-{
-    "parent":"item/generated",
-    "textures": {
-      "layer0":"kubejs:item/infinity/infinity_hammer_handle",
-      "layer1":"kubejs:item/infinity/infinity_hammer_head"
-    }
-  }
