@@ -1,6 +1,6 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/omnium/casing_ctm"
+        "connection": "kubejs:block/casing/omnic_matrix/casing_ctm"
     },
     "animation": {
         "interpolate": true,
