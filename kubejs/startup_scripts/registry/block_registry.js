@@ -152,7 +152,7 @@ StartupEvents.registry("block", event => {
 
     ores.forEach(ore => {
         event.create(`dense_${ore}_ore`)
-            .textureAll(`kubejs:block/may_be_removed/dense_${ore}_ore`)
+            .textureAll(`kubejs:block/deprecated/dense_${ore}_ore`)
             .soundType("stone")
             .resistance(6)
             .hardness(5)
@@ -163,7 +163,7 @@ StartupEvents.registry("block", event => {
     });
 
     event.create("dense_magma_block")
-        .textureAll("kubejs:block/may_be_removed/dense_magma_block")
+        .textureAll("kubejs:block/deprecated/dense_magma_block")
         .soundType("stone")
         .resistance(6)
         .hardness(5)
@@ -207,7 +207,7 @@ StartupEvents.registry("block", event => {
         .soundType("metal")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true)
-        .textureAll("kubejs:block/may_be_removed/starry_diamond_block")
+        .textureAll("kubejs:block/deprecated/starry_diamond_block")
 
     event.create("dust", "falling")
         .textureAll("kubejs:block/misc/dust")
