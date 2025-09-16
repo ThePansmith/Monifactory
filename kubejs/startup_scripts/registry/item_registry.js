@@ -385,7 +385,7 @@ StartupEvents.registry("item", event => {
     const thrusters = ["conductive_iron","leadstone","electrical_steel","hardened","energetic","reinforced","resonant","vibrant","dark_soularium","fluxed"]
 
     thrusters.forEach(thruster => {
-        event.create(`${thruster}`)
+        event.create(`${thruster}_thruster`)
             .texture(`kubejs:item/microverse/component/thruster/${thruster}`)
     })
 
