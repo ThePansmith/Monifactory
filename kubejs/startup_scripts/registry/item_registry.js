@@ -80,7 +80,7 @@ StartupEvents.registry("item", event => {
 
     // Quantum Flux & Universe Creation Data
     event.create("quantum_flux")
-        .texture("kubejs:item/microverse/misc/quantum_flux")
+        .texture("kubejs:item/microverse/quantum_flux")
         .displayName("§dQuantum Flux")
     event.create("universe_creation_data")
         .displayName("§dUniverse Creation Data")
@@ -119,19 +119,19 @@ StartupEvents.registry("item", event => {
     // Heavy platings
     event.create("quantum_fluxed_eternium_heavy_plating")
         .displayName("§dQuantum Fluxed Eternium Heavy Plating")
-        .texture("kubejs:item/misc/plating/eternium")
+        .texture("kubejs:item/plating/eternium")
     event.create("universe_resistant_neutronium_heavy_plating")
         .displayName("§dUniverse Resistant Neutronium Heavy Plating")
-        .texture("kubejs:item/misc/plating/neutronium")
+        .texture("kubejs:item/plating/neutronium")
     event.create("elementally_infused_omnic_matrix_heavy_plating")
         .displayName("§dElementally Infused Omnic Matrix Heavy Plating")
-        .texture("kubejs:item/misc/plating/omnic_matrix")
+        .texture("kubejs:item/plating/omnic_matrix")
     event.create("dimensionally_stabilized_infinity_heavy_plating")
         .displayName("§dDimensionally Stabilized Infinity Heavy Plating")
-        .texture("kubejs:item/misc/plating/infinity")
+        .texture("kubejs:item/plating/infinity")
     event.create("causality_exempt_monic_heavy_plating")
         .displayName("§9Causality Exempt Monic Heavy Plating")
-        .texture("kubejs:item/misc/plating/monium")
+        .texture("kubejs:item/plating/monium")
 
     // Monicoins
     if (doMonicoins) {
@@ -175,7 +175,7 @@ StartupEvents.registry("item", event => {
     // Magnetron
     if (doHarderProcessing) {
         event.create("magnetron")
-            .texture("kubejs:item/misc/magnetron")
+            .texture("kubejs:item/magnetron")
     }
 
     // Spacefaring Items
@@ -210,10 +210,10 @@ StartupEvents.registry("item", event => {
     event.create("neutron_emitter")
         .texture("kubejs:item/lines/actinium/neutron_emitter")
     event.create("heart_of_a_universe")
-        .texture("kubejs:item/misc/heart_of_a_universe")
+        .texture("kubejs:item/heart_of_a_universe")
         .displayName("§dHeart Of A Universe")
     event.create("quasi_stable_neutron_star")
-        .texture("kubejs:item/misc/quasi_stable_neutron_star")
+        .texture("kubejs:item/quasi_stable_neutron_star")
         .displayName("Quasi-Stable Neutron Star")
 
     // INFINITY AND PRISMAC
@@ -321,7 +321,7 @@ StartupEvents.registry("item", event => {
     event.create("optical_chip")
         .texture("kubejs:item/circuit/theme/optical/wafer/optical_chip")
     event.create("electro_optic_modulator")
-        .texture("kubejs:item/circuit/theme/optical/misc/electro_optic_modulator")
+        .texture("kubejs:item/circuit/theme/optical/electro_optic_modulator")
     event.create("carbon_mesh_reinforced_circuit_board")
         .texture("kubejs:item/circuit/theme/optical/board/carbon_mesh_reinforced_circuit_board")
     event.create("carbon_mesh_reinforced_printed_circuit_board")
@@ -347,7 +347,7 @@ StartupEvents.registry("item", event => {
 
     for (const [element, elemColor] of solidified_elements) {
         event.create(`solidified_${element}`)
-            .textureJson({ layer0: "kubejs:item/misc/solidified_element" })
+            .textureJson({ layer0: "kubejs:item/solidified_element" })
             .color(0, elemColor);
     }
 
@@ -364,22 +364,22 @@ StartupEvents.registry("item", event => {
 
     for (const [element, elemColor] of stabilized_elements) {
         event.create(`stabilized_${element}`)
-            .textureJson({ layer0: "kubejs:item/misc/stabilized_element" })
+            .textureJson({ layer0: "kubejs:item/stabilized_element" })
             .color(0, elemColor);
     }
 
     // Misc Items
     event.create("ender_star")
-        .texture("kubejs:item/misc/ender_star")
+        .texture("kubejs:item/ender_star")
         .glow(true)
     event.create("endest_star")
-        .texture("kubejs:item/misc/endest_star")
+        .texture("kubejs:item/endest_star")
         .glow(true)
     event.create("grains_of_innocence")
         .texture("kubejs:item/mod/enderio/grains_of_innocence")
     event.create("radium_salt")
         .rarity("Epic")
-        .texture("kubejs:item/misc/radium_salt")
+        .texture("kubejs:item/radium_salt")
 
     // Thrusters
     const thrusters = ["conductive_iron","leadstone","electrical_steel","hardened","energetic","reinforced","resonant","vibrant","dark_soularium","fluxed"]
@@ -428,7 +428,7 @@ StartupEvents.registry("item", event => {
     // Ender Spore
     if (!doHNN) {
         event.create("ender_spore")
-            .texture("kubejs:item/misc/ender_spore")
+            .texture("kubejs:item/ender_spore")
     }
 
     // Thermal Augments
@@ -517,11 +517,11 @@ StartupEvents.registry("item", event => {
     event.create("warden_horn")
         .texture("kubejs:item/lines/mob_guts/warden_horn")
     event.create("dischargement_core")
-        .texture("kubejs:item/misc/sculk/dischargement_core")
+        .texture("kubejs:item/sculk/dischargement_core")
     event.create("warden_heart")
         .texture("kubejs:item/lines/mob_guts/warden_heart")
     event.create("hadal_shard")
-        .texture("kubejs:item/misc/sculk/hadal_shard")
+        .texture("kubejs:item/sculk/hadal_shard")
     event.create("petri_dish_sterile")
     event.create("petri_dish_sculk")
         .texture("kubejs:item/lines/bioalloy/petri_dish_sculk")
@@ -551,9 +551,9 @@ StartupEvents.registry("item", event => {
             .maxStackSize(1)
             .barWidth(i => i.damageValue ? i.damageValue / capacity * 13 : 0)
             .barColor(i => Color.RED)
-            .texture(`kubejs:item/misc/sculk/core/${core}_energy_core`)
+            .texture(`kubejs:item/sculk/core/${core}_energy_core`)
         event.create(`empty_${core}_energy_core`)
-            .texture(`kubejs:item/misc/sculk/core/${core}_energy_core`)
+            .texture(`kubejs:item/sculk/core/${core}_energy_core`)
     }
 
     // Nethline intermediate products
@@ -710,7 +710,7 @@ StartupEvents.registry("item", event => {
 
     // Extradim Circuit Intermediates
     event.create("miniature_microverse_container")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/misc/miniature_microverse_container" })
+        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/miniature_microverse_container" })
     event.create("microverse_containment_unit")
         .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/core/microverse_containment_unit"})
     event.create("extradimensional_quantum_cpu_core")
@@ -785,7 +785,7 @@ StartupEvents.registry("item", event => {
 
             food.alwaysEdible();
 
-        }).texture(`kubejs:item/misc/smore/smore_${2 ** i}`)
+        }).texture(`kubejs:item/smore/smore_${2 ** i}`)
 
         effDuration *= 2;
     }

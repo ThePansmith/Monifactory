@@ -6,7 +6,7 @@ StartupEvents.registry("block", event => {
 
     // Compressed Blocks
     event.create("compressed_sand")
-        .textureAll("kubejs:block/misc/compressed/sand")
+        .textureAll("kubejs:block/compressed/sand")
         .displayName("Compressed Sand")
         .soundType("sand")
         .resistance(1).hardness(1)
@@ -14,7 +14,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("double_compressed_sand")
-        .textureAll("kubejs:block/misc/compressed/sand_double")
+        .textureAll("kubejs:block/compressed/sand_double")
         .displayName("Double Compressed Sand")
         .soundType("sand")
         .resistance(2).hardness(2)
@@ -22,7 +22,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("compressed_red_sand")
-        .textureAll("kubejs:block/misc/compressed/red_sand")
+        .textureAll("kubejs:block/compressed/red_sand")
         .displayName("Compressed Red Sand")
         .soundType("sand")
         .resistance(1).hardness(1)
@@ -30,7 +30,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("double_compressed_red_sand")
-        .textureAll("kubejs:block/misc/compressed/red_sand_double")
+        .textureAll("kubejs:block/compressed/red_sand_double")
         .displayName("Double Compressed Red Sand")
         .soundType("sand")
         .resistance(2).hardness(2)
@@ -210,7 +210,7 @@ StartupEvents.registry("block", event => {
         .textureAll("kubejs:block/deprecated/starry_diamond_block")
 
     event.create("dust", "falling")
-        .textureAll("kubejs:block/misc/dust")
+        .textureAll("kubejs:block/dust")
         .soundType("sand")
         .resistance(0.4).hardness(0.4)
         .tag("mineable/shovel").displayName("Dust Block")
