@@ -1,7 +1,7 @@
 {
   "parent": "gtceu:block/cube_2_layer/all",
   "textures": {
-    "bot_all": "kubejs:block/casing/omnium/coil",
-    "top_all": "kubejs:block/casing/omnium/coil_bloom"
+    "bot_all": "kubejs:block/coil/omnic_matrix/coil",
+    "top_all": "kubejs:block/coil/omnic_matrix/coil_bloom"
   }
 }

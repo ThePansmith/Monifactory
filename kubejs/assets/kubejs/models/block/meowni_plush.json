@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "kubejs:block/misc/meowni_plush",
-		"particle": "kubejs:block/misc/meowni_plush"
+		"0": "kubejs:block/meowni_plush",
+		"particle": "kubejs:block/meowni_plush"
 	},
 	"elements": [
 		{
