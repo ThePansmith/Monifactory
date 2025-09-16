@@ -119,19 +119,19 @@ StartupEvents.registry("item", event => {
     // Heavy platings
     event.create("quantum_fluxed_eternium_heavy_plating")
         .displayName("§dQuantum Fluxed Eternium Heavy Plating")
-        .texture("kubejs:item/plating/eternium")
+        .texture("kubejs:item/heavy_plate/eternium")
     event.create("universe_resistant_neutronium_heavy_plating")
         .displayName("§dUniverse Resistant Neutronium Heavy Plating")
-        .texture("kubejs:item/plating/neutronium")
+        .texture("kubejs:item/heavy_plate/neutronium")
     event.create("elementally_infused_omnic_matrix_heavy_plating")
         .displayName("§dElementally Infused Omnic Matrix Heavy Plating")
-        .texture("kubejs:item/plating/omnic_matrix")
+        .texture("kubejs:item/heavy_plate/omnic_matrix")
     event.create("dimensionally_stabilized_infinity_heavy_plating")
         .displayName("§dDimensionally Stabilized Infinity Heavy Plating")
-        .texture("kubejs:item/plating/infinity")
+        .texture("kubejs:item/heavy_plate/infinity")
     event.create("causality_exempt_monic_heavy_plating")
         .displayName("§9Causality Exempt Monic Heavy Plating")
-        .texture("kubejs:item/plating/monium")
+        .texture("kubejs:item/heavy_plate/monium")
 
     // Monicoins
     if (doMonicoins) {

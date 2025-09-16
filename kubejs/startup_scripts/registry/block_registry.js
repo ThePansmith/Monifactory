@@ -4,9 +4,9 @@
  */
 StartupEvents.registry("block", event => {
 
-    // Compressed Blocks
+    // compressed_sand Blocks
     event.create("compressed_sand")
-        .textureAll("kubejs:block/compressed/sand")
+        .textureAll("kubejs:block/compressed_sand/sand")
         .displayName("Compressed Sand")
         .soundType("sand")
         .resistance(1).hardness(1)
@@ -14,7 +14,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("double_compressed_sand")
-        .textureAll("kubejs:block/compressed/sand_double")
+        .textureAll("kubejs:block/compressed_sand/sand_double")
         .displayName("Double Compressed Sand")
         .soundType("sand")
         .resistance(2).hardness(2)
@@ -22,7 +22,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("compressed_red_sand")
-        .textureAll("kubejs:block/compressed/red_sand")
+        .textureAll("kubejs:block/compressed_sand/red_sand")
         .displayName("Compressed Red Sand")
         .soundType("sand")
         .resistance(1).hardness(1)
@@ -30,7 +30,7 @@ StartupEvents.registry("block", event => {
         .property(BlockProperties.FALLING);
 
     event.create("double_compressed_red_sand")
-        .textureAll("kubejs:block/compressed/red_sand_double")
+        .textureAll("kubejs:block/compressed_sand/red_sand_double")
         .displayName("Double Compressed Red Sand")
         .soundType("sand")
         .resistance(2).hardness(2)
@@ -232,7 +232,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/casing/prism/lyso_ce_glass")
+        .textureAll("kubejs:block/lines/prism/lyso_ce_glass")
         .defaultCutout()
 
     event.create("red_aligned_glass")
@@ -240,7 +240,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/casing/prism/red_aligned_glass")
+        .textureAll("kubejs:block/lines/prism/red_aligned_glass")
         .defaultCutout()
 
     event.create("green_aligned_glass")
@@ -248,7 +248,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/casing/prism/green_aligned_glass")
+        .textureAll("kubejs:block/lines/prism/green_aligned_glass")
         .defaultCutout()
 
     event.create("blue_aligned_glass")
@@ -256,7 +256,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/casing/prism/blue_aligned_glass")
+        .textureAll("kubejs:block/lines/prism/blue_aligned_glass")
         .defaultCutout()
 
     event.create("prism_glass")
