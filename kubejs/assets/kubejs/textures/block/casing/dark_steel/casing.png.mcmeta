@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/dark_steel_machine_hull_ctm"
+        "connection": "kubejs:block/casing/dark_steel/casing_ctm"
     }
 }

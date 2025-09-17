@@ -1,6 +1,6 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/omnium/coil_ctm"
+        "connection": "kubejs:block/coil/omnic_matrix/coil_ctm"
     },
     "animation": {
         "interpolate": true,

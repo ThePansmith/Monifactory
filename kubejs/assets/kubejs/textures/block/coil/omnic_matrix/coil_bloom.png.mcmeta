@@ -1,6 +1,6 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/omnium/coil_bloom_ctm",
+        "connection": "kubejs:block/coil/omnic_matrix/coil_bloom_ctm",
         "emissive": true
     },
     "shimmer": {
