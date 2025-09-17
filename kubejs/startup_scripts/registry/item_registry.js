@@ -305,27 +305,27 @@ StartupEvents.registry("item", event => {
 
     // Optical Circuit intermediates
     event.create("sapphire_seed_crystal")
-        .texture("kubejs:item/circuit/theme/optical/wafer/sapphire_seed_crystal")
+        .texture("kubejs:item/circuits/theme/optical/wafer/sapphire_seed_crystal")
     event.create("sapphire_boule")
-        .texture("kubejs:item/circuit/theme/optical/wafer/sapphire_boule")
+        .texture("kubejs:item/circuits/theme/optical/wafer/sapphire_boule")
     event.create("sapphire_wafer")
-        .texture("kubejs:item/circuit/theme/optical/wafer/sapphire_wafer")
+        .texture("kubejs:item/circuits/theme/optical/wafer/sapphire_wafer")
     event.create("coated_sapphire_wafer")
-        .texture("kubejs:item/circuit/theme/optical/wafer/coated_sapphire_wafer")
+        .texture("kubejs:item/circuits/theme/optical/wafer/coated_sapphire_wafer")
     event.create("engraved_sapphire_wafer")
-        .texture("kubejs:item/circuit/theme/optical/wafer/engraved_sapphire_wafer")
+        .texture("kubejs:item/circuits/theme/optical/wafer/engraved_sapphire_wafer")
     event.create("incomplete_sapphire_wafer")
-        .texture("kubejs:item/circuit/theme/optical/wafer/incomplete_sapphire_wafer")
+        .texture("kubejs:item/circuits/theme/optical/wafer/incomplete_sapphire_wafer")
     event.create("completed_optical_wafer")
-        .texture("kubejs:item/circuit/theme/optical/wafer/completed_optical_wafer")
+        .texture("kubejs:item/circuits/theme/optical/wafer/completed_optical_wafer")
     event.create("optical_chip")
-        .texture("kubejs:item/circuit/theme/optical/wafer/optical_chip")
+        .texture("kubejs:item/circuits/theme/optical/wafer/optical_chip")
     event.create("electro_optic_modulator")
-        .texture("kubejs:item/circuit/theme/optical/electro_optic_modulator")
+        .texture("kubejs:item/circuits/theme/optical/electro_optic_modulator")
     event.create("carbon_mesh_reinforced_circuit_board")
-        .texture("kubejs:item/circuit/theme/optical/board/carbon_mesh_reinforced_circuit_board")
+        .texture("kubejs:item/circuits/theme/optical/board/carbon_mesh_reinforced_circuit_board")
     event.create("carbon_mesh_reinforced_printed_circuit_board")
-        .texture("kubejs:item/circuit/theme/optical/board/carbon_mesh_reinforced_printed_circuit_board")
+        .texture("kubejs:item/circuits/theme/optical/board/carbon_mesh_reinforced_printed_circuit_board")
     event.create("optical_processing_unit")
 
     // Solidified Elements
@@ -526,7 +526,7 @@ StartupEvents.registry("item", event => {
     event.create("petri_dish_sculk")
         .texture("kubejs:item/lines/bioalloy/petri_dish_sculk")
     event.create("petri_dish_bacteria")
-        .texture("kubejs:item/circuit/theme/wetware/petri_dish_bacteria")
+        .texture("kubejs:item/circuits/theme/wetware/petri_dish_bacteria")
     event.create("amalgamated_sculk")
         .texture("kubejs:item/lines/bioalloy/amalgamated_sculk")
     const energyCores = [
@@ -666,33 +666,33 @@ StartupEvents.registry("item", event => {
 
     // Endgame Wafer items
     event.create("uxpic_wafer")
-        .texture("kubejs:item/circuit/component/wafer/uxpic/wafer")
+        .texture("kubejs:item/circuits/component/wafer/uxpic/wafer")
     event.create("uxpic_chip")
-        .texture("kubejs:item/circuit/component/wafer/uxpic/chip")
+        .texture("kubejs:item/circuits/component/wafer/uxpic/chip")
         .displayName("UXPIC Chip")
     event.create("universe_boule")
-        .texture("kubejs:item/circuit/component/wafer/heart_boule/boule")
+        .texture("kubejs:item/circuits/component/wafer/heart_boule/boule")
         .displayName("Universe-doped Monocrystalline Silicon Boule")
     event.create("universe_wafer")
-        .texture("kubejs:item/circuit/component/wafer/heart_boule/wafer")
+        .texture("kubejs:item/circuits/component/wafer/heart_boule/wafer")
         .displayName("Universe-doped Wafer")
     event.create("unactivated_multidimensional_cpu_wafer")
-        .texture("kubejs:item/circuit/component/wafer/multidimensional_cpu/wafer_base")
+        .texture("kubejs:item/circuits/component/wafer/multidimensional_cpu/wafer_base")
         .displayName("Unactivated Multidimensional CPU Wafer")
     event.create("multidimensional_cpu_wafer")
-        .texture("kubejs:item/circuit/component/wafer/multidimensional_cpu/wafer")
+        .texture("kubejs:item/circuits/component/wafer/multidimensional_cpu/wafer")
         .displayName("Multidimensional CPU Wafer")
     event.create("multidimensional_cpu_chip")
-        .texture("kubejs:item/circuit/component/wafer/multidimensional_cpu/chip")
+        .texture("kubejs:item/circuits/component/wafer/multidimensional_cpu/chip")
         .displayName("Multidimensional CPU Chip")
     event.create("hyperdynamic_ram_wafer")
-        .texture("kubejs:item/circuit/component/wafer/hyperdynamic_ram/wafer")
+        .texture("kubejs:item/circuits/component/wafer/hyperdynamic_ram/wafer")
         .displayName("Hyperdynamic RAM Wafer")
     event.create("hyperdynamic_ram_chip_base")
-        .texture("kubejs:item/circuit/component/wafer/hyperdynamic_ram/chip_base")
+        .texture("kubejs:item/circuits/component/wafer/hyperdynamic_ram/chip_base")
         .displayName("Hyperdynamic RAM Chip Base")
     event.create("hyperdynamic_ram_chip")
-        .texture("kubejs:item/circuit/component/wafer/hyperdynamic_ram/chip")
+        .texture("kubejs:item/circuits/component/wafer/hyperdynamic_ram/chip")
         .displayName("Hyperdynamic RAM Chip")
 
     // Complex SMDs
@@ -705,37 +705,37 @@ StartupEvents.registry("item", event => {
     ]
 
     for (const name of smds) {
-        event.create(`complex_smd_${name}`).texture(`kubejs:item/circuit/component/smd/complex/${name}`)
+        event.create(`complex_smd_${name}`).texture(`kubejs:item/circuits/component/smd/complex/${name}`)
     }
 
     // Extradim Circuit Intermediates
     event.create("miniature_microverse_container")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/miniature_microverse_container" })
+        .textureJson({ layer0: "kubejs:item/circuits/theme/extradimensional/miniature_microverse_container" })
     event.create("microverse_containment_unit")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/core/microverse_containment_unit"})
+        .textureJson({ layer0: "kubejs:item/circuits/theme/extradimensional/core/microverse_containment_unit"})
     event.create("extradimensional_quantum_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/core/extradimensional_quantum_cpu_core"})
+        .textureJson({ layer0: "kubejs:item/circuits/theme/extradimensional/core/extradimensional_quantum_cpu_core"})
     event.create("extradimensional_crystal_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/core/extradimensional_crystal_cpu_core"})
+        .textureJson({ layer0: "kubejs:item/circuits/theme/extradimensional/core/extradimensional_crystal_cpu_core"})
     event.create("extradimensional_wetware_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/core/extradimensional_wetware_cpu_core"})
+        .textureJson({ layer0: "kubejs:item/circuits/theme/extradimensional/core/extradimensional_wetware_cpu_core"})
     event.create("extradimensional_optical_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/core/microverse_containment_unit",
-            layer1: "kubejs:item/circuit/theme/extradimensional/core/extradimensional_optical_cpu_red",
-            layer2: "kubejs:item/circuit/theme/extradimensional/core/extradimensional_optical_cpu_green",
-            layer3: "kubejs:item/circuit/theme/extradimensional/core/extradimensional_optical_cpu_blue"
+        .textureJson({ layer0: "kubejs:item/circuits/theme/extradimensional/core/microverse_containment_unit",
+            layer1: "kubejs:item/circuits/theme/extradimensional/core/extradimensional_optical_cpu_red",
+            layer2: "kubejs:item/circuits/theme/extradimensional/core/extradimensional_optical_cpu_green",
+            layer3: "kubejs:item/circuits/theme/extradimensional/core/extradimensional_optical_cpu_blue"
         })
 
     // Post-tank circuits, circuit boards, processing units
     function Circuit(theme, type, volt) {
         event.create(`${theme}_${type}`)
-            .textureJson({ layer0: `kubejs:item/circuit/theme/${theme}/circuit/${theme}_${type}` })
+            .textureJson({ layer0: `kubejs:item/circuits/theme/${theme}/circuit/${theme}_${type}` })
             .tag(`gtceu:circuits/${volt}`)
     }
 
     function Mainframe(theme, volt) {
         event.create(`${theme}_processor_mainframe`)
-            .textureJson({ layer0: `kubejs:item/circuit/theme/${theme}/circuit/${theme}_processor_mainframe_base`, layer1: `kubejs:item/circuit/theme/${theme}/circuit/${theme}_processor_mainframe_lights` })
+            .textureJson({ layer0: `kubejs:item/circuits/theme/${theme}/circuit/${theme}_processor_mainframe_base`, layer1: `kubejs:item/circuits/theme/${theme}/circuit/${theme}_processor_mainframe_lights` })
             .tag(`gtceu:circuits/${volt}`)
     }
 
@@ -745,16 +745,16 @@ StartupEvents.registry("item", event => {
     Mainframe("optical", "uev")
 
     event.create("null_infused_circuit_board")
-        .textureJson({ layer0: "kubejs:item/circuit/theme/extradimensional/board/null_infused_circuit_board" })
+        .textureJson({ layer0: "kubejs:item/circuits/theme/extradimensional/board/null_infused_circuit_board" })
     event.create("null_infused_printed_circuit_board")
         .textureJson({
-            layer0: "kubejs:item/circuit/theme/extradimensional/board/null_infused_circuit_board",
-            layer1: "kubejs:item/circuit/theme/extradimensional/board/null_infused_printed_circuit_board"
+            layer0: "kubejs:item/circuits/theme/extradimensional/board/null_infused_circuit_board",
+            layer1: "kubejs:item/circuits/theme/extradimensional/board/null_infused_printed_circuit_board"
         })
     event.create("extradimensional_processing_unit")
         .textureJson({
-            layer0: "kubejs:item/circuit/theme/extradimensional/board/null_infused_circuit_board",
-            layer1: "kubejs:item/circuit/theme/extradimensional/board/extradimensional_processing_unit"
+            layer0: "kubejs:item/circuits/theme/extradimensional/board/null_infused_circuit_board",
+            layer1: "kubejs:item/circuits/theme/extradimensional/board/extradimensional_processing_unit"
         })
     Circuit("extradimensional", "processor", "uv")
     Circuit("extradimensional", "processor_assembly", "uhv")
@@ -798,7 +798,7 @@ StartupEvents.registry("item", event => {
             .tag("gtceu:circuits/universal")
             .displayName(`${universal_circuit.toUpperCase()} Universal Circuit`)
             .tooltip("§7A Universal Circuit")
-            .textureJson({ layer0: `kubejs:item/circuit/universal/${universal_circuit}_universal_circuit` })
+            .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
     })
 
     // Phantom Paste

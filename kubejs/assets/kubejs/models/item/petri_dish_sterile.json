@@ -2,6 +2,6 @@
     "parent":"item/generated",
     "textures": {
       "layer0":"gtceu:item/petri_dish",
-      "layer1":"kubejs:item/circuit/theme/wetware/sterile_shine"
+      "layer1":"kubejs:item/circuits/theme/wetware/sterile_shine"
     }
 }
