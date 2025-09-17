@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/prismac/green_aligned_glass_ctm"
+        "connection": "kubejs:block/lines/prism/green_aligned_glass_ctm"
     }
 }
