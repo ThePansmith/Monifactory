@@ -7,7 +7,7 @@ const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 const LocalizationUtils = Java.loadClass("com.lowdragmc.lowdraglib.utils.LocalizationUtils")
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
-
+const MoniGuiTextures = Java.loadClass("net.neganote.monilabs.client.gui.MoniGuiTextures");
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .setEUIO("in")
             .setMaxIOSize(2, 2, 0, 0)
             .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setProgressBar(MoniGuiTextures.PROGRESS_BAR_SIMULATION, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
             .setSound(GTSoundEntries.ASSEMBLER)
 
@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .setEUIO("in")
             .setMaxIOSize(2, 1, 0, 0)
             .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setProgressBar(MoniGuiTextures.PROGRESS_BAR_SIMULATION, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
     }
 
@@ -87,7 +87,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setEUIO("in")
         .setMaxIOSize(2, 2, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(MoniGuiTextures.PROGRESS_BAR_XP, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
     // Rock Cycle Simulator
