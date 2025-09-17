@@ -270,7 +270,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("bright")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
         .components("6x trinium", "2x naquadah", "1x carbon")
-        .blastTemp(8747, "higher", 131072, 1200)
+        .blastTemp(8747, "higher", GTValues.VA[GTValues.ZPM], 1200)
 
     // Microversium is *technically* original to OmNoMoniTM, but it's a fairly direct riff on Modularium.
 

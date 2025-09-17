@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.sculk_vat("sculk_growth")
         .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs("1x #moni:sculk_growable")
+        .itemInputs("1x minecraft:stone")
         .outputFluids("gtceu:sculk 288")
         .xpRange(64000, 88000)
         .duration(20 * 3)

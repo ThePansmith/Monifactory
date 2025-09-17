@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
         .EUt(2)
 
     event.remove({ id: "gtceu:macerator/macerate_sandstone" });
-    event.recipes.gtceu.macerator("saltpeter_dust")
+    event.recipes.gtceu.electrolyzer("saltpeter_dust")
         .itemInputs("4x #forge:sandstone")
         .itemOutputs("gtceu:saltpeter_dust")
         .duration(300)
