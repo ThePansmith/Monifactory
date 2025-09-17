@@ -1,7 +1,7 @@
 {
     "textures": {
-        "particle": "kubejs:block/dynamo/dynamo_coil_redstone_anim",
-        "tex": "kubejs:block/dynamo/dynamo_coil_redstone_anim",
+        "particle": "kubejs:block/mod/thermal/dynamo/dynamo_coil_redstone_anim",
+        "tex": "kubejs:block/mod/thermal/dynamo/dynamo_coil_redstone_anim",
         "base": "minecraft:block/white_concrete",
         "parent": "minecraft:block/block"
     },

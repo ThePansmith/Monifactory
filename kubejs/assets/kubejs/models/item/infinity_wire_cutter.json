@@ -1,7 +1,7 @@
 {
     "parent":"item/generated",
     "textures": {
-      "layer0":"kubejs:item/infinity/infinity_wire_cutter_handle",
-      "layer1":"kubejs:item/infinity/infinity_wire_cutter_head"
+      "layer0":"kubejs:item/mod/avartia/infinity_tools/infinity_wire_cutter_handle",
+      "layer1":"kubejs:item/mod/avartia/infinity_tools/infinity_wire_cutter_head"
     }
   }

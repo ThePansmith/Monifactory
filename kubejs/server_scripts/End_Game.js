@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line("dimensional_superassembler")
-        .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uev", "16x gtceu:infinity_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "16x kubejs:omnic_matrix_machine_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame")
+        .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uev", "16x gtceu:infinity_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "16x kubejs:omnic_matrix_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame")
         .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:dimensional_superassembler")
         .duration(6000)
@@ -462,9 +462,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
 
     // Casings
-    event.recipes.gtceu.assembler("kubejs:omnic_matrix_machine_casing")
+    event.recipes.gtceu.assembler("kubejs:omnic_matrix_casing")
         .itemInputs("6x gtceu:omnium_plate", "monilabs:crystal_matrix_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
-        .itemOutputs("2x kubejs:omnic_matrix_machine_casing")
+        .itemOutputs("2x kubejs:omnic_matrix_casing")
         .duration(100)
         .EUt(65520)
 
