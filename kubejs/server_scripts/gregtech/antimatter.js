@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.ZPM])
 
         event.recipes.gtceu.antimatter_manipulator(`${type}_downgrade`)
-            .itemInputs("4x kubejs:protomatter")
+            .itemInputs("kubejs:protomatter")
             .inputFluids(`kubejs:refined_${type}_antimatter 36`)
             .outputFluids(`kubejs:${type}_antimatter 144`)
             .duration(200)
@@ -21,12 +21,12 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.gtceu.centrifuge("protomatter_separation")
-        .itemInputs("16x kubejs:protomatter")
+        .itemInputs("4x kubejs:protomatter")
         .outputFluids("kubejs:bosonic_antimatter 4", "kubejs:hadronic_antimatter 4", "kubejs:fermionic_antimatter 4")
         .duration(200)
-        .EUt(GTValues.VA[GTValues.ZPM])
+        .EUt(GTValues.VA[GTValues.UHV])
 
-    microverse_mission(event, 10, 3).forEach(builder => {
+    microverse_mission(event, 10, 3, 100).forEach(builder => {
         builder
             .inputFluids("gtceu:oxygen_plasma 16000")
             .itemInputs("kubejs:microversal_alchemy_kit")
