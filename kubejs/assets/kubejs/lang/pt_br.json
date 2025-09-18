@@ -369,7 +369,6 @@
     "thermal.device_rock_gen.tooltip": "§7Deve ser colocado perto de lava e água para produzir pedregulho.",
     "thermal.device_water_gen.tooltip": "§7Deve ser colocado ao lado de duas fontes de água para funcionar.",
     "thermal.emi.tooltip": "§aNão puxe os itens do EMI! Use a bancada de trabalho para pegar os dados NBT corretos.",
-    "gtceu.energy_converter.tooltip": "§4Não pode ser usado com conduítes em Modo EU->FE.\n§7Use fios ou cabos GT. Eles vão converter para FE se conectado em uma máquina FE.",
     "gtceu.basic_tape.tooltip": "§7Usado para empacotar caixas para transporte.",
     "gtceu.ender_fluid_link_cover.tooltip": "§4Não implementado ainda.",
     "gtceu.nightvision_goggles.tooltip": "§7Alterne com a tecla de [Armor Mode Switch].",
