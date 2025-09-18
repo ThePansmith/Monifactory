@@ -158,9 +158,9 @@ export const UpdateModsFolder = new Juke.Target({
     dependsOn: [DownloadModsTarget],
     inputs: ["manifest.json"],
     outputs: () => ([
-            "mods"
+        "mods"
     ]),
-    executes: async() => {
+    executes: () => {
         try {
             cpMods("mods/")
         } catch (error) {
