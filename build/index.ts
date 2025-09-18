@@ -153,6 +153,23 @@ export const BuildModlistTarget = new Juke.Target({
     }
 })
 
+export const UpdateModsFolder = new Juke.Target({
+
+    dependsOn: [DownloadModsTarget],
+    inputs: ["manifest.json"],
+    outputs: () => ([
+            "mods"
+    ]),
+    executes: async() => {
+        try {
+            cpMods("mods/")
+        } catch (error) {
+            Juke.logger.error(error)
+            throw new Juke.ExitCode(1)
+        }
+    }
+})
+
 export const BuildClientTarget = new Juke.Target({
     dependsOn: [CodegenAllTarget, BuildModlistTarget],
     inputs: [
