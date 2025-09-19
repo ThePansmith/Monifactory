@@ -44,20 +44,20 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("dark_steel")
         .ingot().fluid()
-        .color(0x414751).iconSet("dull")
+        .color(0x495466).secondaryColor(0x06070a).iconSet("dull")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("iron", "obsidian")
 
     event.create("conductive_alloy") // Conductive Iron
         .ingot().fluid()
-        .color(0xf7b29b).iconSet("metallic")
+        .color(0xf7b29b).secondaryColor(0xe15757).iconSet("metallic")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .components("iron", "redstone")
         .cableProperties(32, 1, 0, true)
 
     event.create("energetic_alloy")
         .ingot().fluid()
-        .color(0xffb545).iconSet("shiny")
+        .color(0xffb545).secondaryColor(0xe13923).iconSet("shiny")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .blastTemp(1250, "low", 120, 400)
         .components("2x gold", "redstone", "glowstone")
@@ -66,7 +66,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("vibrant_alloy")
         .ingot().fluid()
-        .color(0xa4ff70).iconSet("shiny")
+        .color(0xa4ff70).secondaryColor(0x24e048).iconSet("shiny")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .blastTemp(1350, "low", 120, 400)
         .components("energetic_alloy", "ender_pearl")
@@ -75,20 +75,20 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("pulsating_alloy") // Pulsating Iron
         .ingot().fluid()
-        .color(0x2AB38F).iconSet("shiny")
+        .color(0x2AB38F).secondaryColor(0x148275).iconSet("shiny")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("iron")
         .cableProperties(8, 1, 0, true)
 
     event.create("electrical_steel")
         .ingot().fluid()
-        .color(0xb2c0c1).iconSet("metallic")
+        .color(0xb2c0c1).secondaryColor(0x72a1ab).iconSet("metallic")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .components("steel", "silicon")
 
     event.create("end_steel")
         .ingot().fluid()
-        .color(0xd6d980).iconSet("metallic")
+        .color(0xd6d980).secondaryColor(0x47155a).iconSet("metallic")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .blastTemp(2700, "mid", 480, 900)
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
@@ -98,13 +98,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("soularium")
         .ingot().fluid()
-        .color(0x7c674d).iconSet("metallic")
+        .color(0x7c674d).secondaryColor(0x644534).iconSet("metallic")
         .components("gold")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("dark_soularium")
         .ingot()
-        .color(0x7c674d).iconSet("metallic")
+        .color(0x644534).secondaryColor(0x501919).iconSet("metallic")
         .components("soularium", "dark_steel", "tritium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
@@ -205,7 +205,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("charged_certus_quartz")
         .gem()
-        .color(0x9fd5e8)
+        .color(0xc2d6ff).secondaryColor(0x86bacf)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("certus_quartz")
@@ -213,7 +213,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("fluix")
         .gem()
         .dust()
-        .color(0x7f5bb3)
+        .color(0xc82ebc).secondaryColor(0x410069)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
         .components("charged_certus_quartz", "redstone", "nether_quartz")
@@ -226,12 +226,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("sunnarium")
         .dust()
-        .color(0xDDD692)
+        .color(0xebe5a7).secondaryColor(0xc8b770)
         .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
 
     event.create("enriched_sunnarium")
         .dust()
-        .color(0xACFFC2)
+        .color(0xc4ffd4).secondaryColor(0x51d25b)
         .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
 })
 
@@ -240,7 +240,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-    // Fluxed Electrum is from Redtone Arsenal.
+    // Fluxed Electrum is from Redstone Arsenal.
 
     event.create("electrum_flux")
         .ingot().fluid()
@@ -266,7 +266,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("trinaquadalloy")
         .fluid()
         .ingot()
-        .color(0x281832)
+        .color(0x281832).secondaryColor(0x080314)
         .iconSet("bright")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
         .components("6x trinium", "2x naquadah", "1x carbon")
@@ -276,7 +276,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("microversium")
         .ingot().liquid()
-        .color(0x9b61b8).iconSet("dull")
+        .color(0x9b61b8).secondaryColor(0x482382).iconSet("dull")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("2x steel", "glowstone", "redstone", "deuterium")
         .blastTemp(1700, "mid", 120, 600)
