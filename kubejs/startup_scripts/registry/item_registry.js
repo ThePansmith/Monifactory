@@ -551,7 +551,7 @@ StartupEvents.registry("item", event => {
             .maxStackSize(1)
             .barWidth(i => i.damageValue ? i.damageValue / capacity * 13 : 0)
             .barColor(i => Color.RED)
-            .texture(`kubejs:item/sculk/core/${core}_energy_core`)
+            .textureJson({ layer0: `kubejs:item/sculk/core/${core}_energy_core`, layer1: "kubejs:item/sculk/core/electric" })
         event.create(`empty_${core}_energy_core`)
             .texture(`kubejs:item/sculk/core/${core}_energy_core`)
     }
