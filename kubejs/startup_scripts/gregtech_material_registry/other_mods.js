@@ -82,7 +82,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("electrical_steel")
         .ingot().fluid()
-        .color(0xb2c0c1).secondaryColor(0x72a1ab).iconSet("metallic")
+        .color(0xb2c0c1).secondaryColor(0x4e7d87).iconSet("metallic")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .components("steel", "silicon")
 
