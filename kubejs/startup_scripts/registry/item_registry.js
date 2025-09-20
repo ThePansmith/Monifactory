@@ -382,12 +382,33 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/radium_salt")
 
     // Thrusters
-    const thrusters = ["conductive_iron","leadstone","electrical_steel","hardened","energetic","reinforced","resonant","vibrant","dark_soularium","fluxed"]
+    const thrusters = [
+        ["conductive_iron", "#f7b29b", "#e15757", "#c55252", "#C80000", "redstone"], // Conductive Iron/Red Alloy
+        ["electrical_steel", "#b2c0c1", "#4e7d87", "#b2c0c1", "#4e7d87", "pulsating"], // Electrical Steel
+        ["energetic", "#ffb545", "#e13923", "#ffb545", "#e13923", "vibrant"], // Energetic Alloy
+        ["vibrant", "#a4ff70", "#24e048", "#a4ff70", "#24e048", "prescient"], // Vibrant Alloy
+        ["dark_soularium", "#7c674d", "#644534", "#644534", "#501919", "weather"], // Soularium/Dark Soularium
+        ["leadstone", "#7e6f82", "#290633", "#7e6f82", "#290633", "redstone"], // Lead
+        ["hardened", "#e2e8e1", "#495d57", "#e2e8e1", "#495d57", "redstone"], // Invar
+        ["reinforced", "#ffff8b", "#ff8533", "#7db9d8", "#756ac9", "redstone"], // Electrum/Aluminium
+        ["resonant", "#1f6b62", "#16455f", "#1f6b62", "#16455f", "redstone"], // Enderium
+        ["fluxed", "#ff6b0f", "#c32e00", "#f7be20", "#ffc400", "redstone"] // Signalum/Fluxed Electrum
+    ]
 
-    thrusters.forEach(thruster => {
-        event.create(`${thruster}_thruster`)
-            .texture(`kubejs:item/microverse/component/thruster/${thruster}`)
-    })
+    for (const [alloy, primaryBot, secondaryBot, primaryTop, secondaryTop, flavor] of thrusters) {
+        event.create(`${alloy}_thruster`)
+            .textureJson({
+                layer0: "kubejs:item/microverse/component/thruster/thruster_bot",
+                layer1: "kubejs:item/microverse/component/thruster/thruster_bot_secondary",
+                layer2: "kubejs:item/microverse/component/thruster/thruster_top",
+                layer3: "kubejs:item/microverse/component/thruster/thruster_top_secondary",
+                layer4: `kubejs:item/microverse/component/thruster/thruster_ring_${flavor}` // Ring and overlay are merged since apparently sprites can't have more than 5 layers
+            })
+            .color(0, primaryBot)
+            .color(1, secondaryBot)
+            .color(2, primaryTop)
+            .color(3, secondaryTop);
+    }
 
     // Planet dusts
     event.create("moon_dust")
