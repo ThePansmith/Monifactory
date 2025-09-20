@@ -212,6 +212,10 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_plutonium",
                 "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
             )
             .requiredMicroverse(1) // Normal
     })

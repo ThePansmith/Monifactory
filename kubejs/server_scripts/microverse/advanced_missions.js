@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
     // T6MM missions
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
-            .itemInputs("32x kubejs:stabilized_neptunium")
+            .itemInputs("16x kubejs:stabilized_neptunium")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:naquadah_alloy_drill_head")
             .itemInputs("16x kubejs:wither_realm_data")
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
-            .itemInputs("32x kubejs:stabilized_curium")
+            .itemInputs("16x kubejs:stabilized_curium")
             .itemInputs("kubejs:blasting_kit")
             .itemInputs("64x kubejs:wither_realm_data")
             .damageRate(4)
@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 6, 2, undefined, undefined, 100).forEach(builder => {
         builder
-            .itemInputs("32x kubejs:stabilized_plutonium")
+            .itemInputs("16x kubejs:stabilized_plutonium")
             .itemInputs("8x kubejs:dragon_lair_data")
             .damageRate((doHostileMicroverse ? -40 : 4))
             .itemOutputs(
@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
-            .itemInputs("32x kubejs:stabilized_neptunium")
+            .itemInputs("16x kubejs:stabilized_neptunium")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:tungsten_carbide_drill_head")
             .damageRate(4)
