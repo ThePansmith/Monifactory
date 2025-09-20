@@ -550,5 +550,17 @@
     "material.gtceu.europium_oxide": "Europium Oxide",
     "material.gtceu.europium_ii_oxide": "Europium II Oxide",
     "material.gtceu.lutetium_fluoride": "Lutetium Fluoride",
-    "material.gtceu.cuprous_oxide": "Cuprous Oxide"
+    "material.gtceu.cuprous_oxide": "Cuprous Oxide",
+     "__TRANS__.header": "========",
+    "__TRANS__.flufff": "> Transcendental Matrix <",
+    "__TRANS__.footer": "========",
+    "material.gtceu.mystic_tar": "Mystic Tar",
+    "material.gtceu.mystic_essence": "Mystic Essence",
+    "material.gtceu.sunny_dew": "Sunny Dew",
+    "material.gtceu.starry_dew": "Starry Dew",
+    "material.gtceu.infused_residue": "Infused Residue",
+    "material.gtceu.radiant_dew": "Radiant Dew",
+    "material.gtceu.infused_oils": "Infused Oil",
+    "material.gtceu.supercharged_powder": "Supercharged Powder",
+    "material.gtceu.transcendental_will": "Transcendental Will"
 }

@@ -47,9 +47,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color(0xC2F2FF).secondaryColor(0xFFC2F4)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create("transcendental_soul")
-        .ingot()
-        .color(0xFFC2F4).secondaryColor(0xC2F2FF)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
