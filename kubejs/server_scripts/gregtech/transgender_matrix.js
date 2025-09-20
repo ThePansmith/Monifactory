@@ -1,0 +1,78 @@
+/**
+ * Transgender processing line
+ */
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.cracker("mystic_tar_cracking")
+        .inputFluids("gtceu:oil_heavy 1000", "gtceu:tritanium 144")
+        .outputFluids("gtceu:mystic_tar 1296", "gtceu:infused_residue 144")
+        .duration(300)
+        .EUt(GTValues.VHA[GTValues.ZPM])
+
+    event.recipes.gtceu.cracker("mystic_tar_cracking_essence")
+        .inputFluids("gtceu:oil_heavy 1000", "gtceu:mystic_essence 144")
+        .outputFluids("gtceu:mystic_tar 500", "gtceu:infused_residue 500")
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.ZPM])
+
+    event.recipes.gtceu.brewery("mystic_essence_brewing")
+        .inputFluids("gtceu:mystic_tar 1000")
+        .itemInputs("gtceu:duranium_dust")
+        .outputFluids("gtceu:mystic_essence 1000")
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.LuV])
+
+    event.recipes.gtceu.brewery("mystic_essence_brewing_supercharged")
+        .inputFluids("gtceu:mystic_tar 1000")
+        .itemInputs("gtceu:supercharged_powder_dust")
+        .outputFluids("gtceu:mystic_essence 4000")
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.ZPM])
+
+    event.recipes.gtceu.mixer("infused_oils_mixer")
+        .inputFluids("gtceu:infused_residue 300", "gtceu:mystic_essence 1000")
+        .outputFluids("gtceu:infused_oils 500")
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.LuV])
+
+    event.recipes.gtceu.autoclave("supercharged_powder_autoclave")
+        .inputFluids("gtceu:infused_oils 300")
+        .itemInputs("3x gtceu:platinum_dust")
+        .itemOutputsRanged("gtceu:supercharged_powder_dust", 1, 2)
+        .duration(140)
+        .EUt(GTValues.VHA[GTValues.UV])
+
+    event.recipes.gtceu.fermenter("sunny_dew_fermenter")
+        .inputFluids("gtceu:mystic_essence 1000")
+        .itemInputs("gtceu:sunnarium_dust")
+        .outputFluids("gtceu:sunny_dew 500")
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.LuV])
+
+    event.recipes.gtceu.fermenter("starry_dew_fermenter")
+        .inputFluids("gtceu:mystic_essence 1000")
+        .itemInputs("2x kubejs:primal_mana")
+        .outputFluids("gtceu:starry_dew 500")
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.LuV])
+
+    event.recipes.gtceu.mixer("radiant_dew_mixer")
+        .inputFluids("gtceu:sunny_dew 1000", "gtceu:starry_dew 1000")
+        .itemInputs("minecraft:nether_star")
+        .outputFluids("gtceu:radiant_dew 1000")
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.UV])
+
+    event.recipes.gtceu.mixer("trans_will_mixer")
+        .inputFluids("gtceu:radiant_dew 1000")
+        .itemInputs("gtceu:supercharged_powder_dust")
+        .itemOutputs("gtceu:transcendental_will_ingot")
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.UV])
+
+     event.recipes.gtceu.quintessence_infuser("trans_matrix_infusion")
+         .itemInputs("gtceu:iron_dust", "monilabs:crystal_matrix_ingot")
+         .inputFluids("gtceu:infused_oils 200")
+         .itemOutputs("gtceu:transcendental_matrix_ingot", "enderio:empty_soul_vial")
+         .duration(128)
+         .EUt(GTValues.VHA[GTValues.ZPM])
+})

@@ -52,6 +52,7 @@ ServerEvents.recipes(event => {
     Discharge("bathyal_solar", "2x solarflux:sp_custom_bathyal", ["2x solarflux:sp_8", "4x laserio:energy_overclocker_card_tier_8", "2x gtceu:cryolobus_block", bathyal], 20000000)
     Discharge("cryococcus_block", "5x gtceu:cryococcus_block", ["5x gtceu:cryolobus_block", "2x kubejs:warden_heart", bathyal, bathyal], 40000000)
     Discharge("hadal_warp_engine", "kubejs:hadal_warp_engine", ["gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", hadal, abyssal], 40000000)
+    Discharge("transcendental_soul", "gtceu:transcendental_soul_ingot", ["gtceu:transcendental_will_dust", "enderio:empty_soul_vial", "gtceu:dark_soularium_plate", bathyal], 20000000)
 
     // event.recipes.gtceu.charger("kubejs:sculk_core_charge")
     //     .itemInputs(["4x gtceu:cryolobus_ingot", "4x gtceu:tungsten_carbide_ingot", "minecraft:sculk_catalyst"])
