@@ -277,6 +277,9 @@ ItemEvents.tooltip(tooltip => {
         "packagedexexcrafting:epic_crafter"
     ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
 
+    //Transgender Soul Vial
+    tooltip.add("kubejs:transcendental_soul_vial", "§eYou are worthy of love")
+
     // Tempad
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
