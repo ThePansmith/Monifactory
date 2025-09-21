@@ -1561,7 +1561,7 @@
 		}
 		{
 			dependencies: ["27B3EB82ED638620"]
-			description: ["{moni.quest.7AEA6EF1408B003B.description3}"]
+			description: ["{moni.quest.62C85A1F451C4855.description3}"]
 			id: "3E7250EFBFF03D89"
 			rewards: [{
 				id: "48E6352BC7E3A682"
@@ -1586,7 +1586,7 @@
 				"0B9D5F865C3F8B31"
 				"1349044BF8C04A12"
 			]
-			description: ["{moni.quest.7AEA6EF1408B003B.description4}"]
+			description: ["{moni.quest.62C85A1F451C4855.description4}"]
 			id: "299CCE5C8C2219C8"
 			rewards: [{
 				id: "4AEACF669F40EC9B"
