@@ -1034,6 +1034,58 @@
 			x: 3.5d
 			y: 1.0d
 		}
+		{
+			dependencies: ["745628397790ED7A"]
+			description: [
+				"{moni.quest.2E5BFF3AA617C9DD.description1}"
+				""
+				"{moni.quest.2E5BFF3AA617C9DD.description2}"
+				""
+				"{moni.quest.2E5BFF3AA617C9DD.description3}"
+				"{@pagebreak}"
+				"{moni.quest.2E5BFF3AA617C9DD.description4}"
+				""
+				"{moni.quest.2E5BFF3AA617C9DD.description5}"
+				""
+				"{moni.quest.2E5BFF3AA617C9DD.description6}"
+				"{@pagebreak}"
+				"{moni.quest.2E5BFF3AA617C9DD.description7}"
+				""
+				"{moni.quest.2E5BFF3AA617C9DD.description8}"
+				""
+				"{moni.quest.2E5BFF3AA617C9DD.description9}"
+			]
+			icon: "nuclearcraft:fission_reactor_solid_fuel_cell"
+			id: "2E5BFF3AA617C9DD"
+			tasks: [{
+				id: "625E05A2579AE3DE"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.2E5BFF3AA617C9DD.title}"
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["745628397790ED7A"]
+			description: [
+				"{moni.quest.29E2EEB88B1DBA33.description1}"
+				""
+				"{moni.quest.29E2EEB88B1DBA33.description2}"
+				""
+				"{moni.quest.29E2EEB88B1DBA33.description3}"
+			]
+			id: "29E2EEB88B1DBA33"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "62466B06352CFD5D"
+				item: "nuclearcraft:corium_bucket"
+				type: "item"
+			}]
+			title: "{moni.quest.29E2EEB88B1DBA33.title}"
+			x: -5.5d
+			y: -11.0d
+		}
 	]
 	title: "{moni.chapter.40F7695BE1E65C41.title}"
 }
