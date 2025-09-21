@@ -403,7 +403,6 @@
     "hostilenetworks.end_prediction.tooltip": "§7Опыта за штуку: 25",
     "enderio.vibrant_conduit.tooltip": "§7Максимально проводит 8,192 RF/t",
     "enderio.endsteel_conduit.tooltip": "§7Максимально проводит 32,768 RF/t",
-    "gtceu.energy_converter.tooltip": "§4Нельзя использовать с кабелями в режиме EU->FE.\n§7Вместо этого используйте провода или кабели GregTech. Они преобразуют EU в FE, если подключены к машине, потребляющей FE.",
     "kubejs.excitationcoil.tooltip": "§7Используется в Крафтах.",
     "extendedcrafting.flux_alternator.tooltip": "§7Передает энергию Скалковому Зарядному Устройству, до 3 блоков в расстоянии.",
     "gtceu.prospector.tooltip.1": "§7Показывает руды только в непосредственной близости.",
