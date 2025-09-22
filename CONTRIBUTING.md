@@ -61,11 +61,10 @@ If you encounter a problem and there have been mod updates since the latest rele
 2. Use your launcher to import the zipped manifest as a new pack - this will download a bunch of updated mod .jars from Curseforge.
 3. Delete the contents of your instance's `mods` folder, and replace them with the mod .jars that were just downloaded.
 
-If you want to use Juke to update your mods folder, you will need to install NodeJS [here](https://nodejs.org/en/download/current), make sure the settings are correct for your.
+If you want to use Juke to update your mods folder, you will need to install NodeJS [here](https://nodejs.org/en/download/current), make sure the settings for NodeJS are correct for your system operating system and CPU architecture.
 1. Go to the `build\` directory
 2. Run `npm install .` to install the required packages 
 3. Then run `node index.ts update-mods-folder` to update your mods folder.
-
 Once those files are moved back in place, you should be able to launch the instance as a modpack while also being to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance. 
 
 ## Localization ##
