@@ -826,6 +826,6 @@ StartupEvents.registry("item", event => {
 
     // Trans Matrix Vial
     event.create("transcendental_soul_vial")
-        .texture("")
+        .texture("kubejs:item/trans_vial")
         .displayName("Transcendental Soul Vial")
 })
