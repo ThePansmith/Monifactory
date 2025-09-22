@@ -149,7 +149,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/simulation_chamber")
 
         // Loot Superfabricator
@@ -169,7 +169,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/loot_fabricator")
 
 
