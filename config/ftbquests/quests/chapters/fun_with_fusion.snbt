@@ -1073,6 +1073,12 @@
 				"{moni.quest.29E2EEB88B1DBA33.description2}"
 				""
 				"{moni.quest.29E2EEB88B1DBA33.description3}"
+				"{@pagebreak}"
+				"{moni.quest.29E2EEB88B1DBA33.description4}"
+				""
+				"{moni.quest.29E2EEB88B1DBA33.description5}"
+				""
+				"{moni.quest.29E2EEB88B1DBA33.description6}"
 			]
 			id: "29E2EEB88B1DBA33"
 			invisible: true
