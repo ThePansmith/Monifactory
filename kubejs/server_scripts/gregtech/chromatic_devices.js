@@ -4,9 +4,9 @@
 
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("chromatic_stabilizer")
-        .itemInputs("gtceu:superconducting_coil", "gtceu:dense_rhodium_plated_palladium_plate", "2x #gtceu:circuits/uhv", "kubejs:chromatically_inert_frame")
+        .itemInputs("gtceu:superconducting_coil", "gtceu:dense_rhodium_plated_palladium_plate", "2x #gtceu:circuits/uv", "kubejs:chromatically_inert_frame")
         .inputFluids("gtceu:omnium 288", "gtceu:polyether_ether_ketone 288")
-        .itemOutputs("kubejs:chromatic_stabilizer")
+        .itemOutputs("3x kubejs:chromatic_stabilizer")
         .duration(20 * 10)
         .EUt(GTValues.VA[GTValues.UHV])
         .stationResearch(b => b
