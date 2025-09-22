@@ -370,10 +370,10 @@ StartupEvents.registry("item", event => {
     for (const [element, elemColor, elemColorSecondary] of stabilized_elements) {
         event.create(`stabilized_${element}`)
             .textureJson({
-                layer0: "kubejs:item/solidified",
-                layer1: "kubejs:item/solidified_secondary",
-                layer2: "kubejs:item/solidified_overlay",
-                layer3: "kubejs:item/stabilized"
+                layer0: "kubejs:item/stabilized",
+                layer1: "kubejs:item/stabilized_secondary",
+                layer2: "kubejs:item/stabilized_overlay",
+                layer3: "kubejs:item/stabilized_shine"
             })
             .color(0, elemColor)
             .color(1, elemColorSecondary);
