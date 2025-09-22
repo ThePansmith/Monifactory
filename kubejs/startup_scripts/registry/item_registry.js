@@ -358,13 +358,13 @@ StartupEvents.registry("item", event => {
 
     // Stabilized Elements
     const stabilized_elements = [
-        ["berkelium", "#a33f20", "#87001c"], // Colors changed by us!
-        ["neptunium", "#486d7b", "#003064"], // Colors changed by us!
-        ["plutonium", "#ff4c4c", "#222730"],
-        ["uranium", "#46FA46", "#33342c"],
-        ["curium", "#58307f", "#221255"], // Colors changed by us!
-        ["californium", "#7d0222", "#410022"], // Colors changed by us!
-        ["americium", "#287869", "#083946"] // New secondary added where none existed
+        ["berkelium", "#a33f20", "#87001c"], // #ffaa4f // #a33f20 // Colors changed by us!
+        ["neptunium", "#486d7b", "#003064"], // #b4eaff // #486d7b // Colors changed by us!
+        ["plutonium", "#ba2727", "#222730"], // #ff4c4c //  #ba2727
+        ["uranium", "#1d891d", "#33342c"], // #46FA46 // #1d891d
+        ["curium", "#58307f", "#221255"], // #be7bff // #58307f // Colors changed by us!
+        ["californium", "#7d0222", "#410022"], // #ff359d // #7d0222 // Colors changed by us!
+        ["americium", "#287869", "#083946"] // #6affe3 // #287869 // New secondary added where none existed
     ]
 
     for (const [element, elemColor, elemColorSecondary] of stabilized_elements) {
