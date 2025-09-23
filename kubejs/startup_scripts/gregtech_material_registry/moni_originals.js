@@ -52,7 +52,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("transcendental_matrix")
         .ingot().fluid()
         .color(0xffffff).secondaryColor(0x000000)
-        .iconSet("shiny")
+        .iconSet("transcendental_matrix")
         .element(GTElements.get("transcendental_matrix"))
         .flags(GTMaterialFlags.GENERATE_FOIL)
 
