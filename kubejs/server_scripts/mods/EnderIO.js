@@ -558,8 +558,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:grains_of_infinity")
         .duration(16)
         .EUt(GTValues.VA[GTValues.MV])
-        .addData("fluidA", "minecraft:lava")
-        .addData("fluidB", "enderio:dew_of_the_void")
+        .adjacentFluid("minecraft:lava", "enderio:dew_of_the_void")
         .posY(-64, -59)
 
     event.recipes.gtceu.rock_cycle_simulator("kubejs:rock_cycle_simulator_grains_of_infinity")
