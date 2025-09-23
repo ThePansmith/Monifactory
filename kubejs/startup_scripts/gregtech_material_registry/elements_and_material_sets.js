@@ -111,6 +111,7 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("dilithium").parent(GTMaterialIconSet.DULL)
 
     // Prismatic Crucible
+    event.create("transcendental_matrix").parent(GTMaterialIconSet.SHINY)
     event.create("infinity").parent(GTMaterialIconSet.SHINY)
     event.create("meta_null").parent(GTMaterialIconSet.SHINY)
     event.create("monium").parent(GTMaterialIconSet.SHINY)
