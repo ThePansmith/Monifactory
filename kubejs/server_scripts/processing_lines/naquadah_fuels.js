@@ -88,7 +88,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.naquadah_refinery("crude_naquadah_fuel_fission")
-        .inputFluids("gtceu:medium_naquadah_isotope_fraction 1000", "gtceu:heavy_naquadah_isotope_fraction 200", "gtceu:plutonium 500", "gtceu:uranium 1000", "gtceu:neptunium 800")
+        .itemInputs("6x kubejs:stabilized_plutonium", "4x kubejs:stabilized_neptunium", "12x kubejs:stabilized_uranium")
+        .inputFluids("gtceu:medium_naquadah_isotope_fraction 1000", "gtceu:heavy_naquadah_isotope_fraction 200")
         .outputFluids("gtceu:crude_naquadah_fuel 2000")
         .duration(600)
         .EUt(GTValues.VA[GTValues.ZPM])
