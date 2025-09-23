@@ -399,26 +399,26 @@ StartupEvents.registry("item", event => {
         ["energetic", "#ffb545", "#e13923", "#ffb545", "#e13923", "vibrant", "eio"], // Energetic Alloy
         ["vibrant", "#a4ff70", "#24e048", "#a4ff70", "#24e048", "prescient", "eio"], // Vibrant Alloy
         ["dark_soularium", "#7c674d", "#644534", "#644534", "#501919", "weather", "eio"], // Soularium/Dark Soularium
-        ["leadstone", "#7e6f82", "#290633", "#7e6f82", "#290633", "thermal", "thermal"], // Lead
-        ["hardened", "#e2e8e1", "#495d57", "#e2e8e1", "#495d57", "thermal", "thermal"], // Invar
+        ["leadstone", "#7e6f82", "#290633", "#495466", "#06070a", "thermal", "thermal"], // Lead/Dark Steel
+        ["hardened", "#e2e8e1", "#495d57", "#7e6f82", "#290633", "thermal", "thermal"], // Invar/Lead
         ["reinforced", "#ffff8b", "#ff8533", "#7db9d8", "#756ac9", "thermal", "thermal"], // Electrum/Aluminium
-        ["resonant", "#1f6b62", "#16455f", "#1f6b62", "#16455f", "thermal", "thermal"], // Enderium
+        ["resonant", "#1f6b62", "#16455f", "#7db9d8", "#756ac9", "thermal", "thermal"], // Enderium/Aluminium
         ["fluxed", "#ff6b0f", "#c32e00", "#f7be20", "#ffc400", "thermal", "thermal"] // Signalum/Fluxed Electrum
     ]
 
     for (const [alloy, primaryBot, secondaryBot, primaryTop, secondaryTop, flavor, variety] of thrusters) {
         event.create(`${alloy}_thruster`)
             .textureJson({
-                layer0: "kubejs:item/microverse/component/thruster/thruster_top",
-                layer1: "kubejs:item/microverse/component/thruster/thruster_top_secondary",
-                layer2: `kubejs:item/microverse/component/thruster/thruster_bot_${variety}`,
-                layer3: `kubejs:item/microverse/component/thruster/thruster_bot_${variety}_secondary`,
+                layer0: `kubejs:item/microverse/component/thruster/thruster_bot_${variety}`,
+                layer1: `kubejs:item/microverse/component/thruster/thruster_bot_${variety}_secondary`,
+                layer2: `kubejs:item/microverse/component/thruster/thruster_top_${variety}`,
+                layer3: `kubejs:item/microverse/component/thruster/thruster_top_${variety}_secondary`,
                 layer4: `kubejs:item/microverse/component/thruster/thruster_ring_${flavor}` // Ring and overlay are merged since apparently sprites can't have more than 5 layers
             })
-            .color(0, primaryTop)
-            .color(1, secondaryTop)
-            .color(2, primaryBot)
-            .color(3, secondaryBot);
+            .color(0, primaryBot)
+            .color(1, secondaryBot)
+            .color(2, primaryTop)
+            .color(3, secondaryTop);
     }
 
     // Planet dusts
