@@ -235,6 +235,27 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
 })
 
+// Nuclearcraft: Neoteric
+
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    event.create("uranium_233")
+        .liquid(1405)
+        .color(0x116311).secondaryColor(0x33342c).iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .element(GTElements.get("uranium_233"))
+
+    event.create("plutonium_238")
+        .liquid(913)
+        .color(0x8e1818).secondaryColor(0x222730).iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .element(GTElements.get("plutonium_238"))
+
+    event.create("plutonium_242")
+        .liquid(913)
+        .color(0x8e1818).secondaryColor(0x222730).iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .element(GTElements.get("plutonium_242"))
+
+})
+
 
 // One-offs/Miscellaneous
 
