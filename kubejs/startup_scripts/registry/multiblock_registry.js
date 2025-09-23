@@ -87,7 +87,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setEUIO("in")
         .setMaxIOSize(2, 2, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setProgressBar(MoniGuiTextures.PROGRESS_BAR_XP, FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(MoniGuiTextures.PROGRESS_BAR_XP, FillDirection.DOWN_TO_UP)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
     // Rock Cycle Simulator
@@ -149,7 +149,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/simulation_chamber")
 
         // Loot Superfabricator
@@ -169,7 +169,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/loot_fabricator")
 
 
@@ -191,13 +191,13 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where("O", Predicates.blocks("gtceu:omnium_block"))
                 .where("Q", Predicates.blocks("ae2:quartz_vibrant_glass"))
                 .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-                .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(40)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(40)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/simulation_chamber")
 
         // Loot Quantumfabricator
@@ -218,13 +218,13 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where("O", Predicates.blocks("gtceu:omnium_block"))
                 .where("Q", Predicates.blocks("ae2:quartz_vibrant_glass"))
                 .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-                .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(40)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(40)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/loot_fabricator")
     }
 

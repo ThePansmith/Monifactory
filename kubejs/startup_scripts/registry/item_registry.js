@@ -330,42 +330,53 @@ StartupEvents.registry("item", event => {
 
     // Solidified Elements
     const solidified_elements = [
-        ["argon", "#12bc12"],
-        ["chlorine", "#2d6d6d"],
-        ["fluorine", "#4b7ba6"],
-        ["helium", "#e8ea86"],
-        ["hydrogen", "#12128a"],
-        ["krypton", "#7ffe7f"],
-        ["mercury", "#ad9dce"],
-        ["neon", "#b88a8a"],
-        ["nitrogen", "#129192"],
-        ["oxygen", "#4494bc"],
-        ["radon", "#bc38bc"],
-        ["xenon", "#12bcbc"],
-        ["experience", "#04ff00"]
+        ["argon", "#00FF00", "#00a332"], // New secondary added where none existed
+        ["chlorine", "#39abab", "#1e5961"], // Uses a custom fluid texture, primary color picked from that
+        ["fluorine", "#79afde", "#3872c2"],  // Uses a custom fluid texture, primary color picked from that
+        ["helium", "#FCFF90", "#c7b258"], // Uses a custom fluid texture, primary color picked from that (it's literally a solid color whyyyyy GTm whyyyyy)
+        ["hydrogen", "#2b39e0", "#0000B5"], // New secondary added where none existed (actually uses official color as secondary since it's so dark!)
+        ["krypton", "#80FF80", "#44d170"], // New secondary added where none existed
+        ["mercury", "#f5f5f5", "#aa1425"], // New secondary added where none existed (primary color was also adjusted slightly!)
+        ["neon", "#FAB4B4", "#d6848d"], // New secondary added where none existed
+        ["nitrogen", "#00BFC1", "#0081a8"], // New secondary added where none existed
+        ["oxygen", "#4CC3FF", "#005bd6"], // New secondary added where none existed
+        ["radon", "#FF39FF", "#bd0057"], // New secondary added where none existed
+        ["xenon", "#00FFFF", "#00a5d6"], // New secondary added where none existed
+        ["experience", "#d1ff3b", "#46eb12"] // Uses a custom fluid texture, primary color picked from that
     ]
 
-    for (const [element, elemColor] of solidified_elements) {
+    for (const [element, elemColor, elemColorSecondary] of solidified_elements) {
         event.create(`solidified_${element}`)
-            .textureJson({ layer0: "kubejs:item/solidified_element" })
-            .color(0, elemColor);
+            .textureJson({
+                layer0: "kubejs:item/solidified",
+                layer1: "kubejs:item/solidified_secondary",
+                layer2: "kubejs:item/solidified_overlay"
+            })
+            .color(0, elemColor)
+            .color(1, elemColorSecondary);
     }
 
     // Stabilized Elements
     const stabilized_elements = [
-        ["berkelium", "#a33f20"],
-        ["neptunium", "#486d7b"],
-        ["plutonium", "#ba2727"],
-        ["uranium", "#1d891d"],
-        ["curium", "#58307f"],
-        ["californium", "#7d0222"],
-        ["americium", "#287869"]
+        ["berkelium", "#a33f20", "#87001c"], // #ffaa4f // #a33f20 // Colors changed by us!
+        ["neptunium", "#486d7b", "#003064"], // #b4eaff // #486d7b // Colors changed by us!
+        ["plutonium", "#ba2727", "#222730"], // #ff4c4c //  #ba2727
+        ["uranium", "#1d891d", "#33342c"], // #46FA46 // #1d891d
+        ["curium", "#58307f", "#221255"], // #be7bff // #58307f // Colors changed by us!
+        ["californium", "#7d0222", "#410022"], // #ff359d // #7d0222 // Colors changed by us!
+        ["americium", "#287869", "#083946"] // #6affe3 // #287869 // New secondary added where none existed
     ]
 
-    for (const [element, elemColor] of stabilized_elements) {
+    for (const [element, elemColor, elemColorSecondary] of stabilized_elements) {
         event.create(`stabilized_${element}`)
-            .textureJson({ layer0: "kubejs:item/stabilized_element" })
-            .color(0, elemColor);
+            .textureJson({
+                layer0: "kubejs:item/stabilized",
+                layer1: "kubejs:item/stabilized_secondary",
+                layer2: "kubejs:item/stabilized_overlay",
+                layer3: "kubejs:item/stabilized_shine"
+            })
+            .color(0, elemColor)
+            .color(1, elemColorSecondary);
     }
 
     // Misc Items
@@ -382,12 +393,33 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/radium_salt")
 
     // Thrusters
-    const thrusters = ["conductive_iron","leadstone","electrical_steel","hardened","energetic","reinforced","resonant","vibrant","dark_soularium","fluxed"]
+    const thrusters = [
+        ["conductive_iron", "#f7b29b", "#e15757", "#c55252", "#C80000", "redstone", "eio"], // Conductive Iron/Red Alloy
+        ["electrical_steel", "#b2c0c1", "#4e7d87", "#b2c0c1", "#4e7d87", "pulsating", "eio"], // Electrical Steel
+        ["energetic", "#ffb545", "#e13923", "#ffb545", "#e13923", "vibrant", "eio"], // Energetic Alloy
+        ["vibrant", "#a4ff70", "#24e048", "#a4ff70", "#24e048", "prescient", "eio"], // Vibrant Alloy
+        ["dark_soularium", "#7c674d", "#644534", "#644534", "#501919", "weather", "eio"], // Soularium/Dark Soularium
+        ["leadstone", "#7e6f82", "#290633", "#495466", "#06070a", "thermal", "thermal"], // Lead/Dark Steel
+        ["hardened", "#e2e8e1", "#495d57", "#7e6f82", "#290633", "thermal", "thermal"], // Invar/Lead
+        ["reinforced", "#ffff8b", "#ff8533", "#7db9d8", "#756ac9", "thermal", "thermal"], // Electrum/Aluminium
+        ["resonant", "#1f6b62", "#16455f", "#7db9d8", "#756ac9", "thermal", "thermal"], // Enderium/Aluminium
+        ["fluxed", "#ff6b0f", "#c32e00", "#f7be20", "#ffc400", "thermal", "thermal"] // Signalum/Fluxed Electrum
+    ]
 
-    thrusters.forEach(thruster => {
-        event.create(`${thruster}_thruster`)
-            .texture(`kubejs:item/microverse/component/thruster/${thruster}`)
-    })
+    for (const [alloy, primaryBot, secondaryBot, primaryTop, secondaryTop, flavor, variety] of thrusters) {
+        event.create(`${alloy}_thruster`)
+            .textureJson({
+                layer0: `kubejs:item/microverse/component/thruster/thruster_bot_${variety}`,
+                layer1: `kubejs:item/microverse/component/thruster/thruster_bot_${variety}_secondary`,
+                layer2: `kubejs:item/microverse/component/thruster/thruster_top_${variety}`,
+                layer3: `kubejs:item/microverse/component/thruster/thruster_top_${variety}_secondary`,
+                layer4: `kubejs:item/microverse/component/thruster/thruster_ring_${flavor}` // Ring and overlay are merged since apparently sprites can't have more than 5 layers
+            })
+            .color(0, primaryBot)
+            .color(1, secondaryBot)
+            .color(2, primaryTop)
+            .color(3, secondaryTop);
+    }
 
     // Planet dusts
     event.create("moon_dust")
@@ -551,7 +583,7 @@ StartupEvents.registry("item", event => {
             .maxStackSize(1)
             .barWidth(i => i.damageValue ? i.damageValue / capacity * 13 : 0)
             .barColor(i => Color.RED)
-            .texture(`kubejs:item/sculk/core/${core}_energy_core`)
+            .textureJson({ layer0: `kubejs:item/sculk/core/${core}_energy_core`, layer1: "kubejs:item/sculk/core/electric" })
         event.create(`empty_${core}_energy_core`)
             .texture(`kubejs:item/sculk/core/${core}_energy_core`)
     }
