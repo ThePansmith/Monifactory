@@ -857,4 +857,9 @@ StartupEvents.registry("item", event => {
     event.create("prism_pane")
         .texture("kubejs:item/lines/prismac/psoc/prism_pane")
         .displayName("P.R.I.S.M. Glass Pane")
+
+    // Trans Matrix Vial
+    event.create("transcendental_soul_vial")
+        .texture("kubejs:item/trans_vial")
+        .displayName("Transcendental Soul Vial")
 })
