@@ -51,6 +51,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("transcendental_matrix")
         .ingot().fluid()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0xffffff).secondaryColor(0x000000)
         .iconSet("transcendental_matrix")
         .element(GTElements.get("transcendental_matrix"))
