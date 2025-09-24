@@ -57,5 +57,6 @@
     "item.ad_astra.desh_tank": "Signalum Tank",
     "item.ad_astra.ostrum_tank": "HSS-S Tank",
     "item.ad_astra.calorite_tank": "Cryolobus Tank",
-    "info.ad_astra.oxygen_loader": "Uses Gregtech Oxygen to fill up space suits and gas tanks."
+    "info.ad_astra.oxygen_loader": "Uses Gregtech Oxygen to fill up space suits and gas tanks.",
+    "biome.ad_astra.glacio_lush_caves": "Glacian Lush Caves"
 }
