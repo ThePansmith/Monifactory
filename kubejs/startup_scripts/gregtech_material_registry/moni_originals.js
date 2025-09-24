@@ -50,7 +50,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // Prismatic Crucible Materials
 
     event.create("transcendental_matrix")
-        .ingot().fluid()
+        .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0xffffff).secondaryColor(0x000000)
         .iconSet("transcendental_matrix")
