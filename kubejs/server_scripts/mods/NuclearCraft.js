@@ -47,19 +47,41 @@ ServerEvents.recipes(event => {
     }
 
 
+    /*
+    Math: 8 nuggets = 1 NCN isotope. Total should be ~8 isotopes for all.
+    IRL the vast majority of spent nuclear fuel is the fertile isotope, with trace amounts of transmuted fissile product. This is disregarded in Moni for gameplay reasons.
+    However to encourage use of HE-fuels, LE fuels and only LE fuels return 1-2 units of the fertile isotope that was burned, except TBU, LEU-233, and LEA-242.
+
+    RTG & other exclusive isotopes:
+    U-233 only comes from TBU.
+    Cu-243 only comes from HEP-241.
+    Pu-238 only comes from HEN-236.
+    Am-241 only comes from HEP-239.
+    Cf-250 only comes from HEA-242.
+    */
+
+    // Thorium yields U-233, U-235, and Np-237 IRL. Np-236 added to make it possible to source Neptunium fuel just from TBU.
     decompdepleted("thorium_tbu", "2x nuclearcraft:uranium_233", "8x gtceu:uranium_235_nugget", "nuclearcraft:neptunium_236", "4x nuclearcraft:neptunium_237", GTValues.EV)
-    decompdepleted("uranium_leu_233", "4x nuclearcraft:plutonium_242", "4x gtceu:plutonium_nugget", "4x gtceu:plutonium_241_nugget", "3x nuclearcraft:americium_243", GTValues.IV)
-    decompdepleted("uranium_heu_233", "4x nuclearcraft:neptunium_236", "nuclearcraft:neptunium_237", "2x nuclearcraft:plutonium_242", "nuclearcraft:americium_242", GTValues.IV)
-    decompdepleted("uranium_leu_235", "nuclearcraft:neptunium_237", "40x gtceu:uranium_nugget", "8x gtceu:plutonium_nugget", "8x gtceu:plutonium_241_nugget", GTValues.IV)
-    decompdepleted("uranium_heu_235", "2x nuclearcraft:neptunium_237", "20x gtceu:uranium_nugget", "4x gtceu:plutonium_nugget", "3x nuclearcraft:plutonium_242", GTValues.IV)
-    decompdepleted("neptunium_len_236", "nuclearcraft:neptunium_237", "3x nuclearcraft:plutonium_242", "nuclearcraft:americium_241", "3x nuclearcraft:americium_243", GTValues.IV)
-    decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "16x gtceu:plutonium_nugget", "2x nuclearcraft:americium_242", "3x nuclearcraft:plutonium_242", GTValues.IV)
-    decompdepleted("plutonium_lep_239", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_243", "8x gtceu:plutonium_nugget", "3x nuclearcraft:berkelium_247", GTValues.LuV)
-    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_243", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_245", "3x nuclearcraft:berkelium_248", GTValues.LuV)
-    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:berkelium_248", "nuclearcraft:americium_243", "5x nuclearcraft:berkelium_247", GTValues.LuV)
-    decompdepleted("plutonium_hep_241", "nuclearcraft:americium_243", "3x nuclearcraft:curium_245", "3x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", GTValues.LuV)
-    decompdepleted("americium_lea_242", "nuclearcraft:curium_243", "5x nuclearcraft:curium_245", "nuclearcraft:californium_251", "nuclearcraft:californium_252", GTValues.LuV)
-    decompdepleted("americium_hea_242", "2x nuclearcraft:curium_245", "4x nuclearcraft:californium_251", "nuclearcraft:californium_252", "nuclearcraft:californium_250", GTValues.LuV)
+
+    // Uranium yields primarily isotopes of Plutonium (Especially Pu-239) with a little bit of Np-237 from U-235 fuels, and Americium from U-233 fuels. Np-236 added to LEU-233 to make it an alternative source aside from TBU.
+    decompdepleted("uranium_leu_233", "3x nuclearcraft:neptunium_236", "nuclearcraft:neptunium_237", "2x nuclearcraft:plutonium_242", "2x nuclearcraft:americium_243", GTValues.IV)
+    decompdepleted("uranium_heu_233", "5x nuclearcraft:plutonium_242", "4x gtceu:plutonium_nugget", "4x gtceu:plutonium_241_nugget", "2x nuclearcraft:americium_242", GTValues.IV)
+    decompdepleted("uranium_leu_235", "32x gtceu:uranium_nugget", "nuclearcraft:neptunium_237", "8x gtceu:plutonium_nugget", "2x nuclearcraft:plutonium_242", GTValues.IV)
+    decompdepleted("uranium_heu_235", "20x gtceu:uranium_nugget", "2x nuclearcraft:neptunium_237", "20x gtceu:plutonium_nugget", "8x gtceu:plutonium_241_nugget", GTValues.IV)
+
+    // HEN yields Pu-238 (RTG Plutonium) and both fuels yield a mix of Plutonium and Americium.
+    decompdepleted("neptunium_len_236", "nuclearcraft:neptunium_237", "3x nuclearcraft:plutonium_242", "8x gtceu:plutonium_nugget", "3x nuclearcraft:americium_243", GTValues.IV)
+    decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "3x nuclearcraft:plutonium_242", "16x gtceu:plutonium_nugget", "2x nuclearcraft:americium_242", GTValues.IV)
+
+    // Plutonium fuels yield Curium. (Especially Cu-245, which comes from Pu-242) Pu-239 fuels yield a bit of Np-237, while Pu-241 fuels yield Am-243. LE fuels, with their high Pu-242 content, also yield Am-243.
+    decompdepleted("plutonium_lep_239", "2x nuclearcraft:plutonium_242", "nuclearcraft:neptunium_237", "4x nuclearcraft:curium_245", "1x nuclearcraft:berkelium_247", GTValues.LuV)
+    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "2x nuclearcraft:neptunium_237", "3x nuclearcraft:curium_245", "2x nuclearcraft:berkelium_247", GTValues.LuV)
+    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "4x nuclearcraft:curium_245", "2x nuclearcraft:berkelium_248", GTValues.LuV)
+    decompdepleted("plutonium_hep_241", "2x nuclearcraft:americium_243", "3x nuclearcraft:curium_243", "1x nuclearcraft:berkelium_247", "2x nuclearcraft:berkelium_248", GTValues.LuV)
+
+    // Americium yields Curium. (Cu-243 from Americium-241, and Cu-245 from  Americium-243) LEA, with its high Am-243 content, also yields Pu-239.
+    decompdepleted("americium_lea_242", "8x gtceu:plutonium_nugget", "5x nuclearcraft:curium_245", "nuclearcraft:californium_251", "nuclearcraft:californium_252", GTValues.LuV)
+    decompdepleted("americium_hea_242", "3x nuclearcraft:curium_245", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "nuclearcraft:californium_250", GTValues.LuV)
 
     function cansolid(name, input) {
         event.remove({ output: `nuclearcraft:${name}_heat_sink` })
