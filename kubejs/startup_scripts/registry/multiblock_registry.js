@@ -660,7 +660,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("kubejs:block/casing/netherite/casing",
+        .workableCasingModel("monilabs:block/casing/netherite",
             "gtceu:block/multiblock/assembly_line")
 
     // MABS
