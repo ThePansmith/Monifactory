@@ -68,7 +68,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("meta_null")
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .color(0xffffff)
+        .color(0x13081a).secondaryColor(0x000000)
         .iconSet("meta_null")
         .element(GTElements.get("meta_null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
