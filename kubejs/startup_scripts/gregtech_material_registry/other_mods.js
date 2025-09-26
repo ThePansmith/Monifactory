@@ -213,7 +213,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("fluix")
         .gem()
         .dust()
-        .color(0xc82ebc).secondaryColor(0x410069)
+        .color(0x9c6fc9).secondaryColor(0x614895)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
         .components("charged_certus_quartz", "redstone", "nether_quartz")
@@ -293,11 +293,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("6x trinium", "2x naquadah", "1x carbon")
         .blastTemp(8747, "higher", GTValues.VA[GTValues.ZPM], 1200)
 
-    // Microversium is *technically* original to OmNoMoniTM, but it's a fairly direct riff on Modularium.
+    // Microversium/Microversite is *technically* original to OmNoMoniTM, but it's a fairly direct riff on Modularium.
 
     event.create("microversium")
         .ingot().liquid()
-        .color(0x9b61b8).secondaryColor(0x482382).iconSet("dull")
+        .color(0xa777bf).secondaryColor(0x60417a).iconSet("dull")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("2x steel", "glowstone", "redstone", "deuterium")
         .blastTemp(1700, "mid", 120, 600)
