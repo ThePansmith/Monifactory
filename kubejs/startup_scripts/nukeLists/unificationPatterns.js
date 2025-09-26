@@ -30,6 +30,7 @@ global.unificationExcludedItems = [
     "nuclearcraft:hard_carbon_ingot",
     "nuclearcraft:hard_carbon_dust",
     "nuclearcraft:tough_alloy_ingot",
+    "nuclearcraft:supercold_ice_block",
     "thermal:apple_block",
     "thermal:beetroot_block",
     "thermal:carrot_block",
