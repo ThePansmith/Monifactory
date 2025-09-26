@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     // T10MM missions
     microverse_mission(event, 10, 4).forEach(builder => {
         builder
-            .inputFluids("gtceu:helium_plasma 16000")
+            .inputFluids("gtceu:nickel_plasma 16000")
             .itemInputs("kubejs:universal_collapse_device", "4x kubejs:active_prismatic_core")
             .damageRate(120)
             .itemOutputs("16x kubejs:heart_of_a_universe")
