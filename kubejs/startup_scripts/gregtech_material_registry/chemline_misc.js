@@ -204,15 +204,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
-
-// Transmatrix/Infinity/Null/Monium Processing
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("radiant_blend")
-        .liquid()
-        .color(0xfff25e)
-})
-
 // Sculk Bioalloy Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 

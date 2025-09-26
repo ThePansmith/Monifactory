@@ -838,17 +838,6 @@ StartupEvents.registry("item", event => {
     // Phantom Paste
     event.create("framedblocks:phantom_paste")
 
-    // Priscore Line
-    event.create("chromatically_reactive_cluster")
-        .texture("kubejs:item/lines/prismac/infinity/intermediates/chromatically_reactive_cluster")
-        .displayName("Chromatically Reactive Cluster")
-    event.create("chromatically_reactive_shard")
-        .texture("kubejs:item/lines/prismac/infinity/intermediates/chromatically_reactive_shard")
-        .displayName("Chromatically Reactive Shard")
-    event.create("chromatically_inert_frame")
-        .texture("kubejs:item/lines/prismac/infinity/intermediates/chromatically_inert_frame")
-        .displayName("Chromatically Inert Frame")
-
     // Protomatter
     event.create("protomatter")
         .texture("kubejs:item/lines/antimatter/protomatter")
