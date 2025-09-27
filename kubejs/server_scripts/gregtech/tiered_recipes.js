@@ -400,6 +400,28 @@ function generateAlternatives(event, javaRecipe) {
         )
     }
 
+    // Hexafluorosilicic circuit boards
+    if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+        i.content.value.some(v => "tag" in v
+            ? v.tag === "forge:sulfuric_acid"
+            : v.fluid === "gtceu:sulfuric_acid"
+        ) && recipeName.match(/board/)
+    )) {
+        let r = parseRecipe(recipe)
+        r.useMultiplier(() => {
+            for (let inp of r.newInputFluids) {
+                if (inp.id !== "gtceu:sulfuric_acid") continue
+                inp.id = "gtceu:hexafluorosilicic_acid"
+                inp.amount /= 5
+            }
+        }, 5, 5)
+        r.register(
+            event,
+            recipeName + "/hexafluorosilicic",
+            machineName,
+        )
+    }
+
 }
 
 ServerEvents.recipes(event => {
