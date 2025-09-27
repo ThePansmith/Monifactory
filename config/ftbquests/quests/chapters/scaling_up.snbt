@@ -2819,26 +2819,28 @@
 				"{moni.quest.745628397790ED7A.description4}"
 				""
 				"{moni.quest.745628397790ED7A.description5}"
-				""
-				"{moni.quest.745628397790ED7A.description6}"
 				"{@pagebreak}"
+				"{moni.quest.745628397790ED7A.description6}"
+				""
 				"{moni.quest.745628397790ED7A.description7}"
 				""
 				"{moni.quest.745628397790ED7A.description8}"
-				""
-				"{moni.quest.745628397790ED7A.description9}"
 				"{@pagebreak}"
+				"{moni.quest.745628397790ED7A.description9}"
+				""
 				"{moni.quest.745628397790ED7A.description10}"
 				""
 				"{moni.quest.745628397790ED7A.description11}"
-				""
-				"{moni.quest.745628397790ED7A.description12}"
 				"{@pagebreak}"
+				"{moni.quest.745628397790ED7A.description12}"
+				""
 				"{moni.quest.745628397790ED7A.description13}"
 				""
 				"{moni.quest.745628397790ED7A.description14}"
-				""
+				"{@pagebreak}"
 				"[\"\",{\"translate\":\"moni.quest.745628397790ED7A.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.745628397790ED7A.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"40F7695BE1E65C41\"}},{\"translate\":\"moni.quest.745628397790ED7A.rich_description3\"}]"
+				""
+				"{moni.quest.745628397790ED7A.description15}"
 			]
 			disable_toast: true
 			icon: "nuclearcraft:fission_reactor_controller"
@@ -2857,7 +2859,7 @@
 					type: "item"
 				}
 				{
-					count: 215L
+					count: 95L
 					id: "09B080275946957D"
 					item: "nuclearcraft:fission_reactor_casing"
 					type: "item"
@@ -2869,13 +2871,13 @@
 					type: "item"
 				}
 				{
-					count: 62L
+					count: 13L
 					id: "39B4F53A8DDFD446"
-					item: "nuclearcraft:cryotheum_heat_sink"
+					item: "nuclearcraft:manganese_heat_sink"
 					type: "item"
 				}
 				{
-					count: 63L
+					count: 14L
 					id: "3759DFA116F90838"
 					item: "nuclearcraft:fission_reactor_solid_fuel_cell"
 					type: "item"

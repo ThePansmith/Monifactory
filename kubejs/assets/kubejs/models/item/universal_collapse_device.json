@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-      "layer0": "kubejs:item/miner_kits/universal_collapser",
-      "layer1": "kubejs:item/miner_kits/universal_collapser_lights"
+      "layer0": "kubejs:item/microverse/kit/universal_collapser",
+      "layer1": "kubejs:item/microverse/kit/universal_collapser_lights"
     }
   }

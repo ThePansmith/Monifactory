@@ -7,7 +7,7 @@ const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 const LocalizationUtils = Java.loadClass("com.lowdragmc.lowdraglib.utils.LocalizationUtils")
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
-
+const MoniGuiTextures = Java.loadClass("net.neganote.monilabs.client.gui.MoniGuiTextures");
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .setEUIO("in")
             .setMaxIOSize(2, 2, 0, 0)
             .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setProgressBar(MoniGuiTextures.PROGRESS_BAR_SIMULATION, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
             .setSound(GTSoundEntries.ASSEMBLER)
 
@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .setEUIO("in")
             .setMaxIOSize(2, 1, 0, 0)
             .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setProgressBar(MoniGuiTextures.PROGRESS_BAR_SIMULATION, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
     }
 
@@ -87,7 +87,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setEUIO("in")
         .setMaxIOSize(2, 2, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(MoniGuiTextures.PROGRESS_BAR_XP, FillDirection.DOWN_TO_UP)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
     // Rock Cycle Simulator
@@ -118,13 +118,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setMaxIOSize(1, 1, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL)
-
-    event.create("sculk_vat")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(2, 0, 3, 1)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.CHEMICAL)
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -135,21 +128,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.1"))
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.2"))
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.3"))
-
-    GTRecipeTypes.get("sculk_vat")
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.0"))
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.1"))
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.2"))
-        .addDataInfo((data) => {
-            if (data.contains("minimumXp") && data.contains("maximumXp")) {
-                let minimumXp = data.getInt("minimumXp");
-                let maximumXp = data.getInt("maximumXp");
-                return LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.3", String(minimumXp), String(maximumXp));
-            } else {
-                return "";
-            }
-        })
-        .addDataInfo((data) => "")
 
     // Normal mode-exclusive multis
     if (doHNN) {
@@ -166,12 +144,12 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .aisle("C@C", "CEC", "CCC")
                 .where("@", Predicates.controller(Predicates.blocks(definition.get())))
                 .where("E", Predicates.blocks("gtceu:pulsating_alloy_block"))
-                .where("C", Predicates.blocks("kubejs:dark_steel_machine_hull").setMinGlobalLimited(18)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(18)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_machine_hull",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/simulation_chamber")
 
         // Loot Superfabricator
@@ -186,12 +164,12 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .aisle("C@C", "CEC", "CCC")
                 .where("@", Predicates.controller(Predicates.blocks(definition.get())))
                 .where("E", Predicates.blocks("gtceu:energetic_alloy_block"))
-                .where("C", Predicates.blocks("kubejs:dark_steel_machine_hull").setMinGlobalLimited(18)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(18)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("kubejs:block/dark_steel_machine_hull",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/loot_fabricator")
 
 
@@ -213,13 +191,13 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where("O", Predicates.blocks("gtceu:omnium_block"))
                 .where("Q", Predicates.blocks("ae2:quartz_vibrant_glass"))
                 .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-                .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(40)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(40)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/simulation_chamber")
 
         // Loot Quantumfabricator
@@ -240,13 +218,13 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where("O", Predicates.blocks("gtceu:omnium_block"))
                 .where("Q", Predicates.blocks("ae2:quartz_vibrant_glass"))
                 .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-                .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(40)
+                .where("C", Predicates.blocks("kubejs:dark_steel_casing").setMinGlobalLimited(40)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
+            .workableCasingModel("kubejs:block/casing/dark_steel/casing",
                 "gtceu:block/multiblock/loot_fabricator")
     }
 
@@ -462,7 +440,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             )
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("kubejs:block/soularium/casing",
+        .workableCasingModel("kubejs:block/casing/soularium/casing",
             "gtceu:block/multiblock/implosion_compressor")
 
     // Discharger
@@ -677,12 +655,12 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("F", Predicates.blocks("monilabs:bioalloy_fusion_casing"))
             .where("R", Predicates.blocks(GTBlocks.CASING_GRATE.get())
                 .or(Predicates.abilities(PartAbility.DATA_ACCESS).setExactLimit(1)))
-            .where("M", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
+            .where("M", Predicates.blocks("kubejs:omnic_matrix_casing"))
             .where("I", Predicates.blocks("monilabs:eltz_frame"))
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("kubejs:block/netherite/casing",
+        .workableCasingModel("monilabs:block/casing/netherite",
             "gtceu:block/multiblock/assembly_line")
 
     // MABS
@@ -765,7 +743,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("antimatter_manipulator", "multiblock")
         .recipeTypes(MoniRecipeTypes.ANTIMATTER_MANIPULATOR_RECIPES)
         .recipeModifiers([MoniRecipeModifiers.antiMatterManipulatorRecipeModifier(), GTRecipeModifiers.OC_NON_PERFECT])
-        .appearanceBlock(() => Block.getBlock("monilabs:bioalloy_casing"))
+        .appearanceBlock(() => Block.getBlock("monilabs:dimensional_stabilization_netherite_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#MOM#", "##O##", "#####", "#####", "#####", "#####", "#####", "#####")
             .aisle("MMMMM", "#BOB#", "#BBB#", "##F##", "##F##", "##F##", "##F##", "#BBB#")
@@ -774,7 +752,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle(" MOM ", "##O##", "#####", "#####", "#####", "#####", "#####", "#####")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where("O", Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
-            .where("B", Predicates.blocks("monilabs:bioalloy_casing")
+            .where("B", Predicates.blocks("monilabs:dimensional_stabilization_netherite_casing")
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
@@ -787,13 +765,13 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("#", Predicates.any())
             .where("M", Predicates.blocks(GTBlocks.CASING_HSSE_STURDY.get()))
             .build())
-        .workableCasingModel("monilabs:block/casing/bioalloy",
+        .workableCasingModel("monilabs:block/casing/netherite",
             "gtceu:block/multiblock/implosion_compressor")
 
     // Antimatter Collider
     event.create("antimatter_collider", "multiblock")
         .machine((holder) => new AntimatterGeneratorMachine(holder))
-        .appearanceBlock(() => new Block.getBlock("monilabs:bioalloy_casing"))
+        .appearanceBlock(() => new Block.getBlock("monilabs:dimensional_stabilization_netherite_casing"))
         .recipeTypes(MoniRecipeTypes.ANTIMATTER_COLLIDER_RECIPES)
         .recipeModifier(MoniRecipeModifiers.antiMatterGeneratorRecipeModifier())
         .pattern(definition => FactoryBlockPattern.start()
@@ -810,11 +788,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("#MMMMMMMMM#", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "#MMMMMMMMM#")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where("M", Predicates.blocks("gtceu:atomic_casing"))
-            .where("A", Predicates.blocks("monilabs:bioalloy_casing")
+            .where("A", Predicates.blocks("monilabs:dimensional_stabilization_netherite_casing")
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS_1X).setExactLimit(1)))
-            .where("B", Predicates.blocks("monilabs:bioalloy_casing")
+            .where("B", Predicates.blocks("monilabs:dimensional_stabilization_netherite_casing")
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS_1X).setExactLimit(1)))
-            .where("O", Predicates.blocks("monilabs:bioalloy_casing")
+            .where("O", Predicates.blocks("monilabs:dimensional_stabilization_netherite_casing")
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where("X", Predicates.blocks("gtceu:hsse_frame"))
             .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
@@ -824,42 +802,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("monilabs:block/casing/bioalloy",
+        .workableCasingModel("monilabs:block/casing/netherite",
             "gtceu:block/machines/reconstructor")
-
-    // Sculk Vat
-    event.create("sculk_vat", "multiblock")
-        .machine((holder) => new SculkVatMachine(holder))
-        .recipeTypes("sculk_vat")
-        .recipeModifier(MoniRecipeModifiers.sculkVatRecipeModifier())
-        .appearanceBlock(() => Block.getBlock("monilabs:cryolobus_casing"))
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#CCC#", "#CLC#", "#CLC#", "#CLC#", "#CCC#", "#F#F#", "#ccc#")
-            .aisle("CCCCC", "C   C", "C   C", "C   C", "C   C", "FSSSF", "ccccc")
-            .aisle("CCCCC", "L P L", "L P L", "L P L", "C P C", "#SSS#", "ccccc")
-            .aisle("CCCCC", "C   C", "C   C", "C   C", "C   C", "FSSSF", "ccccc")
-            .aisle("#C@C#", "#CLC#", "#CLC#", "#CLC#", "#CCC#", "#F#F#", "#ccc#")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("C", Predicates.blocks("monilabs:cryolobus_casing").setMinGlobalLimited(40)
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS_1X).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
-                .or(Predicates.blocks("monilabs:sculk_xp_draining_hatch").setMaxGlobalLimited(1))
-                .or(Predicates.blocks("monilabs:sculk_xp_sensor_hatch").setMaxGlobalLimited(1))
-            )
-            .where("c", Predicates.blocks("monilabs:cryolobus_casing"))
-            .where("L", Predicates.blocks("gtceu:laminated_glass")
-                .or(Predicates.blocks("monilabs:cryolobus_casing"))
-            )
-            .where("F", Predicates.frames(GTMaterials.BlackSteel))
-            .where("S", Predicates.blocks(GTBlocks.FILTER_CASING_STERILE.get()))
-            .where("P", Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
-            .where(" ", Predicates.air())
-            .where("#", Predicates.any())
-            .build()
-        )
-        .workableCasingModel("monilabs:block/casing/cryolobus",
-            "gtceu:block/machines/fermenter")
 })

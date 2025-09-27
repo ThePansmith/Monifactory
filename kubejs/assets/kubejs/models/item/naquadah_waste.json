@@ -1,7 +1,7 @@
 {
     "parent":"item/generated",
     "textures": {
-      "layer0":"kubejs:item/naquadah/soot_glow_blue",
-      "layer1":"kubejs:item/naquadah/naquadah_waste"
+      "layer0":"kubejs:item/lines/naquadah_fuel/soot_glow_blue",
+      "layer1":"kubejs:item/lines/naquadah_fuel/naquadah_waste"
     }
 }

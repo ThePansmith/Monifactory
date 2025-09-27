@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:fly_ash_polymineral_mixture_dust")
         .inputFluids(Fluid.of("gtceu:oxalic_acid_solution", 1000))
         .chancedOutput("gtceu:mica_dust", 9900, 0)
-        .chancedOutput("gtceu:certus_quartz_dust", 9900, 0)
+        .chancedOutput("ae2:certus_quartz_dust", 9900, 0)
         .chancedOutput("gtceu:quartzite_dust", 9900, 0)
         .chancedOutput("gtceu:marble_dust", 9900, 0)
         .chancedItemOutputLogic(ChanceLogic.XOR)

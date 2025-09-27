@@ -1114,7 +1114,7 @@
 				""
 				"{moni.quest.1CA3A00393EDD648.description5}"
 			]
-			icon: "gtceu:sculk_vat"
+			icon: "monilabs:sculk_vat"
 			id: "1CA3A00393EDD648"
 			rewards: [{
 				id: "129C89BAC8F66B0E"
@@ -1124,7 +1124,7 @@
 			tasks: [
 				{
 					id: "771C1E9BF4BECE4A"
-					item: "gtceu:sculk_vat"
+					item: "monilabs:sculk_vat"
 					type: "item"
 				}
 				{

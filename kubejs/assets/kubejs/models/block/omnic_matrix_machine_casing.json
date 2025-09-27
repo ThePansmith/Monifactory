@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "kubejs:block/omnium/casing"
+    "all": "kubejs:block/casing/omnium/casing"
   }
 }

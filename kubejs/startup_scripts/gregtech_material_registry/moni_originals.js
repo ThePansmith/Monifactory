@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("cryolobus")
         .ingot().fluid()
         .element(GTElements.get("cryolobus"))
-        .color(0x022C34).iconSet("dull")
+        .color(0x035155).secondaryColor(0x04203d).iconSet("dull")
         .blastTemp(6800, "higher")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME)
         .cableProperties(524288, 4, 0, true);
@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("cryococcus")
         .ingot().fluid()
         .element(GTElements.get("cryococcus"))
-        .color(0x088286).secondaryColor(0x022C34).iconSet("dull")
+        .color(0x009295).secondaryColor(0x07303b).iconSet("dull")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
 
     event.create("sculk_superconductor")
@@ -50,9 +50,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // Prismatic Crucible Materials
 
     event.create("transcendental_matrix")
-        .ingot().fluid()
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0xffffff).secondaryColor(0x000000)
-        .iconSet("shiny")
+        .iconSet("transcendental_matrix")
         .element(GTElements.get("transcendental_matrix"))
         .flags(GTMaterialFlags.GENERATE_FOIL)
 

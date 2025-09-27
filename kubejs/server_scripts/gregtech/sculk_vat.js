@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("sculk_vat")
         .itemInputs("monilabs:cryolobus_casing", "gtceu:iv_fermenter", "gtceu:sterilizing_filter_casing", "2x #gtceu:circuits/zpm", "16x gtceu:petri_dish")
         .inputFluids("gtceu:soldering_alloy 576", "gtceu:polybenzimidazole 288")
-        .itemOutputs("gtceu:sculk_vat")
+        .itemOutputs("monilabs:sculk_vat")
         .duration(20 * 30)
         .EUt(GTValues.VA[GTValues.ZPM])
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:iv_fermenter").EUt(GTValues.VA[GTValues.IV]).duration(20 * 50))
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.sculk_vat("sculk_growth")
         .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs("1x #moni:sculk_growable")
+        .itemInputs("1x minecraft:stone")
         .outputFluids("gtceu:sculk 288")
         .xpRange(64000, 88000)
         .duration(20 * 3)

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "kubejs:block/microverse/signalum_micro_miner_core",
+		"0": "kubejs:block/microverse/component/signalum_micro_miner_core",
 		"particle": "minecraft:block/redstone_block",
 		"parent": "minecraft:block/block"
 	},

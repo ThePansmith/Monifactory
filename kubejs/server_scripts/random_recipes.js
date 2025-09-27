@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
         .EUt(2)
 
     event.remove({ id: "gtceu:macerator/macerate_sandstone" });
-    event.recipes.gtceu.macerator("saltpeter_dust")
+    event.recipes.gtceu.electrolyzer("saltpeter_dust")
         .itemInputs("4x #forge:sandstone")
         .itemOutputs("gtceu:saltpeter_dust")
         .duration(300)
@@ -831,7 +831,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("germanium_smd_diode")
         .itemInputs("1x gtceu:germanium_dust", "8x gtceu:fine_platinum_wire")
         .inputFluids("gtceu:polyethylene 288")
-        .itemOutputs("32x gtceu:smd_diode")
+        .itemOutputs("64x gtceu:smd_diode")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
@@ -839,7 +839,7 @@ ServerEvents.recipes(event => {
         .notConsumable("gtceu:cylinder_casting_mold")
         .inputFluids("gtceu:borosilicate_glass 18")
         .itemOutputs("2x gtceu:petri_dish")
-        .duration(4 * 20)
+        .duration(80)
         .EUt(GTValues.VA[GTValues.HV])
 
     // Alternate Recipe for Octane

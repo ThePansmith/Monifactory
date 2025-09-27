@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "kubejs:block/cryolobus/cryococcus_casing"
+    "all": "kubejs:block/casing/cryococcus/casing"
   }
 }

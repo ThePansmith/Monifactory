@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         .outputFluids("monilabs:sculk_bioalloy 1440")
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
-        .blastFurnaceTemp(2836)
+        .blastFurnaceTemp(12000)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.alloy_blast_smelter("sculk_bioalloy_gas")
@@ -46,6 +46,6 @@ ServerEvents.recipes(event => {
         .outputFluids("monilabs:sculk_bioalloy 1440")
         .duration(75)
         .EUt(GTValues.VA[GTValues.ZPM])
-        .blastFurnaceTemp(2836)
+        .blastFurnaceTemp(12000)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 })

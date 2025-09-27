@@ -58,11 +58,3 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ULV])
         .category("gtceu:macerator_recycling")
 })
-
-/*
-Add a custom tag to all the items whose blocks can be used to grow Sculk
-for use in the Svat recipe that grows sculk
-*/
-ServerEvents.tags("item", event => {
-    event.add("moni:sculk_growable", Block.getTaggedIds("minecraft:sculk_replaceable"))
-})

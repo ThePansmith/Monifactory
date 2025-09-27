@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "kubejs:block/omnium/coil"
+    "all": "kubejs:block/coil/omnic_matrix/coil"
   }
 }

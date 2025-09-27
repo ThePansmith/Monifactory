@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
             D: "kubejs:pulsating_mesh"
         })
 
-        event.shaped("kubejs:dark_steel_machine_hull", [
+        event.shaped("kubejs:dark_steel_casing", [
             "AAA",
             "ABA",
             "AAA"
@@ -52,9 +52,9 @@ ServerEvents.recipes(event => {
             B: "gtceu:lv_machine_hull"
         })
 
-        event.recipes.gtceu.assembler("dark_steel_machine_hull")
+        event.recipes.gtceu.assembler("dark_steel_casing")
             .itemInputs("gtceu:lv_machine_hull", "8x #forge:plates/dark_steel")
-            .itemOutputs("kubejs:dark_steel_machine_hull")
+            .itemOutputs("kubejs:dark_steel_casing")
             .duration(50)
             .EUt(16)
             .circuit(6)
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:pulsating_mesh",
             B: "#gtceu:circuits/lv",
             C: "minecraft:glass_pane",
-            D: "kubejs:dark_steel_machine_hull"
+            D: "kubejs:dark_steel_casing"
         })
 
         event.shaped("hostilenetworks:loot_fabricator", [
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
             A: "gtceu:energetic_alloy_plate",
             B: "#gtceu:circuits/mv",
             C: "minecraft:glass_pane",
-            D: "kubejs:dark_steel_machine_hull",
+            D: "kubejs:dark_steel_casing",
             H: "minecraft:hopper"
         })
 

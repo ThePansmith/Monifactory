@@ -1,7 +1,7 @@
 {
     "parent":"item/generated",
     "textures": {
-      "layer0":"kubejs:item/data/dragon_lair",
-      "layer1":"kubejs:item/data/overlay"
+      "layer0":"kubejs:item/mod/hostilenetworks/data/dragon_lair",
+      "layer1":"kubejs:item/mod/hostilenetworks/data/overlay"
     }
 }

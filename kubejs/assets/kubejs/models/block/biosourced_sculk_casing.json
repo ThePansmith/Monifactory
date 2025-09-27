@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "kubejs:block/biosculk/casing"
+    "all": "kubejs:block/casing/biosculk/casing"
   }
 }
