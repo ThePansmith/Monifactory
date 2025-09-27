@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     // Controller
     event.recipes.gtceu.assembly_line("prismatic_crucible")
         .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "6x gtceu:uv_sensor", "2x #gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "4x gtceu:uhv_electric_pump", "2x gtceu:dense_trinaquadalloy_plate", "16x gtceu:normal_laser_pipe", "12x gtceu:tritanium_single_cable")
-        .inputFluids("gtceu:advanced_soldering_alloy 1728", "gtceu:polyether_ether_ketone 1152", "gtceu:omnium 1728", "gtceu:radiant_blend 4000")
+        .inputFluids("gtceu:advanced_soldering_alloy 1728", "gtceu:polyether_ether_ketone 1152", "gtceu:omnium 1728")
         .itemOutputs("monilabs:prismatic_crucible")
         .duration(20 * 120)
         .EUt(GTValues.VA[GTValues.UHV])
