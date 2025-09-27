@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 10)
         .EUt(GTValues.VA[GTValues.UHV])
         .stationResearch(b => b
-            .researchStack("gtceu:small_naquadah_alloy_gear")
+            .researchStack("kubejs:chromatically_inert_frame")
             .CWUt(144)
             .EUt(GTValues.VA[GTValues.UHV])
         )
@@ -28,8 +28,15 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembler("inert_prismatic_core")
-        .itemInputs("gtceu:small_naquadah_alloy_gear", "12x gtceu:omnium_nugget", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(), "kubejs:heart_of_a_universe")
+        .itemInputs("kubejs:chromatically_inert_frame", "12x gtceu:omnium_nugget", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(), "kubejs:heart_of_a_universe")
         .itemOutputs("kubejs:inert_prismatic_core")
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])
+
+    event.recipes.gtceu.chemical_bath("chromatically_inert_frame")
+        .itemInputs("gtceu:small_neutronium_gear")
+        .inputFluids("gtceu:trinaquadalloy 144")
+        .itemOutputs("kubejs:chromatically_inert_frame")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.ZPM])
 })

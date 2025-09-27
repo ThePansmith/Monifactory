@@ -838,6 +838,10 @@ StartupEvents.registry("item", event => {
     // Phantom Paste
     event.create("framedblocks:phantom_paste")
 
+    // Priscore Line
+    event.create("chromatically_inert_frame")
+        .texture("kubejs:item/lines/prismac/infinity/intermediates/chromatically_inert_frame")
+
     // Protomatter
     event.create("protomatter")
         .texture("kubejs:item/lines/antimatter/protomatter")
