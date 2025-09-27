@@ -59,8 +59,12 @@ If you want to switch the pack mode on a dedicated server, follow these instruct
 - Universal:
     - Open Command Prompt and type in this command in your minecraft server's installation folder:
       ```
-      java -jar ${Server Root}\mods\Monilabs-{Version #}.jar (N/H/E)
+      java -jar ${Server Root}\mods\Monilabs-${Version #}.jar ${N/H/E}
       ```
+    - You'll need to replace ${Server Root} with the path of your server, E.G ``C:\MonilabsServer`` or ``/var/opt/moniserver/``.
+    Keep in mind these are most likely **not** be the path of your Monifactory server, open your perfered shell/command interface, for Windows run ``cd`` without any parameters, for Mac/Linux/FreeBSD, run ``pwd``.
+    - ${Version #} must be replaced with the version number of Monilabs, most shells/command interfaces will allow you to autocomplete the file name just by pressing Tab
+    - ${N/H/E} is the mode of Moni you want to switch to, N is for Normal Mode, H is for Hard Mode, and E is for Expert Mode
     - Typing in nothing will prompt you to change your pack mode
 
 
