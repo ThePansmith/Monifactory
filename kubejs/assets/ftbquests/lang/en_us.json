@@ -366,7 +366,7 @@
   "moni.quest.0D6C8FFD01BE5C21.title": "&2Pyrolyse Oven",
   "moni.quest.0D732BC5312234B4.title": "Element 041: Niobium",
   "moni.quest.0DB13ACF2241345E.title": "Element 060: Neodymium",
-  "moni.quest.0DB8063A7972E1C0.description1": "With access to &6Diamond components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3.",
+  "moni.quest.0DB8063A7972E1C0.description1": "With access to &6Diamond Components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3.",
   "moni.quest.0DB8063A7972E1C0.description2": "Every &3Auto Crafting Table&r comes with three recipe slots in the top-right corner. To configure a recipe, the crafting grid must be filled with the recipe you wish to automate, and then saved to the table by &8Shift-Left-Clicking&r one of those recipe slots.",
   "moni.quest.0DB8063A7972E1C0.description3": "Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time.",
   "moni.quest.0DB8063A7972E1C0.description4": "Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting.",
