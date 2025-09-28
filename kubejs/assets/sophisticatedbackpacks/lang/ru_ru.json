@@ -1,0 +1,14 @@
+{
+    "item.sophisticatedbackpacks.backpack": "Рюкзак",
+    "item.sophisticatedbackpacks.copper_backpack": "Свинцовый рюкзак",
+    "item.sophisticatedbackpacks.iron_backpack": "Закалённый рюкзак",
+    "item.sophisticatedbackpacks.gold_backpack": "Усиленный рюкзак",
+    "item.sophisticatedbackpacks.diamond_backpack": "Сигналиевый рюкзак",
+    "item.sophisticatedbackpacks.netherite_backpack": "Резонансный рюкзак",
+    "block.sophisticatedbackpacks.backpack": "Рюкзак",
+    "block.sophisticatedbackpacks.copper_backpack": "Свинцовый рюкзак",
+    "block.sophisticatedbackpacks.iron_backpack": "Закалённый рюкзак",
+    "block.sophisticatedbackpacks.gold_backpack": "Усиленный рюкзак",
+    "block.sophisticatedbackpacks.diamond_backpack": "Сигналиевый рюкзак",
+    "block.sophisticatedbackpacks.netherite_backpack": "Резонансный рюкзак"
+}
