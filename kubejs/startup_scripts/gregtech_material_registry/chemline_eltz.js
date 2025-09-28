@@ -64,4 +64,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0x231e1e)
         .components(GTMaterials.Iron.multiply(1), GTMaterials.Oxygen.multiply(1))
+
+    event.create("caesium_hydroxide")
+        .dust()
+        .color(0xbd8340).iconSet("dull")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("caesium", "oxygen", "hydrogen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 })
