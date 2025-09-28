@@ -26,20 +26,20 @@ JEIEvents.hideItems(event => {
         event.hide("kubejs:meowni_plush")
     }
     if (!doHNN) {
-        event.hide(/hostilenetworks/)
+        event.hide(/^hostilenetworks/)
     }
     if(doHarderRecipes) {
         event.hide("watercollector:watercollector")
     }
     if (!doLaserIO) {
-        event.hide(/laserio:laser/)
-        event.hide(/laserio:filter/)
-        event.hide(/laserio:card_/)
+        event.hide(/^laserio:laser/)
+        event.hide(/^laserio:filter/)
+        event.hide(/^laserio:card_/)
         event.hide("laserio:overclocker_node")
         event.hide("laserio:overclocker_card")
     }
     if(!doConverters) {
-        event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
-        event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
+        event.hide(/^gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter$/)
+        event.hide(/^gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter$/)
     }
 })

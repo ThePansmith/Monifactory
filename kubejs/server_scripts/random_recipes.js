@@ -283,14 +283,6 @@ ServerEvents.recipes(event => {
         E: "kubejs:nether_star_center"
     })
 
-    // Obby grinding
-    event.recipes.gtceu.macerator("obsidian_dust")
-        .itemInputs("minecraft:obsidian")
-        .itemOutputs("gtceu:obsidian_dust")
-        .duration(40)
-        .EUt(2)
-
-    event.remove({ id: "gtceu:macerator/macerate_sandstone" });
     event.recipes.gtceu.electrolyzer("saltpeter_dust")
         .itemInputs("4x #forge:sandstone")
         .itemOutputs("gtceu:saltpeter_dust")
@@ -598,6 +590,7 @@ ServerEvents.recipes(event => {
         .EUt(98304)
         .fusionStartEU(600000000)
 
+    // Resonant Ender <-> Pearl
     event.recipes.gtceu.extractor("resonant_ender_from_pearl")
         .itemInputs("1x minecraft:ender_pearl")
         .outputFluids(Fluid.of("thermal:ender", 250))

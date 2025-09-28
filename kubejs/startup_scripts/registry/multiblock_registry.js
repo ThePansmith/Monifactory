@@ -655,7 +655,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("F", Predicates.blocks("monilabs:bioalloy_fusion_casing"))
             .where("R", Predicates.blocks(GTBlocks.CASING_GRATE.get())
                 .or(Predicates.abilities(PartAbility.DATA_ACCESS).setExactLimit(1)))
-            .where("M", Predicates.blocks("kubejs:omnic_matrix_casing"))
+            .where("M", Predicates.blocks("kubejs:eltz_casing"))
             .where("I", Predicates.blocks("monilabs:eltz_frame"))
             .where(" ", Predicates.air())
             .where("#", Predicates.any())

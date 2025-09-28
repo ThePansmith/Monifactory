@@ -55,7 +55,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xffffff).secondaryColor(0x000000)
         .iconSet("transcendental_matrix")
         .element(GTElements.get("transcendental_matrix"))
-        .flags(GTMaterialFlags.GENERATE_FOIL)
+        .flags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_FRAME)
 
     event.create("infinity")
         .ingot()

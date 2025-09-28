@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line("dimensional_superassembler")
-        .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uev", "16x gtceu:infinity_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "16x kubejs:omnic_matrix_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame")
+        .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uev", "16x gtceu:infinity_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "16x kubejs:eltz_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame")
         .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:dimensional_superassembler")
         .duration(6000)
@@ -462,9 +462,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
 
     // Casings
-    event.recipes.gtceu.assembler("kubejs:omnic_matrix_casing")
-        .itemInputs("6x gtceu:omnium_plate", "monilabs:crystal_matrix_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
-        .itemOutputs("2x kubejs:omnic_matrix_casing")
+    event.recipes.gtceu.assembler("kubejs:eltz_casing")
+        .itemInputs("6x gtceu:eltz_plate", "monilabs:eltz_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
+        .itemOutputs("2x kubejs:eltz_casing")
         .duration(100)
         .EUt(65520)
 
@@ -506,13 +506,13 @@ ServerEvents.recipes(event => {
 
     // Shortcut recipes for thrusters
     event.recipes.gtceu.assembler("kubejs:assembler_dark_soularium_thruster")
-        .itemInputs("4x gtceu:dark_soularium_plate", "6x gtceu:vibrant_alloy_plate", "2x enderio:weather_crystal", "2x enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_8", "kubejs:flight_control_unit")
+        .itemInputs("4x gtceu:double_dark_soularium_plate", "6x gtceu:vibrant_alloy_plate", "2x enderio:weather_crystal", "2x enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_8")
         .itemOutputs("kubejs:dark_soularium_thruster")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.assembler("kubejs:assembler_flux_thruster")
-        .itemInputs("3x redstone_arsenal:flux_plating", "4x gtceu:enderium_plate", "2x gtceu:signalum_plate", "thermal:dynamo_numismatic", "thermal:rf_coil", "kubejs:glowstone_elevation_unit")
+        .itemInputs("3x redstone_arsenal:flux_plating", "4x gtceu:enderium_plate", "3x gtceu:double_signalum_plate", "thermal:dynamo_numismatic", "thermal:rf_coil")
         .itemOutputs("kubejs:fluxed_thruster")
         .duration(70)
         .EUt(GTValues.VA[GTValues.IV])
