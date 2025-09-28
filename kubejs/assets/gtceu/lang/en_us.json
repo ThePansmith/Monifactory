@@ -437,6 +437,8 @@
     "material.gtceu.uranium_233": "Uranium 233",
     "material.gtceu.plutonium_238": "Plutonium 238",
     "material.gtceu.plutonium_242": "Plutonium 242",
+    "gtceu.uhv_voltage_coil": "Legendary Coil",
+    "gtceu.uev_voltage_coil": "Supreme Coil",
     "__HM_MISC__.header": "============",
     "__HM_MISC__.flufff": "> HM Misc. <",
     "__HM_MISC__.footer": "============",

@@ -173,6 +173,10 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
     tooltip.add("gtceu:uev_uev_parallel_hatch", Text.translatable("gtceu.omega_parallel_hatch.desc"))
 
+    // Voltage Coils
+    tooltip.add("kubejs:uhv_voltage_coil", Text.translatable("gtceu.uhv_voltage_coil.desc"))
+    tooltip.add("kubejs:uev_voltage_coil", Text.translatable("gtceu.uev_voltage_coil.desc"))
+
     // Assorted info & warnings for GT machines
     tooltip.add("gtceu:basic_tape", Text.translatable("gtceu.basic_tape.tooltip"));
     tooltip.add("gtceu:nightvision_goggles", Text.translatable("gtceu.nightvision_goggles.tooltip"));

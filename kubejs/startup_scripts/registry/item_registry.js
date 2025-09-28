@@ -862,4 +862,9 @@ StartupEvents.registry("item", event => {
     event.create("transcendental_soul_vial")
         .texture("kubejs:item/trans_vial")
         .displayName("Transcendental Soul Vial")
+
+    event.create("uhv_voltage_coil")
+        .displayName("Ultra High Voltage Coil")
+    event.create("uev_voltage_coil")
+        .displayName("Ultra Extreme Voltage Coil")
 })
