@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:uev_voltage_coil")
         .circuit(1)
         .duration(200)
-        .EUt(GTValues.VA[GTValues.UHV])
+        .EUt(GTValues.VA[GTValues.UEV])
 
     // Dynamo Hatches
     event.remove({ id:"gtceu:assembly_line/dynamo_hatch_uhv"})
