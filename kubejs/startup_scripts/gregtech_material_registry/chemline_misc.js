@@ -233,18 +233,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 })
 
-// Omnic Acid doesn't really have a "Processing Line", but there's nowhere better to really put it.
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("omnic_acid")
-        .fluid()
-        .color(0xff00ff)
-        .iconSet("shiny")
-        .components("5x carbon", "4x hydrogen", "3x oxygen", "4x omnium")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-})
-
 // Optical Circuits
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
