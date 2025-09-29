@@ -25,5 +25,5 @@ StartupEvents.postInit(event => {
         .where("C", Predicates.controller(Predicates.blocks(UtilMachines.PTERB_MACHINE.getBlock())))
         .where("F", Predicates.frames(GTMaterials.Europium))
         .build()
-    UtilMachines.PTERB_MACHINE.setPatternFactory(GTMemoizer.memoize(() => pterb_pattern.apply(UtilMachines.PTERB_MACHINE)));
+    UtilMachines.PTERB_MACHINE.setPatternFactory(GTMemoizer["memoize(java.util.function.Supplier)"](() => pterb_pattern.apply(UtilMachines.PTERB_MACHINE)));
 })

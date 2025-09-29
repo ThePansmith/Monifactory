@@ -19,5 +19,5 @@ let active_transformer_pattern = (definition) => FactoryBlockPattern.start()
 
 // Set the pattern for Active Transformer
 StartupEvents.postInit(event => {
-    GTMultiMachines.ACTIVE_TRANSFORMER.setPatternFactory(GTMemoizer.memoize(() => active_transformer_pattern.apply(GTMultiMachines.ACTIVE_TRANSFORMER)))
+    GTMultiMachines.ACTIVE_TRANSFORMER.setPatternFactory(GTMemoizer["memoize(java.util.function.Supplier)"](() => active_transformer_pattern.apply(GTMultiMachines.ACTIVE_TRANSFORMER)))
 })

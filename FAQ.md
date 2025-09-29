@@ -142,6 +142,11 @@ DarkModeEverywhere is enabled by default, and makes your UI darker (duh). You ca
 
 Thermal Expansion Dynamos will only output energy while producing it.
 
+**Q. My circuit assembler isn't crafting my circuits!**
+
+Make sure your items are in a **Circuit Assembler** and not the **Assembler**, to tell the difference, you can check how many slots the machine has, if it has 9 slots, it's a normal assembler, if it has 6 slots, it's a circuit assembler.
+
+
 ### Servers
 
 **Q. How do I update Monifactory on my server?**
