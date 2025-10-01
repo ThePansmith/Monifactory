@@ -5,7 +5,7 @@
 ## Table of Contents ##
 - [Introduction](#introduction)
   - [Basics of Git](#basics-of-git)
-  - [Git Vs. GitHub](#git-versus-github)
+  - [Git versus GitHub](#git-versus-github)
 - [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
 - [Getting Started](#getting-started)
   - [Setting up an instance repository for use in dev](#setting-up-an-instance-repository-for-use-in-dev)
