@@ -57,5 +57,6 @@
     "item.ad_astra.calorite_tank": "Бак из криолобуса",
     "info.ad_astra.oxygen_loader": "Использует Кислород из GregTech чтобы наполнить скафандры и газовые балоны.",
     "item.ad_astra.steel_engine": "Двигатель из чёрной стали",
-    "item.ad_astra.steel_tank": "Бак из чёрной стали"
+    "item.ad_astra.steel_tank": "Бак из чёрной стали",
+    "biome.ad_astra.glacio_lush_caves": "Ледниковые пышные пещеры"
 }
