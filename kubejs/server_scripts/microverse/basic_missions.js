@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "32x gtceu:raw_salt",
                 "24x gtceu:raw_rock_salt",
-                "48x gtceu:raw_lepidolite",
+                "32x gtceu:raw_lepidolite",
                 "48x gtceu:raw_spodumene",
             )
     })
