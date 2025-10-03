@@ -403,7 +403,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
-        .outputFluids(Fluid.of("gtceu:radon", 1000))
+        .outputFluids(Fluid.of("gtceu:radon", 125))
         .circuit(1)
         .duration(200)
         .EUt(2000)
@@ -865,4 +865,12 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x gtceu:saltpeter_dust", "gtceu:sulfur_dust", "3x gtceu:carbon_dust")
         .duration(110)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // Gilded Blackstone maceration
+    event.recipes.gtceu.macerator("macerate_gilded_blackstone")
+        .itemInputs("minecraft:gilded_blackstone")
+        .itemOutputs("gtceu:blackstone_dust")
+        .chancedOutput("gtceu:gold_dust", 2500, 0)
+        .duration(66)
+        .EUt(2)
 })

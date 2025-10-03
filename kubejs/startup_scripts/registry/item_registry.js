@@ -19,7 +19,6 @@ StartupEvents.registry("item", event => {
         "7_damaged",
         "8",
         "8_damaged",
-        "8half",
         "9",
         "10",
         "11",
