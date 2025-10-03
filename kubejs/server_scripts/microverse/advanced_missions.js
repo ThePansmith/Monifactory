@@ -171,6 +171,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_dilithium",
                 "48x gtceu:raw_dilithium",
             )
+            .damageRate(2)
     })
 
     // T6MM missions
