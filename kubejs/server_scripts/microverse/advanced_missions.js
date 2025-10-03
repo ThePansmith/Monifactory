@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
                     "64x gtceu:raw_naquadah",
                     "24x gtceu:raw_kaemanite",
                 )
-                .damageRate(2)
+                .damageRate(3)
         } else {
             builder
                 .itemInputs("16x kubejs:stabilized_plutonium")
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
                     "64x gtceu:raw_snowchestite",
                     "24x gtceu:raw_kaemanite",
                 )
-                .damageRate(2)
+                .damageRate(3)
         }
     })
 
