@@ -8,13 +8,13 @@ ServerEvents.recipes(event => {
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:cobalt_brass_drill_head")
-            .itemInputs("4x kubejs:wither_realm_data")
+            .itemInputs("8x kubejs:wither_realm_data")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x gtceu:raw_cooperite",
-                "32x gtceu:raw_bornite",
-                "64x gtceu:raw_pentlandite",
-                "64x gtceu:raw_chalcocite",
+                "48x gtceu:raw_chalcocite",
+                "48x gtceu:raw_pentlandite",
+                "24x gtceu:raw_bornite",
+                "24x gtceu:raw_cooperite",
             )
             .damageRate(1)
     })
@@ -26,9 +26,10 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:steel_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "32x minecraft:raw_iron_block",
+                "24x minecraft:raw_iron_block",
                 "32x minecraft:raw_copper_block",
-                "24x minecraft:raw_gold_block",
+                "12x gtceu:raw_tin_block",
+                "8x minecraft:raw_gold_block",
             )
             .damageRate(1)
     })
@@ -40,27 +41,10 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:diamond_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "32x gtceu:raw_lapis_block",
-                "32x gtceu:raw_emerald_block",
-                "40x gtceu:raw_coal_block",
-                "16x gtceu:raw_redstone_block",
-            )
-            .damageRate(1)
-    })
-
-    microverse_mission(event, 4, 2).forEach(builder => {
-        builder
-            .itemInputs("16x kubejs:petrotheum_dust")
-            .itemInputs("kubejs:advanced_drilling_kit")
-            .itemInputs("gtceu:ultimet_drill_head")
-            .requiredMicroverse(1) // Normal
-            .itemOutputs(
-                "64x gtceu:raw_platinum",
-                "16x gtceu:raw_platinum",
-                "64x gtceu:raw_wulfenite",
-                "48x gtceu:raw_barite",
-                "64x gtceu:raw_fluorite",
-                "32x gtceu:raw_fluorite",
+                "8x gtceu:raw_lapis_block",
+                "20x gtceu:raw_emerald_block",
+                "32x gtceu:raw_coal_block",
+                "24x gtceu:raw_redstone_block",
             )
             .damageRate(1)
     })
@@ -72,11 +56,11 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:vanadium_steel_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x gtceu:raw_pyrochlore",
-                "64x gtceu:raw_pyrochlore",
                 "64x gtceu:raw_pollucite",
                 "64x gtceu:raw_pollucite",
-                "64x gtceu:raw_gypsum"
+                "64x gtceu:raw_apatite",
+                "64x gtceu:raw_apatite",
+                "64x gtceu:raw_tricalcium_phosphate",
             )
             .damageRate(1)
     })
@@ -88,24 +72,9 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:stainless_steel_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x kubejs:radium_salt",
-                "32x kubejs:radium_salt",
-                "48x gtceu:raw_saltpeter",
-                "24x gtceu:raw_alunite",
-                "64x gtceu:raw_electrotine"
-            )
-            .damageRate(1)
-    })
-
-    microverse_mission(event, 4, 2).forEach(builder => {
-        builder
-            .itemInputs("16x kubejs:petrotheum_dust")
-            .itemInputs("kubejs:advanced_drilling_kit")
-            .itemInputs("gtceu:damascus_steel_drill_head")
-            .requiredMicroverse(1) // Normal
-            .itemOutputs(
-                "64x gtceu:raw_oilsands_block",
-                "32x gtceu:raw_oilsands_block"
+                "64x gtceu:raw_tetrahedrite",
+                "32x gtceu:raw_realgar",
+                "24x gtceu:raw_stibnite",
             )
             .damageRate(1)
     })
@@ -117,7 +86,6 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:wrought_iron_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x gtceu:raw_thorium",
                 "64x gtceu:raw_thorium",
                 "64x gtceu:raw_thorium",
                 "48x gtceu:raw_thorium",
@@ -135,8 +103,8 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:hsse_drill_head")
                 .requiredMicroverse(1) // Normal
                 .itemOutputs(
-                    "64x gtceu:raw_cooperite",
                     "32x gtceu:raw_cooperite",
+                    "24x gtceu:raw_barite",
                     "64x gtceu:raw_naquadah",
                     "64x gtceu:raw_naquadah",
                     "24x gtceu:raw_kaemanite",
@@ -149,8 +117,8 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:hsse_drill_head")
                 .requiredMicroverse(1) // Normal
                 .itemOutputs(
-                    "36x gtceu:raw_pollucite",
-                    "32x gtceu:raw_cooperite",
+                    "48x gtceu:raw_pollucite",
+                    "24x gtceu:raw_barite",
                     "64x gtceu:raw_snowchestite",
                     "64x gtceu:raw_snowchestite",
                     "24x gtceu:raw_kaemanite",
@@ -163,13 +131,14 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:stabilized_uranium")
             .itemInputs("kubejs:advanced_drilling_kit")
-            .itemInputs("gtceu:red_steel_drill_head")
+            .itemInputs("gtceu:tungsten_steel_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "32x gtceu:raw_palladium",
-                "32x gtceu:raw_monazite",
+                "64x gtceu:raw_pyrochlore",
+                "64x gtceu:raw_pyrochlore",
+                "16x gtceu:raw_molybdenum",
                 "32x gtceu:raw_molybdenite",
-                "16x gtceu:raw_powellite",
+                "24x gtceu:raw_powellite",
             )
             .damageRate(2)
     })
@@ -178,12 +147,13 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:stabilized_uranium")
             .itemInputs("kubejs:advanced_drilling_kit")
-            .itemInputs("gtceu:blue_steel_drill_head")
+            .itemInputs("gtceu:vanadium_steel_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "32x gtceu:raw_realgar",
-                "64x gtceu:raw_sphalerite",
-                "16x gtceu:raw_fluorite",
+                "64x gtceu:raw_magnetite",
+                "64x gtceu:raw_vanadium_magnetite",
+                "64x gtceu:raw_chromite",
+                "24x minecraft:raw_gold",
             )
             .damageRate(2)
     })
@@ -192,16 +162,15 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:stabilized_uranium")
             .itemInputs("kubejs:advanced_drilling_kit")
-            .itemInputs("gtceu:damascus_steel_drill_head")
+            .itemInputs("gtceu:diamond_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "32x gtceu:raw_bastnasite",
-                "16x minecraft:ender_pearl",
-                "16x minecraft:ender_pearl",
-                "16x minecraft:ender_pearl",
-                "64x gtceu:raw_beryllium",
+                "64x kubejs:radium_salt",
+                "48x kubejs:radium_salt",
+                "64x gtceu:raw_borax",
+                "64x gtceu:raw_dilithium",
+                "48x gtceu:raw_dilithium",
             )
-            .damageRate(2)
     })
 
     // T6MM missions
@@ -213,6 +182,7 @@ ServerEvents.recipes(event => {
             .itemInputs("16x kubejs:wither_realm_data")
             .damageRate(4)
             .itemOutputs(
+                "64x gtceu:raw_uraninite",
                 "64x gtceu:raw_uraninite",
                 "32x gtceu:raw_uraninite",
                 "32x gtceu:raw_plutonium",
@@ -231,8 +201,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_nether_quartz",
                 "64x gtceu:raw_nether_quartz",
                 "64x minecraft:ancient_debris",
-                "64x minecraft:ancient_debris",
-                "64x minecraft:ancient_debris",
+                "48x minecraft:ancient_debris",
             )
             .requiredMicroverse(1) // Normal
     })

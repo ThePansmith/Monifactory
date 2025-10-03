@@ -24,9 +24,9 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x minecraft:bone",
                 "64x minecraft:rotten_flesh",
-                "32x minecraft:rotten_flesh",
+                "16x minecraft:rotten_flesh",
                 "32x minecraft:gunpowder",
-                "16x minecraft:string",
+                "24x minecraft:string",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "24x minecraft:ghast_tear",
                 "48x kubejs:wither_bone", // drops of evil aren"t in the pack
-                "32x minecraft:magma_cream",
+                "16x minecraft:magma_cream",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "32x kubejs:aerotheum_dust",
+                "24x kubejs:aerotheum_dust",
                 "16x minecraft:ender_eye",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "32x kubejs:aerotheum_dust",
+                "24x kubejs:aerotheum_dust",
                 "4x kubejs:dragon_lair_data",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "32x kubejs:aerotheum_dust",
+                "24x kubejs:aerotheum_dust",
                 "64x kubejs:wither_bone",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "64x kubejs:aerotheum_dust",
+                "32x kubejs:aerotheum_dust",
                 "16x minecraft:sculk_catalyst",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))

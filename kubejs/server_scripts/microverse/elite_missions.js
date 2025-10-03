@@ -47,10 +47,10 @@ ServerEvents.recipes(event => {
                 "12x minecraft:sculk_catalyst",
                 "64x minecraft:sculk",
                 "40x minecraft:sculk_vein",
-                "32x minecraft:gold_block",
-                "32x gtceu:silver_block",
-                "32x minecraft:diamond_block",
-                "16x gtceu:platinum_block",
+                "16x minecraft:gold_block",
+                "16x gtceu:silver_block",
+                "16x minecraft:diamond_block",
+                "8x gtceu:platinum_block",
                 "4x gtceu:ruthenium_block"
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
