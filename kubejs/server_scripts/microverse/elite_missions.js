@@ -128,12 +128,11 @@ ServerEvents.recipes(event => {
     })
 
     // T9MM missions
-
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:argon_plasma 5000")
             .itemInputs("kubejs:gravitational_amplifier", "6x gtceu:neutron_reflector")
-            .damageRate(6)
+            .damageRate(12)
             .itemOutputs("32x gtceu:neutronium_ingot")
             .requiredMicroverse(1) // Normal
     })
@@ -142,8 +141,72 @@ ServerEvents.recipes(event => {
         builder
             .inputFluids("gtceu:oxygen_plasma 10000")
             .itemInputs("kubejs:gravitational_amplifier", "64x gtceu:gravi_star")
-            .damageRate(4)
+            .damageRate(8)
             .itemOutputs("16x kubejs:quasi_stable_neutron_star")
+            .requiredMicroverse(3) // Shattered
+    })
+
+    microverse_mission(event, 9, 3).forEach(builder => {
+        builder
+            .inputFluids("gtceu:argon_plasma 5000")
+            .itemInputs("kubejs:elite_drilling_kit")
+            .itemInputs("gtceu:duranium_drill_head")
+            .itemInputs("4x gtceu:neutron_reflector",)
+            .itemInputs("gtceu:ruridit_block")
+            .damageRate(10)
+            .itemOutputs(
+                "64x gtceu:raw_darmstadtite",
+                "64x gtceu:raw_darmstadtite",
+                "64x gtceu:raw_darmstadtite",
+                "64x gtceu:raw_darmstadtite",
+                "48x gtceu:raw_darmstadtite",
+            )
+            .requiredMicroverse(3) // Shattered
+    })
+
+    microverse_mission(event, 9, 3).forEach(builder => {
+        builder
+            .inputFluids("gtceu:argon_plasma 5000")
+            .itemInputs("kubejs:elite_drilling_kit")
+            .itemInputs("gtceu:duranium_drill_head")
+            .itemInputs("4x kubejs:gem_sensor")
+            .itemInputs("gtceu:naquadah_block")
+            .damageRate(10)
+            .itemOutputs(
+                "64x gtceu:raw_dulysite",
+                "64x gtceu:raw_dulysite",
+                "64x gtceu:raw_dulysite",
+                "64x gtceu:raw_dulysite",
+            )
+            .requiredMicroverse(3) // Shattered
+    })
+
+    microverse_mission(event, 9, 3).forEach(builder => {
+        builder
+            .inputFluids("gtceu:oxygen_plasma 10000")
+            .itemInputs("kubejs:elite_drilling_kit")
+            .itemInputs("gtceu:duranium_drill_head")
+            .itemInputs("4x nuclearcraft:plate_du")
+            .itemInputs("gtceu:uranium_block")
+            .damageRate(12)
+            .itemOutputs(
+                "64x gtceu:raw_plutonium_block",
+                "64x gtceu:raw_plutonium_block",
+            )
+            .requiredMicroverse(3) // Shattered
+    })
+
+    microverse_mission(event, 9, 3).forEach(builder => {
+        builder
+            .inputFluids("gtceu:tin_plasma 10000")
+            .itemInputs("kubejs:elite_drilling_kit")
+            .itemInputs("gtceu:duranium_drill_head")
+            .itemInputs("gtceu:osmiridium_block")
+            .damageRate(6)
+            .itemOutputs(
+                "32x gtceu:raw_iridosmine",
+                "40x gtceu:raw_osmiridium",
+            )
             .requiredMicroverse(3) // Shattered
     })
 
