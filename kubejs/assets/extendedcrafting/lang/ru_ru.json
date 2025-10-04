@@ -1,12 +1,4 @@
 {
-    "block.extendedcrafting.flux_crafter": "Скалковый Зарядник",
-    "block.extendedcrafting.flux_alternator": "Скалковый пилон",
-    "block.extendedcrafting.auto_flux_crafter": "Скалковый Зарядник",
-    "container.extendedcrafting.flux_crafter": "Зарядка Скалком",
-    "jei.category.extendedcrafting.flux_crafting": "Зарядка Скалком",
-    "config.jade.plugin_extendedcrafting.flux_crafter": "Информация о Скалковом Крафтере",
-    "book.extendedcrafting.entry.flux_crafting": "Зарядка Скалком",
-    "book.extendedcrafting.entry.flux_crafting.page.2": "Скалковые Пилоны можно размещать в любом месте вокруг Скалкового Зарядника в радиусе $(bold)3 блоков$(). Даже над или под ним!",
-    "book.extendedcrafting.entry.flux_crafting.page.1": "Зарядка Скалком это создание предметов, использующих как силу ожидания, так и силу энергии. Установка Скалкового крафта состоит из Скалкового Зарядника и Скалковых Пилонов. Зарядник будет брать энергию из пилонов. Чем больше у вас пилонов, тем быстрее он будет создавать предметы.",
-    "container.extendedcrafting.flux_alternator": "Скалковый Пилон"
+    "item.extendedcrafting.crystaltine_catalyst": "Diamond Catalyst",
+    "item.extendedcrafting.crystaltine_component": "Diamond Component"
 }
