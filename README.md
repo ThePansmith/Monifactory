@@ -70,6 +70,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 1. Open [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
 1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
 2. Follow the prompt to select your mode.
+
 **As of version 0.13, You can switch pack modes in the main menu, just click the text that shows your pack mode, select the pack you want, click yes, and then restart your game!**\
 If you want to switch the pack mode on a dedicated server, follow these instructions.
 - Universal:
