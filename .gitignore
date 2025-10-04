@@ -113,6 +113,7 @@ config/defaultworldtype/world-presets.txt
 !/config/flywheel-client.toml
 !/config/hostilenetworks.cfg
 !/config/immediatelyfast.json
+!/config/inventoryessentials-common.toml
 !/config/ironfurnaces-client.toml
 !/config/ironjetpacks-common.toml
 !/config/laserio-common.toml
