@@ -69,9 +69,14 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV])
 
-    event.recipes.gtceu.polarizer("terbium_polarize")
+    event.recipes.gtceu.polarizer("terbium_polarize_long")
         .itemInputs("gtceu:long_terbium_rod")
         .itemOutputs("gtceu:long_magnetic_terbium_rod")
+        .duration(200)
+        .EUt(122880)
+    event.recipes.gtceu.polarizer("terbium_polarize")
+        .itemInputs("gtceu:terbium_rod")
+        .itemOutputs("gtceu:magnetic_terbium_rod")
         .duration(200)
         .EUt(122880)
 
