@@ -39,7 +39,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .neutrons(316)
         .symbol("∞")
     event.create("meta_null")
-        .protons(0)
+        .protons(1)
         .neutrons(0)
         .symbol("∅")
     event.create("monium")
