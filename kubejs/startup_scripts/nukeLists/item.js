@@ -108,6 +108,7 @@ global.itemNukeList = [
     "extendedcrafting:frame",
     "extendedcrafting:recipe_maker",
     "extendedcrafting:singularity",
+    /^extendedcrafting:crystaltine_(?!c)[\w_]+/,
 
     // GTCEu: Modern
     "gtceu:hot_kanthal_ingot",

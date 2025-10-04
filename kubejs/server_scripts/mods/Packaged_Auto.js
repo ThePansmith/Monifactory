@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
     ], {
         Q: "ae2:quartz_glass",
         P: "ae2:blank_pattern",
-        R: "extendedcrafting:crystaltine_block",
+        R: "gtceu:diamatine_block",
         T: "gtceu:titanium_plate",
         C: "packagedauto:me_package_component"
     })
