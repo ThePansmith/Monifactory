@@ -33,12 +33,14 @@ contributing.
 ## Basics of Git ##
 
 Not to be confused with GitHub, which we use to host the main Monifactory repository, Git is a program that tracks file changes for us and makes collaboration easier 
-[this](https://www.youtube.com/watch?v=hwP7WQkmECE) will give you a basic overview of how to use Git, [this](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use, and [this](https://www.youtube.com/watch?v=ecK3EnyGD8o) contains tricks you can use with Git to allow you to use it to it's full potential.
+- [Git Basics](https://www.youtube.com/watch?v=hwP7WQkmECE) will give you a basic overview of how to use Git 
+- [Git Cheat Sheet](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use. 
+- [Git Tips and Tricks](https://www.youtube.com/watch?v=ecK3EnyGD8o) contains tricks you can use with Git to allow you to use it to it's full potential.
 
 ## Git versus GitHub ##
 
-Git - Version control software used to manage files in a repository
-GitHub - Used to host said repositories and allow for easy collaboration worldwide.
+- Git - Version control software used to manage files in a repository(A directory containing code, in this case, this should be your minecraft folder)
+- GitHub - Used to host said repositories and allow for easy collaboration worldwide.
 
 ## What Contributions Are We Seeking? ##
 
