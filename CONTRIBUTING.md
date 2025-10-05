@@ -32,7 +32,8 @@ contributing.
 
 ## Basics of Git ##
 
-Not to be confused with GitHub, which we use to host the main Monifactory repository, Git is a version control system that keeps tracks of files within a repository, allowing you to revert changes, split into multiple branches, like one for features and another for bug fixes, then merging them before release, and it can also be used to see who did what change/ Monifactory uses Git, so it is of the up-most importance you know it, [this](https://www.youtube.com/watch?v=hwP7WQkmECE) will give you a basic overview of how to use Git, [this](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use, and [this](https://www.youtube.com/watch?v=ecK3EnyGD8o) contains tricks you can use with Git to allow you to use it to it's full potential.
+Not to be confused with GitHub, which we use to host the main Monifactory repository, Git is a program that tracks file changes for us and makes collaboration easier 
+[this](https://www.youtube.com/watch?v=hwP7WQkmECE) will give you a basic overview of how to use Git, [this](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use, and [this](https://www.youtube.com/watch?v=ecK3EnyGD8o) contains tricks you can use with Git to allow you to use it to it's full potential.
 
 ## Git versus GitHub ##
 
