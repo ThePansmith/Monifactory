@@ -211,12 +211,8 @@ global.itemNukeList = [
     // SophStorage offers a way to remove items from the registry with config.
 
     // Systeams
-    "systeams:compression_boiler",
     "systeams:disenchantment_boiler",
-    "systeams:gourmand_boiler",
     "systeams:lapidary_boiler",
-    "systeams:magmatic_boiler",
-    "systeams:numismatic_boiler",
     "systeams:steamiestest_ball",
 
     // Telepastries
@@ -436,5 +432,16 @@ if (Platform.isLoaded("create")) {
         "create:mechanical_press",
         "create:mechanical_roller",
         "create:encased_fan"
+    );
+}
+
+// If not doing boilers, nuke them.
+if (!global.doBoilers) {
+    global.itemNukeList.push(
+        "systeams:stirling_boiler",
+        "systeams:compression_boiler",
+        "systeams:gourmand_boiler",
+        "systeams:magmatic_boiler",
+        "systeams:numismatic_boiler",
     );
 }
