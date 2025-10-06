@@ -1,4 +1,4 @@
-// priority: 900
+// priority: 800
 /*
 The itemNukeList is used to list all IDs and regexes matching IDs of items that should be removed from the game, or "nuked".
 While this makes it far more difficult to access the items and effectively obliterates them in most cases,
