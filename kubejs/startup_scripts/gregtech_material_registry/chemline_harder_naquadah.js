@@ -27,13 +27,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .formula("Nq(OH)3")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
-        event.create("caesium_hydroxide")
-            .dust()
-            .color(0xbd8340).iconSet("dull")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("caesium", "oxygen", "hydrogen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
-
         event.create("neocryolite")
             .liquid()
             .color(0x3fd1aa)

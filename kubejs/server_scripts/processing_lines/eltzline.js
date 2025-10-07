@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor("pollucite_digestion")
         .itemInputs("11x gtceu:pollucite_dust")
         .inputFluids("gtceu:hydrofluoric_acid 24000")
-        .itemOutputs("5x gtceu:bauxite_dust", "6x gtceu:caesium_hydroxide_dust")
+        .itemOutputs("5x gtceu:bauxite_dust", "3x gtceu:caesium_hydroxide_dust")
         .outputFluids("gtceu:dirty_hexafluorosilicic_solution 12000", "minecraft:water 1000")
         .duration(11 * 2 * 20 + 5 * 20)
 
