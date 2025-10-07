@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
             "2x kubejs:hyperdynamic_ram_chip",
             "10x kubejs:miniature_microverse_container"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(300)
         .addData("duration", 300)
         .damageRate(1)
@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:advanced_soc",
             "64x gtceu:fine_platinum_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:crystal_soc",
             "64x gtceu:fine_niobium_titanium_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)
@@ -387,7 +387,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:highly_advanced_soc",
             "64x gtceu:fine_yttrium_barium_cuprate_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)
@@ -428,7 +428,7 @@ ServerEvents.recipes(event => {
             "4x kubejs:photonic_soc_active",
             "64x gtceu:fine_naquadah_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)

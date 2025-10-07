@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "kubejs:dimensionally_stabilized_infinity_heavy_plating",
-        "gtceu:double_infinity_plate", ["2x gtceu:activated_netherite_plate", "4x kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector"],
+        "gtceu:double_infinity_plate", ["2x gtceu:activated_netherite_plate", "2x kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "2x gtceu:infinity_plate"],
         16000000, 1600000
     )
 
