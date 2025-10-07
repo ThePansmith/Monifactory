@@ -2,13 +2,14 @@
  * Custom recipes for the Thermal Series
  */
 ServerEvents.recipes(event => {
-    event.remove({ output: ["systeams:steam_dynamo", "steamdynamo:steam_dynamo", "thermal:dynamo_compression", "thermal:dynamo_magmatic", "thermal:dynamo_numismatic", "thermal:dynamo_gourmand", "systeams:boiler_pipe", "thermal:rf_coil"] })
+    event.remove({ output: ["systeams:steam_dynamo", "steamdynamo:steam_dynamo", "systeams:boiler_pipe", "thermal:rf_coil"] })
     event.remove({ output: ["thermal:dynamo_throttle_augment", "thermal:upgrade_augment_1", "thermal:upgrade_augment_2", "thermal:upgrade_augment_3"] })
     event.remove({ output: ["thermal:machine_frame", "thermal:energy_cell_frame"] })
     event.remove({ output: ["thermal:machine_furnace", "thermal:machine_sawmill", "thermal:machine_pulverizer", "thermal:machine_smelter", "thermal:machine_centrifuge", "thermal:machine_crucible", "thermal:machine_chiller", "thermal:machine_refinery", "thermal:machine_pyrolyzer", "thermal:machine_bottler", "thermal:machine_brewer", "thermal:machine_crystallizer"] })
 
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) // I don't even know what recipes this line of code is supposed to target
     event.remove({ id: /thermal:.*_cast/ })
+    event.remove({ id: /^thermal:dynamo_/}) // Remove non-downgrade recipes for Thermal dynamos
     event.remove({ id: "thermal:fire_charge/obsidian_glass_2" })
     event.remove({ id: "thermal:fire_charge/signalum_glass_2" })
     event.remove({ id: "thermal:fire_charge/lumium_glass_2" })
@@ -360,7 +361,6 @@ ServerEvents.recipes(event => {
             E: "systeams:boiler_pipe"
         })
 
-        event.shapeless("systeams:stirling_boiler", ["steamdynamo:steam_dynamo", "systeams:boiler_pipe"])
         event.shaped("systeams:boiler_pipe", [
             " C ",
             "ABA",
@@ -371,6 +371,35 @@ ServerEvents.recipes(event => {
             C: "gtceu:iron_gear",
             D: "#enderio:fused_quartz"
         })
+
+        // Steam Dynamo upgrade (Does not work with the systeams:upgrade_shapeless recipe type sadly,
+        // so we recreate the special recipe stuff using KJS here)
+        event.shapeless("systeams:stirling_boiler", ["steamdynamo:steam_dynamo", "systeams:boiler_pipe"])
+            .modifyResult((grid, result) => {
+                let input = grid.find("steamdynamo:steam_dynamo")
+                return result.withNBT(input.nbt)
+            })
+            .replaceIngredient("steamdynamo:steam_dynamo", "thermal:rf_coil")
+            .id("systeams:boiler/upgrades/stirling_upgrade")
+
+
+        // Steam Dynamo downgrade
+        event.custom(
+            {
+                "type": "systeams:upgrade_shapeless",
+                "ingredients": [
+                    {"item":"systeams:stirling_boiler"},
+                    {"item":"thermal:rf_coil"}
+                ],
+                "result": {
+                    "item": "steamdynamo:steam_dynamo"
+                },
+                "replacement": "systeams:boiler_pipe"
+            }
+        )
+
+        // Remove recipes for boilers that aren't the upgrade from dynamo recipe
+        event.remove({ id: /^systeams:boilers\/(?!upgrade)/ })
     }
 
     event.shaped("thermal:dynamo_magmatic", [

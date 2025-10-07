@@ -37,18 +37,6 @@ ServerEvents.recipes(event => {
     }
 
     if (doHarderRecipes) {
-        event.shaped("thermal:dynamo_numismatic", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:zeron_100_plate",
-            C: "ironfurnaces:diamond_furnace",
-            D: "enderio:vibrant_gear",
-            E: "kubejs:redstone_transmission_coil"
-        })
-
         event.remove({ id: "gtceu:large_chemical_reactor/radon_from_uranium_238" })
         event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
         event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
