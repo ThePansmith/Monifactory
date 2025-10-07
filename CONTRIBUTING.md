@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
   - [Basics of Git](#basics-of-git)
   - [Git versus GitHub](#git-versus-github)
+  - [Git GUIs/CUIs](#git-guiscuis)
 - [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
 - [Getting Started](#getting-started)
   - [Setting up an instance repository for use in dev](#setting-up-an-instance-repository-for-use-in-dev)
@@ -37,6 +38,14 @@ Not to be confused with GitHub, which we use to host the main Monifactory reposi
 - [Git Cheat Sheet](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use. 
 - [Git Tips and Tricks](https://www.youtube.com/watch?v=ecK3EnyGD8o) contains tricks you can use with Git to allow you to use it to it's full potential.
 
+## Git GUIs/CUIs ##
+
+Git sometimes is a hard program to master, there are a few ways to use git
+- Ol' Reliable Git command - just typing "git pull" and "git commit" into your preferred shell(E.G. Command Prompt, bash, zsh) will work, recommended for advanced actions or if you don't want to navigate a menu
+- [Github Desktop (Not available for Linux)](https://desktop.github.com/download/) - Gives you a GUI to select which files you want to commit, good for beginners or people who don't want to manually type "git add ~/foo/bar" to every file they want to stage.
+- VSCode built-in Git utility(Requires VSCode, obviously) - Similar to Git Desktop but built into VSCode and is way less invasive, not *as* good as Github Desktop for beginners but can be nice if you don't want to switch programs all the time
+- [LazyGit](https://github.com/jesseduffield/lazygit/tree/master?tab=readme-ov-file#winget-windows-10-1709-or-later)
+ - A Command line UI, you use the arrow keys and the "Tab" key to navigate through it's menu's, the middle ground between Github Desktop and just using manual git commands, you can use winget on windows, brew on macOS, your linux distro's package manager, or just compile it from source.
 ## Git versus GitHub ##
 
 - Git - Version control software used to manage files in a repository(A directory containing code, in this case, this should be your minecraft folder)
