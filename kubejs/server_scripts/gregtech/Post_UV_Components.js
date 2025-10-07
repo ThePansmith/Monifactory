@@ -58,21 +58,6 @@ ServerEvents.recipes(event => {
             H: `gtceu:${tier}_machine_hull`,
             C: `#gtceu:circuits/${tier}`
         })
-
-
-        event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_output_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_spring`, "2x kubejs:uxpic_chip", `#gtceu:circuits/${tier}`, `2x gtceu:${mat3}_double_wire`)
-            .itemOutputs(`gtceu:${tier}_energy_output_hatch`)
-            .inputFluids("monilabs:crystal_matrix 11520", "gtceu:advanced_soldering_alloy 5760")
-            .duration(1000)
-            .EUt(eut)
-
-        event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_input_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_${mat1}`, "16x kubejs:uxpic_chip", `#gtceu:circuits/${tier}`, `2x gtceu:${mat3}_double_wire`)
-            .itemOutputs(`gtceu:${tier}_energy_input_hatch`)
-            .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:advanced_soldering_alloy 576")
-            .duration(100)
-            .EUt(eut)
     })
 
     transformer.forEach(([tier, mat1, mat2]) => {
@@ -177,6 +162,96 @@ ServerEvents.recipes(event => {
             H: `gtceu:${value.tier}_machine_hull`
         }).id(`shaped/rotor_holder_${value.tier}`)
     })
+
+    // Voltage Coils
+    event.recipes.gtceu.assembler("uhv_voltage_coil")
+        .itemInputs("gtceu:magnetic_terbium_rod", "16x gtceu:fine_darconite_wire")
+        .itemOutputs("kubejs:uhv_voltage_coil")
+        .circuit(1)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UHV])
+    event.recipes.gtceu.assembler("uev_voltage_coil")
+        .itemInputs("gtceu:magnetic_terbium_rod", "16x gtceu:fine_necrosiderite_wire")
+        .itemOutputs("kubejs:uev_voltage_coil")
+        .circuit(1)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UEV])
+
+    // Dynamo Hatches
+    event.remove({ id:"gtceu:assembly_line/dynamo_hatch_uhv"})
+    event.recipes.gtceu.assembly_line("dynamo_hatch_uhv")
+        .itemInputs("gtceu:uhv_machine_hull", "4x gtceu:europium_spring", "16x gtceu:uhpic_chip", "#gtceu:circuits/uhv", "2x kubejs:uhv_voltage_coil")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:advanced_soldering_alloy 576")
+        .itemOutputs("gtceu:uhv_energy_output_hatch")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .stationResearch(b => b
+            .researchStack("gtceu:uv_energy_output_hatch")
+            .CWUt(96, 384000)
+            .EUt(GTValues.VA[GTValues.UV])
+        )
+
+    event.recipes.gtceu.assembly_line("dynamo_hatch_uev")
+        .itemInputs("gtceu:uev_machine_hull", "4x gtceu:darconite_spring", "16x kubejs:uxpic_chip", "#gtceu:circuits/uev", "2x kubejs:uev_voltage_coil")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:advanced_soldering_alloy 576")
+        .itemOutputs("gtceu:uev_energy_output_hatch")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UEV])
+        .stationResearch(b => b
+            .researchStack("gtceu:uhv_energy_output_hatch")
+            .CWUt(128, 512000)
+            .EUt(GTValues.VA[GTValues.UHV])
+        )
+
+    event.recipes.gtceu.assembly_line("dynamo_hatch_max")
+        .itemInputs("gtceu:max_machine_hull", "4x gtceu:monium_spring", "16x kubejs:uxpic_chip", "#gtceu:circuits/max")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:living_soldering_alloy 576")
+        .itemOutputs("gtceu:max_energy_output_hatch")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_energy_output_hatch")
+            .CWUt(160, 640000)
+            .EUt(GTValues.VA[GTValues.UEV])
+        )
+
+    // Energy Hatches
+    event.remove({ id:"gtceu:assembly_line/energy_hatch_uhv"})
+    event.recipes.gtceu.assembly_line("energy_hatch_uhv")
+        .itemInputs("gtceu:uhv_machine_hull", "4x gtceu:europium_single_cable", "16x gtceu:uhpic_chip", "#gtceu:circuits/uhv", "2x kubejs:uhv_voltage_coil")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:advanced_soldering_alloy 576")
+        .itemOutputs("gtceu:uhv_energy_input_hatch")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .stationResearch(b => b
+            .researchStack("gtceu:uv_energy_input_hatch")
+            .CWUt(96, 384000)
+            .EUt(GTValues.VA[GTValues.UV])
+        )
+
+    event.recipes.gtceu.assembly_line("energy_hatch_uev")
+        .itemInputs("gtceu:uev_machine_hull", "4x gtceu:darconite_single_cable", "16x kubejs:uxpic_chip", "#gtceu:circuits/uev", "2x kubejs:uev_voltage_coil")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:advanced_soldering_alloy 576")
+        .itemOutputs("gtceu:uev_energy_input_hatch")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UEV])
+        .stationResearch(b => b
+            .researchStack("gtceu:uhv_energy_input_hatch")
+            .CWUt(128, 512000)
+            .EUt(GTValues.VA[GTValues.UHV])
+        )
+
+    event.recipes.gtceu.assembly_line("energy_hatch_max")
+        .itemInputs("gtceu:max_machine_hull", "4x gtceu:monium_single_wire", "16x kubejs:uxpic_chip", "#gtceu:circuits/max")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:living_soldering_alloy 576")
+        .itemOutputs("gtceu:max_energy_input_hatch")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_energy_input_hatch")
+            .CWUt(160, 640000)
+            .EUt(GTValues.VA[GTValues.UEV])
+        )
 
     // Motors
     event.recipes.gtceu.assembly_line("uhv_motor")
