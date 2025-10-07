@@ -1,0 +1,19 @@
+#Should holding shift and moving your mouse over items quick-transfer them without requiring each to be clicked?
+enableShiftDrag = false
+#Should space-clicking an item move all items from that inventory at once?
+enableBulkTransferAll = true
+#Should ctrl-clicking only move one item at a time instead of the full stack?
+enableSingleTransfer = true
+#Use the client implementation even on servers that have the mod installed - only useful for development purposes.
+forceClientImplementation = false
+#Should space-clicking move all items even if an empty slot was clicked?
+allowBulkTransferAllOnEmptySlot = false
+#Should space-clicking armor in the inventory swap to all matching armor?
+bulkTransferArmorSets = true
+#Should control-space-clicking an item move one of each item from that inventory at once?
+enableBulkTransferSingle = false
+#Should shift-ctrl-clicking move all items of the same type at once?
+enableBulkTransfer = true
+#Should shift-ctrl-drop-clicking drop all items of the same type at once?
+enableBulkDrop = true
+
