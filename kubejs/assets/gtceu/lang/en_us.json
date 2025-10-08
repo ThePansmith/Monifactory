@@ -388,6 +388,8 @@
     "material.gtceu.heavy_atomic_residue": "Heavy Atomic Residue",
     "material.gtceu.purified_heavy_residue": "Purified Heavy Atomic Residue",
     "material.gtceu.purified_superheavy_residue": "Purified Superheavy Atomic Residue",
+    "material.gtceu.cracked_heavy_atomic_residue": "Neutron-Cracked Heavy Atomic Residue",
+    "material.gtceu.cracked_superheavy_atomic_residue": "Neutron-Cracked Superheavy Atomic Residue",
     "material.gtceu.quadium": "Quadium",
     "material.gtceu.hyperdegenerate_matter": "Hyperdegenerate Matter",
     "material.gtceu.exotic_particle_solution": "Exotic Particle Solution",

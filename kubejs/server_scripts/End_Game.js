@@ -221,9 +221,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite")
-        .itemInputs("gtceu:darconite_ingot")
-        .notConsumable("gtceu:wire_extruder_mold")
-        .itemOutputs("gtceu:hyperdegenerate_darconite_double_wire")
+        .itemInputs("2x gtceu:darconite_single_wire")
+        .itemOutputs("2x gtceu:hyperdegenerate_darconite_single_wire")
         .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
