@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
         .itemInputs("2x gtceu:tiny_infinity_dust", "20x kubejs:naquadah_fuel_mixture_dust")
-        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "monilabs:actinium 192", "gtceu:quadium 400")
+        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72")
         .outputFluids("gtceu:naquadah_superfuel 20000")
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -128,6 +128,8 @@ ServerEvents.recipes(event => {
         ["medium", "medium_naquadah_isotope_fraction"],
         ["heavy", "heavy_naquadah_isotope_fraction"],
         ["sludge", "naquadah_isotope_sludge"],
+        ["heavy_residue", "heavy_atomic_residue"],
+        ["superheavy_residue", "superheavy_atomic_residue"]
     ]
 
     let cracking_mats = [
@@ -183,6 +185,20 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
+    event.recipes.gtceu.distillation_tower("heavy_residue_distillation")
+        .inputFluids("gtceu:cracked_heavy_atomic_residue")
+        .chancedOutput("kubejs:naquadah_waste", 6600, 0)
+        .outputFluids("gtceu:naquadah_isotope_sludge 250", "gtceu:americium 100", "gtceu:plutonium_241 150", "gtceu:plutonium 200", "gtceu:neptunium 300")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    event.recipes.gtceu.distillation_tower("superheavy_residue_distillation")
+        .inputFluids("gtceu:cracked_superheavy_atomic_residue")
+        .chancedOutput("kubejs:naquadah_waste", 9000, 0)
+        .outputFluids("gtceu:californium 100", "gtceu:berkelium 150", "gtceu:curium 250", "gtceu:heavy_atomic_residue 500")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UHV])
+
     // Superheavy Chemical Processing
     if(doHarderProcessing) {
         // HM recipe
@@ -232,7 +248,7 @@ ServerEvents.recipes(event => {
         .fusionStartEU(200000000)
 
     event.recipes.gtceu.fusion_reactor("hyperdegenerate_activation")
-        .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:californium 72")
+        .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:actinium 36")
         .outputFluids("gtceu:hyperdegenerate_matter 25")
         .duration(128)
         .EUt(GTValues.VA[GTValues.UHV])
