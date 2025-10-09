@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
     priscoreRecipes.forEach(([coreIn, prismacIn, coreOut, prismacOut, transMb, nullMb]) => {
         event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}`)
             .itemInputs(`kubejs:${coreIn}_prismatic_core`)
-            .inputFluids(`gtceu:transcendental_matrix ${transMb}`)
+            .inputFluids(`monilabs:transcendental_matrix ${transMb}`)
             .itemOutputs(`kubejs:${coreOut}_prismatic_core`)
             .inputColor(PrismaticColor[prismacIn.toUpperCase()])
             .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()])
@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
     // Have to do red priscore manually cause it shouldn't output null when voided
     event.recipes.gtceu.chromatic_transcendence("prismatic_core_r")
         .itemInputs("kubejs:inert_prismatic_core")
-        .inputFluids("gtceu:transcendental_matrix 128")
+        .inputFluids("monilabs:transcendental_matrix 128")
         .itemOutputs("kubejs:red_prismatic_core")
         .inputColor(PrismaticColor.RED)
         .outputStatesNormal(PrismaticColor.GREEN)

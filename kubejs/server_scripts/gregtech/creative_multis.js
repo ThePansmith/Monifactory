@@ -31,6 +31,14 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:naquadah_superfuel 60")
         .duration(20)
 
+    event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_neut_infinite_power")
+        .inputFluids("gtceu:antimatter 1000", "gtceu:neutronium 1000")
+        .duration(5333)
+
+    event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_inf_infinite_power")
+        .inputFluids("gtceu:antimatter 86", "gtceu:neutronium 86")
+        .duration(5333)
+
     if (doQuantumCoolant) {
         event.recipes.gtceu.creative_data_multi("kubejs:infinite_research_hm_em")
             .inputFluids("gtmutils:quantum_coolant 1080")

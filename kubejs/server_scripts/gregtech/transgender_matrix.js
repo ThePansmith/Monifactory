@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.quintessence_infuser("trans_matrix_infusion")
         .itemInputs("kubejs:transcendental_soul_vial", "monilabs:crystal_matrix_ingot")
         .inputFluids("gtceu:infused_oils 200")
-        .itemOutputs("gtceu:transcendental_matrix_ingot", "enderio:empty_soul_vial")
+        .itemOutputs("monilabs:transcendental_matrix_ingot", "enderio:empty_soul_vial")
         .duration(128)
         .EUt(GTValues.VHA[GTValues.ZPM])
 })

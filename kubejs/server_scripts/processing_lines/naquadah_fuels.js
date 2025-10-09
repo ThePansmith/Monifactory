@@ -94,12 +94,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.naquadah_refinery("crude_naquadah_fuel_plasma")
-        .inputFluids("gtceu:medium_naquadah_isotope_fraction 700", "gtceu:heavy_naquadah_isotope_fraction 500", "gtceu:helium_plasma 1200")
-        .outputFluids("gtceu:crude_naquadah_fuel 2000")
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.ZPM])
-
     event.recipes.gtceu.naquadah_refinery("naquadah_fuel")
         .itemInputs("24x gtceu:enriched_naquadah_dust")
         .inputFluids("gtceu:light_naquadah_isotope_fraction 2000", "gtceu:medium_naquadah_isotope_fraction 4000", "gtceu:heavy_naquadah_isotope_fraction 2000", "gtceu:exotic_particle_solution 300")
@@ -115,8 +109,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
-        .itemInputs("2x gtceu:tiny_infinity_dust", "20x kubejs:naquadah_fuel_mixture_dust")
-        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72")
+        .itemInputs("20x kubejs:naquadah_fuel_mixture_dust")
+        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72", "gtceu:infinity 80")
         .outputFluids("gtceu:naquadah_superfuel 20000")
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UHV])
