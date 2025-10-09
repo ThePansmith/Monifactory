@@ -838,15 +838,8 @@ StartupEvents.registry("item", event => {
     event.create("framedblocks:phantom_paste")
 
     // Priscore Line
-    event.create("chromatically_reactive_cluster")
-        .texture("kubejs:item/lines/prismac/infinity/intermediates/chromatically_reactive_cluster")
-        .displayName("Chromatically Reactive Cluster")
-    event.create("chromatically_reactive_shard")
-        .texture("kubejs:item/lines/prismac/infinity/intermediates/chromatically_reactive_shard")
-        .displayName("Chromatically Reactive Shard")
     event.create("chromatically_inert_frame")
         .texture("kubejs:item/lines/prismac/infinity/intermediates/chromatically_inert_frame")
-        .displayName("Chromatically Inert Frame")
 
     // Protomatter
     event.create("protomatter")
@@ -861,4 +854,9 @@ StartupEvents.registry("item", event => {
     event.create("transcendental_soul_vial")
         .texture("kubejs:item/trans_vial")
         .displayName("Transcendental Soul Vial")
+
+    event.create("uhv_voltage_coil")
+        .displayName("Ultra High Voltage Coil")
+    event.create("uev_voltage_coil")
+        .displayName("Ultra Excessive Voltage Coil")
 })

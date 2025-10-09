@@ -873,4 +873,21 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:gold_dust", 2500, 0)
         .duration(66)
         .EUt(2)
+
+    // Alternate recipes for using Hexafluorosilicic Acid
+    event.recipes.gtceu.chemical_reactor("uranium_hexafluorosilicic")
+        .itemInputs("3x gtceu:uraninite_dust")
+        .inputFluids("gtceu:hexafluorosilicic_acid")
+        .itemOutputs("3x gtceu:silicon_dioxide_dust")
+        .outputFluids("gtceu:uranium_hexafluoride", "gtceu:hydrogen 2000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("antimony_trifluoride_hexafluorsilicic")
+        .itemInputs("5x gtceu:antimony_trioxide_dust")
+        .inputFluids("gtceu:hexafluorosilicic_acid")
+        .itemOutputs("8x gtceu:antimony_trifluoride_dust", "3x gtceu:silicon_dioxide_dust")
+        .outputFluids("minecraft:water 1000")
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV])
 })

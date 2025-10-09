@@ -53,8 +53,25 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 ## Installation:
 
 ### Hard/Expert Mode Installation:
+1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
+2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
+- Windows:
+    - Manual:
+        1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.bat``.
+        2. Follow the prompt to select your mode.
+        3. Redo steps 1 & 2 every time after you've updated the modpack.
+    - Prism Launcher (and various other custom launchers):
+        1. If your Minecraft launcher supports it, select your Minecraft instance -> Edit -> Settings -> Custom Commands, check ``Custom Commands``, paste
+           ```
+           $INST_DIR\minecraft\pack-mode-switcher.bat (N/H/E)
+           ```
+           into Pre-launch command and specify your wanted mode.
+- Linux/Apple/GNU:
+1. Open [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
+1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
+2. Follow the prompt to select your mode.
 
-**As of 0.13, You can switch pack modes in the main menu, just click the text that shows your pack mode, select the pack you want, click yes, and then restart your game!**\
+**As of version 0.13, You can switch pack modes in the main menu, just click the text that shows your pack mode, select the pack you want, click yes, and then restart your game!**\
 If you want to switch the pack mode on a dedicated server, follow these instructions.
 - Universal:
     - Open Command Prompt and type in this command in your minecraft server's installation folder:
