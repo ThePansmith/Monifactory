@@ -32,11 +32,11 @@ ServerEvents.recipes(event => {
         .duration(20)
 
     event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_neut_infinite_power")
-        .inputFluids("gtceu:antimatter 1000", "gtceu:neutronium 1000")
+        .inputFluids("kubejs:antimatter_fuel 1000", "gtceu:neutronium 1000")
         .duration(5333)
 
     event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_inf_infinite_power")
-        .inputFluids("gtceu:antimatter 86", "gtceu:neutronium 86")
+        .inputFluids("kubejs:antimatter_fuel 86", "gtceu:infinity 86")
         .duration(5333)
 
     if (doQuantumCoolant) {

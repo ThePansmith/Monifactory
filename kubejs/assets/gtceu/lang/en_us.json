@@ -219,7 +219,6 @@
     "material.gtceu.elemental_reduction_fluid": "Elemental Reduction Fluid",
     "material.gtceu.sulfolane": "Sulfolane",
     "material.gtceu.fluxed_ardite": "Fluxed Ardite",
-    "material.gtceu.transcendental_matrix": "Transcendental Matrix",
     "__POST_TANK_MATERIALS__.header": "=======================",
     "__POST_TANK_MATERIALS__.flufff": "> Post-Tank Materials <",
     "__POST_TANK_MATERIALS__.footer": "=======================",

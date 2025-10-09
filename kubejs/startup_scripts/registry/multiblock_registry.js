@@ -649,7 +649,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.INPUT_LASER).setMaxGlobalLimited(1))
             )
-            .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
+            .where("G", Predicates.blocks("monilabs:prism_glass"))
             .where("L", Predicates.blocks(GCYMBlocks.CASING_LARGE_SCALE_ASSEMBLING.get()))
             .where("O", Predicates.blocks(GTBlocks.CASING_ASSEMBLY_LINE.get()))
             .where("F", Predicates.blocks("monilabs:bioalloy_fusion_casing"))

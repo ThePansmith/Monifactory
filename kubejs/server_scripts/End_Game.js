@@ -421,7 +421,7 @@ ServerEvents.recipes(event => {
         d: "gtceu:dimensional_superassembler",
         e: "gtceu:helical_fusion_reactor",
         f: "monilabs:prismatic_focus",
-        g: "kubejs:prism_glass",
+        g: "monilabs:prism_glass",
         h: "gtceu:polyether_ether_ketone_huge_item_pipe",
         k: "monilabs:knowledge_transmission_array",
         m: "gtceu:monium_frame",
