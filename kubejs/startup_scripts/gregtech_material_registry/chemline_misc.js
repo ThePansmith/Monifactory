@@ -237,8 +237,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("dielectric_mirror_solution")
         .liquid()
         .color(0xe2fff9)
-        // .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-        .components("7x silicon_dioxide", "1x enderium", doHarderProcessing ? "4x tantalum_pentoxide" : "1x tantalum", "5x rutile", "11x polyethylene", "3x germanium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("7x silicon_dioxide", "1x enderium", (doHarderProcessing ? "4x tantalum_pentoxide" : "1x tantalum"), "5x rutile", "11x polyethylene", "3x germanium")
 
 })
 

@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
 
     // Trinaquadalloy Mixer Recipe
     event.recipes.gtceu.mixer("mixer_trinaquadalloy")
-        .itemInputs("6x gtceu:trinium_dust", "2x gtceu:naquadah_dust", "gtceu:carbon_dust")
+        .itemInputs("2x gtceu:trinium_dust", "4x gtceu:enriched_naquadah_dust", "2x gtceu:lanthanum_dust", "gtceu:tungsten_carbide_dust")
         .itemOutputs("9x gtceu:trinaquadalloy_dust")
         .circuit(1)
         .duration(300)
