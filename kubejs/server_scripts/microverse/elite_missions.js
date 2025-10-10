@@ -157,11 +157,9 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_darmstadtite",
                 "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite",
-                "48x gtceu:raw_darmstadtite",
+                "64x gtceu:raw_darmstadtite"
             )
-            .requiredMicroverse(3) // Shattered
+            .requiredMicroverse(1) // Normal
     })
 
     microverse_mission(event, 9, 3).forEach(builder => {
@@ -176,9 +174,9 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_dulysite",
                 "64x gtceu:raw_dulysite",
                 "64x gtceu:raw_dulysite",
-                "64x gtceu:raw_dulysite",
+                "32x gtceu:raw_dulysite",
             )
-            .requiredMicroverse(3) // Shattered
+            .requiredMicroverse(1) // Normal
     })
 
     microverse_mission(event, 9, 3).forEach(builder => {
@@ -190,22 +188,12 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:uranium_block")
             .damageRate(12)
             .itemOutputs(
-                "64x gtceu:raw_plutonium_block",
-                "64x gtceu:raw_plutonium_block",
-            )
-            .requiredMicroverse(3) // Shattered
-    })
-
-    microverse_mission(event, 9, 3).forEach(builder => {
-        builder
-            .inputFluids("gtceu:tin_plasma 10000")
-            .itemInputs("kubejs:elite_drilling_kit")
-            .itemInputs("gtceu:duranium_drill_head")
-            .itemInputs("gtceu:osmiridium_block")
-            .damageRate(6)
-            .itemOutputs(
-                "32x gtceu:raw_iridosmine",
-                "40x gtceu:raw_osmiridium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
+                "64x gtceu:raw_plutonium",
             )
             .requiredMicroverse(3) // Shattered
     })
