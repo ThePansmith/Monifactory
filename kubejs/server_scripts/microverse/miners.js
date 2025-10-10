@@ -306,30 +306,4 @@ ServerEvents.recipes(event => {
         d: "thermal:dynamo_compression",
         T: "kubejs:energetic_thruster"
     }).id("kubejs:microminer/t4half")
-
-    // T8.5  Microminer
-    event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t8half", [
-        "   AAA   ",
-        "  ANNNA  ",
-        " GNTTTNG ",
-        " NNTFTNN ",
-        " NTECETN ",
-        "NNTSFSTNN",
-        "NTTQWQTTN",
-        "NTTYWYTTN",
-        " XXX XXX "
-    ], {
-        A: "kubejs:supercharged_laser_array",
-        N: "gtceu:double_naquadah_alloy_plate",
-        G: "kubejs:advanced_micro_miner_guidance_system",
-        T: "gtceu:double_trinium_plate",
-        F: "gtceu:zpm_field_generator",
-        E: "gtceu:zpm_emitter",
-        C: Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(),
-        S: "gtceu:naquadah_alloy_frame",
-        Q: "gtceu:luv_quantum_chest",
-        W: "kubejs:warp_core",
-        Y: "kubejs:warp_controller",
-        X: "kubejs:warp_engine"
-    }).id("kubejs:microminer/t8half")
 })
