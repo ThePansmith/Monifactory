@@ -30,10 +30,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 
     // Prismatic Crucible
 
-    event.create("transcendental_matrix")
-        .protons(6)
-        .neutrons(32)
-        .symbol("ᛝ")
     event.create("infinity")
         .protons(168)
         .neutrons(316)
@@ -111,7 +107,6 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("dilithium").parent(GTMaterialIconSet.DULL)
 
     // Prismatic Crucible
-    event.create("transcendental_matrix").parent(GTMaterialIconSet.SHINY)
     event.create("infinity").parent(GTMaterialIconSet.SHINY)
     event.create("meta_null").parent(GTMaterialIconSet.SHINY)
     event.create("monium").parent(GTMaterialIconSet.SHINY)

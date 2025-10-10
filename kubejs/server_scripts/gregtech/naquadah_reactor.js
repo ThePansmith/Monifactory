@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
 
     // Refinery Recipe
     event.recipes.gtceu.assembly_line("kubejs:naquadah_refinery")
-        .itemInputs("gtceu:large_mixer", "4x #gtceu:circuits/uv", "8x nuclearcraft:plate_elite", "4x gtceu:zpm_field_generator", "4x gtceu:uv_hermetic_casing", "2x kubejs:empty_fuel_rod", "2x gtceu:zpm_electric_pump", "2x gtceu:duranium_huge_fluid_pipe", "4x kubejs:cryotheum_coolant_unit", "16x gtceu:double_tritanium_plate")
+        .itemInputs("gtceu:large_mixer", "4x #gtceu:circuits/uv", "8x nuclearcraft:plate_elite", "4x gtceu:zpm_field_generator", "4x gtceu:uv_hermetic_casing", "2x kubejs:empty_fuel_rod", "2x gtceu:zpm_electric_pump", "2x gtceu:duranium_huge_fluid_pipe", "16x gtceu:double_tritanium_plate")
         .inputFluids("gtceu:omnium 1152", "gtceu:advanced_soldering_alloy 1152", "gtceu:polybenzimidazole 2304")
         .itemOutputs("gtceu:naquadah_refinery")
         .duration(1500)
@@ -66,8 +66,8 @@ ServerEvents.recipes(event => {
         .EUt(-GTValues.V[GTValues.UHV], 32)
 
     event.recipes.gtceu.large_naquadah_reactor("kubejs:process_superfuel")
-        .inputFluids("gtceu:naquadah_superfuel 50")
+        .inputFluids("gtceu:naquadah_superfuel 40")
         // .outputFluids("gtceu:naquadah_superfuel_depleted 50")
         .duration(40)
-        .EUt(-GTValues.V[GTValues.UHV], 128)
+        .EUt(-GTValues.V[GTValues.UHV], 64)
 })

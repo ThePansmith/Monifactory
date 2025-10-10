@@ -11,6 +11,9 @@ values:
   # Whether the microminer is returned upon a microverse reaching zero integrity.
   microminerReturnedOnZeroIntegrity: true
 
+  # Force pride month easter eggs regardless of time of year
+  forcePrideMonth: false
+
   # The efficiency multiplier for the sculk vat. Would make it this many times less efficient at empty/full compared to half.
   sculkVatEfficiencyMultiplier: 8.0
 

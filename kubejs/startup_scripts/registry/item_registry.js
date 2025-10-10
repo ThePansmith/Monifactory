@@ -484,12 +484,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/mod/ironjetpacks/empty_fluxed_jetpack_unit")
     event.create("empty_soularium_jetpack_unit")
         .texture("kubejs:item/mod/ironjetpacks/empty_soularium_jetpack_unit")
-    event.create("flight_control_unit")
-        .texture("kubejs:item/mod/ironjetpacks/flight_control_unit")
-    event.create("glowstone_elevation_unit")
-        .texture("kubejs:item/mod/ironjetpacks/glowstone_elevation_unit")
-    event.create("cryotheum_coolant_unit")
-        .texture("kubejs:item/mod/ironjetpacks/cryotheum_coolant_unit")
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
