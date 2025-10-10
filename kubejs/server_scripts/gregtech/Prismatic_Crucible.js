@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
                 .itemOutputs(`kubejs:${coreOut}_prismatic_core`)
                 .inputColor(PrismaticColor[prismacIn.toUpperCase()])
                 .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()], PrismaticColor[prismacOutHM.toUpperCase()])
-                .duration(40)
+                .duration(20)
                 .EUt(GTValues.VHA[GTValues.UHV])
         } else {
             event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}`)
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
                 .itemOutputs(`kubejs:${coreOut}_prismatic_core`)
                 .inputColor(PrismaticColor[prismacIn.toUpperCase()])
                 .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()])
-                .duration(40)
+                .duration(20)
                 .EUt(GTValues.VHA[GTValues.UHV])
         }
 
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
             .outputFluids(`gtceu:meta_null ${nullMb}`)
             .inputColor(PrismaticColor["NOT_" + prismacIn.toUpperCase()])
             .outputStatesRelative(0)
-            .duration(40)
+            .duration(20)
             .EUt(GTValues.VHA[GTValues.UHV])
     })
 
@@ -217,14 +217,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:red_prismatic_core")
         .inputColor(PrismaticColor.RED)
         .outputStatesNormal(PrismaticColor.GREEN)
-        .duration(40)
+        .duration(20)
         .EUt(GTValues.VHA[GTValues.UHV])
 
     event.recipes.gtceu.chromatic_transcendence("prismatic_core_r_void")
         .itemInputs("kubejs:inert_prismatic_core")
         .inputColor(PrismaticColor.NOT_RED)
         .outputStatesRelative(0)
-        .duration(40)
+        .duration(20)
         .EUt(GTValues.VHA[GTValues.UHV])
 
     event.recipes.gtceu.chromatic_transcendence("prismatic_core_supercritical_void")
@@ -232,6 +232,6 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:meta_null 4480")
         .inputColor(PrismaticColor.ANY)
         .outputStatesRelative(0)
-        .duration(40)
+        .duration(20)
         .EUt(GTValues.VHA[GTValues.UHV])
 })
