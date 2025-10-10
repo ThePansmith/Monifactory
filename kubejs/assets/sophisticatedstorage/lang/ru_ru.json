@@ -1,0 +1,31 @@
+{
+  "block.sophisticatedstorage.iron_barrel": "%s%sБронзовая бочка",
+  "block.sophisticatedstorage.gold_barrel": "%s%sСтальная бочка",
+  "block.sophisticatedstorage.diamond_barrel": "%s%sАлюминиевая бочка",
+  "block.sophisticatedstorage.netherite_barrel": "%s%sНержавеющая бочка",
+
+  "block.sophisticatedstorage.iron_chest": "%s%sБронзовый сундук",
+  "block.sophisticatedstorage.gold_chest": "%s%sСтальной сундук",
+  "block.sophisticatedstorage.diamond_chest": "%s%sАлюминиевый сундук",
+  "block.sophisticatedstorage.netherite_chest": "%s%sНержавеющий сундук",
+
+  "item.sophisticatedstorage.iron_shulker_box": "Бронзовый шалкеровый ящик",
+  "block.sophisticatedstorage.iron_shulker_box": "Бронзовый шалкеровый ящик",
+  "item.sophisticatedstorage.gold_shulker_box": "Стальной шалкеровый ящик",
+  "block.sophisticatedstorage.gold_shulker_box": "Стальной шалкеровый ящик",
+  "item.sophisticatedstorage.diamond_shulker_box": "Алюминиевый шалкеровый ящик",
+  "block.sophisticatedstorage.diamond_shulker_box": "Алюминиевый шалкеровый ящик",
+  "item.sophisticatedstorage.netherite_shulker_box": "Нержавеющий шалкеровый ящик",
+  "block.sophisticatedstorage.netherite_shulker_box": "Нержавеющий шалкеровый ящик",
+
+  "item.sophisticatedstorage.basic_to_iron_tier_upgrade": "Улучшение с базового до бронзового уровня",
+  "item.sophisticatedstorage.basic_to_gold_tier_upgrade": "Улучшение с базового до стального уровня",
+  "item.sophisticatedstorage.basic_to_diamond_tier_upgrade": "Улучшение с базового до алюминиевого уровня",
+  "item.sophisticatedstorage.basic_to_netherite_tier_upgrade": "Улучшение с базового до нержавеющего уровня",
+  "item.sophisticatedstorage.iron_to_gold_tier_upgrade": "Улучшение с бронзового до стального уровня",
+  "item.sophisticatedstorage.iron_to_diamond_tier_upgrade": "Улучшение с бронзового до алюминиевого уровня",
+  "item.sophisticatedstorage.iron_to_netherite_tier_upgrade": "Улучшение с бронзового до нержавеющего уровня",
+  "item.sophisticatedstorage.gold_to_diamond_tier_upgrade": "Улучшение со стального до алюминиевого уровня",
+  "item.sophisticatedstorage.gold_to_netherite_tier_upgrade": "Улучшение со стального до нержавеющего уровня",
+  "item.sophisticatedstorage.diamond_to_netherite_tier_upgrade": "Улучшение с алюминиевого до стального уровня"
+}

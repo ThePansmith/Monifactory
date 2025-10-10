@@ -204,15 +204,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
-
-// Transmatrix/Infinity/Null/Monium Processing
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("radiant_blend")
-        .liquid()
-        .color(0xfff25e)
-})
-
 // Sculk Bioalloy Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
@@ -230,18 +221,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("hadal_sculk")
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-
-})
-
-// Omnic Acid doesn't really have a "Processing Line", but there's nowhere better to really put it.
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("omnic_acid")
-        .fluid()
-        .color(0xff00ff)
-        .iconSet("shiny")
-        .components("5x carbon", "4x hydrogen", "3x oxygen", "4x omnium")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 })
 
