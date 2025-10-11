@@ -647,7 +647,13 @@
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
-			description: ["{moni.quest.485CEA4199AAD352.description1}"]
+			description: [
+				"{moni.quest.485CEA4199AAD352.description1}"
+				""
+				"{moni.quest.485CEA4199AAD352.description2}"
+				""
+				"{moni.quest.485CEA4199AAD352.description3}"
+			]
 			id: "485CEA4199AAD352"
 			rewards: [{
 				id: "223E9ECE8A5FA09D"
@@ -655,11 +661,18 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "5DDE773859BDF9DC"
-				item: "gtceu:highly_advanced_soc_wafer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5DDE773859BDF9DC"
+					item: "gtceu:neutronium_boule"
+					type: "item"
+				}
+				{
+					id: "57390DF5C20196C5"
+					item: "gtceu:neutronium_wafer"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.485CEA4199AAD352.title}"
 			x: -2.0d
 			y: 8.5d

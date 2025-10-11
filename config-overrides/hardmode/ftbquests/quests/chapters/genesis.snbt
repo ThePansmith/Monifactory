@@ -233,7 +233,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["{moni.quest.07DC7FC23332B847.description1.hardmode}"]
+			description: ["{moni.quest.07DC7FC23332B847.description1}"]
 			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
@@ -242,13 +242,13 @@
 				item: "gtceu:terminal"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.07DC7FC23332B847.subtitle.hardmode}"
+			subtitle: "{moni.quest.07DC7FC23332B847.subtitle}"
 			tasks: [{
 				id: "380954E57B7C36EC"
 				title: "{moni.task.380954E57B7C36EC.hardmode}"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.07DC7FC23332B847.title.hardmode}"
+			title: "{moni.quest.07DC7FC23332B847.title}"
 			x: 1.75d
 			y: 0.5d
 		}
