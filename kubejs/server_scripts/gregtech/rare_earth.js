@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.centrifuge("rare_earth_mass_separation")
         .itemInputs("4x gtceu:oxidized_re_sludge_dust")
         .inputFluids("gtceu:nitric_acid 1000")
-        .outputFluids("gtceu:light_rare_earths 500", "gtceu:heavy_rare_earths 750", "gtceu:oxalic_acid_solution 750")
+        .outputFluids("gtceu:light_rare_earths 600", "gtceu:heavy_rare_earths 500", "gtceu:oxalic_acid_solution 750")
         .duration(160)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -43,8 +43,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.distillation_tower("distill_heavy_rare_earths")
         .inputFluids("gtceu:heavy_rare_earths 1000")
-        .itemOutputs("3x gtceu:europium_oxide_dust")
-        .outputFluids("gtceu:terbium_solution 200", "gtceu:lutetium_solution 500")
+        .itemOutputs("1x gtceu:europium_oxide_dust")
+        .outputFluids("gtceu:terbium_solution 250", "gtceu:lutetium_solution 300")
         .duration(160)
         .EUt(GTValues.VA[GTValues.IV])
     // Terbium
@@ -69,9 +69,14 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV])
 
-    event.recipes.gtceu.polarizer("terbium_polarize")
+    event.recipes.gtceu.polarizer("terbium_polarize_long")
         .itemInputs("gtceu:long_terbium_rod")
         .itemOutputs("gtceu:long_magnetic_terbium_rod")
+        .duration(200)
+        .EUt(122880)
+    event.recipes.gtceu.polarizer("terbium_polarize")
+        .itemInputs("gtceu:terbium_rod")
+        .itemOutputs("gtceu:magnetic_terbium_rod")
         .duration(200)
         .EUt(122880)
 

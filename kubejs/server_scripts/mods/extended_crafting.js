@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         S: "gtceu:black_steel_plate",
         L: "extendedcrafting:luminessence",
         A: "gtceu:hssg_plate",
-        B: "extendedcrafting:crystaltine_ingot"
+        B: "gtceu:diamond_plate"
     })
 
     event.remove({ output: "extendedcrafting:redstone_component" })

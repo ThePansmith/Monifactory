@@ -404,7 +404,6 @@
     "enderio.cap_bank.tooltip": "大型多方块存储库可能会对TPS造成很大的影响！\n查看用于工业储能的变电站。",
     "kubejs.eternal_catalyst.tooltip": "凝视深渊……",
     "item.kubejs.uev_universal_circuit": "UEV 通用电路",
-    "gtceu.energy_converter.tooltip": "§4在EU->FE模式下不能使用导管。\n§7使用GT的线或者线缆。在连接到FE机器的时候，它们会自动转换EU为FE。",
     "item.kubejs.fluxed_thruster": "红石充能推进器",
     "item.kubejs.uv_universal_circuit": "UV 通用电路",
     "kubejs.universal_navigator.tooltip": "§9待会儿见，导航员！",
