@@ -132,10 +132,11 @@ function parseRecipe(recipe) {
                 if (!("type" in c.ingredient)) {
                     let ing = c.ingredient
                     return {
-                        id: "tag" in ing ? "#" + ing.tag : ing.item,
+                        tag: "tag" in ing ? ing.tag : null,
+                        item: "item" in ing ? ing.item : null,
                         amount: c.count,
-                        chance: i.chance,
-                        tierChanceBoost: i.tierChanceBoost,
+                        chance: i.chance ?? 10000,
+                        maxChance: i.maxChance ?? i.chance ?? 10000,
                     }
                 }
                 if (c.ingredient.type === "gtceu:circuit")
@@ -150,7 +151,7 @@ function parseRecipe(recipe) {
 
     let [newInputFluids, newOutputFluids] = [recipe.inputs?.fluid, recipe.outputs?.fluid].map(items =>
         items && items.map(i => {
-            if (i.chance !== i.maxChance || i.tierChanceBoost)
+            if (i.chance !== i.maxChance)
                 throw new Error("Chanced fluid recipes are not yet supported")
             let c = i.content
             let [val] = c.value
@@ -212,21 +213,34 @@ function parseRecipe(recipe) {
         let newRecipe = registerEvent.recipes.gtceu[machineName](newRecipeId).duration(duration)
 
         if(newInputItems) for (let i of newInputItems)
-            if(i.id.charAt(0) === "#") {
-                // @ts-ignore
-                newRecipe.itemInputs(`${i.amount}x ${i.id}`)
-            } else {
-                if(i.chance === 0 && i.tierChanceBoost === 0) {
-                    // @ts-ignore
-                    newRecipe.notConsumable(Item.of(i.id, i.amount))
+            if(i.tag) {
+                /** @type {InputItem_} */
+                // @ts-expect-error
+                let input = `${i.amount}x #${i.tag}`
+                newRecipe.itemInputs(input)
+            } else if(i.item) {
+                if(i.chance === 0) {
+                    newRecipe.notConsumable(Item.of(i.item, i.amount))
                 } else {
-                    // @ts-ignore
-                    newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
+                    newRecipe.chancedInput(Item.of(i.item, i.amount), i.chance, i.maxChance)
                 }
             }
-        if(newOutputItems) for (let i of newOutputItems)
-            // @ts-ignore
-            newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost)
+        if(newOutputItems) for (let i of newOutputItems) {
+            if (i.chance === 0) {
+                console.warnf("Non consumable output item??? " + JSON.stringify({
+                    originalRecipe: recipe,
+                    newInputFluids: newInputFluids,
+                    newInputItems: newInputItems,
+                    newOutputFluids: newOutputFluids,
+                    newOutputItems: newOutputItems,
+                }))
+                continue
+            }
+            /** @type {Internal.ItemStack} */
+            // @ts-expect-error
+            let itemStack = i.item ?? `#${i.tag}`
+            newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(itemStack, i.amount)), i.chance, i.maxChance)
+        }
 
         // Polyfilled spread operator 🙏
         if(newInputFluids)
@@ -236,10 +250,10 @@ function parseRecipe(recipe) {
         if(circuitNumber !== null)
             newRecipe = newRecipe.circuit(circuitNumber)
         if(eut !== null)
-            newRecipe = newRecipe.EUt(eut)
+            newRecipe = newRecipe.EUt(IOEnergyStack.fromVoltage(eut))
         if (recipeConditions) {
             /** @type {import("../../dx/typings/GTJSONRecipe.d.mts").GTJSONRecipeCondition[]} */
-            // @ts-ignore
+            // @ts-expect-error
             let conditions = recipeConditions.map(cond => "data" in cond
                 ? Object.assign({ type: cond.type }, cond.data)
                 : cond
@@ -253,7 +267,6 @@ function parseRecipe(recipe) {
             let researchCondition = conditions.find(cond => cond.type === "research")
             if(researchCondition) {
                 let research = researchCondition.research[0]
-                // @ts-ignore
                 newRecipe = newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
             }
         }
@@ -314,7 +327,7 @@ function generateAlternatives(event, javaRecipe) {
                     if (entry) {
                         inp.id = solderId
                         inp.amount /= (solderEfficiency / entry[1])
-                    } else continue;
+                    }
                 }
             }, solderEfficiency, 2)
             r.register(
@@ -345,9 +358,12 @@ function generateAlternatives(event, javaRecipe) {
         r.useMultiplier(() => {
             // Replace all advanced smd by complex smd
             for(let inp of r.newInputItems) {
-                let match = inp.id.match(/^gtceu:advanced(_smd_.*)$/)
+                if (!inp.item) continue
+                /** @type {null | [string, "_smd_capacitor"]} */
+                // @ts-expect-error
+                let match = inp.item.match(/^gtceu:advanced(_smd_.*)$/)
                 if(!match) continue
-                inp.id = "kubejs:complex" + match[1]
+                inp.item = `kubejs:complex${match[1]}`
                 inp.amount /= 4
             }
         }, 4, 2, 16)
