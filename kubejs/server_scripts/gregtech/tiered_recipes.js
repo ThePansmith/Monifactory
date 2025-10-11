@@ -220,14 +220,16 @@ function parseRecipe(recipe) {
                     // @ts-ignore
                     newRecipe.notConsumable(Item.of(i.id, i.amount))
                 } else {
+                    newRecipe.itemInputs(Item.of(i.id, i.amount))
                     // @ts-ignore
                     // newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
                 }
             }
         if(newOutputItems) for (let i of newOutputItems)
             // @ts-ignore
-            // newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost)
-
+            newRecipe.itemOutputs(ExtendedOutputItem.of(Item.of(i.id, i.amount)))
+            /* TODO: Make this work with GT 7.2.0
+                newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost) */
         // Polyfilled spread operator 🙏
         if(newInputFluids)
             newRecipe = newRecipe.inputFluids.apply(newRecipe, newInputFluids.map(i => `${i.id} ${i.amount}`))
