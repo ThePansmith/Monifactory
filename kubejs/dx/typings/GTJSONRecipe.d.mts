@@ -3,16 +3,15 @@ export type ValueOf<T> = T[keyof T]
 export type MCIdentifier = `${string}:${string}`
 
 export type GTJSONRecipeChanced = {
-    chance: number
-    maxChance: number
-    tierChanceBoost: number
+    chance?: number
+    maxChance?: number
 }
 export type GTJSONRecipeChancedContents<Content> = ({content: Content} & GTJSONRecipeChanced)[]
 
 export type GTJSONRecipeItemIngredient = {
-    item: MCIdentifier
+    item: Special.Item
 } | {
-    tag: MCIdentifier
+    tag: string
 } | {
     type: "forge:nbt"
     item: MCIdentifier
@@ -58,7 +57,7 @@ export type GTJSONRecipeCondition = {
     research: [{
         researchId: string
         dataItem: {
-            id: MCIdentifier
+            id: Special.Item
             Count: number
             tag: object
         }

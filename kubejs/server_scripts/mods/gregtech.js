@@ -113,8 +113,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(stoneItem)
             .duration(16)
             .EUt(60)
-            .addData("fluidA", "minecraft:lava")
-            .addData("fluidB", "minecraft:water")
+            ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:water", "minecraft:lava")
     }
 
     generateRockBreakerStoneRecipe("minecraft:calcite")
