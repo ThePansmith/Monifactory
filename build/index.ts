@@ -156,12 +156,15 @@ export const BuildModlistTarget = new Juke.Target({
 export const UpdateModsFolder = new Juke.Target({
 
     dependsOn: [DownloadModsTarget],
-    inputs: ["manifest.json"],
+    inputs: ["dist/"],
     outputs: () => ([
-        "mods"
+        "mods/"
     ]),
     executes: () => {
         try {
+            // Nuking mods folder before re-adding them in order to stay up to date
+            if(fs.existsSync("mods/")) fs.rmdirSync("mods/", { recursive: true })
+            fs.mkdirSync("mods/", { recursive: true })
             cpMods("mods/")
         } catch (error) {
             Juke.logger.error(error)
