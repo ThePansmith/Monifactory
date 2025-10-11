@@ -156,7 +156,6 @@ export const BuildModlistTarget = new Juke.Target({
 export const UpdateModsFolder = new Juke.Target({
 
     dependsOn: [DownloadModsTarget],
-    inputs: ["dist/"],
     outputs: () => ([
         "mods/"
     ]),
