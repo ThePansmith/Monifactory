@@ -221,12 +221,12 @@ function parseRecipe(recipe) {
                     newRecipe.notConsumable(Item.of(i.id, i.amount))
                 } else {
                     // @ts-ignore
-                    newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
+                    // newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
                 }
             }
         if(newOutputItems) for (let i of newOutputItems)
             // @ts-ignore
-            newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost)
+            // newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost)
 
         // Polyfilled spread operator 🙏
         if(newInputFluids)
