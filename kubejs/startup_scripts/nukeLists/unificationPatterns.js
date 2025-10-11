@@ -1,4 +1,4 @@
-// priority: 900
+// priority: 800
 /**
  * This file defines RegEx patterns that match with large quantities of certain items.
  *
@@ -19,9 +19,6 @@ global.unificationExcludedItems = [
     "enderio:wood_gear",
     "enderio:infinity_rod",
     "enderio:experience_rod",
-    "extendedcrafting:crystaltine_block",
-    "extendedcrafting:crystaltine_ingot",
-    "extendedcrafting:crystaltine_nugget",
     "extendedcrafting:luminessence_block",
     "nuclearcraft:beryllium_block",
     "nuclearcraft:ferroboron_ingot",

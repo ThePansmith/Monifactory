@@ -97,6 +97,23 @@ export const BuildModlistTarget = new Juke.Target({
     }
 })
 
+export const UpdateModsFolder = new Juke.Target({
+
+    dependsOn: [DownloadModsTarget],
+    inputs: ["manifest.json"],
+    outputs: () => ([
+        "mods"
+    ]),
+    executes: () => {
+        try {
+            cpMods("mods/")
+        } catch (error) {
+            Juke.logger.error(error)
+            throw new Juke.ExitCode(1)
+        }
+    }
+})
+
 export const BuildClientTarget = getZipModPackTarget("client", [
     new Juke.Target({
         name: "group-client-files",
