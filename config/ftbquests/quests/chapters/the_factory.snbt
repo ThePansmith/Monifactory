@@ -1289,7 +1289,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"{moni.quest.74B5CA5A48CE7B39.description1}"
 				""
@@ -2378,7 +2377,7 @@
 			}]
 			title: "{moni.quest.5B52FFEBF5D65C20.title}"
 			x: -9.0d
-			y: 5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -2708,6 +2707,23 @@
 			title: "{moni.quest.2861BA7C235C52A3.title}"
 			x: 3.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["1BC6DDC2D50F9C46"]
+			description: ["{moni.quest.114B300F56E48351.description1}"]
+			id: "114B300F56E48351"
+			shape: "hexagon"
+			tasks: [{
+				id: "17D47466DED091B3"
+				item: {
+					Count: 1
+					id: "shrink:shrinking_device"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.75d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"

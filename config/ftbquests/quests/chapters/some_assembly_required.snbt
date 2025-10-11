@@ -101,7 +101,7 @@
 			id: "24BED0E27BD54DB6"
 			linked_quest: "0BB798ACFE684AA9"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			x: -3.25d
 			y: 0.0d
 		}
@@ -996,6 +996,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2D3D6B5AEB319758"
 				item: "gtceu:advanced_soc_wafer"
@@ -1429,7 +1430,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "5B95FCADCA0B7A5D"
 				item: "gtceu:luv_assembler"
@@ -1454,6 +1455,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "{moni.quest.6B80737C5E1359F7.subtitle}"
 			tasks: [{
 				id: "725DD71DFCCADBE8"
@@ -1561,7 +1563,7 @@
 		}
 		{
 			dependencies: ["27B3EB82ED638620"]
-			description: ["{moni.quest.7AEA6EF1408B003B.description3}"]
+			description: ["{moni.quest.62C85A1F451C4855.description3}"]
 			id: "3E7250EFBFF03D89"
 			rewards: [{
 				id: "48E6352BC7E3A682"
@@ -1586,7 +1588,7 @@
 				"0B9D5F865C3F8B31"
 				"1349044BF8C04A12"
 			]
-			description: ["{moni.quest.7AEA6EF1408B003B.description4}"]
+			description: ["{moni.quest.62C85A1F451C4855.description4}"]
 			id: "299CCE5C8C2219C8"
 			rewards: [{
 				id: "4AEACF669F40EC9B"

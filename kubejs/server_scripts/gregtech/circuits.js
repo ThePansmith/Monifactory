@@ -359,8 +359,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("extradimensional_processor_assembly")
         .itemInputs(
             "kubejs:extradimensional_processing_unit",
-            "4x kubejs:extradimensional_crystal_cpu_core",
             "2x kubejs:extradimensional_processor",
+            "4x kubejs:extradimensional_crystal_cpu_core",
             "4x kubejs:complex_smd_inductor",
             "4x kubejs:complex_smd_capacitor",
             "2x kubejs:hyperdynamic_ram_chip",
