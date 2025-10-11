@@ -2272,6 +2272,44 @@
 			x: -9.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"{moni.quest.5CFBE0455A242AEB.description1}"
+				""
+				"{moni.quest.5CFBE0455A242AEB.description2}"
+				""
+				"{moni.quest.5CFBE0455A242AEB.description3}"
+				""
+				"{moni.quest.5CFBE0455A242AEB.description4}"
+			]
+			id: "5CFBE0455A242AEB"
+			shape: "hexagon"
+			tasks: [{
+				id: "7BC2DC471C278E85"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.5CFBE0455A242AEB.title}"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: ["{moni.quest.259CC99CE1FB22A9.description1}"]
+			hide_dependency_lines: true
+			id: "259CC99CE1FB22A9"
+			tasks: [{
+				id: "41C9DB62EB31D192"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 4.0d
+		}
 	]
 	title: "{moni.chapter.0654B76C306712BE.hardmode.title}"
 }

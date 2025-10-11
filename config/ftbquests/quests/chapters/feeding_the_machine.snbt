@@ -642,7 +642,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.22E50A6923EBF5CB.title}"
-			x: -0.75d
+			x: -1.0d
 			y: 9.25d
 		}
 		{
@@ -662,7 +662,7 @@
 			}]
 			title: "{moni.quest.485CEA4199AAD352.title}"
 			x: -2.0d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -755,7 +755,10 @@
 			y: 8.25d
 		}
 		{
-			dependencies: ["01E542E1C9DAF5B4"]
+			dependencies: [
+				"01E542E1C9DAF5B4"
+				"22E50A6923EBF5CB"
+			]
 			description: [
 				"{moni.quest.1CF77095C203454F.description1}"
 				""
@@ -776,8 +779,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1CF77095C203454F.title}"
-			x: -7.0d
-			y: 11.5d
+			x: -6.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["0F6B344C265D1FBB"]
