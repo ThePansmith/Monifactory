@@ -120,7 +120,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("polyether_ether_ketone")
         .liquid().dust().polymer()
-        .color(0x272a2e)
+        .color(0xeddeb6).secondaryColor(0xC1B3A4)
         .components("19x carbon", "12x hydrogen", "3x oxygen")
         .itemPipeProperties(64, 24)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
