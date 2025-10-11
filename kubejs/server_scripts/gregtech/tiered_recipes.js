@@ -131,13 +131,18 @@ function parseRecipe(recipe) {
             case "gtceu:sized":
                 if (!("type" in c.ingredient)) {
                     let ing = c.ingredient
-                    return {
+                    let parsed = {
                         tag: "tag" in ing ? ing.tag : null,
                         item: "item" in ing ? ing.item : null,
                         amount: c.count,
-                        chance: i.chance ?? 10000,
-                        maxChance: i.maxChance ?? i.chance ?? 10000,
+                        chance: i.chance,
+                        maxChance: i.maxChance ?? i.chance,
                     }
+                    if (i.chance === i.maxChance) {
+                        parsed.chance = 10000
+                        parsed.maxChance = 10000
+                    }
+                    return parsed
                 }
                 if (c.ingredient.type === "gtceu:circuit")
                     return setCircuitNumber(c.ingredient.configuration)
@@ -226,16 +231,6 @@ function parseRecipe(recipe) {
                 }
             }
         if(newOutputItems) for (let i of newOutputItems) {
-            if (i.chance === 0) {
-                console.warnf("Non consumable output item??? " + JSON.stringify({
-                    originalRecipe: recipe,
-                    newInputFluids: newInputFluids,
-                    newInputItems: newInputItems,
-                    newOutputFluids: newOutputFluids,
-                    newOutputItems: newOutputItems,
-                }))
-                continue
-            }
             /** @type {Internal.ItemStack} */
             // @ts-expect-error
             let itemStack = i.item ?? `#${i.tag}`
