@@ -144,6 +144,15 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(129)
 
+    // UHV Alloy Cable Mixer recipe
+    event.recipes.gtceu.mixer("lanthanum_gold_cadmium_curium_sulfate")
+        .itemInputs("2x gtceu:lanthanum_dust", "3x gtceu:gold_dust", "3x gtceu:cadmium_dust", "gtceu:curium_dust", "gtceu:sulfur_dust")
+        .inputFluids("gtceu:oxygen 4000")
+        .itemOutputs("14x gtceu:lanthanum_gold_cadmium_curium_sulfate_dust")
+        .circuit(4)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UV])
+
     // Atomic Casings
     event.shaped("2x gtceu:atomic_casing", [
         "PHP",

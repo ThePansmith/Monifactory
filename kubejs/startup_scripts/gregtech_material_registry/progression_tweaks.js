@@ -13,6 +13,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(3600, "mid")
         .cableProperties(GTValues.VA[GTValues.LuV], 8, 8, false);
 
+    // Lanthanum Gold Cadmium Curium Sulfate
+    event.create("lanthanum_gold_cadmium_curium_sulfate")
+        .fluid().ingot()
+        .color(0x961e30)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_SPRING_SMALL, GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .components(GTMaterials.Lanthanum.multiply(2), GTMaterials.Gold.multiply(3), GTMaterials.Cadmium.multiply(3), GTMaterials.Curium.multiply(1), GTMaterials.Sulfur.multiply(1), GTMaterials.Oxygen.multiply(4))
+        .blastTemp(7400, "higher", GTValues.VA[GTValues.LuV], 65 * 20)
+        .cableProperties(GTValues.VA[GTValues.UHV], 12, 8, false);
+
     // Advanced Solders
     // TODO: mixer, ABS | processing lines
     event.create("gtceu:advanced_soldering_alloy")
