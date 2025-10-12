@@ -361,16 +361,30 @@ function generateAlternatives(event, javaRecipe) {
             : v.fluid === "gtceu:glue"
         )
     )) {
-        let r = parseRecipe(recipe)
-        r.useMultiplier(() => {
+        let r1 = parseRecipe(recipe)
+        r1.useMultiplier(() => {
             // Replace all old solder with better one
-            for (let inp of r.newInputFluids) {
+            for (let inp of r1.newInputFluids) {
                 if (inp.id !== "gtceu:glue") continue
-                inp.id = "gtceu:ethyl_cyanoacrylate"
-                inp.amount /= 4
+                inp.id = "gtceu:epoxy"
+                inp.amount *= (1 / 5)
             }
         }, 4, 2)
-        r.register(
+        r1.register(
+            event,
+            recipeName + "/epoxy",
+            machineName,
+        )
+        let r2 = parseRecipe(recipe)
+        r2.useMultiplier(() => {
+            // Replace all old solder with better one
+            for (let inp of r2.newInputFluids) {
+                if (inp.id !== "gtceu:glue") continue
+                inp.id = "gtceu:ethyl_cyanoacrylate"
+                inp.amount *= (1 / 25)
+            }
+        }, 4, 2)
+        r2.register(
             event,
             recipeName + "/krazy_glue",
             machineName,
@@ -412,7 +426,7 @@ function generateAlternatives(event, javaRecipe) {
             for (let inp of r.newInputFluids) {
                 if (inp.id !== "gtceu:sulfuric_acid") continue
                 inp.id = "gtceu:hexafluorosilicic_acid"
-                inp.amount /= 5
+                inp.amount *= (3 / 25)
             }
         }, 5, 5)
         r.register(
