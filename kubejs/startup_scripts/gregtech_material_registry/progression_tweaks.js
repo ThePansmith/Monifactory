@@ -8,10 +8,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("neptunium_palladium_aluminium")
         .fluid().ingot()
         .color(0x69595A)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
         .components(GTMaterials.Neptunium.multiply(1), GTMaterials.Palladium.multiply(5), GTMaterials.Aluminium.multiply(2))
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .blastTemp(3600, "mid")
-        .cableProperties(GTValues.VA[GTValues.ZPM], 16, 8, false);
+        .cableProperties(GTValues.VA[GTValues.LuV], 8, 8, false);
 
     // Advanced Solders
     // TODO: mixer, ABS | processing lines
