@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         ["max", "wire", "monium", "monium", 80000000],
     ]
     const transformer = [
-        ["uhv", "darconite", "europium"],
+        ["uhv", "darconite", "lanthanum_gold_cadmium_curium_sulfate"],
         ["uev", "necrosiderite", "darconite"]
     ]
 
@@ -488,7 +488,7 @@ ServerEvents.recipes(event => {
 
     // Cables
     // UHV+ cables are made only with SBR and PEEK, UHV cables require neutronium, UEV+ cables require meta_null
-    const endgameCables = ["europium", "omnium", "darconite", "necrosiderite"];
+    const endgameCables = ["europium", "lanthanum_gold_cadmium_curium_sulfate", "omnium", "darconite", "necrosiderite"];
     const cablematsUEV = ["omnium", "darconite", "necrosiderite"];
 
     endgameCables.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));

@@ -22,6 +22,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // Necrosiderite, and Monium for wires/cables
     let setWireCable = (component, prefix0, prefix1) =>
         event.setMaterialEntries(component, {
+            UHV: prefix0 + ":lanthanum_gold_cadmium_curium_sulfate",
             UEV: prefix0 + ":darconite",
             MAX: prefix1 + ":monium",
         })
@@ -52,6 +53,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     wireCableComponents.forEach(prefixComponentPair => {
         let wireMap = {};
+        wireMap[GTValues.UHV] = prefixComponentPair[0] + ":lanthanum_gold_cadmium_curium_sulfate"
         wireMap[GTValues.UEV] = prefixComponentPair[0] + ":darconite";
         wireMap[GTValues.MAX] = prefixComponentPair[1] + ":monium";
         event.setMaterialEntries(prefixComponentPair[2], wireMap)
@@ -198,12 +200,12 @@ GTCEuStartupEvents.craftingComponents(event => {
     // Crate, Drum go here
 
     event.setMaterialEntries("small_spring_transformer", {
-        UHV: "smallSpring:europium",
+        UHV: "smallSpring:lanthanum_gold_cadmium_curium_sulfate",
         UEV: "smallSpring:darconite"
     })
 
     event.setMaterialEntries("spring_transformer", {
-        UV: "spring:europium",
+        UV: "spring:lanthanum_gold_cadmium_curium_sulfate",
         UHV: "spring:darconite",
         UEV: "spring:necrosiderite",
     })
