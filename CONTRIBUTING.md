@@ -65,7 +65,7 @@ If you want to use Juke to update your mods folder, you will need to install Nod
 1. Go to the `build\` directory
 2. Run `npm install .` to install the required packages 
 3. Then run `node index.ts update-mods-folder` to update your mods folder.
-Once those files are moved back in place, you should be able to launch the instance as a modpack while also being to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance. 
+Once those files are moved back in place, you should be able to launch the instance as a modpack while also being able to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance, you can also just rerun the command to completely purge and update your mods folder. 
 
 ## Localization ##
 Monifactory supports localization for nearly everything, including the questbook. Our weblate instance can be found [here](https://hosted.weblate.org/engage/monifactory/), and guide for using weblate can be found [here](<https://docs.weblate.org/en/latest/user/translating.html>). The site also has a [minimalist mode](<https://docs.weblate.org/en/latest/user/translating.html#zen-mode>), and supports uploading raw language files, if you prefer other options.
