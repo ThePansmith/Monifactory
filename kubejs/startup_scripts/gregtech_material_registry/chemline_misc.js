@@ -294,4 +294,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xe8c474)
         .components("12x carbon", "27x hydrogen", "4x oxygen", "1x phosphorus")
         .formula("(C4H9O)3PO")
+        
+    event.create("tantalum_pentoxide")
+            .dust()
+            .color(0x72728A).iconSet("rough")
+            .components("2x tantalum", "5x oxygen")
 })
