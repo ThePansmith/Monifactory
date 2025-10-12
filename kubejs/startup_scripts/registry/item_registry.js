@@ -844,11 +844,21 @@ StartupEvents.registry("item", event => {
     event.create("prism_pane")
         .texture("kubejs:item/lines/prismac/psoc/prism_pane")
         .displayName("P.R.I.S.M. Glass Pane")
-
-    // Trans Matrix Vial
+    // Transmatrix Stuff
     event.create("transcendental_soul_vial")
-        .texture("kubejs:item/trans_vial")
+        .texture("kubejs:item/lines/transgender/trans_vial")
         .displayName("Transcendental Soul Vial")
+
+    event.create("crushed_circuit")
+        .texture("kubejs:item/lines/transgender/crushed_circuit")
+        .displayName("Crushed Circuit")
+
+    event.create("sparks_of_conscience")
+        .textureJson({
+            layer0: "kubejs:item/lines/transgender/of_conscience",
+            layer1: "kubejs:item/lines/transgender/sparks_"
+        })
+        .displayName("Sparks of Conscience")
 
     event.create("uhv_voltage_coil")
         .displayName("Ultra High Voltage Coil")
