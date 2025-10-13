@@ -221,8 +221,16 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite")
-        .itemInputs("2x gtceu:darconite_single_wire")
-        .itemOutputs("2x gtceu:hyperdegenerate_darconite_single_wire")
+        .itemInputs("4x gtceu:darconite_single_wire")
+        .itemOutputs("4x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .blastFurnaceTemp(10600)
+
+    event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite")
+        .itemInputs("8x gtceu:darconite_foil")
+        .itemOutputs("8x gtceu:hyperdegenerate_darconite_foil")
         .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])

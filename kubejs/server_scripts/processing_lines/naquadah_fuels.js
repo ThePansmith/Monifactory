@@ -127,24 +127,18 @@ ServerEvents.recipes(event => {
     ]
 
     let cracking_mats = [
-        ["naquadah", 24],
-        ["naquadria", 12],
+        ["naquadah", 64],
+        ["naquadria", 32],
         ["enriched_naquadah", 8],
         ["neutronium", 2],
     ]
 
     isotopes.forEach(isotope => {
         cracking_mats.forEach((cracking_mat, mat_tier) => {
-            event.recipes.gtceu.cracker(`${isotope[0]}_isotope_cracking_cracker_${cracking_mat[0]}`)
-                .inputFluids(`gtceu:${isotope[1]} 1000`, `gtceu:${cracking_mat[0]} ${cracking_mat[1] * 9}`)
-                .outputFluids(`gtceu:cracked_${isotope[1]} 500`)
-                .duration(120)
-                .EUt(GTValues.VA[GTValues.EV + Math.floor(mat_tier / 2)])
-
             event.recipes.gtceu.fusion_reactor(`${isotope[0]}_isotope_cracking_fusion_${cracking_mat[0]}`)
                 .inputFluids(`gtceu:${isotope[1]} 125`, `gtceu:${cracking_mat[0]} ${cracking_mat[1]}`)
                 .outputFluids(`gtceu:cracked_${isotope[1]} 125`)
-                .duration(32)
+                .duration(60 / (1 + Math.floor(mat_tier / 2)))
                 .EUt(GTValues.VA[GTValues.IV + Math.floor(mat_tier / 2)])
                 .fusionStartEU(120000000 * (Math.floor(mat_tier / 2) + 1))
         })
@@ -182,14 +176,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.distillation_tower("heavy_residue_distillation")
         .inputFluids("gtceu:cracked_heavy_atomic_residue")
         .chancedOutput("kubejs:naquadah_waste", 6600, 0)
-        .outputFluids("gtceu:naquadah_isotope_sludge 250", "gtceu:americium 100", "gtceu:plutonium_241 150", "gtceu:plutonium 200", "gtceu:neptunium 300")
+        .outputFluids("gtceu:naquadah_isotope_sludge 300", "gtceu:americium 100", "gtceu:plutonium_241 100", "gtceu:plutonium 200", "gtceu:neptunium 300")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.distillation_tower("superheavy_residue_distillation")
         .inputFluids("gtceu:cracked_superheavy_atomic_residue")
         .chancedOutput("kubejs:naquadah_waste", 9000, 0)
-        .outputFluids("gtceu:californium 100", "gtceu:berkelium 150", "gtceu:curium 250", "gtceu:heavy_atomic_residue 500")
+        .outputFluids("gtceu:californium 150", "gtceu:berkelium 200", "gtceu:curium 250", "gtceu:heavy_atomic_residue 400")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
