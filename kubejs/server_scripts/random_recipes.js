@@ -874,4 +874,18 @@ ServerEvents.recipes(event => {
         .outputFluids("minecraft:water 1000")
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("rutile_from_titanium")
+        .itemInputs("gtceu:titanium_dust")
+        .inputFluids("gtceu:oxygen 2000")
+        .itemOutputs("gtceu:rutile_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("tantalum_pentoxide")
+        .itemInputs("gtceu:tantalum_dust")
+        .inputFluids("gtceu:oxygen 5000")
+        .itemOutputs("gtceu:tantalum_pentoxide_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 })
