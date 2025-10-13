@@ -172,11 +172,11 @@ ServerEvents.recipes(event => {
         ["green", "cyan", "cyan", "green", 192, 448, "none"],
         ["cyan", "blue", "blue", "red", 256, 640, "none"],
         ["blue", "magenta", "active", "blue", 256, 896, "none"],
-        ["active", "orange", "orange", "green", 384, 1152, "yellow"],     // TODO: HM Random
+        ["active", "orange", "orange", "green", 384, 1152, "yellow"],
         ["orange", "lime", "lime", "indigo", 384, 1536, "none"],
-        ["lime", "teal", "teal", "blue", 512, 1920, "cyan"],            // TODO: HM Random
+        ["lime", "teal", "teal", "blue", 512, 1920, "cyan"],
         ["teal", "azure", "azure", "orange", 512, 2432, "none"],
-        ["azure", "indigo", "indigo", "red", 768, 2944, "magenta"],        // TODO: HM Random
+        ["azure", "indigo", "indigo", "red", 768, 2944, "magenta"],
         ["indigo", "pink", "supercritical", "cyan", 768, 3712, "none"]
     ]
 

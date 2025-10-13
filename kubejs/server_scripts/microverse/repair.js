@@ -38,7 +38,6 @@ ServerEvents.recipes(event => {
         return builder;
     }
 
-    // TODO: Rework those to exclude chance boosting too
     repairing(6)
         .EUt(GTValues.VHA[GTValues.LuV])
         .chancedInput("2x gtceu:double_enderium_plate", 7000, 0)
