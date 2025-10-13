@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
     // Bootstrap recipe to start the Eltz Crystal growing from Tiny Eltz Dust + Eltic Sludge
     event.recipes.gtceu.centrifuge("centrifuging_eltz-enriched_helium")
         .inputFluids("gtceu:eltz-enriched_helium 1500")
-        .notConsumable("kubejs:magnetron")
+        .notConsumable(global.doHarderRecipes ? "kubejs:magnetron" : "gtceu:superconducting_coil")
         .itemOutputs("monilabs:eltz_dust")
         .outputFluids("gtceu:helium 500")
         .duration(100)
