@@ -117,22 +117,23 @@ ServerEvents.recipes(event => {
     })
 
     const hullMaterials = [
-        { tier: "uev", material: "infinity", wire: "darconite_single_cable", plastic: "polyethyl_cyanoacrylate" },
-        { tier: "max", material: "monium", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "uev", material1: "gtceu:infinity", material2: "monilabs:sculk_bioalloy", wire: "darconite_single_cable", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "max", material1: "gtceu:monium", material2: "gtceu:meta_null", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate" },
     ]
 
     hullMaterials.forEach((value) => {
         event.shaped(`gtceu:${value.tier}_machine_casing`, [
-            "PPP",
+            "QPQ",
             "PWP",
-            "PPP"
+            "QPQ"
         ], {
-            P: `gtceu:${value.material}_plate`,
+            P: `${value.material1}_plate`,
+            Q: `${value.material2}_plate`,
             W: "#forge:tools/wrenches"
         }).id(`shaped/casing_${value.tier}`)
 
         event.recipes.gtceu.assembler(`casing_${value.tier}`)
-            .itemInputs(`8x gtceu:${value.material}_plate`)
+            .itemInputs(`4x ${value.material1}_plate`, `4x ${value.material2}_plate`)
             .itemOutputs(`gtceu:${value.tier}_machine_casing`)
             .circuit(8)
             .duration(50)
