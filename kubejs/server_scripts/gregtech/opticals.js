@@ -11,8 +11,8 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(GTValues.VA[GTValues.LuV])
         .inputFluids("gtceu:polyethylene 1584")
-        .itemInputs("7x gtceu:silicon_dioxide_dust", "1x gtceu:enderium_dust", doHarderProcessing ? "4x gtceu:tantalum_pentoxide_dust" : "gtceu:tantalum_dust", "5x gtceu:rutile_dust", "3x gtceu:germanium_dust")
-        .outputFluids(doHarderProcessing ? "gtceu:dielectric_mirror_solution 4464" : "gtceu:dielectric_mirror_solution 4032")
+        .itemInputs("4x gtceu:tantalum_pentoxide_dust", "gtceu:tantalum_dust", "5x gtceu:rutile_dust", "3x gtceu:germanium_dust")
+        .outputFluids("gtceu:dielectric_mirror_solution 4464")
 
     event.recipes.gtceu.alloy_blast_smelter("lithium_niobate")
         .blastFurnaceTemp(1510)
