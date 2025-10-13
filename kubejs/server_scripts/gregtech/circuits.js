@@ -441,7 +441,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("extradimensional_processor_mainframe")
         .itemInputs(
             "2x gtceu:infinity_frame",
-            "2x kubejs:extradimensional_processor_computer",
+            "4x kubejs:extradimensional_processor_computer",
             "4x kubejs:extradimensional_optical_cpu_core",
             "16x kubejs:complex_smd_inductor",
             "32x kubejs:complex_smd_capacitor",
@@ -451,7 +451,7 @@ ServerEvents.recipes(event => {
             "32x kubejs:multidimensional_cpu_chip",
             "16x kubejs:hyperdynamic_ram_chip",
             "16x gtceu:necrosiderite_single_wire",
-            "4x gtceu:infinity_plate"
+            "8x gtceu:double_infinity_plate"
         )
         .inputFluids("gtceu:living_soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 1152")
         .itemOutputs("kubejs:extradimensional_processor_mainframe")

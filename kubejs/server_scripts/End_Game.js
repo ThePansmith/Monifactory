@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite")
+    event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite_wire")
         .itemInputs("4x gtceu:darconite_single_wire")
         .itemOutputs("4x gtceu:hyperdegenerate_darconite_single_wire")
         .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(10600)
 
-    event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite")
+    event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite_foil")
         .itemInputs("8x gtceu:darconite_foil")
         .itemOutputs("8x gtceu:hyperdegenerate_darconite_foil")
         .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
@@ -396,26 +396,24 @@ ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
         "BMMMMMMMMMB",
         "MEWwmfmwYEM",
-        "MEGCCcCCGEp",
-        "MePFIIIFPsp",
-        "hbRIDQDIRgp",
-        "hbqSGHGSZgp",
-        "hbRIDQDIRgp",
-        "MtPFIIIFPdp",
-        "MEGCCoCCGEp",
+        "MEGCCcCCGEg",
+        "MeCFIIIFCsg",
+        "hbRIGQGIRpg",
+        "hbqSQHQSZpg",
+        "hbRIGQGIRpg",
+        "MtCFIIIFCdg",
+        "MEGCCoCCGEg",
         "MEXwmkmwVEM",
         "BMMMMMMMMMB"
     ], {
         B: "gtceu:monium_block",
         C: "kubejs:extradimensional_processor_mainframe",
-        D: "monilabs:double_eltz_plate",
         E: "monilabs:eltz_frame",
         F: "gtceu:uev_field_generator",
         G: "gtceu:monium_gear",
         H: "gtceu:max_machine_hull",
         I: "kubejs:dimensionally_stabilized_infinity_heavy_plating",
         M: "kubejs:causality_exempt_monic_heavy_plating",
-        P: "kubejs:supercritical_prismatic_core",
         Q: "kubejs:field_stabilised_prismatic_pulsar_compound",
         R: "gtceu:uev_robot_arm",
         S: "gtceu:uev_sensor",
@@ -437,8 +435,8 @@ ServerEvents.recipes(event => {
         q: "gtceu:uev_quantum_chest",
         s: "gtceu:omnic_synthesizer",
         t: "monilabs:creative_energy_multi",
-        p: "kubejs:prism_pane",
-        w: "gtceu:monium_quadruple_wire",
+        p: "gtceu:computer_monitor_cover",
+        w: "gtceu:monium_octal_wire",
     })
 
     // Knowledge Transmission Array

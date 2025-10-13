@@ -55,13 +55,11 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 "kubejs:gravitational_amplifier",
-                "64x gtceu:gravi_star",
                 "64x gtceu:gravi_star"
             )
             .inputFluids("gtceu:crude_naquadah_fuel 500")
             .damageRate(2)
             .itemOutputs(
-                "64x kubejs:quasi_stable_neutron_star",
                 "64x kubejs:quasi_stable_neutron_star"
             )
             .requiredMicroverse(3) // Shattered
