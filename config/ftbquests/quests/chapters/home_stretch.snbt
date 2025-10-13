@@ -746,7 +746,7 @@
 			subtitle: "{moni.quest.040B3FCD82533BD9.subtitle}"
 			tasks: [{
 				id: "6D3DB0D6E5C60BCF"
-				item: "kubejs:field_stabilised_omnic_pulsar_compound"
+				item: "kubejs:field_stabilised_prismatic_pulsar_compound"
 				type: "item"
 			}]
 			title: "{moni.quest.040B3FCD82533BD9.title}"

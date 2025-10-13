@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
         O: "kubejs:omnic_matrix_coil_block",
         D: "gtceu:large_naquadah_reactor",
         S: "monilabs:dimensional_stabilization_netherite_casing",
-        Q: "kubejs:field_stabilised_omnic_pulsar_compound"
+        Q: "kubejs:field_stabilised_prismatic_pulsar_compound"
     })
 
     //

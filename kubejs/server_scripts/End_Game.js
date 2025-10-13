@@ -408,7 +408,7 @@ ServerEvents.recipes(event => {
         I: "kubejs:dimensionally_stabilized_infinity_heavy_plating",
         M: "kubejs:causality_exempt_monic_heavy_plating",
         P: "kubejs:supercritical_prismatic_core",
-        Q: "kubejs:field_stabilised_omnic_pulsar_compound",
+        Q: "kubejs:field_stabilised_prismatic_pulsar_compound",
         R: "gtceu:uev_robot_arm",
         S: "gtceu:uev_sensor",
         V: "kubejs:infinity_file",
@@ -487,7 +487,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("fieldstabilizedcompound")
         .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")
-        .itemOutputs("kubejs:field_stabilised_omnic_pulsar_compound")
+        .itemOutputs("kubejs:field_stabilised_prismatic_pulsar_compound")
         .duration(255)
         .EUt(GTValues.VA[GTValues.UEV])
 
