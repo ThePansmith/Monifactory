@@ -700,7 +700,7 @@
 			subtitle: "{moni.quest.39A09DA3903C5564.subtitle}"
 			tasks: [{
 				id: "6C2FE18AC14A6945"
-				item: "kubejs:universe_boule"
+				item: "kubejs:null_boule"
 				type: "item"
 			}]
 			title: "{moni.quest.39A09DA3903C5564.title}"
