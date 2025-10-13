@@ -479,12 +479,6 @@ StartupEvents.registry("item", event => {
     event.create("thermal:rf_coil_xfer_augment_advanced")
     event.create("thermal:fluid_tank_augment_advanced")
 
-    // Jetpack Units
-    event.create("empty_fluxed_jetpack_unit")
-        .texture("kubejs:item/mod/ironjetpacks/empty_fluxed_jetpack_unit")
-    event.create("empty_soularium_jetpack_unit")
-        .texture("kubejs:item/mod/ironjetpacks/empty_soularium_jetpack_unit")
-
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create("compressed_octadic_capacitor")
