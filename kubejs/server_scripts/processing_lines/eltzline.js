@@ -143,14 +143,23 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // Bootstrap recipe to start the Eltz Crystal growing from Tiny Eltz Dust + Eltic Sludge
-    event.recipes.gtceu.centrifuge("centrifuging_eltz-enriched_helium")
-        .inputFluids("gtceu:eltz-enriched_helium 1500")
-        .notConsumable("kubejs:magnetron")
-        .itemOutputs("monilabs:eltz_dust")
-        .outputFluids("gtceu:helium 500")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.ZPM])
-
+    if (doHarderProcessing){
+        event.recipes.gtceu.centrifuge("centrifuging_eltz-enriched_helium")
+            .inputFluids("gtceu:eltz-enriched_helium 1500")
+            .notConsumable("kubejs:magnetron")
+            .itemOutputs("monilabs:eltz_dust")
+            .outputFluids("gtceu:helium 500")
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.ZPM])
+    }
+    else {
+        event.recipes.gtceu.centrifuge("centrifuging_eltz-enriched_helium")
+            .inputFluids("gtceu:eltz-enriched_helium 1500")
+            .itemOutputs("monilabs:eltz_dust")
+            .outputFluids("gtceu:helium 500")
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.ZPM])
+    }
     event.recipes.gtceu.mixer("mixing_eltic_sludge")
         .inputFluids("gtceu:eltz-enriched_helium 1000", "gtceu:dirty_hexafluorosilicic_solution 3000")
         .itemInputs("4x gtceu:aluminosilicate_residue_dust")
