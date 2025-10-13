@@ -239,32 +239,32 @@ ServerEvents.recipes(event => {
     // Heavy Platings
     event.recipes.extendedcrafting.combination(
         "kubejs:quantum_fluxed_eternium_heavy_plating",
-        "gtceu:cryococcus_plate", ["2x redstone_arsenal:flux_plating", "3x kubejs:quantum_flux"],
+        "gtceu:double_cryococcus_plate", ["2x redstone_arsenal:flux_plating", "3x kubejs:quantum_flux"],
         1600000, 160000
     )
 
     event.recipes.extendedcrafting.combination(
         "kubejs:universe_resistant_neutronium_heavy_plating",
-        "gtceu:neutronium_plate", ["gtceu:omnium_nugget", "3x gtceu:quantum_eye"],
+        "gtceu:double_neutronium_plate", ["gtceu:omnium_nugget", "3x gtceu:quantum_eye"],
         4000000, 400000
     )
 
     event.recipes.extendedcrafting.combination(
         "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-        "gtceu:omnium_plate", ["2x monilabs:crystal_matrix_plate", "gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
+        "gtceu:double_omnium_plate", ["2x monilabs:crystal_matrix_plate", "2x gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
         10000000, 1000000
     )
 
     event.recipes.extendedcrafting.combination(
         "kubejs:dimensionally_stabilized_infinity_heavy_plating",
-        "gtceu:infinity_plate", ["2x gtceu:activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "2x kubejs:the_ultimate_material"],
+        "gtceu:double_infinity_plate", ["2x gtceu:activated_netherite_plate", "2x kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "2x gtceu:infinity_plate"],
         16000000, 1600000
     )
 
     // Infinity Ingots
     event.recipes.extendedcrafting.combination(
-        "gtceu:infinity_ingot",
-        "kubejs:active_prismatic_core", ["4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot"],
+        "2x gtceu:infinity_ingot",
+        "kubejs:active_prismatic_core", ["2x gtceu:activated_netherite_ingot", "2x gtceu:neutronium_ingot", "4x monilabs:transcendental_matrix_ingot"],
         320000000, 8000000
     )
 

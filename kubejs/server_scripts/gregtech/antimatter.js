@@ -39,9 +39,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.antimatter_manipulator("antimatter_fuel")
         .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")
-        .outputFluids("kubejs:antimatter_fuel 10")
+        .outputFluids("kubejs:antimatter_fuel 36")
         .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     // Controller Recipes
     event.recipes.gtceu.assembly_line("antimatter_manipulator")
@@ -77,5 +77,5 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.anti_collider("annihilation_infinity")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:infinity 1")
         .duration(1)
-        .EUt(-536870912 * 4)
+        .EUt(-536870912 * 16)
 })

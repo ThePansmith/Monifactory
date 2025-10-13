@@ -117,22 +117,23 @@ ServerEvents.recipes(event => {
     })
 
     const hullMaterials = [
-        { tier: "uev", material: "infinity", wire: "darconite_single_cable", plastic: "polyethyl_cyanoacrylate" },
-        { tier: "max", material: "monium", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "uev", material1: "gtceu:infinity", material2: "monilabs:sculk_bioalloy", wire: "darconite_single_cable", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "max", material1: "gtceu:monium", material2: "gtceu:meta_null", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate" },
     ]
 
     hullMaterials.forEach((value) => {
         event.shaped(`gtceu:${value.tier}_machine_casing`, [
-            "PPP",
+            "QPQ",
             "PWP",
-            "PPP"
+            "QPQ"
         ], {
-            P: `gtceu:${value.material}_plate`,
+            P: `${value.material1}_plate`,
+            Q: `${value.material2}_plate`,
             W: "#forge:tools/wrenches"
         }).id(`shaped/casing_${value.tier}`)
 
         event.recipes.gtceu.assembler(`casing_${value.tier}`)
-            .itemInputs(`8x gtceu:${value.material}_plate`)
+            .itemInputs(`4x ${value.material1}_plate`, `4x ${value.material2}_plate`)
             .itemOutputs(`gtceu:${value.tier}_machine_casing`)
             .circuit(8)
             .duration(50)
@@ -350,7 +351,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("uev_sensor")
-        .itemInputs("monilabs:sculk_bioalloy_frame", "gtceu:uev_electric_motor", "4x monilabs:sculk_bioalloy_plate", "kubejs:quasi_stable_neutron_star", "#gtceu:circuits/uev", "64x gtceu:transcendental_matrix_foil", "32x gtceu:transcendental_matrix_foil", "4x gtceu:darconite_single_cable")
+        .itemInputs("monilabs:sculk_bioalloy_frame", "gtceu:uev_electric_motor", "4x monilabs:sculk_bioalloy_plate", "kubejs:quasi_stable_neutron_star", "#gtceu:circuits/uev", "64x monilabs:transcendental_matrix_foil", "32x monilabs:transcendental_matrix_foil", "4x gtceu:darconite_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_sensor")
         .duration(600)
@@ -377,7 +378,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("uev_emitter")
-        .itemInputs("monilabs:sculk_bioalloy_frame", "gtceu:uev_electric_motor", "4x monilabs:long_sculk_bioalloy_rod", "kubejs:quasi_stable_neutron_star", "#gtceu:circuits/uev", "64x gtceu:transcendental_matrix_foil", "32x gtceu:transcendental_matrix_foil", "4x gtceu:darconite_single_cable")
+        .itemInputs("monilabs:sculk_bioalloy_frame", "gtceu:uev_electric_motor", "4x monilabs:long_sculk_bioalloy_rod", "kubejs:quasi_stable_neutron_star", "#gtceu:circuits/uev", "64x monilabs:transcendental_matrix_foil", "32x monilabs:transcendental_matrix_foil", "4x gtceu:darconite_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_emitter")
         .duration(600)

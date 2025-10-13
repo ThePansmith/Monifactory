@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
             "2x kubejs:hyperdynamic_ram_chip",
             "10x kubejs:miniature_microverse_container"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(300)
         .addData("duration", 300)
         .damageRate(1)
@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:advanced_soc",
             "64x gtceu:fine_platinum_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:crystal_soc",
             "64x gtceu:fine_niobium_titanium_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)
@@ -387,7 +387,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:highly_advanced_soc",
             "64x gtceu:fine_yttrium_barium_cuprate_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)
@@ -428,7 +428,7 @@ ServerEvents.recipes(event => {
             "4x kubejs:photonic_soc_active",
             "64x gtceu:fine_naquadah_wire"
         )
-        .inputFluids("gtceu:crude_naquadah_fuel 100")
+        .inputFluids("gtceu:crude_naquadah_fuel 50")
         .duration(2000)
         .addData("duration", 2000)
         .addData("projector_tier", 2)
@@ -441,7 +441,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("extradimensional_processor_mainframe")
         .itemInputs(
             "2x gtceu:infinity_frame",
-            "2x kubejs:extradimensional_processor_computer",
+            "4x kubejs:extradimensional_processor_computer",
             "4x kubejs:extradimensional_optical_cpu_core",
             "16x kubejs:complex_smd_inductor",
             "32x kubejs:complex_smd_capacitor",
@@ -451,7 +451,7 @@ ServerEvents.recipes(event => {
             "32x kubejs:multidimensional_cpu_chip",
             "16x kubejs:hyperdynamic_ram_chip",
             "16x gtceu:necrosiderite_single_wire",
-            "4x gtceu:infinity_plate"
+            "8x gtceu:double_infinity_plate"
         )
         .inputFluids("gtceu:living_soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 1152")
         .itemOutputs("kubejs:extradimensional_processor_mainframe")

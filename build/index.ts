@@ -42,7 +42,8 @@ const clientMods = [
     "citresewn",
     "legendarytooltips",
     "drippyloadingscreen",
-    "badoptimizations"
+    "badoptimizations",
+    "fancymenu"
 ]
 
 const symlinkSync = (ourDir: fs.PathLike, newDir: fs.PathLike) => {
