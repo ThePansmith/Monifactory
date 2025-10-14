@@ -391,13 +391,13 @@ ServerEvents.recipes(event => {
     // Avaritia Replacement recipes
     compacting(event, "gtceu:neutronium_ingot", "gtceu:neutronium_nugget")
 
-    // Recipe from Radium salt to Radium and Rock Salt
+    // Recipe from Radon salt to Radon and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
         .outputFluids(Fluid.of("gtceu:radon", 125))
         .circuit(1)
-        .duration(200)
+        .duration(150)
         .EUt(2000)
 
     // Add the Fluid Tag Filter

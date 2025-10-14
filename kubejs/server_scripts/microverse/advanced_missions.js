@@ -43,8 +43,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "8x gtceu:raw_lapis_block",
                 "20x gtceu:raw_emerald_block",
-                "32x gtceu:raw_coal_block",
-                "24x gtceu:raw_redstone_block",
+                "16x gtceu:raw_coal_block",
+                "32x gtceu:raw_redstone_block",
             )
             .damageRate(1)
     })
@@ -185,9 +185,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_uraninite",
                 "64x gtceu:raw_uraninite",
-                "32x gtceu:raw_uraninite",
-                "32x gtceu:raw_plutonium",
-                "32x gtceu:rarest_metal_mixture_dust",
+                "64x gtceu:raw_plutonium",
             )
             .requiredMicroverse(1) // Normal
     })

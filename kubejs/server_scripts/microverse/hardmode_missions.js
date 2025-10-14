@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
             .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "24x minecraft:ghast_tear",
-                "48x kubejs:wither_bone", // drops of evil aren"t in the pack
+                "48x kubejs:wither_bone",
                 "16x minecraft:magma_cream",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
                 "16x enderio:enderman_head",
                 "16x minecraft:ender_pearl",
                 "16x minecraft:ender_pearl",
-                "16x minecraft:shulker_shell", // shulker pearls aren"t in the pack
+                "16x minecraft:shulker_shell",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
