@@ -343,7 +343,7 @@ ServerEvents.recipes(event => {
             "12x gtceu:styrene_butadiene_rubber_foil"
         )
         .inputFluids("gtceu:advanced_soldering_alloy 2304", "monilabs:crystal_matrix 576", "gtceu:microversium 1152")
-        .duration(4000)
+        .duration(1000)
         .EUt(GTValues.VA[GTValues.UHV])
         .stationResearch(builder => builder
             .researchStack("kubejs:gravitational_amplifier")

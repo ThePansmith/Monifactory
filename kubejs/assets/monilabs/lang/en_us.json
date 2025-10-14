@@ -86,7 +86,7 @@
   "monilabs.menu.packmodeswitcher.displayname": "Switch Pack Mode",
   "monilabs.multiblock.duplicate.0": "This multiblock is a duplicate",
   "monilabs.multiblock.duplicate.1": "Only one can exist",
-  "monilabs.omnic.current_diversity_points": "Current diversity points: %s",
+  "monilabs.omnic.current_diversity_points": "Current omnium progress: %s",
   "monilabs.prismatic.color_name.azure": "§9Azure§r",
   "monilabs.prismatic.color_name.blue": "§1Blue§r",
   "monilabs.prismatic.color_name.cyan": "§bCyan§r",

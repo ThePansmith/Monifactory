@@ -199,11 +199,11 @@ ServerEvents.recipes(event => {
     })
 
     // T10MM missions
-    microverse_mission(event, 10, 3).forEach(builder => {
+    microverse_mission(event, 10, 3, 150).forEach(builder => {
         builder
             .inputFluids("gtceu:helium_plasma 16000")
             .itemInputs("kubejs:universal_collapse_device")
-            .damageRate(40)
+            .damageRate(80)
             .itemOutputs("kubejs:heart_of_a_universe")
             .requiredMicroverse(1) // Normal
             .updateMicroverse(3, true)

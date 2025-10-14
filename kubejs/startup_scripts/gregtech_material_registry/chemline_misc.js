@@ -222,6 +222,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("hadal_sculk")
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
+    event.create("bioalloy_base")
+        .dust()
+        .liquid(1936)
+        .color(0x52a5c6).secondaryColor(0x48539b)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .components(GTMaterials.BlueAlloy.multiply(4), GTMaterials.Lead.multiply(2), GTMaterials.Lutetium.multiply(1))
 })
 
 // Optical Circuits
@@ -237,8 +243,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("dielectric_mirror_solution")
         .liquid()
         .color(0xe2fff9)
-        // .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-        .components("7x silicon_dioxide", "1x enderium", doHarderProcessing ? "4x tantalum_pentoxide" : "1x tantalum", "5x rutile", "11x polyethylene", "3x germanium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("7x silicon_dioxide", "1x enderium", (doHarderProcessing ? "4x tantalum_pentoxide" : "1x tantalum"), "5x rutile", "11x polyethylene", "3x germanium")
 
 })
 
@@ -294,4 +300,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xe8c474)
         .components("12x carbon", "27x hydrogen", "4x oxygen", "1x phosphorus")
         .formula("(C4H9O)3PO")
+
+    event.create("tantalum_pentoxide")
+        .dust()
+        .color(0x72728A).iconSet("rough")
+        .components("2x tantalum", "5x oxygen")
 })

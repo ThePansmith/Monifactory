@@ -35,11 +35,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0xBAB0C3).iconSet("rough")
             .components("2x niobium", "5x oxygen")
 
-        event.create("tantalum_pentoxide")
-            .dust()
-            .color(0x72728A).iconSet("rough")
-            .components("2x tantalum", "5x oxygen")
-
         event.create("manganese_difluoride")
             .dust()
             .color(0xEF4B3D).iconSet("rough")
