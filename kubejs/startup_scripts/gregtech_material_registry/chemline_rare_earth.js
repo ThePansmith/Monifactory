@@ -62,7 +62,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0xd1291d)
         .components("2x copper", "1x oxygen")
-        
+
     event.create("cuprous_chloride")
         .dust()
         .color(0x4db8bf)
