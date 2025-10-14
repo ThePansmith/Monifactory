@@ -263,16 +263,11 @@
 			y: -3.4928571428571473d
 		}
 		{
-			dependencies: [
-				"3FFC053E3E11D586"
-				"22E50A6923EBF5CB"
-			]
+			dependencies: ["3FFC053E3E11D586"]
 			description: [
 				"{moni.quest.5BADF536443E712D.description1}"
 				""
 				"{moni.quest.5BADF536443E712D.description2}"
-				""
-				"{moni.quest.5BADF536443E712D.description3}"
 			]
 			id: "5BADF536443E712D"
 			rewards: [{

@@ -12,7 +12,6 @@
  *    if you provide the correct ID.
  * 3. When finally removing the deprecated item or fluid, delete the call to the utility function to fully remove the old item.
  *
- * TODO: add functionality for blocks
  */
 
 /**

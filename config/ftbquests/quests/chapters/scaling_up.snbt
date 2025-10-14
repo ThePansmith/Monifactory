@@ -3213,7 +3213,7 @@
 					toggleTimer: 0b
 				}
 			}
-			id: "53BD457B3FB0DFDB"
+			id: "044EBE36128FBB01"
 			rewards: [{
 				id: "5C26603B3D2DC88B"
 				item: "kubejs:moni_quarter"

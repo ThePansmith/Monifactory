@@ -101,6 +101,16 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xE60000)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    event.create("cracked_heavy_atomic_residue")
+        .liquid()
+        .color(0xe97023)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("cracked_superheavy_atomic_residue")
+        .liquid()
+        .color(0xFF3300)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
     event.create("exotic_particle_solution")
         .liquid()
         .color(0xF8EBBE)

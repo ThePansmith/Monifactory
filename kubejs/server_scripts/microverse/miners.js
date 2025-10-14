@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
         "  NN NN  ",
         "  NN NN  ",
         " NUNNNUN ",
-        "PNCNENCNP",
+        "NNCNENCNN",
         "NNRNANRNN",
         " NNNNNNN ",
         "NW W W WN"
@@ -206,7 +206,6 @@ ServerEvents.recipes(event => {
         U: "kubejs:universal_navigator",
         R: "kubejs:universal_warp_core",
         C: "kubejs:universal_warp_controller",
-        P: "solarflux:sp_custom_neutronium",
         E: "gtceu:energy_cluster",
         A: "gtceu:iv_quantum_chest",
         W: "kubejs:hadal_warp_engine"
@@ -217,9 +216,9 @@ ServerEvents.recipes(event => {
         "   A M A   ",
         "   O M O   ",
         "  OO M OO  ",
-        " POOMMMOOP ",
+        "  OOMMMOO  ",
         " OONMMMNOO ",
-        "POOMMCMMOOP",
+        " OOMMCMMOO ",
         "OODMMIMMDOO",
         "OOBMOOOMBOO",
         "OOOOW WOOOO",
@@ -228,7 +227,6 @@ ServerEvents.recipes(event => {
     ], {
         O: "kubejs:elementally_infused_omnic_matrix_heavy_plating",
         M: "monilabs:double_crystal_matrix_plate",
-        P: "solarflux:sp_custom_neutronium",
         W: "kubejs:hadal_warp_engine",
         A: "gtceu:uhv_robot_arm",
         C: "gtceu:uhv_quantum_chest",
@@ -244,10 +242,10 @@ ServerEvents.recipes(event => {
         "    IEI    ",
         "    III    ",
         "   IISII   ",
-        "  PISQSIP  ",
+        "   ISQSI   ",
         "  IIJSJII  ",
         " IIOJCJOII ",
-        "PIIDJJJDIIP",
+        "IIIDJJJDIII",
         "IIIJJ JJIII",
         "IIWW   WWII",
         "IW       WI"
@@ -255,13 +253,12 @@ ServerEvents.recipes(event => {
         I: "kubejs:dimensionally_stabilized_infinity_heavy_plating",
         J: "kubejs:universe_resistant_neutronium_heavy_plating",
         E: "kubejs:extradimensional_navigator",
-        P: "solarflux:sp_custom_infinity",
         C: "gtceu:uhv_quantum_chest",
         W: "kubejs:hadal_warp_engine",
         O: "kubejs:omnic_matrix_coil_block",
         D: "gtceu:large_naquadah_reactor",
         S: "monilabs:dimensional_stabilization_netherite_casing",
-        Q: "kubejs:field_stabilised_omnic_pulsar_compound"
+        Q: "kubejs:field_stabilised_prismatic_pulsar_compound"
     })
 
     //

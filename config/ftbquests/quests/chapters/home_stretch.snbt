@@ -125,18 +125,11 @@
 			y: -4.75d
 		}
 		{
-			id: "60C700D7684269CD"
-			linked_quest: "6ABD83B58FADD4DF"
+			id: "42ABB77E8DA67C11"
+			linked_quest: "61301FBD825F8280"
 			shape: "hexagon"
-			x: -17.5d
-			y: 5.0d
-		}
-		{
-			id: "04CF886B4A20D637"
-			linked_quest: "7D29C79DE1CCA2A2"
-			shape: "hexagon"
-			x: -18.0d
-			y: 8.0d
+			x: -16.25d
+			y: 9.5d
 		}
 	]
 	quests: [
@@ -446,26 +439,6 @@
 			y: 0.3125d
 		}
 		{
-			dependencies: ["41F1837D7C131898"]
-			description: ["{moni.quest.4261BDA34D716EC8.description1}"]
-			id: "4261BDA34D716EC8"
-			rewards: [{
-				id: "39E939B2D99B5AD3"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				id: "567872742E26A724"
-				item: "gtceu:omnic_synthesizer"
-				type: "item"
-			}]
-			title: "{moni.quest.4261BDA34D716EC8.title}"
-			x: -17.5d
-			y: 9.5d
-		}
-		{
 			dependencies: [
 				"07057CDE4E021BA7"
 				"07E757AAA1C7435D"
@@ -746,7 +719,7 @@
 			subtitle: "{moni.quest.040B3FCD82533BD9.subtitle}"
 			tasks: [{
 				id: "6D3DB0D6E5C60BCF"
-				item: "kubejs:field_stabilised_omnic_pulsar_compound"
+				item: "kubejs:field_stabilised_prismatic_pulsar_compound"
 				type: "item"
 			}]
 			title: "{moni.quest.040B3FCD82533BD9.title}"
@@ -967,90 +940,6 @@
 			y: -3.75d
 		}
 		{
-			dependencies: ["2D47BFA44BDB5E6A"]
-			description: [
-				"{moni.quest.235C1E5B2C58B5AF.description1}"
-				""
-				"{moni.quest.235C1E5B2C58B5AF.description2}"
-			]
-			id: "235C1E5B2C58B5AF"
-			rewards: [{
-				id: "7ADB865F026B73CB"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "5E20DE67BAF768B6"
-				item: "kubejs:hadal_shard"
-				type: "item"
-			}]
-			title: "{moni.quest.235C1E5B2C58B5AF.title}"
-			x: -19.75d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"61301FBD825F8280"
-				"6ABD83B58FADD4DF"
-				"7FA6B36DCE648C66"
-			]
-			description: [
-				"{moni.quest.738A141D31AD7CE3.description1}"
-				""
-				"{moni.quest.738A141D31AD7CE3.description2}"
-				""
-				"{moni.quest.738A141D31AD7CE3.description3}"
-			]
-			id: "738A141D31AD7CE3"
-			rewards: [{
-				count: 5
-				id: "284D36F54887F2BB"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "{moni.quest.738A141D31AD7CE3.subtitle}"
-			tasks: [{
-				id: "140C83AB5FE8450E"
-				item: "kubejs:hadal_energy_core"
-				type: "item"
-			}]
-			title: "{moni.quest.738A141D31AD7CE3.title}"
-			x: -16.25d
-			y: 6.5d
-		}
-		{
-			dependencies: ["4261BDA34D716EC8"]
-			description: [
-				"{moni.quest.61301FBD825F8280.description1}"
-				""
-				"{moni.quest.61301FBD825F8280.description2}"
-			]
-			icon: "gtceu:omnium_ingot"
-			id: "61301FBD825F8280"
-			rewards: [{
-				id: "01C5A5720A287196"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "4205D04F8EFE2D7D"
-					item: "gtceu:omnium_nugget"
-					type: "item"
-				}
-				{
-					id: "56970BBAFAB8BEB7"
-					item: "gtceu:omnium_ingot"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.61301FBD825F8280.title}"
-			x: -16.25d
-			y: 9.5d
-		}
-		{
 			dependencies: ["738A141D31AD7CE3"]
 			description: ["{moni.quest.483652BAEF59E125.description1}"]
 			id: "483652BAEF59E125"
@@ -1177,27 +1066,6 @@
 			title: "{moni.quest.062B4DDD703338D1.title}"
 			x: -14.5d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"235C1E5B2C58B5AF"
-				"7D29C79DE1CCA2A2"
-			]
-			description: [
-				"{moni.quest.7FA6B36DCE648C66.description1}"
-				""
-				"{moni.quest.7FA6B36DCE648C66.description2}"
-			]
-			id: "7FA6B36DCE648C66"
-			shape: "hexagon"
-			tasks: [{
-				id: "275D59A2870C1EBB"
-				item: "gtceu:hadal_sculk_bucket"
-				type: "item"
-			}]
-			title: "{moni.quest.7FA6B36DCE648C66.title}"
-			x: -18.0d
-			y: 6.5d
 		}
 	]
 	title: "{moni.chapter.457D17593A814D73.title}"
