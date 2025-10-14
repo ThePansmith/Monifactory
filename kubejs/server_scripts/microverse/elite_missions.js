@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     })
 
     // T7MM missions
-    microverse_mission(event, 7, 3, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 7, 3, 120, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
                 "64x gtceu:dilithium_gem",
@@ -132,12 +132,12 @@ ServerEvents.recipes(event => {
         builder
             .inputFluids("gtceu:argon_plasma 5000")
             .itemInputs("kubejs:gravitational_amplifier", "6x gtceu:neutron_reflector")
-            .damageRate(12)
+            .damageRate(8)
             .itemOutputs("32x gtceu:neutronium_ingot")
             .requiredMicroverse(1) // Normal
     })
 
-    microverse_mission(event, 9, 3).forEach(builder => {
+    microverse_mission(event, 9, 3, 70).forEach(builder => {
         builder
             .inputFluids("gtceu:oxygen_plasma 10000")
             .itemInputs("kubejs:gravitational_amplifier", "64x gtceu:gravi_star")
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x gtceu:neutron_reflector",)
             .itemInputs("gtceu:ruridit_block")
-            .damageRate(10)
+            .damageRate(5)
             .itemOutputs(
                 "64x gtceu:raw_darmstadtite",
                 "64x gtceu:raw_darmstadtite",
@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x kubejs:gem_sensor")
             .itemInputs("gtceu:naquadah_block")
-            .damageRate(10)
+            .damageRate(5)
             .itemOutputs(
                 "64x gtceu:raw_dulysite",
                 "64x gtceu:raw_dulysite",
@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x nuclearcraft:plate_du")
             .itemInputs("gtceu:uranium_block")
-            .damageRate(12)
+            .damageRate(6)
             .itemOutputs(
                 "64x gtceu:raw_plutonium",
                 "64x gtceu:raw_plutonium",
