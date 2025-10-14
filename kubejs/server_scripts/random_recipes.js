@@ -391,13 +391,13 @@ ServerEvents.recipes(event => {
     // Avaritia Replacement recipes
     compacting(event, "gtceu:neutronium_ingot", "gtceu:neutronium_nugget")
 
-    // Recipe from Radium salt to Radium and Rock Salt
+    // Recipe from Radon salt to Radon and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
-        .outputFluids(Fluid.of("gtceu:radon", 1000))
+        .outputFluids(Fluid.of("gtceu:radon", 125))
         .circuit(1)
-        .duration(200)
+        .duration(150)
         .EUt(2000)
 
     // Add the Fluid Tag Filter
@@ -859,6 +859,15 @@ ServerEvents.recipes(event => {
         .duration(110)
         .EUt(GTValues.VA[GTValues.MV])
 
+    // Gilded Blackstone maceration
+    event.recipes.gtceu.macerator("macerate_gilded_blackstone")
+        .itemInputs("minecraft:gilded_blackstone")
+        .itemOutputs("gtceu:blackstone_dust")
+        .chancedOutput("gtceu:gold_dust", 2500, 0)
+        .duration(66)
+        .EUt(2)
+
+    // Alternate recipes for using Hexafluorosilicic Acid
     event.recipes.gtceu.chemical_reactor("uranium_hexafluorosilicic")
         .itemInputs("3x gtceu:uraninite_dust")
         .inputFluids("gtceu:hexafluorosilicic_acid")

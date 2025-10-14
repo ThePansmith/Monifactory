@@ -24,11 +24,11 @@ ServerEvents.recipes(event => {
     })
 
     // T10MM missions
-    microverse_mission(event, 10, 4, 150).forEach(builder => {
+    microverse_mission(event, 10, 4, 180).forEach(builder => {
         builder
             .inputFluids("gtceu:nickel_plasma 16000")
             .itemInputs("kubejs:universal_collapse_device", "2x kubejs:active_prismatic_core")
-            .damageRate(240)
+            .damageRate(200)
             .itemOutputs("16x kubejs:heart_of_a_universe")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
             .requiredMicroverse(3) // Shattered
     })
 
-    microverse_mission(event, 11, 4).forEach(builder => {
+    microverse_mission(event, 11, 4, 100).forEach(builder => {
         builder
             .itemInputs(
                 "kubejs:gravitational_amplifier",
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 12, 4, 90).forEach(builder => {
         builder
-            .itemInputs("kubejs:field_stabilised_omnic_pulsar_compound", "32x gtceu:infinity_ingot", "32x gtceu:meta_null_ingot")
+            .itemInputs("kubejs:field_stabilised_prismatic_pulsar_compound", "32x gtceu:infinity_ingot", "32x gtceu:meta_null_ingot")
             .damageRate(150)
             .itemOutputs("16x gtceu:monium_ingot")
             .requiredMicroverse(4) // Corrupted
