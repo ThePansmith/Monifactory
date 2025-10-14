@@ -202,9 +202,7 @@ global.itemNukeList = [
     "packagedexcrafting:flux_crafter",
 
     // Solar Flux
-    /^solarflux:.*_upgrade$/,
-    /^solarflux:.*_glass$/,
-    "solarflux:blazing_coating",
+    /^solarflux:.*/,
 
     // Looking for removed Sophisticated Storage items?
     // Look in configs/sophisticatedcore-common.toml.

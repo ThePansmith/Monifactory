@@ -690,29 +690,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["7D7B34CF5145F971"]
-			description: [
-				"{moni.quest.171EE3A4129F19A5.description1}"
-				""
-				"{moni.quest.171EE3A4129F19A5.description2}"
-				""
-				"{moni.quest.171EE3A4129F19A5.description3}"
-			]
-			id: "171EE3A4129F19A5"
-			rewards: [{
-				id: "3C74F3D9993A0E7E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F210892580EEAB2"
-				item: "gtceu:sunnarium_dust"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -12.0d
-		}
-		{
 			dependencies: [
 				"79197A2CD8E435B2"
 				"18B28DC43ACAF768"
