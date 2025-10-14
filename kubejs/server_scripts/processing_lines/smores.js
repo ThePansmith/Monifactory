@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         .duration(100)
     event.recipes.gtceu.extractor("kubejs:liquid_sugar")
         .itemInputs("minecraft:sugar")
-        .outputFluids(Fluid.of("nuclearcraft:sugar", 144))
+        .outputFluids("nuclearcraft:sugar")
         .EUt(16)
         .duration(150)
     event.recipes.gtceu.mixer("kubejs:hydrated_gelatin")
