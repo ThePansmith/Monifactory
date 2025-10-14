@@ -2398,7 +2398,6 @@
 					GT.Tool: {
 						AttackDamage: 0.0f
 						AttackSpeed: -2.4f
-						Damage: 0
 						MaxDamage: 128
 					}
 				}

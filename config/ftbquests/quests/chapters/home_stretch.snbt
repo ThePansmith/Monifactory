@@ -85,21 +85,6 @@
 			y: -9.25d
 		}
 		{
-			id: "1CA6CD149782D98B"
-			linked_quest: "22DC32C2B67EFD25"
-			shape: "hexagon"
-			x: -16.25d
-			y: 3.25d
-		}
-		{
-			id: "52051DFD357D8D29"
-			linked_quest: "3B57A9816A61C1DC"
-			shape: "hexagon"
-			size: 1.25d
-			x: -16.25d
-			y: -3.75d
-		}
-		{
 			id: "7CCC9B0F9E2E68D8"
 			linked_quest: "21E10888F52A3C73"
 			x: -5.75d
@@ -234,10 +219,7 @@
 			y: 3.25d
 		}
 		{
-			dependencies: [
-				"22DC32C2B67EFD25"
-				"483652BAEF59E125"
-			]
+			dependencies: ["483652BAEF59E125"]
 			description: [
 				"{moni.quest.27EBB5AAF8A40F3D.description1}"
 				""
