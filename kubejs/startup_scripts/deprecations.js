@@ -99,3 +99,7 @@ deprecateItem("gtceu:fluix_dust", "ae2:fluix_dust", "Fluix Dust")
 
 deprecateBlock("gtceu:certus_quartz_block", "ae2:quartz_block", "Certus Quartz Block")
 deprecateBlock("gtceu:fluix_block", "ae2:fluix_block", "Fluix Block")
+
+// Universe Boule
+deprecateItem("kubejs:universe_boule", "kubejs:null_boule", "Universe Boule")
+deprecateItem("kubejs:universe_wafer", "kubejs:null_wafer", "Universe Wafer")

@@ -24,9 +24,9 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x minecraft:bone",
                 "64x minecraft:rotten_flesh",
-                "32x minecraft:rotten_flesh",
+                "16x minecraft:rotten_flesh",
                 "32x minecraft:gunpowder",
-                "16x minecraft:string",
+                "24x minecraft:string",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
@@ -70,8 +70,8 @@ ServerEvents.recipes(event => {
             .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "24x minecraft:ghast_tear",
-                "48x kubejs:wither_bone", // drops of evil aren"t in the pack
-                "32x minecraft:magma_cream",
+                "48x kubejs:wither_bone",
+                "16x minecraft:magma_cream",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
                 "16x enderio:enderman_head",
                 "16x minecraft:ender_pearl",
                 "16x minecraft:ender_pearl",
-                "16x minecraft:shulker_shell", // shulker pearls aren"t in the pack
+                "16x minecraft:shulker_shell",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "32x kubejs:aerotheum_dust",
+                "24x kubejs:aerotheum_dust",
                 "16x minecraft:ender_eye",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "32x kubejs:aerotheum_dust",
+                "24x kubejs:aerotheum_dust",
                 "4x kubejs:dragon_lair_data",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "32x kubejs:aerotheum_dust",
+                "24x kubejs:aerotheum_dust",
                 "64x kubejs:wither_bone",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                "64x kubejs:aerotheum_dust",
+                "32x kubejs:aerotheum_dust",
                 "16x minecraft:sculk_catalyst",
             )
             .damageRate((doHostileMicroverse ? -20 : 2))
@@ -152,97 +152,5 @@ ServerEvents.recipes(event => {
                 "16x kubejs:warden_horn",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
-    })
-
-    // T8.5
-    microverse_mission(event, "8half", 3).forEach(builder => {
-        builder
-            .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:elite_drilling_kit")
-            .itemInputs("gtceu:duranium_drill_head")
-            .itemInputs("4x gtceu:neutron_reflector",)
-            .itemInputs(
-                "6x gtceu:ruridit_block",
-                "4x kubejs:warden_horn",
-            )
-            .damageRate(10)
-            .itemOutputs(
-                "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite",
-                "64x gtceu:raw_darmstadtite"
-            )
-            .requiredMicroverse(1) // Normal
-    })
-
-    microverse_mission(event, "8half", 3).forEach(builder => {
-        builder
-            .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:elite_drilling_kit")
-            .itemInputs("gtceu:duranium_drill_head")
-            .itemInputs("4x kubejs:gem_sensor")
-            .itemInputs(
-                "6x gtceu:naquadah_block",
-                "4x kubejs:warden_horn",
-            )
-            .damageRate(10)
-            .itemOutputs(
-                "64x gtceu:raw_dulysite",
-                "64x gtceu:raw_dulysite",
-                "64x gtceu:raw_dulysite",
-                "64x gtceu:raw_dulysite"
-            )
-            .requiredMicroverse(1) // Normal
-    })
-
-    microverse_mission(event, "8half", 3).forEach(builder => {
-        builder
-            .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:elite_drilling_kit")
-            .itemInputs("gtceu:duranium_drill_head")
-            .itemInputs("4x nuclearcraft:plate_du")
-            .itemInputs(
-                "6x gtceu:uranium_block",
-                "4x kubejs:warden_horn",
-            )
-            .damageRate(10)
-            .itemOutputs(
-                "64x gtceu:raw_plutonium",
-                "64x gtceu:raw_plutonium",
-                "64x gtceu:raw_plutonium",
-                "64x gtceu:raw_plutonium",
-                "64x gtceu:raw_plutonium",
-                "64x gtceu:raw_plutonium",
-            )
-            .requiredMicroverse(1) // Normal
-    })
-
-    microverse_mission(event, "8half", 3).forEach(builder => {
-        builder
-            .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:elite_drilling_kit")
-            .itemInputs("gtceu:duranium_drill_head")
-            .itemInputs("gtceu:osmium_dust")
-            .damageRate(10)
-            .itemOutputs(
-                "32x gtceu:raw_iridosmine",
-            )
-            .requiredMicroverse(3) // Shattered
-    })
-
-    microverse_mission(event, "8half", 3).forEach(builder => {
-        builder
-            .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:elite_drilling_kit")
-            .itemInputs("gtceu:duranium_drill_head")
-            .itemInputs("gtceu:iridium_dust")
-            .damageRate(10)
-            .itemOutputs(
-                "32x gtceu:raw_osmiridium",
-            )
-            .requiredMicroverse(3) // Shattered
     })
 })
