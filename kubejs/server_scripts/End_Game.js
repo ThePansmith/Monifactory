@@ -383,24 +383,6 @@ ServerEvents.recipes(event => {
         V: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:vibrant"}').weakNBT()
     })
 
-    // Creative Solar Panel
-    event.recipes.extendedcrafting.shaped_table("solarflux:sp_custom_infinity", [
-        "SNNNNNNNS",
-        "NPPPNPPPN",
-        "NPPPNPPPN",
-        "NPPPNPPPN",
-        "NNNNINNNN",
-        "NPPPNPPPN",
-        "NPPPNPPPN",
-        "NPPPNPPPN",
-        "SNNNNNNNS"
-    ], {
-        I: "gtceu:infinity_frame",
-        N: "gtceu:neutronium_plate",
-        P: "gtceu:infinity_plate",
-        S: "solarflux:sp_custom_neutronium"
-    })
-
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
         "BMMMMMMMMMB",
