@@ -25,6 +25,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0xf0e0b4)
             .components("1x copper", "1x iodine")
 
+        event.create("cuprous_chloride")
+            .dust()
+            .color(0x4db8bf)
+            .components("1x copper", "1x chlorine")
+            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
         event.create("dinitrodiphenyl_ether")
             .fluid()
             .color(0xfa9f6e)
