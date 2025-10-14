@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     const wafers = [
         ["gtceu:", "naquadah_wafer"],
         ["gtceu:", "neutronium_wafer"],
-        ["kubejs:", "universe_wafer"]
+        ["kubejs:", "null_wafer"]
     ]
 
     wafers.forEach((wafer, index) => {
