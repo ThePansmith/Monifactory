@@ -247,7 +247,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.centrifuge("crude_waste_processing")
         .inputFluids("gtceu:crude_naquadah_fuel_depleted 12000")
         .outputFluids("gtceu:neptunium 200",)
-        .itemOutputs("4x gtceu:lead_dust", "gtceu:sunnarium_dust",)
+        .itemOutputs("4x gtceu:lead_dust")
         .chancedOutput("3x gtceu:thorium_dust", 5000, 0)
         .chancedOutput("3x kubejs:naquadah_waste", 6600, 0)
         .chancedFluidOutput("gtceu:americium 100", 3300, 0)

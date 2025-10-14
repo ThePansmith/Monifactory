@@ -13,27 +13,6 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(32)
 
-    // Sunnarium plates
-    event.remove({ id: "gtceu:compressor/compress_plate_dust_sunnarium" })
-    event.shaped("4x gtceu:sunnarium_plate", [
-        "PPP",
-        "PSP",
-        "PPP"
-    ], {
-        P: "gtceu:hastelloy_c_276_plate",
-        S: "gtceu:sunnarium_dust"
-    })
-
-    event.remove({ id: "gtceu:compressor/compress_plate_dust_enriched_sunnarium" })
-    event.shaped("gtceu:enriched_sunnarium_plate", [
-        " A ",
-        "ABA",
-        " A "
-    ], {
-        A: "gtceu:enriched_sunnarium_dust",
-        B: "gtceu:sunnarium_plate"
-    })
-
     // HNN MATTERS
     if (doHNN) {
         event.recipes.gtceu.extractor("overworld_fluid")

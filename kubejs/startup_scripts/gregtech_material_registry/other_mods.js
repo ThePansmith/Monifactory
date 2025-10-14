@@ -219,22 +219,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("charged_certus_quartz", "redstone", "nether_quartz")
 })
 
-
-// IC2 Advanced Solars
-
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("sunnarium")
-        .dust()
-        .color(0xebe5a7).secondaryColor(0xc8b770)
-        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
-
-    event.create("enriched_sunnarium")
-        .dust()
-        .color(0xc4ffd4).secondaryColor(0x51d25b)
-        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
-})
-
 // Nuclearcraft: Neoteric
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
