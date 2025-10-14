@@ -63,6 +63,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x gtceu:flawless_sapphire_gem", "1x kubejs:heart_of_a_universe")
         .itemOutputs("1x kubejs:sapphire_seed_crystal")
 
+    event.remove({ id: "gtceu:electric_blast_furnace/aluminium_from_sapphire_dust"})
     event.recipes.gtceu.electric_blast_furnace("sapphire_boule")
         .blastFurnaceTemp(10900)
         .duration(22000)
