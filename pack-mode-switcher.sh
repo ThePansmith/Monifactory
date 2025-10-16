@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Colors
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
@@ -60,7 +59,8 @@ MODEFILE="${RUN_DIR}/.mode"
 
 # Check if config-overrides dir exists
 if ! { [ -d "${NORMAL_CFG}" ] && [ -d "${HARDMODE_CFG}" ] && [ -d "${EXPERT_CFG}" ]; }; then
-  printf "%s\n%s\n" "${RED}Could not find \`config-overrides\` directory!" "Make sure you are in the \`/minecraft\` directory of your instance! (The one containing \`/config\`)${NORMAL}"
+  printf "\n%s\n" "${RED}Could not find \`config-overrides\` directory!"
+  printf "%s\n" "${RED}Make sure you are in the \`/minecraft\` directory of your instance! (The one containing \`/config\`)${NORMAL}"
   printf "%s\n" "${YELLOW}Otherwise, if you are in the \`/minecraft\` directory, please try reinstalling the pack.${NORMAL}"
   exit 1
 fi
