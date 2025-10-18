@@ -19,7 +19,6 @@ StartupEvents.registry("item", event => {
         "7_damaged",
         "8",
         "8_damaged",
-        "8half",
         "9",
         "10",
         "11",
@@ -113,7 +112,7 @@ StartupEvents.registry("item", event => {
         .maxStackSize(16)
     event.create("universal_collapse_device")
         .maxStackSize(16)
-    event.create("field_stabilised_omnic_pulsar_compound")
+    event.create("field_stabilised_prismatic_pulsar_compound")
         .maxStackSize(16)
         .texture("kubejs:item/microverse/kit/field_stabilised_prismatic_pulsar_compound")
         .displayName("Field-Stabilized Prismatic Pulsar Compound")
@@ -479,18 +478,6 @@ StartupEvents.registry("item", event => {
     event.create("thermal:rf_coil_xfer_augment_advanced")
     event.create("thermal:fluid_tank_augment_advanced")
 
-    // Jetpack Units
-    event.create("empty_fluxed_jetpack_unit")
-        .texture("kubejs:item/mod/ironjetpacks/empty_fluxed_jetpack_unit")
-    event.create("empty_soularium_jetpack_unit")
-        .texture("kubejs:item/mod/ironjetpacks/empty_soularium_jetpack_unit")
-    event.create("flight_control_unit")
-        .texture("kubejs:item/mod/ironjetpacks/flight_control_unit")
-    event.create("glowstone_elevation_unit")
-        .texture("kubejs:item/mod/ironjetpacks/glowstone_elevation_unit")
-    event.create("cryotheum_coolant_unit")
-        .texture("kubejs:item/mod/ironjetpacks/cryotheum_coolant_unit")
-
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create("compressed_octadic_capacitor")
@@ -704,12 +691,12 @@ StartupEvents.registry("item", event => {
     event.create("uxpic_chip")
         .texture("kubejs:item/circuits/component/wafer/uxpic/chip")
         .displayName("UXPIC Chip")
-    event.create("universe_boule")
-        .texture("kubejs:item/circuits/component/wafer/heart_boule/boule")
-        .displayName("Universe-doped Monocrystalline Silicon Boule")
-    event.create("universe_wafer")
-        .texture("kubejs:item/circuits/component/wafer/heart_boule/wafer")
-        .displayName("Universe-doped Wafer")
+    event.create("null_boule")
+        .texture("kubejs:item/circuits/component/wafer/null_boule/boule")
+        .displayName("Null-doped Monocrystalline Silicon Boule")
+    event.create("null_wafer")
+        .texture("kubejs:item/circuits/component/wafer/null_boule/wafer")
+        .displayName("Null-doped Wafer")
     event.create("unactivated_multidimensional_cpu_wafer")
         .texture("kubejs:item/circuits/component/wafer/multidimensional_cpu/wafer_base")
         .displayName("Unactivated Multidimensional CPU Wafer")
@@ -850,11 +837,21 @@ StartupEvents.registry("item", event => {
     event.create("prism_pane")
         .texture("kubejs:item/lines/prismac/psoc/prism_pane")
         .displayName("P.R.I.S.M. Glass Pane")
-
-    // Trans Matrix Vial
+    // Transmatrix Stuff
     event.create("transcendental_soul_vial")
-        .texture("kubejs:item/trans_vial")
+        .texture("kubejs:item/lines/transgender/trans_vial")
         .displayName("Transcendental Soul Vial")
+
+    event.create("crushed_circuit")
+        .texture("kubejs:item/lines/transgender/crushed_circuit")
+        .displayName("Crushed Circuit")
+
+    event.create("sparks_of_conscience")
+        .textureJson({
+            layer0: "kubejs:item/lines/transgender/of_conscience",
+            layer1: "kubejs:item/lines/transgender/sparks_"
+        })
+        .displayName("Sparks of Conscience")
 
     event.create("uhv_voltage_coil")
         .displayName("Ultra High Voltage Coil")

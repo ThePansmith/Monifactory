@@ -384,7 +384,7 @@ ServerEvents.recipes(event => {
         ["gtceu:", "phosphorus_wafer"],
         ["gtceu:", "naquadah_wafer"],
         ["gtceu:", "neutronium_wafer"],
-        ["kubejs:", "universe_wafer"]
+        ["kubejs:", "null_wafer"]
     ]
     if (doHarderPrintedSilicon) {
         // Use only Greg wafers for printed silicon in EM

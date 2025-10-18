@@ -4,6 +4,9 @@
 <!-- omit in toc -->
 ## Table of Contents ##
 - [Introduction](#introduction)
+  - [Basics of Git](#basics-of-git)
+  - [Git GUIs/CUIs](#git-guiscuis)
+  - [Git versus GitHub](#git-versus-github)
 - [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
 - [Getting Started](#getting-started)
   - [Setting up an instance repository for use in dev](#setting-up-an-instance-repository-for-use-in-dev)
@@ -27,6 +30,26 @@ These guidelines exist to ensure all developers and contributors are on the same
 page and to reduce conflict and friction between everyone working on the
 project. Please read, understand, and do your best to follow them when
 contributing.
+
+## Basics of Git ##
+
+Not to be confused with GitHub, which we use to host the main Monifactory repository, Git is a program that tracks file changes for us and makes collaboration easier 
+- [Git Basics](https://www.youtube.com/watch?v=hwP7WQkmECE) will give you a basic overview of how to use Git 
+- [Git Cheat Sheet](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use. 
+- [Git Tips and Tricks](https://www.youtube.com/watch?v=ecK3EnyGD8o) contains tricks you can use with Git to allow you to use it to it's full potential.
+
+## Git GUIs/CUIs ##
+
+Git sometimes is a hard program to master, there are a few ways to use git
+- Ol' Reliable Git command - just typing "git pull" and "git commit" into your preferred shell(E.G. Command Prompt, bash, zsh) will work, recommended for advanced actions or if you don't want to navigate a menu
+- [Github Desktop (Not available for Linux)](https://desktop.github.com/download/) - Gives you a GUI to select which files you want to commit, good for beginners or people who don't want to manually type "git add ~/foo/bar" to every file they want to stage.
+- VSCode built-in Git utility(Requires VSCode, obviously) - Similar to Git Desktop but built into VSCode and is way less invasive, not *as* good as Github Desktop for beginners but can be nice if you don't want to switch programs all the time
+- [LazyGit](https://github.com/jesseduffield/lazygit/tree/master?tab=readme-ov-file#winget-windows-10-1709-or-later)
+ - A Command line UI, you use the arrow keys and the "Tab" key to navigate through it's menu's, the middle ground between Github Desktop and just using manual git commands, you can use winget on windows, brew on macOS, your linux distro's package manager, or just compile it from source.
+## Git versus GitHub ##
+
+- Git - Version control software used to manage files in a repository(A directory containing code, in this case, this should be your minecraft folder)
+- GitHub - Used to host said repositories and allow for easy collaboration worldwide.
 
 ## What Contributions Are We Seeking? ##
 
@@ -65,7 +88,7 @@ If you want to use Juke to update your mods folder, you will need to install Nod
 1. Go to the `build\` directory
 2. Run `npm install .` to install the required packages 
 3. Then run `node index.ts update-mods-folder` to update your mods folder.
-Once those files are moved back in place, you should be able to launch the instance as a modpack while also being to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance. 
+Once those files are moved back in place, you should be able to launch the instance as a modpack while also being able to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance, you can also just rerun the command to completely purge and update your mods folder. 
 
 ## Localization ##
 Monifactory supports localization for nearly everything, including the questbook. Our weblate instance can be found [here](https://hosted.weblate.org/engage/monifactory/), and guide for using weblate can be found [here](<https://docs.weblate.org/en/latest/user/translating.html>). The site also has a [minimalist mode](<https://docs.weblate.org/en/latest/user/translating.html#zen-mode>), and supports uploading raw language files, if you prefer other options.

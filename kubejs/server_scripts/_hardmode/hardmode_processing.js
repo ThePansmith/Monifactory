@@ -477,12 +477,6 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:hydrochloric_acid 2000")
             .duration(160).EUt(120);
 
-        event.recipes.gtceu.chemical_reactor("cuprous_chloride_dust")
-            .itemInputs("gtceu:copper_dust")
-            .inputFluids("gtceu:chlorine 1000")
-            .itemOutputs("2x gtceu:cuprous_chloride_dust")
-            .duration(160).EUt(120);
-
         event.recipes.gtceu.chemical_reactor("kapton_k")
             .inputFluids("gtceu:pyromellitic_dianhydride 1000", "gtceu:oxydianiline 1000")
             .outputFluids("gtceu:kapton_k 1000")

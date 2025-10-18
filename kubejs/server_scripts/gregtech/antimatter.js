@@ -39,9 +39,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.antimatter_manipulator("antimatter_fuel")
         .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")
-        .outputFluids("kubejs:antimatter_fuel 10")
+        .outputFluids("kubejs:antimatter_fuel 36")
         .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     // Controller Recipes
     event.recipes.gtceu.assembly_line("antimatter_manipulator")
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("antimatter_collider")
-        .itemInputs("6x monilabs:dimensional_stabilization_netherite_casing", "8x #gtceu:circuits/uv", "16x gtceu:double_activated_netherite_plate", "24x gtceu:hsse_frame", "12x solarflux:sp_custom_hadal", "4x gtceu:uv_field_generator", "6x gtceu:uv_emitter", "10x gtceu:uv_electric_pump", "10x gtceu:superconducting_coil", "10x gtceu:neutronium_large_fluid_pipe", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire")
+        .itemInputs("6x monilabs:dimensional_stabilization_netherite_casing", "8x #gtceu:circuits/uv", "16x gtceu:double_activated_netherite_plate", "24x gtceu:hsse_frame", "4x gtceu:uv_field_generator", "6x gtceu:uv_emitter", "10x gtceu:uv_electric_pump", "10x gtceu:superconducting_coil", "10x gtceu:neutronium_large_fluid_pipe", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire")
         .inputFluids("gtceu:advanced_soldering_alloy 4608", "gtceu:omnium 1152", "gtceu:polybenzimidazole 2304")
         .itemOutputs("gtceu:antimatter_collider")
         .duration(600)
@@ -77,5 +77,5 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.anti_collider("annihilation_infinity")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:infinity 1")
         .duration(1)
-        .EUt(-536870912 * 4)
+        .EUt(-536870912 * 16)
 })

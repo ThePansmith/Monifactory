@@ -20,7 +20,7 @@
 			rotation: 0.0d
 			width: 30.083333333333332d
 			x: 0.0d
-			y: 7.0d
+			y: 6.00d
 		}
 		{
 			height: 1.5d
@@ -47,7 +47,7 @@
 		id: "1C4BA5C05BD7D1C3"
 		linked_quest: "19084E91F357C8C2"
 		x: 12.0d
-		y: 6.0d
+		y: 5.00d
 	}]
 	quests: [
 		{
@@ -69,7 +69,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 6.0d
+			y: 5.00d
 		}
 		{
 			dependencies: [
@@ -285,7 +285,7 @@
 			}]
 			title: "{moni.quest.2053CCD1FF775DD5.title}"
 			x: 0.0d
-			y: 6.0d
+			y: 5.00d
 		}
 		{
 			dependencies: ["5E3CBC929557418F"]
@@ -406,7 +406,7 @@
 				type: "checkmark"
 			}]
 			x: -1.0d
-			y: 6.0d
+			y: 5.00d
 		}
 		{
 			dependencies: ["0E75B671DAC85309"]
@@ -420,7 +420,7 @@
 				type: "checkmark"
 			}]
 			x: -6.5d
-			y: 6.0d
+			y: 5.00d
 		}
 		{
 			dependencies: ["15A5B4C632836306"]
@@ -459,7 +459,7 @@
 				type: "checkmark"
 			}]
 			x: 9.5d
-			y: 6.0d
+			y: 5.00d
 		}
 		{
 			dependencies: ["32E44FFD602C98DF"]
@@ -538,162 +538,6 @@
 			}]
 			x: -8.25d
 			y: 4.0d
-		}
-		{
-			description: [
-				"{moni.quest.2B67C83223AFB5B0.description1}"
-				""
-				"{moni.quest.2B67C83223AFB5B0.description2}"
-				""
-				"{moni.quest.2B67C83223AFB5B0.description3}"
-				"{moni.quest.2B67C83223AFB5B0.description4}"
-				"{moni.quest.2B67C83223AFB5B0.description5}"
-				""
-				"{moni.quest.2B67C83223AFB5B0.description6}"
-				"{@pagebreak}"
-				"{moni.quest.2B67C83223AFB5B0.description7}"
-			]
-			id: "2B67C83223AFB5B0"
-			tasks: [{
-				id: "385C5098959C51DE"
-				item: "solarflux:sp_4"
-				type: "item"
-			}]
-			x: -12.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"2B67C83223AFB5B0"
-				"171EE3A4129F19A5"
-			]
-			description: [
-				"{moni.quest.68CA2F751276F219.description1}"
-				""
-				"{moni.quest.68CA2F751276F219.description2}"
-			]
-			id: "68CA2F751276F219"
-			tasks: [{
-				id: "7AB0DA759A4802B4"
-				item: "solarflux:sp_5"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"68CA2F751276F219"
-				"27A80F018F59EF1E"
-			]
-			description: [
-				"{moni.quest.33DEFDF888BEBE67.description1}"
-				""
-				"{moni.quest.33DEFDF888BEBE67.description2}"
-				""
-				"{moni.quest.33DEFDF888BEBE67.description3}"
-			]
-			id: "33DEFDF888BEBE67"
-			tasks: [{
-				id: "41FD2DCB90A2FDA6"
-				item: "solarflux:sp_6"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"33DEFDF888BEBE67"
-				"7DB174443D7FAFA0"
-			]
-			description: [
-				"{moni.quest.03EA9B7B09B88244.description1}"
-				""
-				"{moni.quest.03EA9B7B09B88244.description2}"
-				""
-				"{moni.quest.03EA9B7B09B88244.description3}"
-			]
-			id: "03EA9B7B09B88244"
-			tasks: [{
-				id: "01C9C1FEC5B3BCAF"
-				item: "solarflux:sp_7"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"03EA9B7B09B88244"
-				"6DAB13A7BDECE94E"
-			]
-			description: ["{moni.quest.0EAD0ACBDD153198.description1}"]
-			id: "0EAD0ACBDD153198"
-			tasks: [{
-				id: "6F5C8AA2908F4D32"
-				item: "solarflux:sp_8"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"0EAD0ACBDD153198"
-				"713FAECEE5046121"
-			]
-			description: [
-				"{moni.quest.79DAB629275B7806.description1}"
-				""
-				"{moni.quest.79DAB629275B7806.description2}"
-			]
-			id: "79DAB629275B7806"
-			tasks: [{
-				id: "325FA02A9A465EAD"
-				item: "solarflux:sp_custom_bathyal"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"79DAB629275B7806"
-				"6ABD83B58FADD4DF"
-			]
-			description: [
-				"{moni.quest.2E269D0B496C380C.description1}"
-				""
-				"[\"\",{\"translate\":\"moni.quest.2E269D0B496C380C.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.2E269D0B496C380C.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"translate\":\"moni.quest.2E269D0B496C380C.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.2E269D0B496C380C.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"425D1C34A82B054D\"}},{\"translate\":\"moni.quest.2E269D0B496C380C.rich_description5\"}]"
-			]
-			id: "2E269D0B496C380C"
-			tasks: [{
-				id: "3295B5A37BAD9478"
-				item: "solarflux:sp_custom_abyssal"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"2E269D0B496C380C"
-				"738A141D31AD7CE3"
-			]
-			description: [
-				"{moni.quest.0F048CED8D4C6A43.description1}"
-				""
-				"{moni.quest.0F048CED8D4C6A43.description2}"
-			]
-			id: "0F048CED8D4C6A43"
-			tasks: [{
-				id: "02A6D6D9B2C07CF2"
-				item: "solarflux:sp_custom_hadal"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -885,7 +729,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7A65459E4DFAAC2D"]
+			dependencies: ["61301FBD825F8280"]
 			description: [
 				"{moni.quest.425D1C34A82B054D.description1}"
 				""
@@ -963,7 +807,7 @@
 			}]
 			title: "{moni.quest.6FDF37EE046349F7.title}"
 			x: -6.0d
-			y: 6.0d
+			y: 5.00d
 		}
 		{
 			dependencies: [
@@ -987,55 +831,6 @@
 			title: "{moni.quest.19084E91F357C8C2.title}"
 			x: 12.0d
 			y: -1.0d
-		}
-		{
-			dependencies: [
-				"0F048CED8D4C6A43"
-				"186C14C113B6F3AD"
-				"738A141D31AD7CE3"
-			]
-			description: [
-				"{moni.quest.22DC32C2B67EFD25.description1}"
-				""
-				"{moni.quest.22DC32C2B67EFD25.description2}"
-				""
-				"{moni.quest.22DC32C2B67EFD25.description3}"
-			]
-			id: "22DC32C2B67EFD25"
-			rewards: [{
-				id: "7B7E7F5CE4947127"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "{moni.quest.22DC32C2B67EFD25.subtitle}"
-			tasks: [{
-				count: 2L
-				id: "6F9246E97321EF11"
-				item: "solarflux:sp_custom_neutronium"
-				type: "item"
-			}]
-			title: "{moni.quest.22DC32C2B67EFD25.title}"
-			x: 4.25d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"4EA1E0D437528747"
-				"22DC32C2B67EFD25"
-			]
-			description: ["{moni.quest.3B57A9816A61C1DC.description1}"]
-			id: "3B57A9816A61C1DC"
-			size: 1.0d
-			subtitle: "{moni.quest.3B57A9816A61C1DC.subtitle}"
-			tasks: [{
-				id: "2EE60D5EE1564FCF"
-				item: "solarflux:sp_custom_infinity"
-				type: "item"
-			}]
-			title: "{moni.quest.3B57A9816A61C1DC.title}"
-			x: 9.25d
-			y: 5.0d
 		}
 		{
 			dependencies: [

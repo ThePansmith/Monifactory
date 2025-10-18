@@ -219,22 +219,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("charged_certus_quartz", "redstone", "nether_quartz")
 })
 
-
-// IC2 Advanced Solars
-
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("sunnarium")
-        .dust()
-        .color(0xebe5a7).secondaryColor(0xc8b770)
-        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
-
-    event.create("enriched_sunnarium")
-        .dust()
-        .color(0xc4ffd4).secondaryColor(0x51d25b)
-        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
-})
-
 // Nuclearcraft: Neoteric
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -290,7 +274,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x281832).secondaryColor(0x080314)
         .iconSet("bright")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
-        .components("6x trinium", "2x naquadah", "1x carbon")
+        .components("2x trinium", "4x enriched_naquadah", "2x lanthanum", "tungsten_carbide")
         .blastTemp(8747, "higher", GTValues.VA[GTValues.ZPM], 1200)
 
     // Microversium/Microversite is *technically* original to OmNoMoniTM, but it's a fairly direct riff on Modularium.

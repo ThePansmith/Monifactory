@@ -15,7 +15,6 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add("kubejs:microminer_t2half", Text.translatable("item.kubejs.microminer_t2half.desc"))
     tooltip.add("kubejs:microminer_t4half", Text.translatable("item.kubejs.microminer_t4half.desc"))
-    tooltip.add("kubejs:microminer_t8half", Text.translatable("item.kubejs.microminer_t8half.desc"))
 
     tooltip.addAdvanced(["/kubejs:stabilized_microminer/"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.stabilized_microminer.tooltip.1"))
@@ -116,8 +115,6 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.addAdvanced("gtceu:naquadah_reactor", (item, adv, text) => {
         text.add(1, [Text.gray("A reactor that produces energy from "), Text.gold(Text.translate("item.kubejs.naquadah_fuel_rod")), Text.gray(" decay.")])
-        text.add(2, [Text.white("Produces exactly 3 amps of "), Text.red("ZPM"), Text.white(".")])
-        text.add(3, rainbowifySingle("Does not overclock!", Math.round(Client.lastNanoTime / 1000000000)))
     })
 
 

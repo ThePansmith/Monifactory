@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.atomic_reconstruction("prism_conversion")
         .itemInputs("kubejs:blue_aligned_glass")
-        .itemOutputs("kubejs:prism_glass")
+        .itemOutputs("monilabs:prism_glass")
         .duration(20)
         .EUt(GTValues.VA[GTValues.UV])
 })

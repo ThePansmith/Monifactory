@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("kubejs:creative_power")
-        .itemInputs("4x #gtceu:circuits/uev", "16x gtceu:monium_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "8x gtceu:uhv_field_generator", "8x gtceu:uhv_emitter", "4x gtceu:max_battery", "2x solarflux:sp_custom_infinity")
+        .itemInputs("4x #gtceu:circuits/uev", "8x kubejs:dimensionally_stabilized_infinity_heavy_plating", "4x monilabs:dimensional_stabilization_netherite_casing", "4x gtceu:uhv_field_generator", "8x gtceu:uhv_emitter", "4x gtceu:max_battery")
         .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("monilabs:creative_energy_multi")
         .stationResearch(b => b
@@ -28,8 +28,16 @@ ServerEvents.recipes(event => {
 
     // Recipes used to run the creative multiblocks
     event.recipes.gtceu.creative_energy_multi("kubejs:superfuel_infinite_power")
-        .inputFluids("gtceu:naquadah_superfuel 325")
+        .inputFluids("gtceu:naquadah_superfuel 60")
         .duration(20)
+
+    event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_neut_infinite_power")
+        .inputFluids("kubejs:antimatter_fuel 1000", "gtceu:neutronium 1000")
+        .duration(5333)
+
+    event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_inf_infinite_power")
+        .inputFluids("kubejs:antimatter_fuel 86", "gtceu:infinity 86")
+        .duration(5333)
 
     if (doQuantumCoolant) {
         event.recipes.gtceu.creative_data_multi("kubejs:infinite_research_hm_em")

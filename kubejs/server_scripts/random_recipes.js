@@ -283,14 +283,6 @@ ServerEvents.recipes(event => {
         E: "kubejs:nether_star_center"
     })
 
-    // Obby grinding
-    event.recipes.gtceu.macerator("obsidian_dust")
-        .itemInputs("minecraft:obsidian")
-        .itemOutputs("gtceu:obsidian_dust")
-        .duration(40)
-        .EUt(2)
-
-    event.remove({ id: "gtceu:macerator/macerate_sandstone" });
     event.recipes.gtceu.electrolyzer("saltpeter_dust")
         .itemInputs("4x #forge:sandstone")
         .itemOutputs("gtceu:saltpeter_dust")
@@ -399,13 +391,13 @@ ServerEvents.recipes(event => {
     // Avaritia Replacement recipes
     compacting(event, "gtceu:neutronium_ingot", "gtceu:neutronium_nugget")
 
-    // Recipe from Radium salt to Radium and Rock Salt
+    // Recipe from Radon salt to Radon and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
-        .outputFluids(Fluid.of("gtceu:radon", 1000))
+        .outputFluids(Fluid.of("gtceu:radon", 125))
         .circuit(1)
-        .duration(200)
+        .duration(150)
         .EUt(2000)
 
     // Add the Fluid Tag Filter
@@ -598,6 +590,7 @@ ServerEvents.recipes(event => {
         .EUt(98304)
         .fusionStartEU(600000000)
 
+    // Resonant Ender <-> Pearl
     event.recipes.gtceu.extractor("resonant_ender_from_pearl")
         .itemInputs("1x minecraft:ender_pearl")
         .outputFluids(Fluid.of("thermal:ender", 250))
@@ -672,8 +665,8 @@ ServerEvents.recipes(event => {
     // JEAN Gasoline consumption
     event.recipes.gtceu.combustion_generator("jean_gasoline_generator")
         .inputFluids("gtceu:jean_gasoline 1")
-        .duration(2560)
-        .EUt(-32)
+        .duration(160)
+        .EUt(-GTValues.V[GTValues.MV])
 
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor("kubejs:jean_gasoline")
@@ -866,6 +859,15 @@ ServerEvents.recipes(event => {
         .duration(110)
         .EUt(GTValues.VA[GTValues.MV])
 
+    // Gilded Blackstone maceration
+    event.recipes.gtceu.macerator("macerate_gilded_blackstone")
+        .itemInputs("minecraft:gilded_blackstone")
+        .itemOutputs("gtceu:blackstone_dust")
+        .chancedOutput("gtceu:gold_dust", 2500, 0)
+        .duration(66)
+        .EUt(2)
+
+    // Alternate recipes for using Hexafluorosilicic Acid
     event.recipes.gtceu.chemical_reactor("uranium_hexafluorosilicic")
         .itemInputs("3x gtceu:uraninite_dust")
         .inputFluids("gtceu:hexafluorosilicic_acid")
@@ -881,4 +883,18 @@ ServerEvents.recipes(event => {
         .outputFluids("minecraft:water 1000")
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("rutile_from_titanium")
+        .itemInputs("gtceu:titanium_dust")
+        .inputFluids("gtceu:oxygen 2000")
+        .itemOutputs("gtceu:rutile_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("tantalum_pentoxide")
+        .itemInputs("gtceu:tantalum_dust")
+        .inputFluids("gtceu:oxygen 5000")
+        .itemOutputs("gtceu:tantalum_pentoxide_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 })

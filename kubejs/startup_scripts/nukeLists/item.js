@@ -86,7 +86,7 @@ global.itemNukeList = [
     // ExtendedAE
     "expatternprovider:silicon_block",
     "expatternprovider:circuit_cutter",
-    /expatternprovider.*cutter/,
+    /^expatternprovider.*cutter/,
 
     // Extended Crafting
     "extendedcrafting:auto_ender_crafter",
@@ -202,9 +202,7 @@ global.itemNukeList = [
     "packagedexcrafting:flux_crafter",
 
     // Solar Flux
-    /^solarflux:.*_upgrade$/,
-    /^solarflux:.*_glass$/,
-    "solarflux:blazing_coating",
+    /^solarflux:.*/,
 
     // Looking for removed Sophisticated Storage items?
     // Look in configs/sophisticatedcore-common.toml.

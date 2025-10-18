@@ -55,6 +55,12 @@ ServerEvents.recipes(event => {
         .duration(120).EUt(30720)
         .blastFurnaceTemp(10800)
 
+    event.recipes.gtceu.chemical_reactor("cuprous_chloride_dust")
+        .itemInputs("gtceu:copper_dust")
+        .inputFluids("gtceu:chlorine 1000")
+        .itemOutputs("2x gtceu:cuprous_chloride_dust")
+        .duration(160).EUt(120);
+
     event.recipes.gtceu.large_chemical_reactor("terbium_oxide_lcr")
         .itemInputs("5x gtceu:terbium_oxide_dust", "12x gtceu:cuprous_chloride_dust")
         .itemOutputs("8x gtceu:terbium_salt_dust", "9x gtceu:cuprous_oxide_dust")

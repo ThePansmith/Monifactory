@@ -177,7 +177,6 @@ StartupEvents.registry("block", event => {
     // Machine Casings
     const casings = [
         "dark_soularium",
-        "omnic_matrix",
         "dark_steel",
     ]
 
@@ -257,15 +256,6 @@ StartupEvents.registry("block", event => {
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/lines/prism/blue_aligned_glass")
-        .defaultCutout()
-
-    event.create("prism_glass")
-        .displayName("P.R.I.S.M. Glass")
-        .soundType("glass")
-        .renderType("cutout")
-        .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .textureAll("kubejs:block/casing/prism/prism_frame")
         .defaultCutout()
 
     event.create("omnic_matrix_coil_block", "gtceu:coil")

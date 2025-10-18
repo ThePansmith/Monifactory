@@ -11,8 +11,8 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(GTValues.VA[GTValues.LuV])
         .inputFluids("gtceu:polyethylene 1584")
-        .itemInputs("7x gtceu:silicon_dioxide_dust", "1x gtceu:enderium_dust", doHarderProcessing ? "4x gtceu:tantalum_pentoxide_dust" : "gtceu:tantalum_dust", "5x gtceu:rutile_dust", "3x gtceu:germanium_dust")
-        .outputFluids(doHarderProcessing ? "gtceu:dielectric_mirror_solution 4464" : "gtceu:dielectric_mirror_solution 4032")
+        .itemInputs("7x gtceu:silicon_dioxide_dust", "1x gtceu:enderium_dust", "4x gtceu:tantalum_pentoxide_dust", "5x gtceu:rutile_dust", "3x gtceu:germanium_dust")
+        .outputFluids("gtceu:dielectric_mirror_solution 4464")
 
     event.recipes.gtceu.alloy_blast_smelter("lithium_niobate")
         .blastFurnaceTemp(1510)
@@ -63,6 +63,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x gtceu:flawless_sapphire_gem", "1x kubejs:heart_of_a_universe")
         .itemOutputs("1x kubejs:sapphire_seed_crystal")
 
+    event.remove({ id: "gtceu:electric_blast_furnace/aluminium_from_sapphire_dust"})
     event.recipes.gtceu.electric_blast_furnace("sapphire_boule")
         .blastFurnaceTemp(10900)
         .duration(22000)
@@ -202,21 +203,21 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cutter("prism_pane_water")
         .duration(180)
         .EUt(GTValues.VA[GTValues.EV])
-        .itemInputs("3x kubejs:prism_glass")
+        .itemInputs("3x monilabs:prism_glass")
         .inputFluids(Fluid.of("minecraft:water", 1000))
         .itemOutputs("8x kubejs:prism_pane")
 
     event.recipes.gtceu.cutter("prism_pane_distilled_water")
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV])
-        .itemInputs("3x kubejs:prism_glass")
+        .itemInputs("3x monilabs:prism_glass")
         .inputFluids(Fluid.of("gtceu:distilled_water", 750))
         .itemOutputs("8x kubejs:prism_pane")
 
     event.recipes.gtceu.cutter("prism_pane_lubricant")
         .duration(90)
         .EUt(GTValues.VA[GTValues.EV])
-        .itemInputs("3x kubejs:prism_glass")
+        .itemInputs("3x monilabs:prism_glass")
         .inputFluids(Fluid.of("gtceu:lubricant", 250))
         .itemOutputs("8x kubejs:prism_pane")
 

@@ -1,8 +1,0 @@
-{
-  "parent": "gtceu:block/cube_3_layer/all_translucent",
-  "textures": {
-    "bot_all": "kubejs:block/casing/prism/prism_frame",
-    "mid_all": "kubejs:block/casing/prism/prism_frame",
-    "top_all": "kubejs:block/casing/prism/color_prism"
-  }
-}

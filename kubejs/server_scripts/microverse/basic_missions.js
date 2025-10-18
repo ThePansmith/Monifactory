@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "48x gtceu:raw_salt",
                 "48x gtceu:raw_rock_salt",
-                "48x gtceu:raw_saltpeter",
+                "64x gtceu:raw_saltpeter",
             )
     })
 
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "32x gtceu:raw_molybdenite",
                 "32x ad_astra:moon_sand",
-                "32x gtceu:raw_dilithium",
+                "24x gtceu:raw_dilithium",
                 "32x gtceu:raw_fluorite",
             )
     })
@@ -165,13 +165,12 @@ ServerEvents.recipes(event => {
         builder
             .inputFluids("gtceu:rocket_fuel 3000")
             .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:bronze_drill_head")
+            .itemInputs("gtceu:iron_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "40x gtceu:raw_pyrochlore",
-                "64x minecraft:raw_copper",
-                "32x gtceu:raw_tin",
                 "32x kubejs:radium_salt",
+                "16x gtceu:raw_lepidolite",
+                "16x gtceu:raw_pollucite"
             )
     })
 
@@ -197,9 +196,10 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:gem_sensor", "gtceu:power_thruster")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x gtceu:raw_dilithium",
+                "48x gtceu:raw_dilithium",
                 "64x gtceu:raw_certus_quartz",
                 "32x gtceu:raw_quartzite",
+                "16x gtceu:raw_barite"
             )
     })
 
@@ -210,11 +210,23 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:red_steel_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x minecraft:raw_iron",
-                "32x minecraft:raw_iron",
-                "64x gtceu:raw_pyrolusite",
+                "48x gtceu:raw_pyrolusite",
+                "64x gtceu:raw_spessartine",
+                "32x gtceu:raw_wulfenite",
+            )
+    })
+
+    microverse_mission(event, 2, 1).forEach(builder => {
+        builder
+            .inputFluids("gtceu:rocket_fuel 3000")
+            .itemInputs("kubejs:basic_drilling_kit")
+            .itemInputs("gtceu:damascus_steel_drill_head")
+            .requiredMicroverse(1) // Normal
+            .itemOutputs(
+                "32x gtceu:raw_cobalt",
                 "64x gtceu:raw_cobaltite",
-                "48x gtceu:raw_malachite",
+                "64x gtceu:raw_nickel",
+                "48x gtceu:raw_pentlandite"
             )
     })
 
@@ -230,20 +242,6 @@ ServerEvents.recipes(event => {
                 "24x gtceu:raw_sodalite",
                 "32x gtceu:raw_lazurite",
                 "24x gtceu:raw_calcite",
-            )
-    })
-
-    microverse_mission(event, 2, 1).forEach(builder => {
-        builder
-            .inputFluids("gtceu:rocket_fuel 3000")
-            .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:vanadium_steel_drill_head")
-            .requiredMicroverse(1) // Normal
-            .itemOutputs(
-                "64x gtceu:raw_magnetite",
-                "64x gtceu:raw_vanadium_magnetite",
-                "64x gtceu:raw_chromite",
-                "32x minecraft:raw_gold",
             )
     })
 
@@ -272,11 +270,10 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:cobalt_brass_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "48x gtceu:raw_tetrahedrite",
-                "24x gtceu:raw_realgar",
-                "8x gtceu:raw_magnesite",
-                "16x gtceu:raw_sphalerite",
-                "20x gtceu:raw_stibnite",
+                "64x gtceu:raw_sphalerite",
+                "32x gtceu:raw_zincite",
+                "24x gtceu:raw_chalcocite",
+                "16x gtceu:raw_gypsum",
             )
     })
 
@@ -293,6 +290,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_diamond",
                 "64x gtceu:raw_emerald",
                 "64x gtceu:raw_emerald",
+                "64x gtceu:raw_sapphire",
             )
     })
 
@@ -300,30 +298,14 @@ ServerEvents.recipes(event => {
         builder
             .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:steel_drill_head")
+            .itemInputs("gtceu:bronze_drill_head")
             .itemInputs("kubejs:gem_sensor")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x gtceu:raw_sapphire",
-                "32x gtceu:raw_sapphire",
-                "64x gtceu:raw_almandine",
-                "32x gtceu:raw_almandine",
+                "64x gtceu:raw_fluorite",
+                "32x gtceu:raw_fluorite",
                 "64x gtceu:raw_topaz",
-                "32x gtceu:raw_topaz",
-            )
-    })
-
-    microverse_mission(event, 3, 1).forEach(builder => {
-        builder
-            .inputFluids("gtceu:rocket_fuel 5000")
-            .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:aluminium_drill_head")
-            .requiredMicroverse(1) // Normal
-            .itemOutputs(
-                "64x minecraft:glowstone",
-                "64x minecraft:glowstone",
-                "16x gtceu:raw_redstone",
-                "32x gtceu:raw_coal",
+                "32x gtceu:raw_blue_topaz",
             )
     })
 
@@ -335,8 +317,8 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:power_thruster")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "48x gtceu:raw_apatite",
-                "24x gtceu:raw_neodymium",
+                "24x gtceu:raw_apatite",
+                "48x gtceu:raw_neodymium",
                 "32x gtceu:raw_monazite",
             )
     })
@@ -344,31 +326,16 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .inputFluids("gtceu:rocket_fuel 5000")
-            .itemInputs("kubejs:blasting_kit")
-            .requiredMicroverse(1) // Normal
-            .itemOutputs(
-                "64x minecraft:magma_block",
-                "64x minecraft:magma_block",
-                "64x minecraft:magma_block",
-                "64x minecraft:magma_block",
-                "64x minecraft:magma_block",
-                "64x minecraft:magma_block",
-            )
-    })
-
-    microverse_mission(event, 3, 1).forEach(builder => {
-        builder
-            .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:tungsten_steel_drill_head")
+            .itemInputs("kubejs:blasting_kit")
             .itemInputs("4x kubejs:wither_realm_data")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "4x minecraft:ancient_debris",
                 "64x minecraft:quartz",
-                "32x minecraft:quartz",
+                "48x minecraft:quartz",
+                "64x minecraft:glowstone",
                 "24x minecraft:gilded_blackstone",
-                "4x minecraft:gold_block",
             )
             .chancedOutput("1x minecraft:netherite_upgrade_smithing_template", 500, 0)
     })
@@ -380,10 +347,10 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:iron_drill_head")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x gtceu:raw_salt",
-                "32x gtceu:raw_rock_salt",
-                "64x gtceu:raw_lepidolite",
-                "24x gtceu:raw_spodumene",
+                "32x gtceu:raw_salt",
+                "24x gtceu:raw_rock_salt",
+                "32x gtceu:raw_lepidolite",
+                "48x gtceu:raw_spodumene",
             )
     })
 })
