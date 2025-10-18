@@ -91,7 +91,8 @@
     "stained_color": true,
     "hazard_cleaner_provider": true,
     "cable_info": true,
-    "parallel_info": true
+    "parallel_info": true,
+    "data_bank": true
   },
   "fulleng": {
     "storage_monitor": true
