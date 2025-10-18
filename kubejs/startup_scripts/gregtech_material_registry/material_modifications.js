@@ -50,6 +50,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.VanadiumGallium.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
     GTMaterials.Trinium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Tritanium.addFlags(GTMaterialFlags.GENERATE_SPRING)
+    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
 
     // Small Springs for Power Transformer recipes
     GTMaterials.RedAlloy.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
