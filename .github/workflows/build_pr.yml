@@ -62,6 +62,11 @@ jobs:
         run:
           sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
         shell: bash
+      # Core mod pack mode switcher requires java
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
       - name: Pack Modpack
         run: |
           cd build

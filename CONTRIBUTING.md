@@ -18,7 +18,7 @@
   - [Asset \& Data folder Organization](#asset--data-folder-organization)
 - [Optional Compats](#optional-compats)
 - [Updating Mods](#updating-mods)
-  
+
 
 ## Introduction ##
 
@@ -77,7 +77,7 @@ The following guide was written with prism launcher in mind, see [here](<https:/
 2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
 3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) for an image example.)
 4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
-5. Run pack-mode-switcher with your preferred mode.
+5. [Make sure to switch to your preferred pack mode](./README.md#hardexpert-mode-installation).
 
 If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
 1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
@@ -123,14 +123,14 @@ If you wish to add a language for localization, either ask Pansmith to add it, o
 One thing to watch out for when contributing is that we have multiple difficulty "modes".
 The files used when changing modes are located in the `config-overrides` folder.
 Some files normally located in the `config` folder are there instead,
-and only copied over to their normal locations when the `pack-mode-switcher.{sh,bat}` script is run.
+and only copied over to their normal locations when the pack mode is switched.
 An example of this would be the `genesis.snbt` FTBQuests chapter, as it changes almost entirely from mode to mode.
 If you want to make a change across all modes, make sure to make the same change to all three overrides.
 
 ### KubeJS Style Guide ###
 Keeping the KubeJS files clean and easy to read is important for a couple reasons; outside of making fellow contributor's lives easier, it lets people who are new to KubeJS be able to easily reference Monifactory when getting started with learning how to packdev. This might seem like a lot, but if you take a look at how the other files do it, it comes fairly naturally; the list below is a reference in case you are not sure.
 
-1. If you're using VSCode as an editor, open workspace `.vscode/moni.code-workspace` and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Make sure to install ESLint with [`npm install`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) in `kubejs` directory beforehand. Copy `.github/hooks` directory into `.git/` as well. This will ensure code quality in the scripts you are writing. 
+1. If you're using VSCode as an editor, open workspace `.vscode/moni.code-workspace` and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Make sure to install ESLint with [`npm install`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) in `kubejs` directory beforehand. Copy `.github/hooks` directory into `.git/` as well. This will ensure code quality in the scripts you are writing.
 2. On a similar note, we use `UTF-8` character encoding. This information is visible on the bottom-right if you're using VSCode.
 3. Please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
 4. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
@@ -145,9 +145,9 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 2. Keep large lang files organized! one example of where this is necessary is `kubejs/assets/lang/gtceu/en_us.json`. Categories are separated and labelled as best as can be done without comments since JSON has no capacity for them. If you need to add to a large lang file, _find the relevant category and add to the bottom of it_, following the spacing established by other members of that category.
 3. Do not include any redundant lang file entries! One thing that used to be a common practice was to copy mods' entire lang files into the directory used to override mods' internal resource packs and _only changing the relevant entries_. This clogs up things with large amounts of useless information.
 4. Do not leave any unused files or assets in these folders! One example is how there used to be an entire suite of Draconic Evolution-themed casings before the theming was switched to the Deep Dark instead. Those unused assets were left in the folder for _months_ after the switch. Debug assets such as those in `kubejs\assets\kubejs\textures\block\debug` are exempt.
-   
+
 ## Optional Compats ##
-Optional Compatiblities for mods should be balanced so that they fit naturally in the modpack's progression without overshadowing existing options. For example, an optional compatability should not have wireless be unlocked before it's possible in the base modpack. Optional Compatibilies serve to extend and add additional options, not replace. 
+Optional Compatiblities for mods should be balanced so that they fit naturally in the modpack's progression without overshadowing existing options. For example, an optional compatability should not have wireless be unlocked before it's possible in the base modpack. Optional Compatibilies serve to extend and add additional options, not replace.
 
 ## Updating Mods ##
 
