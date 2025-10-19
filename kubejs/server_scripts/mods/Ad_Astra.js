@@ -474,17 +474,6 @@ ServerEvents.tags("block", event => {
 })
 
 ServerEvents.recipes(event => {
-    // Ad Astra Rock Breaker
-    function AdAstraRockBreaker(id, input, output, EUt, dimension) {
-        event.recipes.gtceu.rock_breaker(`kubejs:${id}`)
-            .notConsumable(Item.of(input))
-            .itemOutputs(output)
-            .duration(16)
-            .EUt(EUt)
-            .dimension(dimension)
-            ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:water", "minecraft:lava")
-    }
-
     // Ad Astra Rock Forge Hammers
     function AdAstraForgeHammer(id, input, output, duration, EUt) {
         event.recipes.gtceu.forge_hammer(`kubejs:${id}`)
