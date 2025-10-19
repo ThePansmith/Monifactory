@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
             .stationResearch(b => b
                 .researchStack("gtceu:loot_superfabricator")
                 .EUt(1966080)
-                .CWUt(128, 512000)
+                .CWUt(108, 512000)
             )
             .duration(1200)
             .EUt(1966080)

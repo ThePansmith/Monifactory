@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         .stationResearch(b => b
             .researchStack("gtceu:assembly_line")
             .CWUt(160, 1024000)
-            .EUt(1200000)
+            .EUt(GTValues.VA[GTValues.UHV])
         )
 
 
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UEV])
         .stationResearch(b => b
             .researchStack("gtceu:uv_fusion_reactor")
-            .CWUt(160, 1024000)
+            .CWUt(108, 1024000)
             .EUt(1200000)
         )
 
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:hv_world_accelerator")
         .stationResearch(b => b.researchStack("minecraft:clock").CWUt(4, 16000))
         .duration(6000)
-        .EUt(30720)
+        .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.assembly_line("ev_world_accelerator")
         .itemInputs("gtceu:zpm_machine_hull", "64x gtceu:zpm_field_generator", "16x gtceu:zpm_field_generator", "20x gtceu:zpm_sensor", "20x gtceu:zpm_emitter", "16x #gtceu:circuits/zpm", "4x gtceu:double_europium_plate", "2x gtceu:dense_cryolobus_plate")
@@ -315,8 +315,8 @@ ServerEvents.recipes(event => {
         .EUt(122880)
         .stationResearch(b => b
             .researchStack("gtceu:hv_world_accelerator")
-            .CWUt(32, 128000)
-            .EUt(122880)
+            .CWUt(16, 128000)
+            .EUt(GTValues.VA[GTValues.ZPM])
         )
 
     event.recipes.gtceu.assembly_line("iv_world_accelerator")
@@ -327,8 +327,8 @@ ServerEvents.recipes(event => {
         .EUt(491520)
         .stationResearch(b => b
             .researchStack("gtceu:ev_world_accelerator")
-            .CWUt(64, 256000)
-            .EUt(491520)
+            .CWUt(48, 256000)
+            .EUt(GTValues.VA[GTValues.UV])
         )
 
     event.recipes.gtceu.assembly_line("luv_world_accelerator")
@@ -339,8 +339,8 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
         .stationResearch(b => b
             .researchStack("gtceu:iv_world_accelerator")
-            .CWUt(128, 512000)
-            .EUt(1966080)
+            .CWUt(108, 512000)
+            .EUt(GTValues.VA[GTValues.UHV])
         )
 
     // Beyond this point we could probably just treat these like joke items
@@ -352,8 +352,8 @@ ServerEvents.recipes(event => {
         .EUt(7864320)
         .stationResearch(b => b
             .researchStack("gtceu:luv_world_accelerator")
-            .CWUt(128, 512000)
-            .EUt(7864320)
+            .CWUt(192, 512000)
+            .EUt(GTValues.VA[GTValues.UEV])
         )
 
     // ! Creative Items !//
@@ -440,7 +440,7 @@ ServerEvents.recipes(event => {
         .stationResearch(b => b
             .researchStack("gtceu:data_transmitter_hatch")
             .CWUt(96, 57600)
-            .EUt(1966080)
+            .EUt(GTValues.VA[GTValues.UHV])
         )
 
     // Chromodynamic Conduction Casing
@@ -496,7 +496,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UIV])
         .stationResearch(b => b
             .researchStack("kubejs:causality_exempt_monic_heavy_plating")
-            .CWUt(96, 57600)
+            .CWUt(144, 57600)
             .EUt(GTValues.VA[GTValues.UEV])
         )
 
