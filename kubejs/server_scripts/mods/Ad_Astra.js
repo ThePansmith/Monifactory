@@ -482,7 +482,7 @@ ServerEvents.recipes(event => {
             .duration(16)
             .EUt(EUt)
             .dimension(dimension)
-            ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:water", "minecraft:lava")
+            ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:lava", "minecraft:water")
     }
 
     AdAstraRockBreaker("moonstone", "ad_astra:moon_stone", "ad_astra:moon_stone", 240, "ad_astra:moon")

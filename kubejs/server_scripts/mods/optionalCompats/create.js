@@ -191,7 +191,7 @@ if (Platform.isLoaded("create")) {
             return event.recipes.gtceu.rock_breaker(`kubejs:${itemName}`)
                 .notConsumable(`${modName}:${itemName}`)
                 .itemOutputs(`${modName}:${itemName}`)
-                ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:water", "minecraft:lava")
+                ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:lava", "minecraft:water")
                 .duration(16)
                 .EUt(EUt)
         }
