@@ -32,14 +32,6 @@ ServerEvents.recipes(event => {
         .duration(10)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    event.recipes.gtceu.mixer("bioalloy_base")
-        .itemInputs("4x gtceu:blue_alloy_dust", "2x gtceu:lead_dust", "1x gtceu:lutetium_dust")
-        .itemOutputs("7x gtceu:bioalloy_base_dust")
-        .duration(40 * 20)
-        .EUt(GTValues.VA[GTValues.LuV])
-        .circuit(3)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
-
     event.recipes.gtceu.alloy_blast_smelter("bioalloy_base")
         .itemInputs("4x gtceu:blue_alloy_dust", "2x gtceu:lead_dust", "1x gtceu:lutetium_dust")
         .outputFluids("gtceu:bioalloy_base 1008")
@@ -47,6 +39,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
         .blastFurnaceTemp(11900)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .circuit(3)
 
     event.recipes.gtceu.alloy_blast_smelter("bioalloy_base_gas")
         .itemInputs("4x gtceu:blue_alloy_dust", "2x gtceu:lead_dust", "1x gtceu:lutetium_dust")
@@ -56,6 +49,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
         .blastFurnaceTemp(11900)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .circuit(13)
 
     event.recipes.gtceu.sculk_vat("sculk_bioalloy")
         .itemInputs("kubejs:amalgamated_sculk")
