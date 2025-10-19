@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:creative_energy_multi")
         .stationResearch(b => b
             .researchStack("gtceu:large_naquadah_reactor")
-            .EUt(1966080)
+            .EUt(GTValues.VA[GTValues.UIV])
             .CWUt(128, 512000)
         )
         .duration(1200)
