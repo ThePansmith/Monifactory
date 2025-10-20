@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.antimatter_manipulator(`${type}_downgrade`)
             .itemInputs("kubejs:protomatter")
             .inputFluidsRanged(`kubejs:refined_${type}_antimatter`, 18, 72)
-            .outputFluids(`kubejs:${type}_antimatter`, 72, 288)
+            .outputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
             .duration(200)
             .EUt(GTValues.VA[GTValues.ZPM])
     })
