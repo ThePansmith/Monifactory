@@ -36,6 +36,22 @@ ServerEvents.recipes(event => {
         }
     }
 
+    if(doHarderRecipes) {
+        event.remove("bic_clipboard:clipboard")
+        event.shaped("bic_clipboard:clipboard", [
+            " RD",
+            "BWS",
+            "PPP",
+        ], {
+            R: "#forge:screws/iron",
+            D: "#forge:tools/screwdrivers",
+            B: "#forge:bolts/iron",
+            W: "#minecraft:planks",
+            S: "#forge:springs/iron",
+            P: "#forge:paper"
+        })
+    }
+
     if (doHarderRecipes) {
         event.remove({ id: "gtceu:large_chemical_reactor/radon_from_uranium_238" })
         event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
