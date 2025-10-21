@@ -89,7 +89,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("end_steel")
         .ingot().fluid()
         .color(0xd6d980).secondaryColor(0x47155a).iconSet("metallic")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_GEAR)
         .blastTemp(2700, "mid", 480, 900)
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
         .cableProperties(2048, 2, 0, true)
