@@ -1360,7 +1360,7 @@
 				"{moni.quest.12B95158E4C792DB.description3}"
 				"{moni.quest.12B95158E4C792DB.description4}"
 				""
-				"{moni.quest.12B95158E4C792DB.description5.expert}"
+				"{moni.quest.12B95158E4C792DB.description5}"
 			]
 			id: "12B95158E4C792DB"
 			rewards: [{

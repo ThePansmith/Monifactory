@@ -737,6 +737,7 @@
 				"47094A5717952699"
 				"273F3F8DD6A3DCC5"
 				"134AD7825E3324B4"
+				"68897FC5F720BB4F"
 			]
 			description: [
 				"{moni.quest.63ADD9B48834AA39.description1}"
@@ -2421,12 +2422,12 @@
 								Count: 1b
 								id: "gtceu:wood_mallet"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: { }
 									GT.Tool: {
 										AttackDamage: 0.0f
 										AttackSpeed: -2.4f
-										Damage: 0
 										MaxDamage: 127
 									}
 									HideFlags: 2
@@ -2436,10 +2437,10 @@
 								Count: 1b
 								id: "gtceu:rubber_mallet"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: { }
 									GT.Tool: {
-										Damage: 0
 										MaxDamage: 127
 									}
 									HideFlags: 2
@@ -2449,10 +2450,10 @@
 								Count: 1b
 								id: "gtceu:polytetrafluoroethylene_mallet"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: { }
 									GT.Tool: {
-										Damage: 0
 										MaxDamage: 127
 									}
 									HideFlags: 2
@@ -2462,12 +2463,12 @@
 								Count: 1b
 								id: "gtceu:polyethylene_mallet"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: { }
 									GT.Tool: {
 										AttackDamage: 0.0f
 										AttackSpeed: -2.4f
-										Damage: 0
 										MaxDamage: 127
 									}
 									HideFlags: 2
@@ -2477,12 +2478,12 @@
 								Count: 1b
 								id: "gtceu:polybenzimidazole_mallet"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: { }
 									GT.Tool: {
 										AttackDamage: 0.0f
 										AttackSpeed: -2.4f
-										Damage: 0
 										MaxDamage: 127
 									}
 									HideFlags: 2
