@@ -519,8 +519,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/lines/mob_guts/ender_dragon_scale_dust")
     event.create("wither_bone")
         .texture("kubejs:item/lines/mob_guts/wither_bone")
-    event.create("the_ultimate_material")
-        .texture("kubejs:item/lines/mob_guts/the_ultimate_material")
 
     // Crushed Shulker Shell (Shulker Shell recycling)
     event.create("crushed_shulker_shell")
