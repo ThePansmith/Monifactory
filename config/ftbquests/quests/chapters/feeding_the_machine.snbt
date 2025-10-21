@@ -115,7 +115,7 @@
 			linked_quest: "7D29C79DE1CCA2A2"
 			shape: "hexagon"
 			size: 1.25d
-			x: -4.0d
+			x: -3.5d
 			y: 10.25d
 		}
 		{
@@ -179,7 +179,7 @@
 			linked_quest: "425D1C34A82B054D"
 			shape: "hexagon"
 			x: 0.0d
-			y: 7.0d
+			y: 8.5d
 		}
 		{
 			id: "4585FA4840AF16BB"
@@ -674,38 +674,8 @@
 				}
 			]
 			title: "{moni.quest.485CEA4199AAD352.title}"
-			x: -2.0d
-			y: 8.5d
-		}
-		{
-			dependencies: [
-				"41F1837D7C131898"
-				"6ABD83B58FADD4DF"
-			]
-			description: [
-				"{moni.quest.0C9E7E4644084C94.description1}"
-				""
-				"{moni.quest.0C9E7E4644084C94.description2}"
-				""
-				"{moni.quest.0C9E7E4644084C94.description3}"
-			]
-			hide_until_deps_visible: true
-			id: "0C9E7E4644084C94"
-			optional: true
-			rewards: [{
-				id: "171A48800572C311"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "769EE75FA2394FBD"
-				item: "kubejs:microminer_t8half"
-				type: "item"
-			}]
-			title: "{moni.quest.0C9E7E4644084C94.title}"
-			x: 2.0d
-			y: 7.25d
+			x: -1.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -785,6 +755,7 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
 				id: "4EB383E90CD0EFE4"
@@ -792,7 +763,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1CF77095C203454F.title}"
-			x: -6.25d
+			x: -4.25d
 			y: 9.25d
 		}
 		{
@@ -1258,7 +1229,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.738A141D31AD7CE3.title}"
-			x: -2.75d
+			x: -2.25d
 			y: 6.0d
 		}
 		{
@@ -1279,7 +1250,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7FA6B36DCE648C66.title}"
-			x: -2.75d
+			x: -2.25d
 			y: 10.25d
 		}
 		{
@@ -1303,8 +1274,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4261BDA34D716EC8.title}"
-			x: 1.25d
-			y: 8.25d
+			x: 2.0d
+			y: 7.25d
 		}
 		{
 			dependencies: ["1CC092A2F2CD4589"]
@@ -1352,7 +1323,32 @@
 			]
 			title: "{moni.quest.61301FBD825F8280.title}"
 			x: 0.0d
-			y: 8.25d
+			y: 7.25d
+		}
+		{
+			dependencies: ["15607184B546F5EE"]
+			description: [
+				"{moni.quest.113E9543ADB1666B.description1}"
+				""
+				"{moni.quest.113E9543ADB1666B.description2}"
+			]
+			id: "113E9543ADB1666B"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "25D96E6575B38623"
+					item: "gtceu:activated_netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "6FD8F8677B27349F"
+					item: "gtceu:manyullyn_ingot"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.113E9543ADB1666B.title}"
+			x: -0.25d
+			y: 12.25d
 		}
 	]
 	title: "{moni.chapter.15E8BBD0CD310663.title}"
