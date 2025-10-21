@@ -13,7 +13,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("wire_single", {
         LuV: "wireGtSingle:vanadium_gallium",
         ZPM: "wireGtSingle:naquadah_alloy",
-        UV: "wireGtSingle:europium",
+        UV: "wireGtSingle:cryococcus",
         UHV: "wireGtSingle:omnium",
         UEV: "wireGtSingle:necrosiderite",
     })
