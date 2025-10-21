@@ -31,13 +31,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x035155).secondaryColor(0x04203d).iconSet("dull")
         .blastTemp(6800, "higher")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME)
-        .cableProperties(524288, 4, 0, true);
+        .cableProperties(GTValues.V[GTValues.UV], 4, 0, true);
 
     event.create("cryococcus")
         .ingot().fluid()
         .element(GTElements.get("cryococcus"))
         .color(0x009295).secondaryColor(0x07303b).iconSet("dull")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
+        .cableProperties(GTValues.V[GTValues.UHV], 6, 16, true);
 
     event.create("sculk_superconductor")
         .element(GTElements.get("sculk_superconductor"))

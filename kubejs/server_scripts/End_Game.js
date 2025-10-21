@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.vacuum_freezer("sculk_superconductor")
-        .itemInputs("gtceu:cryococcus_rod")
+        .itemInputs("gtceu:cryococcus_single_wire")
         .itemOutputs("gtceu:sculk_superconductor_single_wire")
         .inputFluids(Fluid.of("gtceu:nether_star", 72))
         .duration(40)
