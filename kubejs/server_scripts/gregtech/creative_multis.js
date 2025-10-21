@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         .stationResearch(b => b
             .researchStack("gtceu:large_naquadah_reactor")
             .EUt(GTValues.VA[GTValues.UIV])
-            .CWUt(128, 512000)
+            .CWUt(144, 512000)
         )
         .duration(1200)
         .EUt(1966080)
@@ -20,8 +20,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:creative_data_multi")
         .stationResearch(b => b
             .researchStack("gtceu:network_switch")
-            .EUt(1966080)
-            .CWUt(96, 57600)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .CWUt(128, 57600)
         )
         .duration(1200)
         .EUt(7864320)

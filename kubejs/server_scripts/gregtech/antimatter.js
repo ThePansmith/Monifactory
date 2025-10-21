@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(b => b
             .researchStack("kubejs:protomatter")
-            .CWUt(96, 28800)
+            .CWUt(128, 28800)
             .EUt(GTValues.VA[GTValues.UV])
         )
 
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .stationResearch(b => b
             .researchStack("gtceu:implosion_collider")
-            .CWUt(96, 28800)
+            .CWUt(128, 28800)
             .EUt(GTValues.VA[GTValues.UV])
         )
 
