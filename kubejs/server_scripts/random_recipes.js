@@ -892,9 +892,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor("tantalum_pentoxide")
-        .itemInputs("gtceu:tantalum_dust")
+        .itemInputs("2x gtceu:tantalum_dust")
         .inputFluids("gtceu:oxygen 5000")
-        .itemOutputs("gtceu:tantalum_pentoxide_dust")
+        .itemOutputs("7x gtceu:tantalum_pentoxide_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 })
