@@ -6,16 +6,17 @@ ServerEvents.recipes(event => {
     const types = ["bosonic", "hadronic", "fermionic"]
     types.forEach((type, index) => {
         event.recipes.gtceu.antimatter_manipulator(`${type}_upgrade`)
-            .inputFluids(`kubejs:${type}_antimatter 144`, `kubejs:${types[(index + 1) % types.length]}_antimatter 72`)
-            .outputFluids(`kubejs:refined_${type}_antimatter 72`)
+            .inputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
+            .inputFluidsRanged(`kubejs:${types[(index + 1) % types.length]}_antimatter`, 36, 144)
+            .outputFluidsRanged(`kubejs:refined_${type}_antimatter`, 36, 144)
             .addData("antimatterRandom", true)
             .duration(200)
             .EUt(GTValues.VA[GTValues.ZPM])
 
         event.recipes.gtceu.antimatter_manipulator(`${type}_downgrade`)
             .itemInputs("kubejs:protomatter")
-            .inputFluids(`kubejs:refined_${type}_antimatter 36`)
-            .outputFluids(`kubejs:${type}_antimatter 144`)
+            .inputFluidsRanged(`kubejs:refined_${type}_antimatter`, 18, 72)
+            .outputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
             .duration(200)
             .EUt(GTValues.VA[GTValues.ZPM])
     })
