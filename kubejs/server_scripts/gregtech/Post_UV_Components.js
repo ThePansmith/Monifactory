@@ -148,8 +148,8 @@ ServerEvents.recipes(event => {
     })
 
     const rotorHolderMaterials = [
-        { tier: "uhv", large_gear: "actinium", small_gear: "manyullyn" },
-        { tier: "uev", large_gear: "sculk_bioalloy", small_gear: "infinity" },
+        { tier: "uhv", large_gear: "gtceu:actinium", small_gear: "manyullyn" },
+        { tier: "uev", large_gear: "monilabs:transcendental_matrix", small_gear: "infinity" },
     ]
 
     rotorHolderMaterials.forEach((value) => {
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
             "SLS"
         ], {
             S: `gtceu:small_${value.small_gear}_gear`,
-            L: `gtceu:${value.large_gear}_gear`,
+            L: `${value.large_gear}_gear`,
             H: `gtceu:${value.tier}_machine_hull`
         }).id(`shaped/rotor_holder_${value.tier}`)
     })
