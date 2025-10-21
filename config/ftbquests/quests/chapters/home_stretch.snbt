@@ -12,28 +12,28 @@
 			linked_quest: "5A8D2BFAF02E6325"
 			shape: "hexagon"
 			x: 2.25d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
 			shape: "hexagon"
-			x: 1.0d
-			y: 1.75d
+			x: 0.75d
+			y: 2.25d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
 			shape: "hexagon"
 			x: 2.25d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
 			x: 2.25d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			id: "2C514C36E06DC5FA"
@@ -41,7 +41,7 @@
 			shape: "gear"
 			size: 1.5d
 			x: 2.25d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			id: "2DE45181A83AEBEB"
@@ -84,7 +84,7 @@
 			linked_quest: "19084E91F357C8C2"
 			size: 1.25d
 			x: -3.5d
-			y: 3.75d
+			y: 4.25d
 		}
 		{
 			id: "7CCC9B0F9E2E68D8"
@@ -282,7 +282,7 @@
 			}]
 			title: "{moni.quest.2EBB9A154522348F.title}"
 			x: 0.0d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -459,7 +459,7 @@
 			}]
 			title: "{moni.quest.73A44214C2B44D53.title}"
 			x: -5.5d
-			y: 1.75d
+			y: 2.25d
 		}
 		{
 			dependencies: ["040B3FCD82533BD9"]
@@ -475,7 +475,7 @@
 			}]
 			title: "{moni.quest.13578427FD9CC2CE.title}"
 			x: -2.25d
-			y: 3.25d
+			y: 4.0d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
@@ -490,7 +490,7 @@
 			}]
 			title: "{moni.quest.060A5766B021FC77.title}"
 			x: -2.25d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -571,7 +571,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0DE1BF1648CAF6D6.title}"
-			x: -1.5d
+			x: -0.75d
 			y: -0.75d
 		}
 		{
@@ -581,7 +581,6 @@
 				""
 				"{moni.quest.1E36AFB19932C805.description2}"
 			]
-			hide_dependent_lines: true
 			id: "1E36AFB19932C805"
 			shape: "hexagon"
 			tasks: [
@@ -612,8 +611,8 @@
 				}
 			]
 			title: "{moni.quest.1E36AFB19932C805.title}"
-			x: -1.5d
-			y: -2.0d
+			x: 1.0d
+			y: 0.25d
 		}
 		{
 			dependencies: ["0E9B96B17D140B99"]
@@ -631,10 +630,7 @@
 			y: -7.25d
 		}
 		{
-			dependencies: [
-				"39A09DA3903C5564"
-				"601A47A727AC3BD2"
-			]
+			dependencies: ["601A47A727AC3BD2"]
 			description: [
 				"{moni.quest.2D5677EA9F47AA83.description1}"
 				""
@@ -648,8 +644,8 @@
 				item: "kubejs:multidimensional_cpu_chip"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.75d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -685,8 +681,8 @@
 				item: "kubejs:null_infused_circuit_board"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.25d
+			x: 0.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["33F610CF136278AE"]
@@ -699,8 +695,8 @@
 				item: "kubejs:quasi_stable_neutron_star"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -2.75d
+			x: 4.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -722,7 +718,7 @@
 			}]
 			title: "{moni.quest.040B3FCD82533BD9.title}"
 			x: -2.25d
-			y: 1.75d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -741,10 +737,7 @@
 			y: -0.75d
 		}
 		{
-			dependencies: [
-				"07057CDE4E021BA7"
-				"2D5677EA9F47AA83"
-			]
+			dependencies: ["07057CDE4E021BA7"]
 			description: [
 				"{moni.quest.4E4F03C44623A85D.description1}"
 				""
@@ -760,8 +753,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4E4F03C44623A85D.title}"
-			x: 0.0d
-			y: 0.25d
+			x: -0.75d
+			y: 1.0d
 		}
 		{
 			dependencies: ["739F7BF2A90B278A"]
@@ -816,7 +809,7 @@
 			}]
 			title: "{moni.quest.786AECA42F53B45A.title}"
 			x: -4.25d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6EA130B04FDE6868"]
@@ -1058,7 +1051,7 @@
 			}]
 			title: "{moni.quest.4C0BCA64D5B409F2.title}"
 			x: -3.5d
-			y: 1.75d
+			y: 2.25d
 		}
 		{
 			dependencies: ["79EFCD8E01384C0C"]
@@ -1108,8 +1101,8 @@
 				}
 			]
 			title: "{moni.quest.7EE334D3AA1E68ED.title}"
-			x: -1.0d
-			y: 1.75d
+			x: -0.75d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -1176,7 +1169,7 @@
 			}]
 			title: "{moni.quest.59219D37B5CE80E6.title}"
 			x: -2.25d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1193,8 +1186,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4F08AF2C1E6B1736.title}"
-			x: 1.0d
-			y: 5.0d
+			x: 0.75d
+			y: 5.5d
 		}
 	]
 	title: "{moni.chapter.457D17593A814D73.title}"
