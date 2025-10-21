@@ -774,7 +774,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .machine((holder) => new AntimatterGeneratorMachine(holder))
         .appearanceBlock(() => new Block.getBlock("monilabs:dimensional_stabilization_netherite_casing"))
         .recipeTypes(MoniRecipeTypes.ANTIMATTER_COLLIDER_RECIPES)
-        .recipeModifier(MoniRecipeModifiers.antiMatterGeneratorRecipeModifier())
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#MMMMMMMMM#", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "#MMMMMMMMM#")
             .aisle("MMMMMMMMMMM", "####AAA####", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "####BBB####", "MMMMMMMMMMM")
