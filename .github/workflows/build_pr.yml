@@ -73,11 +73,19 @@ jobs:
           npm install
           node index.ts ${{ inputs.target }}
         shell: bash
-      - name: Upload build artifact
+      - name: Upload client build
         uses: actions/upload-artifact@v4
         with:
-          name: build-zipzip
-          path: dist/*.zip
-          if-no-files-found: error
+          name: client-build
+          path: dist/client.zip
+          if-no-files-found: ignore
           overwrite: true
-          compression-level: 0
+          compression-level: 9
+      - name: Upload server build
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-build
+          path: dist/server.zip
+          if-no-files-found: ignore
+          overwrite: true
+          compression-level: 9
