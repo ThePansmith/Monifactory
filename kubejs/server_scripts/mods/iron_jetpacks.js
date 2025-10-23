@@ -157,7 +157,10 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
         .duration(3000)
         .EUt(30720)
-        .stationResearch(b => b.researchStack(Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:vibrant"}')).EUt(3686).CWUt(64))
+        .stationResearch(b => b
+            .researchStack(Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:vibrant"}'))
+            .EUt(GTValues.VHA[GTValues.IV])
+            .CWUt(64))
         .modifyResult(copyOldJetpackData)
 
     event.recipes.gtceu.assembly_line("kubejs:ironjetpacks/upgrade/fluxed")
@@ -168,7 +171,7 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .stationResearch(b => b
             .researchStack(Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:resonant"}'))
-            .EUt(3686)
+            .EUt(GTValues.VHA[GTValues.IV])
             .CWUt(64))
         .modifyResult(copyOldJetpackData)
 

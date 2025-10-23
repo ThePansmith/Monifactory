@@ -65,10 +65,18 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x231e1e)
         .components(GTMaterials.Iron.multiply(1), GTMaterials.Oxygen.multiply(1))
 
+    // Also used in Snowchestiteline (HM only)
     event.create("caesium_hydroxide")
         .dust()
         .color(0xbd8340).iconSet("dull")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("caesium", "oxygen", "hydrogen")
         .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    // Also used in the Magnetron
+    event.create("beryllium_oxide")
+        .ingot()
+        .color(0x54C757).iconSet("dull")
+        .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING)
+        .components("beryllium", "oxygen")
 })

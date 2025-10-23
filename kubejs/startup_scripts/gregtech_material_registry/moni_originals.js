@@ -31,13 +31,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x035155).secondaryColor(0x04203d).iconSet("dull")
         .blastTemp(6800, "higher")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME)
-        .cableProperties(524288, 4, 0, true);
+        .cableProperties(GTValues.V[GTValues.UV], 4, 0, true);
 
     event.create("cryococcus")
         .ingot().fluid()
         .element(GTElements.get("cryococcus"))
         .color(0x009295).secondaryColor(0x07303b).iconSet("dull")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
+        .cableProperties(GTValues.V[GTValues.UHV], 4, 6, false);
 
     event.create("sculk_superconductor")
         .element(GTElements.get("sculk_superconductor"))
@@ -45,6 +46,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("crystal")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+        ])
 
 
     // Prismatic Crucible Materials
@@ -136,11 +142,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_SPRING_SMALL)
 
     event.create("hyperdegenerate_darconite")
-        .ingot()
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill()) // .liquid(new GTFluidBuilder().state(GTFluidState.MOLTEN).customStill()) (Not needed and doesn't work, but still kept around just in case. -Flare32)
         .color(0xffffff)
         .iconSet("hyperdegenerate_darconite")
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen", "1x hyperdegenerate_matter")
         .cableProperties(GTValues.V[GTValues.UEV], 64, 0, true)
-        .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.plate
+        ])
 })
