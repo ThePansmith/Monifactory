@@ -44,10 +44,6 @@ export const getPackModeSwitchTarget = (
         await Juke.exec(
             "java",
             ["-jar", resolve(coreModJarPath), mode, "--relative"],
-            {
-                // Core mod elevates its cwd by 1 for some reason
-                cwd: join(cwd, "/mods"),
-            }
         )
     }
 
