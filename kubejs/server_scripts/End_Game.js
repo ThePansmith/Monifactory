@@ -223,6 +223,7 @@ ServerEvents.recipes(event => {
         event.remove({ output: `gtceu:hyperdegenerate_darconite_${value.multiplier}_wire`, type: "gtceu:wiremill"})
     })
 
+    event.remove({ id: "gtceu:extruder/extrude_sculk_superconductor_wire"})
 
     event.recipes.gtceu.vacuum_freezer("sculk_superconductor")
         .itemInputs("gtceu:cryococcus_single_wire")
@@ -240,6 +241,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(10600)
 
     event.remove({ id: "gtceu:wiremill/mill_hyperdegenerate_darconite_wire_fine"})
+    event.remove({ id: "gtceu:extruder/extrude_hyperdegenerate_darconite_wire"})
 
     event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite_foil")
         .itemInputs("8x gtceu:darconite_foil")
