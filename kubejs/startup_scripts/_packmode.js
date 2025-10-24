@@ -13,7 +13,7 @@ const configName = "config/packmode.json";
 // Default mode.json
 const defaultConfig = {
     mode: "Normal",
-    message: "This tells KubeJS what mode the pack is currently in, packmode is changed in pack-mode-switcher"
+    message: "This tells KubeJS what mode the pack is currently in, pack mode can be changed in the main menu after loading the game"
 };
 
 

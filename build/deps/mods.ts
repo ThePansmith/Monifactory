@@ -11,7 +11,12 @@ const MAX_PARALLEL_MOD_TARGETS = 4
 export const cacheFolderByManifestFileEntry = (file: ManifestFileEntry) => `dist/mod_cache/${file.projectID}-${file.fileID}/`
 export const modInfoPath = "info.json"
 
-const createDownloadModTarget = (file: ManifestFileEntry, dependsOn: Juke.DependsOn) => {
+const DownloadModTargets = new Map<ManifestFileEntry["projectID"], Juke.Target>()
+
+export const createDownloadModTarget = (file: ManifestFileEntry, dependsOn?: Juke.DependsOn) => {
+    if (DownloadModTargets.has(file.projectID))
+        return DownloadModTargets.get(file.projectID)
+
     const cacheFolder = cacheFolderByManifestFileEntry(file)
     const modInfoFullPath = cacheFolder + modInfoPath
 
@@ -32,17 +37,14 @@ const createDownloadModTarget = (file: ManifestFileEntry, dependsOn: Juke.Depend
     })
 }
 
-export const DownloadModTargets = new Map<ManifestFileEntry["projectID"], Juke.Target>()
-
 /** Depends on all mod targets */
 export const DownloadModsTarget = new Juke.Target({
     inputs: ["manifest.json"],
     dependsOn: () => {
-        DownloadModTargets.clear()
-
         const weave: Juke.Target[] = []
 
         for (const file of readManifest().files) {
+            if (DownloadModTargets.has(file.projectID)) continue
             const downloadModTarget = createDownloadModTarget(
                 file,
                 // Entangles mod targets dependencies, so that each one waits for the mod target N places back
