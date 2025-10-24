@@ -8,7 +8,17 @@
     "side"
   ],
   "variants": {
-    "": {
+    "is_formed=false": {
+      "model": {
+        "parent": "gtmutils:block/machine/part/sterile_cleaning_maintenance_hatch",
+        "textures": {
+          "bottom": "gtceu:block/casings/voltage/zpm/bottom",
+          "side": "gtceu:block/casings/voltage/zpm/side",
+          "top": "gtceu:block/casings/voltage/zpm/top"
+        }
+      }
+    },
+    "is_formed=true": {
       "model": {
         "parent": "gtmutils:block/machine/part/sterile_cleaning_maintenance_hatch",
         "textures": {
