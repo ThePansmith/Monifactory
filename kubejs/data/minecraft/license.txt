@@ -1,0 +1,11 @@
+The content of this datapack is made to accomplish several things:
+- Remove Nether music that WWOO adds
+- Increase availability of sugarcane and select flowers
+- Reduce frequency of water-filled caves
+- Remove some features with Structure Voids in them
+
+Biome jsons and other files owned by Mojang, despite being modified by WWOO, fall under MC's usage guidelines:
+https://www.minecraft.net/en-us/usage-guidelines
+
+William Wythers is aware of this derivative work and condones it:
+https://github.com/ThePansmith/Monifactory/pull/1406
