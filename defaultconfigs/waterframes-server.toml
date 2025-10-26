@@ -1,0 +1,97 @@
+
+[waterframes]
+
+	#All configurations about rendering
+	[waterframes.rendering]
+		#Width limit of displays in blocks
+		#Range: 1.0 ~ 256.0
+		maxWidth = 40.0
+		#Height limit of displays in blocks
+		#Range: 1.0 ~ 256.0
+		maxHeight = 40.0
+		#Max Radius of rendering distance in blocks
+		#Range: 4 ~ 512
+		maxRenderDistance = 64
+		#Max distance of projections in blocks
+		#Range: 4.0 ~ 512.0
+		maxProjectionDistance = 64.0
+		#Enables media processing and rendering, disabling it will not render nothing, you can still hear videos
+		keepRendering = true
+
+	#Configuration related to multimedia sources like Videos or Music
+	[waterframes.multimedia]
+		#Max volume distance radius
+		#Range: 8 ~ 512
+		maxVolumeDistance = 64
+		#Max volume value
+		#values over 100 uses VLC überVolume
+		#Range: 10 ~ 120
+		maxVolume = 100
+		#Makes Minecraft master volume affects waterframes volume
+		masterVolume = false
+		#Enables compatibility with VSEureka
+		#In case VS breaks something on their side, this option should stop client/server crashing
+		#Or if the audio isn't working, disable this option should help
+		#(This option is called VSEureka because valkirienskies is too long, and VS may be misleading)
+		vsEurekaCompat = true
+
+		[waterframes.multimedia.watermedia]
+			#Enables VLC/FFMPEG usage for multimedia processing like videos and music (support added by WATERMeDIA)
+			enable = true
+
+	#Configuration related to interactions with vanilla and modded features
+	[waterframes.block_behavior]
+		#Enable light feature on frames while is playing
+		lightOnPlay = true
+		#Forces light feature on frames while is playing
+		#Requires lightOnPlay be true
+		forceLightOnPlay = false
+		#Enable lag tick time correction
+		#Helps when server is too laggy and playback is regressing in time
+		#Disable if causes problems
+		lagTickCorrection = false
+
+		#Redstone interaction options
+		[waterframes.block_behavior.redstone]
+			#Enable the feature
+			enable = true
+			#Redstone inputs forces paused playback and ignores any other control sources
+			masterMode = false
+			#Experimental playlist mode, this will make the display to play a list of videos
+			experimentalPlaylistMode = false
+
+	#Configuration related to remote control
+	[waterframes.remote_control]
+		#Distance in blocks of RC range
+		#Range: 4 ~ 256
+		distance = 32
+
+	#Configurations related to permissions
+	[waterframes.permissions]
+		#Enables Permission API integration [(Neo)Forge only]
+		#(Neo)Forge provides its own permissions API compatible with permissions mods like Luckperms or FTB Ranks
+		#This config enables integrations and ignores all below settings
+		usePermissionsAPI = false
+		#Changes if players in Adventure mode can use displays
+		usableInAdventureMode = false
+		#Changes if players in Survival mode can use displays
+		usableInSurvivalMode = true
+		#Changes if any player can use displays, otherwise only admins can use it
+		usableForAnyone = true
+		#Allow saving for anyone without OP permissions
+		allowSaving = true
+		#Allow interacting (open gui) for all remotes
+		usableRemote = true
+		#Allow binding remotes on any display
+		usableRemoteBinding = true
+
+		#Whitelist configuration: please stop bugging me with this :(
+		[waterframes.permissions.whitelist]
+			#Enables whitelist feature
+			#[WARNING]: THE AUTHOR OF THE MOD (SRRAPERO720) IS NOT RESPONSIBLE IF IN YOUR SERVER SOMEONE PUTS NSFW MEDIA
+			#WATERMEDIA HAVE SUPPORT FOR ADULT PAGES AND WHITELIST WAS DESIGNED TO PREVENT THAT
+			#MIMIMIMI THE KIDS, SHUT UP, I GIVE YOU THE OPTIONS ENABLED _BY DEFAULT_ TO PREVENT THAT
+			enable = true
+			#Moves the whitelist into the darkside
+			blacklistMode = false
+			urls = ["imgur.com", "gyazo.com", "prntscr.com", "tinypic.com", "puu.sh", "pinimg.com", "photobucket.com", "staticflickr.com", "flic.kr", "tenor.co", "tenor.com", "gfycat.com", "giphy.com", "gph.is", "gifbin.com", "i.redd.it", "media.tumblr.com", "twimg.com", "githubusercontent.com", "googleusercontent.com", "googleapis.com", "wikimedia.org", "ytimg.com", "youtube.com", "youtu.be", "twitch.tv", "twitter.com", "x.com", "soundcloud.com", "kick.com", "streamable.com", "srrapero720.me", "fbcdn.net", "drive.google.com"]
