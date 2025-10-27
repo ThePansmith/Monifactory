@@ -266,7 +266,7 @@ ServerEvents.recipes(event => {
         .duration(200)
 
     event.recipes.gtceu.assembler("max_64a_substation_energy_hatch")
-        .itemInputs("gtceu:max_energy_input_hatch_16a", "gtceu:max_machine_hull", "4x gtceu:monium_quadruple_wire", "3x gtceu:monium_octal_wire", "2x gtceu:monium_plate", "2x gtceu:meta_null_plate", "2x kubejs:uxpic_chip", "2x gtceu:monium_spring", "4x gtceu:uev_electric_pump")
+        .itemInputs("gtceu:max_energy_input_hatch_16a", "gtceu:max_machine_hull", "4x gtceu:monium_quadruple_wire", "3x gtceu:monium_hex_wire", "2x gtceu:monium_plate", "2x gtceu:meta_null_plate", "2x kubejs:uxpic_chip", "2x gtceu:monium_spring", "4x gtceu:uev_electric_pump")
         .itemOutputs("gtceu:max_substation_input_hatch_64a")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(200)
