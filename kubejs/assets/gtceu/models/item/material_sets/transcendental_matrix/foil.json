@@ -1,5 +1,5 @@
 {
-    "parent": "gtceu:item/generated",
+    "parent": "item/generated",
     "textures": {
         "layer0": "gtceu:item/material_sets/transcendental_matrix/foil"
     }
