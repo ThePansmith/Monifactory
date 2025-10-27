@@ -1,5 +1,5 @@
 {
-  "parent": "item/handheld",
+  "parent": "item/generated",
   "textures": {
     "layer0": "gtceu:item/material_sets/magic/ingot_double",
     "layer1": "gtceu:item/material_sets/magic/ingot_double_secondary",

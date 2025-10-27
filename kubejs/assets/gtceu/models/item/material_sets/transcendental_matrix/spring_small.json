@@ -1,5 +1,5 @@
 {
-    "parent": "gtceu:item/handheld",
+    "parent": "gtceu:item/generated",
     "textures": {
         "layer0": "gtceu:item/material_sets/transcendental_matrix/spring_small"
     }
