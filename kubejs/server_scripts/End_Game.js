@@ -414,7 +414,7 @@ ServerEvents.recipes(event => {
         A: "monilabs:max_robot_arm",
         B: "gtceu:monium_block",
         C: "monilabs:max_conveyor_module",
-        D: "kubejs:field_stabilised_prismatic_pulsar_compound",
+        D: "kubejs:field_stabilized_prismatic_pulsar_compound",
         F: "gtceu:monium_frame",
         G: "monilabs:max_field_generator",
         H: "gtceu:polyether_ether_ketone_huge_item_pipe",
@@ -489,7 +489,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("fieldstabilizedcompound")
         .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")
-        .itemOutputs("kubejs:field_stabilised_prismatic_pulsar_compound")
+        .itemOutputs("kubejs:field_stabilized_prismatic_pulsar_compound")
         .duration(255)
         .EUt(GTValues.VA[GTValues.UEV])
 

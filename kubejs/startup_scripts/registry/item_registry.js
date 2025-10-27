@@ -112,9 +112,9 @@ StartupEvents.registry("item", event => {
         .maxStackSize(16)
     event.create("universal_collapse_device")
         .maxStackSize(16)
-    event.create("field_stabilised_prismatic_pulsar_compound")
+    event.create("field_stabilized_prismatic_pulsar_compound")
         .maxStackSize(16)
-        .texture("kubejs:item/microverse/kit/field_stabilised_prismatic_pulsar_compound")
+        .texture("kubejs:item/microverse/kit/field_stabilized_prismatic_pulsar_compound")
         .displayName("Field-Stabilized Prismatic Pulsar Compound")
 
     // Heavy platings
