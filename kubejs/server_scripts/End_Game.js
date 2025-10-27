@@ -400,48 +400,39 @@ ServerEvents.recipes(event => {
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
         "BMMMMMMMMMB",
-        "MEWwmfmwYEM",
-        "MEGCCcCCGEg",
-        "MeCFIIIFCsg",
-        "hbRIGQGIRpg",
-        "hbqSQHQSZpg",
-        "hbRIGQGIRpg",
-        "MtCFIIIFCdg",
-        "MEGCCoCCGEg",
-        "MEXwmkmwVEM",
+        "MhXXFWFXXcM",
+        "MXMMMWMMMXM",
+        "MMMFGWGFMMP",
+        "HCMGALAGSmP",
+        "HCwgDQDSOmP",
+        "HCMGALAGSmP",
+        "MMMFGWGFMMP",
+        "MXMMMWMMMXM",
+        "MfXXFWFXXsM",
         "BMMMMMMMMMB"
     ], {
+        A: "monilabs:max_robot_arm",
         B: "gtceu:monium_block",
-        C: "kubejs:extradimensional_processor_mainframe",
-        E: "monilabs:eltz_frame",
-        F: "gtceu:uev_field_generator",
-        G: "gtceu:monium_gear",
-        H: "gtceu:max_machine_hull",
-        I: "kubejs:dimensionally_stabilized_infinity_heavy_plating",
+        C: "monilabs:max_conveyor_module",
+        D: "kubejs:field_stabilised_prismatic_pulsar_compound",
+        F: "gtceu:monium_frame",
+        G: "monilabs:max_field_generator",
+        H: "gtceu:polyether_ether_ketone_huge_item_pipe",
+        L: "monilabs:max_4096a_laser_source_hatch",
         M: "kubejs:causality_exempt_monic_heavy_plating",
-        Q: "kubejs:field_stabilised_prismatic_pulsar_compound",
-        R: "gtceu:uev_robot_arm",
-        S: "gtceu:uev_sensor",
-        V: "kubejs:infinity_file",
-        W: "kubejs:infinity_screwdriver",
-        X: "kubejs:infinity_wrench",
-        Y: "kubejs:infinity_hammer",
-        Z: "kubejs:infinity_wire_cutter",
-        b: "gtceu:uev_conveyor_module",
-        c: "monilabs:prismatic_crucible",
-        d: "gtceu:dimensional_superassembler",
-        e: "gtceu:helical_fusion_reactor",
-        f: "monilabs:prismatic_focus",
-        g: "monilabs:prism_glass",
-        h: "gtceu:polyether_ether_ketone_huge_item_pipe",
-        k: "monilabs:knowledge_transmission_array",
-        m: "gtceu:monium_frame",
-        o: "monilabs:creative_data_multi",
-        q: "gtceu:uev_quantum_chest",
-        s: "gtceu:omnic_synthesizer",
-        t: "monilabs:creative_energy_multi",
-        p: "gtceu:computer_monitor_cover",
-        w: "gtceu:monium_octal_wire",
+        O: "gtceu:object_holder",
+        P: "monilabs:prism_glass",
+        Q: "gtceu:uev_quantum_chest",
+        S: "monilabs:max_sensor",
+        W: "gtceu:monium_hex_wire",
+        X: "#gtceu:circuits/max",
+        c: "kubejs:infinity_wire_cutter",
+        f: "kubejs:infinity_file",
+        g: "gtceu:monium_gear",
+        h: "kubejs:infinity_hammer",
+        m: "gtceu:computer_monitor_cover",
+        s: "kubejs:infinity_screwdriver",
+        w: "kubejs:infinity_wrench"
     })
 
     // Knowledge Transmission Array
@@ -503,7 +494,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UEV])
 
     event.recipes.gtceu.assembly_line("causality_exempt_monic_plating")
-        .itemInputs("gtceu:double_monium_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "gtceu:double_monium_plate")
+        .itemInputs("6x gtceu:double_monium_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "6x gtceu:double_monium_plate")
         .inputFluids("gtceu:living_soldering_alloy 2880")
         .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
         .duration(400)

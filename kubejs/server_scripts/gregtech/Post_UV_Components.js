@@ -254,6 +254,45 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UEV])
         )
 
+    event.recipes.gtceu.assembler("max_256a_laser_source_hatch")
+        .itemInputs("gtceu:max_machine_hull", "gtceu:diamond_lens", "monilabs:max_emitter", "monilabs:max_electric_pump", "4x gtceu:monium_single_wire")
+        .itemOutputs("monilabs:max_256a_laser_source_hatch")
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .duration(3000)
+    event.recipes.gtceu.assembler("max_1024a_laser_source_hatch")
+        .itemInputs("gtceu:max_machine_hull", "2x gtceu:diamond_lens", "2x monilabs:max_emitter", "2x monilabs:max_electric_pump", "4x gtceu:monium_double_wire")
+        .itemOutputs("monilabs:max_1024a_laser_source_hatch")
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .duration(6000)
+    event.recipes.gtceu.assembler("max_4096a_laser_source_hatch")
+        .itemInputs("gtceu:max_machine_hull", "4x gtceu:diamond_lens", "4x monilabs:max_emitter", "4x monilabs:max_electric_pump", "4x gtceu:monium_quadruple_wire")
+        .itemOutputs("monilabs:max_4096a_laser_source_hatch")
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .duration(12000)
+
+    event.recipes.gtceu.assembler("max_256a_laser_target_hatch")
+        .itemInputs("gtceu:max_machine_hull", "gtceu:diamond_lens", "monilabs:max_sensor", "monilabs:max_electric_pump", "4x gtceu:monium_single_wire")
+        .itemOutputs("monilabs:max_256a_laser_target_hatch")
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .duration(3000)
+    event.recipes.gtceu.assembler("max_1024a_laser_target_hatch")
+        .itemInputs("gtceu:max_machine_hull", "2x gtceu:diamond_lens", "2x monilabs:max_sensor", "2x monilabs:max_electric_pump", "4x gtceu:monium_double_wire")
+        .itemOutputs("monilabs:max_1024a_laser_target_hatch")
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .duration(6000)
+    event.recipes.gtceu.assembler("max_4096a_laser_target_hatch")
+        .itemInputs("gtceu:max_machine_hull", "4x gtceu:diamond_lens", "4x monilabs:max_sensor", "4x monilabs:max_electric_pump", "4x gtceu:monium_quadruple_wire")
+        .itemOutputs("monilabs:max_4096a_laser_target_hatch")
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .duration(12000)
+
+
     // Motors
     event.recipes.gtceu.assembly_line("uhv_motor")
         .itemInputs("gtceu:long_magnetic_terbium_rod", "8x gtceu:long_actinium_rod", "8x gtceu:actinium_ring", "16x gtceu:actinium_round", "64x gtceu:fine_darconite_wire", "64x gtceu:fine_darconite_wire", "32x gtceu:fine_darconite_wire", "2x gtceu:europium_single_cable")
@@ -280,6 +319,19 @@ ServerEvents.recipes(event => {
             .researchStack("gtceu:uhv_electric_motor")
             .CWUt(108, 512000)
             .EUt(GTValues.VA[GTValues.UHV])
+        )
+
+    event.recipes.gtceu.assembly_line("max_electric_motor")
+        .itemInputs("gtceu:long_magnetic_terbium_rod", "16x gtceu:long_monium_rod", "16x gtceu:monium_ring", "32x gtceu:monium_round", "64x gtceu:monium_single_wire", "4x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:lubricant 4000", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_electric_motor")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_electric_motor")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
         )
 
     // Pistons
@@ -309,6 +361,19 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV])
         )
 
+    event.recipes.gtceu.assembly_line("max_piston")
+        .itemInputs("2x monilabs:max_electric_motor", "8x gtceu:monium_plate", "8x gtceu:monium_ring", "8x gtceu:monium_round", "4x gtceu:monium_rod", "2x gtceu:monium_gear", "4x gtceu:small_monium_gear", "4x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:lubricant 4000", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_electric_piston")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_electric_piston")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
+        )
+
     // Robot Arms
     event.recipes.gtceu.assembly_line("uhv_robot_arm")
         .itemInputs("4x gtceu:long_actinium_rod", "gtceu:actinium_gear", "3x gtceu:small_actinium_gear", "3x gtceu:uhv_electric_motor", "gtceu:uhv_electric_piston", "#gtceu:circuits/uhv", "2x #gtceu:circuits/uv", "4x #gtceu:circuits/zpm", "4x gtceu:europium_single_cable")
@@ -334,6 +399,19 @@ ServerEvents.recipes(event => {
             .researchStack("gtceu:uhv_robot_arm")
             .CWUt(108, 512000)
             .EUt(GTValues.VA[GTValues.UHV])
+        )
+
+    event.recipes.gtceu.assembly_line("max_robot_arm")
+        .itemInputs("8x gtceu:long_monium_rod", "2x gtceu:monium_gear", "6x gtceu:small_monium_gear", "6x monilabs:max_electric_motor", "2x monilabs:max_electric_piston", "4x #gtceu:circuits/max", "8x #gtceu:circuits/uev", "16x #gtceu:circuits/uhv", "8x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:lubricant 4000", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_robot_arm")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_robot_arm")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
         )
 
     // Sensors
@@ -363,6 +441,19 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV])
         )
 
+    event.recipes.gtceu.assembly_line("max_sensor")
+        .itemInputs("2x gtceu:monium_frame", "2x monilabs:max_electric_motor", "8x gtceu:monium_plate", "8x kubejs:quasi_stable_neutron_star", "4x #gtceu:circuits/max", "64x gtceu:infinity_foil", "8x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_sensor")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_sensor")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
+        )
+
     // Emitters
     event.recipes.gtceu.assembly_line("uhv_emitter")
         .itemInputs("gtceu:manyullyn_frame", "gtceu:uhv_electric_motor", "4x gtceu:long_actinium_rod", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x monilabs:crystal_matrix_foil", "32x monilabs:crystal_matrix_foil", "4x gtceu:europium_single_cable")
@@ -388,6 +479,19 @@ ServerEvents.recipes(event => {
             .researchStack("gtceu:uhv_emitter")
             .CWUt(128, 512000)
             .EUt(GTValues.VA[GTValues.UHV])
+        )
+
+    event.recipes.gtceu.assembly_line("max_emitter")
+        .itemInputs("2x gtceu:monium_frame", "2x monilabs:max_electric_motor", "8x gtceu:long_monium_rod", "8x kubejs:quasi_stable_neutron_star", "4x #gtceu:circuits/max", "64x gtceu:infinity_foil", "8x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_emitter")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_emitter")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
         )
 
     // Field Generators
@@ -418,6 +522,19 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV])
         )
 
+    event.recipes.gtceu.assembly_line("max_field_generator")
+        .itemInputs("2x gtceu:monium_frame", "8x gtceu:monium_plate", "8x kubejs:quasi_stable_neutron_star", "4x monilabs:max_emitter", "8x #gtceu:circuits/max", "64x gtceu:monium_single_wire", "8x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_field_generator")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_field_generator")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
+        )
+
     // Conveyors
     event.recipes.gtceu.assembly_line("uhv_conveyor")
         .itemInputs("2x gtceu:uhv_electric_motor", "2x gtceu:actinium_plate", "4x gtceu:actinium_ring", "16x gtceu:actinium_round", "4x gtceu:actinium_screw", "2x gtceu:europium_single_cable")
@@ -443,6 +560,19 @@ ServerEvents.recipes(event => {
             .researchStack("gtceu:uhv_conveyor_module")
             .CWUt(108, 512000)
             .EUt(GTValues.VA[GTValues.UHV])
+        )
+
+    event.recipes.gtceu.assembly_line("max_conveyor_module")
+        .itemInputs("4x monilabs:max_electric_motor", "8x gtceu:monium_plate", "8x gtceu:monium_ring", "32x gtceu:monium_round", "8x gtceu:monium_screw", "4x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:lubricant 4000", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_conveyor_module")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_conveyor_module")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
         )
 
     // Pumps
@@ -472,6 +602,19 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV])
         )
 
+    event.recipes.gtceu.assembly_line("max_electric_pump")
+        .itemInputs("2x monilabs:max_electric_motor", "gtceu:meta_null_huge_fluid_pipe", "8x gtceu:monium_plate", "16x gtceu:monium_screw", "64x gtceu:silicone_rubber_ring", "4x gtceu:monium_rotor", "8x gtceu:hyperdegenerate_darconite_single_wire")
+        .inputFluids("gtceu:living_soldering_alloy 2880", "gtceu:lubricant 4000", "gtceu:infinity 144")
+        .itemOutputs("monilabs:max_electric_pump")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+        .stationResearch(b => b
+            .researchStack("gtceu:uev_electric_pump")
+            .CWUt(144, 1024000)
+            .EUt(GTValues.VA[GTValues.UEV])
+        )
+
     // Fluid Regulators
     event.recipes.gtceu.assembler("uhv_fluid_regulator")
         .itemInputs("gtceu:uhv_electric_pump", "2x #gtceu:circuits/uhv")
@@ -487,6 +630,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:uev_fluid_regulator")
         .duration(50)
         .EUt(3932160)
+        // Fluid Regulators don't have research
+
+    event.recipes.gtceu.assembler("max_fluid_regulator")
+        .itemInputs("monilabs:max_electric_pump", "2x #gtceu:circuits/max")
+        .circuit(1)
+        .itemOutputs("monilabs:max_fluid_regulator")
+        .duration(50)
+        .EUt(GTValues.VA[GTValues.MAX])
         // Fluid Regulators don't have research
 
     // Cables
