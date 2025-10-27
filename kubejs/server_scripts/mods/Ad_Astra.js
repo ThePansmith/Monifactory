@@ -466,6 +466,9 @@ ServerEvents.tags("item", event => {
 
     // Make Ad Astra doors act as cleanroom doors
     event.add("gtceu:cleanroom_doors", /^ad_astra:[\w_]+_door/)
+
+    // Populate empty tag for Thermal Expansion Multiservo Press recipe
+    event.add("ad_astra:venus_sandstone", "ad_astra:venus_sandstone")
 })
 
 ServerEvents.tags("block", event => {
