@@ -379,6 +379,10 @@ ServerEvents.recipes(event => {
         .outputFluids("nuclearcraft:technical_water 40")
         .duration(0.5 * 20)
         .EUt(-GTValues.V[GTValues.LV])
+
+    // Remove recipes that use empty NCN tags
+    event.remove({ id: "minecraft:nuclearcraft_ferroboron_plate" })
+    event.remove({ id: "minecraft:nuclearcraft_hard_carbon_plate"})
 });
 
 ServerEvents.tags("item", event => {
