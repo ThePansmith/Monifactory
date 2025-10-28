@@ -6,7 +6,7 @@ import { readManifest } from "./manifest.ts"
 
 export const getZipModPackTarget = (
     group: "server" | "client" | "dev",
-    dependsOn?: Juke.Target[],
+    dependsOn: (packModeSwitchTarget: Juke.Target) => Juke.Target[],
 ) => {
     const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`
 
@@ -23,17 +23,16 @@ export const getZipModPackTarget = (
             `dist/${group}.zip`,
         ],
 
-        dependsOn: () => [
-        // Automatically switch to normal mode if no other mode was previously set
+        dependsOn: () => dependsOn(
+            // Automatically switch to normal mode if no other mode was previously set
             getPackModeSwitchTarget(
                 "normal",
                 {
                     cwd: packSwitchPath,
                     onlyWhen: () => !fs.existsSync("config/packmode.json"),
-                    dependsOn,
                 }
-            ),
-        ],
+            )
+        ),
 
         executes: async () => {
             fs.copyFileSync("manifest.json", `dist/${group}/manifest.json`)

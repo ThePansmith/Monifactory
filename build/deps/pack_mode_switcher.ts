@@ -16,9 +16,8 @@ let mutex = false
 
 export const getPackModeSwitchTarget = (
     mode: TPackMode,
-    { cwd, dependsOn, onlyWhen }: {
+    { cwd, onlyWhen }: {
         cwd: string,
-        dependsOn?: Juke.Target[],
         onlyWhen?: Juke.OnlyWhenFn,
     }
 ) => Juke.createTarget({
@@ -35,7 +34,7 @@ export const getPackModeSwitchTarget = (
     },
 
     // Needs the core mod jar
-    dependsOn: () => [createDownloadModTarget(getCoreModManifestFileEntry()), ...dependsOn],
+    dependsOn: () => [createDownloadModTarget(getCoreModManifestFileEntry())],
 
     executes: async () => {
         while (mutex) {
