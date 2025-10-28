@@ -268,6 +268,14 @@ ServerEvents.recipes(event => {
         320000000, 8000000
     )
 
+    // Technically not an ExCrafting recipe but it's also infinity ingots
+    event.recipes.gtceu.assembler("infinity_better")
+        .itemInputs("kubejs:active_prismatic_core", "4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot", "8x monilabs:transcendental_matrix_ingot")
+        .inputFluids("gtceu:monium 8")
+        .itemOutputs("8x gtceu:infinity_ingot")
+        .EUt(GTValues.VA[GTValues.MAX])
+        .duration(20)
+
     // Omnic Synthesizer
     event.recipes.extendedcrafting.shaped_table("gtceu:omnic_synthesizer", [
         "ECFCE",
