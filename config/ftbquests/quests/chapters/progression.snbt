@@ -3178,7 +3178,7 @@
 					id: "trofers:large_pillar"
 					tag: {
 						BlockEntityTag: {
-							Trophy: "monifactory:neutronium"
+							Trophy: "monifactory:manyullyn"
 						}
 					}
 				}
