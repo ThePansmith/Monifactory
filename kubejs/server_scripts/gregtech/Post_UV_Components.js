@@ -518,7 +518,7 @@ ServerEvents.recipes(event => {
 
     // Field Generators
     event.recipes.gtceu.assembly_line("uhv_field_generator")
-        .itemInputs("gtceu:manyullyn_frame", "6x gtceu:actinium_plate", "2x gtceu:gravi_star", "2x gtceu:uhv_emitter", "2x #gtceu:circuits/uhv", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "4x gtceu:europium_single_cable")
+        .itemInputs("gtceu:manyullyn_frame", "6x gtceu:actinium_plate", "2x gtceu:gravi_star", "2x gtceu:uhv_emitter", "2x #gtceu:circuits/uhv", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "4x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_field_generator")
         .duration(600)
