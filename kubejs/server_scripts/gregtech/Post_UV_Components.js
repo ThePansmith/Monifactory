@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
     // Dynamo Hatches
     event.remove({ id:"gtceu:assembly_line/dynamo_hatch_uhv"})
     event.recipes.gtceu.assembly_line("dynamo_hatch_uhv")
-        .itemInputs("gtceu:uhv_machine_hull", "4x gtceu:europium_spring", "16x gtceu:uhpic_chip", "#gtceu:circuits/uhv", "2x kubejs:uhv_voltage_coil")
+        .itemInputs("gtceu:uhv_machine_hull", "4x gtceu:lanthanum_gold_cadmium_curium_sulfate_spring", "16x gtceu:uhpic_chip", "#gtceu:circuits/uhv", "2x kubejs:uhv_voltage_coil")
         .inputFluids("gtceu:sodium_potassium 12000", "gtceu:advanced_soldering_alloy 576")
         .itemOutputs("gtceu:uhv_energy_output_hatch")
         .duration(100)
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
     // Energy Hatches
     event.remove({ id:"gtceu:assembly_line/energy_hatch_uhv"})
     event.recipes.gtceu.assembly_line("energy_hatch_uhv")
-        .itemInputs("gtceu:uhv_machine_hull", "4x gtceu:europium_single_cable", "16x gtceu:uhpic_chip", "#gtceu:circuits/uhv", "2x kubejs:uhv_voltage_coil")
+        .itemInputs("gtceu:uhv_machine_hull", "4x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable", "16x gtceu:uhpic_chip", "#gtceu:circuits/uhv", "2x kubejs:uhv_voltage_coil")
         .inputFluids("gtceu:sodium_potassium 12000", "gtceu:advanced_soldering_alloy 576")
         .itemOutputs("gtceu:uhv_energy_input_hatch")
         .duration(100)
@@ -317,7 +317,7 @@ ServerEvents.recipes(event => {
 
     // Motors
     event.recipes.gtceu.assembly_line("uhv_motor")
-        .itemInputs("gtceu:long_magnetic_terbium_rod", "8x gtceu:long_actinium_rod", "8x gtceu:actinium_ring", "16x gtceu:actinium_round", "64x gtceu:fine_darconite_wire", "64x gtceu:fine_darconite_wire", "32x gtceu:fine_darconite_wire", "2x gtceu:europium_single_cable")
+        .itemInputs("gtceu:long_magnetic_terbium_rod", "8x gtceu:long_actinium_rod", "8x gtceu:actinium_ring", "16x gtceu:actinium_round", "64x gtceu:fine_darconite_wire", "64x gtceu:fine_darconite_wire", "32x gtceu:fine_darconite_wire", "2x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
 
         .itemOutputs("gtceu:uhv_electric_motor")
@@ -358,7 +358,7 @@ ServerEvents.recipes(event => {
 
     // Pistons
     event.recipes.gtceu.assembly_line("uhv_piston")
-        .itemInputs("gtceu:uhv_electric_motor", "4x gtceu:actinium_plate", "4x gtceu:actinium_ring", "16x gtceu:actinium_round", "4x gtceu:actinium_rod", "gtceu:actinium_gear", "2x gtceu:small_actinium_gear", "2x gtceu:europium_single_cable")
+        .itemInputs("gtceu:uhv_electric_motor", "4x gtceu:actinium_plate", "4x gtceu:actinium_ring", "16x gtceu:actinium_round", "4x gtceu:actinium_rod", "gtceu:actinium_gear", "2x gtceu:small_actinium_gear", "2x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_electric_piston")
         .duration(600)
@@ -398,7 +398,7 @@ ServerEvents.recipes(event => {
 
     // Robot Arms
     event.recipes.gtceu.assembly_line("uhv_robot_arm")
-        .itemInputs("4x gtceu:long_actinium_rod", "gtceu:actinium_gear", "3x gtceu:small_actinium_gear", "3x gtceu:uhv_electric_motor", "gtceu:uhv_electric_piston", "#gtceu:circuits/uhv", "2x #gtceu:circuits/uv", "4x #gtceu:circuits/zpm", "4x gtceu:europium_single_cable")
+        .itemInputs("4x gtceu:long_actinium_rod", "gtceu:actinium_gear", "3x gtceu:small_actinium_gear", "3x gtceu:uhv_electric_motor", "gtceu:uhv_electric_piston", "#gtceu:circuits/uhv", "2x #gtceu:circuits/uv", "4x #gtceu:circuits/zpm", "4x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_robot_arm")
         .duration(600)
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
 
     // Sensors
     event.recipes.gtceu.assembly_line("uhv_sensor")
-        .itemInputs("gtceu:manyullyn_frame", "gtceu:uhv_electric_motor", "4x gtceu:actinium_plate", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x monilabs:crystal_matrix_foil", "32x monilabs:crystal_matrix_foil", "4x gtceu:europium_single_cable")
+        .itemInputs("gtceu:manyullyn_frame", "gtceu:uhv_electric_motor", "4x gtceu:actinium_plate", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x monilabs:crystal_matrix_foil", "32x monilabs:crystal_matrix_foil", "4x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_sensor")
         .duration(600)
@@ -478,7 +478,7 @@ ServerEvents.recipes(event => {
 
     // Emitters
     event.recipes.gtceu.assembly_line("uhv_emitter")
-        .itemInputs("gtceu:manyullyn_frame", "gtceu:uhv_electric_motor", "4x gtceu:long_actinium_rod", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x monilabs:crystal_matrix_foil", "32x monilabs:crystal_matrix_foil", "4x gtceu:europium_single_cable")
+        .itemInputs("gtceu:manyullyn_frame", "gtceu:uhv_electric_motor", "4x gtceu:long_actinium_rod", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x monilabs:crystal_matrix_foil", "32x monilabs:crystal_matrix_foil", "4x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_emitter")
         .duration(600)
@@ -559,7 +559,7 @@ ServerEvents.recipes(event => {
 
     // Conveyors
     event.recipes.gtceu.assembly_line("uhv_conveyor")
-        .itemInputs("2x gtceu:uhv_electric_motor", "2x gtceu:actinium_plate", "4x gtceu:actinium_ring", "16x gtceu:actinium_round", "4x gtceu:actinium_screw", "2x gtceu:europium_single_cable")
+        .itemInputs("2x gtceu:uhv_electric_motor", "2x gtceu:actinium_plate", "4x gtceu:actinium_ring", "16x gtceu:actinium_round", "4x gtceu:actinium_screw", "2x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 2000", "gtceu:styrene_butadiene_rubber 5760", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_conveyor_module")
         .duration(600)
@@ -599,7 +599,7 @@ ServerEvents.recipes(event => {
 
     // Pumps
     event.recipes.gtceu.assembly_line("uhv_pump")
-        .itemInputs("gtceu:uhv_electric_motor", "gtceu:neutronium_large_fluid_pipe", "2x gtceu:actinium_plate", "8x gtceu:actinium_screw", "16x gtceu:silicone_rubber_ring", "gtceu:neutronium_rotor", "2x gtceu:europium_single_cable")
+        .itemInputs("gtceu:uhv_electric_motor", "gtceu:neutronium_large_fluid_pipe", "2x gtceu:actinium_plate", "8x gtceu:actinium_screw", "16x gtceu:silicone_rubber_ring", "gtceu:neutronium_rotor", "2x gtceu:lanthanum_gold_cadmium_curium_sulfate_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_electric_pump")
         .duration(600)
