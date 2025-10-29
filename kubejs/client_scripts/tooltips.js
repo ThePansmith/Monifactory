@@ -154,11 +154,11 @@ ItemEvents.tooltip(tooltip => {
         text.add(5, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.2"))
     })
 
-        tooltip.addAdvanced("gtceu:omnic_synthesizer", (item, adv, text) => {
-           text.add(1, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.0"))
-           text.add(2, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.1"))
-           text.add(3, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.2"))
-        })
+    tooltip.addAdvanced("gtceu:omnic_synthesizer", (item, adv, text) => {
+        text.add(1, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.0"))
+        text.add(2, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.1"))
+        text.add(3, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.2"))
+    })
 
     tooltip.addAdvanced("gtceu:antimatter_collider", (item,adv,text) => {
         text.add(1, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.0"))
