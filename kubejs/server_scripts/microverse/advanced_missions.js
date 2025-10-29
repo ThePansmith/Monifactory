@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
-            .itemInputs("16x kubejs:stabilized_curium")
+            .itemInputs("16x kubejs:stabilized_plutonium")
             .itemInputs("kubejs:blasting_kit")
             .itemInputs("64x kubejs:wither_realm_data")
             .damageRate(4)
