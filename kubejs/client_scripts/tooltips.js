@@ -156,8 +156,8 @@ ItemEvents.tooltip(tooltip => {
 
         tooltip.addAdvanced("gtceu:omnic_synthesizer", (item, adv, text) => {
            text.add(1, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.0"))
-           text.add(2, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.1")
-           text.add(3, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.2")
+           text.add(2, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.1"))
+           text.add(3, Text.translatable("gtceu.multiblock.omnic_synth.tooltip.2"))
         })
 
     tooltip.addAdvanced("gtceu:antimatter_collider", (item,adv,text) => {
