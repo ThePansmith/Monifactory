@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
     // Heavy Platings
     event.recipes.extendedcrafting.combination(
         "kubejs:quantum_fluxed_eternium_heavy_plating",
-        "gtceu:double_cryococcus_plate", ["2x redstone_arsenal:flux_plating", "3x kubejs:quantum_flux"],
+        "gtceu:double_cryococcus_plate", ["2x redstone_arsenal:flux_plating", "3x kubejs:quantum_flux", "gtceu:americium_foil"],
         1600000, 160000
     )
 

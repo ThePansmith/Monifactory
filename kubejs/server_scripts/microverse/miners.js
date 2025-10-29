@@ -170,24 +170,21 @@ ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t9", [
         "    Q    ",
         "    Q    ",
-        "   QUQ   ",
-        "   QAQ   ",
-        "  QPQPQ  ",
-        " QQTCTQQ ",
-        "QQBHRHBQQ",
+        "   QQQ   ",
+        "  LQAQL  ",
+        "  QQQQQ  ",
+        "LQQCQCQQL",
+        "QQBRQRBQQ",
         " QQQQQQQ ",
         "QQ W W QQ"
     ], {
         Q: "kubejs:quantum_fluxed_eternium_heavy_plating",
-        U: "kubejs:universal_navigator",
-        A: "gtceu:uv_field_generator",
+        A: "gtceu:zpm_field_generator",
         B: "gtceu:ev_super_chest",
-        P: "gtceu:plasma_large_turbine",
-        R: "kubejs:universal_warp_core",
-        T: "gtceu:tungstensteel_gearbox",
-        C: "kubejs:universal_warp_controller",
-        H: "gtceu:uv_rotor_holder",
-        W: "kubejs:hadal_warp_engine"
+        L: "kubejs:supercharged_laser_array",
+        R: "kubejs:warp_core",
+        C: "kubejs:warp_controller",
+        W: "kubejs:warp_engine"
     })
 
     // T10 Microminer
@@ -196,8 +193,8 @@ ServerEvents.recipes(event => {
         "  NN NN  ",
         "  NN NN  ",
         "  NN NN  ",
-        " NUNNNUN ",
-        "NNCNENCNN",
+        " NENNNEN ",
+        "NNCNUNCNN",
         "NNRNANRNN",
         " NNNNNNN ",
         "NW W W WN"
@@ -244,8 +241,8 @@ ServerEvents.recipes(event => {
         "   IISII   ",
         "   ISQSI   ",
         "  IIJSJII  ",
-        " IIOJCJOII ",
-        "IIIDJJJDIII",
+        " IIIJCJIII ",
+        "IIIJJJJJIII",
         "IIIJJ JJIII",
         "IIWW   WWII",
         "IW       WI"
@@ -255,8 +252,6 @@ ServerEvents.recipes(event => {
         E: "kubejs:extradimensional_navigator",
         C: "gtceu:uhv_quantum_chest",
         W: "kubejs:hadal_warp_engine",
-        O: "kubejs:omnic_matrix_coil_block",
-        D: "gtceu:large_naquadah_reactor",
         S: "monilabs:dimensional_stabilization_netherite_casing",
         Q: "kubejs:field_stabilized_prismatic_pulsar_compound"
     })
