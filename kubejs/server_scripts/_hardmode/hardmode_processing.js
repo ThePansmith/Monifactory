@@ -415,7 +415,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(480)
 
-        event.recipes.gtceu.chemical_reactor("kubejs:omnic_quantum_flux")
+        event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
             .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
             .inputFluids("gtceu:dragon_breath 500")
             .itemOutputs("64x kubejs:quantum_flux")
