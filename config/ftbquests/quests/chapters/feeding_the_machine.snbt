@@ -179,7 +179,7 @@
 			linked_quest: "425D1C34A82B054D"
 			shape: "hexagon"
 			x: 0.0d
-			y: 8.5d
+			y: 8.25d
 		}
 		{
 			id: "4585FA4840AF16BB"
@@ -408,12 +408,12 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3C6395EDE0AE8FE3"
-				item: "gtceu:sculk_superconductor_double_wire"
+				item: "gtceu:sculk_superconductor_single_wire"
 				type: "item"
 			}]
 			title: "{moni.quest.186C14C113B6F3AD.title}"
-			x: 4.0d
-			y: 6.0d
+			x: 4.75d
+			y: 5.25d
 		}
 		{
 			dependencies: [
@@ -613,7 +613,7 @@
 			}]
 			title: "{moni.quest.6ABD83B58FADD4DF.title}"
 			x: 2.0d
-			y: 6.0d
+			y: 6.25d
 		}
 		{
 			dependencies: ["2D47BFA44BDB5E6A"]
@@ -1230,7 +1230,7 @@
 			}]
 			title: "{moni.quest.738A141D31AD7CE3.title}"
 			x: -2.25d
-			y: 6.0d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -1349,6 +1349,51 @@
 			title: "{moni.quest.113E9543ADB1666B.title}"
 			x: -0.25d
 			y: 12.25d
+		}
+		{
+			dependencies: ["0562D9F4C441EAF9"]
+			description: ["{moni.quest.57D9FA04817CB92F.description1}"]
+			id: "57D9FA04817CB92F"
+			rewards: [{
+				id: "6ABD44B2AE43E4E3"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "09EF929F3BDB6617"
+				item: "kubejs:quantum_fluxed_eternium_heavy_plating"
+				type: "item"
+			}]
+			title: "{moni.quest.57D9FA04817CB92F.title}"
+			x: 4.0d
+			y: 6.25d
+		}
+		{
+			dependencies: [
+				"57D9FA04817CB92F"
+				"41F1837D7C131898"
+			]
+			description: [
+				"{moni.quest.6BF4A76C5B84EEE9.description1}"
+				""
+				"{moni.quest.6BF4A76C5B84EEE9.description2}"
+			]
+			id: "6BF4A76C5B84EEE9"
+			rewards: [{
+				id: "5FA553DCC8666ADA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4E68CF49A166A50A"
+				item: "kubejs:microminer_t9"
+				type: "item"
+			}]
+			title: "{moni.quest.6BF4A76C5B84EEE9.title}"
+			x: 4.0d
+			y: 7.25d
 		}
 	]
 	title: "{moni.chapter.15E8BBD0CD310663.title}"

@@ -308,7 +308,7 @@
 				{
 					count: 44L
 					id: "5DEC122EDABB5D6F"
-					item: "gtceu:atomic_casing"
+					item: "kubejs:dark_steel_casing"
 					type: "item"
 				}
 				{
@@ -389,7 +389,7 @@
 				{
 					count: 44L
 					id: "6DCABB6D6F8FC3E5"
-					item: "gtceu:atomic_casing"
+					item: "kubejs:dark_steel_casing"
 					type: "item"
 				}
 				{
@@ -930,52 +930,6 @@
 			}]
 			title: "{moni.quest.483652BAEF59E125.title}"
 			x: -3.25d
-			y: -10.25d
-		}
-		{
-			dependencies: [
-				"57D9FA04817CB92F"
-				"483652BAEF59E125"
-			]
-			description: [
-				"{moni.quest.6BF4A76C5B84EEE9.description1}"
-				""
-				"{moni.quest.6BF4A76C5B84EEE9.description2}"
-			]
-			id: "6BF4A76C5B84EEE9"
-			rewards: [{
-				id: "5FA553DCC8666ADA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "4E68CF49A166A50A"
-				item: "kubejs:microminer_t9"
-				type: "item"
-			}]
-			title: "{moni.quest.6BF4A76C5B84EEE9.title}"
-			x: -4.75d
-			y: -10.25d
-		}
-		{
-			dependencies: ["0562D9F4C441EAF9"]
-			description: ["{moni.quest.57D9FA04817CB92F.description1}"]
-			id: "57D9FA04817CB92F"
-			rewards: [{
-				id: "6ABD44B2AE43E4E3"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "09EF929F3BDB6617"
-				item: "kubejs:quantum_fluxed_eternium_heavy_plating"
-				type: "item"
-			}]
-			title: "{moni.quest.57D9FA04817CB92F.title}"
-			x: -6.0d
 			y: -10.25d
 		}
 		{

@@ -2193,7 +2193,7 @@
 			}]
 			title: "{moni.quest.46A56A5E3CC2403F.title}"
 			x: 7.25d
-			y: 3.75d
+			y: 4.25d
 		}
 		{
 			dependencies: ["6DC635766CD40FFF"]
@@ -3057,6 +3057,7 @@
 			hide_until_deps_visible: true
 			icon: "gtceu:simulation_supercomputer"
 			id: "51FD757E07E397A1"
+			optional: true
 			rewards: [{
 				id: "15A36C10C6BDE36C"
 				item: "kubejs:moni_quarter"
@@ -3071,7 +3072,7 @@
 				{
 					count: 18L
 					id: "7BC42B5A0DB23D7A"
-					item: "kubejs:dark_steel_machine_hull"
+					item: "kubejs:dark_steel_casing"
 					type: "item"
 				}
 				{
@@ -3093,6 +3094,7 @@
 			hide_until_deps_visible: true
 			icon: "gtceu:loot_superfabricator"
 			id: "7A716485BBDA8629"
+			optional: true
 			rewards: [{
 				id: "4346F69891783E73"
 				item: "kubejs:moni_quarter"
@@ -3107,7 +3109,7 @@
 				{
 					count: 18L
 					id: "372051DF4441A75D"
-					item: "kubejs:dark_steel_machine_hull"
+					item: "kubejs:dark_steel_casing"
 					type: "item"
 				}
 				{
@@ -3118,7 +3120,7 @@
 				}
 			]
 			x: -14.75d
-			y: -3.25d
+			y: -2.75d
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
@@ -3248,7 +3250,7 @@
 			]
 			title: "{moni.quest.044EBE36128FBB01.title}"
 			x: 7.25d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["595F205B551A53C9"]
@@ -3340,6 +3342,7 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:tnt"
 			id: "6A76B3DCA599B9B5"
+			optional: true
 			tasks: [{
 				id: "2034B77FED29D890"
 				type: "checkmark"

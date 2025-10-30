@@ -1519,6 +1519,7 @@
 			dependencies: [
 				"41FA85A3920EB334"
 				"5A31EEF439212D6E"
+				"15FAEE3F625265F4"
 			]
 			description: ["{moni.quest.7A65459E4DFAAC2D.description1}"]
 			id: "7A65459E4DFAAC2D"
@@ -1549,6 +1550,8 @@
 				"{moni.quest.1EA5F30C5ACADBA9.description3}"
 				""
 				"{moni.quest.1EA5F30C5ACADBA9.description4}"
+				""
+				"{moni.quest.1EA5F30C5ACADBA9.description5}"
 			]
 			icon: "kubejs:quantum_flux"
 			id: "1EA5F30C5ACADBA9"
