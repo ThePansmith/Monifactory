@@ -185,6 +185,7 @@ export const BuildDevTarget = getZipModPackTarget("dev", [
         ]),
         executes: () => {
             Juke.rm("dist/.devtmp", { recursive: true })
+            fs.mkdirSync("dist/.devtmp", { recursive: true })
 
             if (fs.existsSync("dist/dev")) {
                 Juke.logger.info("Only updating mods as dist/dev exists")
@@ -196,7 +197,6 @@ export const BuildDevTarget = getZipModPackTarget("dev", [
             }
 
             fs.mkdirSync("dist/dev/overrides", { recursive: true })
-            fs.mkdirSync("dist/.devtmp", { recursive: true })
             for (const folders of includeList.filter(v => !(v === "mods" || v === "config"))) {
                 symlinkSync(resolve(folders), resolve(`dist/dev/overrides/${folders}`))
             }
