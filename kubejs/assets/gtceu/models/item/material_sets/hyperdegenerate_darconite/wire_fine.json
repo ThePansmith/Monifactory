@@ -1,5 +1,5 @@
 {
-    "parent": "gtceu:item/handheld",
+    "parent": "item/generated",
     "textures": {
         "layer0": "gtceu:item/material_sets/hyperdegenerate_darconite/wire_fine"
     }

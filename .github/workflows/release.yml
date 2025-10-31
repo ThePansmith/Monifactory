@@ -133,19 +133,21 @@ jobs:
         uses: actions/download-artifact@v4.1.8
         with:
           path: artifacts
+          merge-multiple: true
 
       - name: Download artifacts - Previous Flow
         if: ${{ inputs.skip_build == true}}
         uses: actions/download-artifact@v4.1.8
         with:
           path: artifacts
+          merge-multiple: true
           run-id: ${{ github.event.inputs.run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Rename artifacts
         id: artifacts
         run: |
-          cd artifacts/build-zipzip
+          cd artifacts
           for file in ./*; do
             if [[ $file == *.zip ]]; then
               base=$(basename $file)
@@ -153,10 +155,6 @@ jobs:
               mv "$file" "$versioned_file"
             fi
           done
-          wait
-          echo "Cleaning up - Removing non-zip files"
-          shopt -s extglob
-          rm -rf !(*.zip)
         shell: bash
 
       - name: Create body
@@ -175,7 +173,7 @@ jobs:
         id: release
         if: ${{ inputs.skip_github_release == false }}
         with:
-          artifacts: artifacts/build-zipzip/*
+          artifacts: artifacts/*
           name: ${{ steps.name.outputs.name }}
           tag: ${{ steps.tag.outputs.tag }}
           generateReleaseNotes: ${{ inputs.generate_release_notes }}
@@ -195,8 +193,8 @@ jobs:
       - name: Get server and client file paths
         id: filepaths
         run: |
-          server_file=$(ls artifacts/build-zipzip/*server*.zip)
-          client_file=$(ls artifacts/build-zipzip/*client*.zip)
+          server_file=$(ls artifacts/*server*.zip)
+          client_file=$(ls artifacts/*client*.zip)
           echo "server_file=$server_file" >> "$GITHUB_OUTPUT"
           echo "client_file=$client_file" >> "$GITHUB_OUTPUT"
         shell: bash

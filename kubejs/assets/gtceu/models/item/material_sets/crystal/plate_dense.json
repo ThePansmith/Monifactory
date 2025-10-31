@@ -1,5 +1,5 @@
 {
-    "parent": "gtceu:item/handheld",
+    "parent": "item/generated",
     "textures": {
         "layer0": "gtceu:item/material_sets/crystal/plate_dense",
         "layer1": "gtceu:item/material_sets/crystal/plate_dense_secondary",

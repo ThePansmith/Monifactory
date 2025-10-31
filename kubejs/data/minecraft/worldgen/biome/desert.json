@@ -101,7 +101,6 @@
 		],
 		[
 			"wythers:vegetation/local/trees/oasis_palms",
-			"wythers:vegetation/local/patch/oasis_vegetation_moss",
 			"minecraft:glow_lichen",
 			"wythers:terrain/feature/danakil_desert_mounds",
 			"minecraft:flower_default",

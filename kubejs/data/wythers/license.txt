@@ -1,0 +1,13 @@
+The content of the work within this folder is designed to be used alongside the William Wythers' Overhauled Overworld mod.
+It cannot function standalone.
+It overrides a part of the William Wythers' Overhauled Overworld mod to fully replace select functionality.
+
+Further, this work is done without any information copied from the work it replaces.
+It is an original work licensed to others as described in the LICENSE.md file within the root folder of the Monifactory project.
+The objectives it accomplishes and the means it uses to do so are similar, yet distinct from the original.
+
+For those curious William Wythers' Overhauled Overworld can be found here:
+https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld
+
+The license under which that software is licensed can be found here:
+https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en

@@ -12,11 +12,12 @@ const getCoreModManifestFileEntry = () => readManifest()
 
 export type TPackMode = "normal" | "hard" | "expert"
 
+let mutex = false
+
 export const getPackModeSwitchTarget = (
     mode: TPackMode,
-    { cwd, dependsOn, onlyWhen }: {
+    { cwd, onlyWhen }: {
         cwd: string,
-        dependsOn?: Juke.Target[],
         onlyWhen?: Juke.OnlyWhenFn,
     }
 ) => Juke.createTarget({
@@ -33,18 +34,26 @@ export const getPackModeSwitchTarget = (
     },
 
     // Needs the core mod jar
-    dependsOn: () => [createDownloadModTarget(getCoreModManifestFileEntry()), ...dependsOn],
+    dependsOn: () => [createDownloadModTarget(getCoreModManifestFileEntry())],
 
     executes: async () => {
-        const coreModFolder = cacheFolderByManifestFileEntry(getCoreModManifestFileEntry())
-        const [coreModJarPath] = Juke.glob(join(coreModFolder, "*.jar"))
-        if (!coreModJarPath) throw new Error("Core mod not found")
+        while (mutex) {
+            await new Promise(r => setTimeout(r, 1000))
+        }
+        mutex = true
+        try {
+            const coreModFolder = cacheFolderByManifestFileEntry(getCoreModManifestFileEntry())
+            const [coreModJarPath] = Juke.glob(join(coreModFolder, "*.jar"))
+            if (!coreModJarPath) throw new Error("Core mod not found")
 
-        // Core mod performs pack switching when executed standalone
-        await Juke.exec(
-            "java",
-            ["-jar", resolve(coreModJarPath), mode, "--relative"],
-        )
+            // Core mod performs pack switching when executed standalone
+            await Juke.exec(
+                "java",
+                ["-jar", resolve(coreModJarPath), mode, "--relative"],
+            )
+        } finally {
+            mutex = false
+        }
     }
 
 })

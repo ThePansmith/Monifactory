@@ -117,10 +117,10 @@ export const UpdateModsFolder = new Juke.Target({
     }
 })
 
-export const BuildClientTarget = getZipModPackTarget("client", [
+export const BuildClientTarget = getZipModPackTarget("client", PackSwitchTarget => [
     new Juke.Target({
         name: "group-client-files",
-        dependsOn: [CodegenAllTarget, BuildModlistTarget],
+        dependsOn: [CodegenAllTarget, BuildModlistTarget, PackSwitchTarget],
         inputs: [
             ...includeList,
             "dist/modlist.html"
@@ -139,10 +139,10 @@ export const BuildClientTarget = getZipModPackTarget("client", [
     })
 ])
 
-export const BuildServerTarget = getZipModPackTarget("server", [
+export const BuildServerTarget = getZipModPackTarget("server", PackSwitchTarget => [
     new Juke.Target({
         name: "group-server-files",
-        dependsOn: [CodegenAllTarget, BuildModlistTarget, DownloadModsTarget],
+        dependsOn: [CodegenAllTarget, BuildModlistTarget, DownloadModsTarget, PackSwitchTarget],
         inputs: [
             ...includeList,
             "dist/modlist.html"
@@ -168,10 +168,10 @@ export const BuildServerTarget = getZipModPackTarget("server", [
 ])
 
 
-export const BuildDevTarget = getZipModPackTarget("dev", [
+export const BuildDevTarget = getZipModPackTarget("dev", PackSwitchTarget => [
     new Juke.Target({
         name: "group-dev-files",
-        dependsOn: [BuildModlistTarget, DownloadModsTarget],
+        dependsOn: [BuildModlistTarget, DownloadModsTarget, PackSwitchTarget],
         inputs: [
             // weird bug with symlinked config and mods folder
             ...includeList,

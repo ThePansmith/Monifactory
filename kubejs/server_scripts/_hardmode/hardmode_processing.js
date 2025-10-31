@@ -415,7 +415,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(480)
 
-        event.recipes.gtceu.chemical_reactor("kubejs:omnic_quantum_flux")
+        event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
             .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
             .inputFluids("gtceu:dragon_breath 500")
             .itemOutputs("64x kubejs:quantum_flux")
@@ -430,21 +430,10 @@ ServerEvents.recipes(event => {
             .EUt(120)
             .duration(120)
 
-        event.recipes.gtceu.chemical_reactor("dimethylformamide")
-            .inputFluids("gtceu:carbon_monoxide 1000", "gtceu:dimethylamine 1000")
-            .outputFluids("gtceu:dimethylformamide 1000")
-            .duration(200).EUt(480);
-
         event.recipes.gtceu.chemical_reactor("pyrometillic_dianhydride")
             .inputFluids("gtceu:durene 250", "gtceu:oxygen 1500")
             .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
             .duration(400).EUt(480);
-
-        event.recipes.gtceu.chemical_reactor("manganese_acetate")
-            .itemInputs("gtceu:manganese_dust")
-            .inputFluids("gtceu:acetic_acid 1000")
-            .outputFluids("gtceu:manganese_acetate 1000")
-            .duration(60).EUt(480);
 
         event.recipes.gtceu.chemical_reactor("chloronitrobenzene")
             .inputFluids("gtceu:chlorobenzene 1000", "gtceu:nitric_acid 1000")
