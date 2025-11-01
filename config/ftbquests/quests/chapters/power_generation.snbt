@@ -10,7 +10,7 @@
 			height: 2.0d
 			image: "kubejs:textures/gui/gtv_timeline.png"
 			rotation: 0.0d
-			width: 30.083333333333332d
+			width: 27.78d
 			x: 0.0d
 			y: 0.0d
 		}
@@ -18,7 +18,7 @@
 			height: 2.0d
 			image: "kubejs:textures/gui/rf_timeline.png"
 			rotation: 0.0d
-			width: 30.083333333333332d
+			width: 27.78d
 			x: 0.0d
 			y: 6.0d
 		}
@@ -29,7 +29,7 @@
 			rotation: 0.0d
 			width: 1.95d
 			x: 0.0d
-			y: -4.0d
+			y: -4.25d
 		}
 		{
 			height: 1.5d
@@ -38,7 +38,7 @@
 			rotation: 0.0d
 			width: 1.95d
 			x: 0.0d
-			y: 3.0d
+			y: 2.75d
 		}
 	]
 	order_index: 5
@@ -46,7 +46,7 @@
 	quest_links: [{
 		id: "34461D7A562415D3"
 		linked_quest: "19084E91F357C8C2"
-		x: 12.0d
+		x: 11.0d
 		y: 5.0d
 	}]
 	quests: [
@@ -68,7 +68,7 @@
 				item: "systeams:steam_dynamo"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.75d
 			y: 5.0d
 		}
 		{
@@ -108,7 +108,7 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
+			x: -4.0d
 			y: -3.0d
 		}
 		{
@@ -125,7 +125,7 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
@@ -175,7 +175,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -3.0d
 			y: -1.0d
 		}
 		{
@@ -221,7 +221,7 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
+			x: -1.0d
 			y: -1.0d
 		}
 		{
@@ -259,7 +259,7 @@
 					type: "item"
 				}
 			]
-			x: -4.25d
+			x: -3.25d
 			y: -2.0d
 		}
 		{
@@ -284,8 +284,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2053CCD1FF775DD5.title}"
-			x: 0.0d
-			y: 5.0d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5E3CBC929557418F"]
@@ -365,7 +365,7 @@
 				}
 			]
 			title: "{moni.quest.68E87B959F6E9216.title}"
-			x: -12.0d
+			x: -11.0d
 			y: -1.0d
 		}
 		{
@@ -378,7 +378,7 @@
 				title: "{moni.task.2026CA71AB1F0711}"
 				type: "checkmark"
 			}]
-			x: 0.7d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -391,8 +391,8 @@
 				title: "{moni.task.0CD3D25A52ED3F2F}"
 				type: "checkmark"
 			}]
-			x: 3.95d
-			y: -3.0d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6FDF37EE046349F7"]
@@ -419,7 +419,7 @@
 				title: "{moni.task.1A05380382832D36}"
 				type: "checkmark"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: 5.0d
 		}
 		{
@@ -445,7 +445,7 @@
 				title: "{moni.task.5B2F5A3BD09E835A}"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: -2.0d
 		}
 		{
@@ -458,8 +458,8 @@
 				title: "{moni.task.15E9864541CF59D6}"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: 5.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["32E44FFD602C98DF"]
@@ -478,7 +478,7 @@
 				item: "nuclearcraft:uranium_rtg"
 				type: "item"
 			}]
-			x: -10.25d
+			x: -11.5d
 			y: 4.0d
 		}
 		{
@@ -494,7 +494,7 @@
 				item: "nuclearcraft:plutonium_rtg"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.75d
 			y: 4.0d
 		}
 		{
@@ -516,7 +516,7 @@
 				item: "nuclearcraft:californium_rtg"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: 4.0d
 		}
 		{
@@ -536,7 +536,7 @@
 				item: "nuclearcraft:americium_rtg"
 				type: "item"
 			}]
-			x: -8.25d
+			x: -9.5d
 			y: 4.0d
 		}
 		{
@@ -574,8 +574,8 @@
 				}
 			]
 			title: "{moni.quest.1405D08C6A87B3BB.title}"
-			x: 1.25d
-			y: -3.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1A30472430354F1E"]
@@ -586,7 +586,7 @@
 				item: "gtceu:lv_gas_turbine"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -2.0d
 		}
 		{
@@ -602,7 +602,7 @@
 				item: "gtceu:lv_combustion"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -1.0d
 		}
 		{
@@ -622,7 +622,7 @@
 				item: "gtceu:mv_combustion"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -1.0d
 		}
 		{
@@ -644,7 +644,7 @@
 				item: "gtceu:hv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -1.0d
 		}
 		{
@@ -660,7 +660,7 @@
 				item: "gtceu:hv_steam_turbine"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -3.0d
 		}
 		{
@@ -676,7 +676,7 @@
 				item: "gtceu:mv_steam_turbine"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -3.0d
 		}
 		{
@@ -692,7 +692,7 @@
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -2.0d
 		}
 		{
@@ -712,7 +712,7 @@
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -2.0d
 		}
 		{
@@ -725,7 +725,7 @@
 				title: "{moni.task.5C7471C734001626}"
 				type: "checkmark"
 			}]
-			x: 11.5d
+			x: 10.0d
 			y: -1.0d
 		}
 		{
@@ -774,7 +774,7 @@
 				}
 			]
 			title: "{moni.quest.425D1C34A82B054D.title}"
-			x: 3.25d
+			x: 2.5d
 			y: -1.0d
 		}
 		{
@@ -806,7 +806,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6FDF37EE046349F7.title}"
-			x: -6.0d
+			x: -4.75d
 			y: 5.0d
 		}
 		{
@@ -829,7 +829,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.19084E91F357C8C2.title}"
-			x: 12.0d
+			x: 11.0d
 			y: -1.0d
 		}
 		{
@@ -856,7 +856,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.21E10888F52A3C73.title}"
-			x: 5.0d
+			x: 5.5d
 			y: -1.0d
 		}
 		{
@@ -884,8 +884,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5EE2338113F22952.title}"
-			x: 5.5d
-			y: -3.0d
+			x: 6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5EE2338113F22952"]
@@ -897,8 +897,8 @@
 				type: "checkmark"
 			}]
 			title: " "
-			x: 11.5d
-			y: -3.0d
+			x: 11.0d
+			y: -2.0d
 		}
 	]
 	title: "{moni.chapter.0102198269F850CD.title}"
