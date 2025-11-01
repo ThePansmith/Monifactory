@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("5x gtceu:iridium_metal_residue_dust")
             .outputFluids("gtceu:acidic_osmium_solution 2000")
             .outputFluids("gtceu:hydrogen 3000")
-            .duration(400)
+            .duration(100)
             .EUt(GTValues.VHA[GTValues.LuV])
     }
 })
