@@ -5,15 +5,14 @@ ServerEvents.recipes(event => {
     // Antimatter Creation
     const types = ["bosonic", "hadronic", "fermionic"]
     types.forEach((type, index) => {
-        event.recipes.gtceu.antimatter_manipulator(`${type}_upgrade`)
+        event.recipes.gtceu.antimatter_manipulation(`${type}_upgrade`)
             .inputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
             .inputFluidsRanged(`kubejs:${types[(index + 1) % types.length]}_antimatter`, 36, 144)
             .outputFluidsRanged(`kubejs:refined_${type}_antimatter`, 36, 144)
-            .addData("antimatterRandom", true)
             .duration(200)
             .EUt(GTValues.VA[GTValues.ZPM])
 
-        event.recipes.gtceu.antimatter_manipulator(`${type}_downgrade`)
+        event.recipes.gtceu.antimatter_manipulation(`${type}_downgrade`)
             .itemInputs("kubejs:protomatter")
             .inputFluidsRanged(`kubejs:refined_${type}_antimatter`, 18, 72)
             .outputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
@@ -38,7 +37,7 @@ ServerEvents.recipes(event => {
             .requiredMicroverse(4) // Corrupted
     })
 
-    event.recipes.gtceu.antimatter_manipulator("antimatter_fuel")
+    event.recipes.gtceu.antimatter_manipulation("antimatter_fuel")
         .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")
         .outputFluids("kubejs:antimatter_fuel 36")
         .duration(100)
