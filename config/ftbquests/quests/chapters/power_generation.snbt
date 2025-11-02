@@ -877,13 +877,10 @@
 				"{moni.quest.5EE2338113F22952.description1}"
 				""
 				"{moni.quest.5EE2338113F22952.description2}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.5EE2338113F22952.description3}"
 				""
 				"{moni.quest.5EE2338113F22952.description4}"
-				""
-				"{@pagebreak}"
-				"{moni.quest.5EE2338113F22952.description5}"
 			]
 			id: "5EE2338113F22952"
 			optional: true
