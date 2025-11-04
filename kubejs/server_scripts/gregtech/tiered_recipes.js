@@ -265,6 +265,10 @@ function parseRecipe(recipe) {
                 newRecipe = newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
             }
         }
+        if (recipe.inputChanceLogics?.item)
+            newRecipe = newRecipe.chancedItemInputLogic(ChanceLogic[recipe.inputChanceLogics.item.toUpperCase()])
+        if (recipe.outputChanceLogics?.item)
+            newRecipe = newRecipe.chancedItemOutputLogic(ChanceLogic[recipe.outputChanceLogics.item.toUpperCase()])
     }
 
     return { // Kubejs devs pls

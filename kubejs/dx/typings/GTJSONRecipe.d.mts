@@ -64,6 +64,11 @@ export type GTJSONRecipeCondition = {
     }]
 }
 
+export type GTJSONRecipeChanceLogics = {
+    item?: string
+    // TODO?
+}
+
 export type GTJSONRecipe = {
     /** Machine ID
      * @example gtceu:arc_furnace
@@ -96,10 +101,10 @@ export type GTJSONRecipe = {
         }
     }>)[]
 
-    // TODO these when needed
-    inputChanceLogics: unknown
-    outputChanceLogics: unknown
+    inputChanceLogics?: GTJSONRecipeChanceLogics
+    outputChanceLogics?: GTJSONRecipeChanceLogics
 
+    // TODO these when needed
     tickInputChanceLogics: unknown
     tickOutputChanceLogics: unknown
 
