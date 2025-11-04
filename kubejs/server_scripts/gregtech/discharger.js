@@ -15,18 +15,6 @@ ServerEvents.recipes(event => {
         H: "gtceu:hsse_frame"
     }).id("kubejs:shaped/discharger")
 
-    event.recipes.gtceu.assembly_line("gtceu:sculk_biocharger")
-        .itemInputs("gtceu:discharger", "4x #gtceu:circuits/uev", "4x monilabs:bioalloy_casing", "16x kubejs:dischargement_core")
-        .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
-        .itemOutputs("gtceu:sculk_biocharger")
-        .duration(3000)
-        .EUt(1966000)
-        .stationResearch(b => b
-            .researchStack("gtceu:discharger")
-            .CWUt(160, 1024000)
-            .EUt(1200000)
-        )
-
     event.recipes.gtceu.assembler("monilabs:cryolobus_casing")
         .itemInputs("6x gtceu:cryolobus_plate", "gtceu:cryolobus_frame")
         .itemOutputs("2x monilabs:cryolobus_casing")
