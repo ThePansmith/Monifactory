@@ -27,11 +27,10 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV])
         )
 
-    event.recipes.gtceu.assembler("inert_prismatic_core")
+    event.recipes.gtceu.discharger("inert_prismatic_core")
         .itemInputs("kubejs:chromatically_inert_frame", "12x gtceu:omnium_nugget", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(), "kubejs:heart_of_a_universe")
         .itemOutputs("kubejs:inert_prismatic_core")
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UV])
+        .duration(10)
 
     event.recipes.gtceu.chemical_bath("chromatically_inert_frame")
         .itemInputs("gtceu:small_neutronium_gear")

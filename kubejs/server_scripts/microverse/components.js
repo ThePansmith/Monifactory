@@ -84,29 +84,17 @@ ServerEvents.recipes(event => {
         S: "gtceu:ev_sensor"
     })
 
-    // Warp Core
-    event.shaped("kubejs:universal_warp_core", [
-        "LTL",
-        "TNT",
-        "LTL"
-    ], {
-        L: "gtceu:void_block",
-        N: "kubejs:warp_core",
-        T: Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT()
-    })
+    // Universal Warp Core
+    event.recipes.gtceu.discharger("universal_warp_core")
+        .itemInputs("4x gtceu:void_block", "kubejs:warp_core", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
+        .itemOutputs("kubejs:universal_warp_core")
+        .duration(10)
 
-    // Warp Controller
-    event.shaped("kubejs:universal_warp_controller", [
-        "SMS",
-        "CHC",
-        "SFS"
-    ], {
-        C: "#gtceu:circuits/luv",
-        H: "kubejs:warp_controller",
-        M: Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
-        F: "extendedcrafting:the_ultimate_catalyst",
-        S: "gtceu:double_naquadria_plate"
-    })
+    // Universal Warp Controller
+    event.recipes.gtceu.discharger("universal_warp_controller")
+        .itemInputs("4x gtceu:double_naquadria_plate", "2x #gtceu:circuits/luv", "kubejs:warp_controller", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())
+        .itemOutputs("kubejs:universal_warp_controller")
+        .duration(10)
 
     // Warp engine
     event.recipes.gtceu.assembly_line("warp_engine")
