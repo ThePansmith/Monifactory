@@ -20,8 +20,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x gtceu:high_temperature_smelting_casing")
         .circuit(6)
         .duration(50)
-        .EUt(GTValues.VH[GTValues.LV]) //Yes, original recipe is VH, not VHA
-    
+        .EUt(GTValues.VH[GTValues.LV]) // Yes, original recipe is VH, not VHA
+
     event.replaceInput([{ output: "gtceu:heat_vent"}], "gtceu:long_molybdenum_disilicide_rod", "gtceu:long_rhodium_rod")
 
     event.recipes.gtceu.mixer("neptunium_palladium_aluminium")
