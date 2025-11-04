@@ -94,6 +94,20 @@ ServerEvents.recipes(event => {
             .damageRate(1)
     })
 
+    microverse_mission(event, 4, 2).forEach(builder => {
+        builder
+            .itemInputs("8x kubejs:petrotheum_dust")
+            .itemInputs("kubejs:microversal_alchemy_kit")
+            .itemInputs("8x gtceu:thorium_block")
+            .requiredMicroverse(1) // Normal
+            .itemOutputs(
+                "32x gtceu:neptunium_dust",
+                "4x gtceu:uranium_235_dust",
+                "8x gtceu:uranium_dust"
+            )
+            .damageRate(1)
+    })
+
     // T5MM missions
     microverse_mission(event, 5, 2).forEach(builder => {
         if(!doHarderRecipes) {
