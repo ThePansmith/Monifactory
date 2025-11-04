@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 6, 3).forEach(builder => {
         builder
             .itemInputs(
-                "16x kubejs:stabilized_curium",
+                "16x kubejs:stabilized_plutonium",
                 "kubejs:microversal_alchemy_kit",
                 "8x gtceu:mythril_ingot",
                 "4x gtceu:void_block",
