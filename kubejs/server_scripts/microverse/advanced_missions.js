@@ -188,6 +188,20 @@ ServerEvents.recipes(event => {
             .damageRate(2)
     })
 
+    microverse_mission(event, 5, 2).forEach(builder => {
+        builder
+            .itemInputs("16x kubejs:stabilized_neptunium")
+            .itemInputs("kubejs:microversal_alchemy_kit")
+            .itemInputs("6x gtceu:uranium_block", "2x gtceu:uranium_235_block")
+            .requiredMicroverse(1) // Normal
+            .itemOutputs(
+                "32x gtceu:uranium_dust",
+                "4x gtceu:neptunium_dust",
+                "16x gtceu:plutonium_dust"
+            )
+            .damageRate(1)
+    })
+
     // T6MM missions
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
