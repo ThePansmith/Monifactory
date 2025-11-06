@@ -1,30 +1,36 @@
 
 [Parts]
-	#Whether the EU P2P is enabled, !!Requires Game Restart!!
-	euP2P = true
-	#Enable/Disable nerf to EU p2p. Nerf penalizes higher energy transfer rates across the entire ME network with higher taxes, but in such a way that stepping up voltage reduces tax. Also prevents EU p2ps from getting channels though an ME p2p
-	euP2PNerf = true
-	#A factor used in calculating the nerfed EU p2p's tax. Higher means the tax is higher. Linearly affects tax
-	#Range: 0.0 ~ 1.7976931348623157E308
-	euP2PNerfFactor = 0.05
 
-	[Parts."Tick Rates"]
+	[Parts."EU P2P"]
+		#Whether the EU P2P (single or multi) is enabled. !!Requires Game Restart!!
+		enabled = true
+		#Enable/Disable nerf to EU p2p. Nerf penalizes higher energy transfer rates across the entire ME network with higher taxes, but in such a way that stepping up voltage reduces tax. Also prevents EU p2ps from getting channels though an ME p2p
+		nerf = true
+		#A factor used in calculating the nerfed EU p2p's tax. Higher means the tax is higher. Linearly affects tax
+		#Range: 0.0 ~ 1.7976931348623157E308
+		nerfFactor = 0.05
+
+	[Parts."FE Multi P2P"]
 		#Min tick rate for FE Multi P2P Tunnels
 		#Range: > 1
-		feMinRate = 1
+		minRate = 1
 		#Max tick rate for FE Multi P2P Tunnels
 		#Range: > 1
-		feMaxRate = 1
+		maxRate = 1
+
+	[Parts."EU Multi P2P"]
 		#Min tick rate for EU Multi P2P Tunnels
 		#Range: > 1
-		euMinRate = 1
+		minRate = 1
 		#Max tick rate for EU Multi P2P Tunnels
 		#Range: > 1
-		euMaxRate = 1
+		maxRate = 1
+
+	[Parts."Pattern P2P"]
 		#Minimum tick rate for Pattern (Multi) P2P Tunnels
 		#Range: > 1
-		patternMinRate = 5
+		minRate = 5
 		#Max tick rate for Pattern (Multi) P2P Tunnels
 		#Range: > 1
-		patternMaxRate = 120
+		maxRate = 120
 
