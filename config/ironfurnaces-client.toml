@@ -205,7 +205,7 @@
 		# 200 ticks is what a regular furnace takes.
 		# Default: 140
 		#Range: 2 ~ 72000
-		speed = 140
+		speed = 70
 
 	[furnaces.rainbow_furnace]
 		# How much power the Rainbow Furnace will generate.

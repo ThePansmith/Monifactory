@@ -1927,15 +1927,13 @@
 		}
 		{
 			dependencies: [
-				"664107ED03A944CD"
+				"6DC635766CD40FFF"
 				"7F1EE712BD9CC811"
 			]
 			description: [
 				"{moni.quest.0FA959478905FFF3.description1}"
 				""
 				"{moni.quest.0FA959478905FFF3.description2}"
-				""
-				"{moni.quest.0FA959478905FFF3.description3}"
 			]
 			icon: "gtceu:alloy_blast_smelter"
 			id: "0FA959478905FFF3"
@@ -1991,11 +1989,6 @@
 				{
 					id: "274F0587A93CEFBE"
 					item: "gtceu:hsla_steel_ingot"
-					type: "item"
-				}
-				{
-					id: "1AC30DEFADCFA79A"
-					item: "gtceu:tantalum_carbide_ingot"
 					type: "item"
 				}
 				{
@@ -3261,10 +3254,7 @@
 				"{moni.quest.044553423097C3C7.description2}"
 				""
 				"{moni.quest.044553423097C3C7.description3}"
-				""
-				"{moni.quest.044553423097C3C7.description4}"
 			]
-			icon: "gtceu:platinum_dust"
 			id: "044553423097C3C7"
 			rewards: [{
 				count: 2
@@ -3343,6 +3333,7 @@
 			icon: "minecraft:tnt"
 			id: "6A76B3DCA599B9B5"
 			optional: true
+			shape: "hexagon"
 			tasks: [{
 				id: "2034B77FED29D890"
 				type: "checkmark"

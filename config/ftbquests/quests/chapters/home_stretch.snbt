@@ -172,7 +172,7 @@
 		}
 		{
 			dependencies: [
-				"3E45F67F09B6156B"
+				"45752C40878A1689"
 				"36DF9A3674E1212C"
 			]
 			description: [
@@ -762,7 +762,7 @@
 			y: 0.25d
 		}
 		{
-			dependencies: ["739F7BF2A90B278A"]
+			dependencies: ["254D6D1470BC197E"]
 			description: [
 				"{moni.quest.5911900438648430.description1}"
 				""
@@ -858,10 +858,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"6F9041F256F517A3"
-				"6A6983C64374366C"
-			]
+			dependencies: ["6A6983C64374366C"]
 			description: [
 				"{moni.quest.3E45F67F09B6156B.description1}"
 				""
@@ -895,22 +892,15 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			size: 1.75d
+			size: 1.5d
 			subtitle: "{moni.quest.3E45F67F09B6156B.subtitle}"
-			tasks: [
-				{
-					id: "5152715C85EFA712"
-					item: "monilabs:prismatic_crucible"
-					type: "item"
-				}
-				{
-					id: "04AF9D1D28D9C72B"
-					item: "kubejs:inert_prismatic_core"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5152715C85EFA712"
+				item: "monilabs:prismatic_crucible"
+				type: "item"
+			}]
 			title: "{moni.quest.3E45F67F09B6156B.title}"
-			x: -3.25d
+			x: -1.0d
 			y: -7.0d
 		}
 		{
@@ -1023,7 +1013,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.36DF9A3674E1212C.title}"
-			x: -1.25d
+			x: -1.0d
 			y: -4.0d
 		}
 		{
@@ -1109,7 +1099,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.415F2703877FBE21.title}"
-			x: -1.25d
+			x: -1.0d
 			y: -5.0d
 		}
 		{
@@ -1135,18 +1125,44 @@
 				"060A5766B021FC77"
 				"5601A05D8361551D"
 			]
-			description: ["{moni.quest.4F08AF2C1E6B1736.description1}"]
+			description: [
+				"{moni.quest.4F08AF2C1E6B1736.description1}"
+				""
+				"{moni.quest.4F08AF2C1E6B1736.description2}"
+			]
 			id: "4F08AF2C1E6B1736"
 			optional: true
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "2C8C638FEC727E22"
 				item: "gtceu:max_energy_input_hatch"
 				type: "item"
 			}]
 			title: "{moni.quest.4F08AF2C1E6B1736.title}"
-			x: 0.5d
+			x: 0.75d
 			y: 4.75d
+		}
+		{
+			dependencies: [
+				"3E45F67F09B6156B"
+				"6F9041F256F517A3"
+			]
+			description: [
+				"{moni.quest.45752C40878A1689.description1}"
+				""
+				"{moni.quest.45752C40878A1689.description2}"
+			]
+			id: "45752C40878A1689"
+			shape: "hexagon"
+			tasks: [{
+				id: "5738F40FF8F8294C"
+				item: "kubejs:inert_prismatic_core"
+				type: "item"
+			}]
+			title: "{moni.quest.45752C40878A1689.title}"
+			x: -3.25d
+			y: -7.0d
 		}
 	]
 	title: "{moni.chapter.457D17593A814D73.title}"

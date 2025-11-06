@@ -524,7 +524,7 @@
 			}]
 			title: "{moni.quest.6DEA5CE28A667453.title}"
 			x: 10.5d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -558,7 +558,7 @@
 		{
 			dependencies: [
 				"3F6EDC2481D5877F"
-				"3270496124969A51"
+				"2C89DAD26E08E382"
 			]
 			description: ["{moni.quest.1F976B197DEFF654.description1}"]
 			icon: {
@@ -602,7 +602,7 @@
 			}]
 			title: "{moni.quest.1F976B197DEFF654.title}"
 			x: 10.5d
-			y: -7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -637,7 +637,7 @@
 			}]
 			title: "{moni.quest.503CA19637471E6E.title}"
 			x: 10.5d
-			y: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -668,7 +668,7 @@
 			}]
 			title: "{moni.quest.0A9BC922CF76F48A.title}"
 			x: 10.5d
-			y: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -3486,6 +3486,19 @@
 			title: "{moni.quest.13578427FD9CC2CE.title}"
 			x: 22.0d
 			y: 12.5d
+		}
+		{
+			dependencies: ["3270496124969A51"]
+			description: ["{moni.quest.2C89DAD26E08E382.description1}"]
+			id: "2C89DAD26E08E382"
+			tasks: [{
+				id: "177E323157097C11"
+				item: "sophisticatedbackpacks:copper_backpack"
+				type: "item"
+			}]
+			title: "{moni.quest.2C89DAD26E08E382.title}"
+			x: 10.5d
+			y: -7.0d
 		}
 	]
 	title: "{moni.chapter.395B849AC6294153.title}"
