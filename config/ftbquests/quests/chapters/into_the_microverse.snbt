@@ -994,8 +994,6 @@
 				"{moni.quest.638130DC8A2BF1C1.description2}"
 				""
 				"{moni.quest.638130DC8A2BF1C1.description3}"
-				""
-				"{moni.quest.638130DC8A2BF1C1.description20}"
 			]
 			id: "638130DC8A2BF1C1"
 			rewards: [{
@@ -1204,7 +1202,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["72565F33DD274CB5"]
+			dependencies: ["6169C04DF463502F"]
 			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
 			id: "2D0DF78F71760F00"
 			rewards: [{
