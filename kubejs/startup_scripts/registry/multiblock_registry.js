@@ -471,7 +471,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
 
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("C", Predicates.blocks("monilabs:cryolobus_casing").setMinGlobalLimited(85)
+            .where("C", Predicates.blocks("monilabs:cryolobus_casing").setMinGlobalLimited(80)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
             )
