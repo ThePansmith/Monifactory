@@ -18,6 +18,9 @@ features:
     # Whether the Wireless Active Transformer is enabled.
     pterbEnabled: true
 
+    # Whether placed Parallel Hatches should be automatically set to their maximum parallels.
+    parallelHatchAutoConfigure: true
+
     # Base amount of WAT coolant to drain every second.
     # (Setting both this amount and the IO multiplier to 0 disables the coolant mechanic.)
     pterbCoolantBaseDrain: 4
