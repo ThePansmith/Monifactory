@@ -616,13 +616,9 @@ ServerEvents.recipes(event => {
         M: "gtceu:auto_maintenance_hatch",
         H: "gtceu:iv_machine_hull",
         C: "#gtceu:circuits/iv"
-    }).addMaterialInfo().id('moni:shaped/cleaning_maintenance_hatch');
-
-    // Cleanroom Hatch Decomp fix
-    event.replaceOutput({ id: "gtceu:arc_furnace/arc_cleaning_maintenance_hatch" }, "gtceu:darmstadtium_ingot", "8x gtceu:tungsten_steel_ingot")
-    event.replaceOutput({ id: "gtceu:arc_furnace/arc_cleaning_maintenance_hatch" }, "gtceu:yttrium_barium_cuprate_ingot", "2x gtceu:graphene_ingot")
-    event.replaceOutput({ id: "gtceu:macerator/macerate_cleaning_maintenance_hatch" }, "gtceu:darmstadtium_dust", "8x gtceu:tungsten_steel_dust")
-    event.replaceOutput({ id: "gtceu:macerator/macerate_cleaning_maintenance_hatch" }, "gtceu:yttrium_barium_cuprate_dust", "2x gtceu:graphene_dust")
+    })
+    .addMaterialInfo()
+    .id('moni:shaped/cleaning_maintenance_hatch');
 
     // ZPM Field Gen
     event.remove({ id: "gtceu:field_generator_zpm" })
