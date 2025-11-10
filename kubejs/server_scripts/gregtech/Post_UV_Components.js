@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("dynamo_hatch_max")
         .itemInputs("gtceu:max_machine_hull", "4x gtceu:monium_spring", "16x kubejs:uxpic_chip", "#gtceu:circuits/max")
-        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:living_soldering_alloy 576")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:living_soldering_alloy 576", "monilabs:eltz 576")
         .itemOutputs("gtceu:max_energy_output_hatch")
         .duration(100)
         .EUt(GTValues.VA[GTValues.UIV])
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("energy_hatch_max")
         .itemInputs("gtceu:max_machine_hull", "4x gtceu:monium_single_wire", "16x kubejs:uxpic_chip", "#gtceu:circuits/max")
-        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:living_soldering_alloy 576")
+        .inputFluids("gtceu:sodium_potassium 12000", "gtceu:omnium 1152", "gtceu:living_soldering_alloy 576", "monilabs:eltz 576")
         .itemOutputs("gtceu:max_energy_input_hatch")
         .duration(100)
         .EUt(GTValues.VA[GTValues.UIV])
@@ -256,11 +256,13 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("max_16a_energy_hatch")
         .itemInputs("gtceu:max_energy_input_hatch_4a", "gtceu:max_machine_hull", "4x gtceu:monium_single_wire", "gtceu:monium_quadruple_wire", "2x gtceu:monium_octal_wire", "2x gtceu:monium_plate", "2x gtceu:meta_null_plate", "2x kubejs:uxpic_chip")
+        .inputFluids("monilabs:eltz 1152")
         .itemOutputs("gtceu:max_energy_input_hatch_16a")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(200)
     event.recipes.gtceu.assembler("max_16a_dynamo_hatch")
         .itemInputs("gtceu:max_energy_output_hatch_4a", "gtceu:max_machine_hull", "4x gtceu:monium_single_wire", "gtceu:monium_quadruple_wire", "2x gtceu:monium_octal_wire", "2x gtceu:monium_plate", "2x gtceu:meta_null_plate", "2x kubejs:uxpic_chip")
+        .inputFluids("monilabs:eltz 1152")
         .itemOutputs("gtceu:max_energy_output_hatch_16a")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(200)
