@@ -294,7 +294,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembler("microverse_containment_unit")
-        .itemInputs("gtceu:infinity_frame", "16x gtceu:microversium_plate", "8x kubejs:prism_pane", "gtceu:iv_field_generator")
+        .itemInputs("monilabs:eltz_frame", "16x gtceu:microversium_plate", "8x kubejs:prism_pane", "gtceu:iv_field_generator")
         .inputFluids("gtceu:living_soldering_alloy 576")
         .itemOutputs("64x kubejs:microverse_containment_unit")
         .duration(300)
