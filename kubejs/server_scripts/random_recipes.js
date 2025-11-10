@@ -606,7 +606,7 @@ ServerEvents.recipes(event => {
 
     // Cleanroom Hatch
     event.remove({ id: "gtceu:shaped/maintenance_hatch_cleaning" })
-    event.shaped("gtceu:cleaning_maintenance_hatch", [
+    event.recipes.gtceu.shaped("gtceu:cleaning_maintenance_hatch", [
         "CMC",
         "RHR",
         "WCW"
@@ -616,7 +616,7 @@ ServerEvents.recipes(event => {
         M: "gtceu:auto_maintenance_hatch",
         H: "gtceu:iv_machine_hull",
         C: "#gtceu:circuits/iv"
-    })
+    }).addMaterialInfo().id('moni:shaped/cleaning_maintenance_hatch');
 
     // Cleanroom Hatch Decomp fix
     event.replaceOutput({ id: "gtceu:arc_furnace/arc_cleaning_maintenance_hatch" }, "gtceu:darmstadtium_ingot", "8x gtceu:tungsten_steel_ingot")
