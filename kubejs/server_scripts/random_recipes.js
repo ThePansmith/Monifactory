@@ -617,8 +617,8 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_machine_hull",
         C: "#gtceu:circuits/iv"
     })
-    .addMaterialInfo()
-    .id('moni:shaped/cleaning_maintenance_hatch');
+        .addMaterialInfo()
+        .id("moni:shaped/cleaning_maintenance_hatch");
 
     // ZPM Field Gen
     event.remove({ id: "gtceu:field_generator_zpm" })
