@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         "DCD"
     ], {
         A: "extendedcrafting:crystaltine_component",
-        B: "kubejs:endest_star",
+        B: "gtceu:quantum_star",
         C: "packagedauto:me_package_component",
         D: "extendedcrafting:crystaltine_catalyst",
         E: "extendedcrafting:crafting_core"

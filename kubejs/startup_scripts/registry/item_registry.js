@@ -381,12 +381,6 @@ StartupEvents.registry("item", event => {
     }
 
     // Misc Items
-    event.create("ender_star")
-        .texture("kubejs:item/ender_star")
-        .glow(true)
-    event.create("endest_star")
-        .texture("kubejs:item/endest_star")
-        .glow(true)
     event.create("grains_of_innocence")
         .texture("kubejs:item/mod/enderio/grains_of_innocence")
     event.create("radium_salt")
