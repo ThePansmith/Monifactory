@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.discharger("inert_prismatic_core")
-        .itemInputs("kubejs:chromatically_inert_frame", "12x gtceu:omnium_nugget", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(), "kubejs:heart_of_a_universe")
+        .itemInputs("kubejs:chromatically_inert_frame", "12x gtceu:omnium_nugget", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(), "kubejs:heart_of_a_universe", "2x kubejs:prism_pane")
         .itemOutputs("kubejs:inert_prismatic_core")
         .duration(10)
 
