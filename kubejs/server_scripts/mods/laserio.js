@@ -79,16 +79,12 @@ ServerEvents.recipes(event => {
             R: "laserio:laser_connector"
         }).id("laserio:laser_node")
 
-        event.shaped("2x laserio:laser_connector_advanced", [
-            " E ",
-            "RCR",
-            "FFF"
-        ], {
-            F: "gtceu:electrum_flux_plate",
-            E: "gtceu:ev_emitter",
-            C: "#gtceu:circuits/iv",
-            R: "gtceu:red_alloy_plate"
-        }).id("laserio:laser_connector_advanced")
+        event.remove({ id: "laserio:laser_connector_advanced"})
+        event.recipes.gtceu.assembler("laserio:laser_connector_advanced")
+            .itemInputs("3x #forge:plates/electrum_flux", "1x laserio:laser_connector", "1x gtceu:luv_sensor", "1x gtceu:luv_emitter")
+            .itemOutputs("1x laserio:laser_connector_advanced")
+            .EUt(GTValues.VA[GTValues.LuV])
+            .duration(200)
     }
 
 
