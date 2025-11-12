@@ -137,15 +137,6 @@ ServerEvents.recipes(event => {
             .requiredMicroverse(1) // Normal
     })
 
-    microverse_mission(event, 9, 3, 70).forEach(builder => {
-        builder
-            .itemInputs("48x gtceu:flawless_dilithium_gem")
-            .itemInputs("kubejs:gravitational_amplifier", "64x gtceu:gravi_star")
-            .damageRate(8)
-            .itemOutputs("16x kubejs:quasi_stable_neutron_star")
-            .requiredMicroverse(3) // Shattered
-    })
-
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .itemInputs("48x gtceu:flawless_dilithium_gem")
