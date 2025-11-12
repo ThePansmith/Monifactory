@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:naquadah_screw"
         )
         .itemOutputs("gtmutils:omnibreaker")
+        .addMaterialInfo(true)
         .duration(60 * 20)
         .EUt(GTValues.VA[GTValues.IV], 2)
 })
