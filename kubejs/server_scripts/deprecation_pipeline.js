@@ -15,6 +15,11 @@ Object.entries(global.deprecatedItems).forEach(([oldItemID, replacementItemID]) 
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
     });
+
+    ServerEvents.tags('item', event => {
+        event.add('c:hidden_from_recipe_viewers', oldItemID)
+        event.add('forge:viewers/hidden_from_recipe', oldItemID)
+    })
 });
 
 Object.entries(global.deprecatedFluids).forEach(([oldFluidID, replacementFluidID]) => {
@@ -33,6 +38,16 @@ Object.entries(global.deprecatedFluids).forEach(([oldFluidID, replacementFluidID
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
     });
+
+    ServerEvents.tags('item', event => {
+        event.add('c:hidden_from_recipe_viewers', oldFluidID.concat("_bucket"))
+        event.add('forge:viewers/hidden_from_recipe', oldFluidID.concat("_bucket"))
+    })
+
+    ServerEvents.tags('fluid', event => {
+        event.add('c:hidden_from_recipe_viewers', oldFluidID)
+        event.add('forge:viewers/hidden_from_recipe', oldFluidID)
+    })
 });
 
 Object.entries(global.deprecatedBlocks).forEach(([oldBlockID, replacementBlockID]) => {
@@ -45,4 +60,9 @@ Object.entries(global.deprecatedBlocks).forEach(([oldBlockID, replacementBlockID
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
     });
+
+    ServerEvents.tags('item', event => {
+        event.add('c:hidden_from_recipe_viewers', oldBlockID)
+        event.add('forge:viewers/hidden_from_recipe', oldBlockID)
+    })
 });
