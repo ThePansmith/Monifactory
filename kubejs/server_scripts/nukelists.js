@@ -14,8 +14,8 @@ ServerEvents.tags("item", event => {
     event.removeAllTagsFrom(global.nuclearcraftIsotopePattern)
 
     let hideItem = itemID => {
-        event.add('c:hidden_from_recipe_viewers', itemID)
-        event.add('forge:viewers/hidden_from_recipe', itemID)
+        event.add("c:hidden_from_recipe_viewers", itemID)
+        event.add("forge:viewers/hidden_from_recipe", itemID)
     }
 
     let hideItemList = itemIDList => {
@@ -31,15 +31,15 @@ ServerEvents.tags("item", event => {
     hideItem(global.nuclearcraftIsotopePattern)
 
     global.fluidNukeList.forEach(fluidID => {
-        event.add('c:hidden_from_recipe_viewers', fluidID.concat("_bucket"))
-        event.add('forge:viewers/hidden_from_recipe', fluidID.concat("_bucket"))
+        event.add("c:hidden_from_recipe_viewers", fluidID.concat("_bucket"))
+        event.add("forge:viewers/hidden_from_recipe", fluidID.concat("_bucket"))
     })
 })
 ServerEvents.tags("fluid", event => {
     event.removeAllTagsFrom(global.fluidNukeList)
     global.fluidNukeList.forEach(fluidID => {
-        event.add('c:hidden_from_recipe_viewers', fluidID)
-        event.add('forge:viewers/hidden_from_recipe', fluidID)
+        event.add("c:hidden_from_recipe_viewers", fluidID)
+        event.add("forge:viewers/hidden_from_recipe", fluidID)
     })
 })
 

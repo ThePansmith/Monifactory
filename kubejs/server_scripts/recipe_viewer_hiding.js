@@ -6,10 +6,10 @@
  * KubeJS/startup_scripts/nukeLists/item.js and KubeJS/startup_scripts/nukeLists/fluid.js
  */
 
-ServerEvents.tags('item', event => {
+ServerEvents.tags("item", event => {
     let hideItem = itemID => {
-        event.add('c:hidden_from_recipe_viewers', itemID)
-        event.add('forge:viewers/hidden_from_recipe', itemID)
+        event.add("c:hidden_from_recipe_viewers", itemID)
+        event.add("forge:viewers/hidden_from_recipe", itemID)
     }
 
     let hideItemList = itemIDList => {
@@ -138,13 +138,13 @@ fluidsToHide.push("sophisticatedcore:xp_still")
 fluidsToHide = fluidsToHide.concat(global.fluidNukeList)
 
 fluidsToHide.forEach(fluidID => {
-    ServerEvents.tags('fluid', event => {
-        event.add('c:hidden_from_recipe_viewers', fluidID)
-        event.add('forge:viewers/hidden_from_recipe', fluidID)
+    ServerEvents.tags("fluid", event => {
+        event.add("c:hidden_from_recipe_viewers", fluidID)
+        event.add("forge:viewers/hidden_from_recipe", fluidID)
     })
 
-    ServerEvents.tags('item', event => {
-        event.add('c:hidden_from_recipe_viewers', fluidID.concat("_bucket"))
-        event.add('forge:viewers/hidden_from_recipe', fluidID.concat("_bucket"))
+    ServerEvents.tags("item", event => {
+        event.add("c:hidden_from_recipe_viewers", fluidID.concat("_bucket"))
+        event.add("forge:viewers/hidden_from_recipe", fluidID.concat("_bucket"))
     })
 })

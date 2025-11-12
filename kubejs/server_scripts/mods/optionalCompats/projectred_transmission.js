@@ -169,7 +169,7 @@ if (Platform.isLoaded("projectred_transmission")) {
         })
     })
 
-    ServerEvents.tags('item', event =>  {
+    ServerEvents.tags("item", event => {
         let listToHide = [
             "projectred_core:silicon",
             "projectred_core:sand_coal_comp",
@@ -198,8 +198,8 @@ if (Platform.isLoaded("projectred_transmission")) {
             /cb_microblock:.*/
         ]
         listToHide.forEach(itemID => {
-            event.add('c:hidden_from_recipe_viewers', itemID)
-            event.add('forge:viewers/hidden_from_recipe', itemID)
+            event.add("c:hidden_from_recipe_viewers", itemID)
+            event.add("forge:viewers/hidden_from_recipe", itemID)
         })
     })
 }
