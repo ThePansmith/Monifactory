@@ -498,14 +498,9 @@
 			tasks: [
 				{
 					id: "424E9CDF84333ED6"
-					item: {
-						Count: 1
-						id: "ad_astra:tier_1_rocket"
-						tag: { }
-					}
-					optional_task: true
+					item: "ad_astra:tier_1_rocket"
+					match_nbt: false
 					type: "item"
-					weak_nbt_match: true
 				}
 				{
 					id: "54E7FCF98F491577"
