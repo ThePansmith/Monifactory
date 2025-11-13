@@ -112,7 +112,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     if (doHarderProcessing) {
         event.create("antimony_pentafluoride")
-            .fluid()
+            .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
             .color(0xe3f1f1)
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("antimony", "5x fluorine")
