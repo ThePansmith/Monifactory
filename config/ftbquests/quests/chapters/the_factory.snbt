@@ -1904,6 +1904,8 @@
 				"{moni.quest.0523F4AB9A794390.description7}"
 				""
 				"{moni.quest.0523F4AB9A794390.description8}"
+				""
+				"{moni.quest.0523F4AB9A794390.description9}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
