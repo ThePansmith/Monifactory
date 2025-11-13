@@ -111,6 +111,7 @@
     "moni.quest.0523F4AB9A794390.description6": "- &3制御可能なメンテナンスハッチ&r (&6HV&r):レシピの&a所要時間を10%%&rをカットするように設定できますが、メンテナンスの問題が3倍の速さで発生することになります。これは実際のアクティビティ時間&916時間&rに相当します。&9テープ&rはこのハッチでも問題を解決できます。",
     "moni.quest.0523F4AB9A794390.description7": "- &3自動メンテナンスハッチ&r(&9HV&r):メンテナンスの必要性を&6永久&rに排除します。",
     "moni.quest.0523F4AB9A794390.description8": "- &3クリーニングメンテナンスハッチ&r(&9IV&r):&3自動メンテナンスハッチ&rとして機能し、通常は&2クリーンルーム&rで実行する必要があるレシピをクリーンルーム外のマルチブロックで実行できるようにします。",
+    "moni.quest.0523F4AB9A794390.description9": "- &3Sterile Cleaning Maintenance Hatch&r (&cZPM&r): Functions as an &3Automatic Maintenance Hatch&r, and allows the multiblock to perform recipes that require &aSterilization&r.",
     "moni.quest.0523F4AB9A794390.title": "&2メンテナンスとマフラーの仕組み",
     "moni.quest.053DDDCD2505E20B.description1": "&9JEANガソリンは最も強力な燃焼燃料であり、いくつかの特殊な成分を使用することで、1mBあたり81,920 EUという驚異的なエネルギーを生み出します。ただし、その代償として、非常に複雑な処理ラインを構築する必要があります。",
     "moni.quest.053DDDCD2505E20B.description2": "高オクタン価ガソリン(ハイオク)をJEANガソリンに精製するには:",
