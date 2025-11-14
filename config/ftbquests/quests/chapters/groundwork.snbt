@@ -1455,11 +1455,7 @@
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
-			description: [
-				"{moni.quest.7D0351942F4DB8E0.description1}"
-				""
-				"{moni.quest.7D0351942F4DB8E0.description2}"
-			]
+			description: ["{moni.quest.7D0351942F4DB8E0.description1}"]
 			id: "7D0351942F4DB8E0"
 			rewards: [{
 				id: "258264528D30B707"
@@ -1467,34 +1463,20 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					id: "7766ABA36439522B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "gtceu:capacitors"
-						}
+			tasks: [{
+				id: "7766ABA36439522B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:capacitors"
 					}
-					title: "{moni.task.7766ABA36439522B}"
-					type: "item"
 				}
-				{
-					id: "75E2B7E59A591067"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "gtceu:inductors"
-						}
-					}
-					title: "{moni.task.75E2B7E59A591067}"
-					type: "item"
-				}
-			]
+				title: "{moni.task.7766ABA36439522B}"
+				type: "item"
+			}]
 			title: "{moni.quest.7D0351942F4DB8E0.title}"
-			x: -1.75d
+			x: -6.0d
 			y: 8.5d
 		}
 		{
@@ -2210,7 +2192,7 @@
 		}
 		{
 			dependencies: ["73C1AB31431B5C11"]
-			description: ["{moni.quest.09EED0C4106265BC.description2}"]
+			description: ["{moni.quest.09EED0C4106265BC.description1}"]
 			id: "09EED0C4106265BC"
 			rewards: [{
 				id: "452D3826F2B6022F"
@@ -2391,6 +2373,27 @@
 			title: "{moni.quest.11D0058859BD6F88.title}"
 			x: 2.5d
 			y: 0.75d
+		}
+		{
+			dependencies: ["417D97D9E3562F45"]
+			description: ["{moni.quest.66E1F1B28E4577B2.description1}"]
+			id: "66E1F1B28E4577B2"
+			shape: "hexagon"
+			tasks: [{
+				id: "794BDECD8EBE2F25"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:inductors"
+					}
+				}
+				title: "{moni.task.7766ABA36439522B}"
+				type: "item"
+			}]
+			title: "{moni.quest.66E1F1B28E4577B2.title}"
+			x: -1.75d
+			y: 8.5d
 		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"

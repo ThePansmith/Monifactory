@@ -112,9 +112,9 @@ StartupEvents.registry("item", event => {
         .maxStackSize(16)
     event.create("universal_collapse_device")
         .maxStackSize(16)
-    event.create("field_stabilised_prismatic_pulsar_compound")
+    event.create("field_stabilized_prismatic_pulsar_compound")
         .maxStackSize(16)
-        .texture("kubejs:item/microverse/kit/field_stabilised_prismatic_pulsar_compound")
+        .texture("kubejs:item/microverse/kit/field_stabilized_prismatic_pulsar_compound")
         .displayName("Field-Stabilized Prismatic Pulsar Compound")
 
     // Heavy platings
@@ -381,12 +381,6 @@ StartupEvents.registry("item", event => {
     }
 
     // Misc Items
-    event.create("ender_star")
-        .texture("kubejs:item/ender_star")
-        .glow(true)
-    event.create("endest_star")
-        .texture("kubejs:item/endest_star")
-        .glow(true)
     event.create("grains_of_innocence")
         .texture("kubejs:item/mod/enderio/grains_of_innocence")
     event.create("radium_salt")
@@ -519,8 +513,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/lines/mob_guts/ender_dragon_scale_dust")
     event.create("wither_bone")
         .texture("kubejs:item/lines/mob_guts/wither_bone")
-    event.create("the_ultimate_material")
-        .texture("kubejs:item/lines/mob_guts/the_ultimate_material")
 
     // Crushed Shulker Shell (Shulker Shell recycling)
     event.create("crushed_shulker_shell")

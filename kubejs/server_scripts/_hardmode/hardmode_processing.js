@@ -415,7 +415,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(480)
 
-        event.recipes.gtceu.chemical_reactor("kubejs:omnic_quantum_flux")
+        event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
             .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
             .inputFluids("gtceu:dragon_breath 500")
             .itemOutputs("64x kubejs:quantum_flux")
@@ -430,21 +430,10 @@ ServerEvents.recipes(event => {
             .EUt(120)
             .duration(120)
 
-        event.recipes.gtceu.chemical_reactor("dimethylformamide")
-            .inputFluids("gtceu:carbon_monoxide 1000", "gtceu:dimethylamine 1000")
-            .outputFluids("gtceu:dimethylformamide 1000")
-            .duration(200).EUt(480);
-
         event.recipes.gtceu.chemical_reactor("pyrometillic_dianhydride")
             .inputFluids("gtceu:durene 250", "gtceu:oxygen 1500")
             .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
             .duration(400).EUt(480);
-
-        event.recipes.gtceu.chemical_reactor("manganese_acetate")
-            .itemInputs("gtceu:manganese_dust")
-            .inputFluids("gtceu:acetic_acid 1000")
-            .outputFluids("gtceu:manganese_acetate 1000")
-            .duration(60).EUt(480);
 
         event.recipes.gtceu.chemical_reactor("chloronitrobenzene")
             .inputFluids("gtceu:chlorobenzene 1000", "gtceu:nitric_acid 1000")
@@ -475,12 +464,6 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:nitric_acid 2000")
             .itemOutputs("4x gtceu:copper_iodide_dust", "10x gtceu:saltpeter_dust")
             .outputFluids("gtceu:hydrochloric_acid 2000")
-            .duration(160).EUt(120);
-
-        event.recipes.gtceu.chemical_reactor("cuprous_chloride_dust")
-            .itemInputs("gtceu:copper_dust")
-            .inputFluids("gtceu:chlorine 1000")
-            .itemOutputs("2x gtceu:cuprous_chloride_dust")
             .duration(160).EUt(120);
 
         event.recipes.gtceu.chemical_reactor("kapton_k")

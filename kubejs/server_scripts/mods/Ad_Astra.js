@@ -466,6 +466,9 @@ ServerEvents.tags("item", event => {
 
     // Make Ad Astra doors act as cleanroom doors
     event.add("gtceu:cleanroom_doors", /^ad_astra:[\w_]+_door/)
+
+    // Populate empty tag for Thermal Expansion Multiservo Press recipe
+    event.add("ad_astra:venus_sandstone", "ad_astra:venus_sandstone")
 })
 
 ServerEvents.tags("block", event => {
@@ -474,27 +477,6 @@ ServerEvents.tags("block", event => {
 })
 
 ServerEvents.recipes(event => {
-    // Ad Astra Rock Breaker
-    function AdAstraRockBreaker(id, input, output, EUt, dimension) {
-        event.recipes.gtceu.rock_breaker(`kubejs:${id}`)
-            .notConsumable(Item.of(input))
-            .itemOutputs(output)
-            .duration(16)
-            .EUt(EUt)
-            .dimension(dimension)
-            ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:water", "minecraft:lava")
-    }
-
-    AdAstraRockBreaker("moonstone", "ad_astra:moon_stone", "ad_astra:moon_stone", 240, "ad_astra:moon")
-    AdAstraRockBreaker("moondeepslate", "ad_astra:moon_deepslate", "ad_astra:moon_deepslate", 240, "ad_astra:moon")
-    AdAstraRockBreaker("marsstone", "ad_astra:mars_stone", "ad_astra:mars_stone", 240, "ad_astra:mars")
-    AdAstraRockBreaker("conglomerate", "ad_astra:conglomerate", "ad_astra:conglomerate", 240, "ad_astra:mars")
-    AdAstraRockBreaker("venusstone", "ad_astra:venus_stone", "ad_astra:venus_stone", 960, "ad_astra:venus")
-    AdAstraRockBreaker("infernalspireblock", "ad_astra:infernal_spire_block", "ad_astra:infernal_spire_block", 960, "ad_astra:venus")
-    AdAstraRockBreaker("mercurystone", "ad_astra:mercury_stone", "ad_astra:mercury_stone", 960, "ad_astra:mercury")
-    AdAstraRockBreaker("glaciostone", "ad_astra:glacio_stone", "ad_astra:glacio_stone", 2160, "ad_astra:glacio")
-    AdAstraRockBreaker("permafrost", "ad_astra:permafrost", "ad_astra:permafrost", 2160, "ad_astra:glacio")
-
     // Ad Astra Rock Forge Hammers
     function AdAstraForgeHammer(id, input, output, duration, EUt) {
         event.recipes.gtceu.forge_hammer(`kubejs:${id}`)

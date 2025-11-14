@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM]).duration(2000)
         .stationResearch(b => b
             .researchStack("gtceu:wetware_processor_computer")
-            .CWUt(96)
+            .CWUt(72)
             .EUt(GTValues.VA[GTValues.ZPM])
         )
 
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         .EUt(150000)
         .stationResearch(b => b
             .researchStack("kubejs:optical_processor_assembly")
-            .CWUt(96)
+            .CWUt(72)
             .EUt(GTValues.VA[GTValues.ZPM])
         )
 
@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(b => b
             .researchStack("monilabs:basic_microverse_projector")
-            .CWUt(16)
+            .CWUt(32)
             .EUt(GTValues.VA[GTValues.LuV])
         )
 
@@ -294,7 +294,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembler("microverse_containment_unit")
-        .itemInputs("gtceu:infinity_frame", "16x gtceu:microversium_plate", "8x kubejs:prism_pane", "gtceu:iv_field_generator")
+        .itemInputs("monilabs:eltz_frame", "16x gtceu:microversium_plate", "8x kubejs:prism_pane", "gtceu:iv_field_generator")
         .inputFluids("gtceu:living_soldering_alloy 576")
         .itemOutputs("64x kubejs:microverse_containment_unit")
         .duration(300)
@@ -372,7 +372,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV])
         .stationResearch(b => b
             .researchStack("kubejs:extradimensional_processor")
-            .CWUt(96)
+            .CWUt(72)
             .EUt(GTValues.VA[GTValues.ZPM])
         )
 

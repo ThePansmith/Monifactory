@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         .EUt(24)
 
     event.recipes.gtceu.implosion_compressor("implosion_star_tnt")
-        .itemInputs("4x gtceu:nether_star_dust", "2x minecraft:tnt", "gtceu:dark_ash_small_dust")
+        .itemInputs("4x gtceu:nether_star_dust", "2x minecraft:tnt", "#forge:small_dusts/dark_ash")
         .itemOutputs("3x minecraft:nether_star")
         .duration(20)
         .EUt(30)
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(stoneItem)
             .duration(16)
             .EUt(60)
-            ["adjacentFluid(net.minecraft.resources.ResourceLocation[])"]("minecraft:water", "minecraft:lava")
+            ["adjacentFluid(net.minecraft.world.level.material.Fluid[])"]("minecraft:lava", "minecraft:water")
     }
 
     generateRockBreakerStoneRecipe("minecraft:calcite")

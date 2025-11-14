@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
         ["lime", "teal", "teal", "blue", 512, 1920, "cyan"],
         ["teal", "azure", "azure", "orange", 512, 2432, "none"],
         ["azure", "indigo", "indigo", "red", 768, 2944, "magenta"],
-        ["indigo", "pink", "supercritical", "cyan", 768, 3712, "none"]
+        ["indigo", "pink", "supercritical", "teal", 768, 3712, "none"]
     ]
 
     priscoreRecipes.forEach(([coreIn, prismacIn, coreOut, prismacOut, transMb, nullMb, prismacOutHM]) => {

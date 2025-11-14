@@ -51,6 +51,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.VanadiumGallium.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
     GTMaterials.Trinium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Tritanium.addFlags(GTMaterialFlags.GENERATE_SPRING)
+    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
 
     // Small Springs for Power Transformer recipes
     GTMaterials.RedAlloy.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
@@ -77,6 +78,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Curium.setMaterialARGB(0x58307f);
     GTMaterials.Curium.setMaterialSecondaryARGB(0x221255);
     GTMaterials.Curium.setProperty(PropertyKey.DUST, new $DustProperty());
+    GTMaterials.Curium.setProperty($PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
     addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID, 1324);
     GTMaterials.Americium.setMaterialSecondaryARGB(0x083946);

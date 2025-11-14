@@ -1,5 +1,5 @@
 {
-  "parent": "item/handheld",
+  "parent": "item/generated",
   "textures": {
     "layer0": "gtceu:item/material_sets/magic/ring",
     "layer1": "gtceu:item/material_sets/magic/ring_secondary",

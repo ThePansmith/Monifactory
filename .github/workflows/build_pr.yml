@@ -62,17 +62,30 @@ jobs:
         run:
           sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
         shell: bash
+      # Core mod pack mode switcher requires java
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
       - name: Pack Modpack
         run: |
           cd build
           npm install
           node index.ts ${{ inputs.target }}
         shell: bash
-      - name: Upload build artifact
+      - name: Upload client build
         uses: actions/upload-artifact@v4
         with:
-          name: build-zipzip
-          path: dist/*.zip
-          if-no-files-found: error
+          name: client-build
+          path: dist/client.zip
+          if-no-files-found: ignore
           overwrite: true
-          compression-level: 0
+          compression-level: 9
+      - name: Upload server build
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-build
+          path: dist/server.zip
+          if-no-files-found: ignore
+          overwrite: true
+          compression-level: 9

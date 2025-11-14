@@ -5,7 +5,7 @@ if (Platform.isLoaded("fluxnetworks")) {
     console.log("Flux Networks found, loading compat scripts...");
 
     ServerEvents.recipes(event => {
-        event.replaceInput({ id: "fluxnetworks:fluxconfigurator" }, "minecraft:obsidian", "enderio:infinity_rod");
+        event.replaceInput({ id: "fluxnetworks:fluxconfigurator" }, "minecraft:obsidian", "gtceu:dark_steel_rod");
 
         // Flux Dust
         event.recipes.gtceu.chemical_bath("fluxnetworks:flux_dust")

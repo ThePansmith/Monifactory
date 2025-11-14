@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 6, 3).forEach(builder => {
         builder
             .itemInputs(
-                "16x kubejs:stabilized_curium",
+                "16x kubejs:stabilized_plutonium",
                 "kubejs:microversal_alchemy_kit",
                 "8x gtceu:mythril_ingot",
                 "4x gtceu:void_block",
@@ -130,25 +130,16 @@ ServerEvents.recipes(event => {
     // T9MM missions
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
-            .inputFluids("gtceu:argon_plasma 5000")
+            .itemInputs("48x gtceu:flawless_dilithium_gem")
             .itemInputs("kubejs:gravitational_amplifier", "6x gtceu:neutron_reflector")
             .damageRate(8)
             .itemOutputs("32x gtceu:neutronium_ingot")
             .requiredMicroverse(1) // Normal
     })
 
-    microverse_mission(event, 9, 3, 70).forEach(builder => {
-        builder
-            .inputFluids("gtceu:oxygen_plasma 10000")
-            .itemInputs("kubejs:gravitational_amplifier", "64x gtceu:gravi_star")
-            .damageRate(8)
-            .itemOutputs("16x kubejs:quasi_stable_neutron_star")
-            .requiredMicroverse(3) // Shattered
-    })
-
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
-            .inputFluids("gtceu:argon_plasma 5000")
+            .itemInputs("48x gtceu:flawless_dilithium_gem")
             .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x gtceu:neutron_reflector",)
@@ -164,7 +155,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
-            .inputFluids("gtceu:argon_plasma 5000")
+            .itemInputs("48x gtceu:flawless_dilithium_gem")
             .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x kubejs:gem_sensor")
@@ -181,7 +172,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
-            .inputFluids("gtceu:oxygen_plasma 10000")
+            .itemInputs("48x gtceu:flawless_dilithium_gem")
             .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x nuclearcraft:plate_du")

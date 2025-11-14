@@ -1,0 +1,201 @@
+{
+	"temperature": 1.2,
+	"downfall": 0.2,
+	"has_precipitation": true,
+	"effects": {
+		"sky_color": 7907327,
+		"fog_color": 12638463,
+		"water_color": 3829036,
+		"water_fog_color": 2178584,
+		"foliage_color": 7441446,
+		"mood_sound": {
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000,
+			"block_search_extent": 8,
+			"offset": 2
+		}
+	},
+	"spawners": {
+		"monster": [
+			{
+				"type": "minecraft:spider",
+				"weight": 100,
+				"minCount": 4,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:zombie",
+				"weight": 95,
+				"minCount": 4,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:zombie_villager",
+				"weight": 5,
+				"minCount": 1,
+				"maxCount": 1
+			},
+			{
+				"type": "minecraft:skeleton",
+				"weight": 100,
+				"minCount": 4,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:creeper",
+				"weight": 100,
+				"minCount": 4,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:slime",
+				"weight": 100,
+				"minCount": 4,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:enderman",
+				"weight": 10,
+				"minCount": 1,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:witch",
+				"weight": 5,
+				"minCount": 1,
+				"maxCount": 1
+			},
+			{
+				"type": "minecraft:slime",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 1
+			}
+		],
+		"creature": [
+			{
+				"type": "minecraft:frog",
+				"weight": 50,
+				"minCount": 2,
+				"maxCount": 5
+			}
+		],
+		"ambient": [
+			{
+				"type": "minecraft:bat",
+				"weight": 10,
+				"minCount": 8,
+				"maxCount": 8
+			}
+		],
+		"axolotls": [],
+		"underground_water_creature": [
+			{
+				"type": "minecraft:glow_squid",
+				"weight": 10,
+				"minCount": 4,
+				"maxCount": 6
+			}
+		],
+		"water_creature": [],
+		"water_ambient": [
+			{
+				"type": "minecraft:tropical_fish",
+				"weight": 25,
+				"minCount": 8,
+				"maxCount": 8
+			}
+		],
+		"misc": []
+	},
+	"spawn_costs": { },
+	"carvers": {
+		"air": [
+			"minecraft:cave",
+			"minecraft:cave_extra_underground",
+			"minecraft:canyon"
+		]
+	},
+	"features": [
+		[
+			"wythers:terrain/local/base_mangrove_swamp"
+		],
+		[
+			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_surface"
+		],
+		[
+			"minecraft:amethyst_geode",
+			"minecraft:large_dripstone",
+			"wythers:terrain/local/base_mangrove_swamp_bayou_hills"
+		],
+		[
+			"minecraft:fossil_upper",
+			"minecraft:fossil_lower",
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
+		[
+			"wythers:terrain/local/swamp_pools"
+		],
+		[
+			"wythers:terrain/local/cave_disk_basalt",
+			"wythers:terrain/local/cave_disk_blackstone",
+			"wythers:terrain/local/cave_disk_magma"
+		],
+		[
+			"minecraft:ore_dirt",
+			"minecraft:ore_gravel",
+			"minecraft:ore_granite_upper",
+			"minecraft:ore_granite_lower",
+			"minecraft:ore_diorite_upper",
+			"minecraft:ore_diorite_lower",
+			"minecraft:ore_andesite_upper",
+			"minecraft:ore_andesite_lower",
+			"minecraft:ore_tuff",
+			"minecraft:ore_coal_upper",
+			"minecraft:ore_coal_lower",
+			"minecraft:ore_iron_upper",
+			"minecraft:ore_iron_middle",
+			"minecraft:ore_iron_small",
+			"minecraft:ore_gold",
+			"minecraft:ore_gold_lower",
+			"minecraft:ore_redstone",
+			"minecraft:ore_redstone_lower",
+			"minecraft:ore_diamond",
+			"minecraft:ore_diamond_large",
+			"minecraft:ore_diamond_buried",
+			"minecraft:ore_lapis",
+			"minecraft:ore_lapis_buried",
+			"minecraft:ore_copper",
+			"minecraft:underwater_magma",
+			"minecraft:disk_clay"
+		],
+		[
+			"wythers:terrain/feature/dripstone_cluster",
+			"wythers:terrain/feature/pointed_dripstone"
+		],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
+		[
+			"minecraft:glow_lichen",
+			"wythers:vegetation/local/patch/large_ferns_dense_forests",
+			"wythers:vegetation/local/trees/mangrove_swamp_jungle",
+			"wythers:vegetation/local/trees/mangrove_swamp_bayou",
+			"wythers:vegetation/local/trees/mangrove_swamp_bayou_2",
+			"wythers:vegetation/local/trees/mangrove_swamp_birch",
+			"wythers:vegetation/local/trees/mangrove_swamp_tropical",
+			"wythers:vegetation/local/trees/mangrove_swamp_mangroves",
+			"wythers:vegetation/local/patch/grass_standard",
+			"minecraft:patch_waterlily",
+			"minecraft:seagrass_swamp"
+		],
+		[
+			"wythers:vegetation/local/patch/mangrove_swamp_dripleaves",
+			"minecraft:freeze_top_layer",
+			"wythers:vegetation/local/patch/spanish_moss"
+		]
+	]
+}

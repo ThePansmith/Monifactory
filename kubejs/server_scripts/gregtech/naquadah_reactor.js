@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:naquadah_reactor")
         .duration(1500)
         .EUt(122880)
-        .stationResearch(b => b.researchStack(Item.of("kubejs:empty_fuel_rod")).EUt(30720).CWUt(16, 64000))
+        .stationResearch(b => b.researchStack(Item.of("kubejs:empty_fuel_rod")).EUt(GTValues.VA[GTValues.LuV]).CWUt(16, 64000))
 
     // Naquadah Reactor usage. Circuit number dictates fuel consumption rate, for more flexible power gen.
     event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_1")

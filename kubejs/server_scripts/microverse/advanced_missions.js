@@ -94,6 +94,20 @@ ServerEvents.recipes(event => {
             .damageRate(1)
     })
 
+    microverse_mission(event, 4, 2).forEach(builder => {
+        builder
+            .itemInputs("8x kubejs:petrotheum_dust")
+            .itemInputs("kubejs:microversal_alchemy_kit")
+            .itemInputs("8x gtceu:thorium_block")
+            .requiredMicroverse(1) // Normal
+            .itemOutputs(
+                "32x gtceu:neptunium_dust",
+                "4x gtceu:uranium_235_dust",
+                "8x gtceu:uranium_dust"
+            )
+            .damageRate(1)
+    })
+
     // T5MM missions
     microverse_mission(event, 5, 2).forEach(builder => {
         if(!doHarderRecipes) {
@@ -172,6 +186,20 @@ ServerEvents.recipes(event => {
                 "48x gtceu:raw_dilithium",
             )
             .damageRate(2)
+    })
+
+    microverse_mission(event, 5, 2).forEach(builder => {
+        builder
+            .itemInputs("16x kubejs:stabilized_neptunium")
+            .itemInputs("kubejs:microversal_alchemy_kit")
+            .itemInputs("6x gtceu:uranium_block", "2x gtceu:uranium_235_block")
+            .requiredMicroverse(1) // Normal
+            .itemOutputs(
+                "32x gtceu:uranium_dust",
+                "4x gtceu:neptunium_dust",
+                "16x gtceu:plutonium_dust"
+            )
+            .damageRate(1)
     })
 
     // T6MM missions

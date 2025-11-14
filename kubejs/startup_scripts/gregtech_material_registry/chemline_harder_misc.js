@@ -14,18 +14,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     }
 })
 
-// Magnetron Components
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    if (doHarderProcessing) {
-        event.create("beryllium_oxide")
-            .ingot()
-            .color(0x54C757).iconSet("dull")
-            .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING)
-            .components("beryllium", "oxygen")
-    }
-})
-
 // Harder Tantalite/Pyrochlore Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 

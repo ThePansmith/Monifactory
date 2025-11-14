@@ -76,11 +76,10 @@ If you want to switch the pack mode on a dedicated server, follow these instruct
 - Universal:
     - Open Command Prompt and type in this command in your minecraft server's installation folder:
       ```
-      java -jar ${Server Root}\mods\Monilabs-${Version #}.jar ${N/H/E}
+      java -jar ${Server Root}\mods\monilabs-*.jar ${N/H/E}
       ```
     - You'll need to replace ${Server Root} with the path of your server, E.G ``C:\MonilabsServer`` or ``/var/opt/moniserver/``.
     Keep in mind these are most likely **not** be the path of your Monifactory server, open your perfered shell/command interface, for Windows run ``cd`` without any parameters, for Mac/Linux/FreeBSD, run ``pwd``.
-    - ${Version #} must be replaced with the version number of Monilabs, most shells/command interfaces will allow you to autocomplete the file name just by pressing Tab
     - ${N/H/E} is the mode of Moni you want to switch to, N is for Normal Mode, H is for Hard Mode, and E is for Expert Mode
     - Typing in nothing will prompt you to change your pack mode
 
@@ -107,8 +106,9 @@ To spice up your Monifactory experience, you can add any of the following mods t
 4. Move the server.zip and forge installer into your server directory. The rest of the guide assumes your current directory is the server directory.
 5. Run the forge installer and install the forge server, this can be done with the command ``java -jar TheForgeInstallerName.jar --installServer``
 6. ``unzip server.zip``
-7. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
-8. To upgrade an existing Monifactory server, see [FAQ.md](FAQ.md).
+7. On Monifactory versions 0.12.X and older, move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
+8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+9. To upgrade an existing Monifactory server, see [FAQ.md](FAQ.md).
 
 ## Contributing
 

@@ -416,10 +416,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"72D61AFACC53A34A"
-				"3F39E9B829DAE2F2"
-			]
+			dependencies: ["72D61AFACC53A34A"]
 			description: [
 				"{moni.quest.7A67E519745A8361.description1}"
 				""

@@ -10,7 +10,7 @@
 			height: 2.0d
 			image: "kubejs:textures/gui/gtv_timeline.png"
 			rotation: 0.0d
-			width: 30.083333333333332d
+			width: 27.78d
 			x: 0.0d
 			y: 0.0d
 		}
@@ -18,9 +18,9 @@
 			height: 2.0d
 			image: "kubejs:textures/gui/rf_timeline.png"
 			rotation: 0.0d
-			width: 30.083333333333332d
+			width: 27.78d
 			x: 0.0d
-			y: 6.00d
+			y: 6.0d
 		}
 		{
 			height: 1.5d
@@ -29,25 +29,25 @@
 			rotation: 0.0d
 			width: 1.95d
 			x: 0.0d
-			y: -4.0d
+			y: -4.25d
 		}
 		{
 			height: 1.5d
-			hover: ["Forge Energy is easier to produce and transport."]
+			hover: ["Forge Energy is easier to transport."]
 			image: "kubejs:textures/gui/fe_letters.png"
 			rotation: 0.0d
 			width: 1.95d
 			x: 0.0d
-			y: 3.0d
+			y: 2.75d
 		}
 	]
 	order_index: 5
 	progression_mode: "flexible"
 	quest_links: [{
-		id: "1C4BA5C05BD7D1C3"
+		id: "34461D7A562415D3"
 		linked_quest: "19084E91F357C8C2"
-		x: 12.0d
-		y: 5.00d
+		x: 11.0d
+		y: 5.0d
 	}]
 	quests: [
 		{
@@ -59,6 +59,8 @@
 				"{moni.quest.0E75B671DAC85309.description1}"
 				""
 				"{moni.quest.0E75B671DAC85309.description2}"
+				""
+				"{moni.quest.0E75B671DAC85309.description3}"
 			]
 			hide_until_deps_visible: true
 			id: "0E75B671DAC85309"
@@ -68,8 +70,8 @@
 				item: "systeams:steam_dynamo"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 5.00d
+			x: -8.75d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -108,7 +110,7 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
+			x: -4.0d
 			y: -3.0d
 		}
 		{
@@ -117,6 +119,8 @@
 				"{moni.quest.34876F54406B6A04.description1}"
 				""
 				"{moni.quest.34876F54406B6A04.description2}"
+				""
+				"{moni.quest.34876F54406B6A04.description3}"
 			]
 			id: "34876F54406B6A04"
 			progression_mode: "flexible"
@@ -125,7 +129,7 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
@@ -143,7 +147,7 @@
 				""
 				"{moni.quest.677D081CD7612FB0.description4}"
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"053DDDCD2505E20B\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description7\"}]"
+				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"}]"
 				""
 				"{moni.quest.677D081CD7612FB0.description6}"
 			]
@@ -175,7 +179,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -3.0d
 			y: -1.0d
 		}
 		{
@@ -221,7 +225,7 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
+			x: -1.0d
 			y: -1.0d
 		}
 		{
@@ -259,12 +263,14 @@
 					type: "item"
 				}
 			]
-			x: -4.25d
+			x: -3.25d
 			y: -2.0d
 		}
 		{
 			dependencies: ["745628397790ED7A"]
 			description: [
+				"{moni.quest.2053CCD1FF775DD5.description1}"
+				""
 				"[\"\",{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"745628397790ED7A\"}},{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description3\"}]"
 				""
 				"{moni.quest.2053CCD1FF775DD5.description2}"
@@ -276,6 +282,10 @@
 				"{moni.quest.2053CCD1FF775DD5.description5}"
 				""
 				"{moni.quest.2053CCD1FF775DD5.description6}"
+				""
+				"{moni.quest.2053CCD1FF775DD5.description7}"
+				""
+				"{moni.quest.2053CCD1FF775DD5.description8}"
 			]
 			id: "2053CCD1FF775DD5"
 			tasks: [{
@@ -284,8 +294,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2053CCD1FF775DD5.title}"
-			x: 0.0d
-			y: 5.00d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5E3CBC929557418F"]
@@ -365,7 +375,7 @@
 				}
 			]
 			title: "{moni.quest.68E87B959F6E9216.title}"
-			x: -12.0d
+			x: -11.0d
 			y: -1.0d
 		}
 		{
@@ -378,7 +388,7 @@
 				title: "{moni.task.2026CA71AB1F0711}"
 				type: "checkmark"
 			}]
-			x: 0.7d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -391,8 +401,8 @@
 				title: "{moni.task.0CD3D25A52ED3F2F}"
 				type: "checkmark"
 			}]
-			x: 3.95d
-			y: -3.0d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6FDF37EE046349F7"]
@@ -406,7 +416,7 @@
 				type: "checkmark"
 			}]
 			x: -1.0d
-			y: 5.00d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0E75B671DAC85309"]
@@ -419,8 +429,8 @@
 				title: "{moni.task.1A05380382832D36}"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: 5.00d
+			x: -5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["15A5B4C632836306"]
@@ -445,7 +455,7 @@
 				title: "{moni.task.5B2F5A3BD09E835A}"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: -2.0d
 		}
 		{
@@ -458,8 +468,8 @@
 				title: "{moni.task.15E9864541CF59D6}"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: 5.00d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["32E44FFD602C98DF"]
@@ -478,7 +488,7 @@
 				item: "nuclearcraft:uranium_rtg"
 				type: "item"
 			}]
-			x: -10.25d
+			x: -11.5d
 			y: 4.0d
 		}
 		{
@@ -494,7 +504,7 @@
 				item: "nuclearcraft:plutonium_rtg"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.75d
 			y: 4.0d
 		}
 		{
@@ -516,7 +526,7 @@
 				item: "nuclearcraft:californium_rtg"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: 4.0d
 		}
 		{
@@ -529,6 +539,8 @@
 				"{moni.quest.07AFEBBC23C2B1E2.description1}"
 				""
 				"{moni.quest.07AFEBBC23C2B1E2.description2}"
+				""
+				"{moni.quest.07AFEBBC23C2B1E2.description3}"
 			]
 			id: "07AFEBBC23C2B1E2"
 			tasks: [{
@@ -536,7 +548,7 @@
 				item: "nuclearcraft:americium_rtg"
 				type: "item"
 			}]
-			x: -8.25d
+			x: -9.5d
 			y: 4.0d
 		}
 		{
@@ -545,7 +557,11 @@
 				"76BAC72CC89F390E"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.1405D08C6A87B3BB.description1}"]
+			description: [
+				"{moni.quest.1405D08C6A87B3BB.description1}"
+				""
+				"{moni.quest.1405D08C6A87B3BB.description2}"
+			]
 			icon: "gtceu:plasma_large_turbine"
 			id: "1405D08C6A87B3BB"
 			rewards: [{
@@ -574,19 +590,23 @@
 				}
 			]
 			title: "{moni.quest.1405D08C6A87B3BB.title}"
-			x: 1.25d
-			y: -3.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1A30472430354F1E"]
-			description: ["{moni.quest.34F0E33D33EB82E2.description1}"]
+			description: [
+				"{moni.quest.34F0E33D33EB82E2.description1}"
+				""
+				"{moni.quest.34F0E33D33EB82E2.description2}"
+			]
 			id: "34F0E33D33EB82E2"
 			tasks: [{
 				id: "18C84802C176E92E"
 				item: "gtceu:lv_gas_turbine"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -2.0d
 		}
 		{
@@ -602,7 +622,7 @@
 				item: "gtceu:lv_combustion"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -1.0d
 		}
 		{
@@ -622,7 +642,7 @@
 				item: "gtceu:mv_combustion"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -1.0d
 		}
 		{
@@ -644,7 +664,7 @@
 				item: "gtceu:hv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -1.0d
 		}
 		{
@@ -660,7 +680,7 @@
 				item: "gtceu:hv_steam_turbine"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -3.0d
 		}
 		{
@@ -676,7 +696,7 @@
 				item: "gtceu:mv_steam_turbine"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -3.0d
 		}
 		{
@@ -692,7 +712,7 @@
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -2.0d
 		}
 		{
@@ -712,7 +732,7 @@
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -2.0d
 		}
 		{
@@ -725,7 +745,7 @@
 				title: "{moni.task.5C7471C734001626}"
 				type: "checkmark"
 			}]
-			x: 11.5d
+			x: 10.0d
 			y: -1.0d
 		}
 		{
@@ -774,7 +794,7 @@
 				}
 			]
 			title: "{moni.quest.425D1C34A82B054D.title}"
-			x: 3.25d
+			x: 2.75d
 			y: -1.0d
 		}
 		{
@@ -806,38 +826,42 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6FDF37EE046349F7.title}"
-			x: -6.0d
-			y: 5.00d
+			x: -4.75d
+			y: 5.0d
 		}
 		{
 			dependencies: [
-				"060A5766B021FC77"
 				"786AECA42F53B45A"
+				"4C0BCA64D5B409F2"
 			]
 			description: [
 				"{moni.quest.19084E91F357C8C2.description1}"
 				""
 				"{moni.quest.19084E91F357C8C2.description2}"
-				""
-				"{moni.quest.19084E91F357C8C2.description3}"
 			]
 			id: "19084E91F357C8C2"
 			size: 1.0d
+			subtitle: "{moni.quest.19084E91F357C8C2.subtitle}"
 			tasks: [{
 				id: "0312D4E6C4C1C552"
 				item: "monilabs:creative_energy_multi"
 				type: "item"
 			}]
 			title: "{moni.quest.19084E91F357C8C2.title}"
-			x: 12.0d
+			x: 11.0d
 			y: -1.0d
 		}
 		{
 			dependencies: [
 				"425D1C34A82B054D"
-				"6EA130B04FDE6868"
+				"15607184B546F5EE"
+				"22E50A6923EBF5CB"
 			]
-			description: ["{moni.quest.21E10888F52A3C73.description1}"]
+			description: [
+				"{moni.quest.21E10888F52A3C73.description1}"
+				""
+				"{moni.quest.21E10888F52A3C73.description2}"
+			]
 			icon: "gtceu:large_naquadah_reactor"
 			id: "21E10888F52A3C73"
 			rewards: [{
@@ -851,29 +875,35 @@
 				type: "item"
 			}]
 			title: "{moni.quest.21E10888F52A3C73.title}"
-			x: 5.0d
+			x: 5.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["0ED041E2114F7C84"]
+			dependencies: [
+				"062B4DDD703338D1"
+				"113E9543ADB1666B"
+			]
 			description: [
 				"{moni.quest.5EE2338113F22952.description1}"
 				""
 				"{moni.quest.5EE2338113F22952.description2}"
 				""
 				"{moni.quest.5EE2338113F22952.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.5EE2338113F22952.description4}"
+				""
+				"{moni.quest.5EE2338113F22952.description5}"
 			]
 			id: "5EE2338113F22952"
+			optional: true
 			tasks: [{
 				id: "0AFCD5A8CB53424F"
 				item: "gtceu:antimatter_collider"
 				type: "item"
 			}]
 			title: "{moni.quest.5EE2338113F22952.title}"
-			x: 5.5d
-			y: -3.0d
+			x: 6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5EE2338113F22952"]
@@ -885,8 +915,8 @@
 				type: "checkmark"
 			}]
 			title: " "
-			x: 11.5d
-			y: -3.0d
+			x: 11.0d
+			y: -2.0d
 		}
 	]
 	title: "{moni.chapter.0102198269F850CD.title}"

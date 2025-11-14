@@ -18,6 +18,9 @@ features:
     # Whether the Wireless Active Transformer is enabled.
     pterbEnabled: true
 
+    # Whether placed Parallel Hatches should be automatically set to their maximum parallels.
+    parallelHatchAutoConfigure: true
+
     # Base amount of WAT coolant to drain every second.
     # (Setting both this amount and the IO multiplier to 0 disables the coolant mechanic.)
     pterbCoolantBaseDrain: 4
@@ -28,4 +31,22 @@ features:
 
     # Whether the coins/credits are enabled.
     coinsEnabled: false
+
+    # Whether the custom MV tools are enabled.
+    customMVToolsEnabled: true
+
+    # Whether the custom HV tools are enabled.
+    customHVToolsEnabled: true
+
+    # Whether the custom EV tools are enabled.
+    customEVToolsEnabled: true
+
+    # Whether the custom IV tools are enabled.
+    customIVToolsEnabled: true
+
+    # Whether the custom LuV tools are enabled.
+    customLuVToolsEnabled: false
+
+    # Whether the custom ZPM tools are enabled.
+    customZPMToolsEnabled: false
 

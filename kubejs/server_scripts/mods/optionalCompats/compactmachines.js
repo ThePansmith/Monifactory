@@ -38,7 +38,7 @@ if (Platform.isLoaded("compactmachines")) {
 
         machineSizes.forEach((value, index) => {
             event.recipes.gtceu.assembler(`compactmachines:machine_${value.size}`)
-                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), (index > 2 ? "gtceu:tungsten_frame" : "gtceu:dark_steel_frame"), value.material, `2x gtceu:${GTValues.VN[index + 1].toLowerCase()}_field_generator`, (index > 2 ? Item.of("gtceu:quantum_eye", 2 ** (index - 2)) : Item.of("minecraft:ender_eye", 2 ** index)))
+                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), (index > 2 ? "gtceu:tungsten_frame" : "gtceu:steel_frame"), value.material, `2x gtceu:${GTValues.VN[index + 1].toLowerCase()}_field_generator`, (index > 2 ? Item.of("gtceu:quantum_eye", 2 ** (index - 2)) : Item.of("minecraft:ender_eye", 2 ** index)))
                 .inputFluids(`gtceu:styrene_butadiene_rubber ${144 * (index + 1)}`)
                 .itemOutputs(`compactmachines:machine_${value.size}`)
                 .duration(200)

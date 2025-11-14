@@ -3,13 +3,13 @@
  */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("kubejs:creative_power")
-        .itemInputs("4x #gtceu:circuits/uev", "8x kubejs:dimensionally_stabilized_infinity_heavy_plating", "4x monilabs:dimensional_stabilization_netherite_casing", "4x gtceu:uhv_field_generator", "8x gtceu:uhv_emitter", "4x gtceu:max_battery")
+        .itemInputs("4x #gtceu:circuits/uev", "8x kubejs:dimensionally_stabilized_infinity_heavy_plating", "4x monilabs:dimensional_stabilization_netherite_casing", "4x gtceu:uev_field_generator", "8x gtceu:uev_emitter", "4x gtceu:max_battery")
         .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("monilabs:creative_energy_multi")
         .stationResearch(b => b
             .researchStack("gtceu:large_naquadah_reactor")
-            .EUt(1966080)
-            .CWUt(128, 512000)
+            .EUt(GTValues.VA[GTValues.UIV])
+            .CWUt(144, 512000)
         )
         .duration(1200)
         .EUt(1966080)
@@ -20,8 +20,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:creative_data_multi")
         .stationResearch(b => b
             .researchStack("gtceu:network_switch")
-            .EUt(1966080)
-            .CWUt(96, 57600)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .CWUt(128, 57600)
         )
         .duration(1200)
         .EUt(7864320)

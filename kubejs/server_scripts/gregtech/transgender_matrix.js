@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.autoclave("supercharged_powder_autoclave")
         .inputFluids("gtceu:considerate_oils 300")
-        .itemInputs("3x gtceu:platinum_dust")
+        .itemInputs("gtceu:platinum_dust")
         .itemOutputsRanged("kubejs:sparks_of_conscience", 1, 2)
         .duration(100)
         .EUt(GTValues.VHA[GTValues.UV])

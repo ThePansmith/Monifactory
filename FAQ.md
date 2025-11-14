@@ -17,10 +17,13 @@ Bleeding edge builds can be found [here](https://github.com/ThePansmith/Monifact
 
 A comprehensive list of changes can be found [here](CHANGELOG.md).
 
-**Q. Can my PC run Monifactory?**
+**Q. Can my PC run Monifactory? What are the system requirements?**
 
-Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB RAM or higher is recommended<br>.
-``NOTE: If your computer has 8GB RAM or less, assume that Monifactory will not run on it.``
+Monifactory should run on most hardware/operating system combinations made in the past 5-10 years, provided that the combination is capable of running vanilla Minecraft.
+Minecraft's system requirements can be found [here](https://www.minecraft.net/en-us/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A1%7D#accordionv1-b6c8df09da-item-7739893325:~:text=Java%20System%20Requirements).<br>
+Allocating 6GB RAM or higher is recommended for both servers and singleplayer.
+That said, you should leave at least 2GB RAM for system processes.
+As such, if your computer has less than 8GB RAM total then Monifactory may not run on it.
 
 **Q. Can I play Monifactory on Peaceful mode?**
 
@@ -85,8 +88,8 @@ Instead:
     `shaderpacks` (if you have any)
     `emi.json`
     `options.txt`
-    `pack-mode-switcher` (If your modpack was not in Normal Mode)
-3. Adjust the pack mode of the new instance, if needed (Instructions above)
+3. Replace the contents of your world's `serverconfig` folder with the contents of the `defaultconfigs` folder in the pack's root directory.
+4. Adjust the pack mode of the new instance, if needed (Instructions above)
 
 **Q. How do I add optional compat mods?**
 
@@ -148,7 +151,7 @@ Thermal Expansion Dynamos will only output energy while producing it.
 
 In your server directory delete config-overrides, config, defaultconfig, kubejs, and mods. Then from the new Monifactory server zip copy over those same directories to replace the ones you removed. Enjoy!
 
-<!--- Essential PSA, I've commented this out for now. Feel free to edit/uncomment 
+<!--- Essential PSA, I've commented this out for now. Feel free to edit/uncomment
 
 **Q. Does Monifactory support Essential world hosting?**
 
