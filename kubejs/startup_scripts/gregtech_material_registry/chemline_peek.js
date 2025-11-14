@@ -16,12 +16,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("C6H5NH2")
 
     event.create("nitrous_acid")
-        .liquid()
+        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
         .color(0xffc129)
         .components("1x hydrogen", "1x nitrogen", "2x oxygen")
 
     event.create("fluoroboric_acid")
-        .liquid()
+        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
         .color(0xaffad7)
         .components("1x hydrogen", "1x boron", "4x fluorine")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
