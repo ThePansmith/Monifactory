@@ -719,7 +719,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Antimatter Manipulator
     event.create("antimatter_manipulator", "multiblock")
         .recipeTypes(["antimatter_manipulation"])
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock("monilabs:dimensional_stabilization_netherite_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#MOM#", "##O##", "#####", "#####", "#####", "#####", "#####", "#####")
