@@ -2513,7 +2513,7 @@
   "moni.quest.64B145DC53023119.title": "Uranium 235 Fission",
   "moni.quest.64B52DA2ABD5152D.description1": "The &3Extruder&r is an alternative way to form shapes from metal. &aExtruder Shapes&r are used for telling an Extruder which shape to make.",
   "moni.quest.64B52DA2ABD5152D.description2": "Extruders are &2no longer strictly needed for Large Pipes.&r Extruders use ingots, but are as efficient for making &6Gears&r as melting and solidifying. They are also the most efficient way to make &6Bolts&r, &6Small Gears&r, and &6Rings&r.",
-  "moni.quest.64B52DA2ABD5152D.description3": "You can also use Extruders to make things from other machines like plates and wires, but they are less efficient than using the dedicated machines for these purposes.",
+  "moni.quest.64B52DA2ABD5152D.description3": "You can also use Extruders to make things from other machines like plates and wires, but they take more energy than using the dedicated machines for these purposes.",
   "moni.quest.64B52DA2ABD5152D.description4": "&2There is also an LV version, but most of the Extruder\u0027s recipes must be run at MV or higher.",
   "moni.quest.64B52DA2ABD5152D.title": "&2Extruder",
   "moni.quest.64C33333ECCAABC7.description1": "With some now-standard components you can upgrade a few &6Crystal Proessors&r into a &6Crystal Processor Assembly&r.",
