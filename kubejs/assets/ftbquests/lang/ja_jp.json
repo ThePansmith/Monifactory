@@ -2071,7 +2071,7 @@
     "moni.quest.5C4E189A3E401566.description1": "You might notice that these hulls can be made more cheaply in an &3Assembling Machine&r, but you don't have that weird fluid. Don't worry, you'll be able to make that soon.",
     "moni.quest.5C4E189A3E401566.description2": "&2Overclocking mechanics have changed in CEu. All overclocks now multiply the speed by 2.0x (instead of the 2.0/2.8 split in CE). This means that to save energy, you should build more low-tier machines over overclocking a high-tier machine, especially for passive processes.",
     "moni.quest.5C4E189A3E401566.description3": "Additionally, ULV recipes will not overclock to LV. A ≤8 EU/t recipe won't overclock at all in an LV machine, will only overclock once in an MV machine, etc.",
-    "moni.quest.5C4E189A3E401566.subtitle": "Your first MV hull is as good of a place as any to consider yourself graduated from LV.",
+    "moni.quest.5C4E189A3E401566.subtitle": "Your first MV hull marks the start of your transition into MV.",
     "moni.quest.5C4E189A3E401566.title": "&2MV Machine Hulls",
     "moni.quest.5C549B001A8AB62F.title": "元素番号055番:セシウム",
     "moni.quest.5C78349343BA40D7.description1": "Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials.",
