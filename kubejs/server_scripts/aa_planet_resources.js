@@ -9,8 +9,8 @@ ServerEvents.recipes(event => {
     // Regolith dusts
     let regolithDustResources = [
         ["moon", ["moon_sand"], "diamond"],
-        ["mars", ["mars_sand"], "titanite"],
-        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "olivine"],
+        ["mars", ["mars_sand"], "olivine"],
+        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "titanite"],
         ["mercury", [], "cinnabar"],
         ["glacio", [], "sodalite"]
     ]
