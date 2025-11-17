@@ -4,7 +4,7 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("hexafluorosilicic_acid")
-        .fluid()
+        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
         .color(0xd00010)
         .components(GTMaterials.Hydrogen.multiply(2), GTMaterials.Silicon.multiply(1), GTMaterials.Fluorine.multiply(6))
 
@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // Processing line
     event.create("dirty_hexafluorosilicic_solution")
-        .fluid()
+        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
         .color(0xe00030)
         .components("hexafluorosilicic_acid", GTMaterials.Water.multiply(2), "aluminosilicate_residue")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
