@@ -2024,6 +2024,10 @@
 				"{moni.quest.726528BE5A1A6AC2.description1}"
 				""
 				"{moni.quest.726528BE5A1A6AC2.description2}"
+				""
+				"{moni.quest.726528BE5A1A6AC2.description3}"
+				""
+				"{moni.quest.726528BE5A1A6AC2.description4}"
 			]
 			disable_toast: true
 			hide_dependency_lines: true

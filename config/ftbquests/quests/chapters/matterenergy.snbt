@@ -636,7 +636,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4174A6C6403DD245"]
+			dependencies: [
+				"4174A6C6403DD245"
+				"72AFBEFCEAE86EC1"
+			]
 			description: [
 				"{moni.quest.680C4363C268B223.description1}"
 				""
@@ -701,10 +704,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"680C4363C268B223"
-				"133FB7996362498C"
-			]
+			dependencies: ["133FB7996362498C"]
 			description: ["{moni.quest.72AFBEFCEAE86EC1.description1}"]
 			id: "72AFBEFCEAE86EC1"
 			rewards: [{
