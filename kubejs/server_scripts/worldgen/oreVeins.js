@@ -388,6 +388,28 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    event.add("mars/phyllosilicate", vein => {
+        vein.weight(35)
+        vein.density(0.20)
+        vein.clusterSize(30)
+        vein.layer("mars")
+        vein.dimensions("ad_astra:mars")
+        vein.heightRangeUniform(0, 50)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Mica).size(2, 3))
+                .layer(l => l.weight(2).mat(GTMaterials.Talc).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Asbestos).size(1, 1))
+                .layer(l => l.weight(1).block(() => Blocks.CLAY).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Olivine).size(2, 2))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Olivine)
+            .placement("above")
+        )
+    })
+
     // Venus veins
     event.add("venus/tungstotitanite", vein => {
         vein.weight(40)
@@ -469,24 +491,22 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("venus/phyllosilicate", vein => {
-        vein.weight(30)
-        vein.density(0.20)
-        vein.clusterSize(30)
+    event.add("venus/garnet", vein => {
+        vein.weight(35)
+        vein.density(0.4)
+        vein.clusterSize(50)
         vein.layer("venus")
         vein.dimensions("ad_astra:venus")
-        vein.heightRangeUniform(0, 50)
+        vein.heightRangeUniform(40, 70)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Mica).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Talc).size(1, 2))
-                .layer(l => l.weight(2).mat(GTMaterials.Asbestos).size(1, 1))
-                .layer(l => l.weight(2).block(() => Blocks.CLAY).size(1, 2))
-                .layer(l => l.weight(1).mat(GTMaterials.Olivine).size(1, 1))
+                .layer(l => l.weight(3).mat(GTMaterials.GarnetRed).size(2, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.GarnetYellow).size(2, 3))
+                .layer(l => l.weight(2).mat(GTMaterials.Opal).size(2, 2))
             )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Soapstone)
+            .surfaceRock(GTMaterials.GarnetRed)
             .placement("above")
         )
     })
