@@ -12,6 +12,15 @@ ServerEvents.recipes(event => {
                 .updateMicroverse(2) // Hostile
                 .blacklistMicroverseParallels()
         })
+        microverse_mission(event, "2half", 1, 10, undefined, 100).forEach(builder => {
+            builder
+                .itemInputs("2x gtceu:industrial_tnt")
+                .inputFluids("minecraft:lava 4000")
+                .requiredMicroverse(1) // Normal
+                .damageRate(50)
+                .updateMicroverse(2) // Hostile
+                .blacklistMicroverseParallels()
+        })
     }
 
     microverse_mission(event, "2half", 1, undefined, undefined, 100).forEach(builder => {
