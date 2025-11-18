@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler("activated_hyperdynamic_ram_chip")
         .itemInputs("16x kubejs:hyperdynamic_ram_chip_base", "kubejs:optical_processing_unit", "4x gtceu:advanced_smd_transistor", "8x gtceu:fine_necrosiderite_wire")
-        .inputFluids("gtceu:advanced_soldering_alloy 288")
+        .inputFluids("gtceu:living_soldering_alloy 144")
         .itemOutputs("16x kubejs:hyperdynamic_ram_chip")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(300)
