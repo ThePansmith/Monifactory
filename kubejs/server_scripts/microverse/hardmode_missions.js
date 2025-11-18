@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         microverse_mission(event, "2half", 1, 10, undefined, 100).forEach(builder => {
             builder
                 .itemInputs("8x minecraft:tnt")
-                .inputFluids("minecraft:lava 4000")
+                .inputFluids("minecraft:lava 8000")
                 .requiredMicroverse(1) // Normal
                 .damageRate(50)
                 .updateMicroverse(2) // Hostile
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "minecraft:mossy_cobblestone",
             )
-            .inputFluids("minecraft:lava 4000")
+            .inputFluids("minecraft:lava 2000")
             .damageRate((doHostileMicroverse ? -30 : 0)) // heal microverse if hostile, damage if not
             .itemOutputs(
                 "64x minecraft:bone",
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "minecraft:mud",
             )
-            .inputFluids("minecraft:lava 4000")
+            .inputFluids("minecraft:lava 2000")
             .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "48x minecraft:slime_ball",
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "minecraft:redstone_block",
             )
-            .inputFluids("minecraft:lava 8000")
+            .inputFluids("minecraft:lava 4000")
             .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "16x minecraft:blaze_rod",
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "minecraft:netherrack",
             )
-            .inputFluids("minecraft:lava 8000")
+            .inputFluids("minecraft:lava 4000")
             .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "24x minecraft:ghast_tear",
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "minecraft:end_stone",
             )
-            .inputFluids("minecraft:lava 12000")
+            .inputFluids("minecraft:lava 6000")
             .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "16x enderio:enderman_head",
