@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     // Controller recipe
     event.recipes.gtceu.assembly_line("sculk_vat")
         .itemInputs("monilabs:cryolobus_casing", "gtceu:iv_fermenter", "gtceu:sterilizing_filter_casing", "2x #gtceu:circuits/zpm", "16x gtceu:petri_dish")
-        .inputFluids("gtceu:soldering_alloy 576", "gtceu:polybenzimidazole 288")
+        .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:polybenzimidazole 288")
         .itemOutputs("monilabs:sculk_vat")
         .duration(20 * 30)
         .EUt(GTValues.VA[GTValues.ZPM])

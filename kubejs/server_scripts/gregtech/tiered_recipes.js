@@ -39,7 +39,68 @@ const solder_rules = [
         return RegExp(/^gtceu:fluid_solidifier\/solidify_(advanced_|living_)?soldering_alloy_/).test(javaRecipe.getId())
     }, false, 0, 0],
 
-    // Remove IV+ recipes that use Liquid Tin
+    // UV+ recipes exclusively use Living Solder
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:soldering_alloy"
+                : v.fluid === "gtceu:soldering_alloy"
+            )
+        )
+        return eut > GTValues.V[GTValues.ZPM] && hasSolder
+    }, true, 3, 4],
+
+    // ZPM recipes can use Lead-Free Soldering alloy or Living Solder
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:soldering_alloy"
+                : v.fluid === "gtceu:soldering_alloy"
+            )
+        )
+        return eut > GTValues.V[GTValues.LuV] && hasSolder
+    }, true, 2, 4],
+
+    // IV+ recipes use Advanced Soldering Alloy
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:soldering_alloy"
+                : v.fluid === "gtceu:soldering_alloy"
+            )
+        )
+        return eut > GTValues.V[GTValues.EV] && hasSolder
+    }, true, 2, 3],
+
+    // EV recipes use Soldering Alloy or Lead-Free Soldering Alloy
+    // Would be [1, 3] if not for the fact that that creates an infinite loop
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:soldering_alloy"
+                : v.fluid === "gtceu:soldering_alloy"
+            )
+        )
+        return eut > GTValues.V[GTValues.HV] && hasSolder
+    }, false, 2, 3],
+
+    // Remove HV+ recipes that use Liquid Tin
     [(javaRecipe) => {
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
@@ -51,55 +112,8 @@ const solder_rules = [
                 : v.fluid === "gtceu:tin"
             )
         )
-        return eut > GTValues.V[GTValues.EV] && hasSolder
+        return eut > GTValues.V[GTValues.MV] && hasSolder
     }, true, 0, 0],
-
-    // Remove UV+ recipes that use Soldering Alloy
-    [(javaRecipe) => {
-        let recipe = JSON.parse(javaRecipe.json.toString())
-        let eut = recipe.tickInputs?.eu?.length
-            ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
-            i.content.value.some(v => "tag" in v
-                ? v.tag === "forge:soldering_alloy"
-                : v.fluid === "gtceu:soldering_alloy"
-            )
-        )
-        return eut > GTValues.V[GTValues.ZPM] && hasSolder
-    }, true, 2, 3],
-
-
-    // IV+ recipes that use Soldering Alloy get a recipe with Lead-Free Soldering Alloy
-    [(javaRecipe) => {
-        let recipe = JSON.parse(javaRecipe.json.toString())
-        let eut = recipe.tickInputs?.eu?.length
-            ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
-            i.content.value.some(v => "tag" in v
-                ? v.tag === "forge:soldering_alloy"
-                : v.fluid === "gtceu:soldering_alloy"
-            )
-        )
-        return eut > GTValues.V[GTValues.EV] && hasSolder
-    }, false, 2, 3],
-
-
-    // UV+ recipes that use Lead-Free Soldering alloy get a recipe with Living Solder
-    [(javaRecipe) => {
-        let recipe = JSON.parse(javaRecipe.json.toString())
-        let eut = recipe.tickInputs?.eu?.length
-            ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
-            i.content.value.some(v => "tag" in v
-                ? v.tag === "forge:advanced_soldering_alloy"
-                : v.fluid === "gtceu:advanced_soldering_alloy"
-            )
-        )
-        return eut > GTValues.V[GTValues.ZPM] && hasSolder
-    }, false, 3, 4],
 
     // Default behaviour: Do nothing
     [(javaRecipe) => {
