@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 12, 4, 90).forEach(builder => {
         builder
             .itemInputs("kubejs:field_stabilized_prismatic_pulsar_compound", "32x gtceu:infinity_ingot", "32x gtceu:meta_null_ingot")
-            .damageRate(750)
+            .damageRate(75)
             .itemOutputs("32x gtceu:monium_ingot")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
