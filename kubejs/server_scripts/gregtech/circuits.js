@@ -141,6 +141,27 @@ ServerEvents.recipes(event => {
             .CWUt(72)
             .EUt(GTValues.VA[GTValues.ZPM])
         )
+    // Same as above but with living solder
+    event.recipes.gtceu.assembly_line("wetware_mainframe_uhv/living_soldering_alloy")
+        .itemInputs(
+            "2x gtceu:tritanium_frame",
+            "2x gtceu:wetware_processor_computer",
+            "8x gtceu:advanced_smd_inductor",
+            "16x gtceu:advanced_smd_capacitor",
+            "12x gtceu:advanced_smd_diode",
+            "24x gtceu:ram_chip",
+            "4x gtceu:uhpic_chip",
+            "8x gtceu:cryolobus_double_wire",
+            "8x gtceu:europium_plate"
+        )
+        .inputFluids("gtceu:living_soldering_alloy 576", "gtceu:polybenzimidazole 1152")
+        .itemOutputs("gtceu:wetware_processor_mainframe")
+        .EUt(GTValues.VA[GTValues.ZPM]).duration(2000)
+        .stationResearch(b => b
+            .researchStack("gtceu:wetware_processor_computer")
+            .CWUt(72)
+            .EUt(GTValues.VA[GTValues.ZPM])
+        )
 
     event.recipes.gtceu.circuit_assembler("optical_processor")
         .itemInputs(
