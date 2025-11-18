@@ -72,6 +72,7 @@ ServerEvents.recipes(event => {
                 "24x minecraft:ghast_tear",
                 "48x kubejs:wither_bone",
                 "64x minecraft:magma_cream",
+                "32x minecraft:magma_cream"
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
