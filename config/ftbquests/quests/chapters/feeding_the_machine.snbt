@@ -195,13 +195,6 @@
 			x: -4.5d
 			y: -3.75d
 		}
-		{
-			id: "2EE7DC7022138129"
-			linked_quest: "70FD95AEA44548B0"
-			shape: "hexagon"
-			x: -6.5d
-			y: 0.25d
-		}
 	]
 	quests: [
 		{
@@ -741,6 +734,7 @@
 			dependencies: [
 				"01E542E1C9DAF5B4"
 				"22E50A6923EBF5CB"
+				"0B51A633811472A2"
 			]
 			description: [
 				"{moni.quest.1CF77095C203454F.description1}"

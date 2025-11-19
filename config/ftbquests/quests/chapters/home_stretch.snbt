@@ -120,6 +120,12 @@
 			x: 6.0d
 			y: -4.5d
 		}
+		{
+			id: "21A65BB10358D594"
+			linked_quest: "0B51A633811472A2"
+			x: -1.75d
+			y: -11.75d
+		}
 	]
 	quests: [
 		{
@@ -229,7 +235,10 @@
 			y: -8.75d
 		}
 		{
-			dependencies: ["483652BAEF59E125"]
+			dependencies: [
+				"483652BAEF59E125"
+				"0B51A633811472A2"
+			]
 			description: [
 				"{moni.quest.27EBB5AAF8A40F3D.description1}"
 				""
