@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // UHV+ Parallel Control Hatch
-    event.shaped("gtceu:uhv_uhv_parallel_hatch", [
+    event.shaped("monilabs:uhv_parallel_hatch", [
         "SCE",
         "CHC",
         "WCW"
@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
         W: "gtceu:hyperdegenerate_darconite_quadruple_wire"
     })
 
-    event.shaped("gtceu:uev_uev_parallel_hatch", [
+    event.shaped("monilabs:uev_parallel_hatch", [
         "SCE",
         "CHC",
         "WCW"
