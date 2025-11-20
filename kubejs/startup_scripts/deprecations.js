@@ -76,6 +76,11 @@ deprecateBlock("gtceu:advanced_microverse_projector", "monilabs:advanced_microve
 deprecateBlock("gtceu:advanced_microverse_projector_ii", "monilabs:elite_microverse_projector", "Advanced Microverse Projector II")
 deprecateBlock("gtceu:hyperbolic_microverse_projector", "monilabs:hyperbolic_microverse_projector", "Hyperbolic Microverse Projector")
 
+// Parallel Hatches
+deprecateBlock("gtceu:uhv_uhv_parallel_hatch", "monilabs:uhv_parallel_hatch", "Giga Parallel Hatch")
+
+deprecateBlock("gtceu:uev_uev_parallel_hatch", "monilabs:uev_parallel_hatch", "Omega Parallel Hatch")
+
 // Osmiridium/Iridosmine
 deprecateItem("gtceu:raw_iridosmineyes", "gtceu:raw_osmiridium", "Raw Iridosmine")
 deprecateItem("gtceu:raw_osmiridiumyes", "gtceu:raw_iridosmine", "Raw Osmiridium")
