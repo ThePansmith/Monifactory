@@ -172,10 +172,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced("kubejs:abyssal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 4000000 RF")))
     tooltip.addAdvanced("kubejs:hadal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 8000000 RF")))
 
-    // Parallel hatches
-    tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
-    tooltip.add("gtceu:uev_uev_parallel_hatch", Text.translatable("gtceu.omega_parallel_hatch.desc"))
-
     // Voltage Coils
     tooltip.add("kubejs:uhv_voltage_coil", Text.translatable("gtceu.uhv_voltage_coil.desc"))
     tooltip.add("kubejs:uev_voltage_coil", Text.translatable("gtceu.uev_voltage_coil.desc"))
