@@ -1444,7 +1444,7 @@
   "moni.quest.383FADC5E8BC4E91.title": "Brewery",
   "moni.quest.38791476E970C57D.description1": "&6Advanced SMD Components&r are required for &6Crystal, Wetware, and Optical Circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits.",
   "moni.quest.38791476E970C57D.description2": "All of these components require &9IV&r power and &6liquid PBI&r.",
-  "moni.quest.38791476E970C57D.description3": "The last SMD you'll unlock is the Capacitor, requiring &6Iridium&r and &6Osmium&r for &6Hss-S&r.",
+  "moni.quest.38791476E970C57D.description3": "The last SMD you'll unlock is the Capacitor, requiring &6Iridium&r and &6Osmium&r for &6HSS-S&r.",
   "moni.quest.38791476E970C57D.description4": "As with the normal SMD components, invest in an extremely robust automation system for these, as you won\u0027t stop needing them.",
   "moni.quest.38791476E970C57D.title": "&2Advanced SMD Components",
   "moni.quest.39394D5596FF8BC8.description1": "Any of these items will suck nearby items into your inventory.",
@@ -2711,6 +2711,7 @@
   "moni.quest.6DC635766CD40FFF.title": "&9RTM Alloy Coil Blocks",
   "moni.quest.6DEA5CE28A667453.description1": "Carry &3&l&o&neven more&r stuff.",
   "moni.quest.6DEA5CE28A667453.title": "&9Resonant Backpack",
+
   "moni.quest.6E06505BC7636985.description1": "Mainly used for decorational blocks. Still part of &eCobbleworks&r I guess.",
   "moni.quest.6E27637A9C94A0AA.description1": "Welcome to the &9IV&r Age!",
   "moni.quest.6E27637A9C94A0AA.description2": "In this age, you can start making Multiblock versions of most of your machines, delve into &aFission&r, and finish up the &3Platline&r.",
