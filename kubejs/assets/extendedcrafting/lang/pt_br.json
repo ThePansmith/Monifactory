@@ -1,12 +1,4 @@
 {
-    "block.extendedcrafting.flux_alternator": "Pilar de sculk",
-    "block.extendedcrafting.flux_crafter": "Carregador de sculk",
-    "block.extendedcrafting.auto_flux_crafter": "Carregador de sculk",
-    "container.extendedcrafting.flux_alternator": "Pilar de sculk",
-    "container.extendedcrafting.flux_crafter": "Carregamento de sculk",
-    "jei.category.extendedcrafting.flux_crafting": "Carregamento de sculk",
-    "config.jade.plugin_extendedcrafting.flux_crafter": "Info. do fabricador de fluxo",
-    "book.extendedcrafting.entry.flux_crafting": "Carregamento de Sculk",
-    "book.extendedcrafting.entry.flux_crafting.page.1": "O Carregamento de Sculk é fabricar usando tanto o poder da espera, quanto o poder da energia. Uma estrutura de Fabricação de Sculk consiste em um Carregador de Sculk e Pilares de Sculk. O carregador vai ser energizado pelos pilares. Quanto mais pilares você possuir, mais rápido será a fabricação.",
-    "book.extendedcrafting.entry.flux_crafting.page.2": "Os Pilares de Sculk podem ser colocados em qualquer lugar ao redor do Carregador de Sculk em um $(bold)raio de 3 blocos$(). Até mesmo em cima ou em baixo!"
-  }
+    "item.extendedcrafting.crystaltine_catalyst": "Diamond Catalyst",
+    "item.extendedcrafting.crystaltine_component": "Diamond Component"
+}
