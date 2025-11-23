@@ -56,7 +56,7 @@
     "item.ad_astra.ostrum_tank": "Tanque de Lumio",
     "item.ad_astra.calorite_tank": "Tanque de Criolobo",
     "info.ad_astra.oxygen_loader": "Utiliza el oxígeno de GregTech para llenar los trajes espaciales y tanques de gas.",
-    "item.ad_astra.steel_tank": "Black Steel Tank",
-    "item.ad_astra.steel_engine": "Black Steel Engine",
-    "biome.ad_astra.glacio_lush_caves": "Glacian Lush Caves"
+    "item.ad_astra.steel_tank": "",
+    "item.ad_astra.steel_engine": "",
+    "biome.ad_astra.glacio_lush_caves": ""
 }
