@@ -465,11 +465,19 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
-			tasks: [{
-				id: "485B18F9D8C07C54"
-				item: "gtceu:liquid_nether_air_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "485B18F9D8C07C54"
+					item: "gtceu:liquid_nether_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64B2FB57C29031C6"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.45DD07F2BB9C6A59.title}"
 			x: -2.5d
 			y: 4.5d
