@@ -773,7 +773,7 @@
 			}]
 			title: "{moni.quest.0B51A633811472A2.title}"
 			x: -3.0d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
