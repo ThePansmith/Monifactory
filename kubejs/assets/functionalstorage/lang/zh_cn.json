@@ -1,8 +1,8 @@
 {
-    "item.functionalstorage.copper_upgrade": "黄铜升级",
-    "item.functionalstorage.gold_upgrade": "钢升级",
-    "item.functionalstorage.diamond_upgrade": "铝升级",
-    "item.functionalstorage.netherite_upgrade": "不锈钢升级",
-    "block.functionalstorage.storage_controller": "抽屉控制器",
-    "block.functionalstorage.framed_storage_controller": "镶框抽屉控制器"
+  "item.functionalstorage.copper_upgrade": "黄铜升级",
+  "item.functionalstorage.gold_upgrade": "钢升级",
+  "item.functionalstorage.diamond_upgrade": "铝升级",
+  "item.functionalstorage.netherite_upgrade": "不锈钢升级",
+  "block.functionalstorage.storage_controller": "抽屉控制器",
+  "block.functionalstorage.framed_storage_controller": "镶框抽屉控制器"
 }

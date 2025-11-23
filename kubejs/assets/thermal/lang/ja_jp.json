@@ -7,50 +7,66 @@
     "item.thermal.upgrade_augment_3.desc": "基本属性を改良し、オーグメントを拡張します。",
     "item.thermal.upgrade_augment_4": "シグナルム統合コンポーネント",
     "item.thermal.upgrade_augment_4.desc": "基本属性を改良し、オーグメントを拡張します。",
+
     "info.thermal.dynamo_stirling.0": "固形燃料からRFを生成します。",
     "info.thermal.dynamo_stirling.1": "かまどの燃料はほとんど使用できます。",
+
     "info.thermal.machine_bottler.0": "容器に液体を詰めます。",
     "info.thermal.machine_bottler.1": "特定の飲み物を摂取するために必要となります。",
     "info.thermal.machine_bottler.2": "さわやか",
+
     "info.thermal.machine_brewer.0": "ポーションを醸造して液体を変質させます。",
     "info.thermal.machine_brewer.1": "連続して醸造することができます。",
     "info.thermal.machine_brewer.2": "瓶は不要です！",
+
     "info.thermal.machine_centrifuge.0": "アイテムをクラフト前の素材へと分離します。",
     "info.thermal.machine_centrifuge.1": "幾つかのアイテムは流体も分離します。",
     "info.thermal.machine_centrifuge.2": "勝利へのスピン",
+
     "info.thermal.machine_chiller.0": "アイテムや液体を急速冷凍します。",
     "info.thermal.machine_chiller.1": "流体の場合金型で製品の形状を決めることができます。",
     "info.thermal.machine_chiller.2": "ﾌﾞﾙﾙｯ",
+
     "info.thermal.machine_crafter.0": "グリッドにアイテムを配置してクラフトレシピを決めます。",
     "info.thermal.machine_crafter.1": "あとは確認ボタンを押すだけ！",
     "info.thermal.machine_crafter.2": "全てのレシピが使えるとは限りません。",
+
     "info.thermal.machine_crucible.0": "高熱により固体を液体に変換します。",
     "info.thermal.machine_crucible.1": "上位のブロックの作成に有用です。",
     "info.thermal.machine_crucible.2": "小さい子供やペットから離してご使用ください。",
+
     "info.thermal.machine_crystallizer.0": "結晶構造を成長・改質します。",
     "info.thermal.machine_crystallizer.1": "流体と少なくとも一つのアイテムが必要です。",
     "info.thermal.machine_crystallizer.2": "かがやけ、クレイジーダイヤモンド",
+
     "info.thermal.machine_furnace.0": "RFでアイテムを精錬します。",
     "info.thermal.machine_furnace.1": "食べ物の調理はとても少ないRFで済みます。",
     "info.thermal.machine_furnace.2": "もぐもぐもぐ",
+
     "info.thermal.machine_insolator.0": "RFを使用して栄養と光を植物に注入します。",
     "info.thermal.machine_insolator.1": "正確には有機農業ではありません。",
     "info.thermal.machine_insolator.2": "きれいな白色灯！",
+
     "info.thermal.machine_press.0": "アイテムの絞り・歪曲加工を行います。",
     "info.thermal.machine_press.1": "製造金型で製品の形状を指定できます。",
     "info.thermal.machine_press.2": "汎用性に富み満足度が高いです。",
+
     "info.thermal.machine_pulverizer.0": "打撃によって素材を破砕します。",
     "info.thermal.machine_pulverizer.1": "アイテムの加工や鉱石処理に非常に有用です。",
     "info.thermal.machine_pulverizer.2": "典型的な不可逆処理です。",
+
     "info.thermal.machine_pyrolyzer.0": "高温で固体を分解します。",
     "info.thermal.machine_pyrolyzer.1": "燃料生成に非常に有用です。",
     "info.thermal.machine_pyrolyzer.2": "お触り禁止",
+
     "info.thermal.machine_refinery.0": "様々な流体を精製します。",
     "info.thermal.machine_refinery.1": "幾つかの流体を精製すると、副産物として固体の素材ができます。",
     "info.thermal.machine_refinery.2": "生成物は飲めるかもしれないし、飲めないかもしれない。",
+
     "info.thermal.machine_sawmill.0": "原木を板材にカットし、木製品の再加工を行います。",
     "info.thermal.machine_sawmill.1": "木材の取り扱いにとても便利です。",
     "info.thermal.machine_sawmill.2": "手に気を付けてください。",
+
     "info.thermal.machine_smelter.0": "高温を要する、金属などの物質を融解させます。",
     "info.thermal.machine_smelter.1": "鉱石処理や上位のブロックの作成に有用です。",
     "info.thermal.machine_smelter.2": "食べ物は絶対に調理できません。"

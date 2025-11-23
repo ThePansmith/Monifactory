@@ -1,11 +1,11 @@
 {
-    "item.laserio.energy_overclocker_card_tier_1": "",
-    "item.laserio.energy_overclocker_card_tier_2": "",
-    "item.laserio.energy_overclocker_card_tier_3": "",
-    "item.laserio.energy_overclocker_card_tier_4": "",
-    "item.laserio.energy_overclocker_card_tier_5": "",
-    "item.laserio.energy_overclocker_card_tier_6": "",
-    "item.laserio.energy_overclocker_card_tier_7": "",
-    "item.laserio.energy_overclocker_card_tier_8": "",
-    "item.laserio.energy_overclocker_card_tier_9": ""
+    "item.laserio.energy_overclocker_card_tier_1": "Conductive Iron FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_2": "Energetic Alloy FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_3": "Vibrant Alloy FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_4": "End Steel FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_5": "Lumium FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_6": "Signalum FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_7": "Enderium FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_8": "Cryolobus FE Overclocker",
+    "item.laserio.energy_overclocker_card_tier_9": "Sculk Superconductor FE Overclocker"
 }

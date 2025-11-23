@@ -7,50 +7,66 @@
     "item.thermal.upgrade_augment_3.desc": "提升基础属性。其它升级也可能由此得到进一步增强。",
     "item.thermal.upgrade_augment_4": "信素整合组件",
     "item.thermal.upgrade_augment_4.desc": "提升基础属性。其它升级也可能由此得到进一步增强。",
+
     "info.thermal.dynamo_stirling.0": "燃烧固体燃料，产出红石通量。",
     "info.thermal.dynamo_stirling.1": "大部分在熔炉里能烧的东西，在这儿也能行。",
+
     "info.thermal.machine_bottler.0": "将流体灌入容器中。",
     "info.thermal.machine_bottler.1": "如果你想来点好喝的，那必须备一台这种机器。",
     "info.thermal.machine_bottler.2": "满上！",
+
     "info.thermal.machine_brewer.0": "酿造药水，灌注流体。",
     "info.thermal.machine_brewer.1": "你可能会需要摆上那么一整排，毕竟药水酿造都属于流程工艺。",
     "info.thermal.machine_brewer.2": "但是可别想当然地把玻璃瓶子往里塞。",
+
     "info.thermal.machine_centrifuge.0": "通过高速旋转离心技术将物品分离成其构成材料。",
     "info.thermal.machine_centrifuge.1": "一些物品能离心出流体形式的材料。",
     "info.thermal.machine_centrifuge.2": "转圈圈，赢大奖！",
+
     "info.thermal.machine_chiller.0": "快速冻结物品与流体。",
     "info.thermal.machine_chiller.1": "可以利用铸模来定型。",
     "info.thermal.machine_chiller.2": "嘶———冷……冷死了……",
+  
     "info.thermal.machine_crafter.0": "摆放物品，编写配方，开始合成。",
     "info.thermal.machine_crafter.1": "点击确认按钮，然后静待收成！",
     "info.thermal.machine_crafter.2": "只保证能处理*大部分*合成配方。",
+
     "info.thermal.machine_crucible.0": "用高温将物品熔化/融化为流体。",
     "info.thermal.machine_crucible.1": "在获取更“高级”的方块时非常有用。",
     "info.thermal.machine_crucible.2": "注意：摆放在幼童与宠物无法触及处。",
+  
     "info.thermal.machine_crystallizer.0": "生长并重构晶体结构。",
     "info.thermal.machine_crystallizer.1": "需要流体和至少一个物品。",
     "info.thermal.machine_crystallizer.2": "闪耀吧，你这个疯狂钻石。",
+
     "info.thermal.machine_furnace.0": "电力驱动的熔炉。",
     "info.thermal.machine_furnace.1": "烹制食物时耗能更少。",
     "info.thermal.machine_furnace.2": "窟哧窟哧窟哧……嗝。",
+  
     "info.thermal.machine_insolator.0": "用红石通量为植物灌注养分与阳光。",
     "info.thermal.machine_insolator.1": "好像算不上是个“有机”农场吧。",
     "info.thermal.machine_insolator.2": "炽热的光明！",
+  
     "info.thermal.machine_press.0": "对物品进行冲压成型处理。",
     "info.thermal.machine_press.1": "可以使用冲压模具来定制部件形状。",
     "info.thermal.machine_press.2": "多才多艺，包你满意！",
+
     "info.thermal.machine_pulverizer.0": "将物品进行粉碎处理来获取更多产物。",
     "info.thermal.machine_pulverizer.1": "用来处理矿石或转化材料再好不过了。",
     "info.thermal.machine_pulverizer.2": "一般情况下，磨出来的粉是不可能复原的了。",
+  
     "info.thermal.machine_pyrolyzer.0": "在高温下分解固态物质。",
     "info.thermal.machine_pyrolyzer.1": "纯化燃料的利器",
     "info.thermal.machine_pyrolyzer.2": "别动手动脚的。",
+  
     "info.thermal.machine_refinery.0": "将流体精炼为其它材料。",
     "info.thermal.machine_refinery.1": "有些流体在精炼过程中会凝聚出固体产物。",
     "info.thermal.machine_refinery.2": "这么炼出来的东西能喝还是不能喝，你自己得有判断。",
+
     "info.thermal.machine_sawmill.0": "将原木切割成木板并额外输出一些副产物。",
     "info.thermal.machine_sawmill.1": "榨干树木的每一分价值。",
     "info.thermal.machine_sawmill.2": "小心手！",
+  
     "info.thermal.machine_smelter.0": "熔炼对温度有较高需求的金属等物品。",
     "info.thermal.machine_smelter.1": "适用于处理矿石，用以制造进阶方块。",
     "info.thermal.machine_smelter.2": "你是有多么想不开，才会把吃的往里塞。"
