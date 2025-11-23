@@ -581,5 +581,8 @@
     "material.gtceu.infused_residue": "Infused Residue",
     "material.gtceu.starry_dew": "Starry Dew",
     "material.gtceu.mystic_tar": "Mystic Tar",
-    "material.gtceu.radiant_dew": "Radiant Dew"
+    "material.gtceu.radiant_dew": "Radiant Dew",
+    "gtceu.multiblock.antimatter_manipulator.tooltip.2": "§7These §franged recipes§7 §dconsume§7 and §bproduce§7 different quantities per run.",
+    "gtceu.multiblock.antimatter_manipulator.tooltip.1": "§7Most recipes require §franged amounts§7 of §freactants§7 to refine into new types of §dantimatter.",
+    "gtceu.multiblock.antimatter_manipulator.tooltip.0": "§7Uses the §dchaotic§7 power of §5antimatter§7 for new heights of §5power."
 }

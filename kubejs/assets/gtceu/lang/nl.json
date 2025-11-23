@@ -586,5 +586,8 @@
     "gtceu.omega_parallel_hatch.desc": "§7Allows to run up to 4096 recipes in parallel",
     "material.gtceu.sunnarium": "Sunnarium",
     "material.gtceu.enriched_sunnarium": "Enriched Sunnarium",
-    "material.gtceu.omnic_acid": "Omnic Acid"
+    "material.gtceu.omnic_acid": "Omnic Acid",
+    "gtceu.multiblock.antimatter_manipulator.tooltip.2": "§7These §franged recipes§7 §dconsume§7 and §bproduce§7 different quantities per run.",
+    "gtceu.multiblock.antimatter_manipulator.tooltip.1": "§7Most recipes require §franged amounts§7 of §freactants§7 to refine into new types of §dantimatter.",
+    "gtceu.multiblock.antimatter_manipulator.tooltip.0": "§7Uses the §dchaotic§7 power of §5antimatter§7 for new heights of §5power."
 }
