@@ -243,11 +243,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "1DDC0F9C01889F1E"
-				item: "gtceu:bacterial_sludge_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1DDC0F9C01889F1E"
+					item: "gtceu:bacterial_sludge_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B3866629D62E0F1"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.1AC91A3E05215569.title}"
 			x: 1.25d
 			y: 1.25d
@@ -267,11 +275,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "43383D2F3008596B"
-				item: "gtceu:mutagen_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "43383D2F3008596B"
+					item: "gtceu:mutagen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7926B6762D5A1A26"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.35D128D56DAFDFAA.title}"
 			x: 0.25d
 			y: 1.25d
@@ -295,11 +311,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "25516F711598DF6D"
-				item: "gtceu:sterilized_growth_medium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "25516F711598DF6D"
+					item: "gtceu:sterilized_growth_medium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B9EC715FC008008"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.2F6EC962007FA9FB.title}"
 			x: -0.75d
 			y: 1.25d
@@ -763,14 +787,24 @@
 		{
 			dependencies: ["0F6B344C265D1FBB"]
 			description: ["{moni.quest.0B51A633811472A2.description1}"]
+			icon: "gtceu:living_soldering_alloy_bucket"
 			id: "0B51A633811472A2"
 			shape: "hexagon"
 			subtitle: "{moni.quest.0B51A633811472A2.subtitle}"
-			tasks: [{
-				id: "11D735664F6DB251"
-				item: "gtceu:living_soldering_alloy_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "11D735664F6DB251"
+					item: "gtceu:living_soldering_alloy_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CC9E1168FF66AB9"
+					item: "gtceu:living_soldering_alloy_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.0B51A633811472A2.title}"
 			x: -3.0d
 			y: 3.5d
@@ -850,6 +884,7 @@
 		{
 			dependencies: ["1CA3A00393EDD648"]
 			description: ["{moni.quest.7D4B29BA4D8CB153.description1}"]
+			icon: "gtceu:sculk_bucket"
 			id: "7D4B29BA4D8CB153"
 			rewards: [{
 				id: "58B2869B54067EE8"
@@ -858,11 +893,19 @@
 			}]
 			shape: "hexagon"
 			subtitle: "{moni.quest.7D4B29BA4D8CB153.subtitle}"
-			tasks: [{
-				id: "7795E782E2941DB5"
-				item: "gtceu:sculk_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7795E782E2941DB5"
+					item: "gtceu:sculk_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B249466F14B15B4"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.7D4B29BA4D8CB153.title}"
 			x: 3.75d
 			y: 2.5d
@@ -1117,6 +1160,7 @@
 				""
 				"{moni.quest.12E06D4D898F3E58.description3}"
 			]
+			icon: "gtceu:bacteria_bucket"
 			id: "12E06D4D898F3E58"
 			rewards: [{
 				id: "002122E2C7652B0D"
@@ -1124,11 +1168,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "3717795A52860482"
-				item: "gtceu:bacteria_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3717795A52860482"
+					item: "gtceu:bacteria_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "25A2B1EE926E3F90"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.12E06D4D898F3E58.title}"
 			x: 2.25d
 			y: 1.25d
@@ -1237,13 +1289,22 @@
 				""
 				"{moni.quest.7FA6B36DCE648C66.description2}"
 			]
+			icon: "gtceu:hadal_sculk_bucket"
 			id: "7FA6B36DCE648C66"
 			shape: "hexagon"
-			tasks: [{
-				id: "275D59A2870C1EBB"
-				item: "gtceu:hadal_sculk_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "275D59A2870C1EBB"
+					item: "gtceu:hadal_sculk_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B752559E1E62440"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.7FA6B36DCE648C66.title}"
 			x: -2.25d
 			y: 10.25d

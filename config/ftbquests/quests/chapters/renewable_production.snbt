@@ -73,10 +73,19 @@
 			id: "500B77982B9CDF9B"
 			optional: true
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.extractor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
-			tasks: [{
-				id: "6B06F7499D051242"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "231370C8AD261AE8"
+					item: "thermal:ender_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "25D0100456A15524"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.500B77982B9CDF9B.title}"
 			x: -8.5d
 			y: 6.5d
@@ -153,10 +162,19 @@
 			icon: "gtceu:concrete_bucket"
 			id: "7F165C2BCCCBA565"
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.mixer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
-			tasks: [{
-				id: "0D045E8E928B8757"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "142F150D5A05D7FE"
+					item: "gtceu:concrete_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7A609D29572FE137"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.7F165C2BCCCBA565.title}"
 			x: 9.0d
 			y: -9.5d
@@ -248,10 +266,19 @@
 			icon: "minecraft:water_bucket"
 			id: "4BC0A5F24E5837ED"
 			subtitle: "{moni.quest.water.subtitle}"
-			tasks: [{
-				id: "7070DC4C26103D4B"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "455987E6396919A1"
+					item: "minecraft:water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "05C8F0728F992606"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{block.minecraft.water}"
 			x: 9.0d
 			y: -8.0d
@@ -318,10 +345,19 @@
 			]
 			icon: "minecraft:lava_bucket"
 			id: "36100ACD3655DAFF"
-			tasks: [{
-				id: "485DD9829B640F9B"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3BEF917609AB7B4B"
+					item: "minecraft:lava_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "49671B99CAF250CF"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{block.minecraft.lava}"
 			x: 7.5d
 			y: -3.5d
@@ -667,10 +703,19 @@
 			id: "447E9501E57DA010"
 			optional: true
 			subtitle: "{moni.quest.water.subtitle}"
-			tasks: [{
-				id: "3E5B4CD1CB1ED343"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3D88A8072F2B5285"
+					item: "minecraft:water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "62EA98351219BCF2"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{block.minecraft.water}"
 			x: -2.5d
 			y: 2.0d
@@ -1060,13 +1105,22 @@
 		{
 			dependencies: ["2BF1E9CC0D7F7C91"]
 			description: ["{moni.quest.519389755420A7A8.description1}"]
+			icon: "gtceu:glue_bucket"
 			id: "519389755420A7A8"
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},\".\"]"
-			tasks: [{
-				id: "48CAAA4DA3F8281C"
-				item: "gtceu:glue_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "48CAAA4DA3F8281C"
+					item: "gtceu:glue_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5F873954A02F0209"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 3.5d
 			y: 7.5d
 		}
@@ -1076,25 +1130,43 @@
 				"1FEC7E9025F6277A"
 			]
 			description: ["{moni.quest.3B1873913255E7C0.description1}"]
+			icon: "gtceu:biomass_bucket"
 			id: "3B1873913255E7C0"
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.brewery\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
-			tasks: [{
-				id: "64C7D02CF6242D24"
-				item: "gtceu:biomass_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "64C7D02CF6242D24"
+					item: "gtceu:biomass_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "044264CD41C23764"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 8.0d
 			y: 4.5d
 		}
 		{
 			description: ["{moni.quest.water.description}"]
+			icon: "minecraft:water_bucket"
 			id: "2AC7A8036CA65AF3"
 			subtitle: "{moni.quest.water.subtitle}"
-			tasks: [{
-				id: "66EE299E0F4A6BF8"
-				item: "minecraft:water_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "66EE299E0F4A6BF8"
+					item: "minecraft:water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "44E8278736719DAE"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{block.minecraft.water}"
 			x: 8.0d
 			y: 3.0d
@@ -1159,13 +1231,22 @@
 		{
 			dependencies: ["3B1873913255E7C0"]
 			description: ["{moni.quest.60A7102F5BA0DE19.description1}"]
+			icon: "gtceu:ethanol_bucket"
 			id: "60A7102F5BA0DE19"
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.distillery\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
-			tasks: [{
-				id: "794EFF38BC2B0474"
-				item: "gtceu:ethanol_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "794EFF38BC2B0474"
+					item: "gtceu:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "69AB85ED2AAB7D29"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 9.5d
 			y: 4.5d
 		}
@@ -1201,14 +1282,23 @@
 		{
 			dependencies: ["0E8C258BD7E36154"]
 			description: ["{moni.quest.57C389A59CA5E00F.description1}"]
+			icon: "gtceu:charcoal_byproducts_bucket"
 			id: "57C389A59CA5E00F"
 			size: 1.25d
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
-			tasks: [{
-				id: "06604A48AED2B19B"
-				item: "gtceu:charcoal_byproducts_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "06604A48AED2B19B"
+					item: "gtceu:charcoal_byproducts_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "68C4CAB6B5F7F417"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 2.5d
 			y: 1.5d
 		}

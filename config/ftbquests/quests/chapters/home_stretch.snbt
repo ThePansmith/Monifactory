@@ -1022,14 +1022,23 @@
 		{
 			dependencies: ["5A31EEF439212D6E"]
 			description: ["{moni.quest.0E9B96B17D140B99.description1}"]
+			icon: "gtceu:polyether_ether_ketone_bucket"
 			id: "0E9B96B17D140B99"
 			shape: "hexagon"
 			subtitle: "{moni.quest.0E9B96B17D140B99.subtitle}"
-			tasks: [{
-				id: "6B5B6CBB315FBB39"
-				item: "gtceu:polyether_ether_ketone_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6B5B6CBB315FBB39"
+					item: "gtceu:polyether_ether_ketone_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "256B03204F1D295D"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.0E9B96B17D140B99.title}"
 			x: 5.25d
 			y: -8.25d
