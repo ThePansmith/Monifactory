@@ -7,66 +7,50 @@
     "item.thermal.upgrade_augment_3.desc": "Melhora atributos base. Como resultado, outros aumentos podem se tornar mais efetivos.",
     "item.thermal.upgrade_augment_4": "Componentes integrais de signálio",
     "item.thermal.upgrade_augment_4.desc": "Melhora atributos base. Como resultado, outros aumentos podem se tornar mais efetivos.",
-
     "info.thermal.dynamo_stirling.0": "Gera Fluxo de Redstone com combustíveis sólidos.",
     "info.thermal.dynamo_stirling.1": "A maioria das coisas que funcionam em uma Fornalha também funcionam aqui.",
-
     "info.thermal.machine_bottler.0": "Enche recipientes com fluidos.",
     "info.thermal.machine_bottler.1": "Isto é necessário para consumir certas bebidas.",
     "info.thermal.machine_bottler.2": "Refrescante!",
-
     "info.thermal.machine_brewer.0": "Prepara poções e imbui fluidos.",
     "info.thermal.machine_brewer.1": "Ideal ter algumas destas em uma coluna.",
     "info.thermal.machine_brewer.2": "Garrafas não incluídas.",
-
     "info.thermal.machine_centrifuge.0": "Separa itens em seus componentes.",
     "info.thermal.machine_centrifuge.1": "Alguns itens serão processados em um componente líquido.",
     "info.thermal.machine_centrifuge.2": "Gire para vencer!",
-
     "info.thermal.machine_chiller.0": "Rapidamente congela itens e fluidos.",
     "info.thermal.machine_chiller.1": "Um molde de formação pode ser usado com fluidos para determinar a saída.",
-    "info.thermal.machine_chiller.2": "Brrr!",
-
+    "info.thermal.machine_chiller.2": "",
     "info.thermal.machine_crafter.0": "Coloque itens na malha para definir uma receita.",
     "info.thermal.machine_crafter.1": "Simplesmente pressione o botão de confirmação e fique tranquilo!",
     "info.thermal.machine_crafter.2": "Nem todas as receitas são válidas.",
-
     "info.thermal.machine_crucible.0": "Transforma materiais sólidos em fluidos, em uma alta temperatura.",
     "info.thermal.machine_crucible.1": "Muito útil para criar blocos avançados.",
     "info.thermal.machine_crucible.2": "Mantenha longe de crianças e pets.",
-
     "info.thermal.machine_crystallizer.0": "Cresce e reforma estruturas cristalinas.",
     "info.thermal.machine_crystallizer.1": "Precisa de um fluido e pelo menos um item.",
     "info.thermal.machine_crystallizer.2": "Minha joia rara.",
-
     "info.thermal.machine_furnace.0": "Derrete coisas usando Fluxo de Redstone.",
     "info.thermal.machine_furnace.1": "Usa pouca energia para esquentar comida.",
-    "info.thermal.machine_furnace.2": "Om nom nom.",
-
+    "info.thermal.machine_furnace.2": "",
     "info.thermal.machine_insolator.0": "Infunde nutrientes e luz em plantas usando Fluxo de Redstone.",
     "info.thermal.machine_insolator.1": "Não exatamente agricultura 'orgânica'.",
     "info.thermal.machine_insolator.2": "Incandescentemente glorioso!",
-
     "info.thermal.machine_press.0": "Pressiona e deforma itens.",
     "info.thermal.machine_press.1": "Pode usar um molde empacotador para determinar a saída.",
     "info.thermal.machine_press.2": "Versátil e satisfatório!",
-
     "info.thermal.machine_pulverizer.0": "Esmaga coisas em pedaços.",
     "info.thermal.machine_pulverizer.1": "Útil para processar minérios ou converter itens.",
     "info.thermal.machine_pulverizer.2": "Tipicamente, isto não é reversível.",
-
     "info.thermal.machine_pyrolyzer.0": "Decompõe sólidos com altas temperaturas.",
     "info.thermal.machine_pyrolyzer.1": "Muito útil para purificar combustíveis.",
     "info.thermal.machine_pyrolyzer.2": "Não me toque.",
-
     "info.thermal.machine_refinery.0": "Refina diversos fluidos em outros produtos.",
     "info.thermal.machine_refinery.1": "Alguns fluidos podem ou não gerar um componente sólido.",
     "info.thermal.machine_refinery.2": "Os produtos podem ou não ser próprios para consumo.",
-
     "info.thermal.machine_sawmill.0": "Corta troncos em tábuas e reprocessa objetos de madeira.",
     "info.thermal.machine_sawmill.1": "Muito útil para aproveitar o máximo de uma árvore.",
     "info.thermal.machine_sawmill.2": "Cuidado com as mãos.",
-
     "info.thermal.machine_smelter.0": "Funde metais e coisas que precisam de altas temperaturas.",
     "info.thermal.machine_smelter.1": "Útil para processar minérios e criar blocos avançados.",
     "info.thermal.machine_smelter.2": "Não serve para cozinhar alimentos."
