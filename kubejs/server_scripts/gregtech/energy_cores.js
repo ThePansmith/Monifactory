@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.discharger("kubejs:empty_hadal_energy_core")
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:neutronium_plate", "8x gtceu:omnium_bolt", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
-        .inputFluids("gtceu:advanced_soldering_alloy 576")
+        .inputFluids("gtceu:living_soldering_alloy 288")
         .itemOutputs("kubejs:empty_hadal_energy_core")
         .duration(10)
 

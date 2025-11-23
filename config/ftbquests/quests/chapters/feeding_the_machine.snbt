@@ -773,7 +773,7 @@
 			}]
 			title: "{moni.quest.0B51A633811472A2.title}"
 			x: -3.0d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1199,6 +1199,7 @@
 				"6ABD83B58FADD4DF"
 				"7FA6B36DCE648C66"
 				"22E50A6923EBF5CB"
+				"0B51A633811472A2"
 			]
 			description: [
 				"{moni.quest.738A141D31AD7CE3.description1}"
