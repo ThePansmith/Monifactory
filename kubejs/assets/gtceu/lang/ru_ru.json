@@ -569,5 +569,17 @@
     "material.gtceu.manganese_oxide": "Manganese Oxide",
     "gtceu.uev_voltage_coil.desc": "Supreme Coil",
     "gtceu.uhv_voltage_coil.desc": "Legendary Coil",
-    "material.gtceu.ferrous_oxide": "Ferrous Oxide"
+    "material.gtceu.ferrous_oxide": "Ferrous Oxide",
+    "material.gtceu.transcendental_matrix": "Трансцендентальная матрица",
+    "gtceu.jei.ore_vein.venus/phyllosilicate": "Филлосиликатная жила",
+    "material.gtceu.radiant_blend": "Сияющая смесь",
+    "material.gtceu.sunny_dew": "Sunny Dew",
+    "material.gtceu.transcendental_will": "Transcendental Will",
+    "material.gtceu.mystic_essence": "Mystic Essence",
+    "material.gtceu.supercharged_powder": "Supercharged Powder",
+    "material.gtceu.infused_oils": "Infused Oil",
+    "material.gtceu.infused_residue": "Infused Residue",
+    "material.gtceu.starry_dew": "Starry Dew",
+    "material.gtceu.mystic_tar": "Мистическая смола",
+    "material.gtceu.radiant_dew": "Radiant Dew"
 }
