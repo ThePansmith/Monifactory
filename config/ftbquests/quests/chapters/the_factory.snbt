@@ -2712,7 +2712,13 @@
 		}
 		{
 			dependencies: ["1BC6DDC2D50F9C46"]
-			description: ["{moni.quest.114B300F56E48351.description1}"]
+			description: [
+				"{moni.quest.114B300F56E48351.description1}"
+				""
+				"{moni.quest.114B300F56E48351.description2}"
+				""
+				"{moni.quest.114B300F56E48351.description3}"
+			]
 			id: "114B300F56E48351"
 			shape: "hexagon"
 			tasks: [{
