@@ -327,13 +327,6 @@ ServerEvents.recipes(event => {
         .duration(84)
         .EUt(15)
 
-    event.recipes.gtceu.chemical_reactor("kubejs:ender_star")
-        .itemInputs("minecraft:nether_star")
-        .inputFluids("enderio:dew_of_the_void 8000")
-        .itemOutputs("kubejs:ender_star")
-        .duration(2000)
-        .EUt(400)
-
     // Crafter
     event.replaceInput({ id: "enderio:crafter"}, "#forge:ingots/iron", "kubejs:resonating_crystal")
     event.replaceInput({ id: "enderio:crafter"}, "enderio:iron_gear", "enderio:vibrant_gear")
