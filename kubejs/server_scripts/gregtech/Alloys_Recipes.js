@@ -101,47 +101,57 @@ ServerEvents.recipes(event => {
 // Change base GT alloy recipes
 ServerEvents.recipes(event => {
     // Different Black Steel Recipe. ABS has both regular & advanced recipe, each with a noble gas version.
+    const cokeOptions = [
+        "coke_gem",
+        "coke_dust"
+    ]
+
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__black_steel" })
     event.remove({ id: "gtceu:mixer/black_steel" })
 
-    event.recipes.gtceu.mixer("kubejs:black_steel_dust")
-        .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x gtceu:coke_gem")
-        .itemOutputs("9x gtceu:black_steel_dust")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
+    cokeOptions.forEach(cokeVariant => {
+        event.recipes.gtceu.mixer("kubejs:black_steel_dust_" + cokeVariant)
+            .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x gtceu:" + cokeVariant)
+            .itemOutputs("9x gtceu:black_steel_dust")
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.LV])
+    })
 
     event.remove({ id: "gtceu:alloy_blast_smelter/black_steel" })
     event.remove({ id: "gtceu:alloy_blast_smelter/black_steel_gas" })
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel")
-        .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x gtceu:coke_gem")
-        .circuit(3)
-        .outputFluids(Fluid.of("gtceu:molten_black_steel", 1296))
-        .duration(112.5 * 20 * 9 * 0.75 + 12.5) // 760s
-        .EUt(GTValues.VA[GTValues.MV])
-        .blastFurnaceTemp(1200)
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_gas")
-        .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x gtceu:coke_gem")
-        .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
-        .circuit(13)
-        .outputFluids(Fluid.of("gtceu:molten_black_steel", 1296))
-        .duration((112.5 * 20 * 9 * 0.75 + 12.5) * 0.67) // 509.2s
-        .EUt(GTValues.VA[GTValues.MV])
-        .blastFurnaceTemp(1200)
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate")
-        .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x gtceu:coke_gem")
-        .circuit(4)
-        .outputFluids(Fluid.of("gtceu:molten_black_steel", 6480))
-        .duration(112.5 * 20 * 45 * 0.75 + 12.5 * 5) // 3800s
-        .EUt(GTValues.VHA[GTValues.HV])
-        .blastFurnaceTemp(1200)
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_gas")
-        .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x gtceu:coke_gem")
-        .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
-        .circuit(14)
-        .outputFluids(Fluid.of("gtceu:molten_black_steel", 6480))
-        .duration((112.5 * 20 * 45 * 0.75 + 12.5 * 5) * 0.67) // 2546s
-        .EUt(GTValues.VHA[GTValues.HV])
-        .blastFurnaceTemp(1200)
+
+    cokeOptions.forEach(cokeVariant => {
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_" + cokeVariant)
+            .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x gtceu:" + cokeVariant)
+            .circuit(3)
+            .outputFluids(Fluid.of("gtceu:molten_black_steel", 1296))
+            .duration(112.5 * 20 * 9 * 0.75 + 12.5) // 760s
+            .EUt(GTValues.VA[GTValues.MV])
+            .blastFurnaceTemp(1200)
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_gas_" + cokeVariant)
+            .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x gtceu:" + cokeVariant)
+            .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
+            .circuit(13)
+            .outputFluids(Fluid.of("gtceu:molten_black_steel", 1296))
+            .duration((112.5 * 20 * 9 * 0.75 + 12.5) * 0.67) // 509.2s
+            .EUt(GTValues.VA[GTValues.MV])
+            .blastFurnaceTemp(1200)
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_" + cokeVariant)
+            .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x gtceu:" + cokeVariant)
+            .circuit(4)
+            .outputFluids(Fluid.of("gtceu:molten_black_steel", 6480))
+            .duration(112.5 * 20 * 45 * 0.75 + 12.5 * 5) // 3800s
+            .EUt(GTValues.VHA[GTValues.HV])
+            .blastFurnaceTemp(1200)
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_gas_" + cokeVariant)
+            .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x gtceu:" + cokeVariant)
+            .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
+            .circuit(14)
+            .outputFluids(Fluid.of("gtceu:molten_black_steel", 6480))
+            .duration((112.5 * 20 * 45 * 0.75 + 12.5 * 5) * 0.67) // 2546s
+            .EUt(GTValues.VHA[GTValues.HV])
+            .blastFurnaceTemp(1200)
+    })
 
     // Replace default GTCEu glowstone separation recipe to match mixing recipe
     event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, "minecraft:redstone", "gtceu:tricalcium_phosphate_dust")

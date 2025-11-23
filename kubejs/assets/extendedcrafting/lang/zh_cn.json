@@ -1,12 +1,4 @@
 {
-    "block.extendedcrafting.flux_alternator": "幽匿基塔",
-    "block.extendedcrafting.flux_crafter": "幽匿充能器",
-    "block.extendedcrafting.auto_flux_crafter": "幽匿充能器",
-    "container.extendedcrafting.flux_alternator": "幽匿基塔",
-    "container.extendedcrafting.flux_crafter": "幽匿充能",
-    "jei.category.extendedcrafting.flux_crafting": "幽匿充能",
-    "config.jade.plugin_extendedcrafting.flux_crafter": "通量合成器信息",
-    "book.extendedcrafting.entry.flux_crafting": "幽匿充能",
-    "book.extendedcrafting.entry.flux_crafting.page.1": "幽匿充能是一种利用等待和能量的力量进行合成的方式。一个幽匿合成套装包括一个幽匿充能器和多个幽匿基塔。充能器会从基塔中获取能量。你拥有的基塔越多，合成速度就越快。",
-    "book.extendedcrafting.entry.flux_crafting.page.2": "幽匿基塔可以放置在幽匿充能器周围 $(bold)3 个方块半径$() 的任何位置。甚至可以放置在上面或下面！"
+    "item.extendedcrafting.crystaltine_catalyst": "Diamond Catalyst",
+    "item.extendedcrafting.crystaltine_component": "Diamond Component"
 }

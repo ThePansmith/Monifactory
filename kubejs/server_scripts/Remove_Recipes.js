@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_gunpowder"})
     event.remove({ id: "gtceu:assembly_line/field_generator_zpm"})
     event.remove({ id: "gtceu:assembly_line/field_generator_zpm/advanced_soldering_alloy"})
+    event.remove({ id: "gtceu:assembly_line/field_generator_zpm/living_soldering_alloy"})
 
     // Redstone arsenal
     event.remove({ id: "redstone_arsenal:materials/flux_dust" })

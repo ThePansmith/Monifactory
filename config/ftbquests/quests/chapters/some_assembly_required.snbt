@@ -150,6 +150,13 @@
 			x: 12.25d
 			y: -2.75d
 		}
+		{
+			id: "2EE7DC7022138129"
+			linked_quest: "70FD95AEA44548B0"
+			shape: "hexagon"
+			x: -5.0d
+			y: -7.25d
+		}
 	]
 	quests: [
 		{
