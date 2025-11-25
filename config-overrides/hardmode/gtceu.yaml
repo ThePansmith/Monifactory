@@ -507,7 +507,7 @@ compat:
     # The interval between ME Hatch/Bus interact ME network.
     # It may cause lag if the interval is too small.
     # Default: 2 sec
-    updateIntervals: 40
+    updateIntervals: 20
 
     # The energy consumption of ME Hatch/Bus.
     # Default: 1.0AE/t
