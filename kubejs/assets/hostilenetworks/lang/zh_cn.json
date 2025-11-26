@@ -1,11 +1,9 @@
 {
     "item.hostilenetworks.prediction_matrix": "脉冲预测矩阵",
-    "item.hostilenetworks.overworld_prediction": "\u00A7a主世界\u00A7f物质",
-    "item.hostilenetworks.nether_prediction": "\u00A7c地狱\u00A7f物质",
-    "item.hostilenetworks.end_prediction": "\u00A7d界外\u00A7f物质",
-
+    "item.hostilenetworks.overworld_prediction": "§a主世界§f物质",
+    "item.hostilenetworks.nether_prediction": "§c地狱§f物质",
+    "item.hostilenetworks.end_prediction": "§d界外§f物质",
     "hostilenetworks.name.thermal_elemental": "热力元素",
-
     "hostilenetworks.trivia.basalz": "易燃伙计的\n大块头表亲。\n被赋予了大地之力。",
     "hostilenetworks.trivia.blitz": "另一种名字\n的风元素。\n所幸，它们无法\n控制雷霆。",
     "hostilenetworks.trivia.blizz": "拿个烈焰人\n移除热量。\n剩下的躯壳\n就是暴雪人。",

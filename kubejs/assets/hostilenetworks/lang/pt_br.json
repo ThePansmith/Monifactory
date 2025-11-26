@@ -1,11 +1,9 @@
 {
     "item.hostilenetworks.prediction_matrix": "Matriz de predição pulsante",
-    "item.hostilenetworks.overworld_prediction": "Matéria \u00A7asuperficial",
-    "item.hostilenetworks.nether_prediction": "Matéria \u00A7cinfernal",
-    "item.hostilenetworks.end_prediction": "Matéria \u00A7dextraterrestrial",
-
+    "item.hostilenetworks.overworld_prediction": "Matéria §asuperficial",
+    "item.hostilenetworks.nether_prediction": "Matéria §cinfernal",
+    "item.hostilenetworks.end_prediction": "Matéria §dextraterrestrial",
     "hostilenetworks.name.thermal_elemental": "Elemental do Thermal",
-
     "hostilenetworks.trivia.basalz": "O primo muito mais parrudo\ndo nosso amigo flamejante.\nAgraciado com uma força térrea.",
     "hostilenetworks.trivia.blitz": "Um elemental do\nvento com outro nome.\nFelizmente, eles não possuem controle\nsobre trovões.",
     "hostilenetworks.trivia.blizz": "Remova o calor\nde um Blaze.\nA criatura resultante\né o gélido Nevasca.",
