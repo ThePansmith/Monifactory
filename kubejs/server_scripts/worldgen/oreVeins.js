@@ -543,8 +543,8 @@ GTCEuServerEvents.oreVeins(event => {
             .oreBlock(GTMaterials.Chalcopyrite, 2)
             .oreBlock(GTMaterials.get("briartite"), 1)
             .veininessThreshold(0.2)
-            .maxRichnessThreshold(0.6)
-            .minRichness(0.7)
+            .maxRichnessThreshold(0.4)
+            .minRichness(0.6)
             .maxRichness(0.7)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
