@@ -532,18 +532,20 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("venus/gallite", vein => {
         vein.weight(25)
-        vein.density(0.15)
-        vein.clusterSize(25)
+        vein.density(1.0)
+        vein.clusterSize(40)
         vein.layer("venus")
         vein.dimensions("ad_astra:venus")
         vein.heightRangeUniform(20, 60)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Sphalerite).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.get("gallite")).size(1, 2))
-                .layer(l => l.weight(2).mat(GTMaterials.Chalcopyrite).size(2, 2))
-                .layer(l => l.weight(1).mat(GTMaterials.get("briartite")).size(1, 1))
-            )
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.Sphalerite, 4)
+            .oreBlock(GTMaterials.get("gallite"), 2)
+            .oreBlock(GTMaterials.Chalcopyrite, 2)
+            .oreBlock(GTMaterials.get("briartite"), 1)
+            .veininessThreshold(0.2)
+            .maxRichnessThreshold(0.6)
+            .minRichness(0.7)
+            .maxRichness(0.7)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get("gallite"))
