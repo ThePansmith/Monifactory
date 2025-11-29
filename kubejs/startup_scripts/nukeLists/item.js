@@ -65,6 +65,7 @@ global.itemNukeList = [
     "enderio:organic_green_dye",
     "enderio:plant_matter_brown",
     "enderio:plant_matter_green",
+    "enderio:powered_spawner",
     "enderio:primitive_alloy_smelter",
     "enderio:pulsating_alloy_grinding_ball",
     "enderio:redstone_alloy_grinding_ball",
