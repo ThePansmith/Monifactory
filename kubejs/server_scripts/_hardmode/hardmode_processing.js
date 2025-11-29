@@ -103,9 +103,9 @@ ServerEvents.recipes(event => {
             .duration(1200)
             .EUt(30720)
 
-        // Recipe conflict
-        // Styrene
+        // Recipe conflict of 2-Ethylanthraquinone from Ethylbenzene with Styrene from Ethylbenzene
         event.remove({ id: "gtceu:chemical_reactor/styrene_from_ethylbenzene" })
+        event.remove({ id: "gtceu:large_chemical_reactor/styrene_from_ethylbenzene" })
 
         event.recipes.gtceu.chemical_reactor("styrene_from_ethylbenzene_hm")
             .inputFluids("gtceu:ethylbenzene 1000")
