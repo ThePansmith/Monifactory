@@ -54,8 +54,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7E59E0E33962D787.title}"
-			x: 1.0d
-			y: 2.5d
+			x: -2.0d
+			y: -0.25d
 		}
 		{
 			dependencies: ["4174A6C6403DD245"]
@@ -189,7 +189,7 @@
 			}]
 			title: "{moni.quest.1D3A5DCCE1B40D29.title}"
 			x: -2.0d
-			y: 0.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["41B4EA53D6D7AE37"]
@@ -536,7 +536,10 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["6F32A8739D8E792A"]
+			dependencies: [
+				"6F32A8739D8E792A"
+				"0874A0191325CFDB"
+			]
 			description: [
 				"{moni.quest.74469710D910C19D.description1}"
 				""
@@ -1661,6 +1664,92 @@
 			}]
 			x: 4.0d
 			y: 10.0d
+		}
+		{
+			dependencies: [
+				"2A6E9E7C80754936"
+				"4FF4697A8AF10731"
+			]
+			description: [
+				"{moni.quest.436707C1C1A6A9DC.description1}"
+				""
+				"{moni.quest.436707C1C1A6A9DC.description2}"
+			]
+			id: "436707C1C1A6A9DC"
+			tasks: [{
+				id: "6533101146563E11"
+				item: "gtceu:me_pattern_buffer"
+				type: "item"
+			}]
+			title: "{moni.quest.436707C1C1A6A9DC.title}"
+			x: 9.25d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"7C0A37EEA3C63B16"
+				"605062720747B482"
+			]
+			description: [
+				"{moni.quest.4FF4697A8AF10731.description1}"
+				""
+				"{moni.quest.4FF4697A8AF10731.description2}"
+			]
+			id: "4FF4697A8AF10731"
+			tasks: [
+				{
+					id: "6A607A8AF587BBE5"
+					item: "gtceu:me_stocking_input_bus"
+					type: "item"
+				}
+				{
+					id: "72872891101D9254"
+					item: "gtceu:me_stocking_input_hatch"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.4FF4697A8AF10731.title}"
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["133FB7996362498C"]
+			description: [
+				"{moni.quest.6D2CFBF365E052D5.description1}"
+				""
+				"{moni.quest.6D2CFBF365E052D5.description2}"
+			]
+			id: "6D2CFBF365E052D5"
+			shape: "hexagon"
+			tasks: [{
+				id: "39E7EB00A6D4EB9E"
+				item: "ae2:level_emitter"
+				type: "item"
+			}]
+			x: 1.25d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"521977C7165229F1"
+				"6E27B9938B280291"
+				"6DAB13A7BDECE94E"
+			]
+			description: [
+				"{moni.quest.24312649E417990B.description1}"
+				""
+				"{moni.quest.24312649E417990B.description2}"
+			]
+			id: "24312649E417990B"
+			shape: "hexagon"
+			tasks: [{
+				id: "73884B63227783BD"
+				item: "merequester:requester"
+				type: "item"
+			}]
+			title: "{moni.quest.24312649E417990B.title}"
+			x: 5.5d
+			y: 12.75d
 		}
 	]
 	title: "{moni.chapter.118959024F296F70.title}"

@@ -2463,6 +2463,28 @@
 			x: -1.75d
 			y: 8.5d
 		}
+		{
+			description: [
+				"{moni.quest.2C7306C74609E995.description1}"
+				""
+				"{moni.quest.2C7306C74609E995.description2}"
+				""
+				"{moni.quest.2C7306C74609E995.description3}"
+				""
+				"{moni.quest.2C7306C74609E995.description4}"
+			]
+			id: "2C7306C74609E995"
+			size: 1.5d
+			subtitle: "{moni.quest.2C7306C74609E995.subtitle}"
+			tasks: [{
+				id: "6BE07CD22A1130B1"
+				item: "gtceu:empty_spray_can"
+				type: "item"
+			}]
+			title: "{moni.quest.2C7306C74609E995.title}"
+			x: 10.25d
+			y: 4.0d
+		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"
 }

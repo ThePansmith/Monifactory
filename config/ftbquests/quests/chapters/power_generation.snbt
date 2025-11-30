@@ -41,7 +41,7 @@
 			y: 2.75d
 		}
 	]
-	order_index: 5
+	order_index: 4
 	progression_mode: "flexible"
 	quest_links: [{
 		id: "34461D7A562415D3"
@@ -267,7 +267,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["745628397790ED7A"]
 			description: [
 				"{moni.quest.2053CCD1FF775DD5.description1}"
 				""
@@ -472,7 +471,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["32E44FFD602C98DF"]
 			description: [
 				"{moni.quest.50E12E97AC174194.description1}"
 				""
@@ -492,10 +490,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"07AFEBBC23C2B1E2"
-				"7D7B34CF5145F971"
-			]
+			dependencies: ["07AFEBBC23C2B1E2"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.75B6A5541A4D6E49.description1}"]
 			id: "75B6A5541A4D6E49"
@@ -508,10 +503,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"75B6A5541A4D6E49"
-				"79197A2CD8E435B2"
-			]
+			dependencies: ["75B6A5541A4D6E49"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.186031BE152824C7.description1}"
@@ -530,10 +522,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"50E12E97AC174194"
-				"6728FB92FD3A2084"
-			]
+			dependencies: ["50E12E97AC174194"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.07AFEBBC23C2B1E2.description1}"
