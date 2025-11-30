@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     })
 
     // Naquadah Activation
-    event.recipes.gtceu.particle_acceleration("naquadah_activation")
+    event.recipes.gtceu.fusion_reactor("naquadah_activation")
         .inputFluids("gtceu:raw_naquadah_solution 625", "gtceu:tritium_radon_difluoride 125")
         .outputFluids("gtceu:active_naquadah_blend 625")
         .duration(32)
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
 
     isotopes.forEach(isotope => {
         cracking_mats.forEach((cracking_mat, mat_tier) => {
-            event.recipes.gtceu.particle_acceleration(`${isotope[0]}_isotope_cracking_fusion_${cracking_mat[0]}`)
+            event.recipes.gtceu.fusion_reactor(`${isotope[0]}_isotope_cracking_fusion_${cracking_mat[0]}`)
                 .inputFluids(`gtceu:${isotope[1]} 125`, `gtceu:${cracking_mat[0]} ${cracking_mat[1]}`)
                 .outputFluids(`gtceu:cracked_${isotope[1]} 125`)
                 .duration(60 / (1 + Math.floor(mat_tier / 2)))
@@ -228,14 +228,14 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.ZPM])
     }
 
-    event.recipes.gtceu.particle_acceleration("exotic_particle_activation")
+    event.recipes.gtceu.fusion_reactor("exotic_particle_activation")
         .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 72")
         .outputFluids("gtceu:exotic_particle_solution 50")
         .duration(128)
         .EUt(GTValues.VA[GTValues.UV])
         .fusionStartEU(200000000)
 
-    event.recipes.gtceu.particle_acceleration("hyperdegenerate_activation")
+    event.recipes.gtceu.fusion_reactor("hyperdegenerate_activation")
         .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:actinium 36")
         .outputFluids("gtceu:hyperdegenerate_matter 25")
         .duration(128)

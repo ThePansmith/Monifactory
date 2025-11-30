@@ -243,7 +243,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("helical_fusion_reactor", "multiblock")
         .machine((holder) => new FusionReactorMachine(holder, GTValues.UEV))
         .rotationState(RotationState.ALL)
-        .recipeTypes([GTRecipeTypes.FUSION_RECIPES, GTRecipeTypes.get("particle_acceleration")])
+        .recipeTypes(GTRecipeTypes.FUSION_RECIPES)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, MachineModifiers.FUSION_REACTOR, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
         .pattern(definition => FactoryBlockPattern.start()

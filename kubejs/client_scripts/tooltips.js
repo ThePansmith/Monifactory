@@ -142,7 +142,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced("gtceu:helical_fusion_reactor", (item, adv, text) => {
         text.add(1, Text.translatable("gtceu.machine.fusion_reactor.capacity", Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
         text.add(2, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
-        text.add(3, Text.translatable("gtceu.machine.available_recipe_map_2.tooltip", Text.translatable("gtceu.fusion_reactor"), Text.translatable("gtceu.particle_acceleration")))
+        text.add(3, Text.translatable("gtceu.machine.available_recipe_map_1.tooltip", Text.translatable("gtceu.fusion_reactor")))
         text.add(4, Text.translatable("gtceu.multiblock.helical_fusion_reactor.description"))
     })
 

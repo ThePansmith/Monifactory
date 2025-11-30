@@ -6,31 +6,6 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("naquadah_superfuel").parent(GTMaterialIconSet.RADIOACTIVE)
 })
 
-// Tweaks to Fusion reactors to allow for separate "particle acceleration" recipe type
-GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
-    // Block scope so as to not conflict with the similar declaration in multiblock_registry.js
-    const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
-
-    event.create("particle_acceleration")
-        .category("multiblock")
-        .setMaxIOSize(0, 0, 2, 1)
-        .setEUIO("in")
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ARC)
-        .setMaxTooltips(4)
-        .setUiBuilder((a, b) => FusionReactorMachine.addEUToStartLabel(a, b))
-})
-
-StartupEvents.postInit(event => {
-    // Do this with java methods since we can't in the KJS builder
-    GTRecipeTypes.get("particle_acceleration").setOffsetVoltageText(true)
-
-    // Apply the particle acceleration recipe type to Fusion Reactors
-    GTMultiMachines.FUSION_REACTOR.forEach(fusionReactorTier => {
-        if(fusionReactorTier != null) fusionReactorTier.setRecipeTypes([GTRecipeTypes.FUSION_RECIPES, GTRecipeTypes.get("particle_acceleration")])
-    })
-})
-
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("crude_naquadah_fuel")
         .liquid()
