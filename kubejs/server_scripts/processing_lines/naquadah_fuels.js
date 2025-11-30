@@ -17,7 +17,6 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:hydrogen 125", "gtceu:quadium 125")
         .outputFluids("gtceu:helium_plasma 125")
         .duration(8)
-        .category("particle_acceleration")
         .EUt(GTValues.VHA[GTValues.IV])
         .fusionStartEU(20000000)
 
