@@ -134,6 +134,7 @@ config/defaultworldtype/world-presets.txt
 !/config/watercollector-common.toml
 !/config/wirelesschargers-common.toml
 !/config/zume.json5
+!/config/moldraw.yaml
 
 # Config overrides
 !/config-overrides
