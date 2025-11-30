@@ -17,6 +17,9 @@ chestLootAlwaysStackSame = false
 mobLootIncludeDirectDrops = true
 chanceDecimalPlaces = 1
 conditionStyle = "default"
+linkFormatting = [
+    "UNDERLINE"
+]
 
 [debugModes]
 block = false
