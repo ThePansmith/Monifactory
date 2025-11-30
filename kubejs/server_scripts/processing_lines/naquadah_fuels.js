@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:hydrogen 125", "gtceu:quadium 125")
         .outputFluids("gtceu:helium_plasma 125")
         .duration(8)
+        .category("particle_acceleration")
         .EUt(GTValues.VHA[GTValues.IV])
         .fusionStartEU(20000000)
 
@@ -62,6 +63,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:raw_naquadah_solution 625", "gtceu:tritium_radon_difluoride 125")
         .outputFluids("gtceu:active_naquadah_blend 625")
         .duration(32)
+        .category("particle_acceleration")
         .EUt(GTValues.VA[GTValues.LuV])
         .fusionStartEU(210000000)
 
@@ -139,6 +141,7 @@ ServerEvents.recipes(event => {
                 .inputFluids(`gtceu:${isotope[1]} 125`, `gtceu:${cracking_mat[0]} ${cracking_mat[1]}`)
                 .outputFluids(`gtceu:cracked_${isotope[1]} 125`)
                 .duration(60 / (1 + Math.floor(mat_tier / 2)))
+                .category("particle_acceleration")
                 .EUt(GTValues.VA[GTValues.IV + Math.floor(mat_tier / 2)])
                 .fusionStartEU(120000000 * (Math.floor(mat_tier / 2) + 1))
         })
@@ -232,6 +235,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 72")
         .outputFluids("gtceu:exotic_particle_solution 50")
         .duration(128)
+        .category("particle_acceleration")
         .EUt(GTValues.VA[GTValues.UV])
         .fusionStartEU(200000000)
 
@@ -239,6 +243,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:actinium 36")
         .outputFluids("gtceu:hyperdegenerate_matter 25")
         .duration(128)
+        .category("particle_acceleration")
         .EUt(GTValues.VA[GTValues.UHV])
         .fusionStartEU(640000000)
 
