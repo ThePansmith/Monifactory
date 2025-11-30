@@ -4,12 +4,12 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-    // Neptunium Palladium Aluminium
-    event.create("neptunium_palladium_aluminium")
+    // Neptunium Palladium Aluminium Germanium
+    event.create("neptunium_palladium_aluminium_germanium")
         .fluid().ingot()
         .color(0x69595A)
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-        .components(GTMaterials.Neptunium.multiply(1), GTMaterials.Palladium.multiply(5), GTMaterials.Aluminium.multiply(2))
+        .components(GTMaterials.Neptunium.multiply(1), GTMaterials.Palladium.multiply(5), GTMaterials.Aluminium.multiply(2), GTMaterials.Germanium.multiply(1))
         .blastTemp(3600, "mid", GTValues.VA[GTValues.HV], 61.5 * 20)
         .cableProperties(GTValues.VA[GTValues.LuV], 8, 8, false);
 

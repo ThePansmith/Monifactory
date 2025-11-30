@@ -295,7 +295,7 @@
     "__GENERIC_MATERIALS__.header": "=====================",
     "__GENERIC_MATERIALS__.flufff": "> Общие материалы <",
     "__GENERIC_MATERIALS__.footer": "=====================",
-    "material.gtceu.neptunium_palladium_aluminium": "Нептуний Палладий Алюминий",
+    "material.gtceu.neptunium_palladium_aluminium_germanium": "Нептуний Палладий Алюминий",
     "material.gtceu.trinaquadalloy": "Сплав Тринаквада",
     "material.gtceu.calcium_perchlorate": "Перхлорат кальция",
     "__POST_TANK_MATERIALS__.header": "=======================",

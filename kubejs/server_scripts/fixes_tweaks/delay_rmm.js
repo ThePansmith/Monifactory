@@ -2,16 +2,16 @@
  * Forces players to build at least one (1) T4MM before getting IV hatches
  * and simultaneously delay the necessity to process Rarest Metal Mixture to LuV.
  *
- * Changes the IV voltage coil to use Neptunium Palladium Aluminium
+ * Changes the IV voltage coil to use Neptunium Palladium Aluminium Germanium
  * Changes IV Sensor/Emitter to use Rhodium instead of Iridium.
  * Changes ABS casing recipes to require more pre-RMM Ru/Rh
  * Changes the RMM separation recipe to use 2A IV instead of 1A IV to force usage of the IV energy hatch.
  *
- * Also adds a mixer recipe for Neptunium Palladium Aluminium.
+ * Also adds a mixer recipe for Neptunium Palladium Aluminium Germanium.
  */
 
 ServerEvents.recipes(event => {
-    event.replaceInput({ id: "gtceu:assembler/voltage_coil_iv" }, "gtceu:fine_iridium_wire", "gtceu:fine_neptunium_palladium_aluminium_wire")
+    event.replaceInput({ id: "gtceu:assembler/voltage_coil_iv" }, "gtceu:fine_iridium_wire", "gtceu:fine_neptunium_palladium_aluminium_germanium_wire")
     event.replaceInput([{ output: "gtceu:iv_sensor" }, { output: "gtceu:iv_emitter" }], "gtceu:iridium_rod", "gtceu:rhodium_rod")
     event.remove({ id: "gtceu:assembler/casing_high_temperature_smelting" })
 
@@ -24,10 +24,10 @@ ServerEvents.recipes(event => {
 
     event.replaceInput([{ output: "gtceu:heat_vent"}], "gtceu:long_molybdenum_disilicide_rod", "gtceu:long_rhodium_rod")
 
-    event.recipes.gtceu.mixer("neptunium_palladium_aluminium")
-        .itemInputs("gtceu:neptunium_dust", "5x gtceu:palladium_dust", "2x gtceu:aluminium_dust")
+    event.recipes.gtceu.mixer("neptunium_palladium_aluminium_germanium")
+        .itemInputs("gtceu:neptunium_dust", "5x gtceu:palladium_dust", "2x gtceu:aluminium_dust", "gtceu:germanium_dust")
         .circuit(1)
-        .itemOutputs("8x gtceu:neptunium_palladium_aluminium_dust")
+        .itemOutputs("9x gtceu:neptunium_palladium_aluminium_germanium_dust")
         .duration(25 * 20)
         .EUt(GTValues.VA[GTValues.EV])
 
