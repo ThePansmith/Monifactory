@@ -2,7 +2,7 @@ enabled: true
 
 debugMode: false
 
-coloredAtoms: true
+coloredAtoms: false
 
 useMaterialColors: false
 
