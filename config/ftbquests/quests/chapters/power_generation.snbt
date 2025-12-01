@@ -267,36 +267,6 @@
 			y: -2.0d
 		}
 		{
-			description: [
-				"{moni.quest.2053CCD1FF775DD5.description1}"
-				""
-				"[\"\",{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"745628397790ED7A\"}},{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description3\"}]"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description2}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description3}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description4}"
-				"{@pagebreak}"
-				"{moni.quest.2053CCD1FF775DD5.description5}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description6}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description7}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description8}"
-			]
-			id: "2053CCD1FF775DD5"
-			tasks: [{
-				id: "08A006973D835270"
-				item: "nuclearcraft:fission_reactor_controller"
-				type: "item"
-			}]
-			title: "{moni.quest.2053CCD1FF775DD5.title}"
-			x: -1.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["5E3CBC929557418F"]
 			description: [
 				"{moni.quest.68E87B959F6E9216.description1}"
@@ -400,7 +370,7 @@
 				title: "{moni.task.0CD3D25A52ED3F2F}"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: -2.0d
 		}
 		{
@@ -456,19 +426,6 @@
 			}]
 			x: -0.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["2053CCD1FF775DD5"]
-			id: "204D94E7B450EED1"
-			optional: true
-			size: 0.2d
-			tasks: [{
-				id: "15E9864541CF59D6"
-				title: "{moni.task.15E9864541CF59D6}"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: 4.0d
 		}
 		{
 			description: [

@@ -79,7 +79,11 @@
 		}
 		{
 			dependencies: ["715BC5C7DAC53B7B"]
-			description: ["{moni.quest.73C6E2724EBEC997.description1}"]
+			description: [
+				"{moni.quest.73C6E2724EBEC997.description1}"
+				""
+				"{moni.quest.73C6E2724EBEC997.description2}"
+			]
 			icon: "hostilenetworks:blank_data_model"
 			id: "73C6E2724EBEC997"
 			rewards: [{
