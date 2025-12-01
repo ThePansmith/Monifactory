@@ -156,6 +156,8 @@
 		{
 			id: "7FC84014DAAD0025"
 			linked_quest: "6D434F3B0E720A5A"
+			shape: "hexagon"
+			size: 1.25d
 			x: 1.5d
 			y: 4.25d
 		}

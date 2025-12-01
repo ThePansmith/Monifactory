@@ -127,6 +127,13 @@
 			x: -7.5d
 			y: -5.25d
 		}
+		{
+			id: "1E75CED3B4A1296A"
+			linked_quest: "3DD8D9EEA7189186"
+			shape: "hexagon"
+			x: 7.25d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -501,30 +508,6 @@
 			title: "{moni.quest.023197AB7CDBDD6E.title}"
 			x: 10.75d
 			y: 4.75d
-		}
-		{
-			dependencies: [
-				"14F1FF4656693711"
-				"53EC3831D66769CA"
-				"5732018AA35D69B6"
-			]
-			description: ["{moni.quest.3DD8D9EEA7189186.description1}"]
-			id: "3DD8D9EEA7189186"
-			rewards: [{
-				id: "0A5B1F97951B104A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				count: 16L
-				id: "585B8ED807736A7A"
-				item: "gtceu:hssg_coil_block"
-				type: "item"
-			}]
-			title: "{moni.quest.3DD8D9EEA7189186.title}"
-			x: 7.25d
-			y: 0.0d
 		}
 		{
 			dependencies: [
