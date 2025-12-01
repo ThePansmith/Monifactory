@@ -1,11 +1,9 @@
 {
     "item.hostilenetworks.prediction_matrix": "脈動予測マトリックス",
-    "item.hostilenetworks.overworld_prediction": "\u00A7aオーバーワールディアン\u00A7f マター",
-    "item.hostilenetworks.nether_prediction": "\u00A7c地獄\u00A7f マター",
-    "item.hostilenetworks.end_prediction": "\u00A7d大気圏外\u00A7f マター",
-
+    "item.hostilenetworks.overworld_prediction": "§aオーバーワールディアン§f マター",
+    "item.hostilenetworks.nether_prediction": "§c地獄§f マター",
+    "item.hostilenetworks.end_prediction": "§d大気圏外§f マター",
     "hostilenetworks.name.thermal_elemental": "Thermal Elemental",
-
     "hostilenetworks.trivia.basalz": "我らが燃えるような友人の\nはるか遠くの従兄弟。\n土の力が授けられた。",
     "hostilenetworks.trivia.blitz": "別の名前で呼ばれる\n風の妖精。\n彼らは雷は制御不可",
     "hostilenetworks.trivia.blizz": "ブレイズを手に取り、\n冷却。\nその結果、ブリーズが誕生",

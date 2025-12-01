@@ -25,9 +25,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor("fluoroboric_acid")
         .itemInputs("gtceu:boron_dust")
-        .inputFluids("gtceu:hydrogen 1000", "gtceu:fluorine 4000")
-        .outputFluids("gtceu:fluoroboric_acid")
-        .circuit(1)
+        .inputFluids("gtceu:hydrofluoric_acid 4000", "gtceu:hydrogen_peroxide 1500")
+        .outputFluids("gtceu:fluoroboric_acid 1000", "minecraft:water 3000")
         .duration(1800)
         .EUt(GTValues.VA[GTValues.UV])
 

@@ -3,12 +3,10 @@
     "block.sophisticatedstorage.gold_barrel": "%s%sBarril de aço",
     "block.sophisticatedstorage.diamond_barrel": "%s%sBarril de alumínio",
     "block.sophisticatedstorage.netherite_barrel": "%s%sBarril de aço inoxidável",
-  
     "block.sophisticatedstorage.iron_chest": "%s%sBaú de bronze",
     "block.sophisticatedstorage.gold_chest": "%s%sBaú de aço",
     "block.sophisticatedstorage.diamond_chest": "%s%sBaú de alumínio",
     "block.sophisticatedstorage.netherite_chest": "%s%sBaú de aço inoxidável",
-  
     "item.sophisticatedstorage.iron_shulker_box": "Caixa de shulker de bronze",
     "block.sophisticatedstorage.iron_shulker_box": "Caixa de shulker de bronze",
     "item.sophisticatedstorage.gold_shulker_box": "Caixa de shulker de aço",
@@ -17,7 +15,6 @@
     "block.sophisticatedstorage.diamond_shulker_box": "Caixa de shulker de alumínio",
     "item.sophisticatedstorage.netherite_shulker_box": "Caixa de shulker de aço inoxidável",
     "block.sophisticatedstorage.netherite_shulker_box": "Caixa de shulker de aço inoxidável",
-  
     "item.sophisticatedstorage.basic_to_iron_tier_upgrade": "Melhoria de nível de básico para bronze",
     "item.sophisticatedstorage.basic_to_gold_tier_upgrade": "Melhoria de nível de básico para aço",
     "item.sophisticatedstorage.basic_to_diamond_tier_upgrade": "Melhoria de nível de básico para alumínio",
@@ -28,4 +25,4 @@
     "item.sophisticatedstorage.gold_to_diamond_tier_upgrade": "Melhoria de nível de aço para alumínio",
     "item.sophisticatedstorage.gold_to_netherite_tier_upgrade": "Melhoria de nível de aço para aço inoxidável",
     "item.sophisticatedstorage.diamond_to_netherite_tier_upgrade": "Melhoria de nível de alumínio para aço inoxidável"
-  }
+}
