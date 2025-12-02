@@ -26,13 +26,21 @@
 		{
 			id: "070539F2FEF35EF9"
 			linked_quest: "712023557B5B1812"
-			x: -4.0d
+			shape: "hexagon"
+			x: -4.5d
 			y: 15.5d
 		}
 		{
 			id: "4A1F5C2E65873DDB"
 			linked_quest: "2280472741683581"
-			x: 4.0d
+			shape: "hexagon"
+			x: 4.5d
+			y: 15.5d
+		}
+		{
+			id: "1D806F3BD32F739C"
+			linked_quest: "34876F54406B6A04"
+			x: 0.75d
 			y: 15.5d
 		}
 	]
@@ -1748,7 +1756,6 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			shape: "hexagon"
 			subtitle: "{moni.quest.297B523B6C503957.subtitle.hardmode}"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
@@ -1780,11 +1787,15 @@
 				type: "item"
 			}]
 			title: "{moni.quest.297B523B6C503957.title}"
-			x: 0.0d
+			x: -0.75d
 			y: 15.5d
 		}
 		{
-			dependencies: ["297B523B6C503957"]
+			dependencies: [
+				"297B523B6C503957"
+				"34876F54406B6A04"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.2FA9404468E4BBD9.description1}"]
 			id: "2FA9404468E4BBD9"
 			rewards: [{
@@ -1817,7 +1828,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2FA9404468E4BBD9.title}"
-			x: 1.5d
+			x: 2.0d
 			y: 15.5d
 		}
 		{
@@ -1835,6 +1846,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				count: 4L
 				id: "7923DEDAB3298371"
@@ -1842,11 +1854,15 @@
 				type: "item"
 			}]
 			title: "{moni.quest.077AA27F26B7831F.title}"
-			x: 2.75d
+			x: 3.25d
 			y: 15.5d
 		}
 		{
-			dependencies: ["297B523B6C503957"]
+			dependencies: [
+				"297B523B6C503957"
+				"34876F54406B6A04"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.06E9B9DDDB245F38.description1}"
 				""
@@ -1897,7 +1913,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.06E9B9DDDB245F38.title}"
-			x: -1.5d
+			x: -2.0d
 			y: 15.5d
 		}
 		{
@@ -1920,6 +1936,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "5EF5A8A2767A69E3"
@@ -1944,11 +1961,15 @@
 				}
 			]
 			title: "{moni.quest.3A5387B2003177B2.title}"
-			x: -2.75d
+			x: -3.25d
 			y: 15.5d
 		}
 		{
-			dependencies: ["297B523B6C503957"]
+			dependencies: [
+				"297B523B6C503957"
+				"34876F54406B6A04"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.5A94534682807314.description1}"
 				""

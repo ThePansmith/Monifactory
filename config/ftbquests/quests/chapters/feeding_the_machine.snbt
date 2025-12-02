@@ -49,7 +49,7 @@
 			shape: "gear"
 			size: 2.0d
 			x: -5.0d
-			y: 11.5d
+			y: 11.75d
 		}
 		{
 			id: "51714F7845582B70"
@@ -880,7 +880,7 @@
 			}]
 			title: "{moni.quest.00011E5DD7EEE8DB.title}"
 			x: 4.0d
-			y: 11.5d
+			y: 11.75d
 		}
 		{
 			dependencies: ["2A6E9E7C80754936"]
@@ -1340,7 +1340,7 @@
 			]
 			title: "{moni.quest.113E9543ADB1666B.title}"
 			x: -0.25d
-			y: 12.25d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
@@ -1422,7 +1422,7 @@
 			}]
 			title: "{moni.quest.75810A27FBBBFB77.title}"
 			x: 2.25d
-			y: 12.25d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1522,7 +1522,7 @@
 			}]
 			title: "{moni.quest.5BADF536443E712D.title}"
 			x: 6.5d
-			y: 11.5d
+			y: 11.75d
 		}
 		{
 			dependencies: ["069773756716E192"]
@@ -1566,7 +1566,7 @@
 			}]
 			title: "{moni.quest.15607184B546F5EE.title}"
 			x: 1.0d
-			y: 11.5d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -1794,7 +1794,7 @@
 			]
 			title: "{moni.quest.75DD12FBC8AA39FC.title}"
 			x: -2.25d
-			y: 11.5d
+			y: 11.75d
 		}
 		{
 			dependencies: ["41F1837D7C131898"]
