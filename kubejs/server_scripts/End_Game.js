@@ -272,9 +272,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // Kubejs Stem Cells
-    event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
     event.remove({ id: "gtceu:large_chemical_reactor/stem_cells" })
-    event.recipes.gtceu.chemical_reactor("stem_cells")
+    event.recipes.gtceu.large_chemical_reactor("stem_cells")
         .itemInputs("minecraft:dragon_egg")
         .chancedInput("minecraft:sculk_catalyst", 500, 0)
         .inputFluids("gtceu:sterilized_growth_medium 500", "gtceu:bacteria 500", "enderio:xp_juice 2000")
@@ -284,6 +283,12 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(GTValues.VA[GTValues.LuV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    // Remove sterile CR recipes.
+    // LCR is a separate recipemap, and singleblocks cannot get the sterile hatch.
+    event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
+    event.remove({ id: "gtceu:chemical_reactor/collagen_from_bone" })
+    event.remove({ id: "gtceu:chemical_reactor/bacterial_sludge" })
 
 
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [
