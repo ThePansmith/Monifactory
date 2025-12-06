@@ -288,6 +288,7 @@ ServerEvents.recipes(event => {
     // LCR is a separate recipemap, and singleblocks cannot get the sterile hatch.
     event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
     event.remove({ id: "gtceu:chemical_reactor/collagen_from_bone" })
+    event.remove({ id: "gtceu:chemical_reactor/collagen_from_bone_meal" })
     event.remove({ id: "gtceu:chemical_reactor/bacterial_sludge" })
 
 
