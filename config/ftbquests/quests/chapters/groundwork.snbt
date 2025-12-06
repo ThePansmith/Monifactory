@@ -1389,7 +1389,12 @@
 					type: "item"
 				}
 				{
-					count: 34L
+					id: "6115A370BFBA1A97"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					count: 33L
 					id: "1FB27D5C167BD42B"
 					item: "gtceu:clean_machine_casing"
 					type: "item"
