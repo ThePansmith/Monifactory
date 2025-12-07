@@ -50,3 +50,9 @@
 	#If you don't need reactor boiling mode, just disable.
 	supports_boiling_mode = true
 
+#Settings for Molten Salt Fission Reactor (MSR)
+[msr_reactor]
+	#Number of pebbles that can be stored per fuel cell. Determines the maximum pebble capacity.
+	#Range: 1 ~ 100
+	pebbles_per_fuel_cell = 4
+
