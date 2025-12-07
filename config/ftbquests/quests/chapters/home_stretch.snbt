@@ -198,7 +198,7 @@
 			]
 			title: "{moni.quest.4EA1E0D437528747.title}"
 			x: -3.25d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
@@ -291,6 +291,7 @@
 			dependencies: [
 				"6F9041F256F517A3"
 				"5BE3E37772FAF6CB"
+				"51FD757E07E397A1"
 			]
 			description: [
 				"{moni.quest.5A70898C99B828E3.description1}"
@@ -301,7 +302,7 @@
 			icon: "gtceu:simulation_quantumcomputer"
 			id: "5A70898C99B828E3"
 			optional: true
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "5C159D99CDA8EEE0"
@@ -367,7 +368,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1C861E0C62D5B97D.title}"
-			x: 1.5d
+			x: 0.75d
 			y: -4.5d
 		}
 		{
@@ -377,12 +378,12 @@
 				""
 				"{moni.quest.161F61C28DBC5941.description2}"
 				""
-				"{moni.quest.161F61C28DBC5941.description3}"
+				"{moni.quest.5A70898C99B828E3.description2}"
 			]
 			icon: "gtceu:loot_quantumfabricator"
 			id: "161F61C28DBC5941"
 			optional: true
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "47C6FEC171CDB1BC"
@@ -531,7 +532,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.33F610CF136278AE.title}"
-			x: 2.75d
+			x: 3.0d
 			y: -1.75d
 		}
 		{
@@ -553,7 +554,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0FD9B533BB402B17.title}"
-			x: 2.0d
+			x: 2.25d
 			y: -1.0d
 		}
 		{
@@ -903,7 +904,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3E45F67F09B6156B.title}"
-			x: -1.0d
+			x: 2.0d
 			y: -7.0d
 		}
 		{
@@ -940,7 +941,7 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.38B1588655AA9BDF.title}"
-			x: 2.75d
+			x: 3.0d
 			y: -8.75d
 		}
 		{
@@ -1016,12 +1017,16 @@
 				type: "item"
 			}]
 			title: "{moni.quest.36DF9A3674E1212C.title}"
-			x: -1.0d
-			y: -4.0d
+			x: -1.25d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5A31EEF439212D6E"]
-			description: ["{moni.quest.0E9B96B17D140B99.description1}"]
+			description: [
+				"{moni.quest.0E9B96B17D140B99.description1}"
+				""
+				"{moni.quest.0E9B96B17D140B99.description2}"
+			]
 			icon: "gtceu:polyether_ether_ketone_bucket"
 			id: "0E9B96B17D140B99"
 			shape: "hexagon"
@@ -1111,8 +1116,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.415F2703877FBE21.title}"
-			x: -1.0d
-			y: -5.0d
+			x: 0.75d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1157,7 +1162,7 @@
 		}
 		{
 			dependencies: [
-				"3E45F67F09B6156B"
+				"415F2703877FBE21"
 				"6F9041F256F517A3"
 			]
 			description: [

@@ -127,7 +127,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet("omnium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_SPRING)
-        .cableProperties(GTValues.V[GTValues.UEV], 8, 8, false)
+        .cableProperties(GTValues.V[GTValues.UEV], 6, 128, false)
 
 
     // Darconite!
@@ -138,7 +138,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("crystal")
         .blastTemp(10800, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
-        .cableProperties(GTValues.V[GTValues.UEV], 1, 32, false)
+        .cableProperties(GTValues.V[GTValues.UEV], 4, 32, false)
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_SPRING_SMALL)
 
     event.create("hyperdegenerate_darconite")
