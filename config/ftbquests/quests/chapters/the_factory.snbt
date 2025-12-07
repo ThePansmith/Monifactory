@@ -52,6 +52,14 @@
 			x: 5.0d
 			y: -7.5d
 		}
+		{
+			id: "30E5F898D55B37A7"
+			linked_quest: "491180694DA10086"
+			shape: "hexagon"
+			size: 2.0d
+			x: 7.0d
+			y: -5.5d
+		}
 	]
 	quests: [
 		{
@@ -1076,7 +1084,7 @@
 			}]
 			title: "{moni.quest.500E619D568C07C2.title}"
 			x: 1.0d
-			y: 3.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["0EDFB0C24B9129AB"]
@@ -1379,50 +1387,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["6D03BB4A6A4BBA27"]
-			description: [
-				"{moni.quest.4174A6C6403DD245.description1}"
-				""
-				"{moni.quest.4174A6C6403DD245.description2}"
-				""
-				"{moni.quest.4174A6C6403DD245.description3}"
-				"{@pagebreak}"
-				"{moni.quest.4174A6C6403DD245.description4}"
-				""
-				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3\"}]"
-			]
-			icon: "ae2:energy_acceptor"
-			id: "4174A6C6403DD245"
-			rewards: [
-				{
-					id: "67642A41B1F7F4E8"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "2EAC8635F1C7A8DB"
-					item: "ae2:guide"
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "652709622C84E4CC"
-					item: "ae2:energy_acceptor"
-					type: "item"
-				}
-				{
-					id: "3550456A821A6975"
-					item: "ae2:fluix_crystal"
-					type: "item"
-				}
-			]
-			x: 7.0d
-			y: -6.0d
-		}
-		{
 			dependencies: ["025543EDB0A4AC22"]
 			description: [
 				"{moni.quest.7842EC1C389C4B7E.description1}"
@@ -1515,12 +1479,19 @@
 				{
 					id: "47392B270D61CD4C"
 					item: "gtceu:hydrogen_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7F2D244D03684EB3"
 					item: "gtceu:oxygen_bucket"
+					optional_task: true
 					type: "item"
+				}
+				{
+					id: "0BD8CFAB2DB4AF72"
+					optional_task: true
+					type: "checkmark"
 				}
 			]
 			title: "{moni.quest.6FE99EDDC6223F2E.title}"
@@ -1876,11 +1847,20 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			tasks: [{
-				id: "00DCE69057EC3D8F"
-				item: "gtceu:soldering_alloy_dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "00DCE69057EC3D8F"
+					item: "gtceu:soldering_alloy_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "424B2600A9124D11"
+					item: "gtceu:soldering_alloy_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.56924FC6B029BA0F.title}"
 			x: -2.0d
 			y: 11.0d
@@ -1904,6 +1884,8 @@
 				"{moni.quest.0523F4AB9A794390.description7}"
 				""
 				"{moni.quest.0523F4AB9A794390.description8}"
+				""
+				"{moni.quest.0523F4AB9A794390.description9}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
@@ -1967,6 +1949,8 @@
 				"{moni.quest.1A427A8CB43C8B59.description10}"
 				""
 				"{moni.quest.1A427A8CB43C8B59.description11}"
+				""
+				"{moni.quest.1A427A8CB43C8B59.description13}"
 				""
 				"{moni.quest.1A427A8CB43C8B59.description12}"
 			]
@@ -2710,7 +2694,13 @@
 		}
 		{
 			dependencies: ["1BC6DDC2D50F9C46"]
-			description: ["{moni.quest.114B300F56E48351.description1}"]
+			description: [
+				"{moni.quest.114B300F56E48351.description1}"
+				""
+				"{moni.quest.114B300F56E48351.description2}"
+				""
+				"{moni.quest.114B300F56E48351.description3}"
+			]
 			id: "114B300F56E48351"
 			shape: "hexagon"
 			tasks: [{

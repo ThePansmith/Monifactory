@@ -9,8 +9,8 @@ ServerEvents.recipes(event => {
     // Regolith dusts
     let regolithDustResources = [
         ["moon", ["moon_sand"], "diamond"],
-        ["mars", ["mars_sand"], "titanite"],
-        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "olivine"],
+        ["mars", ["mars_sand"], "olivine"],
+        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "titanite"],
         ["mercury", [], "cinnabar"],
         ["glacio", [], "sodalite"]
     ]
@@ -241,14 +241,25 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.MV])
         .blastFurnaceTemp(1100)
 
-    event.recipes.gtceu.large_chemical_reactor("carnotite_metallurgy")
-        .itemInputs("27x gtceu:carnotite_dust")
-        .inputFluids("gtceu:sulfur_dioxide 3000", "gtceu:sulfur_trioxide 3000")
-        .itemOutputs("2x gtceu:potassium_dust", "6x gtceu:uraninite_dust", "7x gtceu:vanadium_pentoxide_dust")
-        .outputFluids("gtceu:diluted_sulfuric_acid 9000")
-        .duration(100)
-        .EUt(GTValues.VHA[GTValues.MV])
-        .blastFurnaceTemp(1100)
+    if (doHarderProcessing) {
+        event.recipes.gtceu.large_chemical_reactor("carnotite_metallurgy_hard")
+            .itemInputs("27x gtceu:carnotite_dust")
+            .inputFluids("gtceu:sulfur_dioxide 3000", "gtceu:sulfur_trioxide 3000")
+            .itemOutputs("2x gtceu:potassium_dust", "6x gtceu:uraninite_dust", "7x gtceu:vanadium_pentoxide_dust")
+            .outputFluids("gtceu:diluted_sulfuric_acid 9000")
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.MV])
+            .blastFurnaceTemp(1100)
+    } else {
+        event.recipes.gtceu.large_chemical_reactor("carnotite_metallurgy_normal")
+            .itemInputs("27x gtceu:carnotite_dust")
+            .inputFluids("gtceu:sulfur_dioxide 3000", "gtceu:sulfur_trioxide 3000")
+            .itemOutputs("2x gtceu:potassium_dust", "6x gtceu:uraninite_dust", "2x gtceu:vanadium_dust")
+            .outputFluids("gtceu:diluted_sulfuric_acid 9000", "gtceu:oxygen 5000")
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.MV])
+            .blastFurnaceTemp(1100)
+    }
 })
 
 ServerEvents.tags("item", event => {

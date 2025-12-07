@@ -156,6 +156,8 @@
 		{
 			id: "7FC84014DAAD0025"
 			linked_quest: "6D434F3B0E720A5A"
+			shape: "hexagon"
+			size: 1.25d
 			x: 1.5d
 			y: 4.25d
 		}
@@ -1038,6 +1040,7 @@
 				""
 				"{moni.quest.4F4D0F44B615AF4C.description3}"
 			]
+			icon: "gtceu:sodium_persulfate_bucket"
 			id: "4F4D0F44B615AF4C"
 			rewards: [{
 				id: "1665820920C762E6"
@@ -1046,26 +1049,25 @@
 			}]
 			shape: "hexagon"
 			subtitle: "{moni.quest.4F4D0F44B615AF4C.subtitle}"
-			tasks: [{
-				id: "51BA79F86129325D"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:sodium_persulfate_bucket"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iron_iii_chloride_bucket"
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "7D0DC42B9CBAA736"
+					item: "gtceu:sodium_persulfate_bucket"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "41E11975C676C1A1"
+					item: "gtceu:iron_iii_chloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "407673EAB357D752"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.4F4D0F44B615AF4C.title}"
 			x: 6.0d
 			y: -2.5d
@@ -1389,7 +1391,12 @@
 					type: "item"
 				}
 				{
-					count: 34L
+					id: "6115A370BFBA1A97"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					count: 33L
 					id: "1FB27D5C167BD42B"
 					item: "gtceu:clean_machine_casing"
 					type: "item"
@@ -1411,10 +1418,43 @@
 			icon: "gtceu:phenol_bucket"
 			id: "451FD5817C0415D7"
 			shape: "hexagon"
-			tasks: [{
-				id: "3368C48BDB260FA8"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3899A3D5954DC65D"
+					item: "gtceu:phenol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "50D2923A31B5F1B4"
+					item: "gtceu:charcoal_byproducts_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1FE15147FC41A587"
+					item: "gtceu:wood_tar_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5F786AAFEF3E1E3C"
+					item: "gtceu:wood_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "15F040D3335ABC5F"
+					item: "gtceu:wood_vinegar_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0984AE73716D4A9B"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.451FD5817C0415D7.title}"
 			x: -0.75d
 			y: 2.0d
@@ -1559,6 +1599,7 @@
 				""
 				"{moni.quest.616555E46F314F04.description2}"
 			]
+			icon: "gtceu:sodium_potassium_bucket"
 			id: "616555E46F314F04"
 			rewards: [{
 				id: "3815CE147C3B07C5"
@@ -1566,11 +1607,18 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "778C1437764DF9E9"
-				item: "gtceu:sodium_potassium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "778C1437764DF9E9"
+					item: "gtceu:sodium_potassium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6C13CB1FDE79CC66"
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.616555E46F314F04.title}"
 			x: 4.5d
 			y: 10.0d
@@ -1682,6 +1730,7 @@
 				""
 				"{moni.quest.153BDCAE4D1CC407.description4}"
 			]
+			icon: "gtceu:ethylene_bucket"
 			id: "153BDCAE4D1CC407"
 			rewards: [{
 				id: "2013156BC98A6B3E"
@@ -1690,11 +1739,19 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [{
-				id: "476704217FDC81A0"
-				item: "gtceu:ethylene_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "476704217FDC81A0"
+					item: "gtceu:ethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1B17DC921919912F"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.153BDCAE4D1CC407.title}"
 			x: 2.5d
 			y: 7.0d
@@ -1899,6 +1956,7 @@
 				""
 				"{moni.quest.10722CBC4DAD28F4.description3}"
 			]
+			icon: "gtceu:chlorine_bucket"
 			id: "10722CBC4DAD28F4"
 			rewards: [{
 				id: "00856065A8DB0F17"
@@ -1906,11 +1964,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "4787CC8A2A2100FB"
-				item: "gtceu:chlorine_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4787CC8A2A2100FB"
+					item: "gtceu:chlorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B50F7FD599AE240"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.10722CBC4DAD28F4.title}"
 			x: 3.75d
 			y: 8.5d
@@ -2310,17 +2376,26 @@
 				""
 				"{moni.quest.7ABC7057BC2E8CE4.description2}"
 			]
+			icon: "gtceu:oxalic_acid_solution_bucket"
 			id: "7ABC7057BC2E8CE4"
 			rewards: [{
 				id: "63338D828354FAAE"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7D564A2C88DE58B3"
-				item: "gtceu:oxalic_acid_solution_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7D564A2C88DE58B3"
+					item: "gtceu:oxalic_acid_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6E5CE9387C5205B1"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
 			x: 6.0d
 			y: 5.5d
@@ -2394,6 +2469,55 @@
 			title: "{moni.quest.66E1F1B28E4577B2.title}"
 			x: -1.75d
 			y: 8.5d
+		}
+		{
+			dependencies: ["74935A3553451178"]
+			description: [
+				"{moni.quest.2C7306C74609E995.description1}"
+				""
+				"{moni.quest.2C7306C74609E995.description2}"
+				""
+				"{moni.quest.2C7306C74609E995.description3}"
+				""
+				"{moni.quest.2C7306C74609E995.description4}"
+			]
+			hide_dependency_lines: true
+			id: "2C7306C74609E995"
+			size: 1.5d
+			subtitle: "{moni.quest.2C7306C74609E995.subtitle}"
+			tasks: [{
+				id: "6BE07CD22A1130B1"
+				item: "gtceu:empty_spray_can"
+				type: "item"
+			}]
+			title: "{moni.quest.2C7306C74609E995.title}"
+			x: 10.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C78349343BA40D7"]
+			description: [
+				"{moni.quest.349869EBF2D9FAF1.description1}"
+				""
+				"{moni.quest.349869EBF2D9FAF1.description2}"
+				""
+				"{moni.quest.349869EBF2D9FAF1.description3}"
+			]
+			id: "349869EBF2D9FAF1"
+			rewards: [{
+				id: "43A8ED9E9FB6365D"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "50CCF15D11C3B693"
+				item: "gtceu:phosphorus_boule"
+				type: "item"
+			}]
+			title: "{moni.quest.349869EBF2D9FAF1.title}"
+			x: -8.0d
+			y: -4.25d
 		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"

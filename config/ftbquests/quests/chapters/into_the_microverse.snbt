@@ -147,6 +147,7 @@
 				""
 				"{moni.quest.3BB7400C8BB392D9.description5}"
 			]
+			icon: "gtceu:phosphoric_acid_bucket"
 			id: "3BB7400C8BB392D9"
 			rewards: [{
 				id: "35DF5CEAEF8B9184"
@@ -154,11 +155,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "67E12CCD296D12FD"
-				item: "gtceu:phosphoric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "67E12CCD296D12FD"
+					item: "gtceu:phosphoric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "71BDB3CC528075E6"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.3BB7400C8BB392D9.title}"
 			x: -5.0d
 			y: -7.5d
@@ -179,6 +188,7 @@
 				""
 				"{moni.quest.648B1E09AA648798.description8}"
 			]
+			icon: "gtceu:sulfuric_acid_bucket"
 			id: "648B1E09AA648798"
 			rewards: [{
 				id: "1FB9EE0FCA383E6C"
@@ -186,11 +196,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "67FBB38B63BC93BB"
-				item: "gtceu:sulfuric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "67FBB38B63BC93BB"
+					item: "gtceu:sulfuric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D5EDB5484D8E82C"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.648B1E09AA648798.title}"
 			x: -5.0d
 			y: -9.0d
@@ -379,7 +397,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["56FB624B384FFAF5"]
+			dependencies: [
+				"56FB624B384FFAF5"
+				"3000798ACA51BFDC"
+			]
 			description: [
 				"{moni.quest.399AE4E449872B8A.description1}"
 				""
@@ -387,17 +408,26 @@
 				""
 				"{moni.quest.399AE4E449872B8A.description3}"
 			]
+			icon: "gtceu:liquid_ender_air_bucket"
 			id: "399AE4E449872B8A"
 			rewards: [{
 				id: "68E1D95E0AC47C7B"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7DD19A7DC7557C5D"
-				item: "gtceu:liquid_ender_air_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7DD19A7DC7557C5D"
+					item: "gtceu:liquid_ender_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "30601DA91D002984"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.399AE4E449872B8A.title}"
 			x: -11.0d
 			y: 1.5d
@@ -498,14 +528,9 @@
 			tasks: [
 				{
 					id: "424E9CDF84333ED6"
-					item: {
-						Count: 1
-						id: "ad_astra:tier_1_rocket"
-						tag: { }
-					}
-					optional_task: true
+					item: "ad_astra:tier_1_rocket"
+					match_nbt: false
 					type: "item"
-					weak_nbt_match: true
 				}
 				{
 					id: "54E7FCF98F491577"
@@ -701,6 +726,7 @@
 		{
 			dependencies: ["5E2489DE2E840738"]
 			description: ["{moni.quest.24415A26E5A0FD72.description1}"]
+			icon: "gtceu:rocket_fuel_bucket"
 			id: "24415A26E5A0FD72"
 			rewards: [{
 				count: 2
@@ -709,11 +735,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "645B1719FA830B75"
-				item: "gtceu:rocket_fuel_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "645B1719FA830B75"
+					item: "gtceu:rocket_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "544FF8F9BB179C30"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 7.5d
 			y: -7.5d
 		}
@@ -724,6 +758,7 @@
 				"5878D53EB85F3881"
 			]
 			description: ["{moni.quest.5E2489DE2E840738.description1}"]
+			icon: "gtceu:dimethylhydrazine_bucket"
 			id: "5E2489DE2E840738"
 			rewards: [{
 				count: 3
@@ -732,11 +767,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "3D4A44BB8FD800F9"
-				item: "gtceu:dimethylhydrazine_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3D4A44BB8FD800F9"
+					item: "gtceu:dimethylhydrazine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B5C8165A62A16AE"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.5E2489DE2E840738.title}"
 			x: 7.5d
 			y: -8.75d
@@ -748,6 +791,7 @@
 				""
 				"{moni.quest.374EB1BB1E2F6B9C.description2}"
 			]
+			icon: "gtceu:ammonia_bucket"
 			id: "374EB1BB1E2F6B9C"
 			rewards: [{
 				id: "64CE305C66916861"
@@ -755,11 +799,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "770D687340CEC979"
-				item: "gtceu:ammonia_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "770D687340CEC979"
+					item: "gtceu:ammonia_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "47BC51C82CC64BCA"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.374EB1BB1E2F6B9C.title}"
 			x: 7.5d
 			y: -10.5d
@@ -773,6 +825,7 @@
 				""
 				"{moni.quest.5DA5231489336B1B.description3}"
 			]
+			icon: "gtceu:hypochlorous_acid_bucket"
 			id: "5DA5231489336B1B"
 			rewards: [{
 				id: "74161C0370473D5A"
@@ -780,17 +833,26 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "5E85DD8FC98BBCC9"
-				item: "gtceu:hypochlorous_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5E85DD8FC98BBCC9"
+					item: "gtceu:hypochlorous_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "73BB5AEA7D105B60"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 6.25d
 			y: -10.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: ["{moni.quest.5878D53EB85F3881.description1}"]
+			icon: "gtceu:methanol_bucket"
 			id: "5878D53EB85F3881"
 			rewards: [{
 				id: "5AD6DCD80667ABA1"
@@ -798,11 +860,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "346BA20113588F1F"
-				item: "gtceu:methanol_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "346BA20113588F1F"
+					item: "gtceu:methanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1B40EF1174810FF5"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.5878D53EB85F3881.title}"
 			x: 8.75d
 			y: -10.5d
@@ -847,6 +917,7 @@
 				""
 				"{moni.quest.7DE2C9292A09FC76.description7}"
 			]
+			icon: "gtceu:deuterium_bucket"
 			id: "7DE2C9292A09FC76"
 			rewards: [{
 				id: "7D1DF49C64A72FE6"
@@ -854,11 +925,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "585B4986E1D33DF9"
-				item: "gtceu:deuterium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "585B4986E1D33DF9"
+					item: "gtceu:deuterium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0FCD265BAF7F9526"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.7DE2C9292A09FC76.title}"
 			x: 3.5d
 			y: -4.0d

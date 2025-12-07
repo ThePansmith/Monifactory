@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line("dimensional_superassembler")
         .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uev", "16x gtceu:infinity_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "16x monilabs:eltz_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame")
-        .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
+        .inputFluids("gtceu:living_soldering_alloy 5760", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:dimensional_superassembler")
         .duration(6000)
         .EUt(13920000)
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("gtceu:mega_alloy_blast_smelter")
         .itemInputs("gtceu:alloy_blast_smelter", "4x #gtceu:circuits/uhv", "4x gtceu:uv_field_generator", "4x #forge:springs/yttrium_barium_cuprate", "4x #forge:dense_plates/neutronium", "4x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire")
-        .inputFluids("gtceu:advanced_soldering_alloy 9216", "gtceu:omnium 5760")
+        .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:omnium 5760")
         .itemOutputs("gtceu:mega_alloy_blast_smelter")
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
     // Helical Fusion Reactor
     event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
         .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "8x gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:uxpic_chip", "64x kubejs:uxpic_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
-        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:darconite 1152", "gtceu:polyethyl_cyanoacrylate 576")
+        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:darconite 1152", "gtceu:polyethyl_cyanoacrylate 576")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(1500)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -272,9 +272,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // Kubejs Stem Cells
-    event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
     event.remove({ id: "gtceu:large_chemical_reactor/stem_cells" })
-    event.recipes.gtceu.chemical_reactor("stem_cells")
+    event.recipes.gtceu.large_chemical_reactor("stem_cells")
         .itemInputs("minecraft:dragon_egg")
         .chancedInput("minecraft:sculk_catalyst", 500, 0)
         .inputFluids("gtceu:sterilized_growth_medium 500", "gtceu:bacteria 500", "enderio:xp_juice 2000")
@@ -284,6 +283,13 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(GTValues.VA[GTValues.LuV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    // Remove sterile CR recipes.
+    // LCR is a separate recipemap, and singleblocks cannot get the sterile hatch.
+    event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
+    event.remove({ id: "gtceu:chemical_reactor/collagen_from_bone" })
+    event.remove({ id: "gtceu:chemical_reactor/collagen_from_bone_meal" })
+    event.remove({ id: "gtceu:chemical_reactor/bacterial_sludge" })
 
 
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [
@@ -438,7 +444,7 @@ ServerEvents.recipes(event => {
     // Knowledge Transmission Array
     event.recipes.gtceu.assembly_line("knowledge_transmission_array")
         .itemInputs("2x monilabs:sculk_bioalloy_frame", "16x gtceu:europium_double_cable", "16x gtceu:uhv_emitter", "16x gtceu:data_transmitter_hatch", "2x #gtceu:circuits/uhv", "32x gtceu:normal_optical_pipe", "16x gtceu:ruthenium_trinium_americium_neutronate_single_wire", "2x gtceu:network_switch", "32x gtceu:rhodium_foil")
-        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:omnium 2304", "gtceu:polyethyl_cyanoacrylate 1152")
+        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:omnium 2304", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("monilabs:knowledge_transmission_array")
         .duration(2000)
         .EUt(7864320)
@@ -494,7 +500,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UEV])
 
     event.recipes.gtceu.assembly_line("causality_exempt_monic_plating")
-        .itemInputs("6x gtceu:double_monium_plate", "8x monilabs:double_eltz_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "8x monilabs:double_eltz_plate", "6x gtceu:double_monium_plate")
+        .itemInputs("3x gtceu:double_monium_plate", "8x monilabs:double_eltz_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "8x monilabs:double_eltz_plate", "3x gtceu:double_monium_plate")
         .inputFluids("gtceu:living_soldering_alloy 2880")
         .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
         .duration(400)

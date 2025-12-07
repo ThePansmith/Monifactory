@@ -1,12 +1,4 @@
 {
-    "block.extendedcrafting.flux_alternator": "Pilón de sculk",
-    "block.extendedcrafting.flux_crafter": "Cargador de sculk",
-    "block.extendedcrafting.auto_flux_crafter": "Cargador de sculk",
-    "container.extendedcrafting.flux_alternator": "Pilón de sculk",
-    "container.extendedcrafting.flux_crafter": "Cargando sculk",
-    "jei.category.extendedcrafting.flux_crafting": "Cargando sculk",
-    "config.jade.plugin_extendedcrafting.flux_crafter": "Información de la mesa de trabajo Flux",
-    "book.extendedcrafting.entry.flux_crafting": "Cargando sculk",
-    "book.extendedcrafting.entry.flux_crafting.page.2": "Los pilones de sculk pueden ser colocados en cualquier lugar alrededor del cargador de Sculk en un radio de $(bold) 3 bloques$(). ¡Incluso arriba o abajo!",
-    "book.extendedcrafting.entry.flux_crafting.page.1": "El sculk cargado se elabora utilizando tanto el poder de la espera como energía. Una estructura de crafteo de sculk consta de un cargador Sculk y pilares Sculk. El cargador será energizado por los pilares. Cuantos más pilares tengas, más rápida será la elaboración."
+    "item.extendedcrafting.crystaltine_catalyst": "Diamond Catalyst",
+    "item.extendedcrafting.crystaltine_component": "Diamond Component"
 }

@@ -5,7 +5,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:omnium_nugget"
 	id: "25FEB9E61EEC1A96"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -1376,6 +1376,11 @@
 			description: [""]
 			disable_toast: true
 			id: "7978CD633112BE89"
+			rewards: [{
+				id: "73BB2ACE769812E9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				count: 64L
 				id: "6472F5F5B0D7083E"
@@ -2015,6 +2020,11 @@
 		{
 			disable_toast: true
 			id: "2D788BE1CA9A2D69"
+			rewards: [{
+				id: "0710F33F597D462E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				count: 64L
 				id: "67A5E978C88BEAD3"

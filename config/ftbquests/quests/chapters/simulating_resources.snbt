@@ -6,14 +6,48 @@
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
 	order_index: 2
-	quest_links: [{
-		id: "5D19AC088663AC0B"
-		linked_quest: "6FDF37EE046349F7"
-		shape: "hexagon"
-		size: 2.0d
-		x: 3.5d
-		y: -1.0d
-	}]
+	quest_links: [
+		{
+			id: "5D19AC088663AC0B"
+			linked_quest: "6FDF37EE046349F7"
+			shape: "hexagon"
+			size: 2.0d
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			id: "6EE0A9137212A27C"
+			linked_quest: "51FD757E07E397A1"
+			shape: "hexagon"
+			size: 1.5d
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			id: "710EE32CD2237464"
+			linked_quest: "7A716485BBDA8629"
+			shape: "hexagon"
+			size: 1.5d
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "7C96B978ECCC01E4"
+			linked_quest: "5A70898C99B828E3"
+			shape: "hexagon"
+			size: 1.75d
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			id: "58C105ED6ECB1E6D"
+			linked_quest: "161F61C28DBC5941"
+			shape: "hexagon"
+			size: 1.75d
+			x: 1.5d
+			y: -5.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: [
@@ -45,7 +79,11 @@
 		}
 		{
 			dependencies: ["715BC5C7DAC53B7B"]
-			description: ["{moni.quest.73C6E2724EBEC997.description1}"]
+			description: [
+				"{moni.quest.73C6E2724EBEC997.description1}"
+				""
+				"{moni.quest.73C6E2724EBEC997.description2}"
+			]
 			icon: "hostilenetworks:blank_data_model"
 			id: "73C6E2724EBEC997"
 			rewards: [{
@@ -130,7 +168,7 @@
 			]
 			title: "{moni.quest.1062A387E899434C.title}"
 			x: -0.5d
-			y: 0.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["2201391DEEBE79E4"]
@@ -416,10 +454,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"72D61AFACC53A34A"
-				"3F39E9B829DAE2F2"
-			]
+			dependencies: ["72D61AFACC53A34A"]
 			description: [
 				"{moni.quest.7A67E519745A8361.description1}"
 				""
@@ -468,11 +503,19 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
-			tasks: [{
-				id: "485B18F9D8C07C54"
-				item: "gtceu:liquid_nether_air_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "485B18F9D8C07C54"
+					item: "gtceu:liquid_nether_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64B2FB57C29031C6"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.45DD07F2BB9C6A59.title}"
 			x: -2.5d
 			y: 4.5d
@@ -504,7 +547,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.75d
 			tasks: [{
 				id: "15A06F5EF4CADA4C"
 				item: "hostilenetworks:sim_chamber"
@@ -512,7 +555,7 @@
 			}]
 			title: "{moni.quest.715BC5C7DAC53B7B.title}"
 			x: -0.5d
-			y: -1.5d
+			y: -1.0d
 		}
 	]
 	title: "{moni.chapter.6D8C988EFB3F7437.title}"

@@ -48,6 +48,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .duration(200)
 
+    // Nerfed Ender Air distillation - less Tritium
+    event.recipes.gtceu.distillation_tower("liquid_ender_air_distillation")
+        .inputFluids("gtceu:liquid_ender_air 200000")
+        .outputFluids("gtceu:nitrogen_dioxide 130000", "gtceu:deuterium 50000", "gtceu:helium 15000", "gtceu:tritium 2000", "gtceu:krypton 1000", "gtceu:xenon 1000", "gtceu:radon 1000")
+        .chancedOutput("gtceu:ender_pearl_dust", 1000, 0)
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(100 * 20)
+
     // Netherrack
     event.recipes.gtceu.chemical_reactor("dust_to_netherrack")
         .itemInputs("kubejs:dust")
@@ -290,7 +298,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // UHV+ Parallel Control Hatch
-    event.shaped("gtceu:uhv_uhv_parallel_hatch", [
+    event.shaped("monilabs:uhv_parallel_hatch", [
         "SCE",
         "CHC",
         "WCW"
@@ -302,7 +310,7 @@ ServerEvents.recipes(event => {
         W: "gtceu:hyperdegenerate_darconite_quadruple_wire"
     })
 
-    event.shaped("gtceu:uev_uev_parallel_hatch", [
+    event.shaped("monilabs:uev_parallel_hatch", [
         "SCE",
         "CHC",
         "WCW"
@@ -560,7 +568,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:shaped/mega_blast_furnace" })
     event.recipes.gtceu.assembly_line("kubejs:mega_blast_furnace")
         .itemInputs("gtceu:electric_blast_furnace", "4x #gtceu:circuits/zpm", "4x gtceu:luv_field_generator", "4x gtceu:naquadah_alloy_spring", "4x gtceu:dense_naquadah_alloy_plate", "4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire")
-        .inputFluids("gtceu:soldering_alloy 9216")
+        .inputFluids("gtceu:advanced_soldering_alloy 2304")
         .itemOutputs("gtceu:mega_blast_furnace")
         .duration(3000)
         .EUt(30720)
@@ -569,7 +577,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:shaped/mega_vacuum_freezer" })
     event.recipes.gtceu.assembly_line("kubejs:mega_vacuum_freezer")
         .itemInputs("gtceu:vacuum_freezer", "4x #gtceu:circuits/zpm", "4x gtceu:luv_field_generator", "4x gtceu:naquadah_normal_fluid_pipe", "4x gtceu:dense_naquadah_alloy_plate", "4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire")
-        .inputFluids("gtceu:soldering_alloy 9216")
+        .inputFluids("gtceu:advanced_soldering_alloy 2304")
         .itemOutputs("gtceu:mega_vacuum_freezer")
         .duration(3000)
         .EUt(30720)
@@ -624,7 +632,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:field_generator_zpm" })
     event.recipes.gtceu.assembly_line("kubejs:zpm_field_generator")
         .itemInputs("gtceu:naquadah_alloy_frame", "6x gtceu:naquadah_alloy_plate", "gtceu:quantum_star", "2x gtceu:zpm_emitter", "2x #gtceu:circuits/zpm", "64x gtceu:fine_uranium_rhodium_dinaquadide_wire", "64x gtceu:fine_uranium_rhodium_dinaquadide_wire", "4x gtceu:vanadium_gallium_single_cable")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:cryococcus 1152")
+        .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:cryococcus 1152")
         .itemOutputs("gtceu:zpm_field_generator")
         .duration(600)
         .EUt(24000)
@@ -720,7 +728,7 @@ ServerEvents.recipes(event => {
     // Parallel Implosion Compressor
     event.recipes.gtceu.assembly_line("gtceu:implosion_collider")
         .itemInputs("4x enderio:reinforced_obsidian_block", "2x #gtceu:circuits/zpm", "gtceu:solid_machine_casing", "3x gtceu:niobium_nitride_double_cable", "2x gtceu:zpm_electric_piston")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:osmium 1152")
+        .inputFluids("gtceu:advanced_soldering_alloy 864", "gtceu:osmium 1152")
         .itemOutputs("gtceu:implosion_collider")
         .duration(900)
         .EUt(32000)

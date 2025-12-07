@@ -1,12 +1,4 @@
 {
-  "block.extendedcrafting.flux_alternator": "スカルクパイロン",
-  "block.extendedcrafting.flux_crafter": "スカルクチャージャー",
-  "block.extendedcrafting.auto_flux_crafter": "スカルクチャージャー",
-  "container.extendedcrafting.flux_alternator": "スカルクパイロン",
-  "container.extendedcrafting.flux_crafter": "スカルクチャージ",
-  "jei.category.extendedcrafting.flux_crafting": "スカルクチャージ",
-  "config.jade.plugin_extendedcrafting.flux_crafter": "フラックスクラフター詳細",
-  "book.extendedcrafting.entry.flux_crafting": "スカルクチャージ",
-  "book.extendedcrafting.entry.flux_crafting.page.1": "スカルクチャージは待つ力とエネルギーの力の両方を使ってクラフトします。スカルクチャージ機構はスカルクチャージャーとスカルクパイロンで構成されています。チャージャーはパイロンから電力を受け取ります。パイロンが多ければ多いほどクラフト速度は向上します。",
-  "book.extendedcrafting.entry.flux_crafting.page.2": "スカルクパイロンはスカルクチャージャーの周り半径$(bold)3ブロック$()のどこにでも設置できます。上でも下でも！"
+    "item.extendedcrafting.crystaltine_catalyst": "Diamond Catalyst",
+    "item.extendedcrafting.crystaltine_component": "Diamond Component"
 }

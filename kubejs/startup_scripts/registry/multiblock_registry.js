@@ -3,10 +3,12 @@
  * This is the place custom multiblock recipes (Like Discharging) are defined.
  * It is also where the shapes for multis are defined.
  */
+const List = Java.loadClass("java.util.List")
 const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 const LocalizationUtils = Java.loadClass("com.lowdragmc.lowdraglib.utils.LocalizationUtils")
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
+const RecipeLogic = Java.loadClass("com.gregtechceu.gtceu.api.machine.trait.RecipeLogic")
 const MoniGuiTextures = Java.loadClass("net.neganote.monilabs.client.gui.MoniGuiTextures");
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
@@ -144,7 +146,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         event.create("simulation_supercomputer", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("simulation_supercomputer")
-            .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+            .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
             .appearanceBlock(() => new Block.getBlock("kubejs:dark_steel_casing"))
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("CCC", "CEC", "CCC")
@@ -187,7 +189,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         event.create("simulation_quantumcomputer", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("simulation_supercomputer")
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
             .appearanceBlock(() => new Block.getBlock("kubejs:dark_steel_casing"))
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
@@ -214,7 +216,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         event.create("loot_quantumfabricator", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("loot_superfabricator")
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
             .appearanceBlock(() => new Block.getBlock("kubejs:dark_steel_casing"))
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
@@ -244,7 +246,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .machine((holder) => new FusionReactorMachine(holder, GTValues.UEV))
         .rotationState(RotationState.ALL)
         .recipeTypes(GTRecipeTypes.FUSION_RECIPES)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, MachineModifiers.FUSION_REACTOR])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, MachineModifiers.FUSION_REACTOR, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#######################", "#######################", "#######################", "###F##F#N#####N#F##F###", "###FNNFNN#####NNFNNF###", "###F##F#N#####N#F##F###", "#######################", "#######################", "#######################")
@@ -285,6 +287,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("greenhouse")
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("SSSSS", "UDDDU", "UDDDU", "UUGUU", "#UUU#")
             .aisle("SFFFS", "D###D", "D###D", "GO#OG", "#GEG#")
@@ -310,14 +313,22 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.blocks("minecraft:redstone_lamp")))
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("gtceu:block/casings/solid/machine_casing_solid_steel",
-            "gtceu:block/multiblock/implosion_compressor")
+        .modelProperty(GTModelProperties.RECIPE_LOGIC_STATUS, RecipeLogic.Status.IDLE)
+        .model(GTMachineModels.createWorkableCasingMachineModel(GTCEu.id("block/casings/solid/machine_casing_solid_steel"), GTCEu.id("block/multiblock/implosion_compressor"))
+            ["andThen(java.util.function.Consumer)"](b => b.addDynamicRenderer(() => GTDynamicRenders.makeGrowingPlantRender(List.of(
+                new Vector3f(-1, 1, -1),
+                new Vector3f(1, 1, -1),
+                new Vector3f(-1, 1, -3),
+                new Vector3f(1, 1, -3),
+                new Vector3f(-1, 1, -5),
+                new Vector3f(1, 1, -5),
+            )))))
 
     // Rock Cycle Simulator
     event.create("rock_cycle_simulator", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("rock_cycle_simulator")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCCCC", "CCCCCCC", "CCCCCCC", "CCCCCCC")
@@ -342,7 +353,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("atmospheric_accumulator", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(GTRecipeTypes.GAS_COLLECTOR_RECIPES)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_CORROSION_PROOF)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCC", "C   C", "CCCCC", "C   C", "CCCCC", "C   C", "CCCCC")
@@ -368,7 +379,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("matter_alterator", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("atomic_reconstruction")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
@@ -395,7 +406,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("implosion_collider", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(GTRecipeTypes.IMPLOSION_RECIPES)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "####E####", "###EEE###", "####E####", "#########", "#########")
@@ -431,7 +442,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("quintessence_infuser", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("quintessence_infuser")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock("kubejs:dark_soularium_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCC#", "CCCCC", "HGGGH", "HGGGH", "HGGGH", "CCCCC", "#CCC#")
@@ -593,7 +604,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("dimensional_superassembler", "multiblock")
         .rotationState(RotationState.ALL)
         .recipeTypes("assembly_line")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock("monilabs:dimensional_stabilization_netherite_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "###CCC###", "##CCCCC##", "#CCCCCCC#", "#CCCCCCC#", "#CCCCCCC#", "##CCCCC##", "###CCC###", "#########")
@@ -645,7 +656,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.ALL)
         .recipeTypes(GCYMRecipeTypes.ALLOY_BLAST_RECIPES)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, (machine, recipe) => GTRecipeModifiers.ebfOverclock(machine, recipe)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, (machine, recipe) => GTRecipeModifiers.ebfOverclock(machine, recipe), GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###IIIII###", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########")

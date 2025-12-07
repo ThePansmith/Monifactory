@@ -90,7 +90,9 @@ function deprecateFluid(oldFluidID, replacementFluidID, oldFluidName) {
 function deprecateBlock(oldBlockID, replacementBlockID, oldBlockName) {
     StartupEvents.registry("block", event => {
         if(!Fluid.exists(oldBlockID))
-            event.create(oldBlockID).displayName(`${oldBlockName} §c[DEPRECATED]`);
+            event.create(oldBlockID).displayName(`${oldBlockName} §c[DEPRECATED]`)
+                .resistance(4).hardness(3)
+                .tag("mineable/pickaxe")
     })
     global.deprecatedBlocks[oldBlockID] = replacementBlockID
 }

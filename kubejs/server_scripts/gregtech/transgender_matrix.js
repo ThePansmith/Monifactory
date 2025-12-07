@@ -102,8 +102,8 @@ ServerEvents.recipes(event => {
 
     // Discharger function doesn't support fluids. 3:<
     event.recipes.gtceu.discharger("kubejs:transcendental_soul")
-        .itemInputs("enderio:empty_soul_vial", "gtceu:dark_soularium_plate", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
-        .inputFluids("gtceu:transcendental_spirit 48")
-        .itemOutputs("kubejs:transcendental_soul_vial")
+        .itemInputs("4x enderio:empty_soul_vial", "3x gtceu:dark_soularium_plate", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
+        .inputFluids("gtceu:transcendental_spirit 192")
+        .itemOutputs("4x kubejs:transcendental_soul_vial")
         .duration(10)
 })

@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         builder
             .inputFluids("gtceu:helium_plasma 16000")
             .itemInputs("kubejs:universal_collapse_device")
-            .damageRate(80)
+            .damageRate(50)
             .itemOutputs("kubejs:heart_of_a_universe")
             .requiredMicroverse(1) // Normal
             .updateMicroverse(3, true)

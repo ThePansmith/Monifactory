@@ -6,7 +6,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
-	order_index: 6
+	order_index: 5
 	quest_links: [
 		{
 			id: "7D217833035647CD"
@@ -184,6 +184,13 @@
 			shape: "hexagon"
 			x: 18.5d
 			y: 0.5d
+		}
+		{
+			id: "72AB40B2D5F508E6"
+			linked_quest: "61301FBD825F8280"
+			shape: "hexagon"
+			x: 20.0d
+			y: 2.0d
 		}
 	]
 	quests: [
@@ -1521,7 +1528,7 @@
 		{
 			dependencies: [
 				"15E34DEC491FAB81"
-				"5759E8587624BEF1"
+				"6169C04DF463502F"
 			]
 			description: [
 				"{moni.quest.244F2CC5484A7B21.description1}"
@@ -1575,7 +1582,7 @@
 					type: "item"
 				}
 				{
-					count: 44L
+					count: 75L
 					id: "2BD9B381C408FF8B"
 					item: {
 						Count: 1
@@ -1659,6 +1666,7 @@
 			dependencies: [
 				"7E09D4E00BFA4970"
 				"6B908DECFA46C8E0"
+				"56924FC6B029BA0F"
 			]
 			description: [
 				"{moni.quest.39FD6F1076559156.description1}"
@@ -1907,6 +1915,7 @@
 				"1903B26C95DD325A"
 				"57A6FE885489C3ED"
 				"4E63CE9607E3B792"
+				"70FD95AEA44548B0"
 			]
 			description: [
 				"{moni.quest.47D092CBA484C0DE.description1}"
@@ -2244,7 +2253,6 @@
 			dependencies: [
 				"49E9A178F6A52A62"
 				"4FABACAB7C4A74AC"
-				"70FD95AEA44548B0"
 			]
 			description: [
 				"{moni.quest.5ECF0A787D861C89.description1}"
@@ -2290,11 +2298,7 @@
 		}
 		{
 			dependencies: ["1289F9FE461BFE01"]
-			description: [
-				"{moni.quest.67663B49B80849C1.description1}"
-				""
-				"{moni.quest.67663B49B80849C1.description2}"
-			]
+			description: ["{moni.quest.67663B49B80849C1.description1}"]
 			id: "67663B49B80849C1"
 			rewards: [{
 				id: "1E545E4FCEB06428"
@@ -2333,23 +2337,6 @@
 			title: "{moni.quest.01E542E1C9DAF5B4.title}"
 			x: 4.0d
 			y: 6.5d
-		}
-		{
-			dependencies: ["2E87146C82EF941C"]
-			description: [
-				"{moni.quest.6DF2C1E88BE7CE5F.description1}"
-				""
-				"{moni.quest.6DF2C1E88BE7CE5F.description2}"
-			]
-			id: "6DF2C1E88BE7CE5F"
-			shape: "hexagon"
-			tasks: [{
-				id: "6E9EDE045B0C0B3E"
-				item: "gtceu:omnium_ingot"
-				type: "item"
-			}]
-			x: 20.0d
-			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -2489,7 +2476,6 @@
 		}
 		{
 			dependencies: [
-				"6DF2C1E88BE7CE5F"
 				"61301FBD825F8280"
 				"6A6983C64374366C"
 			]
@@ -2553,7 +2539,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -2564,7 +2550,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -2635,7 +2621,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -2646,7 +2632,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -2717,7 +2703,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -2728,7 +2714,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -2799,7 +2785,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -2810,7 +2796,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -2881,7 +2867,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -2892,7 +2878,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -2963,7 +2949,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -2974,7 +2960,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -3045,7 +3031,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -3056,7 +3042,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -3127,7 +3113,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -3138,7 +3124,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -3207,7 +3193,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -3218,7 +3204,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -3286,7 +3272,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -3297,7 +3283,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
@@ -3365,7 +3351,7 @@
 											Count: 1b
 											id: "itemfilters:id_regex"
 											tag: {
-												value: "energy_(input|output)_hatch"
+												value: "energy_input_hatch"
 											}
 										}
 										{
@@ -3376,7 +3362,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
 													}
 												}]
 											}
