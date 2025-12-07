@@ -55,6 +55,7 @@ ServerEvents.recipes(event => {
             .CWUt(128, 28800)
             .EUt(GTValues.VA[GTValues.UV])
         )
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembly_line("antimatter_collider")
         .itemInputs("6x monilabs:dimensional_stabilization_netherite_casing", "8x #gtceu:circuits/uv", "16x gtceu:double_activated_netherite_plate", "24x gtceu:hsse_frame", "4x gtceu:uv_field_generator", "6x gtceu:uv_emitter", "10x gtceu:uv_electric_pump", "10x gtceu:superconducting_coil", "10x gtceu:neutronium_large_fluid_pipe", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire")
@@ -67,6 +68,7 @@ ServerEvents.recipes(event => {
             .CWUt(128, 28800)
             .EUt(GTValues.VA[GTValues.UV])
         )
+        .addMaterialInfo(true)
 
     // Powergen Recipes
     event.recipes.gtceu.anti_collider("annihilation_neutronium")

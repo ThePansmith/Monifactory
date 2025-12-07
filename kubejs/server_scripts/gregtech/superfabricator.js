@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     if (doHNN) {
         // //// Machine Recipe //////
 
-        event.shaped("gtceu:loot_superfabricator", [
+        event.recipes.gtceu.shaped("gtceu:loot_superfabricator", [
             "BPB",
             "CSC",
             "BCB"
@@ -23,11 +23,13 @@ ServerEvents.recipes(event => {
             P: "gtceu:ev_emitter",
             S: "hostilenetworks:loot_fabricator",
         }).id("gtceu:shaped/loot_superfabricator")
+            .addMaterialInfo()
 
         event.recipes.gtceu.assembly_line("loot_quantumfabricator")
             .itemInputs("gtceu:atomic_casing", "6x gtceu:trinaquadalloy_plate", "4x gtceu:loot_superfabricator", "kubejs:heart_of_a_universe", "4x #gtceu:circuits/uhv", "2x gtceu:uv_robot_arm", "2x gtceu:uv_emitter", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
             .inputFluids("gtceu:living_soldering_alloy 576")
             .itemOutputs("gtceu:loot_quantumfabricator")
+            .addMaterialInfo(true)
             .stationResearch(b => b
                 .researchStack("gtceu:loot_superfabricator")
                 .EUt(1966080)
