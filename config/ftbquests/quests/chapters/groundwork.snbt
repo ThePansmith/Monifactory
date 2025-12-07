@@ -156,6 +156,8 @@
 		{
 			id: "7FC84014DAAD0025"
 			linked_quest: "6D434F3B0E720A5A"
+			shape: "hexagon"
+			size: 1.25d
 			x: 1.5d
 			y: 4.25d
 		}
@@ -2462,6 +2464,55 @@
 			title: "{moni.quest.66E1F1B28E4577B2.title}"
 			x: -1.75d
 			y: 8.5d
+		}
+		{
+			dependencies: ["74935A3553451178"]
+			description: [
+				"{moni.quest.2C7306C74609E995.description1}"
+				""
+				"{moni.quest.2C7306C74609E995.description2}"
+				""
+				"{moni.quest.2C7306C74609E995.description3}"
+				""
+				"{moni.quest.2C7306C74609E995.description4}"
+			]
+			hide_dependency_lines: true
+			id: "2C7306C74609E995"
+			size: 1.5d
+			subtitle: "{moni.quest.2C7306C74609E995.subtitle}"
+			tasks: [{
+				id: "6BE07CD22A1130B1"
+				item: "gtceu:empty_spray_can"
+				type: "item"
+			}]
+			title: "{moni.quest.2C7306C74609E995.title}"
+			x: 10.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C78349343BA40D7"]
+			description: [
+				"{moni.quest.349869EBF2D9FAF1.description1}"
+				""
+				"{moni.quest.349869EBF2D9FAF1.description2}"
+				""
+				"{moni.quest.349869EBF2D9FAF1.description3}"
+			]
+			id: "349869EBF2D9FAF1"
+			rewards: [{
+				id: "43A8ED9E9FB6365D"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "50CCF15D11C3B693"
+				item: "gtceu:phosphorus_boule"
+				type: "item"
+			}]
+			title: "{moni.quest.349869EBF2D9FAF1.title}"
+			x: -8.0d
+			y: -4.25d
 		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"

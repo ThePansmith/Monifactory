@@ -6,7 +6,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
-	order_index: 6
+	order_index: 5
 	quest_links: [
 		{
 			id: "7D217833035647CD"
@@ -1528,7 +1528,7 @@
 		{
 			dependencies: [
 				"15E34DEC491FAB81"
-				"5759E8587624BEF1"
+				"6169C04DF463502F"
 			]
 			description: [
 				"{moni.quest.244F2CC5484A7B21.description1}"
@@ -2298,11 +2298,7 @@
 		}
 		{
 			dependencies: ["1289F9FE461BFE01"]
-			description: [
-				"{moni.quest.67663B49B80849C1.description1}"
-				""
-				"{moni.quest.67663B49B80849C1.description2}"
-			]
+			description: ["{moni.quest.67663B49B80849C1.description1}"]
 			id: "67663B49B80849C1"
 			rewards: [{
 				id: "1E545E4FCEB06428"
