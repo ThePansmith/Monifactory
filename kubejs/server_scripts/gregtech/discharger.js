@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    event.shaped("gtceu:discharger", [
+    event.recipes.gtceu.shaped("gtceu:discharger", [
         "PLP",
         "CFC",
         "PHP"
@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
         L: "gtceu:iv_field_generator",
         H: "gtceu:hsse_frame"
     }).id("kubejs:shaped/discharger")
+        .addMaterialInfo()
 
     event.recipes.gtceu.assembler("monilabs:cryolobus_casing")
         .itemInputs("6x gtceu:cryolobus_plate", "gtceu:cryolobus_frame")
@@ -21,6 +22,7 @@ ServerEvents.recipes(event => {
         .duration(50)
         .circuit(6)
         .EUt(16)
+        .addMaterialInfo(true)
 
     function Discharge(id, output, input, refund) {
         event.recipes.gtceu.discharger(`kubejs:${id}`)

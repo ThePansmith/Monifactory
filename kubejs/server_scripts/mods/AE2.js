@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     // Base AE2
     // ME Controller
     event.remove({ id: "ae2:network/blocks/controller" })
-    event.shaped(Item.of("ae2:controller"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:controller"), [
         "ABA",
         "BCB",
         "ABA"
@@ -15,10 +15,11 @@ ServerEvents.recipes(event => {
         B: "gtceu:fluix_plate",
         C: "ae2:energy_acceptor"
     }).id("kubejs:ae2/controller")
+        .addMaterialInfo()
 
     // Energy Acceptor
     event.remove({ id: "ae2:network/blocks/energy_energy_acceptor" })
-    event.shaped(Item.of("ae2:energy_acceptor"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:energy_acceptor"), [
         "ABA",
         "BCB",
         "ABA"
@@ -27,6 +28,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:fluix_plate",
         C: "gtceu:lv_machine_hull"
     }).id("kubejs:ae2/energy_acceptor")
+        .addMaterialInfo()
 
     // ME Chest
     event.remove({ id: "ae2:network/blocks/storage_chest" })
@@ -60,7 +62,7 @@ ServerEvents.recipes(event => {
 
     // Inscriber
     event.remove({ id: "ae2:network/blocks/inscribers" })
-    event.shaped(Item.of("ae2:inscriber"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:inscriber"), [
         "ABA",
         "CDA",
         "ABA"
@@ -70,6 +72,7 @@ ServerEvents.recipes(event => {
         C: "ae2:fluix_crystal",
         D: "gtceu:mv_machine_hull"
     }).id("kubejs:ae2/inscriber")
+        .addMaterialInfo()
 
     // Patterns
     event.remove({ id: "ae2:network/crafting/patterns_blank" })
@@ -542,12 +545,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("ae2:quartz_fiber")
         .duration(50)
         .EUt(16)
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.alloy_smelter("kubejs:ae2/fluix_cable")
         .itemInputs(["ae2:fluix_dust", "ae2:quartz_fiber"])
         .itemOutputs("2x ae2:fluix_glass_cable")
         .duration(50)
         .EUt(16)
+        .addMaterialInfo(true)
 
 
     // Skystone
@@ -976,6 +981,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x expatternprovider:assembler_matrix_frame")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Wall
     event.remove({ id: "expatternprovider:assembler_matrix_wall" })
@@ -985,6 +991,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .duration(100)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Glass
     event.remove({ id: "expatternprovider:assembler_matrix_glass" })
@@ -994,6 +1001,7 @@ ServerEvents.recipes(event => {
         .circuit(2)
         .duration(100)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Pattern Core
     event.remove({ id: "expatternprovider:assembler_matrix_pattern" })
@@ -1003,6 +1011,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_pattern")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Craft Core
     event.remove({ id: "expatternprovider:assembler_matrix_crafter" })
@@ -1012,6 +1021,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_crafter")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Speed Core
     event.remove({ id: "expatternprovider:assembler_matrix_speed" })
@@ -1021,6 +1031,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_speed")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Misc stuff
     event.shaped("expatternprovider:ingredient_buffer", [

@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs("2x gtceu:high_power_casing")
         .duration(100).EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("active_transformer")
         .itemInputs(
@@ -25,6 +26,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:sodium_potassium 1000")
         .itemOutputs("gtceu:active_transformer")
         .duration(300).EUt(GTValues.VA[GTValues.IV])
+        .addMaterialInfo(true)
+
     // Lowers the voltage at which the laser pipes can be made to post plat-line IV
     event.replaceInput({ output: "gtceu:normal_laser_pipe" }, "gtceu:osmiridium_foil", "gtceu:rhodium_foil")
 })
