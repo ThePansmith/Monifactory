@@ -89,11 +89,11 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of("minecraft:water", 150), Fluid.of("thermal:tree_oil", 100))
         .duration(200).EUt(20)
 
-    event.recipes.gtceu.centrifuge("kubejs:sap_centrifuging")
+    event.recipes.gtceu.distillation_tower("kubejs:sap_centrifuging")
         .inputFluids(Fluid.of("thermal:sap", 200))
-        .chancedOutput("minecraft:sugar", 300, 0)
-        .outputFluids(Fluid.of("minecraft:water", 190), Fluid.of("thermal:syrup", 10))
-        .duration(2000).EUt(2)
+        .outputFluids(Fluid.of("thermal:syrup", 25), Fluid.of("minecraft:water", 175))
+        .chancedOutput("minecraft:sugar", 1000, 0)
+        .duration(10 * 20).EUt(2)
 
     event.remove({ id: "thermal:redstone_servo" });
     event.shaped("thermal:redstone_servo", [
