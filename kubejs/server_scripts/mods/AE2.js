@@ -770,6 +770,46 @@ ServerEvents.recipes(event => {
 
     // MAE2 compat stuff
     event.remove({ id: /mae2/, not: { id: /crafting_accelerator/ } })
+    // Crafting Accelerators
+    const accelerator_ingredients = [
+        ["hv", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polyethylene", 1],
+        ["ev", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polyethylene", 1.5],
+        ["iv", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polytetrafluoroethylene", 1],
+        ["luv", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polytetrafluoroethylene", 1.5],
+    ]
+    for (let index = 1; index <= 4; index++) {
+        let curTier = Item.of(`mae2:${Math.pow(4, index)}x_crafting_accelerator`);
+
+        let prevTier;
+        if (index == 1) prevTier = Item.of("ae2:crafting_accelerator")
+        else prevTier = Item.of(`mae2:${Math.pow(4, index - 1)}x_crafting_accelerator`)
+
+        let curIngredients = accelerator_ingredients[index - 1]
+
+        event.shaped(curTier, [
+            "ACA",
+            "SBS"
+        ], {
+            A: curIngredients[1],
+            B: curIngredients[2],
+            C: `#gtceu:circuits/${curIngredients[0]}`,
+            S: Item.of(prevTier)
+        }).id(`kubejs:ae2/crafting_accelerator_${Math.pow(4, index)}x`)
+
+        // Cheaper ramp up to eliminate exponential effect
+        event.recipes.gtceu.assembler(`kubejs:ae2/crafting_accelerator_${Math.pow(4, index)}x_assembler`)
+            .itemInputs(
+                Item.of(prevTier, 1),
+                Item.of(curIngredients[1], 2),
+                Item.of(curIngredients[2], 1),
+                `#gtceu:circuits/${curIngredients[0]}`
+            )
+            .inputFluids(Fluid.of(curIngredients[3], 144 * curIngredients[4]))
+            .itemOutputs(curTier)
+            .EUt(GTValues.VA[GTValues.HV])
+            .duration(200)
+            .cleanroom(CleanroomType.CLEANROOM)
+    }
 
     event.shaped("mae2:item_multi_p2p_tunnel", [
         " A ",
