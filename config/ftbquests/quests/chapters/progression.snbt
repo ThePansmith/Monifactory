@@ -1187,8 +1187,6 @@
 				"{moni.quest.77670BF761084AA2.description1}"
 				""
 				"{moni.quest.77670BF761084AA2.description2}"
-				""
-				"{moni.quest.77670BF761084AA2.description3}"
 			]
 			disable_toast: true
 			icon: "gtceu:resistor"

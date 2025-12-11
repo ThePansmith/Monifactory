@@ -396,7 +396,6 @@
 				"{moni.quest.3EDD0A986384F2A7.description7}"
 				"{moni.quest.3EDD0A986384F2A7.description8}"
 				"{moni.quest.3EDD0A986384F2A7.description9}"
-				"{moni.quest.3EDD0A986384F2A7.description10}"
 			]
 			icon: "gtceu:lv_bender"
 			id: "3EDD0A986384F2A7"
@@ -1047,8 +1046,6 @@
 				"{moni.quest.500E619D568C07C2.description3}"
 				""
 				"{moni.quest.500E619D568C07C2.description4}"
-				""
-				"{moni.quest.500E619D568C07C2.description5}"
 			]
 			icon: "gtceu:lv_arc_furnace"
 			id: "500E619D568C07C2"
@@ -1907,7 +1904,6 @@
 				"{moni.quest.18D8D18C4494C587.description2}"
 				""
 				"{moni.quest.18D8D18C4494C587.description3}"
-				""
 				"{moni.quest.18D8D18C4494C587.description4}"
 				""
 				"{moni.quest.18D8D18C4494C587.description5}"
@@ -2679,7 +2675,6 @@
 				"{moni.quest.2861BA7C235C52A3.description24}"
 				"{moni.quest.2861BA7C235C52A3.description25}"
 				"{moni.quest.2861BA7C235C52A3.description26}"
-				"{moni.quest.2861BA7C235C52A3.description27}"
 			]
 			icon: "gtceu:energetic_alloy_octal_wire"
 			id: "2861BA7C235C52A3"
