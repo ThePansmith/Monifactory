@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         .duration(200)
 
     // Nerfed Ender Air distillation - less Tritium
-    event.recipes.gtceu.distillation_tower("liquid_ender_air_distillation")
+    event.recipes.gtceu.distillation_tower("distill_liquid_ender_air")
         .inputFluids("gtceu:liquid_ender_air 200000")
         .outputFluids("gtceu:nitrogen_dioxide 130000", "gtceu:deuterium 50000", "gtceu:helium 15000", "gtceu:tritium 2000", "gtceu:krypton 1000", "gtceu:xenon 1000", "gtceu:radon 1000")
         .chancedOutput("gtceu:ender_pearl_dust", 1000, 0)
