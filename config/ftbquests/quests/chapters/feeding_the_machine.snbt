@@ -150,11 +150,18 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "2E25B07192462553"
-				item: "gtceu:sterilizing_filter_casing"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2E25B07192462553"
+					item: "gtceu:sterilizing_filter_casing"
+					type: "item"
+				}
+				{
+					id: "5A9B41BE40B77111"
+					item: "gtmutils:sterile_cleaning_maintenance_hatch"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.04EABD3D2C72D2C5.title}"
 			x: 3.75d
 			y: -0.25d
