@@ -1569,6 +1569,7 @@
 			dependencies: [
 				"616555E46F314F04"
 				"244F2CC5484A7B21"
+				"0C4E18B05F9E68DE"
 			]
 			description: [
 				"{moni.quest.5BC6DB754207D4A8.description1}"
@@ -1642,6 +1643,7 @@
 				""
 				"{moni.quest.7256E0064F967C93.description8}"
 			]
+			hide_dependency_lines: false
 			id: "7256E0064F967C93"
 			rewards: [{
 				count: 3
@@ -1881,7 +1883,7 @@
 				"{moni.quest.1D0DF2330B113B7A.description2}"
 				""
 				"{moni.quest.1D0DF2330B113B7A.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.1D0DF2330B113B7A.description4}"
 				""
 				"{moni.quest.1D0DF2330B113B7A.description5}"

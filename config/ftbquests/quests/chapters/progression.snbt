@@ -792,8 +792,6 @@
 				"{moni.quest.6DC635766CD40FFF.description1}"
 				""
 				"{moni.quest.6DC635766CD40FFF.description2}"
-				""
-				"{moni.quest.6DC635766CD40FFF.description3}"
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
