@@ -94,7 +94,7 @@ element {
 
 element {
   interactable = true
-  source = [source:web]https://gist.githubusercontent.com/ThePansmith/99767cf11961eab4c91171de402101d8/raw/Moni%2520Menu%2520Text.md
+  source = [source:web]https://raw.githubusercontent.com/ThePansmith/Monifactory/refs/heads/main/Monifactory_titlescreen_text.md
   source_mode = resource
   shadow = true
   scale = 0.5
