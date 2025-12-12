@@ -3391,7 +3391,7 @@
 				""
 				"{moni.quest.0148FC824CC8556A.description3}"
 			]
-			icon: "gtceu:uhv_circuit_assembler"
+			icon: "gtceu:uev_assembler"
 			id: "2AEC486DC700133F"
 			rewards: [{
 				id: "613691AB5C173950"
@@ -3401,22 +3401,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "0148FC824CC8556A"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:uhv_circuit_assembler"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uhv_energy_input_hatch"
-							}
-						]
-					}
-				}
+				item: "gtceu:uev_assembler"
 				type: "item"
 			}]
 			title: "{moni.quest.0148FC824CC8556A.title}"
