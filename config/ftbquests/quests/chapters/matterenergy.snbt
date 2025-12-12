@@ -147,10 +147,7 @@
 			y: -4.75d
 		}
 		{
-			dependencies: [
-				"41B4EA53D6D7AE37"
-				"680C4363C268B223"
-			]
+			dependencies: ["41B4EA53D6D7AE37"]
 			description: [
 				"{moni.quest.073533F489D121FF.description1}"
 				""
@@ -169,7 +166,7 @@
 				item: "ae2:chest"
 				type: "item"
 			}]
-			x: -0.25d
+			x: 0.0d
 			y: 0.5d
 		}
 		{
@@ -219,6 +216,8 @@
 				"{moni.quest.670C69611ECFF5C8.description1}"
 				""
 				"{moni.quest.670C69611ECFF5C8.description2}"
+				""
+				"{moni.quest.670C69611ECFF5C8.description3}"
 			]
 			icon: "ae2:meteorite_compass"
 			id: "670C69611ECFF5C8"
@@ -239,6 +238,7 @@
 				{
 					id: "40398224818E775D"
 					optional_task: true
+					title: "{moni.quest.670C69611ECFF5C8.task}"
 					type: "checkmark"
 				}
 			]
@@ -250,7 +250,6 @@
 			dependencies: [
 				"073533F489D121FF"
 				"3781AD70E71CA0D7"
-				"680C4363C268B223"
 			]
 			description: [
 				"{moni.quest.52837FD72580F141.description1}"
@@ -272,7 +271,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.52837FD72580F141.title}"
-			x: -0.25d
+			x: 0.0d
 			y: -0.75d
 		}
 		{
@@ -495,6 +494,7 @@
 			]
 			icon: "packagedauto:package"
 			id: "74469710D910C19D"
+			optional: true
 			rewards: [{
 				id: "64AEDBCBECE58A67"
 				item: "kubejs:moni_quarter"
@@ -578,7 +578,7 @@
 			y: -3.75d
 		}
 		{
-			dependencies: ["72AFBEFCEAE86EC1"]
+			dependencies: ["073533F489D121FF"]
 			description: [
 				"{moni.quest.680C4363C268B223.description1}"
 				""
@@ -702,6 +702,7 @@
 			dependencies: [
 				"60BC08DE447E5007"
 				"1175ED9EF0AB82F6"
+				"00203B07F8A930DA"
 			]
 			description: [
 				"{moni.quest.553F85782265C350.description1}"
@@ -763,7 +764,10 @@
 			y: -0.75d
 		}
 		{
-			dependencies: ["41B4EA53D6D7AE37"]
+			dependencies: [
+				"41B4EA53D6D7AE37"
+				"11154356854B64DA"
+			]
 			description: [
 				"{moni.quest.1175ED9EF0AB82F6.description1}"
 				""
@@ -849,7 +853,10 @@
 			y: -2.25d
 		}
 		{
-			dependencies: ["6F32A8739D8E792A"]
+			dependencies: [
+				"6F32A8739D8E792A"
+				"4A96659253CCFACF"
+			]
 			description: [
 				"{moni.quest.0EF85170074E70B3.description1}"
 				""
@@ -888,7 +895,6 @@
 				"41B4EA53D6D7AE37"
 				"6F32A8739D8E792A"
 			]
-			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.480EE330E12084E8.description1}"
 				""
@@ -935,6 +941,7 @@
 			]
 			icon: "packagedexcrafting:ultimate_crafter"
 			id: "70D9B3C6539720DE"
+			optional: true
 			rewards: [{
 				id: "083A8F49762A37FE"
 				item: "kubejs:moni_quarter"
@@ -1020,6 +1027,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "{moni.quest.73908E06B75B9C9E.subtitle}"
 			tasks: [{
 				id: "4C87128CBD93E0A8"
 				item: "expatternprovider:pattern_modifier"
