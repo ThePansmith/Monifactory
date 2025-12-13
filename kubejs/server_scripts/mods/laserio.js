@@ -37,11 +37,14 @@ ServerEvents.recipes(event => {
                 T: "gtceu:tin_plate"
             }).id(`laserio:card_${card[0]}`)
 
+            // temporarily removed because LaserIO cards can't stack
+            /*
             event.recipes.gtceu.assembler(`laserio:card_${card[0]}`)
                 .itemInputs(card[1], cardChip, "3x gtceu:tin_plate", "6x minecraft:gold_nugget")
                 .itemOutputs(`2x laserio:card_${card[0]}`)
                 .duration(80)
                 .EUt(16)
+            */
         })
 
         // Overclockers
