@@ -380,7 +380,7 @@
     "moni.quest.0EF85170074E70B3.description2": "By now, you should have &6ME Pattern Providers, &6Molecular Assemblers, Crafting Units, Patterns&r and a &6Pattern Encoding Terminal&r. ",
     "moni.quest.0EF85170074E70B3.description3": "First, for all crafts, you'll need a &eCrafting CPU&r. These are structures that must be in a solid rectangular prism composed of:",
     "moni.quest.0EF85170074E70B3.description4": "&6* Crafting Storages&r, which determine how big a craft can be. For now, &64k Crafting Storages&r should be enough. You must have at least one per CPU.",
-    "moni.quest.0EF85170074E70B3.description5": "&6* Co-Processing Units&r allow the system to start multiple crafting steps at once. While these are optional, they greatly speed up crafting once your machines are fast enough to keep up.",
+    "moni.quest.0EF85170074E70B3.description5": "&6* Co-Processing Units&r, which allow the system to start multiple crafting steps at once. While these are optional, they greatly speed up crafting once your machines are fast enough to keep up.",
     "moni.quest.0EF85170074E70B3.description6": "&6* Crafting Monitors&r, used to see what is crafting. Not needed, and you can right-click on the CPU to find out what is crafting anyways, so this is pretty much just decoration.",
     "moni.quest.0EF85170074E70B3.description7": "&6* Crafting Units&r, which aren't needed at all, and are just used to fill holes if you have a lack of materials.",
     "moni.quest.0EF85170074E70B3.description8": "Second, you'll need the place for the autocrafting. For Crafting Table recipes, you'll need &6Molecular Assemblers&r. &6Pattern Providers&r are placed next to them. Autocrafting with &bGregTech&r is explained later, in the quest following this one.",
