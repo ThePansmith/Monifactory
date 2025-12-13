@@ -570,9 +570,6 @@
     "gtceu.uev_voltage_coil.desc": "Supreme Coil",
     "gtceu.uhv_voltage_coil.desc": "Legendary Coil",
     "material.gtceu.ferrous_oxide": "Ferrous Oxide",
-    "material.gtceu.transcendental_matrix": "Трансцендентальная матрица",
-    "gtceu.jei.ore_vein.venus/phyllosilicate": "Филлосиликатная жила",
-    "material.gtceu.radiant_blend": "Сияющая смесь",
     "gtceu.multiblock.antimatter_manipulator.tooltip.2": "§7These §franged recipes§7 §dconsume§7 and §bproduce§7 different quantities per run.",
     "gtceu.multiblock.antimatter_manipulator.tooltip.1": "§7Most recipes require §franged amounts§7 of §freactants§7 to refine into new types of §dantimatter.",
     "gtceu.multiblock.antimatter_manipulator.tooltip.0": "§7Uses the §dchaotic§7 power of §5antimatter§7 for new heights of §5power."
