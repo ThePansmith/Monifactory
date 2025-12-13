@@ -353,4 +353,16 @@ ServerEvents.recipes(event => {
                 "48x gtceu:raw_spodumene",
             )
     })
+
+    microverse_mission(event, 3, 1).forEach(builder => {
+        builder
+            .itemInputs("16x kubejs:petrotheum_dust")
+            .itemInputs("kubejs:advanced_drilling_kit")
+            .itemInputs("gtceu:damascus_steel_drill_head")
+            .requiredMicroverse(1) // Normal
+            .itemOutputs(
+                "64x gtceu:raw_oilsands_block",
+                "32x gtceu:raw_oilsands_block",
+            )
+    })
 })
