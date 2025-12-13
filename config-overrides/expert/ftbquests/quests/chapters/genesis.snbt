@@ -226,13 +226,13 @@
 			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
-			subtitle: "{moni.quest.07DC7FC23332B847.subtitle.expert}"
+			subtitle: "{moni.quest.07DC7FC23332B847.subtitle}"
 			tasks: [{
 				id: "380954E57B7C36EC"
 				title: "{moni.task.380954E57B7C36EC.expert}"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.07DC7FC23332B847.title.expert}"
+			title: "{moni.quest.07DC7FC23332B847.title}"
 			x: 1.75d
 			y: 0.5d
 		}
@@ -406,7 +406,7 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"{moni.quest.64AAF0CD958D836A.description1}"
+				"{moni.quest.64AAF0CD958D836A.description1.hardmode}"
 				""
 				"{moni.quest.64AAF0CD958D836A.description2}"
 			]
@@ -646,10 +646,10 @@
 				Count: 1
 				id: "gtceu:iron_wire_cutter"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 2
 						MaxDamage: 383
 						ToolSpeed: 6.0f
@@ -673,10 +673,10 @@
 						Count: 1
 						id: "gtceu:iron_hammer"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 2
 								MaxDamage: 255
 								ToolSpeed: 6.0f
@@ -692,10 +692,10 @@
 						Count: 1
 						id: "gtceu:iron_file"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -709,12 +709,12 @@
 						Count: 1
 						id: "gtceu:iron_saw"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								HarvestIce: 1b
 							}
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -728,12 +728,12 @@
 						Count: 1
 						id: "gtceu:iron_wrench"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								Mode: 2b
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 2
 								MaxDamage: 255
 								ToolSpeed: 6.0f
@@ -749,10 +749,10 @@
 						Count: 1
 						id: "gtceu:iron_screwdriver"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -766,10 +766,10 @@
 						Count: 1
 						id: "gtceu:iron_wire_cutter"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 2
 								MaxDamage: 255
 								ToolSpeed: 6.0f
@@ -785,10 +785,10 @@
 						Count: 1
 						id: "gtceu:iron_mortar"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -813,9 +813,7 @@
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
-					GT.Tool: {
-						Damage: 0
-					}
+					GT.Tool: { }
 				}
 			}
 			id: "07D45A3F8A74A61C"
@@ -895,9 +893,7 @@
 						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -1773,7 +1769,7 @@
 		{
 			dependencies: ["297B523B6C503957"]
 			description: [
-				"{moni.quest.5A94534682807314.description1}"
+				"{moni.quest.5A94534682807314.description1.expert}"
 				""
 				"{moni.quest.5A94534682807314.description2.expert}"
 				"{@pagebreak}"

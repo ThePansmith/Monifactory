@@ -356,8 +356,12 @@
 			y: 5.25d
 		}
 		{
-			dependencies: ["0006FEA1843FEA0A"]
+			dependencies: [
+				"0006FEA1843FEA0A"
+				"5BE3E37772FAF6CB"
+			]
 			description: ["{moni.quest.47A81FADD828772D.description1}"]
+			hide_until_deps_visible: true
 			icon: "hostilenetworks:blank_data_model"
 			id: "47A81FADD828772D"
 			optional: true
@@ -665,30 +669,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["0874A0191325CFDB"]
-			description: [
-				"{moni.quest.397DB20B979BC714.description1}"
-				""
-				"{moni.quest.397DB20B979BC714.description2}"
+			dependencies: [
+				"0874A0191325CFDB"
+				"5B07A88C0BFF6586"
 			]
-			id: "397DB20B979BC714"
-			rewards: [{
-				id: "09AF986F42E10AF9"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "737FDED5FBDC0BFC"
-				item: "gtceu:double_titanium_plate"
-				type: "item"
-			}]
-			title: "{moni.quest.397DB20B979BC714.title}"
-			x: -5.75d
-			y: -2.0d
-		}
-		{
-			dependencies: ["397DB20B979BC714"]
 			description: [
 				"[\"\",{\"translate\":\"moni.quest.53C00EA9D9BEE776.description1\"},{\"underlined\":true,\"translate\":\"moni.quest.53C00EA9D9BEE776.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description.hover_text2\"}}}]"
 				""
@@ -715,7 +699,7 @@
 			}]
 			title: "{moni.quest.53C00EA9D9BEE776.title}"
 			x: -5.75d
-			y: -3.75d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1885,29 +1869,6 @@
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
-			description: [
-				"{moni.quest.7E9DF1139829C78B.description1}"
-				""
-				"{moni.quest.7E9DF1139829C78B.description2}"
-			]
-			id: "7E9DF1139829C78B"
-			rewards: [{
-				id: "1937B83F4C1E07EE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "74CFD980F2E43686"
-				item: "gtceu:double_tungsten_carbide_plate"
-				type: "item"
-			}]
-			title: "{moni.quest.7E9DF1139829C78B.title}"
-			x: 9.0d
-			y: 6.75d
-		}
-		{
-			dependencies: ["14F1FF4656693711"]
 			description: ["{moni.quest.49C8716030809478.description1}"]
 			icon: "extendedcrafting:crafting_core"
 			id: "49C8716030809478"
@@ -1936,7 +1897,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["7E9DF1139829C78B"]
+			dependencies: ["14F1FF4656693711"]
 			description: [
 				"{moni.quest.664107ED03A944CD.description1}"
 				""
@@ -2287,11 +2248,7 @@
 				"634E056463ED1532"
 				"08B36E2C37C417E5"
 			]
-			description: [
-				"{moni.quest.605062720747B482.description1}"
-				""
-				"{moni.quest.605062720747B482.description2}"
-			]
+			description: ["{moni.quest.605062720747B482.description1}"]
 			id: "605062720747B482"
 			rewards: [{
 				id: "569C43CD39E5CBF1"
@@ -2588,7 +2545,6 @@
 				"{moni.quest.0F779BEEED8E67BB.description8}"
 				""
 				"{moni.quest.0F779BEEED8E67BB.description9}"
-				"{moni.quest.0F779BEEED8E67BB.description10}"
 			]
 			icon: {
 				Count: 1

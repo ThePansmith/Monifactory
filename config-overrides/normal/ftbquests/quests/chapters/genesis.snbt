@@ -34,7 +34,7 @@
 			id: "564D04B3CA37A1FF"
 			linked_quest: "2280472741683581"
 			shape: "hexagon"
-			x: 5.0d
+			x: 4.5d
 			y: 15.5d
 		}
 		{
@@ -118,6 +118,7 @@
 						Count: 1
 						id: "gtceu:diamond_mining_hammer"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								AoEColumn: 1
@@ -128,7 +129,6 @@
 								MaxAoERow: 1
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 2303
 								ToolSpeed: 6.4f
@@ -144,13 +144,13 @@
 						Count: 1
 						id: "gtceu:diamond_axe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								DisableShields: 1b
 								TreeFelling: 1b
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 8.0f
@@ -166,6 +166,7 @@
 						Count: 1
 						id: "gtceu:diamond_spade"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								AoEColumn: 1
@@ -176,7 +177,6 @@
 								MaxAoERow: 1
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 2303
 								ToolSpeed: 6.4f
@@ -746,10 +746,10 @@
 				Count: 1
 				id: "gtceu:wrought_iron_wire_cutter"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 2
 						MaxDamage: 383
 						ToolSpeed: 6.0f
@@ -774,9 +774,7 @@
 						id: "gtceu:wrought_iron_hammer"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -788,9 +786,7 @@
 						id: "gtceu:wrought_iron_file"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -802,9 +798,7 @@
 						id: "gtceu:wrought_iron_saw"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -816,9 +810,7 @@
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -830,9 +822,7 @@
 						id: "gtceu:wrought_iron_screwdriver"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -844,9 +834,7 @@
 						id: "gtceu:wrought_iron_wire_cutter"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -858,9 +846,7 @@
 						id: "gtceu:wrought_iron_mortar"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -884,9 +870,7 @@
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
-					GT.Tool: {
-						Damage: 0
-					}
+					GT.Tool: { }
 				}
 			}
 			id: "07D45A3F8A74A61C"
@@ -921,13 +905,13 @@
 				Count: 1
 				id: "gtceu:iron_axe"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						DisableShields: 1b
 						TreeFelling: 1b
 					}
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 2
 						MaxDamage: 255
 						ToolSpeed: 4.0f
@@ -984,9 +968,7 @@
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					type: "item"
@@ -1555,7 +1537,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2FA9404468E4BBD9.title}"
-			x: 2.5d
+			x: 2.0d
 			y: 15.5d
 		}
 		{
@@ -1581,7 +1563,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.077AA27F26B7831F.title}"
-			x: 3.5d
+			x: 3.25d
 			y: 15.5d
 		}
 		{
@@ -1655,32 +1637,6 @@
 			hide_dependency_lines: true
 			icon: "gtceu:sulfur_ore"
 			id: "081101DEE6227D87"
-			rewards: [{
-				id: "4C3153B1874D58D5"
-				item: {
-					Count: 1
-					id: "minecraft:player_head"
-					tag: {
-						SkullOwner: {
-							Id: [I;
-								1207556655
-								-2087172645
-								-1127815359
-								-166568499
-							]
-							Properties: {
-								textures: [{
-									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxYzU4MDEzOGM2MjU0M2I0ZWVmNWU2NjI4MjNhZmNkZDNlNzdjYTQxYTU0ODY3ZWExMmUwZDM5YmNkNTliMSJ9fX0="
-								}]
-							}
-						}
-						display: {
-							Name: "{\"text\":\"I bought ores with Monicoins\",\"color\":\"blue\",\"underlined\":false,\"bold\":true,\"italic\":false}"
-						}
-					}
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "0161A7D4C24DC421"
 				item: {

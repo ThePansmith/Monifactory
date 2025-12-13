@@ -150,11 +150,18 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "2E25B07192462553"
-				item: "gtceu:sterilizing_filter_casing"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2E25B07192462553"
+					item: "gtceu:sterilizing_filter_casing"
+					type: "item"
+				}
+				{
+					id: "5A9B41BE40B77111"
+					item: "gtmutils:sterile_cleaning_maintenance_hatch"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.04EABD3D2C72D2C5.title}"
 			x: 3.75d
 			y: -0.25d
@@ -233,7 +240,9 @@
 				"{moni.quest.2F6EC962007FA9FB.description2}"
 				""
 				"{moni.quest.2F6EC962007FA9FB.description3}"
+				""
 				"{moni.quest.2F6EC962007FA9FB.description4}"
+				""
 				"{moni.quest.2F6EC962007FA9FB.description5}"
 			]
 			icon: "gtceu:sterilized_growth_medium_bucket"
@@ -297,7 +306,6 @@
 				"039F70814051413E"
 				"7D4B29BA4D8CB153"
 			]
-			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0F6B344C265D1FBB.description1}"]
 			id: "0F6B344C265D1FBB"
 			rewards: [{
@@ -565,7 +573,10 @@
 			y: 6.25d
 		}
 		{
-			dependencies: ["2D47BFA44BDB5E6A"]
+			dependencies: [
+				"2D47BFA44BDB5E6A"
+				"7D29C79DE1CCA2A2"
+			]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.22E50A6923EBF5CB.description1}"
@@ -1207,7 +1218,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.738A141D31AD7CE3.title}"
-			x: -2.25d
+			x: -2.0d
 			y: 6.25d
 		}
 		{
@@ -1237,7 +1248,7 @@
 				}
 			]
 			title: "{moni.quest.7FA6B36DCE648C66.title}"
-			x: -2.25d
+			x: -2.0d
 			y: 10.25d
 		}
 		{
@@ -1316,7 +1327,10 @@
 			y: 7.25d
 		}
 		{
-			dependencies: ["15607184B546F5EE"]
+			dependencies: [
+				"15607184B546F5EE"
+				"75810A27FBBBFB77"
+			]
 			description: [
 				"{moni.quest.113E9543ADB1666B.description1}"
 				""
@@ -1416,10 +1430,30 @@
 			icon: "kubejs:naquadah_waste"
 			id: "75810A27FBBBFB77"
 			shape: "hexagon"
-			tasks: [{
-				id: "1ADCC7E04B246C34"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6D4413ED75F73290"
+					item: "kubejs:stabilized_curium"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "43461F39D99C80A3"
+					item: "kubejs:stabilized_berkelium"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6C9F5279150C5A28"
+					item: "kubejs:stabilized_californium"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D858605C97FE646"
+					type: "checkmark"
+				}
+			]
 			title: "{moni.quest.75810A27FBBBFB77.title}"
 			x: 2.25d
 			y: 11.0d

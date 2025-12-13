@@ -279,11 +279,7 @@
 				"04475771966A92C3"
 				"77582C534A994D7C"
 			]
-			description: [
-				"{moni.quest.555BEBF7FD6012B7.description1}"
-				""
-				"{moni.quest.555BEBF7FD6012B7.description2}"
-			]
+			description: ["{moni.quest.555BEBF7FD6012B7.description1}"]
 			id: "555BEBF7FD6012B7"
 			rewards: [{
 				id: "636C9B089C324417"
