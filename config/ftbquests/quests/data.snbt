@@ -14,6 +14,7 @@
 	]
 	emergency_items_cooldown: 300
 	grid_scale: 0.25d
+	hide_excluded_quests: false
 	icon: "gtceu:hssg_coil_block"
 	lock_message: ""
 	loot_crate_no_drop: {

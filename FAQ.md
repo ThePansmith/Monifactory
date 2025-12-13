@@ -8,10 +8,9 @@
 
 The main path of progression is fully playable - multiple groups have obtained the Creative Chest in Normal Mode.
 
-**Q. Where can I download Monifactory?**
+**Q. Is Monifactory still being updated?**
 
-Stable releases of Monifactory can be downloaded from CurseForge using any launcher of your choice (PrismLauncher, CurseForge, etc.)
-Bleeding edge builds can be found [here](https://github.com/ThePansmith/Monifactory/releases).
+Refer to the `main` branch of the repository on Github. The latest commit is an indicator of the last time a contribution to the modpack has been made.
 
 **Q. What's the difference between Monifactory and Nomifactory CEu?**
 
@@ -31,7 +30,7 @@ Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs 
 
 **Q. Can I port my Nomifactory world to Monifactory?**
 
-Technically? Yes. In a practical sense? No. Loading the 1.12 world in 1.20.1 Monifactory *does* load vanilla Minecraft items and blocks and some GT ores properly, but it voids every other modded item or block - you will essentially be sent back to the stone age.
+For all intents and purposes, No. Loading the 1.12 world in 1.20.1 Monifactory *does* load vanilla Minecraft items and blocks and some GT ores properly, but it voids every other modded item or block - you will essentially be sent back to the stone age.
 
 **Q. Will Monifactory be ported to 'X' Minecraft version?**
 
@@ -39,11 +38,11 @@ Monifactory will not be backported to any versions before 1.20.1. Porting the pa
 
 **Q. Will Monifactory be ported to Fabric?**
 
-Monifactory will not be ported to Fabric. Some mods necessary to the modpack are not available on Fabric, so a port to Fabric is not an option available to us.
+Monifactory will not be ported to Fabric. Some mods necessary to the modpack are not available on Fabric, so a port to Fabric is not an option.
 
 **Q. Will Monifactory be released on Modrinth?**
 
-Monifactory will not be released on Modrinth. Some mods necessary to the modpack are not available on Modrinth, so releasing on their platform is not an option available to us.
+Monifactory will not be released on Modrinth. Some mods necessary to the modpack are not available on Modrinth, so releasing on their platform is not an option.
 
 **Q. Is Create in the modpack?**
 
@@ -57,19 +56,24 @@ No, but we have their respective port and fork, Radium and Embeddium.
 
 Not by default. Oculus is included to load your shaders of choice, however.
 
-**Q. Can you create or add 'X' mod to Monifactory?**
+**Q. Can you add \[X\] mod to Monifactory?**
 
-Create a feature request on the GitHub.
+Create a feature request on the GitHub for the mod to be considered.
 
-**Q. Can I add 'X' mod to my instance of Monifactory?**
+**Q. Can I add \[X\] mod to my instance of Monifactory?**
 
-By default, Monifactory only supports the mods included with it, and has *optional compat* for various mods, such as Create. Any other mods added may break progression and/or deviate from the intended experience. Note that support will not be provided for bugs related to mods not shipped with the pack.
+By default, Monifactory only supports the mods included with it, and has *optional compat* for various mods, such as Create. While it is your prerogative to alter the pack as you desire, any mods added to the pack may break progression and/or deviate from the intended experience. Support will not be provided for bugs related to mods not shipped with the pack.
 
 <hr>
 
 ## How Do I...?
 
-**Q. How do I play Monifactory Hard Mode/Expert Mode?**
+**Q. How do I download Monifactory?**
+
+Stable releases of Monifactory can be downloaded from CurseForge using any launcher of your choice (PrismLauncher, CurseForge, etc.)
+Bleeding edge builds can be found [here](https://github.com/ThePansmith/Monifactory/releases).
+
+**Q. How do I play Hard Mode/Expert Mode?**
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardexpert-mode-installation)
 
@@ -107,28 +111,25 @@ For the old Gregtech textures, look into [Threefold's Modern GregTech](https://m
 
 Lost Cities generates those ruins. To disable them, it is easiest to remove the mod entirely.
 
-<hr>
+## Help Section
 
-## Tech Support
+**Q. Where are the quests in the Questbook?**
 
-### Gameplay
+You have installed or updated the modpack incorrectly. Refer to the installation instructions above.
 
-**Q. Where should I build my base?**
+**A quest is not showing as completed?!?**
 
-This is your decision to make - You don't ask others to decide what you should eat for lunch!
-If you want a comparison of the available dimensions:
-- Overworld: Pretty landscapes & easy access to resources, but some find the terrain difficult to build around.
-- Void Dimension: Always day, but featureless and nothing to build off of. Good for potato computers.
-- Luna, Mars, Mercury, or Venus: Mostly featureless, flat terrain. You need Oxygen and a spacesuit to breathe.
-- Planetary Orbit dimensions: Similar to the Void Dimension, but you need Oxygen and a spacesuit to breathe.
-- Lost Cities Dimension: Cities cover most terrain, and are damaged. No Ores.
-- Nether/End: Rich in resources, but potentially hazardous. Same generation as in Vanilla but with GregTech ores.
-- AE2 Spatial Storage: 128x128 size limit. Can be combined & traversed in creative ways.
+Check all dependencies and ensure they are completed with a green checkmark. Some dependencies may not be on the same quest page or may not be connected with a line.
+If that does not work, then go into edit mode by changing the game mode to Creative, then clicking the pencil in the bottom right of the quest UI. In edit mode, you can right-click a quest and select "Complete Instantly".
 
 **Q. I can't light my Nether portal?!?**
 
 In Monifactory, both the Nether and End portals are disabled.
 TelePastries' cakes are used to move between dimensions instead.
+
+**KubeJS errors found!**
+
+You have installed or updated the modpack incorrectly. Refer to the installation instructions above.
 
 **Q. What happened to Ender IO?!?**
 Support for Ender IO in 1.20.1 has discontinued despite some major aspects of the mod being left in a buggy state. As such, those portions of the mod have been removed so as to not confuse or irritate players.

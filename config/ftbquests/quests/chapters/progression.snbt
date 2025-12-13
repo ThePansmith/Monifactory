@@ -6,7 +6,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
-	order_index: 6
+	order_index: 5
 	quest_links: [
 		{
 			id: "7D217833035647CD"
@@ -699,7 +699,16 @@
 			subtitle: "{moni.quest.126ED4A0AEA05DCD.subtitle}"
 			tasks: [{
 				id: "78E3752A857221D8"
-				item: "thermal:upgrade_augment_1"
+				item: {
+					Count: 1
+					id: "thermal:upgrade_augment_1"
+					tag: {
+						AugmentData: {
+							BaseMod: 1.5f
+							Type: "Upgrade"
+						}
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -792,8 +801,6 @@
 				"{moni.quest.6DC635766CD40FFF.description1}"
 				""
 				"{moni.quest.6DC635766CD40FFF.description2}"
-				""
-				"{moni.quest.6DC635766CD40FFF.description3}"
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
@@ -1010,15 +1017,27 @@
 		}
 		{
 			dependencies: ["0C9A9F33EEA3AB5E"]
-			description: ["{moni.quest.5601A05D8361551D.description1}"]
+			description: [
+				"{moni.quest.5601A05D8361551D.description1}"
+				""
+				"{moni.quest.5601A05D8361551D.description2}"
+			]
+			icon: "kubejs:extradimensional_processor_mainframe"
 			id: "5601A05D8361551D"
 			shape: "hexagon"
 			subtitle: "{moni.quest.5601A05D8361551D.subtitle}"
-			tasks: [{
-				id: "7C6BFAE0BEAADEA4"
-				item: "kubejs:extradimensional_processor_mainframe"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7C6BFAE0BEAADEA4"
+					item: "kubejs:extradimensional_processor_mainframe"
+					type: "item"
+				}
+				{
+					id: "048CCB901FDAB594"
+					item: "kubejs:extradimensional_optical_cpu_core"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.5601A05D8361551D.title}"
 			x: 7.0d
 			y: 9.5d
@@ -1106,13 +1125,21 @@
 				"2D5677EA9F47AA83"
 			]
 			description: ["{moni.quest.0C9A9F33EEA3AB5E.description1}"]
+			icon: "kubejs:extradimensional_processor_computer"
 			id: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
-			tasks: [{
-				id: "12DD7DF8ACAA29E5"
-				item: "kubejs:extradimensional_processor_computer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "12DD7DF8ACAA29E5"
+					item: "kubejs:extradimensional_processor_computer"
+					type: "item"
+				}
+				{
+					id: "31999739A550EC84"
+					item: "kubejs:extradimensional_wetware_cpu_core"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.0C9A9F33EEA3AB5E.title}"
 			x: 7.0d
 			y: 8.0d
@@ -1120,13 +1147,21 @@
 		{
 			dependencies: ["5A8D2BFAF02E6325"]
 			description: ["{moni.quest.3D7924B550A1BBA0.description1}"]
+			icon: "kubejs:extradimensional_processor_assembly"
 			id: "3D7924B550A1BBA0"
 			shape: "hexagon"
-			tasks: [{
-				id: "36FE3694B99326BE"
-				item: "kubejs:extradimensional_processor_assembly"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "36FE3694B99326BE"
+					item: "kubejs:extradimensional_processor_assembly"
+					type: "item"
+				}
+				{
+					id: "314C441E018FECFD"
+					item: "kubejs:extradimensional_crystal_cpu_core"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.3D7924B550A1BBA0.title}"
 			x: 7.0d
 			y: 6.5d
@@ -1137,14 +1172,22 @@
 				"1E36AFB19932C805"
 			]
 			description: ["{moni.quest.5A8D2BFAF02E6325.description1}"]
+			icon: "kubejs:extradimensional_processor"
 			id: "5A8D2BFAF02E6325"
 			shape: "hexagon"
 			subtitle: "{moni.quest.5A8D2BFAF02E6325.subtitle}"
-			tasks: [{
-				id: "3EFB11DA4735807C"
-				item: "kubejs:extradimensional_processor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3EFB11DA4735807C"
+					item: "kubejs:extradimensional_processor"
+					type: "item"
+				}
+				{
+					id: "458917A66AD96AD5"
+					item: "kubejs:extradimensional_quantum_cpu_core"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.5A8D2BFAF02E6325.title}"
 			x: 7.0d
 			y: 5.0d
@@ -1167,6 +1210,7 @@
 			dependencies: [
 				"434142F777A2CCBE"
 				"7EE334D3AA1E68ED"
+				"07057CDE4E021BA7"
 			]
 			description: ["{moni.quest.7979D07FBDC6D170.description1}"]
 			id: "7979D07FBDC6D170"
@@ -1187,8 +1231,6 @@
 				"{moni.quest.77670BF761084AA2.description1}"
 				""
 				"{moni.quest.77670BF761084AA2.description2}"
-				""
-				"{moni.quest.77670BF761084AA2.description3}"
 			]
 			disable_toast: true
 			icon: "gtceu:resistor"
@@ -1528,7 +1570,7 @@
 		{
 			dependencies: [
 				"15E34DEC491FAB81"
-				"5759E8587624BEF1"
+				"6169C04DF463502F"
 			]
 			description: [
 				"{moni.quest.244F2CC5484A7B21.description1}"
@@ -2298,11 +2340,7 @@
 		}
 		{
 			dependencies: ["1289F9FE461BFE01"]
-			description: [
-				"{moni.quest.67663B49B80849C1.description1}"
-				""
-				"{moni.quest.67663B49B80849C1.description2}"
-			]
+			description: ["{moni.quest.67663B49B80849C1.description1}"]
 			id: "67663B49B80849C1"
 			rewards: [{
 				id: "1E545E4FCEB06428"
@@ -3389,47 +3427,6 @@
 			title: "{moni.quest.1A6F087E10DC036E.title}"
 			x: 4.5d
 			y: 10.5d
-		}
-		{
-			dependencies: ["07057CDE4E021BA7"]
-			description: [
-				"{moni.quest.0148FC824CC8556A.description1}"
-				""
-				"{moni.quest.0148FC824CC8556A.description2}"
-				""
-				"{moni.quest.0148FC824CC8556A.description3}"
-			]
-			icon: "gtceu:uhv_circuit_assembler"
-			id: "2AEC486DC700133F"
-			rewards: [{
-				id: "613691AB5C173950"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "0148FC824CC8556A"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:uhv_circuit_assembler"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uhv_energy_input_hatch"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "{moni.quest.0148FC824CC8556A.title}"
-			x: 7.0d
-			y: -7.0d
 		}
 		{
 			dependencies: [
