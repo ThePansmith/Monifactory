@@ -4,7 +4,7 @@
 ServerEvents.recipes(event => {
 
     // Recipe
-    event.shaped("gtceu:rock_cycle_simulator", [
+    event.recipes.gtceu.shaped("gtceu:rock_cycle_simulator", [
         "PMP",
         "CHC",
         "UWU"
@@ -16,6 +16,7 @@ ServerEvents.recipes(event => {
         W: "gtceu:platinum_single_cable",
         H: "gtceu:iv_rock_crusher"
     }).id("kubejs:shaped/rock_cycle_simulator")
+        .addMaterialInfo()
 
     // Recipe Function
     function RockCycle(id, input, output, EUt) {

@@ -21,6 +21,7 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .duration(50)
         .EUt(GTValues.VH[GTValues.LV]) // Yes, original recipe is VH, not VHA
+        .addMaterialInfo(true)
 
     event.replaceInput([{ output: "gtceu:heat_vent"}], "gtceu:long_molybdenum_disilicide_rod", "gtceu:long_rhodium_rod")
 

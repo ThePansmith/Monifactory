@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     // Black quartz, tag-based recipes for Tinted Glass
     event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:glass", "#forge:glass")
     event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:amethyst_shard", "#forge:gems/amethyst")
-    event.shaped("2x minecraft:tinted_glass", [
+    event.recipes.gtceu.shaped("2x minecraft:tinted_glass", [
         " Q ",
         "QGQ",
         " Q "
@@ -63,6 +63,7 @@ ServerEvents.recipes(event => {
         Q: "#forge:gems/black_quartz",
         G: "#forge:glass"
     }).id("kubejs:tinted_glass_black_quartz")
+        .addMaterialInfo()
     event.recipes.gtceu.assembler("tinted_glass_black_quartz")
         .itemInputs("2x #forge:gems/black_quartz", "#forge:glass")
         .itemOutputs("minecraft:tinted_glass")
@@ -101,7 +102,7 @@ ServerEvents.recipes(event => {
         ["uev", "omnium"]
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
-        event.shaped(`gtceu:${tier}_atomic_reconstructor`, [
+        event.recipes.gtceu.shaped(`gtceu:${tier}_atomic_reconstructor`, [
             "CPC",
             "EHE",
             "PPM"
@@ -112,6 +113,7 @@ ServerEvents.recipes(event => {
             C: `#gtceu:circuits/${tier}`,
             M: `gtceu:${tier}_electric_motor`
         }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
+            .addMaterialInfo()
     })
 
     // Flower conversion convenience recipes
