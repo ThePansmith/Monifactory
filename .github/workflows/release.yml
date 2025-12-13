@@ -67,7 +67,7 @@ jobs:
         run: |
           git fetch origin lang
           git merge --squash origin/lang
-          git commit --no-edit
+          git commit --no-edit --allow-empty -m "Merge branch lang"
         shell: bash
       - run: git push
         shell: bash
