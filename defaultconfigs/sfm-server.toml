@@ -1,0 +1,25 @@
+#This config is shown to clients, don't put anything secret in here
+#Prevents factory managers from compiling and running code (for emergencies)
+disableProgramExecution = false
+#Log resource loss to console
+logResourceLossToConsole = true
+#Range: > 1
+timerTriggerMinimumIntervalInTicks = 20
+#Range: > 1
+timerTriggerMinimumIntervalInTicksWhenOnlyForgeEnergyIOStatementsPresent = 1
+#The number of scenarios to check is 2^n where n is the number of if statements in a trigger
+#Range: > 0
+maxIfStatementsInTriggerBeforeSimulationIsntAllowed = 10
+#The max number of problems annotated on a disk item before truncation
+#Range: > 0
+maxDiskProblems = 10
+#What resource types should SFM not be allowed to move
+disallowedResourceTypesForTransfer = ["forge_energy"]
+#How to convert Enchanted Books to Experience Shards
+#JustOne = always produces 1 shard regardless of enchantments
+#EachOne = produces 1 shard per enchantment on the book.
+#SumLevels = produces a number of shards equal to the sum of the enchantments' levels
+#SumLevelsScaledExponentially = produces a number of shards equal to the sum of 2 to the power of each enchantment's level (1 -> 1 shard, 2 -> 4 shards, 3 -> 8 shards, etc)
+#Allowed Values: JustOne, EachOne, SumLevels, SumLevelsScaledExponentially
+levelsToShards = "JustOne"
+
