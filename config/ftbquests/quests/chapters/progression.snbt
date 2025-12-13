@@ -699,7 +699,16 @@
 			subtitle: "{moni.quest.126ED4A0AEA05DCD.subtitle}"
 			tasks: [{
 				id: "78E3752A857221D8"
-				item: "thermal:upgrade_augment_1"
+				item: {
+					Count: 1
+					id: "thermal:upgrade_augment_1"
+					tag: {
+						AugmentData: {
+							BaseMod: 1.5f
+							Type: "Upgrade"
+						}
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]

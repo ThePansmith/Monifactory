@@ -167,6 +167,14 @@
 			x: 3.75d
 			y: 4.25d
 		}
+		{
+			id: "6E2A278B1FB94559"
+			linked_quest: "6197C51E04761371"
+			shape: "hexagon"
+			size: 2.0d
+			x: 4.25d
+			y: -11.0d
+		}
 	]
 	quests: [
 		{
@@ -859,8 +867,8 @@
 		}
 		{
 			dependencies: [
-				"13F33DCE02ECE265"
 				"53347AAAE4495F95"
+				"6197C51E04761371"
 			]
 			description: [
 				"{moni.quest.591A1B8B279DFCC9.description1}"
@@ -884,35 +892,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["055193574D203872"]
-			description: [
-				"{moni.quest.13F33DCE02ECE265.description1}"
-				""
-				"{moni.quest.13F33DCE02ECE265.description2}"
-				""
-				"{moni.quest.13F33DCE02ECE265.description3}"
-				""
-				"{moni.quest.13F33DCE02ECE265.description4}"
-			]
-			id: "13F33DCE02ECE265"
-			rewards: [{
-				id: "5C9E3F865D479E4D"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "69AA06301D6F129B"
-				item: "gtceu:lv_assembler"
-				type: "item"
-			}]
-			title: "{moni.quest.13F33DCE02ECE265.title}"
-			x: 4.25d
-			y: -11.0d
-		}
-		{
-			dependencies: ["13F33DCE02ECE265"]
+			dependencies: ["6197C51E04761371"]
 			description: [
 				"{moni.quest.1CB14AC299A8EDD9.description1}"
 				""
@@ -1162,6 +1142,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "495FB1B792F34BE5"
 				item: "gtceu:mv_assembler"
@@ -1350,14 +1331,16 @@
 				"{moni.quest.7641AE777370BE1A.description1}"
 				""
 				"{moni.quest.7641AE777370BE1A.description2}"
-				"{@pagebreak}"
+				""
 				"{moni.quest.7641AE777370BE1A.description3}"
-				""
-				"{moni.quest.7641AE777370BE1A.description4}"
 				"{@pagebreak}"
-				"{moni.quest.7641AE777370BE1A.description5}"
+				"{moni.quest.7641AE777370BE1A.description4}"
 				""
+				"{moni.quest.7641AE777370BE1A.description5}"
+				"{@pagebreak}"
 				"{moni.quest.7641AE777370BE1A.description6}"
+				""
+				"{moni.quest.7641AE777370BE1A.description7}"
 			]
 			icon: "gtceu:distillation_tower"
 			id: "7641AE777370BE1A"

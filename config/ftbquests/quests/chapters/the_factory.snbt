@@ -60,6 +60,12 @@
 			x: 7.0d
 			y: -5.5d
 		}
+		{
+			id: "4373D49C9462A56A"
+			linked_quest: "2C89DAD26E08E382"
+			x: 8.25d
+			y: 5.0d
+		}
 	]
 	quests: [
 		{
@@ -1187,6 +1193,7 @@
 				"74B5CA5A48CE7B39"
 				"29A487F0BC43AAF9"
 			]
+			description: ["{moni.quest.3BD20358F137E7C6.description1}"]
 			id: "3BD20358F137E7C6"
 			shape: "hexagon"
 			tasks: [{
@@ -1194,6 +1201,7 @@
 				item: "gtceu:dark_steel_ingot"
 				type: "item"
 			}]
+			title: "{moni.quest.3BD20358F137E7C6.title}"
 			x: 5.0d
 			y: -2.5d
 		}
@@ -1208,8 +1216,6 @@
 				"{moni.quest.41C2E49E70D76330.description2}"
 				""
 				"{moni.quest.41C2E49E70D76330.description3}"
-				""
-				"{moni.quest.41C2E49E70D76330.description4}"
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:steam_grinder"
@@ -1324,6 +1330,8 @@
 				"{moni.quest.1CA6D620309F2B9E.description1}"
 				""
 				"{moni.quest.1CA6D620309F2B9E.description2}"
+				""
+				"{moni.quest.1CA6D620309F2B9E.description3}"
 			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"
@@ -1335,7 +1343,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "4A822DF50CD59532"
+					id: "1E07B0FCC2B8D3EF"
 					item: {
 						Count: 1
 						id: "minecraft:flint_and_steel"
@@ -1346,7 +1354,7 @@
 					type: "item"
 				}
 				{
-					id: "1E07B0FCC2B8D3EF"
+					id: "6E822A9514AED405"
 					item: "enderio:grains_of_infinity"
 					type: "item"
 				}
@@ -1529,7 +1537,6 @@
 				"7A7907EE1F3FCFBF"
 				"0B5613CC79261800"
 			]
-			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.3AB0402B19DD5BA8.description1}"
 				""
@@ -1540,6 +1547,7 @@
 				"{moni.quest.3AB0402B19DD5BA8.description4}"
 			]
 			id: "3AB0402B19DD5BA8"
+			min_required_dependencies: 2
 			rewards: [{
 				id: "5155898EDA908A3F"
 				item: "kubejs:moni_nickel"
@@ -2204,10 +2212,6 @@
 							}
 							{
 								Count: 1b
-								id: "sophisticatedstorage:iron_to_diamond_tier_upgrade"
-							}
-							{
-								Count: 1b
 								id: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
 							}
 						]
@@ -2484,7 +2488,11 @@
 				"66FCC26399376B55"
 				"1BC6DDC2D50F9C46"
 			]
-			description: ["{moni.quest.74A7ABF43D6A403F.description1}"]
+			description: [
+				"{moni.quest.74A7ABF43D6A403F.description1}"
+				""
+				"{moni.quest.74A7ABF43D6A403F.description2}"
+			]
 			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "74A7ABF43D6A403F"
