@@ -901,4 +901,11 @@ ServerEvents.recipes(event => {
         .itemOutputs("7x gtceu:tantalum_pentoxide_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Monium as a mixture of gadolinium and terbium (easter egg)
+    event.recipes.gtceu.electrolyzer("electrolyze_monium_dust")
+        .itemInputs("2x gtceu:monium_dust")
+        .itemOutputs("gtceu:terbium_dust", "gtceu:gadolinium_dust")
+        .duration(6000)
+        .EUt(GTValues.VA[GTValues.UEV])
 })
