@@ -1,0 +1,15 @@
+name: Get Version Info Manual
+on:
+  workflow_dispatch:
+    inputs:
+      format_only:
+        description: "Only get version format"
+        required: false
+        type: boolean
+        default: false
+
+permissions: {}
+
+jobs:
+  pre-build:
+    uses: ./.github/workflows/get_version_info.yml
