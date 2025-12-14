@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
 
     // Replace recipes that use liquid Iron II chloride with the new dust form
-    event.recipes.gtceu.large_chemical_reactor("iron_2_chloride")
+    event.recipes.gtceu.chemical_reactor("iron_2_chloride")
         .inputFluids("gtceu:iron_iii_chloride 2000", "gtceu:chlorobenzene 1000")
         .itemOutputs("2x gtceu:iron_ii_chloride_dust")
         .outputFluids("gtceu:hydrochloric_acid 1000", "gtceu:dichlorobenzene 1000")
