@@ -247,7 +247,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 2, 1).forEach(builder => {
         builder
-            .itemInputs("gtceu:rocket_fuel 3000")
+            .inputFluids("gtceu:rocket_fuel 3000")
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:invar_drill_head")
             .requiredMicroverse(1) // Normal
