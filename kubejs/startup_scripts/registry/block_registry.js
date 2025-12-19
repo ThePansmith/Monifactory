@@ -135,45 +135,6 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
-
-    // Dense Ores
-    const ores = [
-        "redstone",
-        "diamond",
-        "emerald",
-        "gold",
-        "lapis",
-        "iron",
-        "coal",
-        "copper",
-        "nether_quartz",
-        "oilsands"
-    ]
-
-    ores.forEach(ore => {
-        event.create(`dense_${ore}_ore`)
-            .textureAll(`kubejs:block/deprecated/dense_${ore}_ore`)
-            .soundType("stone")
-            .resistance(6)
-            .hardness(5)
-            .tagBlock("mineable/pickaxe")
-            .tagBoth("forge:ores/dense")
-            .tagBoth(`forge:ores/dense/${ore}`)
-            .requiresTool(true);
-    });
-
-    event.create("dense_magma_block")
-        .textureAll("kubejs:block/deprecated/dense_magma_block")
-        .soundType("stone")
-        .resistance(6)
-        .hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .tagBoth("forge:ores/dense")
-        .tagBoth("forge:ores/dense/magma")
-        .requiresTool(true)
-        .lightLevel(1.0);
-
-
     // Machine Casings
     const casings = [
         "dark_soularium",
