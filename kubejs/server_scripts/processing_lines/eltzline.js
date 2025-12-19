@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     // 2KAlSi3O8 + 36HF -> 2KOH + Al2O3 + 6H2SiF6 + 11H2O
     // This one takes 1.5x as long because Stone Dust can be centrifuged to make Potassium Feldspar en-masse
     event.recipes.gtceu.chemical_reactor("potassium_feldspar_digestion")
-        .itemInputs("22x gtceu:potassium_feldspar_dust")
+        .itemInputs("26x gtceu:potassium_feldspar_dust")
         .inputFluids("gtceu:hydrofluoric_acid 36000", "minecraft:water 1000")
         .itemOutputs("5x gtceu:bauxite_dust", "6x gtceu:potassium_hydroxide_dust")
         .outputFluids("gtceu:dirty_hexafluorosilicic_solution 18000")
@@ -27,24 +27,24 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor("anorthite_digestion")
         .itemInputs("13x gtceu:anorthite_dust")
         .inputFluids("gtceu:hydrofluoric_acid 12000", "minecraft:water 1000")
-        .itemOutputs("5x gtceu:bauxite_dust", "3x gtceu:calcium_hydroxide_dust")
+        .itemOutputs("5x gtceu:bauxite_dust", "5x gtceu:calcium_hydroxide_dust")
         .outputFluids("gtceu:dirty_hexafluorosilicic_solution 6000")
         .duration(6 * 2 * 20 + 5 * 20)
 
     // Cs2Al2Si4(H2O)2O12 + 24HF -> 2CsOH + Al2O3 + 4H2SiF6 + 9H2O
     event.recipes.gtceu.chemical_reactor("pollucite_digestion")
-        .itemInputs("11x gtceu:pollucite_dust")
-        .inputFluids("gtceu:hydrofluoric_acid 24000")
-        .itemOutputs("5x gtceu:bauxite_dust", "3x gtceu:caesium_hydroxide_dust")
-        .outputFluids("gtceu:dirty_hexafluorosilicic_solution 12000", "minecraft:water 1000")
+        .itemInputs("22x gtceu:pollucite_dust")
+        .inputFluids("gtceu:hydrofluoric_acid 24000", "minecraft:water 1000")
+        .itemOutputs("5x gtceu:bauxite_dust", "6x gtceu:caesium_hydroxide_dust")
+        .outputFluids("gtceu:dirty_hexafluorosilicic_solution 12000")
         .duration(11 * 2 * 20 + 5 * 20)
 
     // 2NaCa4Si27Al9(H2O)28O72 + 324HF -> 2NaOH + 8Ca(OH)2 + 9Al2O3 + 54H2SiF6 + 155H2O
     event.recipes.gtceu.large_chemical_reactor("zeolite_digestion")
-        .itemInputs("44x gtceu:zeolite_dust")
-        .inputFluids("gtceu:hydrofluoric_acid 36000")
-        .itemOutputs("5x gtceu:bauxite_dust", "3x gtceu:calcium_hydroxide_dust", "6x gtceu:tiny_sodium_hydroxide_dust")
-        .outputFluids("gtceu:dirty_hexafluorosilicic_solution 18000", "minecraft:water 5500")
+        .itemInputs("19x gtceu:zeolite_dust")
+        .inputFluids("gtceu:hydrofluoric_acid 18000", "minecraft:water 1000")
+        .itemOutputs("5x gtceu:bauxite_dust", "6x gtceu:sodium_hydroxide_dust")
+        .outputFluids("gtceu:dirty_hexafluorosilicic_solution 9000")
         .duration(18 * 2 * 20 + 5 * 20)
 
     // 1Al2SiO5 + 6HF -> 1H2SiF6 + 2H2O + 1Al2O3
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor("mica_digestion")
         .itemInputs("38x gtceu:mica_dust")
         .inputFluids("gtceu:hydrofluoric_acid 32000", "minecraft:water 3000")
-        .itemOutputs("15x gtceu:bauxite_dust", "3x gtceu:potassium_hydroxide_dust")
+        .itemOutputs("15x gtceu:bauxite_dust", "6x gtceu:potassium_hydroxide_dust")
         .outputFluids("gtceu:dirty_hexafluorosilicic_solution 18000")
         .duration(18 * 2 * 20 + 15 * 20)
 
