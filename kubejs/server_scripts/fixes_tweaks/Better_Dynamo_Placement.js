@@ -1,4 +1,7 @@
 /** Shamelessly stolen from A&B :) */
+
+const MetaMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.MetaMachine")
+
 function opposite(face) {
     if (face.equals("down"))
         return "up"
@@ -16,12 +19,9 @@ function opposite(face) {
 BlockEvents.placed(event => {
     let block = event.getBlock()
 
-    // gtceu blocks
-    if (block.getId().startsWith("gtceu:")) {
-        // Set energy converters to feToEu mode when placed
-        if (block.getId().endsWith("_energy_converter")) {
-            block.mergeEntityData({ energyContainer: { feToEu: true } })
-        }
+    // Set energy converters to feToEu mode when placed
+    if (block.getId().startsWith("gtceu:") && block.getId().endsWith("_energy_converter")) {
+        MetaMachine.getMachine(event.getLevel(), event.getBlock().pos).setFeToEu(true)
     }
 
     // Blocks below these line only get their placements altered if they were placed by an entity
