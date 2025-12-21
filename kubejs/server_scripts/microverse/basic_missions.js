@@ -245,6 +245,18 @@ ServerEvents.recipes(event => {
             )
     })
 
+    microverse_mission(event, 2, 1).forEach(builder => {
+        builder
+            .inputFluids("gtceu:rocket_fuel 3000")
+            .itemInputs("kubejs:basic_drilling_kit")
+            .itemInputs("gtceu:invar_drill_head")
+            .requiredMicroverse(1) // Normal
+            .itemOutputs(
+                "64x gtceu:raw_oilsands_block",
+                "32x gtceu:raw_oilsands_block",
+            )
+    })
+
     // T3MM missions
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
