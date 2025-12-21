@@ -210,8 +210,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("experience_attuned")
         .dust().gas()
         .color(0x70486e)
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-        .components("7x amethyst", "2x dark_soularium", "4x lapis")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components(GTMaterials.Amethyst.multiply(7), "2x dark_soularium", GTMaterials.Lapis.multiply(4))
 
     event.create("sculk_agar")
         .dust()
