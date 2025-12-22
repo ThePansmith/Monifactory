@@ -148,6 +148,15 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(3000)
 
+        event.shaped("kubejs:quantum_flux", [
+            " B ",
+            "BAB",
+            " B "
+        ], {
+            A: "enderio:pulsating_crystal",
+            B: "hostilenetworks:end_prediction"
+        })
+
         // LAIR DATA
         let lairs = [
             ["deep_dark", "overworld", "deepslate"],
