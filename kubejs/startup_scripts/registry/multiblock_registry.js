@@ -579,7 +579,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("CCCCCCCCC", "CP#III#PC", "#P#SSS#P#", "#PSPPPSP#", "#S  E  S#", "#V  E  V#", "#G  E  G#", "#V  E  V#", "#S  E  S#", "##SPPPS##", "###SMS###")
             .aisle("CCCCCCCCC", "C##III##C", "###SSS###", "##SPPPS##", "#S K K S#", "#V K K V#", "#G K K G#", "#V K K V#", "#S K K S#", "##SPPPS##", "###SSS###")
             .aisle("CCCCCCCCC", "CCF###FCC", "##F###F##", "##FSSSF##", "##S   S##", "##V   V##", "##G   G##", "##V   V##", "##S   S##", "###SSS###", "#########")
-            .aisle("#CCCCCCC#", " CC#P#CC ", "####P####", "####P####", "###SSS###", "###VVV###", "###GGG###", "###VVV###", "###SSS###", "#########", "#########")
+            .aisle("#CCCCCCC#", "#CC#P#CC#", "####P####", "####P####", "###SSS###", "###VVV###", "###GGG###", "###VVV###", "###SSS###", "#########", "#########")
             .aisle("##CC@CC##", "##CCCCC##", "#########", "#########", "#########", "#########", "#########", "#########", "#########", "#########", "#########")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where("C", Predicates.blocks("gtceu:stress_proof_casing").setMinGlobalLimited(85)

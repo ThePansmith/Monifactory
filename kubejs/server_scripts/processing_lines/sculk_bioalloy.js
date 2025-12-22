@@ -4,7 +4,7 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer("experience_attuned_dust")
         .itemInputs("7x gtceu:amethyst_dust", "2x gtceu:dark_soularium_dust", "4x gtceu:lapis_dust")
-        .itemOutputs("gtceu:experience_attuned_dust")
+        .itemOutputs("13x gtceu:experience_attuned_dust")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
