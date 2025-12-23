@@ -27,22 +27,22 @@ if (Platform.isLoaded("compactmachines")) {
             .EUt(GTValues.VHA[GTValues.IV])
 
         // Recipes for all tiers of Compact Machine
-        const machineSizes = [
-            { size: "tiny", material: "#forge:storage_blocks/copper" },
-            { size: "small", material: "#forge:storage_blocks/iron" },
-            { size: "normal", material: "#forge:storage_blocks/gold" },
-            { size: "large", material: "minecraft:obsidian" },
-            { size: "giant", material: "#forge:storage_blocks/diamond" },
-            { size: "maximum", material: "#forge:storage_blocks/netherite" },
-        ]
+        const machineSizes = ["tiny", "small", "normal", "large", "giant", "maximum"]
 
-        machineSizes.forEach((value, index) => {
-            event.recipes.gtceu.assembler(`compactmachines:machine_${value.size}`)
-                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), (index > 2 ? "gtceu:tungsten_frame" : "gtceu:steel_frame"), value.material, `2x gtceu:${GTValues.VN[index + 1].toLowerCase()}_field_generator`, (index > 2 ? Item.of("gtceu:quantum_eye", 2 ** (index - 2)) : Item.of("minecraft:ender_eye", 2 ** index)))
-                .inputFluids(`gtceu:styrene_butadiene_rubber ${144 * (index + 1)}`)
-                .itemOutputs(`compactmachines:machine_${value.size}`)
+        const plasticForTier = tier => {
+            if (tier <= GTValues.EV) return "polyethylene"
+            if (tier <= GTValues.LuV) return "polytetrafluoroethylene"
+            return "polybenzimidazole"
+        }
+
+        machineSizes.forEach((size, index) => {
+            const tier = GTValues.HV + index
+            event.recipes.gtceu.assembler(`compactmachines:machine_${size}`)
+                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), GTCraftingComponents.get("frame", tier), GTCraftingComponents.get("plate", tier), `2x gtceu:${GTValues.VN[tier].toLowerCase()}_field_generator`, `2x gtceu:${GTValues.VN[tier].toLowerCase()}_emitter`)
+                .inputFluids(`gtceu:${plasticForTier(tier)} ${144 * (index + 1)}`)
+                .itemOutputs(`compactmachines:machine_${size}`)
                 .duration(200)
-                .EUt(GTValues.VA[index + 1])
+                .EUt(GTValues.VA[tier])
         })
 
         // Recipes for tunnels
