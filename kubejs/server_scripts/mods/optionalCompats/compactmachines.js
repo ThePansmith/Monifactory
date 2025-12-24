@@ -29,6 +29,9 @@ if (Platform.isLoaded("compactmachines")) {
         // Recipes for all tiers of Compact Machine
         const machineSizes = ["tiny", "small", "normal", "large", "giant", "maximum"]
 
+        const framesByIndex = ["stainless_steel", "titanium", "tungsten_steel", "ruridit", "iridium", "naquadah_alloy"]
+        const platesByIndex = ["stainless_steel", "titanium", "tungsten_steel", "rhodium_plated_palladium", "naquadah_alloy", "darmstadtium"]
+
         const plasticForTier = tier => {
             if (tier <= GTValues.EV) return "polyethylene"
             if (tier <= GTValues.LuV) return "polytetrafluoroethylene"
@@ -37,8 +40,15 @@ if (Platform.isLoaded("compactmachines")) {
 
         machineSizes.forEach((size, index) => {
             const tier = GTValues.HV + index
+            const tierName = GTValues.VN[tier].toLowerCase()
             event.recipes.gtceu.assembler(`compactmachines:machine_${size}`)
-                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), GTCraftingComponents.get("frame", tier), GTCraftingComponents.get("plate", tier), `2x gtceu:${GTValues.VN[tier].toLowerCase()}_field_generator`, `2x gtceu:${GTValues.VN[tier].toLowerCase()}_emitter`)
+                .itemInputs(
+                    Item.of("compactmachines:wall", 4 * (index + 1)),
+                    `gtceu:${framesByIndex[index]}_frame`,
+                    `gtceu:${platesByIndex[index]}_plate`,
+                    `2x gtceu:${tierName}_field_generator`,
+                    `2x gtceu:${tierName}_emitter`
+                )
                 .inputFluids(`gtceu:${plasticForTier(tier)} ${144 * (index + 1)}`)
                 .itemOutputs(`compactmachines:machine_${size}`)
                 .duration(200)
@@ -56,7 +66,7 @@ if (Platform.isLoaded("compactmachines")) {
         tunnelTypes.forEach(value => {
             event.remove({ id: `compactmachines:tunnels/${value.type}` })
             event.recipes.gtceu.assembler(`compactmachines:tunnel_${value.type}`)
-                .itemInputs("2x compactmachines:wall", value.hatch, "gtceu:quantum_eye")
+                .itemInputs("2x compactmachines:wall", value.hatch, "minecraft:ender_eye")
                 .itemOutputs(Item.of("compactmachines:tunnel", 2, value.nbt))
                 .duration(100)
                 .EUt(GTValues.VHA[GTValues.HV])
