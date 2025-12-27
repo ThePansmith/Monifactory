@@ -89,7 +89,7 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.maximumYield(100)
         vein.depletionAmount(7)
         vein.depletionChance(50)
-        vein.depletedYield(5)
+        vein.depletedYield(0)
     })
 
     // Venus fluid veins
