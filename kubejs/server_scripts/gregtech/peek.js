@@ -55,6 +55,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV])
 
+    event.recipes.gtceu.canner("fluorotoluene_mixture_canning")
+        .itemInputs("gtceu:fluid_cell")
+        .inputFluids("gtceu:fluorotoluene_mixture 1000")
+        .itemOutputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:fluorotoluene_mixture"}}'))
+        .duration(16)
+        .EUt(4)
+
     event.recipes.gtceu.laser_engraver("fluorotoluene_mixture_activation")
         .notConsumable("gtceu:black_glass_lens")
         .itemInputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:fluorotoluene_mixture"}}').weakNBT())
@@ -62,12 +69,12 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.canner("fluorotoluene_mixture_separation")
+    event.recipes.gtceu.canner("fluorotoluene_mixture_uncanning")
         .itemInputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:activated_fluorotoluene_mixture"}}').weakNBT())
         .itemOutputs("gtceu:fluid_cell")
         .outputFluids("gtceu:activated_fluorotoluene_mixture 1000")
-        .duration(60)
-        .EUt(GTValues.VA[GTValues.LV])
+        .duration(16)
+        .EUt(4)
 
     event.recipes.gtceu.centrifuge("4-fluorotrichlorotoluene")
         .inputFluids("gtceu:activated_fluorotoluene_mixture 1000")
