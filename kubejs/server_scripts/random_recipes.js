@@ -856,13 +856,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(1)
 
-    // Gunpowder Decomp into Carbon Dust
-    event.recipes.gtceu.electrolyzer("electrolyzing_gunpowder_carbon_dust")
-        .itemInputs("6x minecraft:gunpowder")
-        .itemOutputs("2x gtceu:saltpeter_dust", "gtceu:sulfur_dust", "3x gtceu:carbon_dust")
-        .duration(110)
-        .EUt(GTValues.VA[GTValues.MV])
-
     // Gilded Blackstone maceration
     event.recipes.gtceu.macerator("macerate_gilded_blackstone")
         .itemInputs("minecraft:gilded_blackstone")
