@@ -991,11 +991,10 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     // Extended Pattern Access Terminal
-    // I do want to eventually just outright remove the default one in favor of this one, but will happen once EPAT gets a fullblock eng block
+    // Note that the terminal doesn't have a fullblock version.
     event.remove({ id: "expatternprovider:epa" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("kubejs:epp/epa")
-    event.remove({ id: "expatternprovider:epa_upgrade" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("expatternprovider:epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:engineering_processor", "#ae2:pattern_provider", "ae2:logic_processor"]).id("expatternprovider:epa_direct")
 
     // ExtendedAE Silicon Block
     event.remove({id:"expatternprovider:silicon_block"})
