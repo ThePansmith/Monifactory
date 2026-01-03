@@ -53,3 +53,6 @@ features:
     # Whether the Auto Turbo Chargers are enabled.
     autoChargersEnabled: true
 
+    # Whether the Expanded Pattern Buffer and Expanded Pattern Buffer Proxy are enabled. If AE2 is not loaded, this config will not load the machines regardless.
+    expandedBuffersEnabled: true
+
