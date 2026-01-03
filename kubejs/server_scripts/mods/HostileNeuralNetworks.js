@@ -58,6 +58,7 @@ ServerEvents.recipes(event => {
             .duration(50)
             .EUt(16)
             .circuit(6)
+            .addMaterialInfo(true)
 
         event.shaped("hostilenetworks:sim_chamber", [
             "ACA",

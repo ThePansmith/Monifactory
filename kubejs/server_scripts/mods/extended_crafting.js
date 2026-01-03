@@ -225,14 +225,14 @@ ServerEvents.recipes(event => {
         D: "gtceu:tungsten_carbide_block"
     })
 
-    event.shaped("extendedcrafting:pedestal", [
+    event.recipes.gtceu.shaped("extendedcrafting:pedestal", [
         " P ",
         " P ",
         "PBP"
     ], {
         P: "gtceu:black_steel_plate",
         B: "gtceu:black_steel_block"
-    })
+    }).addMaterialInfo()
 
     // Combination Crafts
 

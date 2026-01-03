@@ -3,7 +3,7 @@
  * Even with post-UV content enabled, GTM doesn't generate these items or recipes.
  */
 ServerEvents.recipes(event => {
-    event.shaped("gtceu:uev_hermetic_casing", [
+    event.recipes.gtceu.shaped("gtceu:uev_hermetic_casing", [
         "PPP",
         "PFP",
         "PPP"
@@ -11,8 +11,9 @@ ServerEvents.recipes(event => {
         P: "#forge:plates/infinity",
         F: "gtceu:activated_netherite_huge_fluid_pipe"
     })
+        .addMaterialInfo()
 
-    event.shaped("gtceu:uev_quantum_tank", [
+    event.recipes.gtceu.shaped("gtceu:uev_quantum_tank", [
         "CFC",
         "PHP",
         "CEC"
@@ -23,8 +24,9 @@ ServerEvents.recipes(event => {
         H: "gtceu:uev_hermetic_casing",
         E: "gtceu:uhv_electric_pump"
     })
+        .addMaterialInfo()
 
-    event.shaped("gtceu:uev_quantum_chest", [
+    event.recipes.gtceu.shaped("gtceu:uev_quantum_chest", [
         "CPC",
         "PHP",
         "CFC"
@@ -34,4 +36,5 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/uev",
         H: "gtceu:uev_machine_hull",
     })
+        .addMaterialInfo()
 })
