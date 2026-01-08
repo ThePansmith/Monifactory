@@ -1110,19 +1110,6 @@ ServerEvents.recipes(event => {
         result: { item: "ae2wtlib:quantum_bridge_card" }
     }).id("kubejs:ae2wtlib/quantum_bridge_card")
 
-    // Certus Quartz and Fluix Blocks
-    event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
-        .itemInputs(["4x ae2:certus_quartz_crystal"])
-        .itemOutputs("ae2:quartz_block")
-        .duration(300)
-        .EUt(2)
-
-    event.recipes.gtceu.compressor("kubejs:fluix_block")
-        .itemInputs(["4x ae2:fluix_crystal"])
-        .itemOutputs("ae2:fluix_block")
-        .duration(300)
-        .EUt(2)
-
     // Vibrant Quartz Glass
     event.remove({ output: "ae2:quartz_vibrant_glass" })
     event.recipes.gtceu.alloy_smelter("kubejs:vibrant_quartz_glass")

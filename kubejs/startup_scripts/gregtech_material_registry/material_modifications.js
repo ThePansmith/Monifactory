@@ -153,6 +153,9 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.dust.setIgnored(GTMaterials.CertusQuartz, $AEItems.CERTUS_QUARTZ_DUST)
     TagPrefix.dust.setIgnored(GTMaterials.get("fluix"), $AEItems.FLUIX_DUST)
 
-    TagPrefix.block.setIgnored(GTMaterials.CertusQuartz, $AEBlocks.QUARTZ_BLOCK.asItem())
-    TagPrefix.block.setIgnored(GTMaterials.get("fluix"), $AEBlocks.FLUIX_BLOCK.asItem())
+    TagPrefix.block.setIgnoredBlock(GTMaterials.CertusQuartz, $AEBlocks.QUARTZ_BLOCK.block())
+    TagPrefix.block.setIgnoredBlock(GTMaterials.get("fluix"), $AEBlocks.FLUIX_BLOCK.block())
+
+    // Change Fluix block to only have 4 gems instead of 9
+    TagPrefix.block.modifyMaterialAmount(GTMaterials.get("fluix"), 4)
 })
