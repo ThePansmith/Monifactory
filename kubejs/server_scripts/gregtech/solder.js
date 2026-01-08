@@ -5,16 +5,16 @@
 ServerEvents.recipes(event => {
     // Advanced Soldering Alloy
     event.recipes.gtceu.mixer("advanced_soldering_alloy")
-        .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
-        .itemOutputs("39x gtceu:advanced_soldering_alloy_dust")
-        .duration(700)
+        .itemInputs("5x gtceu:bismuth_dust", "4x gtceu:tin_dust", "3x gtceu:zinc_dust", "1x gtceu:germanium_dust")
+        .itemOutputs("13x gtceu:advanced_soldering_alloy_dust")
+        .duration(240)
         .EUt(GTValues.VA[GTValues.HV])
         .circuit(3)
 
     event.recipes.gtceu.alloy_blast_smelter("advanced_soldering_alloy")
-        .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
-        .outputFluids("gtceu:advanced_soldering_alloy 5616")
-        .duration(525)
+        .itemInputs("5x gtceu:bismuth_dust", "4x gtceu:tin_dust", "3x gtceu:zinc_dust", "1x gtceu:germanium_dust")
+        .outputFluids("gtceu:advanced_soldering_alloy 1872")
+        .duration(180)
         .EUt(GTValues.VA[GTValues.HV])
         .circuit(10)
         .blastFurnaceTemp(1211)

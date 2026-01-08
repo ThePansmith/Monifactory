@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0x74b59b)
         .iconSet("dull")
-        .components("15x bismuth", "11x tin", "9x zinc", "4x germanium")
+        .components("5x bismuth", "4x tin", "3x zinc", "1x germanium")
 
     event.create("living_solder_base")
         .dust()

@@ -824,12 +824,12 @@ ServerEvents.recipes(event => {
         .EUt(480)
 
     // Germanium is used in diodes
-    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:small_germanium_dust")
+    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_germanium_dust")
     event.recipes.gtceu.assembler("germanium_smd_diode")
-        .itemInputs("1x gtceu:germanium_dust", "8x gtceu:fine_platinum_wire")
-        .inputFluids("gtceu:polyethylene 288")
+        .itemInputs("1x gtceu:small_germanium_dust", "4x gtceu:fine_platinum_wire")
+        .inputFluids("gtceu:polyethylene 144")
         .itemOutputs("64x gtceu:smd_diode")
-        .duration(200)
+        .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.fluid_solidifier("petri_dish_borosilicate")
