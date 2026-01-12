@@ -871,35 +871,35 @@ ServerEvents.recipes(event => {
         .EUt(2048)
 
     // Processors
-    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg")
         .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:soldering_alloy 72")
+        .inputFluids("gtceu:redstone 72")
         .itemOutputs("2x ae2:engineering_processor")
-        .duration(100)
+        .duration(50)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg")
         .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:soldering_alloy 72")
+        .inputFluids("gtceu:redstone 72")
         .itemOutputs("2x ae2:logic_processor")
-        .duration(100)
+        .duration(50)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg")
         .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:soldering_alloy 72")
+        .inputFluids("gtceu:redstone 72")
         .itemOutputs("2x ae2:calculation_processor")
-        .duration(100)
+        .duration(50)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg")
         .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
-        .inputFluids("gtceu:soldering_alloy 72")
-        .itemOutputs("megacells:accumulation_processor")
-        .duration(10)
+        .inputFluids("gtceu:indium_gallium_phosphide 36")
+        .itemOutputs("2x megacells:accumulation_processor")
+        .duration(100)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
     // ExtendedAE
@@ -991,11 +991,10 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     // Extended Pattern Access Terminal
-    // I do want to eventually just outright remove the default one in favor of this one, but will happen once EPAT gets a fullblock eng block
+    // Note that the terminal doesn't have a fullblock version.
     event.remove({ id: "expatternprovider:epa" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("kubejs:epp/epa")
-    event.remove({ id: "expatternprovider:epa_upgrade" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("expatternprovider:epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:engineering_processor", "#ae2:pattern_provider", "ae2:logic_processor"]).id("expatternprovider:epa_direct")
 
     // ExtendedAE Silicon Block
     event.remove({id:"expatternprovider:silicon_block"})
@@ -1110,19 +1109,6 @@ ServerEvents.recipes(event => {
         mode: "press",
         result: { item: "ae2wtlib:quantum_bridge_card" }
     }).id("kubejs:ae2wtlib/quantum_bridge_card")
-
-    // Certus Quartz and Fluix Blocks
-    event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
-        .itemInputs(["4x ae2:certus_quartz_crystal"])
-        .itemOutputs("ae2:quartz_block")
-        .duration(300)
-        .EUt(2)
-
-    event.recipes.gtceu.compressor("kubejs:fluix_block")
-        .itemInputs(["4x ae2:fluix_crystal"])
-        .itemOutputs("ae2:fluix_block")
-        .duration(300)
-        .EUt(2)
 
     // Vibrant Quartz Glass
     event.remove({ output: "ae2:quartz_vibrant_glass" })

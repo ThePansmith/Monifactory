@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         "minecraft:copper_ingot",
         "gtceu:zinc_ingot",
         "gtceu:gallium_ingot",
-        "gtceu:germanium_ingot",
+        "gtceu:germanium_dust",
         "gtceu:arsenic_dust",
         "kubejs:solidified_krypton",
         "gtceu:yttrium_ingot",

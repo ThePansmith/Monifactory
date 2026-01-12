@@ -19,6 +19,14 @@ on:
           - "Beta"
           - "Alpha"
         default: "Beta"
+      version_increment:
+        description: "Version increment"
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
       draft:
         description: "Draft GitHub release (CF release will always be normal)"
         type: boolean
@@ -74,6 +82,10 @@ jobs:
 
   pre-build:
     uses: ./.github/workflows/get_version_info.yml
+    with:
+      format_only: false
+      version_increment: ${{ inputs.version_increment }}
+      type: ${{ inputs.type }}
 
   build:
     needs: [pre-build, merge-lang]

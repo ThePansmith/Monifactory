@@ -33,6 +33,9 @@ global.unificationExcludedItems = [
     "thermal:carrot_block",
     "thermal:potato_block",
     "thermal:sugar_cane_block",
+    "thermal:basalz_rod",
+    "thermal:blitz_rod",
+    "thermal:blizz_rod"
 ];
 
 /**

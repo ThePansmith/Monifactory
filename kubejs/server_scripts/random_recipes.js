@@ -143,10 +143,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
-        [2000, 1800, "gtceu:cetane_boosted_diesel"],
-        [2000, 1800, "gtceu:gasoline"],
-        [500, 1200, "gtceu:high_octane_gasoline"],
-        [400, 900, "gtceu:jean_gasoline"]
+        [1000, 1800, "gtceu:cetane_boosted_diesel"],
+        [800, 1800, "gtceu:gasoline"],
+        [250, 1200, "gtceu:high_octane_gasoline"],
+        [150, 900, "gtceu:jean_gasoline"]
     ]
 
     for (const [mB, duration, id] of cryolobusFuels) {
@@ -824,12 +824,12 @@ ServerEvents.recipes(event => {
         .EUt(480)
 
     // Germanium is used in diodes
-    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:small_germanium_dust")
+    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_germanium_dust")
     event.recipes.gtceu.assembler("germanium_smd_diode")
-        .itemInputs("1x gtceu:germanium_dust", "8x gtceu:fine_platinum_wire")
-        .inputFluids("gtceu:polyethylene 288")
+        .itemInputs("1x gtceu:small_germanium_dust", "4x gtceu:fine_platinum_wire")
+        .inputFluids("gtceu:polyethylene 144")
         .itemOutputs("64x gtceu:smd_diode")
-        .duration(200)
+        .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.fluid_solidifier("petri_dish_borosilicate")
@@ -855,13 +855,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(1)
-
-    // Gunpowder Decomp into Carbon Dust
-    event.recipes.gtceu.electrolyzer("electrolyzing_gunpowder_carbon_dust")
-        .itemInputs("6x minecraft:gunpowder")
-        .itemOutputs("2x gtceu:saltpeter_dust", "gtceu:sulfur_dust", "3x gtceu:carbon_dust")
-        .duration(110)
-        .EUt(GTValues.VA[GTValues.MV])
 
     // Gilded Blackstone maceration
     event.recipes.gtceu.macerator("macerate_gilded_blackstone")

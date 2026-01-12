@@ -1,0 +1,34 @@
+name: Get Version Info Manual
+on:
+  workflow_dispatch:
+    inputs:
+      format_only:
+        description: "Only get version format"
+        required: false
+        type: boolean
+        default: false
+      version_increment:
+        description: "Version increment"
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+      type:
+        description: "Release type"
+        required: true
+        type: choice
+        options:
+          - "Stable"
+          - "Pre-release"
+
+permissions: {}
+
+jobs:
+  pre-build:
+    uses: ./.github/workflows/get_version_info.yml
+    with:
+      format_only: ${{ inputs.format_only }}
+      version_increment: ${{ inputs.version_increment }}
+      type: ${{ inputs.type }}

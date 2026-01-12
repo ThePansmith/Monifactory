@@ -163,6 +163,15 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(110)
 
+    // Hydrofluoric Acid from Fluorite
+    event.recipes.gtceu.chemical_reactor("hydrofluoric_acid_from_fluorite")
+        .itemInputs("3x gtceu:fluorite_dust")
+        .inputFluids("gtceu:sulfuric_acid 1000", "minecraft:water 2000")
+        .itemOutputs("8x gtceu:gypsum_dust")
+        .outputFluids("gtceu:hydrofluoric_acid 2000")
+        .duration(10 * 20)
+        .EUt(GTValues.VHA[GTValues.LV])
+
     // Ad Astra boosted ores
 
     // Arsenopyrite metallurgy like Cobaltite
@@ -199,7 +208,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
 
     // Replace recipes that use liquid Iron II chloride with the new dust form
-    event.recipes.gtceu.large_chemical_reactor("iron_2_chloride")
+    event.recipes.gtceu.chemical_reactor("iron_2_chloride")
         .inputFluids("gtceu:iron_iii_chloride 2000", "gtceu:chlorobenzene 1000")
         .itemOutputs("2x gtceu:iron_ii_chloride_dust")
         .outputFluids("gtceu:hydrochloric_acid 1000", "gtceu:dichlorobenzene 1000")

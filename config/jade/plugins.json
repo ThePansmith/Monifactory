@@ -78,6 +78,7 @@
     "workable_provider": true,
     "transformer": true,
     "energy_converter_provider": true,
+    "ldp_endpoint": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,

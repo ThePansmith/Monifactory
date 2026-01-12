@@ -50,3 +50,18 @@ features:
     # Whether the custom ZPM tools are enabled.
     customZPMToolsEnabled: false
 
+    # Whether the Auto Turbo Chargers are enabled.
+    autoChargersEnabled: true
+
+    # Whether the Expanded Pattern Buffer and Expanded Pattern Buffer Proxy are enabled. If AE2 is not loaded, this config will not load the machines regardless.
+    expandedBuffersEnabled: true
+
+    # Whether the Enlarged Stocking Bus/Hatch are enabled. If AE2 is not loaded, this config will not load the machines regardless.
+    enlargedStockingEnabled: false
+
+    # How many rows the Enlarged Stocking Input Bus/Hatch should have, max is 64 rows for 512 slots. (each row is 8 slots in size)
+    enlargedStockingSizeRows: 8
+
+    # Whether the Tag Stocking Input Bus/Hatch are enabled. If AE2 is not loaded, this config will not load the machines regardless.
+    tagStockingEnabled: true
+
