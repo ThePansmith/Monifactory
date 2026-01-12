@@ -871,25 +871,6 @@
 				"{moni.quest.3E45F67F09B6156B.description2}"
 				""
 				"{moni.quest.3E45F67F09B6156B.description3}"
-				"{@pagebreak}"
-				"{moni.quest.3E45F67F09B6156B.description4}"
-				""
-				"[\"\",{\"translate\":\"moni.quest.3E45F67F09B6156B.description5\"},{\"underlined\":true,\"translate\":\"moni.quest.3E45F67F09B6156B.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"70026930847E8EC0\"}}]"
-				""
-				"{moni.quest.3E45F67F09B6156B.description6}"
-				"{image:monifactory:textures/quests/prismac_priscore.png width:200 height:200 align:center}"
-				""
-				"{moni.quest.3E45F67F09B6156B.description7}"
-				"{@pagebreak}"
-				"{moni.quest.3E45F67F09B6156B.description8}"
-				"{image:monifactory:textures/quests/prismac_stabs_caps.png width:200 height:200 align:center}"
-				"{@pagebreak}"
-				"{moni.quest.3E45F67F09B6156B.description9}"
-				"{image:monifactory:textures/quests/prismac_priscore_hm.png width:200 height:200 align:center}"
-				""
-				"{moni.quest.3E45F67F09B6156B.description10}"
-				"{@pagebreak}"
-				"{moni.quest.3E45F67F09B6156B.description11}"
 			]
 			icon: "monilabs:prismatic_crucible"
 			id: "3E45F67F09B6156B"
@@ -1170,17 +1151,62 @@
 				"{moni.quest.45752C40878A1689.description1}"
 				""
 				"{moni.quest.45752C40878A1689.description2}"
+				"{@pagebreak}"
+				"{moni.quest.45752C40878A1689.description3}"
+				""
+				"[\"\",{\"translate\":\"moni.quest.45752C40878A1689.description4\"},{\"underlined\":true,\"translate\":\"moni.quest.45752C40878A1689.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"70026930847E8EC0\"}}]"
+				""
+				"{moni.quest.45752C40878A1689.description5}"
+				"{image:monifactory:textures/quests/prismac_priscore.png width:200 height:200 align:center}"
+				""
+				"{moni.quest.45752C40878A1689.description6}"
+				"{@pagebreak}"
+				"{moni.quest.45752C40878A1689.description7}"
+				"{image:monifactory:textures/quests/prismac_stabs_caps.png width:200 height:200 align:center}"
+				"{@pagebreak}"
+				"{moni.quest.45752C40878A1689.description8}"
+				"{image:monifactory:textures/quests/prismac_priscore_hm.png width:200 height:200 align:center}"
+				""
+				"{moni.quest.45752C40878A1689.description9}"
 			]
 			id: "45752C40878A1689"
 			shape: "hexagon"
-			tasks: [{
-				id: "5738F40FF8F8294C"
-				item: "kubejs:inert_prismatic_core"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5738F40FF8F8294C"
+					item: "kubejs:inert_prismatic_core"
+					type: "item"
+				}
+				{
+					id: "560526630BD9E108"
+					item: "kubejs:active_prismatic_core"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.45752C40878A1689.title}"
 			x: -3.25d
 			y: -7.0d
+		}
+		{
+			dependencies: ["415F2703877FBE21"]
+			description: ["{moni.quest.3E1A349F989835F7.description1}"]
+			id: "3E1A349F989835F7"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2D0E3E2345C7AD71"
+					item: "kubejs:photonic_soc_inert"
+					type: "item"
+				}
+				{
+					id: "73E45F07370BE218"
+					item: "kubejs:photonic_soc_active"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.3E1A349F989835F7.title}"
+			x: -2.5d
+			y: -6.25d
 		}
 	]
 	title: "{moni.chapter.457D17593A814D73.title}"
