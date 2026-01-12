@@ -2028,7 +2028,7 @@
 			tasks: [{
 				count: 64L
 				id: "67A5E978C88BEAD3"
-				item: { Count: 64, id: "gtceu:germanium_ingot" }
+				item: { Count: 64, id: "gtceu:germanium_dust" }
 				type: "item"
 			}]
 			title: "{moni.quest.2D788BE1CA9A2D69.title}"

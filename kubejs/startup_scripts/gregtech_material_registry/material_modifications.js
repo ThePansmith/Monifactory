@@ -33,10 +33,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
 
-    GTMaterials.Germanium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Germanium.setProperty($PropertyKey.DUST, new $DustProperty())
     GTMaterials.Germanium.setMaterialARGB(0x66806d)
     GTMaterials.Germanium.setMaterialSecondaryARGB(0x5d5e3a)
-    GTMaterials.Germanium.addFlags(GTMaterialFlags.GENERATE_PLATE)
 
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
