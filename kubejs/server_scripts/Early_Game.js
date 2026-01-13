@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         .itemInputs("16x #minecraft:logs_that_burn")
         .itemOutputs("2x gtceu:ash_dust")
         .outputFluids("gtceu:phenol 500")
-        .circuit(11)
+        .circuit(12)
         .duration(1280)
         .EUt(30)
 
