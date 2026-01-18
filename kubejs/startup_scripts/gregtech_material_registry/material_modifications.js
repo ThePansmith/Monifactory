@@ -51,6 +51,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Trinium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Tritanium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.Platinum.addFlags(GTMaterialFlags.GENERATE_FRAME)
 
     // Small Springs for Power Transformer recipes
     GTMaterials.RedAlloy.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
