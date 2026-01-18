@@ -527,15 +527,12 @@ ServerEvents.recipes(event => {
         event.stonecutting(`mae2:${type}_multi_p2p_tunnel`, "mae2:item_multi_p2p_tunnel")
     })
 
-    // Stonecutting CCI blocks
-    let sameItemsTags = ["#chisel_chipped_integration:factory_block", "#chisel_chipped_integration:technical_block", "#chisel_chipped_integration:laboratory_block", "#chisel_chipped_integration:tyrian"]; // What item tags to go through (change this so you have your tags)
+    // Stonecutting CCI blocks & Marble
+    let sameItemsTags = ["#chisel_chipped_integration:factory_block", "#chisel_chipped_integration:technical_block", "#chisel_chipped_integration:laboratory_block", "#chisel_chipped_integration:tyrian", "#chisel_chipped_integration:futura_block", "#moni:marble"]; // What item tags to go through (change this so you have your tags)
     sameItemsTags.forEach(tag => {
         let sameItems = Ingredient.of(tag).stacks; // Get all of the items with that tag
-        sameItems.forEach(input => {
-            sameItems.forEach(output => { // Loop through the items so all combination of input and output are met
-                if (input != output) // Ignore recipes where input and output are the same item
-                    event.stonecutting(output, input); // Make the recipe
-            });
+        sameItems.forEach(output => {
+            event.stonecutting(output, Ingredient.of(tag))
         });
     });
 
@@ -551,19 +548,6 @@ ServerEvents.recipes(event => {
         event.stonecutting(hazard, "gtceu:solid_machine_casing")
         event.stonecutting("gtceu:solid_machine_casing", hazard)
     }
-
-    // Stonecutting Marble
-    let MarbleTag = ["#moni:marble"]; // What item tags to go through (change this so you have your tags)
-    MarbleTag.forEach(tag => {
-        let Marbles = Ingredient.of(tag).stacks; // Get all of the items with that tag
-        Marbles.forEach(input => {
-            Marbles.forEach(output => { // Loop through the items so all combination of input and output are met
-                if (input != output) // Ignore recipes where input and output are the same item
-                    event.stonecutting(output, input); // Make the recipe
-            });
-        });
-    });
-
 
     event.remove({ id: "gtceu:shaped/mega_blast_furnace" })
     event.recipes.gtceu.assembly_line("kubejs:mega_blast_furnace")
