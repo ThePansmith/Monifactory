@@ -223,6 +223,7 @@ ServerEvents.recipes(event => {
             .duration(1540)
             .blastFurnaceTemp(10600)
             .EUt(GTValues.VA[GTValues.UV])
+            .circuit(1)
 
         // Gas-boosted
         event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}_gas`)
@@ -234,5 +235,6 @@ ServerEvents.recipes(event => {
             .duration(1155)
             .blastFurnaceTemp(10600)
             .EUt(GTValues.VA[GTValues.UV])
+            .circuit(2)
     })
 })
