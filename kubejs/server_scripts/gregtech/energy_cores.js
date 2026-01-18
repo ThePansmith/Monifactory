@@ -44,21 +44,21 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:empty_bathyal_energy_core")
         .duration(10)
         .EUt(GTValues.VA[GTValues.IV])
-        .addMaterialInfo(true)
+        .addMaterialInfo(true, true)
 
     event.recipes.gtceu.discharger("kubejs:empty_abyssal_energy_core")
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_americium", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 288")
         .itemOutputs("kubejs:empty_abyssal_energy_core")
         .duration(10)
-        .addMaterialInfo(true)
+        .addMaterialInfo(true, true)
 
     event.recipes.gtceu.discharger("kubejs:empty_hadal_energy_core")
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:neutronium_plate", "8x gtceu:omnium_bolt", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
         .inputFluids("gtceu:living_soldering_alloy 288")
         .itemOutputs("kubejs:empty_hadal_energy_core")
         .duration(10)
-        .addMaterialInfo(true)
+        .addMaterialInfo(true, true)
 
     // Energy core filling
     event.recipes.gtceu.canner("bathyal_energy_core")
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:bathyal_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
-        .addMaterialInfo(true)
+        // .addMaterialInfo(true)
 
     event.recipes.gtceu.canner("abyssal_energy_core")
         .itemInputs("kubejs:empty_abyssal_energy_core")
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:abyssal_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
-        .addMaterialInfo(true)
+        // .addMaterialInfo(true)
 
     event.recipes.gtceu.canner("hadal_energy_core")
         .itemInputs("kubejs:empty_hadal_energy_core")
@@ -83,5 +83,5 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:hadal_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
-        .addMaterialInfo(true)
+        // .addMaterialInfo(true)
 })
