@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 
         // Normal Mode recipes for Steam multis
         event.remove({ output: "gtceu:steam_oven" })
-        event.shaped("gtceu:steam_oven", [
+        event.recipes.gtceu.shaped("gtceu:steam_oven", [
             "BGB",
             "FCF",
             "BGB"
@@ -42,10 +42,10 @@ ServerEvents.recipes(event => {
             G: "gtceu:invar_gear",
             F: "gtceu:bronze_firebox_casing",
             C: "ironfurnaces:copper_furnace"
-        })
+        }).addMaterialInfo()
 
         event.remove({ output: "gtceu:steam_grinder" })
-        event.shaped("gtceu:steam_grinder", [
+        event.recipes.gtceu.shaped("gtceu:steam_grinder", [
             "BGB",
             "BDB",
             "BGB"
@@ -53,10 +53,10 @@ ServerEvents.recipes(event => {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:potin_gear",
             D: "#forge:gems/diamond"
-        })
+        }).addMaterialInfo()
 
         event.remove({ output: "steamadditions:steam_foundry" })
-        event.shaped("steamadditions:steam_foundry", [
+        event.recipes.gtceu.shaped("steamadditions:steam_foundry", [
             "BGB",
             "BDB",
             "BGB"
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:bronze_gear",
             D: "gtceu:lv_alloy_smelter"
-        })
+        }).addMaterialInfo()
 
         // Handmade rubber - no match for the power of the factory
         event.shaped("gtceu:rubber_plate", [
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
         })
 
         // Glass tube
-        event.shaped("gtceu:glass_tube", [
+        event.recipes.gtceu.shaped("gtceu:glass_tube", [
             "   ",
             "PPP",
             "PPP"
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
     }
 
     if(doHarderRecipes) {
-        event.shaped("thermal:dynamo_numismatic", [
+        event.recipes.gtceu.shaped("thermal:dynamo_numismatic", [
             " A ",
             "BCB",
             "DED"
@@ -156,9 +156,9 @@ ServerEvents.recipes(event => {
             C: "ironfurnaces:diamond_furnace",
             D: "enderio:vibrant_gear",
             E: "kubejs:redstone_transmission_coil"
-        })
+        }).addMaterialInfo()
     } else {
-        event.shaped("thermal:dynamo_numismatic", [
+        event.recipes.gtceu.shaped("thermal:dynamo_numismatic", [
             " A ",
             "BCB",
             "DED"
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
             C: "ironfurnaces:diamond_furnace",
             D: "enderio:vibrant_gear",
             E: "kubejs:redstone_transmission_coil"
-        })
+        }).addMaterialInfo()
 
         // Make clay electrolysis an LV recipe
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
             .EUt(15)
 
         // Monified distill tower
-        event.shaped("gtceu:distillation_tower", [
+        event.recipes.gtceu.shaped("gtceu:distillation_tower", [
             "LPL",
             "CHC",
             "LPL"
@@ -189,6 +189,6 @@ ServerEvents.recipes(event => {
             P: "gtceu:hv_electric_pump",
             C: "#gtceu:circuits/hv",
             H: "gtceu:hv_machine_hull"
-        }).id("gtceu:shaped/distillation_tower")
+        }).id("gtceu:shaped/distillation_tower").addMaterialInfo()
     }
 })

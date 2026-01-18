@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     })
 
     // Warp Core
-    event.shaped("kubejs:warp_core", [
+    event.recipes.gtceu.shaped("kubejs:warp_core", [
         "LTL",
         "TNT",
         "LTL"
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
     })
 
     // Warp Controller
-    event.shaped("kubejs:warp_controller", [
+    event.recipes.gtceu.shaped("kubejs:warp_controller", [
         "SMS",
         "CHC",
         "SCS"
@@ -156,34 +156,34 @@ ServerEvents.recipes(event => {
         .EUt(3932160)
 
     // Electrum Engine Frame
-    event.shaped("kubejs:electrum_micro_miner_frame", [
+    event.recipes.gtceu.shaped("kubejs:electrum_micro_miner_frame", [
         "PRP",
         "R R",
         "PRP"
     ], {
         P: "gtceu:electrum_plate",
         R: "gtceu:electrum_rod",
-    })
+    }).addMaterialInfo()
 
     // Signalum Engine Frame
-    event.shaped("kubejs:signalum_micro_miner_frame", [
+    event.recipes.gtceu.shaped("kubejs:signalum_micro_miner_frame", [
         "PRP",
         "R R",
         "PRP"
     ], {
         P: "gtceu:signalum_plate",
         R: "gtceu:signalum_rod",
-    })
+    }).addMaterialInfo()
 
     // Enderium Engine Frame
-    event.shaped("kubejs:enderium_micro_miner_frame", [
+    event.recipes.gtceu.shaped("kubejs:enderium_micro_miner_frame", [
         "PRP",
         "R R",
         "PRP"
     ], {
         P: "gtceu:enderium_plate",
         R: "gtceu:enderium_rod",
-    })
+    }).addMaterialInfo()
 
     // Electrum Engine Core
     event.recipes.gtceu.canner("electrum_micro_miner_core")
@@ -191,6 +191,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:electrum_micro_miner_core")
         .duration(500)
         .EUt(480)
+        .addMaterialInfo(true)
 
     // Signalum Engine Core
     event.recipes.gtceu.canner("signalum_micro_miner_core")
@@ -198,6 +199,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:signalum_micro_miner_core")
         .duration(1000)
         .EUt(2000)
+        .addMaterialInfo(true)
 
     // Enderium Engine Core
     event.recipes.gtceu.canner("enderium_micro_miner_core")
@@ -205,6 +207,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:enderium_micro_miner_core")
         .duration(2000)
         .EUt(8000)
+        .addMaterialInfo(true)
 
     // Gemstone Sensor - Optical Sensor has been replaced with a Lens, which is slightly cheaper.
     event.shaped("kubejs:gem_sensor", [
@@ -222,6 +225,7 @@ ServerEvents.recipes(event => {
         .itemInputs("#forge:lenses", "3x gtceu:stainless_steel_plate", "gtceu:hv_sensor")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20)
+        .addMaterialInfo(true)
 
     event.shaped("4x kubejs:gem_sensor", [
         " A ",
@@ -238,6 +242,7 @@ ServerEvents.recipes(event => {
         .itemInputs("#forge:lenses", "3x gtceu:tungsten_carbide_plate", "gtceu:iv_sensor")
         .EUt(GTValues.VA[GTValues.IV])
         .duration(20)
+        .addMaterialInfo(true)
 
     // Microminer kits are consumed in place of the miner.
     event.recipes.gtceu.assembler("basic_drilling_kit")
