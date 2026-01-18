@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
     ]
 
     jetpackBase.forEach(([newTier, middlePart, plate, energyCapacitor]) => {
-        event.shaped(Item.of("ironjetpacks:jetpack", `{Id:"ironjetpacks:${newTier}"}`).strongNBT(), [
+        event.shaped(Item.of("ironjetpacks:jetpack", `{Id:"ironjetpacks:${newTier}",Throttle:1.0d}`).strongNBT(), [
             "PEP",
             "PSP",
             "T T"
