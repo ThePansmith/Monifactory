@@ -7,10 +7,6 @@ ServerEvents.recipes(event => {
         ["uev", "cable", "darconite", "hyperdegenerate_darconite", 1966080],
         ["max", "wire", "monium", "monium", 80000000],
     ]
-    const transformer = [
-        ["uhv", "darconite", "lanthanum_gold_cadmium_curium_sulfate"],
-        ["uev", "necrosiderite", "darconite"]
-    ]
 
     converter.forEach(([tier, mat1, mat2, mat3, eut]) => {
         event.remove({ output: [`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter`] })
@@ -57,52 +53,6 @@ ServerEvents.recipes(event => {
             B: `gtceu:${mat2}_hex_${mat1}`,
             H: `gtceu:${tier}_machine_hull`,
             C: `#gtceu:circuits/${tier}`
-        })
-    })
-
-    transformer.forEach(([tier, mat1, mat2]) => {
-        event.shaped(Item.of(`gtceu:${tier}_transformer_1a`), [
-            "WBB",
-            "AH ",
-            "WBB"
-        ], {
-            A: `gtceu:${mat1}_single_cable`,
-            B: `gtceu:${mat2}_single_cable`,
-            H: `gtceu:${tier}_machine_hull`,
-            W: "kubejs:uxpic_chip"
-        })
-
-        event.shaped(Item.of(`gtceu:${tier}_transformer_2a`), [
-            "WBB",
-            "AH ",
-            "WBB"
-        ], {
-            A: `gtceu:${mat1}_double_cable`,
-            B: `gtceu:${mat2}_double_cable`,
-            H: `gtceu:${tier}_machine_hull`,
-            W: "kubejs:uxpic_chip"
-        })
-
-        event.shaped(Item.of(`gtceu:${tier}_transformer_4a`), [
-            "WBB",
-            "AH ",
-            "WBB"
-        ], {
-            A: `gtceu:${mat1}_quadruple_cable`,
-            B: `gtceu:${mat2}_quadruple_cable`,
-            H: `gtceu:${tier}_machine_hull`,
-            W: "kubejs:uxpic_chip"
-        })
-
-        event.shaped(Item.of(`gtceu:${tier}_transformer_16a`), [
-            "WBB",
-            "AH ",
-            "WBB"
-        ], {
-            A: `gtceu:${mat1}_hex_cable`,
-            B: `gtceu:${mat2}_hex_cable`,
-            H: `gtceu:${tier}_machine_hull`,
-            W: "gtceu:uhpic_chip"
         })
     })
 
