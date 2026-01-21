@@ -10,6 +10,8 @@ const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machin
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 const RecipeLogic = Java.loadClass("com.gregtechceu.gtceu.api.machine.trait.RecipeLogic")
 const MoniGuiTextures = Java.loadClass("net.neganote.monilabs.client.gui.MoniGuiTextures");
+Java.loadClass("net.neganote.monilabs.client.render.MoniDynamicRenderHelper");
+Java.loadClass("net.neganote.monilabs.client.render.HelicalFusionRenderer");
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
@@ -279,8 +281,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/fusion_reactor")
+       .model(GTMachineModels.createWorkableCasingMachineModel(GTCEu.id("block/casings/gcym/atomic_casing"), GTCEu.id("block/multiblock/fusion_reactor"))
+            ["andThen(java.util.function.Consumer)"](b => b.addDynamicRenderer(() => MoniDynamicRenderHelper.createHelicalFusionRenderer()))
+        )
 
     // Greenhouse
     event.create("greenhouse", "multiblock")
