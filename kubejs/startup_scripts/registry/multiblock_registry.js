@@ -281,7 +281,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-       .model(GTMachineModels.createWorkableCasingMachineModel(GTCEu.id("block/casings/gcym/atomic_casing"), GTCEu.id("block/multiblock/fusion_reactor"))
+        .model(GTMachineModels.createWorkableCasingMachineModel(GTCEu.id("block/casings/gcym/atomic_casing"), GTCEu.id("block/multiblock/fusion_reactor"))
             ["andThen(java.util.function.Consumer)"](b => b.addDynamicRenderer(() => MoniDynamicRenderHelper.createHelicalFusionRenderer()))
         )
 
