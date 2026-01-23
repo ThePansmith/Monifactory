@@ -893,7 +893,7 @@
 			tasks: [{
 				count: 64L
 				id: "6F12010C1D06D935"
-				item: "kubejs:stabilized_americium"
+				item: "kubejs:americium_ingot"
 				type: "item"
 			}]
 			title: "{moni.quest.6416118459258E42.title}"
