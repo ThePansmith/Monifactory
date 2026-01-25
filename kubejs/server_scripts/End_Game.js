@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite_wire")
-        .itemInputs(Item.of("gtceu:darconite_single_wire"))
+        .itemInputs(Item.of("4x gtceu:darconite_single_wire"))
         .itemOutputs("4x gtceu:hyperdegenerate_darconite_single_wire")
         .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
         .duration(100)
