@@ -100,7 +100,7 @@
 			id: "095B07996EF4FCCF"
 			linked_quest: "7D3FAEA5E0071BDC"
 			shape: "hexagon"
-			x: -4.75d
+			x: -4.25d
 			y: 8.5d
 		}
 		{
@@ -115,14 +115,14 @@
 			linked_quest: "7308924C9A481443"
 			shape: "hexagon"
 			size: 1.5d
-			x: -4.75d
+			x: -4.25d
 			y: 11.0d
 		}
 		{
 			id: "4E53C85BF1D03BB8"
 			linked_quest: "5759E8587624BEF1"
 			shape: "hexagon"
-			x: -1.75d
+			x: -2.25d
 			y: 11.0d
 		}
 		{
@@ -1499,7 +1499,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7D0351942F4DB8E0.title}"
-			x: -6.0d
+			x: -5.75d
 			y: 8.5d
 		}
 		{
@@ -1577,12 +1577,13 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["5357A16B5BF62C96"]
+			dependencies: ["3E51686E2DBD380F"]
 			description: [
 				"{moni.quest.616555E46F314F04.description1}"
 				""
 				"{moni.quest.616555E46F314F04.description2}"
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:sodium_potassium_bucket"
 			id: "616555E46F314F04"
 			rewards: [{
@@ -1604,7 +1605,7 @@
 				}
 			]
 			title: "{moni.quest.616555E46F314F04.title}"
-			x: 4.5d
+			x: 3.75d
 			y: 10.0d
 		}
 		{
@@ -1696,7 +1697,7 @@
 			}]
 			title: "{moni.quest.338ED53463203472.title}"
 			x: 2.5d
-			y: 8.5d
+			y: 8.25d
 		}
 		{
 			dependencies: [
@@ -1964,7 +1965,7 @@
 			]
 			title: "{moni.quest.10722CBC4DAD28F4.title}"
 			x: 3.75d
-			y: 8.5d
+			y: 8.25d
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
@@ -2452,7 +2453,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.66E1F1B28E4577B2.title}"
-			x: -1.75d
+			x: -2.25d
 			y: 8.5d
 		}
 		{
