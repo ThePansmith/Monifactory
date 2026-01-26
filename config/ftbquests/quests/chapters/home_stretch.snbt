@@ -1158,17 +1158,11 @@
 				"[\"\",{\"translate\":\"moni.quest.45752C40878A1689.description4\"},{\"underlined\":true,\"translate\":\"moni.quest.45752C40878A1689.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"70026930847E8EC0\"}}]"
 				""
 				"{moni.quest.45752C40878A1689.description5}"
-				"{image:monifactory:textures/quests/prismac_priscore.png width:200 height:200 align:center}"
+				"{image:monifactory:textures/quests/prismac_active.png width:200 height:63 align:center}"
 				""
+				"{@pagebreak}"
 				"{moni.quest.45752C40878A1689.description6}"
-				"{@pagebreak}"
-				"{moni.quest.45752C40878A1689.description7}"
 				"{image:monifactory:textures/quests/prismac_stabs_caps.png width:200 height:200 align:center}"
-				"{@pagebreak}"
-				"{moni.quest.45752C40878A1689.description8}"
-				"{image:monifactory:textures/quests/prismac_priscore_hm.png width:200 height:200 align:center}"
-				""
-				"{moni.quest.45752C40878A1689.description9}"
 			]
 			id: "45752C40878A1689"
 			shape: "hexagon"
@@ -1214,12 +1208,14 @@
 			description: [
 				"{moni.quest.1D0C1AFB4A041CDD.description1}"
 				""
-				"{image:monifactory:textures/quests/prismac_supercrit.png width:200 height:62 align:center}"
+				"{moni.quest.1D0C1AFB4A041CDD.description2}"
+				"{image:monifactory:textures/quests/prismac_supercrit.png width:200 height:63 align:center}"
 				"{@pagebreak}"
 				""
-				"{moni.quest.1D0C1AFB4A041CDD.description2}"
+				"{moni.quest.1D0C1AFB4A041CDD.description3}"
 				""
-				"{image:monifactory:textures/quests/prismac_supercrit_hm.png width:200 height:62 align:center}"
+				"{moni.quest.1D0C1AFB4A041CDD.description4}"
+				"{image:monifactory:textures/quests/prismac_supercrit_hm.png width:200 height:63 align:center}"
 			]
 			hide_dependent_lines: true
 			id: "1D0C1AFB4A041CDD"
@@ -1229,6 +1225,7 @@
 				item: "kubejs:supercritical_prismatic_core"
 				type: "item"
 			}]
+			title: "{moni.quest.1D0C1AFB4A041CDD.title}"
 			x: -2.25d
 			y: -6.25d
 		}
