@@ -713,6 +713,7 @@
 				"4C0BCA64D5B409F2"
 				"7EE334D3AA1E68ED"
 				"601A47A727AC3BD2"
+				"1D0C1AFB4A041CDD"
 			]
 			description: [
 				"{moni.quest.040B3FCD82533BD9.description1}"
@@ -1166,6 +1167,8 @@
 				"{@pagebreak}"
 				"{moni.quest.45752C40878A1689.description8}"
 				"{image:monifactory:textures/quests/prismac_priscore_hm.png width:200 height:200 align:center}"
+				""
+				"{moni.quest.45752C40878A1689.description9}"
 			]
 			id: "45752C40878A1689"
 			shape: "hexagon"
@@ -1218,6 +1221,7 @@
 				""
 				"{image:monifactory:textures/quests/prismac_supercrit_hm.png width:200 height:62 align:center}"
 			]
+			hide_dependent_lines: true
 			id: "1D0C1AFB4A041CDD"
 			shape: "hexagon"
 			tasks: [{
