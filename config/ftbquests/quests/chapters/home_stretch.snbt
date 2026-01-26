@@ -1166,6 +1166,7 @@
 			]
 			id: "45752C40878A1689"
 			shape: "hexagon"
+			subtitle: "{moni.quest.45752C40878A1689.subtitle}"
 			tasks: [
 				{
 					id: "5738F40FF8F8294C"
@@ -1220,6 +1221,7 @@
 			hide_dependent_lines: true
 			id: "1D0C1AFB4A041CDD"
 			shape: "hexagon"
+			subtitle: "{moni.quest.1D0C1AFB4A041CDD.subtitle}"
 			tasks: [{
 				id: "1F6589253F1F8C74"
 				item: "kubejs:supercritical_prismatic_core"
