@@ -3079,6 +3079,7 @@
     "moni.quest.7FC4297F2BC90F55.subtitle": "&aPresses&r are needed for &3Inscribers&r.",
     "moni.quest.7FC4297F2BC90F55.title": "Inscription Plates",
     "moni.quest.3E1A349F989835F7.title": "Photonic SoCs",
+    "moni.quest.3E1A349F989835F7.subtitle": "There are 10 types of people.",
     "moni.quest.3E1A349F989835F7.description1": "It is easier to explain how &6Photonic SoCs (PSoCs)&r work in text rather than visually.\n\nImagine each PSoC has three on/off levers for the Red, Green, and Blue colors.",
     "moni.quest.3E1A349F989835F7.description2": "When a PSoC is put into the Crucible, the lever(s) corresponding to the Crucible's colors are toggled. Secondary colors flip both of their primary components' levers. Afterwards, the Crucible changes color to what the PSoC previously was.",
     "moni.quest.3E1A349F989835F7.description3": "For example, a Red PSoC put into a green Crucible would output a Yellow PSoC, because the green color flipped the green 'lever' on.",

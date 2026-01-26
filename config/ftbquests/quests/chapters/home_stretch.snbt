@@ -1201,6 +1201,7 @@
 			]
 			id: "3E1A349F989835F7"
 			shape: "hexagon"
+			subtitle: "{moni.quest.3E1A349F989835F7.subtitle}"
 			tasks: [
 				{
 					id: "2D0E3E2345C7AD71"
