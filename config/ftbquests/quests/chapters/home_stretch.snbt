@@ -1205,7 +1205,19 @@
 				}
 			]
 			title: "{moni.quest.3E1A349F989835F7.title}"
-			x: -2.5d
+			x: -1.0d
+			y: -6.25d
+		}
+		{
+			dependencies: ["45752C40878A1689"]
+			id: "1D0C1AFB4A041CDD"
+			shape: "hexagon"
+			tasks: [{
+				id: "1F6589253F1F8C74"
+				item: "kubejs:supercritical_prismatic_core"
+				type: "item"
+			}]
+			x: -2.25d
 			y: -6.25d
 		}
 	]
