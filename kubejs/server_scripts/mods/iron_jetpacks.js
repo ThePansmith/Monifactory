@@ -213,3 +213,10 @@ ServerEvents.recipes(event => {
         D: "kubejs:pyrotheum_dust"
     }).id("kubejs:ironjetpacks/cells/resonant");
 })
+
+
+ServerEvents.tags("item", event => {
+    // Mark regular jetpacks from the ironjetpacks mod to include the NBT data when FTB Quests
+    // checks for task completion.
+    event.add("itemfilters:check_nbt", "ironjetpacks:jetpack");
+});

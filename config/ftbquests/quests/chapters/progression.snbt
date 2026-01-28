@@ -840,6 +840,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: -8.5d
@@ -868,6 +869,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 14.0d
 			y: -8.5d
@@ -895,6 +897,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{moni.quest.7B1D349ADD9D1140.title}"
 			x: 14.0d
@@ -924,6 +927,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{moni.quest.15A43AB700CADF2D.title}"
 			x: 14.0d
@@ -949,6 +953,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: -7.0d
@@ -2402,6 +2407,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: -5.5d
