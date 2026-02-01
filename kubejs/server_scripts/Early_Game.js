@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:nitrogen 1000")
         .itemOutputs("2x gtceu:ash_dust")
         .outputFluids("gtceu:phenol 500")
-        .circuit(11)
+        .circuit(12)
         .duration(640)
         .EUt(30)
 
