@@ -878,4 +878,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("7x gtceu:tantalum_pentoxide_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Re-tier Palladium Substation to mid-EV, before Platline
+    event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
 })
