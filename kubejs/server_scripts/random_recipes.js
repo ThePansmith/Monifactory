@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
     })
 
     // Atmospheric Accumulator
-    event.shaped("gtceu:atmospheric_accumulator", [
+    event.recipes.gtceu.shaped("gtceu:atmospheric_accumulator", [
         "WRW",
         "THT",
         "COC"
@@ -203,10 +203,10 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_gas_collector",
         R: "gtceu:tungsten_steel_rotor",
         O: "gtceu:iv_electric_pump"
-    }).id("gtceu:shaped/atmospheric_accumulator")
+    }).id("gtceu:shaped/atmospheric_accumulator").addMaterialInfo()
 
     // Matter Alterator
-    event.shaped("gtceu:matter_alterator", [
+    event.recipes.gtceu.shaped("gtceu:matter_alterator", [
         "WEW",
         "THT",
         "PCV"
@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
         E: "gtceu:iv_emitter",
         P: "gtceu:iv_electric_piston",
         V: "gtceu:iv_conveyor_module"
-    }).id("gtceu:shaped/matter_alterator")
+    }).id("gtceu:shaped/matter_alterator").addMaterialInfo()
 
     // Tantalum-catalysed ethanol->butadiene
     event.recipes.gtceu.large_chemical_reactor("ethanol_to_butadiene")

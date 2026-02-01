@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
         .duration(50)
         .circuit(6)
         .EUt(16)
+        .addMaterialInfo(true)
 
     // Single-recipe microverse projectors
     let projector = [
@@ -35,7 +36,7 @@ ServerEvents.recipes(event => {
     ]
 
     projector.forEach(projector => {
-        event.shaped(`monilabs:${projector[0]}`, [
+        event.recipes.gtceu.shaped(`monilabs:${projector[0]}`, [
             "MCM",
             "FAF",
             "MCM"
@@ -45,6 +46,7 @@ ServerEvents.recipes(event => {
             A: "gtceu:computer_monitor_cover",
             F: projector[2]
         }).id(`kubejs:${projector[0]}`)
+            .addMaterialInfo()
     })
 
     // Hyperbolic Microverse Projector
@@ -70,6 +72,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:microverse_stability_sensor_hatch")
         .duration(20 * 3)
         .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     // Microverse Type Sensor Hatch
     event.recipes.gtceu.assembler("microverse_type_sensor_hatch")
@@ -78,4 +81,5 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:microverse_type_sensor_hatch")
         .duration(20 * 3)
         .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 })

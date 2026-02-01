@@ -51,6 +51,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:graphite_electrode")
         .duration(7 * 20)
         .EUt(GTValues.VA[GTValues.MV])
+        .addMaterialInfo(true)
 
     event.replaceInput({ id: /^gtceu:shaped\/\w+_arc_/, not: [{id: "gtceu:shaped/lv_arc_furnace"}, {id: "gtceu:shaped/mv_arc_furnace"}, {id: "gtceu:shaped/hv_arc_furnace"}] }, "gtceu:graphite_dust", "kubejs:graphite_electrode")
 

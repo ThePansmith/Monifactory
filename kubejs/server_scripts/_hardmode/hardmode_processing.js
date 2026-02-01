@@ -133,6 +133,7 @@ ServerEvents.recipes(event => {
             .itemInputs("64x gtceu:beryllium_oxide_ring", "64x gtceu:beryllium_oxide_ring", "6x gtceu:hsla_steel_plate", "#gtceu:circuits/ulv")
             .itemOutputs("kubejs:magnetron")
             .duration(600).EUt(61440)
+            .addMaterialInfo(true)
 
         event.recipes.gtceu.chemical_reactor("graphene_magnetron")
             .itemInputs("gtceu:graphite_dust")

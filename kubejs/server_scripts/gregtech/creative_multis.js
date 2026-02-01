@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
         )
         .duration(1200)
         .EUt(1966080)
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembly_line("omniscience_research_beacon")
         .itemInputs("gtceu:computation_receiver_hatch", "8x gtceu:europium_hex_cable", "4x gtceu:research_station", "16x gtceu:advanced_computer_casing", "16x #gtceu:circuits/uhv", "3x gtceu:uhv_sensor", "kubejs:universal_navigator", "4x gtceu:uhv_field_generator", "4x monilabs:sculk_bioalloy_plate", "64x gtceu:normal_optical_pipe", "64x gtceu:fine_ruridit_wire", "32x gtceu:ruthenium_trinium_americium_neutronate_single_wire")

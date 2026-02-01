@@ -23,6 +23,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:chroma_sensor_hatch")
         .duration(20 * 10)
         .EUt(GTValues.VA[GTValues.UV])
+        .addMaterialInfo(true)
 
     /**
      * Chromatic Processing map

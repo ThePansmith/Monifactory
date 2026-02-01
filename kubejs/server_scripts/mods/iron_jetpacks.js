@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     ]
 
     thermalThrusters.forEach(([newTier, plate1, plate2, dynamo]) => {
-        event.shaped(Item.of(`kubejs:${newTier}_thruster`), [
+        event.recipes.gtceu.shaped(Item.of(`kubejs:${newTier}_thruster`), [
             "PCP",
             "MDM",
             "BBB"
@@ -23,7 +23,8 @@ ServerEvents.recipes(event => {
             C: "thermal:rf_coil",
             D: dynamo,
             B: "#forge:plates/red_alloy"
-        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`);
+        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`)
+            .addMaterialInfo();
     })
 
     // Generate EnderIO thruster recipes
@@ -35,7 +36,7 @@ ServerEvents.recipes(event => {
     ]
 
     eioThrusters.forEach(([newTier, plate, card, crystal, lastTier]) => {
-        event.shaped(Item.of(`kubejs:${newTier}_thruster`), [
+        event.recipes.gtceu.shaped(Item.of(`kubejs:${newTier}_thruster`), [
             "PCP",
             "PRP",
             "BTB"
@@ -45,13 +46,14 @@ ServerEvents.recipes(event => {
             R: crystal,
             T: lastTier,
             B: "gtceu:red_alloy_plate"
-        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`);
+        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`)
+            .addMaterialInfo();
     })
 
     // Special thrusters
 
     // Dark Soularium
-    event.shaped(Item.of("kubejs:dark_soularium_thruster"), [
+    event.recipes.gtceu.shaped(Item.of("kubejs:dark_soularium_thruster"), [
         "ICI",
         "IFI",
         "TTT"
@@ -60,10 +62,11 @@ ServerEvents.recipes(event => {
         C: "laserio:energy_overclocker_card_tier_8",
         F: "enderio:weather_crystal",
         T: Item.of("kubejs:vibrant_thruster").weakNBT()
-    }).id("kubejs:ironjetpacks/thrusters/dark_soularium");
+    }).id("kubejs:ironjetpacks/thrusters/dark_soularium")
+        .addMaterialInfo();
 
     // Fluxed
-    event.shaped(Item.of("kubejs:fluxed_thruster"), [
+    event.recipes.gtceu.shaped(Item.of("kubejs:fluxed_thruster"), [
         " P ",
         "PSP",
         "STS"
@@ -71,7 +74,8 @@ ServerEvents.recipes(event => {
         P: "redstone_arsenal:flux_plating",
         S: "gtceu:double_signalum_plate",
         T: Item.of("kubejs:resonant_thruster").weakNBT()
-    }).id("kubejs:ironjetpacks/thrusters/fluxed");
+    }).id("kubejs:ironjetpacks/thrusters/fluxed")
+        .addMaterialInfo();
 
     //
     // Jetpacks
@@ -180,7 +184,7 @@ ServerEvents.recipes(event => {
     //
 
     // Cells, thermal exp.
-    event.shaped(Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:hardened"}').strongNBT(), [
+    event.recipes.gtceu.shaped(Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:hardened"}').strongNBT(), [
         " A ",
         "BCB",
         "ADA"
@@ -189,9 +193,9 @@ ServerEvents.recipes(event => {
         B: "gtceu:invar_ingot",
         C: "thermal:flux_capacitor",
         D: "gtceu:tin_ingot"
-    }).id("kubejs:ironjetpacks/cells/hardened");
+    }).id("kubejs:ironjetpacks/cells/hardened").addMaterialInfo();
 
-    event.shaped(Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:reinforced"}').strongNBT(), [
+    event.recipes.gtceu.shaped(Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:reinforced"}').strongNBT(), [
         " A ",
         "BCB",
         "ADA"
@@ -200,9 +204,9 @@ ServerEvents.recipes(event => {
         B: "gtceu:electrum_ingot",
         C: Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:hardened"}').weakNBT(),
         D: "#enderio:fused_quartz"
-    }).id("kubejs:ironjetpacks/cells/reinforced");
+    }).id("kubejs:ironjetpacks/cells/reinforced").addMaterialInfo();
 
-    event.shaped(Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:resonant"}').strongNBT(), [
+    event.recipes.gtceu.shaped(Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:resonant"}').strongNBT(), [
         " A ",
         "BCB",
         "ADA"
@@ -211,7 +215,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:enderium_ingot",
         C: Item.of("ironjetpacks:cell", '{Id:"ironjetpacks:reinforced"}').weakNBT(),
         D: "kubejs:pyrotheum_dust"
-    }).id("kubejs:ironjetpacks/cells/resonant");
+    }).id("kubejs:ironjetpacks/cells/resonant").addMaterialInfo();
 })
 
 
