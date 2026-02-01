@@ -38,8 +38,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     setWireCable("cable_oct", "cableGtOctal", "wireGtOctal")
     setWireCable("cable_hex", "cableGtHex", "wireGtOctal")
 
-
-    // Necrosiderite for wires/cables
     let wireCableComponents = [
         [TagPrefix.wireGtQuadruple, TagPrefix.wireGtQuadruple, GTCraftingComponents.WIRE_QUAD],
         [TagPrefix.wireGtOctal, TagPrefix.wireGtOctal, GTCraftingComponents.WIRE_OCT],
@@ -59,27 +57,17 @@ GTCEuStartupEvents.craftingComponents(event => {
         event.setMaterialEntries(prefixComponentPair[2], wireMap)
     })
 
-    // Netherite, Necrosiderite, and Monium for tier up wires/cables
-    // Currently useless because GT only autogenerates transformer recipes up to UV.
-    let wireCableTierUpComponentPrefixes = [
-        [TagPrefix.wireGtSingle, GTCraftingComponents.CABLE_TIER_UP],
-        [TagPrefix.wireGtDouble, GTCraftingComponents.CABLE_TIER_UP_DOUBLE],
-        [TagPrefix.wireGtQuadruple, GTCraftingComponents.CABLE_TIER_UP_QUAD],
-        [TagPrefix.wireGtOctal, GTCraftingComponents.CABLE_TIER_UP_OCT],
-        [TagPrefix.wireGtHex, GTCraftingComponents.CABLE_TIER_UP_HEX]
-    ]
-
-    let setCableTierUp = (component, prefix) =>
+    let setCableTierUp = (component, tuple) =>
         event.setMaterialEntries(component, {
-            UHV: prefix + ":darconite",
-            UEV: prefix + ":necrosiderite",
+            UHV: "cableGt" + tuple + ":darconite",
+            UEV: "wireGt" + tuple + ":necrosiderite",
         })
 
-    setCableTierUp("cable_tier_up_single", "wireGtSingle")
-    setCableTierUp("cable_tier_up_double", "wireGtDouble")
-    setCableTierUp("cable_tier_up_quad", "wireGtQuadruple")
-    setCableTierUp("cable_tier_up_oct", "wireGtOctal")
-    setCableTierUp("cable_tier_up_hex", "wireGtHex")
+    setCableTierUp("cable_tier_up_single", "Single")
+    setCableTierUp("cable_tier_up_double", "Double")
+    setCableTierUp("cable_tier_up_quad", "Quadruple")
+    setCableTierUp("cable_tier_up_oct", "Octal")
+    setCableTierUp("cable_tier_up_hex", "Hex")
 
     // Pipes
     let pipeComponentPrefixes = [
@@ -177,6 +165,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     })
 
     event.setItems("power_component", {
+        UHV: "kubejs:uxpic_chip",
         UEV: "kubejs:uxpic_chip",
         MAX: "kubejs:uxpic_chip",
     })
