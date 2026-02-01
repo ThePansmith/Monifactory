@@ -86,23 +86,6 @@ ServerEvents.recipes(event => {
             .outputFluids(Fluid.of("gtceu:polyvinyl_acetate", 4320))
             .duration(800).EUt(30)
 
-        // Kapton K Wetwares
-        event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
-        event.recipes.gtceu.circuit_assembler("kubejs:circuit_assembler/wetware_hm")
-            .itemInputs(
-                "16x gtceu:kapton_k_plate",
-                "gtceu:petri_dish",
-                "gtceu:luv_electric_pump",
-                "gtceu:iv_sensor",
-                "#gtceu:circuits/iv",
-                "16x gtceu:niobium_titanium_foil"
-            )
-            .inputFluids(Fluid.of("gtceu:sterilized_growth_medium", 4000))
-            .itemOutputs("16x gtceu:wetware_circuit_board")
-            .cleanroom(CleanroomType.STERILE_CLEANROOM)
-            .duration(1200)
-            .EUt(30720)
-
         // Recipe conflict of 2-Ethylanthraquinone from Ethylbenzene with Styrene from Ethylbenzene
         event.remove({ id: "gtceu:chemical_reactor/styrene_from_ethylbenzene" })
         event.remove({ id: "gtceu:large_chemical_reactor/styrene_from_ethylbenzene" })
@@ -406,6 +389,25 @@ ServerEvents.recipes(event => {
             .chancedOutput("gtceu:lutetium_dust", 600, 0)
             .chancedOutput("gtceu:europium_dust", 600, 0)
             .duration(50).EUt(GTValues.VA[GTValues.UV])
+    }
+
+    if (doHarderRecipes) {
+        // Kapton K Wetwares
+        event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
+        event.recipes.gtceu.circuit_assembler("kubejs:circuit_assembler/wetware_hm")
+            .itemInputs(
+                "16x gtceu:kapton_k_plate",
+                "gtceu:petri_dish",
+                "gtceu:luv_electric_pump",
+                "gtceu:iv_sensor",
+                "#gtceu:circuits/iv",
+                "16x gtceu:niobium_titanium_foil"
+            )
+            .inputFluids(Fluid.of("gtceu:sterilized_growth_medium", 4000))
+            .itemOutputs("16x gtceu:wetware_circuit_board")
+            .cleanroom(CleanroomType.STERILE_CLEANROOM)
+            .duration(1200)
+            .EUt(30720)
 
         // Rocketry
         event.recipes.gtceu.chemical_reactor("kubejs:chemical_reactor/durene_hm")
