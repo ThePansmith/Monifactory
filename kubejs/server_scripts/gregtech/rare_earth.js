@@ -68,11 +68,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.autoclave("terbium_salt_autoclave")
-        .itemInputs("4x gtceu:terbium_salt_dust", "6x gtceu:calcium_dust")
+        .itemInputs("8x gtceu:terbium_salt_dust", "3x gtceu:calcium_dust")
         .inputFluids(Fluid.of("gtceu:steam", 9600))
-        .itemOutputs("1x gtceu:terbium_dust", "9x gtceu:calcium_chloride_dust")
-        .outputFluids(Fluid.of("water", 100))
-        .duration(160)
+        .itemOutputs("2x gtceu:terbium_dust", "9x gtceu:calcium_chloride_dust")
+        .outputFluids(Fluid.of("water", 60))
+        .duration(320)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.polarizer("terbium_polarize_long")

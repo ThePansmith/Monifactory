@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         })
 
         // Laser Connectors
-        event.shaped("4x laserio:laser_connector", [
+        event.recipes.gtceu.shaped("4x laserio:laser_connector", [
             " E ",
             "RRR",
             "SSS"
@@ -78,7 +78,9 @@ ServerEvents.recipes(event => {
             E: "gtceu:glass_tube",
             R: "gtceu:red_alloy_plate"
         }).id("laserio:laser_connector")
-        event.shaped("laserio:laser_node", [
+            .addMaterialInfo()
+
+        event.recipes.gtceu.shaped("laserio:laser_node", [
             "PGP",
             "GRG",
             "PGP"
@@ -87,8 +89,9 @@ ServerEvents.recipes(event => {
             G: "#forge:glass_panes/colorless",
             R: "laserio:laser_connector"
         }).id("laserio:laser_node")
+            .addMaterialInfo()
 
-        event.shaped("2x laserio:laser_connector_advanced", [
+        event.recipes.gtceu.shaped("2x laserio:laser_connector_advanced", [
             " E ",
             "RCR",
             "FFF"
@@ -98,6 +101,7 @@ ServerEvents.recipes(event => {
             C: "#gtceu:circuits/luv",
             R: "gtceu:red_alloy_plate"
         }).id("laserio:laser_connector_advanced")
+            .addMaterialInfo()
     }
 
 

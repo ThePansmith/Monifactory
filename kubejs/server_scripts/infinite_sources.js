@@ -7,15 +7,16 @@ ServerEvents.recipes(event => {
     event.remove({ id: "thermal:device_rock_gen" })
 
     if (!doHarderRecipes) {
-        event.shaped("watercollector:watercollector", [
+        event.recipes.gtceu.shaped("watercollector:watercollector", [
             "AAA",
             "B B",
             "AAA"
         ], {
             A: "gtceu:wrought_iron_plate",
             B: "minecraft:water_bucket"
-        })
-        event.shaped("thermal:device_water_gen", [
+        }).addMaterialInfo()
+
+        event.recipes.gtceu.shaped("thermal:device_water_gen", [
             " B ",
             "CWC",
             "GSG"
@@ -25,9 +26,9 @@ ServerEvents.recipes(event => {
             W: "watercollector:watercollector",
             S: "enderio:fused_quartz",
             C: "#forge:ingots/copper"
-        }).id("kubejs:device_water_gen");
+        }).id("kubejs:device_water_gen").addMaterialInfo();
 
-        event.shaped("thermal:device_rock_gen", [
+        event.recipes.gtceu.shaped("thermal:device_rock_gen", [
             " P ",
             "PNP",
             "GHG"
@@ -36,9 +37,9 @@ ServerEvents.recipes(event => {
             P: "#forge:plates/steel",
             N: "#forge:pistons",
             H: "minecraft:hopper"
-        }).id("kubejs:device_rock_gen");
+        }).id("kubejs:device_rock_gen").addMaterialInfo();
     } else {
-        event.shaped("thermal:device_water_gen", [
+        event.recipes.gtceu.shaped("thermal:device_water_gen", [
             " B ",
             "CWC",
             "GSG"
@@ -48,9 +49,9 @@ ServerEvents.recipes(event => {
             W: "#enderio:fused_quartz",
             S: "thermal:redstone_servo",
             C: "#forge:ingots/copper"
-        }).id("kubejs:device_water_gen");
+        }).id("kubejs:device_water_gen").addMaterialInfo();
 
-        event.shaped("thermal:device_rock_gen", [
+        event.recipes.gtceu.shaped("thermal:device_rock_gen", [
             " P ",
             "INI",
             "GSG"
@@ -60,7 +61,7 @@ ServerEvents.recipes(event => {
             P: "#forge:plates/steel",
             I: "#forge:plates/invar",
             N: "#forge:pistons"
-        }).id("kubejs:device_rock_gen");
+        }).id("kubejs:device_rock_gen").addMaterialInfo();
     }
 
     // Infinite Cobble/Water cells
