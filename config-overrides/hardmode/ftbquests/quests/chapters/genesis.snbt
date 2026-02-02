@@ -1866,19 +1866,19 @@
 						items: [
 							{
 								Count: 1b
-								id: "gtmutils:lv_auto_charger_4x"
+								id: "gtceu:lv_charger_4x"
 							}
 							{
 								Count: 1b
-								id: "gtmutils:mv_auto_charger_4x"
+								id: "gtceu:mv_charger_4x"
 							}
 							{
 								Count: 1b
-								id: "gtmutils:hv_auto_charger_4x"
+								id: "gtceu:hv_charger_4x"
 							}
 							{
 								Count: 1b
-								id: "gtmutils:ev_auto_charger_4x"
+								id: "gtceu:ev_charger_4x"
 							}
 							{
 								Count: 1b
