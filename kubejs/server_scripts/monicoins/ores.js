@@ -407,9 +407,9 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         event.shaped(Item.of("gtceu:lepidolite_ore", 32), [
-            "A  ",
+            " A ",
             "   ",
-            "A  "
+            " A "
         ], {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
@@ -471,8 +471,8 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         event.shaped(Item.of("gtceu:tin_ore", 32), [
-            " A ",
             "   ",
+            " A ",
             " A "
         ], {
             A: "kubejs:moni_nickel"
