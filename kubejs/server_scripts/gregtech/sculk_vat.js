@@ -69,8 +69,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:biomass 40000")
         .outputFluids("gtceu:bacteria 30000")
         .circuit(1)
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.sculk_vat("sculk_growth")
         .notConsumable("minecraft:sculk_catalyst")
@@ -94,8 +94,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:biomass 40000")
         .outputFluids("gtceu:fermented_biomass 40000")
         .circuit(2)
-        .duration(20 * 15)
-        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(20 * 30)
+        .EUt(GTValues.VHA[GTValues.MV])
 
     /*
     // Move Enriched Bacterial Sludge recipes from Brewery to Sculk Vat
