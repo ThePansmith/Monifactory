@@ -195,6 +195,7 @@ function parseRecipe(recipe) {
             if(matters)
                 for(let matter of matters)
                     matter.amount *= by
+        duration *= by
     }
     /** @param {number} by */
     let isRecipeDivisible = by =>
@@ -202,7 +203,7 @@ function parseRecipe(recipe) {
             .filter(matters => matters)
             .every(matters => matters.every(
                 matter => matter.amount % by === 0
-            ))
+            )) && duration % by === 0
 
     /**
      * @param {() => void} cb
