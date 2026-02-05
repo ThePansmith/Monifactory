@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.distillation_tower("light_isotope_distillation")
         .inputFluids("gtceu:cracked_light_naquadah_isotope_fraction")
         .chancedOutput("gtceu:lead_dust", 2500, 0)
-        .outputFluids("gtceu:medium_naquadah_isotope_fraction 300", "gtceu:radon 250", "gtceu:quadium 200", "gtceu:helium_3 150", "gtceu:tritium 150", "gtceu:fluorine 200")
+        .outputFluids("gtceu:medium_naquadah_isotope_fraction 300", "gtceu:radon 250", "gtceu:quadium 200", "gtceu:helium_3 150", "gtceu:tritium 200", "gtceu:fluorine 400")
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
 
