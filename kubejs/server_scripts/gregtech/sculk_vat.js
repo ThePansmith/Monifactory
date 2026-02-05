@@ -66,8 +66,8 @@ ServerEvents.recipes(event => {
     // Growth recipes
     event.recipes.gtceu.sculk_vat("bacteria_growth")
         .itemInputs("kubejs:petri_dish_bacteria")
-        .inputFluids("gtceu:biomass 4000")
-        .outputFluids("gtceu:bacteria 3000")
+        .inputFluids("gtceu:biomass 40000")
+        .outputFluids("gtceu:bacteria 30000")
         .circuit(1)
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
@@ -91,8 +91,8 @@ ServerEvents.recipes(event => {
     // Transformation recipes
     event.recipes.gtceu.sculk_vat("biomass_fermentation")
         .notConsumable("kubejs:petri_dish_bacteria")
-        .inputFluids("gtceu:biomass 4000")
-        .outputFluids("gtceu:fermented_biomass 4000")
+        .inputFluids("gtceu:biomass 40000")
+        .outputFluids("gtceu:fermented_biomass 40000")
         .circuit(2)
         .duration(20 * 15)
         .EUt(GTValues.VHA[GTValues.LV])
