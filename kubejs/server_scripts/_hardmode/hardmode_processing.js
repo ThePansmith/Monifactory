@@ -316,7 +316,7 @@ ServerEvents.recipes(event => {
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor("neocryolite")
-            .itemInputs("4x gtceu:caesium_hydroxide_dust", "3x gtceu:naquadah_hydroxide_dust")
+            .itemInputs("9x gtceu:caesium_hydroxide_dust", "7x gtceu:naquadah_hydroxide_dust")
             .notConsumable("gtceu:signalum_dust")
             .inputFluids("gtceu:hydrofluoric_acid 6000")
             .outputFluids("gtceu:neocryolite 1000", "minecraft:water 6000")
@@ -356,7 +356,7 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:hot_naquadah_oxide_neocryolite_solution 4000")
             .notConsumable("2x gtceu:ruthenium_rod")
             .itemOutputs("2x gtceu:naquadah_dust")
-            .outputFluids("gtceu:neocryolite 3750", "gtceu:oxygen 3000")
+            .outputFluids("gtceu:neocryolite 3950", "gtceu:oxygen 3000")
             .duration(250).EUt(7680)
 
         event.recipes.gtceu.chemical_bath("bathe_molten_aerotheum_to_aerotheum_dust")

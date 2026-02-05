@@ -117,10 +117,10 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:hsse_drill_head")
                 .requiredMicroverse(1) // Normal
                 .itemOutputs(
+                    "64x gtceu:raw_naquadah",
+                    "64x gtceu:raw_naquadah",
                     "32x gtceu:raw_cooperite",
                     "24x gtceu:raw_barite",
-                    "64x gtceu:raw_naquadah",
-                    "64x gtceu:raw_naquadah",
                     "24x gtceu:raw_kaemanite",
                 )
                 .damageRate(3)
@@ -131,10 +131,10 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:hsse_drill_head")
                 .requiredMicroverse(1) // Normal
                 .itemOutputs(
-                    "48x gtceu:raw_pollucite",
+                    "64x gtceu:raw_snowchestite",
+                    "64x gtceu:raw_snowchestite",
+                    "24x gtceu:raw_pollucite",
                     "24x gtceu:raw_barite",
-                    "64x gtceu:raw_snowchestite",
-                    "64x gtceu:raw_snowchestite",
                     "24x gtceu:raw_kaemanite",
                 )
                 .damageRate(3)
