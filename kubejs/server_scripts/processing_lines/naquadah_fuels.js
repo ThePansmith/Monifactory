@@ -205,6 +205,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.large_chemical_reactor("superheavy_residue_purification")
             .notConsumable("kubejs:magnetron")
             .inputFluids("gtceu:superheavy_atomic_residue 200")
+            .itemInputs("8x gtceu:activated_carbon_dust")
             .inputFluids("gtceu:distilled_water 4000", "gtceu:hexafluorosilicic_acid 1200")
             .outputFluids("gtceu:purified_superheavy_residue 200")
             .chancedOutput("kubejs:naquadah_waste", 9000, 0)
@@ -223,6 +224,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.large_chemical_reactor("superheavy_residue_purification")
             .inputFluids("gtceu:superheavy_atomic_residue 200")
+            .itemInputs("8x gtceu:activated_carbon_dust")
             .inputFluids("gtceu:distilled_water 4000", "gtceu:hexafluorosilicic_acid 1200")
             .outputFluids("gtceu:purified_superheavy_residue 200")
             .chancedOutput("kubejs:naquadah_waste", 9000, 0)
