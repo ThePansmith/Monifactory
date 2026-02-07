@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     // Lowers the voltage at which the laser pipes can be made to post plat-line IV
-    event.recipes.gtceu.assembler("normal_laser_pipe")
+    event.recipes.gtceu.assembler("laser_cable")
         .itemInputs(
             "gtceu:laminated_glass",
             "2x gtceu:rhodium_foil",
@@ -37,4 +37,5 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:polytetrafluoroethylene 144")
         .itemOutputs("gtceu:normal_laser_pipe")
         .duration(100).EUt(GTValues.VA[GTValues.IV]).addMaterialInfo(true)
+        .cleanroom(CleanroomType.CLEANROOM)
 })
