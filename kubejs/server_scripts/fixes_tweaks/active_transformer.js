@@ -37,4 +37,5 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:polytetrafluoroethylene 144")
         .itemOutputs("gtceu:normal_laser_pipe")
         .duration(100).EUt(GTValues.VA[GTValues.IV]).addMaterialInfo(true)
+        .cleanroom(CleanroomType.CLEANROOM)
 })
