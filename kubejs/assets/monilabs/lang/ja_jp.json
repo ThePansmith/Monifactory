@@ -138,5 +138,6 @@
     "tooltip.monilabs.xp_draining_hatch.2": "バッファは継続的にわずかに減少する。",
     "tooltip.monilabs.xp_sensor_hatch.0": "スカルクバットの経験値バッファの状態を",
     "tooltip.monilabs.xp_sensor_hatch.1": "レッドストーン信号で出力する。",
-    "block.monilabs.prism_glass": "P.R.I.S.Mガラス"
+    "block.monilabs.prism_glass": "P.R.I.S.Mガラス",
+    "monilabs.subtitle.microverse": "Microverse Oscillates"
 }
