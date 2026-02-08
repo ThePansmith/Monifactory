@@ -1,4 +1,3 @@
-
 enabled: true
 
 onlyShowOnShift: true
@@ -27,6 +26,4 @@ alloy:
   partsByMass: false
 
 debugMode: false
-
-
 
