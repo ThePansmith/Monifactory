@@ -168,4 +168,38 @@ if (Platform.isLoaded("projectred_transmission")) {
             S: "minecraft:glowstone_dust"
         })
     })
+
+    ServerEvents.tags("item", event => {
+        let listToHide = [
+            "projectred_core:silicon",
+            "projectred_core:sand_coal_comp",
+            "projectred_core:red_iron_comp",
+            "projectred_core:electrotine_iron_comp",
+            "projectred_core:peridot",
+            "projectred_core:sapphire",
+            "projectred_core:ruby",
+            "projectred_core:electrotine_dust",
+            "projectred_core:electrotine_generator",
+            "projectred_core:electrotine_ingot",
+            "projectred_core:red_ingot",
+            "projectred_core:sail",
+            "projectred_core:woven_cloth",
+            "projectred_core:motor",
+            "projectred_core:gold_coil",
+            "projectred_core:iron_coil",
+            "projectred_core:copper_coil",
+            "projectred_core:electrotine_silicon_comp",
+            "projectred_core:electrotine_silicon",
+            "projectred_core:boule",
+            "projectred_transmission:low_load_framed_power_wire",
+            "projectred_core:screwdriver",
+            "projectred_core:draw_plate",
+            "projectred_transmission:low_load_power_wire",
+            /cb_microblock:.*/
+        ]
+        listToHide.forEach(itemID => {
+            event.add("c:hidden_from_recipe_viewers", itemID)
+            event.add("forge:viewers/hidden_from_recipe", itemID)
+        })
+    })
 }

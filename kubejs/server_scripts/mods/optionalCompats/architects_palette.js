@@ -412,5 +412,15 @@ if (Platform.isLoaded("architects_palette")) {
 
     })
 
+    ServerEvents.tags("item", event => {
+        [
+            "architects_palette:wardstone_blend",
+            "architects_palette:withered_bone"
+        ].forEach(itemID => {
+            event.add("c:hidden_from_recipe_viewers", itemID)
+            event.add("forge:viewers/hidden_from_recipe", itemID)
+        })
+    })
+
     console.log("Architect's Palette Loaded!")
 }
