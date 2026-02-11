@@ -119,6 +119,7 @@ config/defaultworldtype/world-presets.txt
 !/config/laserio-common.toml
 !/config/legendarytooltips-common.toml
 !/config/modernfix-mixins.properties
+!/config/ProjectRed.cfg
 !/config/quark-common.toml
 !/config/resourceful-config-web.json
 !/config/sdrp-common.json
