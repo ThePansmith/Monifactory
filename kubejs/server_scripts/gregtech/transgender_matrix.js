@@ -4,13 +4,13 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.cracker("mystic_tar_cracking")
         .inputFluids("gtceu:pcb_coolant 200", "gtceu:tritanium 144")
-        .outputFluids("gtceu:sludge_of_memory 1296", "gtceu:logical_residue 144")
+        .outputFluids("gtceu:sludge_of_memory 1250", "gtceu:logical_residue 150")
         .itemInputs("kubejs:crushed_circuit")
         .duration(300)
         .EUt(GTValues.VHA[GTValues.ZPM])
 
     event.recipes.gtceu.cracker("mystic_tar_cracking_essence")
-        .inputFluids("gtceu:pcb_coolant 200", "gtceu:essence_of_knowledge 144")
+        .inputFluids("gtceu:pcb_coolant 200", "gtceu:essence_of_knowledge 150")
         .outputFluids("gtceu:sludge_of_memory 500", "gtceu:logical_residue 500")
         .itemInputs("kubejs:crushed_circuit")
         .duration(200)
