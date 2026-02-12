@@ -2,6 +2,7 @@
  * Transgender processing line
  */
 ServerEvents.recipes(event => {
+    // Cracker recipes for Logical Residue
     event.recipes.gtceu.cracker("mystic_tar_cracking")
         .inputFluids("gtceu:pcb_coolant 200", "gtceu:tritanium 144")
         .outputFluids("gtceu:sludge_of_memory 1250", "gtceu:logical_residue 150")
@@ -15,6 +16,21 @@ ServerEvents.recipes(event => {
         .itemInputs("kubejs:crushed_circuit")
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ZPM])
+
+    // LCR recipes for Logical Residue
+    event.recipes.gtceu.chemical_reactor("mystic_tar_cracking")
+        .inputFluids("gtceu:pcb_coolant 200", "gtceu:tritanium 144")
+        .outputFluids("gtceu:sludge_of_memory 625", "gtceu:logical_residue 75")
+        .itemInputs("kubejs:crushed_circuit")
+        .duration(300)
+        .EUt(GTValues.VHA[GTValues.IV])
+
+    event.recipes.gtceu.chemical_reactor("mystic_tar_cracking_essence")
+        .inputFluids("gtceu:pcb_coolant 200", "gtceu:essence_of_knowledge 150")
+        .outputFluids("gtceu:sludge_of_memory 250", "gtceu:logical_residue 250")
+        .itemInputs("kubejs:crushed_circuit")
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.IV])
 
     event.recipes.gtceu.brewery("mystic_essence_brewing")
         .inputFluids("gtceu:sludge_of_memory 1000")
