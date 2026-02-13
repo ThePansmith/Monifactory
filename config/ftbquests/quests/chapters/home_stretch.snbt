@@ -1224,12 +1224,12 @@
 				"{moni.quest.1D0C1AFB4A041CDD.description1}"
 				""
 				"{moni.quest.1D0C1AFB4A041CDD.description2}"
-				"{image:monifactory:textures/quests/prismac_supercrit.png width:200 height:173 align:center}"
+				"{image:monifactory:textures/quests/prismac_supercrit.png width:200 height:153 align:center}"
 				"{@pagebreak}"
 				"{moni.quest.1D0C1AFB4A041CDD.description3}"
 				""
 				"{moni.quest.1D0C1AFB4A041CDD.description4}"
-				"{image:monifactory:textures/quests/prismac_supercrit_hm.png width:200 height:184 align:center}"
+				"{image:monifactory:textures/quests/prismac_supercrit_hm.png width:200 height:165 align:center}"
 			]
 			hide_dependent_lines: true
 			id: "1D0C1AFB4A041CDD"
