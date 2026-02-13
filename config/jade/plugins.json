@@ -90,6 +90,7 @@
     "recipe_logic_provider": true,
     "maintenance_info": true,
     "machine_mode": true,
+    "battery_info": true,
     "electric_container_provider": true,
     "steam_boiler_info": true,
     "recipe_output_info": true,
