@@ -99,7 +99,7 @@
     "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
     "gtceu.multiblock.atmospheric_accumulator.description": "§7A large machine that can suck up large amounts of air at once.",
     "block.gtceu.helical_fusion_reactor": "Helical Fusion Reactor",
-    "gtceu.multiblock.helical_fusion_reactor.description": "§7The Helical Fusion Reactor is a very large multiblock structure used for fusing elements into heavier ones in parallel. For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M.",
+    "gtceu.multiblock.helical_fusion_reactor.description": "§7The Helical Fusion Reactor is a very large multiblock structure used for fusing elements into heavier ones in parallel. For every Hatch it has, its buffer increases by 160M EU, and has a maximum of 2560M.",
     "__CREATIVE_MACHINES__.header": "=====================",
     "__CREATIVE_MACHINES__.flufff": "> Creative Machines <",
     "__CREATIVE_MACHINES__.footer": "=====================",
