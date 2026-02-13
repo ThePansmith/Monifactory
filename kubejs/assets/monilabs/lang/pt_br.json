@@ -138,5 +138,6 @@
     "microverse.monilabs.type.shattered": "Shattered",
     "gtceu.placeholder_info.microverseType.0": "Returns the type of microverse.",
     "monilabs.recipe.primary_input": "Primary",
-    "block.monilabs.prismatic_focus": "Prismatic Focus"
+    "block.monilabs.prismatic_focus": "Prismatic Focus",
+    "monilabs.subtitle.microverse": "Microverse Oscillates"
 }

@@ -440,5 +440,9 @@
     "item.kubejs.petri_dish_bacteria": "バクテリアが入ったペトリ皿",
     "item.kubejs.optical_chip": "光学チップ",
     "item.kubejs.completed_optical_wafer": "完成済み光学ウェーハー",
-    "item.kubejs.coated_sapphire_wafer": "コーティング済みサファイアウェハー"
+    "item.kubejs.coated_sapphire_wafer": "コーティング済みサファイアウェハー",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }
