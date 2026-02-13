@@ -440,5 +440,9 @@
     "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
     "item.kubejs.optical_chip": "Optical Chip",
     "item.kubejs.completed_optical_wafer": "Completed Optical Wafer",
-    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer"
+    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }

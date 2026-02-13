@@ -211,6 +211,10 @@
   "item.kubejs.dimensionally_stabilized_infinity_heavy_plating": "§dDimensionally Stabilized Infinity Heavy Plating",
   "item.kubejs.causality_exempt_monic_heavy_plating": "§9Causality Exempt Monic Heavy Plating",
   "item.kubejs.quantum_flux": "§dQuantum Flux",
+  "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core",
+  "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+  "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+  "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
 
   "item.kubejs.wooden_widget": "Wooden Widget",
   "item.kubejs.wooden_widget_left": "Wooden Widget Left Part",

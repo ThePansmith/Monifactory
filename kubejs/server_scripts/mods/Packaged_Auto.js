@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: /packaged/ }, "extendedcrafting:frame", "gtceu:tungsten_carbide_block")
 
     event.remove({ output: "packagedauto:package_component" })
-    event.shaped("packagedauto:package_component", [
+    event.recipes.gtceu.shaped("packagedauto:package_component", [
         "VTV",
         "TET",
         "VTV"
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         V: "gtceu:vibrant_alloy_plate",
         T: "gtceu:titanium_plate",
         E: "minecraft:ender_eye"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "packagedauto:recipe_holder" })
     event.shaped("3x packagedauto:recipe_holder", [
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: "packagedauto:packager" })
-    event.shaped("packagedauto:packager", [
+    event.recipes.gtceu.shaped("packagedauto:packager", [
         "TCT",
         "EWE",
         "TIT"
@@ -41,10 +41,10 @@ ServerEvents.recipes(event => {
         E: "#gtceu:circuits/ev",
         W: "minecraft:crafting_table",
         I: "ae2:import_bus"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "packagedauto:unpackager" })
-    event.shaped("packagedauto:unpackager", [
+    event.recipes.gtceu.shaped("packagedauto:unpackager", [
         "TCT",
         "EWE",
         "TIT"
@@ -54,10 +54,10 @@ ServerEvents.recipes(event => {
         E: "#gtceu:circuits/ev",
         W: "minecraft:crafting_table",
         I: "ae2:export_bus"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "packagedauto:encoder" })
-    event.shaped("packagedauto:encoder", [
+    event.recipes.gtceu.shaped("packagedauto:encoder", [
         "TCT",
         "EWE",
         "TIT"
@@ -67,10 +67,10 @@ ServerEvents.recipes(event => {
         E: "packagedauto:recipe_holder",
         W: "minecraft:crafting_table",
         I: "#gtceu:circuits/ev"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "packagedauto:packager_extension" })
-    event.shaped("packagedauto:packager_extension", [
+    event.recipes.gtceu.shaped("packagedauto:packager_extension", [
         "TCT",
         "EWE",
         "TIT"
@@ -80,10 +80,10 @@ ServerEvents.recipes(event => {
         E: "minecraft:glowstone_dust",
         W: "minecraft:crafting_table",
         I: "minecraft:piston"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "packagedauto:crafter" })
-    event.shaped("packagedauto:crafter", [
+    event.recipes.gtceu.shaped("packagedauto:crafter", [
         "TCT",
         "EWE",
         "TIT"
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         E: "minecraft:redstone",
         W: "minecraft:crafting_table",
         I: "minecraft:piston"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "packagedauto:fluid_package_filler" })
     event.shaped("packagedauto:fluid_package_filler", [

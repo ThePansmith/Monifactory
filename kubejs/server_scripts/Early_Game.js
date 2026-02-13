@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
         .circuit(8)
         .duration(25)
         .EUt(16)
+        .addMaterialInfo(true)
 
     // Hand-crushing
     event.shapeless("minecraft:gravel", ["#forge:cobblestone/normal", "#forge:tools/mortars"])
@@ -115,7 +116,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:nitrogen 1000")
         .itemOutputs("2x gtceu:ash_dust")
         .outputFluids("gtceu:phenol 500")
-        .circuit(11)
+        .circuit(12)
         .duration(640)
         .EUt(30)
 
@@ -129,7 +130,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ULV])
 
     // Pyro Oven
-    event.shaped("gtceu:pyrolyse_oven", [
+    event.recipes.gtceu.shaped("gtceu:pyrolyse_oven", [
         "PCW",
         "CHC",
         "PUW"
@@ -139,9 +140,7 @@ ServerEvents.recipes(event => {
         U: "gtceu:lv_electric_pump",
         W: "gtceu:cupronickel_quadruple_wire",
         H: "gtceu:ulv_machine_hull"
-    }).id("gtceu:shaped/pyrolyse_oven")
-    event.remove({ id: "gtceu:arc_furnace/arc_pyrolyse_oven" })
-    event.remove({ id: "gtceu:macerator/macerate_pyrolyse_oven" })
+    }).id("gtceu:shaped/pyrolyse_oven").addMaterialInfo()
 
     // Toolbelts
     event.replaceInput({ output: "toolbelt:pouch" }, "minecraft:gold_ingot", "gtceu:steel_ingot")

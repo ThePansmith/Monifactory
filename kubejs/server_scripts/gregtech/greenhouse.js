@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 
     /*   Machine Recipe  */
 
-    event.shaped("gtceu:greenhouse", [
+    event.recipes.gtceu.shaped("gtceu:greenhouse", [
         "LWL",
         "ASA",
         "WRW"
@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         S: "gtceu:solid_machine_casing",
         R: "gtceu:lv_fluid_regulator"
     }).id("kubejs:shaped/greenhouse")
+        .addMaterialInfo()
 
 
     /*  Greenhouse Recipes  */

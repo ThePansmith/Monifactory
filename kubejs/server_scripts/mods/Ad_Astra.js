@@ -75,6 +75,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:space_helmet")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LV])
+        .addMaterialInfo(true)
 
     event.remove({ id: "ad_astra:space_suit" })
     event.recipes.gtceu.assembler("space_suit")
@@ -82,6 +83,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:space_suit")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LV])
+        .addMaterialInfo(true)
 
     spacesuit.forEach(part => {
         event.remove({ id: `ad_astra:space_${part}` })
@@ -90,6 +92,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`ad_astra:space_${part}`)
             .duration(300)
             .EUt(GTValues.VA[GTValues.LV])
+            .addMaterialInfo(true)
     })
 
     // Netherite space suit
@@ -99,6 +102,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:netherite_space_helmet")
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
+        .addMaterialInfo(true)
 
     event.remove({ id: "ad_astra:netherite_space_suit" })
     event.recipes.gtceu.assembler("netherite_space_suit")
@@ -106,6 +110,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:netherite_space_suit")
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
+        .addMaterialInfo(true)
 
     spacesuit.forEach(part => {
         event.remove({ id: `ad_astra:netherite_space_${part}` })
@@ -114,6 +119,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`ad_astra:netherite_space_${part}`)
             .duration(400)
             .EUt(GTValues.VA[GTValues.MV])
+            .addMaterialInfo(true)
     })
 
     // Jet Suit
@@ -123,6 +129,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:jet_suit_helmet")
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     event.remove({ id: "ad_astra:jet_suit" })
     event.recipes.gtceu.assembler("jet_suit")
@@ -130,6 +137,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:jet_suit")
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     spacesuit.forEach(part => {
         event.remove({ id: `ad_astra:jet_suit_${part}` })
@@ -138,6 +146,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`ad_astra:jet_suit_${part}`)
             .duration(400)
             .EUt(GTValues.VA[GTValues.EV])
+            .addMaterialInfo(true)
     })
 
 
@@ -159,7 +168,7 @@ ServerEvents.recipes(event => {
 
     // Oxygen Gear
     event.remove({ output: "ad_astra:oxygen_gear" })
-    event.shaped("ad_astra:oxygen_gear", [
+    event.recipes.gtceu.shaped("ad_astra:oxygen_gear", [
         " R ",
         "PCP",
         "F F"
@@ -169,11 +178,12 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/lv",
         F: "gtceu:steel_fluid_cell"
     })
+        .addMaterialInfo()
 
     // Engines and Tanks
     event.remove({ output: /ad_astra:.*_engine/ })
     event.remove({ output: /ad_astra:.*_tank/ })
-    event.shaped("ad_astra:steel_engine", [
+    event.recipes.gtceu.shaped("ad_astra:steel_engine", [
         " P ",
         "PPP",
         "TTT"
@@ -181,8 +191,9 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_black_steel_plate",
         T: "kubejs:electrical_steel_thruster"
     })
+        .addMaterialInfo()
 
-    event.shaped("ad_astra:steel_tank", [
+    event.recipes.gtceu.shaped("ad_astra:steel_tank", [
         "PTP",
         "PTP",
         "PTP"
@@ -190,8 +201,9 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_black_steel_plate",
         T: "enderio:fluid_tank"
     })
+        .addMaterialInfo()
 
-    event.shaped("ad_astra:desh_engine", [
+    event.recipes.gtceu.shaped("ad_astra:desh_engine", [
         " P ",
         "PPP",
         "TTT"
@@ -199,8 +211,9 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_signalum_plate",
         T: "kubejs:energetic_thruster"
     })
+        .addMaterialInfo()
 
-    event.shaped("ad_astra:desh_tank", [
+    event.recipes.gtceu.shaped("ad_astra:desh_tank", [
         "PTP",
         "PTP",
         "PTP"
@@ -208,9 +221,10 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_signalum_plate",
         T: "enderio:fluid_tank"
     })
+        .addMaterialInfo()
 
 
-    event.shaped("ad_astra:ostrum_engine", [
+    event.recipes.gtceu.shaped("ad_astra:ostrum_engine", [
         " P ",
         "PPP",
         "TTT"
@@ -218,8 +232,9 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_hsss_plate",
         T: "kubejs:vibrant_thruster"
     })
+        .addMaterialInfo()
 
-    event.shaped("ad_astra:ostrum_tank", [
+    event.recipes.gtceu.shaped("ad_astra:ostrum_tank", [
         "PTP",
         "PTP",
         "PTP"
@@ -227,8 +242,9 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_hsss_plate",
         T: "enderio:fluid_tank"
     })
+        .addMaterialInfo()
 
-    event.shaped("ad_astra:calorite_engine", [
+    event.recipes.gtceu.shaped("ad_astra:calorite_engine", [
         " P ",
         "PPP",
         "TTT"
@@ -236,8 +252,9 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_cryolobus_plate",
         T: "kubejs:dark_soularium_thruster"
     })
+        .addMaterialInfo()
 
-    event.shaped("ad_astra:calorite_tank", [
+    event.recipes.gtceu.shaped("ad_astra:calorite_tank", [
         "PTP",
         "PTP",
         "PTP"
@@ -245,17 +262,20 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_cryolobus_plate",
         T: "enderio:fluid_tank"
     })
+        .addMaterialInfo()
 
     event.recipes.gtceu.assembler("ad_astra/gas_tank")
         .itemInputs("gtceu:fluid_cell", "4x gtceu:iron_plate")
         .itemOutputs("ad_astra:gas_tank")
         .duration(100)
         .EUt(32)
+        .addMaterialInfo(true)
     event.recipes.gtceu.assembler("ad_astra/large_gas_tank")
         .itemInputs("3x gtceu:fluid_cell", "12x gtceu:steel_plate")
         .itemOutputs("ad_astra:large_gas_tank")
         .duration(100)
         .EUt(32)
+        .addMaterialInfo(true)
 
 
     // Launch Pad
@@ -265,13 +285,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:launch_pad")
         .duration(300)
         .EUt(30)
+        .addMaterialInfo(true)
 
     // Oxygen Loading
     event.custom('{"type": "ad_astra:oxygen_loading","cookingtime": 1,"energy": 30,"input": {"ingredient": {"tag": "forge:oxygen"},"millibuckets": 25},"result": {"fluid": "gtceu:oxygen","millibuckets": 25}}');
     event.remove({ id: /oxygen_from_oxygen_loading/ })
 
     event.remove({ id: "ad_astra:oxygen_distributor" })
-    event.shaped("ad_astra:oxygen_distributor", [
+    event.recipes.gtceu.shaped("ad_astra:oxygen_distributor", [
         "BRB",
         "PHP",
         "BCB"
@@ -281,10 +302,10 @@ ServerEvents.recipes(event => {
         P: "gtceu:hv_electric_pump",
         B: "minecraft:iron_bars",
         C: "#gtceu:circuits/hv"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "ad_astra:oxygen_loader" })
-    event.shaped("ad_astra:oxygen_loader", [
+    event.recipes.gtceu.shaped("ad_astra:oxygen_loader", [
         "BCB",
         "PHP",
         "BRB"
@@ -294,10 +315,10 @@ ServerEvents.recipes(event => {
         P: "gtceu:lv_electric_pump",
         B: "minecraft:iron_bars",
         C: "#gtceu:circuits/lv"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "ad_astra:gravity_normalizer" })
-    event.shaped("ad_astra:gravity_normalizer", [
+    event.recipes.gtceu.shaped("ad_astra:gravity_normalizer", [
         "BEB",
         "CHC",
         "BBB"
@@ -306,10 +327,10 @@ ServerEvents.recipes(event => {
         H: "gtceu:ev_machine_hull",
         B: "gtceu:titanium_plate",
         C: "#gtceu:circuits/ev"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "ad_astra:oxygen_sensor" })
-    event.shaped("ad_astra:oxygen_sensor", [
+    event.recipes.gtceu.shaped("ad_astra:oxygen_sensor", [
         "RRR",
         "TOT",
         "RRR"
@@ -317,7 +338,7 @@ ServerEvents.recipes(event => {
         R: "gtceu:red_alloy_plate",
         T: "gtceu:lv_sensor",
         O: "ad_astra:oxygen_loader"
-    })
+    }).addMaterialInfo()
     Item.of("ad_astra:tier_1_rover", '{BotariumData:{StoredFluids:[{Amount:0L,Fluid:"minecraft:empty"}]}}')
 
     event.remove({ id: "ad_astra:tier_1_rover" })
@@ -326,6 +347,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("ad_astra:tier_1_rover")
         .duration(600)
         .EUt(32)
+        .addMaterialInfo(true)
 
     const decormaterials = ["iron", "etrium", "steel", "desh", "ostrum", "calorite"]
     decormaterials.forEach(material => {

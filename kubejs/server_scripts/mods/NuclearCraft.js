@@ -90,6 +90,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:${name}_heat_sink`)
             .duration(400)
             .EUt(2)
+            .addMaterialInfo(true)
     }
 
     function canfluid(name, input) {
@@ -100,6 +101,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:${name}_heat_sink`)
             .duration(400)
             .EUt(2)
+            .addMaterialInfo(true)
     }
 
     function canmod(name, input) {
@@ -109,6 +111,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:${name}_block`)
             .duration(400)
             .EUt(2)
+            .addMaterialInfo(true)
     }
 
     canfluid("water", "minecraft:water")
@@ -130,17 +133,17 @@ ServerEvents.recipes(event => {
     canmod("beryllium", "gtceu:beryllium_dust")
 
     event.remove({ id: "nuclearcraft:empty_heat_sink" })
-    event.shaped("nuclearcraft:empty_heat_sink", [
+    event.recipes.gtceu.shaped("nuclearcraft:empty_heat_sink", [
         "TST",
         "S S",
         "TST"
     ], {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:steel_ingot"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "nuclearcraft:plate_basic" })
-    event.shaped("2x nuclearcraft:plate_basic", [
+    event.recipes.gtceu.shaped("2x nuclearcraft:plate_basic", [
         "TST",
         "SDS",
         "TST"
@@ -148,10 +151,10 @@ ServerEvents.recipes(event => {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:tungsten_plate",
         D: "gtceu:double_steel_plate"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:plate_advanced" })
-    event.shaped("2x nuclearcraft:plate_advanced", [
+    event.recipes.gtceu.shaped("2x nuclearcraft:plate_advanced", [
         "TST",
         "SDS",
         "TST"
@@ -159,7 +162,7 @@ ServerEvents.recipes(event => {
         T: "nuclearcraft:hard_carbon_ingot",
         S: "gtceu:yttrium_barium_cuprate_plate",
         D: "nuclearcraft:plate_basic"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:plate_du" })
     event.recipes.gtceu.alloy_smelter("du_plating")
@@ -181,27 +184,27 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: "nuclearcraft:fission_reactor_casing" })
-    event.shaped("8x nuclearcraft:fission_reactor_casing", [
+    event.recipes.gtceu.shaped("8x nuclearcraft:fission_reactor_casing", [
         "DDD",
         "DFD",
         "DDD"
     ], {
         F: "gtceu:robust_machine_casing",
         D: "nuclearcraft:plate_basic"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:fission_reactor_solid_fuel_cell" })
-    event.shaped("nuclearcraft:fission_reactor_solid_fuel_cell", [
+    event.recipes.gtceu.shaped("nuclearcraft:fission_reactor_solid_fuel_cell", [
         "TST",
         "S S",
         "TST"
     ], {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:tempered_glass"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:fission_reactor_controller" })
-    event.shaped("nuclearcraft:fission_reactor_controller", [
+    event.recipes.gtceu.shaped("nuclearcraft:fission_reactor_controller", [
         "DED",
         "EFE",
         "DED"
@@ -209,7 +212,7 @@ ServerEvents.recipes(event => {
         F: "gtceu:robust_machine_casing",
         E: "#gtceu:circuits/ev",
         D: "nuclearcraft:plate_advanced"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:fission_reactor_port" })
     event.shapeless("nuclearcraft:fission_reactor_port", ["nuclearcraft:fission_reactor_casing", "minecraft:hopper"])
@@ -313,6 +316,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:${name}_rtg`)
             .duration(200)
             .EUt(1920)
+            .addMaterialInfo(true)
     }
 
     rtg("americium", "nuclearcraft:americium_241")
