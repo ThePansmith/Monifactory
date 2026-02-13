@@ -1161,7 +1161,7 @@
 				"{image:monifactory:textures/quests/prismac_active.png width:200 height:210 align:center}"
 				"{@pagebreak}"
 				"{moni.quest.45752C40878A1689.description6}"
-				"{image:monifactory:textures/quests/prismac_stabs_caps.png width:200 height:200 align:center}"
+				"{image:monifactory:textures/quests/prismac_stabs_caps.png width:200 height:175 align:center}"
 			]
 			id: "45752C40878A1689"
 			shape: "hexagon"
