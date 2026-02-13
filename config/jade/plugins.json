@@ -64,6 +64,9 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
+    "me_expanded_pattern_buffer_proxy_info": true,
+    "me_expanded_pattern_buffer_info": true,
+    "enlarged_me_stocking_bus_info": true,
     "pterb_info": true
   },
   "endertanks": {
