@@ -14,7 +14,7 @@ skippedKeys = [
     "emi_loot.function.limit_count"
 ]
 chestLootAlwaysStackSame = false
-splitChestLootByTrial = false
+mobLootIncludeDirectDrops = true
 chanceDecimalPlaces = 1
 conditionStyle = "default"
 linkFormatting = [
@@ -35,14 +35,7 @@ mob = true
 gameplay = true
 archaeology = true
 
-[logUntranslatedTables]
+[logUnstranslatedTables]
 chest = false
 gameplay = false
 archaeology = false
-
-[directDrops]
-chestLoot = true
-blockLoot = true
-mobLoot = true
-gameplayLoot = true
-archaeologyLoot = true
