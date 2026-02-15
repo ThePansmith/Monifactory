@@ -9,9 +9,11 @@ enable_lightmap_caching: true
 # Higher values will result in less frequent updates
 # to block lighting, but slightly better performance.
 # Values below 2 will disable the optimization.
+# Has no effect in Minecraft 1.21.11+ as lightmap caching no longer directly uses time.
 lightmap_time_change_needed_for_update: 80
 
 # Whether the sky's color should be cached unless you're on a biome border.
+# Has no effect in Minecraft 1.21.11+ as the sky color was made data-driven.
 enable_sky_color_caching: true
 # How much the in-game time must change in ticks for the sky color to
 # be recalculated when not between biome borders. Higher values will result in
@@ -36,7 +38,7 @@ enable_toast_optimizations: true
 # for the entire frame during rendering.
 enable_sky_angle_caching_in_worldrenderer: true
 # Whether entity renderers should be stored directly in EntityType instead of a HashMap.
-# If your entity-adding mod crashes with this mod, it's probably this option's fault.
+# If your entity-adding mod crashes with BadOptimizations, try disabling this first.
 enable_entity_renderer_caching: true
 # Whether block entity renderers should be stored in BlockEntityType instead of a HashMap.
 enable_block_entity_renderer_caching: true
@@ -56,6 +58,7 @@ enable_remove_tutorial_if_not_demo: true
 
 # Whether BadOptimizations <version> should be added onto
 # the left text of the F3 menu.
+# In 1.21.9+, enabling this puts it into the F3 customizer screen.
 show_f3_text: false
 
 # Some config options will be force-disabled if certain mods are present
@@ -65,9 +68,14 @@ show_f3_text: false
 # by setting this to true. Beware of crashes. And Herobrine.
 ignore_mod_incompatibilities: false
 
+# Some mods add hooks that add extra conditions to lightmap/skycolor caching.
+# Set this to true to ignore loading them. Enabling may cause issues with
+# lighting mods and is not recommended.
+ignore_mod_cache_hooks: false
+
 # Whether to log the entire config into console when booting up.
 # If you plan on reporting an issue, please keep this on.
 log_config: true
 
 # Do not change this
-config_version: 4
+config_version: 6

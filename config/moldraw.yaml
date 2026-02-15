@@ -1,0 +1,29 @@
+enabled: true
+
+onlyShowOnShift: true
+
+color:
+  colors: false
+
+  useMaterialColors: false
+
+  defaultColor: §e
+
+  minimumBrightness: 0.1
+
+molecule:
+  showMolecules: true
+
+  moleculeScale: 20
+
+alloy:
+  showAlloys: true
+
+  pieChartRadius: 32
+
+  recursive: true
+
+  partsByMass: false
+
+debugMode: false
+

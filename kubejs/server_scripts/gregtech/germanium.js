@@ -8,12 +8,12 @@ ServerEvents.recipes(event => {
 
     // Initial Centrifuge Recipe
     event.recipes.gtceu.centrifuge("coal_fly_ash_centrifuge")
-        .itemInputs("6x gtceu:coal_fly_ash_dust")
+        .itemInputs("5x gtceu:coal_fly_ash_dust")
+        .chancedOutput("gtceu:fly_ash_polymineral_mixture_dust", 8000, 0)
         .chancedOutput("gtceu:fly_ash_polymineral_mixture_dust", 7700, 0)
-        .chancedOutput("gtceu:fly_ash_polymineral_mixture_dust", 7500, 0)
-        .chancedOutput("gtceu:fly_ash_iron_mineral_mixture_dust", 6700, 0)
-        .chancedOutput("gtceu:fly_ash_iron_mineral_mixture_dust", 5500, 0)
-        .chancedOutput("gtceu:fly_ash_aluminosilicate_dust", 4500, 0)
+        .chancedOutput("gtceu:fly_ash_iron_mineral_mixture_dust", 7500, 0)
+        .chancedOutput("gtceu:fly_ash_iron_mineral_mixture_dust", 6666, 0)
+        .chancedOutput("gtceu:fly_ash_aluminosilicate_dust", 5500, 0)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
 
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge("polymineral_leachate_centrifuge")
         .inputFluids(Fluid.of("gtceu:polymineral_leachate", 3000))
-        .chancedOutput("gtceu:small_germanium_dust", 6000, 0)
+        .chancedOutput("gtceu:small_germanium_dust", 6666, 0)
         .outputFluids(Fluid.of("gtceu:oxalic_acid_nickel_solution", 2000))
         .duration(400)
         .EUt(GTValues.VA[GTValues.LV])
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electrolyzer("kubejs:iron_mineral_solution_electrolysis")
         .inputFluids(Fluid.of("gtceu:iron_mineral_solution", 3000))
-        .chancedOutput("gtceu:germanium_dust", 3000, 0)
+        .chancedOutput("gtceu:germanium_dust", 3500, 0)
         .itemOutputs("2x gtceu:goethite_dust")
         .chancedOutput("gtceu:yellow_limonite_dust", 5000, 0)
         .chancedOutput("gtceu:sphalerite_dust", 5000, 0)

@@ -33,10 +33,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
 
-    GTMaterials.Germanium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Germanium.setProperty($PropertyKey.DUST, new $DustProperty())
     GTMaterials.Germanium.setMaterialARGB(0x66806d)
     GTMaterials.Germanium.setMaterialSecondaryARGB(0x5d5e3a)
-    GTMaterials.Germanium.addFlags(GTMaterialFlags.GENERATE_PLATE)
 
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
@@ -52,10 +51,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Trinium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Tritanium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
-
-    // Small Springs for Power Transformer recipes
-    GTMaterials.RedAlloy.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
-    GTMaterials.Europium.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
+    GTMaterials.Platinum.addFlags(GTMaterialFlags.GENERATE_FRAME)
 
     // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
@@ -153,6 +149,9 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.dust.setIgnored(GTMaterials.CertusQuartz, $AEItems.CERTUS_QUARTZ_DUST)
     TagPrefix.dust.setIgnored(GTMaterials.get("fluix"), $AEItems.FLUIX_DUST)
 
-    TagPrefix.block.setIgnored(GTMaterials.CertusQuartz, $AEBlocks.QUARTZ_BLOCK.asItem())
-    TagPrefix.block.setIgnored(GTMaterials.get("fluix"), $AEBlocks.FLUIX_BLOCK.asItem())
+    TagPrefix.block.setIgnoredBlock(GTMaterials.CertusQuartz, $AEBlocks.QUARTZ_BLOCK.block())
+    TagPrefix.block.setIgnoredBlock(GTMaterials.get("fluix"), $AEBlocks.FLUIX_BLOCK.block())
+
+    // Change Fluix block to only have 4 gems instead of 9
+    TagPrefix.block.modifyMaterialAmount(GTMaterials.get("fluix"), 4)
 })

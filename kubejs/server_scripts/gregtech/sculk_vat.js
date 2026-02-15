@@ -16,6 +16,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:sculk_vat")
         .duration(20 * 30)
         .EUt(GTValues.VA[GTValues.ZPM])
+        .addMaterialInfo(true)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:iv_fermenter").EUt(GTValues.VA[GTValues.IV]).duration(20 * 50))
 
     // Hatch recipes
@@ -25,6 +26,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:sculk_xp_draining_hatch")
         .duration(20 * 10)
         .EUt(GTValues.VA[GTValues.LuV])
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("sculk_xp_sensor_hatch")
         .itemInputs("gtceu:ev_machine_hull", "2x gtceu:cryolobus_plate", "gtceu:luv_sensor", "4x gtceu:red_alloy_screw")
@@ -32,6 +34,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:sculk_xp_sensor_hatch")
         .duration(20 * 10)
         .EUt(GTValues.VA[GTValues.LuV])
+        .addMaterialInfo(true)
 
     // Petri Dish cleaning in the Autoclave
     event.recipes.gtceu.autoclave("petri_dish_sterilization")
@@ -63,11 +66,11 @@ ServerEvents.recipes(event => {
     // Growth recipes
     event.recipes.gtceu.sculk_vat("bacteria_growth")
         .itemInputs("kubejs:petri_dish_bacteria")
-        .inputFluids("gtceu:biomass 4000")
-        .outputFluids("gtceu:bacteria 3000")
+        .inputFluids("gtceu:biomass 40000")
+        .outputFluids("gtceu:bacteria 30000")
         .circuit(1)
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.sculk_vat("sculk_growth")
         .notConsumable("minecraft:sculk_catalyst")
@@ -88,11 +91,11 @@ ServerEvents.recipes(event => {
     // Transformation recipes
     event.recipes.gtceu.sculk_vat("biomass_fermentation")
         .notConsumable("kubejs:petri_dish_bacteria")
-        .inputFluids("gtceu:biomass 4000")
-        .outputFluids("gtceu:fermented_biomass 4000")
+        .inputFluids("gtceu:biomass 40000")
+        .outputFluids("gtceu:fermented_biomass 40000")
         .circuit(2)
-        .duration(20 * 15)
-        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(20 * 30)
+        .EUt(GTValues.VHA[GTValues.MV])
 
     /*
     // Move Enriched Bacterial Sludge recipes from Brewery to Sculk Vat

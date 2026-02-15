@@ -5,7 +5,7 @@ const zCFID = z.number().int().positive()
 
 const zManifestFile = z.object({
     fileID: zCFID,
-    required: z.literal(true),
+    required: z.boolean(),
     projectID: zCFID,
 })
 export type ManifestFileEntry = z.infer<typeof zManifestFile>

@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x kubejs:dark_soularium_casing")
         .duration(50)
         .EUt(16)
+        .addMaterialInfo(true)
 
     function Soulbinding(id, mob, input2, EUt, fluid, output) {
         event.recipes.gtceu.quintessence_infuser(`${id}_${mob}`)

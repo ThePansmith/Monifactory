@@ -156,6 +156,8 @@
 		{
 			id: "7FC84014DAAD0025"
 			linked_quest: "6D434F3B0E720A5A"
+			shape: "hexagon"
+			size: 1.25d
 			x: 1.5d
 			y: 4.25d
 		}
@@ -164,6 +166,14 @@
 			linked_quest: "648B1E09AA648798"
 			x: 3.75d
 			y: 4.25d
+		}
+		{
+			id: "6E2A278B1FB94559"
+			linked_quest: "6197C51E04761371"
+			shape: "hexagon"
+			size: 2.0d
+			x: 4.25d
+			y: -11.0d
 		}
 	]
 	quests: [
@@ -857,8 +867,8 @@
 		}
 		{
 			dependencies: [
-				"13F33DCE02ECE265"
 				"53347AAAE4495F95"
+				"6197C51E04761371"
 			]
 			description: [
 				"{moni.quest.591A1B8B279DFCC9.description1}"
@@ -882,35 +892,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["055193574D203872"]
-			description: [
-				"{moni.quest.13F33DCE02ECE265.description1}"
-				""
-				"{moni.quest.13F33DCE02ECE265.description2}"
-				""
-				"{moni.quest.13F33DCE02ECE265.description3}"
-				""
-				"{moni.quest.13F33DCE02ECE265.description4}"
-			]
-			id: "13F33DCE02ECE265"
-			rewards: [{
-				id: "5C9E3F865D479E4D"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "69AA06301D6F129B"
-				item: "gtceu:lv_assembler"
-				type: "item"
-			}]
-			title: "{moni.quest.13F33DCE02ECE265.title}"
-			x: 4.25d
-			y: -11.0d
-		}
-		{
-			dependencies: ["13F33DCE02ECE265"]
+			dependencies: ["6197C51E04761371"]
 			description: [
 				"{moni.quest.1CB14AC299A8EDD9.description1}"
 				""
@@ -1160,6 +1142,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "495FB1B792F34BE5"
 				item: "gtceu:mv_assembler"
@@ -1348,14 +1331,16 @@
 				"{moni.quest.7641AE777370BE1A.description1}"
 				""
 				"{moni.quest.7641AE777370BE1A.description2}"
-				"{@pagebreak}"
+				""
 				"{moni.quest.7641AE777370BE1A.description3}"
-				""
-				"{moni.quest.7641AE777370BE1A.description4}"
 				"{@pagebreak}"
-				"{moni.quest.7641AE777370BE1A.description5}"
+				"{moni.quest.7641AE777370BE1A.description4}"
 				""
+				"{moni.quest.7641AE777370BE1A.description5}"
+				"{@pagebreak}"
 				"{moni.quest.7641AE777370BE1A.description6}"
+				""
+				"{moni.quest.7641AE777370BE1A.description7}"
 			]
 			icon: "gtceu:distillation_tower"
 			id: "7641AE777370BE1A"
@@ -1389,7 +1374,12 @@
 					type: "item"
 				}
 				{
-					count: 34L
+					id: "6115A370BFBA1A97"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					count: 33L
 					id: "1FB27D5C167BD42B"
 					item: "gtceu:clean_machine_casing"
 					type: "item"
@@ -1562,6 +1552,7 @@
 			dependencies: [
 				"616555E46F314F04"
 				"244F2CC5484A7B21"
+				"0C4E18B05F9E68DE"
 			]
 			description: [
 				"{moni.quest.5BC6DB754207D4A8.description1}"
@@ -1635,6 +1626,7 @@
 				""
 				"{moni.quest.7256E0064F967C93.description8}"
 			]
+			hide_dependency_lines: false
 			id: "7256E0064F967C93"
 			rewards: [{
 				count: 3
@@ -1874,7 +1866,7 @@
 				"{moni.quest.1D0DF2330B113B7A.description2}"
 				""
 				"{moni.quest.1D0DF2330B113B7A.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.1D0DF2330B113B7A.description4}"
 				""
 				"{moni.quest.1D0DF2330B113B7A.description5}"
@@ -2462,6 +2454,55 @@
 			title: "{moni.quest.66E1F1B28E4577B2.title}"
 			x: -1.75d
 			y: 8.5d
+		}
+		{
+			dependencies: ["74935A3553451178"]
+			description: [
+				"{moni.quest.2C7306C74609E995.description1}"
+				""
+				"{moni.quest.2C7306C74609E995.description2}"
+				""
+				"{moni.quest.2C7306C74609E995.description3}"
+				""
+				"{moni.quest.2C7306C74609E995.description4}"
+			]
+			hide_dependency_lines: true
+			id: "2C7306C74609E995"
+			size: 1.5d
+			subtitle: "{moni.quest.2C7306C74609E995.subtitle}"
+			tasks: [{
+				id: "6BE07CD22A1130B1"
+				item: "gtceu:empty_spray_can"
+				type: "item"
+			}]
+			title: "{moni.quest.2C7306C74609E995.title}"
+			x: 10.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C78349343BA40D7"]
+			description: [
+				"{moni.quest.349869EBF2D9FAF1.description1}"
+				""
+				"{moni.quest.349869EBF2D9FAF1.description2}"
+				""
+				"{moni.quest.349869EBF2D9FAF1.description3}"
+			]
+			id: "349869EBF2D9FAF1"
+			rewards: [{
+				id: "43A8ED9E9FB6365D"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "50CCF15D11C3B693"
+				item: "gtceu:phosphorus_boule"
+				type: "item"
+			}]
+			title: "{moni.quest.349869EBF2D9FAF1.title}"
+			x: -8.0d
+			y: -4.25d
 		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"

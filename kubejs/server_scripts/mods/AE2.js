@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     // Base AE2
     // ME Controller
     event.remove({ id: "ae2:network/blocks/controller" })
-    event.shaped(Item.of("ae2:controller"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:controller"), [
         "ABA",
         "BCB",
         "ABA"
@@ -15,10 +15,11 @@ ServerEvents.recipes(event => {
         B: "gtceu:fluix_plate",
         C: "ae2:energy_acceptor"
     }).id("kubejs:ae2/controller")
+        .addMaterialInfo()
 
     // Energy Acceptor
     event.remove({ id: "ae2:network/blocks/energy_energy_acceptor" })
-    event.shaped(Item.of("ae2:energy_acceptor"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:energy_acceptor"), [
         "ABA",
         "BCB",
         "ABA"
@@ -27,6 +28,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:fluix_plate",
         C: "gtceu:lv_machine_hull"
     }).id("kubejs:ae2/energy_acceptor")
+        .addMaterialInfo()
 
     // ME Chest
     event.remove({ id: "ae2:network/blocks/storage_chest" })
@@ -60,7 +62,7 @@ ServerEvents.recipes(event => {
 
     // Inscriber
     event.remove({ id: "ae2:network/blocks/inscribers" })
-    event.shaped(Item.of("ae2:inscriber"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:inscriber"), [
         "ABA",
         "CDA",
         "ABA"
@@ -70,6 +72,7 @@ ServerEvents.recipes(event => {
         C: "ae2:fluix_crystal",
         D: "gtceu:mv_machine_hull"
     }).id("kubejs:ae2/inscriber")
+        .addMaterialInfo()
 
     // Patterns
     event.remove({ id: "ae2:network/crafting/patterns_blank" })
@@ -542,12 +545,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("ae2:quartz_fiber")
         .duration(50)
         .EUt(16)
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.alloy_smelter("kubejs:ae2/fluix_cable")
         .itemInputs(["ae2:fluix_dust", "ae2:quartz_fiber"])
         .itemOutputs("2x ae2:fluix_glass_cable")
         .duration(50)
         .EUt(16)
+        .addMaterialInfo(true)
 
 
     // Skystone
@@ -770,6 +775,46 @@ ServerEvents.recipes(event => {
 
     // MAE2 compat stuff
     event.remove({ id: /mae2/, not: { id: /crafting_accelerator/ } })
+    // Crafting Accelerators
+    const accelerator_ingredients = [
+        ["hv", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polyethylene", 1],
+        ["ev", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polyethylene", 1.5],
+        ["iv", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polytetrafluoroethylene", 1],
+        ["luv", "ae2:engineering_processor", "megacells:accumulation_processor", "gtceu:polytetrafluoroethylene", 1.5],
+    ]
+    for (let index = 1; index <= 4; index++) {
+        let curTier = Item.of(`mae2:${Math.pow(4, index)}x_crafting_accelerator`);
+
+        let prevTier;
+        if (index == 1) prevTier = Item.of("ae2:crafting_accelerator")
+        else prevTier = Item.of(`mae2:${Math.pow(4, index - 1)}x_crafting_accelerator`)
+
+        let curIngredients = accelerator_ingredients[index - 1]
+
+        event.shaped(curTier, [
+            "ACA",
+            "SBS"
+        ], {
+            A: curIngredients[1],
+            B: curIngredients[2],
+            C: `#gtceu:circuits/${curIngredients[0]}`,
+            S: Item.of(prevTier)
+        }).id(`kubejs:ae2/crafting_accelerator_${Math.pow(4, index)}x`)
+
+        // Cheaper ramp up to eliminate exponential effect
+        event.recipes.gtceu.assembler(`kubejs:ae2/crafting_accelerator_${Math.pow(4, index)}x_assembler`)
+            .itemInputs(
+                Item.of(prevTier, 1),
+                Item.of(curIngredients[1], 2),
+                Item.of(curIngredients[2], 1),
+                `#gtceu:circuits/${curIngredients[0]}`
+            )
+            .inputFluids(Fluid.of(curIngredients[3], 144 * curIngredients[4]))
+            .itemOutputs(curTier)
+            .EUt(GTValues.VA[GTValues.HV])
+            .duration(200)
+            .cleanroom(CleanroomType.CLEANROOM)
+    }
 
     event.shaped("mae2:item_multi_p2p_tunnel", [
         " A ",
@@ -831,35 +876,35 @@ ServerEvents.recipes(event => {
         .EUt(2048)
 
     // Processors
-    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg")
         .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:soldering_alloy 72")
+        .inputFluids("gtceu:redstone 72")
         .itemOutputs("2x ae2:engineering_processor")
-        .duration(100)
+        .duration(50)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg")
         .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:soldering_alloy 72")
+        .inputFluids("gtceu:redstone 72")
         .itemOutputs("2x ae2:logic_processor")
-        .duration(100)
+        .duration(50)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg")
         .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:soldering_alloy 72")
+        .inputFluids("gtceu:redstone 72")
         .itemOutputs("2x ae2:calculation_processor")
-        .duration(100)
+        .duration(50)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_1x")
+    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg")
         .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
-        .inputFluids("gtceu:soldering_alloy 72")
-        .itemOutputs("megacells:accumulation_processor")
-        .duration(10)
+        .inputFluids("gtceu:indium_gallium_phosphide 36")
+        .itemOutputs("2x megacells:accumulation_processor")
+        .duration(100)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
     // ExtendedAE
@@ -951,11 +996,10 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     // Extended Pattern Access Terminal
-    // I do want to eventually just outright remove the default one in favor of this one, but will happen once EPAT gets a fullblock eng block
+    // Note that the terminal doesn't have a fullblock version.
     event.remove({ id: "expatternprovider:epa" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("kubejs:epp/epa")
-    event.remove({ id: "expatternprovider:epa_upgrade" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("expatternprovider:epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:engineering_processor", "#ae2:pattern_provider", "ae2:logic_processor"]).id("expatternprovider:epa_direct")
 
     // ExtendedAE Silicon Block
     event.remove({id:"expatternprovider:silicon_block"})
@@ -976,6 +1020,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x expatternprovider:assembler_matrix_frame")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Wall
     event.remove({ id: "expatternprovider:assembler_matrix_wall" })
@@ -985,6 +1030,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .duration(100)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Glass
     event.remove({ id: "expatternprovider:assembler_matrix_glass" })
@@ -994,6 +1040,7 @@ ServerEvents.recipes(event => {
         .circuit(2)
         .duration(100)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Pattern Core
     event.remove({ id: "expatternprovider:assembler_matrix_pattern" })
@@ -1003,6 +1050,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_pattern")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Craft Core
     event.remove({ id: "expatternprovider:assembler_matrix_crafter" })
@@ -1012,6 +1060,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_crafter")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Assembler Matrix Speed Core
     event.remove({ id: "expatternprovider:assembler_matrix_speed" })
@@ -1021,6 +1070,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_speed")
         .duration(150)
         .EUt(1920)
+        .addMaterialInfo(true)
 
     // Misc stuff
     event.shaped("expatternprovider:ingredient_buffer", [
@@ -1070,19 +1120,6 @@ ServerEvents.recipes(event => {
         mode: "press",
         result: { item: "ae2wtlib:quantum_bridge_card" }
     }).id("kubejs:ae2wtlib/quantum_bridge_card")
-
-    // Certus Quartz and Fluix Blocks
-    event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
-        .itemInputs(["4x ae2:certus_quartz_crystal"])
-        .itemOutputs("ae2:quartz_block")
-        .duration(300)
-        .EUt(2)
-
-    event.recipes.gtceu.compressor("kubejs:fluix_block")
-        .itemInputs(["4x ae2:fluix_crystal"])
-        .itemOutputs("ae2:fluix_block")
-        .duration(300)
-        .EUt(2)
 
     // Vibrant Quartz Glass
     event.remove({ output: "ae2:quartz_vibrant_glass" })

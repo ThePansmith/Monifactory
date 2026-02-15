@@ -3,11 +3,15 @@
  * This is the place custom multiblock recipes (Like Discharging) are defined.
  * It is also where the shapes for multis are defined.
  */
+const List = Java.loadClass("java.util.List")
 const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 const LocalizationUtils = Java.loadClass("com.lowdragmc.lowdraglib.utils.LocalizationUtils")
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
+const RecipeLogic = Java.loadClass("com.gregtechceu.gtceu.api.machine.trait.RecipeLogic")
 const MoniGuiTextures = Java.loadClass("net.neganote.monilabs.client.gui.MoniGuiTextures");
+Java.loadClass("net.neganote.monilabs.client.render.MoniDynamicRenderHelper");
+Java.loadClass("net.neganote.monilabs.client.render.HelicalFusionRenderer");
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
@@ -277,8 +281,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/fusion_reactor")
+        .model(GTMachineModels.createWorkableCasingMachineModel(GTCEu.id("block/casings/gcym/atomic_casing"), GTCEu.id("block/multiblock/fusion_reactor"))
+            ["andThen(java.util.function.Consumer)"](b => b.addDynamicRenderer(() => MoniDynamicRenderHelper.createHelicalFusionRenderer()))
+        )
 
     // Greenhouse
     event.create("greenhouse", "multiblock")
@@ -311,8 +316,16 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.blocks("minecraft:redstone_lamp")))
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("gtceu:block/casings/solid/machine_casing_solid_steel",
-            "gtceu:block/multiblock/implosion_compressor")
+        .modelProperty(GTModelProperties.RECIPE_LOGIC_STATUS, RecipeLogic.Status.IDLE)
+        .model(GTMachineModels.createWorkableCasingMachineModel(GTCEu.id("block/casings/solid/machine_casing_solid_steel"), GTCEu.id("block/multiblock/implosion_compressor"))
+            ["andThen(java.util.function.Consumer)"](b => b.addDynamicRenderer(() => GTDynamicRenders.makeGrowingPlantRender(List.of(
+                new Vector3f(-1, 1, -1),
+                new Vector3f(1, 1, -1),
+                new Vector3f(-1, 1, -3),
+                new Vector3f(1, 1, -3),
+                new Vector3f(-1, 1, -5),
+                new Vector3f(1, 1, -5),
+            )))))
 
     // Rock Cycle Simulator
     event.create("rock_cycle_simulator", "multiblock")
@@ -569,7 +582,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("CCCCCCCCC", "CP#III#PC", "#P#SSS#P#", "#PSPPPSP#", "#S  E  S#", "#V  E  V#", "#G  E  G#", "#V  E  V#", "#S  E  S#", "##SPPPS##", "###SMS###")
             .aisle("CCCCCCCCC", "C##III##C", "###SSS###", "##SPPPS##", "#S K K S#", "#V K K V#", "#G K K G#", "#V K K V#", "#S K K S#", "##SPPPS##", "###SSS###")
             .aisle("CCCCCCCCC", "CCF###FCC", "##F###F##", "##FSSSF##", "##S   S##", "##V   V##", "##G   G##", "##V   V##", "##S   S##", "###SSS###", "#########")
-            .aisle("#CCCCCCC#", " CC#P#CC ", "####P####", "####P####", "###SSS###", "###VVV###", "###GGG###", "###VVV###", "###SSS###", "#########", "#########")
+            .aisle("#CCCCCCC#", "#CC#P#CC#", "####P####", "####P####", "###SSS###", "###VVV###", "###GGG###", "###VVV###", "###SSS###", "#########", "#########")
             .aisle("##CC@CC##", "##CCCCC##", "#########", "#########", "#########", "#########", "#########", "#########", "#########", "#########", "#########")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where("C", Predicates.blocks("gtceu:stress_proof_casing").setMinGlobalLimited(85)

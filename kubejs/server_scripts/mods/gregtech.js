@@ -55,16 +55,20 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(30)
 
-    if (doHNN) {
-        event.shaped("kubejs:quantum_flux", [
-            " B ",
-            "BAB",
-            " B "
-        ], {
-            A: "enderio:pulsating_crystal",
-            B: "hostilenetworks:end_prediction"
-        })
-    }
+    // Other Quantum Flux Recipes
+    event.recipes.gtceu.mixer("quantum_flux_hm")
+        .itemInputs("redstone_arsenal:flux_gem")
+        .inputFluids(Fluid.of("gtceu:mana", 250))
+        .itemOutputs("8x kubejs:quantum_flux")
+        .duration(100)
+        .EUt(480)
+
+    event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
+        .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
+        .inputFluids("gtceu:dragon_breath 500")
+        .itemOutputs("64x kubejs:quantum_flux")
+        .duration(50)
+        .EUt(GTValues.VA[GTValues.EV])
 
     // Remove Hot MV ingots (And molten fluid counterpart)
     event.remove([
@@ -92,7 +96,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(stoneItem)
             .duration(16)
             .EUt(60)
-            ["adjacentFluid(net.minecraft.world.level.material.Fluid[])"]("minecraft:lava", "minecraft:water")
+            .adjacentFluids("minecraft:lava", "minecraft:water")
     }
 
     generateRockBreakerStoneRecipe("minecraft:calcite")

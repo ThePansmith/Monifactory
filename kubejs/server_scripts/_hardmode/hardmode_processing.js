@@ -86,23 +86,6 @@ ServerEvents.recipes(event => {
             .outputFluids(Fluid.of("gtceu:polyvinyl_acetate", 4320))
             .duration(800).EUt(30)
 
-        // Kapton K Wetwares
-        event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
-        event.recipes.gtceu.circuit_assembler("kubejs:circuit_assembler/wetware_hm")
-            .itemInputs(
-                "16x gtceu:kapton_k_plate",
-                "gtceu:petri_dish",
-                "gtceu:luv_electric_pump",
-                "gtceu:iv_sensor",
-                "#gtceu:circuits/iv",
-                "16x gtceu:niobium_titanium_foil"
-            )
-            .inputFluids(Fluid.of("gtceu:sterilized_growth_medium", 4000))
-            .itemOutputs("16x gtceu:wetware_circuit_board")
-            .cleanroom(CleanroomType.STERILE_CLEANROOM)
-            .duration(1200)
-            .EUt(30720)
-
         // Recipe conflict of 2-Ethylanthraquinone from Ethylbenzene with Styrene from Ethylbenzene
         event.remove({ id: "gtceu:chemical_reactor/styrene_from_ethylbenzene" })
         event.remove({ id: "gtceu:large_chemical_reactor/styrene_from_ethylbenzene" })
@@ -133,6 +116,7 @@ ServerEvents.recipes(event => {
             .itemInputs("64x gtceu:beryllium_oxide_ring", "64x gtceu:beryllium_oxide_ring", "6x gtceu:hsla_steel_plate", "#gtceu:circuits/ulv")
             .itemOutputs("kubejs:magnetron")
             .duration(600).EUt(61440)
+            .addMaterialInfo(true)
 
         event.recipes.gtceu.chemical_reactor("graphene_magnetron")
             .itemInputs("gtceu:graphite_dust")
@@ -315,7 +299,7 @@ ServerEvents.recipes(event => {
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor("neocryolite")
-            .itemInputs("4x gtceu:caesium_hydroxide_dust", "3x gtceu:naquadah_hydroxide_dust")
+            .itemInputs("9x gtceu:caesium_hydroxide_dust", "7x gtceu:naquadah_hydroxide_dust")
             .notConsumable("gtceu:signalum_dust")
             .inputFluids("gtceu:hydrofluoric_acid 6000")
             .outputFluids("gtceu:neocryolite 1000", "minecraft:water 6000")
@@ -355,7 +339,7 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:hot_naquadah_oxide_neocryolite_solution 4000")
             .notConsumable("2x gtceu:ruthenium_rod")
             .itemOutputs("2x gtceu:naquadah_dust")
-            .outputFluids("gtceu:neocryolite 3750", "gtceu:oxygen 3000")
+            .outputFluids("gtceu:neocryolite 3950", "gtceu:oxygen 3000")
             .duration(250).EUt(7680)
 
         event.recipes.gtceu.chemical_bath("bathe_molten_aerotheum_to_aerotheum_dust")
@@ -406,21 +390,25 @@ ServerEvents.recipes(event => {
             .chancedOutput("gtceu:lutetium_dust", 600, 0)
             .chancedOutput("gtceu:europium_dust", 600, 0)
             .duration(50).EUt(GTValues.VA[GTValues.UV])
+    }
 
-        // Quantum Flux Recipe
-        event.recipes.gtceu.mixer("quantum_flux_hm")
-            .itemInputs("redstone_arsenal:flux_gem")
-            .inputFluids(Fluid.of("gtceu:mana", 250))
-            .itemOutputs("8x kubejs:quantum_flux")
-            .duration(100)
-            .EUt(480)
-
-        event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
-            .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
-            .inputFluids("gtceu:dragon_breath 500")
-            .itemOutputs("64x kubejs:quantum_flux")
-            .duration(50)
-            .EUt(GTValues.VA[GTValues.EV])
+    if (doHarderRecipes) {
+        // Kapton K Wetwares
+        event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
+        event.recipes.gtceu.circuit_assembler("kubejs:circuit_assembler/wetware_hm")
+            .itemInputs(
+                "16x gtceu:kapton_k_plate",
+                "gtceu:petri_dish",
+                "gtceu:luv_electric_pump",
+                "gtceu:iv_sensor",
+                "#gtceu:circuits/iv",
+                "16x gtceu:niobium_titanium_foil"
+            )
+            .inputFluids(Fluid.of("gtceu:sterilized_growth_medium", 4000))
+            .itemOutputs("16x gtceu:wetware_circuit_board")
+            .cleanroom(CleanroomType.STERILE_CLEANROOM)
+            .duration(1200)
+            .EUt(30720)
 
         // Rocketry
         event.recipes.gtceu.chemical_reactor("kubejs:chemical_reactor/durene_hm")

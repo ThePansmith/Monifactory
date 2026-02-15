@@ -419,7 +419,7 @@
     "item.kubejs.microminer_t6_damaged": "§7Damaged Enderium Plated Micro Miner [Tier Six]",
     "item.kubejs.stabilized_microminer_t2half": "§dStabilized Dark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
     "item.kubejs.microminer_t8_damaged": "§7Damaged Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
-    "item.kubejs.microminer_t7_damaged": "§7Damaged Cryolobus Plated Micro Dragon Hunter [Tier Seven]",
+    "item.kubejs.microminer_t7_damaged": "§7Damaged Cryolobus Plated Micro Warden Hunter [Tier Seven]",
     "item.kubejs.damaged_microminer.tooltip": "§7§oCan be repaired in an assembler.",
     "item.kubejs.microminer_t4half_damaged": "§7Damaged Lumium Plated Micro Mob Slayer [Tier Four and Half]",
     "item.kubejs.microminer_t2half.desc": "§7§oKills mobs in safer microverses and collects their skeletons and parts",
@@ -440,5 +440,9 @@
     "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
     "item.kubejs.optical_chip": "Optical Chip",
     "item.kubejs.completed_optical_wafer": "Completed Optical Wafer",
-    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer"
+    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }

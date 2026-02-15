@@ -45,7 +45,8 @@ const clientMods = [
     "legendarytooltips",
     "drippyloadingscreen",
     "badoptimizations",
-    "fancymenu"
+    "fancymenu",
+    "gtmoldraw"
 ]
 
 const symlinkSync = (ourDir: fs.PathLike, newDir: fs.PathLike) => {
@@ -64,6 +65,7 @@ const cpMods = (targetDir: string, filter?: (file: string) => boolean) => {
     // Cache might contain more files than the manifest!
     // Make sure to copy only the necessary ones
     for (const manifile of readManifest().files) {
+        if (!manifile.required) continue
         const folder = cacheFolderByManifestFileEntry(manifile)
         for (const file of fs.readdirSync(folder, { recursive: false, encoding: "utf8" })) {
             if (!file.endsWith(".jar")) continue

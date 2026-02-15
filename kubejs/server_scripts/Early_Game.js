@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
         .circuit(8)
         .duration(25)
         .EUt(16)
+        .addMaterialInfo(true)
 
     // Hand-crushing
     event.shapeless("minecraft:gravel", ["#forge:cobblestone/normal", "#forge:tools/mortars"])
@@ -66,15 +67,6 @@ ServerEvents.recipes(event => {
     // Solar composite
     event.shapeless("3x enderio:photovoltaic_composite", ["gtceu:lapis_dust", "gtceu:coal_dust", "gtceu:silicon_dust"]).id("enderio:photovoltaic_composite")
 
-    event.remove({ id: "gtceu:assembler/phenolic_board" })
-    event.recipes.gtceu.chemical_reactor("phenolic_board")
-        .itemInputs("gtceu:resin_circuit_board")
-        .inputFluids("gtceu:phenol 100")
-        .itemOutputs("gtceu:phenolic_circuit_board")
-        .duration(100)
-        .EUt(8)
-
-
     // Resin Board stuff
     event.recipes.gtceu.assembler("kubejs:resin_board_assembler")
         .itemInputs("#minecraft:planks")
@@ -91,33 +83,54 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(7)
 
-    // phenol
-
-    let steam = new JSONObject()
-    steam.add("amount", 4000)
-    steam.add("value", { tag: "forge:steam" })
-
-    // JSON object and FluidIngredientJS are loaded in server script _initial.js
-    event.recipes.gtceu.pyrolyse_oven("phenol_coal")
+    // Phenol direct from Coal
+    event.recipes.gtceu.pyrolyse_oven("coal_to_phenol")
         .itemInputs("16x minecraft:coal")
-        .inputFluids(FluidIngredientJS.of(steam))
-        .itemOutputs("20x gtceu:coke_gem")
+        .inputFluids("#forge:steam 4000")
+        .chancedOutput("gtceu:coal_fly_ash_dust", 5000, 0)
         .outputFluids("gtceu:phenol 1000")
         .circuit(14)
-        .duration(600)
+        .duration(640)
         .EUt(30)
 
-    event.recipes.gtceu.pyrolyse_oven("phenol_coal_dust")
+    event.recipes.gtceu.pyrolyse_oven("coal_dust_to_phenol")
         .itemInputs("16x gtceu:coal_dust")
-        .inputFluids(FluidIngredientJS.of(steam))
-        .itemOutputs("20x gtceu:coke_dust")
+        .inputFluids("#forge:steam 4000")
+        .chancedOutput("gtceu:coal_fly_ash_dust", 5000, 0)
         .outputFluids("gtceu:phenol 1000")
         .circuit(14)
-        .duration(600)
+        .duration(640)
         .EUt(30)
+
+    // Phenol direct from Wood
+    event.recipes.gtceu.pyrolyse_oven("log_to_phenol")
+        .itemInputs("16x #minecraft:logs_that_burn")
+        .itemOutputs("2x gtceu:ash_dust")
+        .outputFluids("gtceu:phenol 500")
+        .circuit(11)
+        .duration(1280)
+        .EUt(30)
+
+    event.recipes.gtceu.pyrolyse_oven("log_to_phenol_nitrogen")
+        .itemInputs("16x #minecraft:logs_that_burn")
+        .inputFluids("gtceu:nitrogen 1000")
+        .itemOutputs("2x gtceu:ash_dust")
+        .outputFluids("gtceu:phenol 500")
+        .circuit(12)
+        .duration(640)
+        .EUt(30)
+
+    // Phenolic circuit board
+    event.remove({ id: "gtceu:assembler/phenolic_board" })
+    event.recipes.gtceu.chemical_reactor("phenolic_board")
+        .itemInputs("gtceu:resin_circuit_board")
+        .inputFluids("gtceu:phenol 100")
+        .itemOutputs("gtceu:phenolic_circuit_board")
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     // Pyro Oven
-    event.shaped("gtceu:pyrolyse_oven", [
+    event.recipes.gtceu.shaped("gtceu:pyrolyse_oven", [
         "PCW",
         "CHC",
         "PUW"
@@ -127,9 +140,7 @@ ServerEvents.recipes(event => {
         U: "gtceu:lv_electric_pump",
         W: "gtceu:cupronickel_quadruple_wire",
         H: "gtceu:ulv_machine_hull"
-    }).id("gtceu:shaped/pyrolyse_oven")
-    event.remove({ id: "gtceu:arc_furnace/arc_pyrolyse_oven" })
-    event.remove({ id: "gtceu:macerator/macerate_pyrolyse_oven" })
+    }).id("gtceu:shaped/pyrolyse_oven").addMaterialInfo()
 
     // Toolbelts
     event.replaceInput({ output: "toolbelt:pouch" }, "minecraft:gold_ingot", "gtceu:steel_ingot")

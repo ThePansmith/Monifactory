@@ -64,6 +64,9 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
+    "me_expanded_pattern_buffer_proxy_info": true,
+    "me_expanded_pattern_buffer_info": true,
+    "enlarged_me_stocking_bus_info": true,
     "pterb_info": true
   },
   "endertanks": {
@@ -78,6 +81,7 @@
     "workable_provider": true,
     "transformer": true,
     "energy_converter_provider": true,
+    "ldp_endpoint": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,

@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:dimensional_superassembler")
         .duration(6000)
         .EUt(13920000)
-
+        .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:assembly_line")
             .CWUt(160, 1024000)
@@ -95,6 +95,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:mega_alloy_blast_smelter")
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV])
+        .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:alloy_blast_smelter")
             .CWUt(128, 768000)
@@ -108,6 +109,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(1500)
         .EUt(GTValues.VA[GTValues.UEV])
+        .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_fusion_reactor")
             .CWUt(108, 1024000)
@@ -116,7 +118,7 @@ ServerEvents.recipes(event => {
 
 
     // Blacklight
-    event.shaped("gtceu:blacklight", [
+    event.recipes.gtceu.shaped("gtceu:blacklight", [
         "BPB",
         " S ",
         "CPW"
@@ -126,7 +128,7 @@ ServerEvents.recipes(event => {
         P: "gtceu:tungsten_carbide_plate",
         S: "gtceu:hssg_spring",
         W: "gtceu:platinum_single_cable"
-    }).id("gtceu:shaped/blacklight")
+    }).id("gtceu:shaped/blacklight").addMaterialInfo()
 
     // Trinaquadalloy Mixer Recipe
     event.recipes.gtceu.mixer("mixer_trinaquadalloy")
@@ -154,7 +156,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     // Atomic Casings
-    event.shaped("2x gtceu:atomic_casing", [
+    event.recipes.gtceu.shaped("2x gtceu:atomic_casing", [
         "PHP",
         "PFP",
         "PWP"
@@ -163,7 +165,7 @@ ServerEvents.recipes(event => {
         H: "#forge:tools/hammers",
         W: "#forge:tools/wrenches",
         F: "gtceu:naquadah_alloy_frame",
-    }).id("gtceu:shaped/atomic_casing")
+    }).id("gtceu:shaped/atomic_casing").addMaterialInfo()
 
     event.recipes.gtceu.assembler("atomic_casing")
         .itemInputs("6x gtceu:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
@@ -171,9 +173,10 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(16)
         .circuit(6)
+        .addMaterialInfo(true)
 
     // Sterile Cleaning Maintenance Hatch
-    event.shaped("gtmutils:sterile_cleaning_maintenance_hatch", [
+    event.recipes.gtceu.shaped("gtmutils:sterile_cleaning_maintenance_hatch", [
         "WAW",
         "FCF",
     ], {
@@ -181,7 +184,7 @@ ServerEvents.recipes(event => {
         W: "gtceu:naquadah_double_cable",
         F: "gtceu:sterilizing_filter_casing",
         C: "#gtceu:circuits/zpm"
-    })
+    }).addMaterialInfo()
 
     // FLux Gem
     event.remove({ id: "redstone_arsenal:materials/flux_gem" })
@@ -233,7 +236,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite_wire")
-        .itemInputs(Item.of("gtceu:darconite_single_wire"))
+        .itemInputs(Item.of("4x gtceu:darconite_single_wire"))
         .itemOutputs("4x gtceu:hyperdegenerate_darconite_single_wire")
         .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
         .duration(100)
@@ -272,9 +275,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // Kubejs Stem Cells
-    event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
     event.remove({ id: "gtceu:large_chemical_reactor/stem_cells" })
-    event.recipes.gtceu.chemical_reactor("stem_cells")
+    event.recipes.gtceu.large_chemical_reactor("stem_cells")
         .itemInputs("minecraft:dragon_egg")
         .chancedInput("minecraft:sculk_catalyst", 500, 0)
         .inputFluids("gtceu:sterilized_growth_medium 500", "gtceu:bacteria 500", "enderio:xp_juice 2000")
@@ -284,6 +286,13 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(GTValues.VA[GTValues.LuV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    // Remove sterile CR recipes.
+    // LCR is a separate recipemap, and singleblocks cannot get the sterile hatch.
+    event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
+    event.remove({ id: "gtceu:chemical_reactor/collagen_from_bone" })
+    event.remove({ id: "gtceu:chemical_reactor/collagen_from_bone_meal" })
+    event.remove({ id: "gtceu:chemical_reactor/bacterial_sludge" })
 
 
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [
@@ -454,6 +463,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:chromodynamic_conduction_casing")
         .duration(50)
         .EUt(GTValues.VHA[GTValues.UV])
+        .addMaterialInfo(true)
     // Coils
     event.recipes.gtceu.assembler("kubejs:omnic_matrix_coil")
         .itemInputs("8x gtceu:omnium_double_wire", "8x monilabs:crystal_matrix_foil")
@@ -461,6 +471,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:neutronium 144")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UHV])
+        .addMaterialInfo(true)
 
     // Casings
     event.recipes.gtceu.assembler("monilabs:eltz_casing")
@@ -468,24 +479,28 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x monilabs:eltz_casing")
         .duration(100)
         .EUt(GTValues.VHA[GTValues.ZPM])
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("kubejs:netherite_casing")
         .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
         .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
         .duration(100)
         .EUt(GTValues.VHA[GTValues.ZPM])
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("monilabs:bioalloy_casing")
         .itemInputs("4x monilabs:sculk_bioalloy_plate", "2x gtceu:cryolobus_frame", "4x kubejs:warden_horn", "6x gtceu:actinium_rod")
         .itemOutputs("2x monilabs:bioalloy_casing")
         .duration(100)
         .EUt(GTValues.VA[GTValues.UV])
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("monilabs:bioalloy_fusion_casing")
         .itemInputs("gtceu:uhv_machine_hull", "2x monilabs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
         .itemOutputs("4x monilabs:bioalloy_fusion_casing")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("fieldstabilizedcompound")
         .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")

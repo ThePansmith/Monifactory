@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
         .duration(1500)
         .EUt(122880)
         .stationResearch(b => b.researchStack(Item.of("kubejs:empty_fuel_rod")).EUt(GTValues.VA[GTValues.LuV]).CWUt(16, 64000))
+        .addMaterialInfo(true)
 
     // Naquadah Reactor usage. Circuit number dictates fuel consumption rate, for more flexible power gen.
     event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_1")
@@ -44,6 +45,7 @@ ServerEvents.recipes(event => {
         .duration(1500)
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(b => b.researchStack(Item.of("gtceu:naquadah_reactor")).EUt(GTValues.VA[GTValues.UV]).CWUt(128, 512000))
+        .addMaterialInfo(true)
 
     // Refinery Recipe
     event.recipes.gtceu.assembly_line("kubejs:naquadah_refinery")
@@ -53,6 +55,7 @@ ServerEvents.recipes(event => {
         .duration(1500)
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(b => b.researchStack(Item.of("gtceu:large_mixer")).EUt(GTValues.VA[GTValues.UV]).CWUt(128, 512000))
+        .addMaterialInfo(true)
 
     // Large Naquadah Reactor usage
     event.recipes.gtceu.large_naquadah_reactor("kubejs:process_crude_fuel")

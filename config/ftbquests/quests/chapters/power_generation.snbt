@@ -41,7 +41,7 @@
 			y: 2.75d
 		}
 	]
-	order_index: 5
+	order_index: 4
 	progression_mode: "flexible"
 	quest_links: [{
 		id: "34461D7A562415D3"
@@ -267,37 +267,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["745628397790ED7A"]
-			description: [
-				"{moni.quest.2053CCD1FF775DD5.description1}"
-				""
-				"[\"\",{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"745628397790ED7A\"}},{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description3\"}]"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description2}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description3}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description4}"
-				"{@pagebreak}"
-				"{moni.quest.2053CCD1FF775DD5.description5}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description6}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description7}"
-				""
-				"{moni.quest.2053CCD1FF775DD5.description8}"
-			]
-			id: "2053CCD1FF775DD5"
-			tasks: [{
-				id: "08A006973D835270"
-				item: "nuclearcraft:fission_reactor_controller"
-				type: "item"
-			}]
-			title: "{moni.quest.2053CCD1FF775DD5.title}"
-			x: -1.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["5E3CBC929557418F"]
 			description: [
 				"{moni.quest.68E87B959F6E9216.description1}"
@@ -401,7 +370,7 @@
 				title: "{moni.task.0CD3D25A52ED3F2F}"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: -2.0d
 		}
 		{
@@ -457,99 +426,6 @@
 			}]
 			x: -0.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["2053CCD1FF775DD5"]
-			id: "204D94E7B450EED1"
-			optional: true
-			size: 0.2d
-			tasks: [{
-				id: "15E9864541CF59D6"
-				title: "{moni.task.15E9864541CF59D6}"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["32E44FFD602C98DF"]
-			description: [
-				"{moni.quest.50E12E97AC174194.description1}"
-				""
-				"{moni.quest.50E12E97AC174194.description2}"
-				""
-				"{moni.quest.50E12E97AC174194.description3}"
-				""
-				"{moni.quest.50E12E97AC174194.description4}"
-			]
-			id: "50E12E97AC174194"
-			tasks: [{
-				id: "27315D998BCD502D"
-				item: "nuclearcraft:uranium_rtg"
-				type: "item"
-			}]
-			x: -11.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"07AFEBBC23C2B1E2"
-				"7D7B34CF5145F971"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{moni.quest.75B6A5541A4D6E49.description1}"]
-			id: "75B6A5541A4D6E49"
-			tasks: [{
-				id: "0FC3257A7BD2D967"
-				item: "nuclearcraft:plutonium_rtg"
-				type: "item"
-			}]
-			x: -7.75d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"75B6A5541A4D6E49"
-				"79197A2CD8E435B2"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{moni.quest.186031BE152824C7.description1}"
-				""
-				"{moni.quest.186031BE152824C7.description2}"
-				""
-				"{moni.quest.186031BE152824C7.description3}"
-			]
-			id: "186031BE152824C7"
-			tasks: [{
-				id: "581262E6B1F090DC"
-				item: "nuclearcraft:californium_rtg"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"50E12E97AC174194"
-				"6728FB92FD3A2084"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{moni.quest.07AFEBBC23C2B1E2.description1}"
-				""
-				"{moni.quest.07AFEBBC23C2B1E2.description2}"
-				""
-				"{moni.quest.07AFEBBC23C2B1E2.description3}"
-			]
-			id: "07AFEBBC23C2B1E2"
-			tasks: [{
-				id: "327B3CE21176A7F0"
-				item: "nuclearcraft:americium_rtg"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -853,9 +729,9 @@
 		}
 		{
 			dependencies: [
-				"425D1C34A82B054D"
 				"15607184B546F5EE"
 				"22E50A6923EBF5CB"
+				"4E9530E62A4B673B"
 			]
 			description: [
 				"{moni.quest.21E10888F52A3C73.description1}"

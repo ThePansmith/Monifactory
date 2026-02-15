@@ -58,6 +58,7 @@ ServerEvents.recipes(event => {
             .duration(50)
             .EUt(16)
             .circuit(6)
+            .addMaterialInfo(true)
 
         event.shaped("hostilenetworks:sim_chamber", [
             "ACA",
@@ -147,6 +148,15 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:quantum_flux")
             .duration(100)
             .EUt(3000)
+
+        event.shaped("kubejs:quantum_flux", [
+            " B ",
+            "BAB",
+            " B "
+        ], {
+            A: "enderio:pulsating_crystal",
+            B: "hostilenetworks:end_prediction"
+        })
 
         // LAIR DATA
         let lairs = [

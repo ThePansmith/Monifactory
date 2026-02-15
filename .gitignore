@@ -134,6 +134,7 @@ config/defaultworldtype/world-presets.txt
 !/config/watercollector-common.toml
 !/config/wirelesschargers-common.toml
 !/config/zume.json5
+!/config/moldraw.yaml
 
 # Config overrides
 !/config-overrides
@@ -181,6 +182,7 @@ defaultconfigs/ftbultimine/ftbultimine-server.snbt
 # Hide code-generated files
 kubejs/client_scripts/Dev_Capes.js
 config/fancymenu/customization/pack_credit_screen_layout.txt
+config/fancymenu/assets/pack-version.txt
 **/en_ud.local
 **/en_ud.json
 

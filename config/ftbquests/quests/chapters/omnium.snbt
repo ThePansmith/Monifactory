@@ -5,7 +5,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:omnium_nugget"
 	id: "25FEB9E61EEC1A96"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -1376,6 +1376,11 @@
 			description: [""]
 			disable_toast: true
 			id: "7978CD633112BE89"
+			rewards: [{
+				id: "73BB2ACE769812E9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				count: 64L
 				id: "6472F5F5B0D7083E"
@@ -2015,10 +2020,15 @@
 		{
 			disable_toast: true
 			id: "2D788BE1CA9A2D69"
+			rewards: [{
+				id: "0710F33F597D462E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				count: 64L
 				id: "67A5E978C88BEAD3"
-				item: { Count: 64, id: "gtceu:germanium_ingot" }
+				item: { Count: 64, id: "gtceu:germanium_dust" }
 				type: "item"
 			}]
 			title: "{moni.quest.2D788BE1CA9A2D69.title}"
@@ -2097,7 +2107,6 @@
 				"64CD4BDBEBD0353D"
 				"5B3ABAA58C564CB4"
 				"4CE0D6E9E7DE3129"
-				"6F7D6294E9F311E4"
 				"5D1DAC23C6B89AC3"
 				"1D5D25F52BE6709E"
 				"3CFF422D1BAAEB65"
@@ -2106,6 +2115,7 @@
 			]
 			description: ["{moni.quest.739F7BF2A90B278A.description1}"]
 			id: "739F7BF2A90B278A"
+			min_required_dependencies: 2
 			rewards: [{
 				id: "7B426B4EE9DC90AC"
 				item: "kubejs:moni_dollar"

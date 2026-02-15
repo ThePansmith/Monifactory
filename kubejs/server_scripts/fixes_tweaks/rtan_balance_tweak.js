@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_blast_smelter("ruthenium_trinium_americium_neutronate")
         .itemInputs("gtceu:ruthenium_dust", "2x gtceu:trinium_dust", "gtceu:americium_dust", "2x gtceu:neutronium_dust")
         .inputFluids("gtceu:oxygen 8000")
-        .circuit(15)
+        .circuit(5)
         .outputFluids("gtceu:molten_ruthenium_trinium_americium_neutronate 864")
         .duration(225 * 20)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     // recipe name and a half right there
     event.recipes.gtceu.electrolyzer("decomposition_electrolyzing_ruthenium_trinium_americium_neutronate")
         .itemInputs("6x gtceu:ruthenium_trinium_americium_neutronate_dust")
-        .itemOutputs("gtceu:ruthenium_dust", "2x gtceu:trinium_dust", "gtceu:americium_dust", "2x gtceu:trinium_dust")
+        .itemOutputs("gtceu:ruthenium_dust", "2x gtceu:trinium_dust", "gtceu:americium_dust", "2x gtceu:neutronium_dust")
         .outputFluids("gtceu:oxygen 8000")
         .duration(44.8 * 20)
         .EUt(GTValues.VHA[GTValues.MV])

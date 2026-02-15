@@ -272,7 +272,7 @@ global.itemNukeList = [
     /^nuclearcraft:[\w_]*_ore$/,
     /^nuclearcraft:\w+_chunk$/,
     /^nuclearcraft:source_\w+_\w+$/,
-    /^nuclearcraft:[\w_]+electromagnet_slope/,
+    /^nuclearcraft:[\w_]*electromagnet/,
     /^nuclearcraft:solar_panel.*/,
     /^nuclearcraft:[\w_]+_voltaic_pile$/,
     /^nuclearcraft:[\w_]+_container$/,
@@ -282,9 +282,12 @@ global.itemNukeList = [
     /^nuclearcraft:[\w_]*_barrel$/,
     /^nuclearcraft:[\w_]+_bucket$/,
     /^nuclearcraft:upgrade_[\w_]+/,
+    /^nuclearcraft:particle/,
+    /^nuclearcraft:[\w]+_spallation_waste/,
+    /^nuclearcraft:msr/,
 
     // Nuclearcraft
-    "nuclearcraft:xenorium298",
+    "nuclearcraft:xenorium_298",
     "nuclearcraft:silicon_tracker",
     "nuclearcraft:em_calorimeter",
     "nuclearcraft:hadron_calorimeter",
@@ -372,6 +375,8 @@ global.itemNukeList = [
     "nuclearcraft:empty_active_heat_sink",
     /^nuclearcraft:active_[\w_]+_heat_sink$/,
 
+    "nuclearcraft:heat_exchanger",
+
     // Nuclearcraft Machines
     "nuclearcraft:rock_crusher",
     "nuclearcraft:decay_hastener",
@@ -413,7 +418,15 @@ global.itemNukeList = [
     "nuclearcraft:plutonium_241",
     "nuclearcraft:curium_246",
     "nuclearcraft:curium_247",
-    "nuclearcraft:californium_249"
+    "nuclearcraft:californium_249",
+    "nuclearcraft:sodium_22",
+    "nuclearcraft:copernicium_291",
+    "nuclearcraft:beryllium_7",
+    "nuclearcraft:magnesium_26",
+    "nuclearcraft:calcium_48",
+    "nuclearcraft:magnesium_24",
+    "nuclearcraft:iridium_192",
+    "nuclearcraft:cobalt_60",
 ];
 
 // Create Compat

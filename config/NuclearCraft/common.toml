@@ -31,10 +31,6 @@
 [Misc]
 	#Debug logging. Enable in case of issues to collect more data
 	debug_logging = false
-	#Speeds up blocks indexing of multiblocks
-	#Gives big performance boost for large multiblocks
-	#Disable in case of issues
-	experimental_block_indexing = true
 
 ["GregTech Energy Compatibility"]
 	#Tiers: ULV, LV, MV, HV, EV, IV, LuV, ZPM, UV, UHV, UEV, UIV, UXV, OpV, MAX

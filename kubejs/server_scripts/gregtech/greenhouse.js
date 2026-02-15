@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 
     /*   Machine Recipe  */
 
-    event.shaped("gtceu:greenhouse", [
+    event.recipes.gtceu.shaped("gtceu:greenhouse", [
         "LWL",
         "ASA",
         "WRW"
@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         S: "gtceu:solid_machine_casing",
         R: "gtceu:lv_fluid_regulator"
     }).id("kubejs:shaped/greenhouse")
+        .addMaterialInfo()
 
 
     /*  Greenhouse Recipes  */
@@ -129,7 +130,6 @@ ServerEvents.recipes(event => {
         "oxeye_daisy",
         "azure_bluet",
         "white_tulip",
-        "pitcher_plant",
         "lily_pad",
         "weeping_vines",
         "twisting_vines",
@@ -145,8 +145,11 @@ ServerEvents.recipes(event => {
     flowers.forEach(flower => {
         Greenhouse("minecraft", flower, 640, [Item.of(flower, 48)], 0);
     })
-    // Torchflowers are grown from seeds
-    Greenhouse("minecraft", "torchflower_seeds", 640, [Item.of("torchflower", 48)], 0);
+
+    // Torchflowers, Pitcher plants are grown from seeds
+    Greenhouse("minecraft", "torchflower_seeds", 640, [Item.of("torchflower", 12), Item.of("torchflower_seeds", 6)], 0);
+    Greenhouse("minecraft", "pitcher_pod", 640, [Item.of("pitcher_plant", 12), Item.of("pitcher_pod", 6)], 0);
+
     // A way to get grass blocks
     event.recipes.gtceu.greenhouse("kubejs:grass_block")
         .circuit(1)

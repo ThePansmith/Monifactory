@@ -48,6 +48,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .duration(200)
 
+    // Nerfed Ender Air distillation - less Tritium
+    event.recipes.gtceu.distillation_tower("distill_liquid_ender_air")
+        .inputFluids("gtceu:liquid_ender_air 200000")
+        .outputFluids("gtceu:nitrogen_dioxide 130000", "gtceu:deuterium 50000", "gtceu:helium 15000", "gtceu:tritium 2000", "gtceu:krypton 1000", "gtceu:xenon 1000", "gtceu:radon 1000")
+        .chancedOutput("gtceu:ender_pearl_dust", 1000, 0)
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(100 * 20)
+
     // Netherrack
     event.recipes.gtceu.chemical_reactor("dust_to_netherrack")
         .itemInputs("kubejs:dust")
@@ -135,10 +143,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
-        [2000, 1800, "gtceu:cetane_boosted_diesel"],
-        [2000, 1800, "gtceu:gasoline"],
-        [500, 1200, "gtceu:high_octane_gasoline"],
-        [400, 900, "gtceu:jean_gasoline"]
+        [1000, 1800, "gtceu:cetane_boosted_diesel"],
+        [800, 1800, "gtceu:gasoline"],
+        [250, 1200, "gtceu:high_octane_gasoline"],
+        [150, 900, "gtceu:jean_gasoline"]
     ]
 
     for (const [mB, duration, id] of cryolobusFuels) {
@@ -184,7 +192,7 @@ ServerEvents.recipes(event => {
     })
 
     // Atmospheric Accumulator
-    event.shaped("gtceu:atmospheric_accumulator", [
+    event.recipes.gtceu.shaped("gtceu:atmospheric_accumulator", [
         "WRW",
         "THT",
         "COC"
@@ -195,10 +203,10 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_gas_collector",
         R: "gtceu:tungsten_steel_rotor",
         O: "gtceu:iv_electric_pump"
-    }).id("gtceu:shaped/atmospheric_accumulator")
+    }).id("gtceu:shaped/atmospheric_accumulator").addMaterialInfo()
 
     // Matter Alterator
-    event.shaped("gtceu:matter_alterator", [
+    event.recipes.gtceu.shaped("gtceu:matter_alterator", [
         "WEW",
         "THT",
         "PCV"
@@ -210,7 +218,7 @@ ServerEvents.recipes(event => {
         E: "gtceu:iv_emitter",
         P: "gtceu:iv_electric_piston",
         V: "gtceu:iv_conveyor_module"
-    }).id("gtceu:shaped/matter_alterator")
+    }).id("gtceu:shaped/matter_alterator").addMaterialInfo()
 
     // Tantalum-catalysed ethanol->butadiene
     event.recipes.gtceu.large_chemical_reactor("ethanol_to_butadiene")
@@ -519,15 +527,12 @@ ServerEvents.recipes(event => {
         event.stonecutting(`mae2:${type}_multi_p2p_tunnel`, "mae2:item_multi_p2p_tunnel")
     })
 
-    // Stonecutting CCI blocks
-    let sameItemsTags = ["#chisel_chipped_integration:factory_block", "#chisel_chipped_integration:technical_block", "#chisel_chipped_integration:laboratory_block", "#chisel_chipped_integration:tyrian"]; // What item tags to go through (change this so you have your tags)
+    // Stonecutting CCI blocks & Marble
+    let sameItemsTags = ["#chisel_chipped_integration:factory_block", "#chisel_chipped_integration:technical_block", "#chisel_chipped_integration:laboratory_block", "#chisel_chipped_integration:tyrian", "#chisel_chipped_integration:futura_block", "#moni:marble"]; // What item tags to go through (change this so you have your tags)
     sameItemsTags.forEach(tag => {
         let sameItems = Ingredient.of(tag).stacks; // Get all of the items with that tag
-        sameItems.forEach(input => {
-            sameItems.forEach(output => { // Loop through the items so all combination of input and output are met
-                if (input != output) // Ignore recipes where input and output are the same item
-                    event.stonecutting(output, input); // Make the recipe
-            });
+        sameItems.forEach(output => {
+            event.stonecutting(output, Ingredient.of(tag))
         });
     });
 
@@ -543,19 +548,6 @@ ServerEvents.recipes(event => {
         event.stonecutting(hazard, "gtceu:solid_machine_casing")
         event.stonecutting("gtceu:solid_machine_casing", hazard)
     }
-
-    // Stonecutting Marble
-    let MarbleTag = ["#moni:marble"]; // What item tags to go through (change this so you have your tags)
-    MarbleTag.forEach(tag => {
-        let Marbles = Ingredient.of(tag).stacks; // Get all of the items with that tag
-        Marbles.forEach(input => {
-            Marbles.forEach(output => { // Loop through the items so all combination of input and output are met
-                if (input != output) // Ignore recipes where input and output are the same item
-                    event.stonecutting(output, input); // Make the recipe
-            });
-        });
-    });
-
 
     event.remove({ id: "gtceu:shaped/mega_blast_furnace" })
     event.recipes.gtceu.assembly_line("kubejs:mega_blast_furnace")
@@ -816,12 +808,12 @@ ServerEvents.recipes(event => {
         .EUt(480)
 
     // Germanium is used in diodes
-    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:small_germanium_dust")
+    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_germanium_dust")
     event.recipes.gtceu.assembler("germanium_smd_diode")
-        .itemInputs("1x gtceu:germanium_dust", "8x gtceu:fine_platinum_wire")
-        .inputFluids("gtceu:polyethylene 288")
+        .itemInputs("1x gtceu:small_germanium_dust", "4x gtceu:fine_platinum_wire")
+        .inputFluids("gtceu:polyethylene 144")
         .itemOutputs("64x gtceu:smd_diode")
-        .duration(200)
+        .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.fluid_solidifier("petri_dish_borosilicate")
@@ -847,13 +839,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(1)
-
-    // Gunpowder Decomp into Carbon Dust
-    event.recipes.gtceu.electrolyzer("electrolyzing_gunpowder_carbon_dust")
-        .itemInputs("6x minecraft:gunpowder")
-        .itemOutputs("2x gtceu:saltpeter_dust", "gtceu:sulfur_dust", "3x gtceu:carbon_dust")
-        .duration(110)
-        .EUt(GTValues.VA[GTValues.MV])
 
     // Gilded Blackstone maceration
     event.recipes.gtceu.macerator("macerate_gilded_blackstone")
@@ -893,4 +878,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("7x gtceu:tantalum_pentoxide_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Re-tier Palladium Substation to mid-EV, before Platline
+    event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
 })

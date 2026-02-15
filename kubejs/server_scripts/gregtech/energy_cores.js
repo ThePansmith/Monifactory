@@ -1,12 +1,13 @@
 /** Pre Release */
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.assembly_line("kubejs_fusion_crafting_core")
+    event.recipes.gtceu.assembly_line("kubejs_dischargement_core")
         .itemInputs("gtceu:hsse_frame", "6x gtceu:tungsten_carbide_plate", "4x minecraft:nether_star", "2x gtceu:iv_sensor", "#gtceu:circuits/iv", "8x #forge:storage_blocks/diamatine", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 576")
         .itemOutputs("kubejs:dischargement_core")
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT()).EUt(480).duration(1200))
         .duration(1200)
         .EUt(30720)
+        .addMaterialInfo(true)
 
     // event.recipes.extendedcrafting.shaped_table("extendedcrafting:auto_flux_crafter", [
     //     "RPEPR",
@@ -43,18 +44,21 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:empty_bathyal_energy_core")
         .duration(10)
         .EUt(GTValues.VA[GTValues.IV])
+        .addMaterialInfo(true, true)
 
     event.recipes.gtceu.discharger("kubejs:empty_abyssal_energy_core")
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_americium", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 288")
         .itemOutputs("kubejs:empty_abyssal_energy_core")
         .duration(10)
+        .addMaterialInfo(true, true)
 
     event.recipes.gtceu.discharger("kubejs:empty_hadal_energy_core")
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:neutronium_plate", "8x gtceu:omnium_bolt", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
         .inputFluids("gtceu:living_soldering_alloy 288")
         .itemOutputs("kubejs:empty_hadal_energy_core")
         .duration(10)
+        .addMaterialInfo(true, true)
 
     // Energy core filling
     event.recipes.gtceu.canner("bathyal_energy_core")
@@ -63,6 +67,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:bathyal_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
+        // .addMaterialInfo(true)
 
     event.recipes.gtceu.canner("abyssal_energy_core")
         .itemInputs("kubejs:empty_abyssal_energy_core")
@@ -70,6 +75,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:abyssal_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
+        // .addMaterialInfo(true)
 
     event.recipes.gtceu.canner("hadal_energy_core")
         .itemInputs("kubejs:empty_hadal_energy_core")
@@ -77,4 +83,5 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:hadal_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
+        // .addMaterialInfo(true)
 })

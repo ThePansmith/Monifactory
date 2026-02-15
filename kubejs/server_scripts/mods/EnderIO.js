@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:iron_gear")
         .duration(100)
         .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // Energized Bimetal Gear
     event.recipes.gtceu.alloy_smelter("kubejs:energetic_gear")
@@ -21,6 +22,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:energized_gear")
         .duration(150)
         .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // Vibrant Bimetal Gear
     event.recipes.gtceu.alloy_smelter("kubejs:vibrant_gear")
@@ -28,6 +30,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:vibrant_gear")
         .duration(200)
         .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // Dark Bimetal Gear
     event.recipes.gtceu.alloy_smelter("kubejs:dark_bimetal_gear")
@@ -35,6 +38,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:dark_bimetal_gear")
         .duration(200)
         .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
 
     event.remove({ output: ["enderio:pulsating_crystal", "enderio:vibrant_crystal"] })
@@ -114,6 +118,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:fused_quartz")
         .duration(80)
         .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // Clear Glass
     event.recipes.gtceu.alloy_smelter("kubejs:clear_glass_soda_ash")
@@ -133,6 +138,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:fused_quartz_e")
         .duration(80)
         .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // dark fused quartz
     event.recipes.gtceu.alloy_smelter("kubejs:dark_fused_quartz")
@@ -140,6 +146,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:fused_quartz_d")
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // Enlightened clear glass
     event.recipes.gtceu.alloy_smelter("kubejs:enlightened_clear_glass")
@@ -173,7 +180,7 @@ ServerEvents.recipes(event => {
 
     // Enchanter
     event.remove({ output: ["enderio:enchanter"] })
-    event.shaped("enderio:enchanter", [
+    event.recipes.gtceu.shaped("enderio:enchanter", [
         "DCD",
         "BBB",
         " A "
@@ -183,6 +190,7 @@ ServerEvents.recipes(event => {
         C: "minecraft:book",
         D: "minecraft:diamond"
     }).id("kubejs:enchanter")
+        .addMaterialInfo()
 
     // Custom enchanter books
     event.custom(
@@ -532,10 +540,11 @@ ServerEvents.recipes(event => {
         .itemOutputs("3x enderio:dark_steel_bars")
         .duration(300)
         .EUt(4)
+        .addMaterialInfo(true)
 
     // Reinforced Obsidian
     event.remove({ id: "enderio:reinforced_obsidian_block" })
-    event.shaped("enderio:reinforced_obsidian_block", [
+    event.recipes.gtceu.shaped("enderio:reinforced_obsidian_block", [
         "IBI",
         "BPB",
         "IBI"
@@ -543,7 +552,7 @@ ServerEvents.recipes(event => {
         P: "gtceu:dense_obsidian_plate",
         B: "enderio:dark_steel_bars",
         I: "gtceu:double_titanium_tungsten_carbide_plate"
-    })
+    }).addMaterialInfo()
 
     // Rock Breaker/Rock Cycle Simulator recipea or Grains of Infinity
     event.recipes.gtceu.rock_breaker("kubejs:rock_breaker_grains_of_infinity")
@@ -551,7 +560,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("enderio:grains_of_infinity")
         .duration(16)
         .EUt(GTValues.VA[GTValues.MV])
-        ["adjacentFluid(net.minecraft.world.level.material.Fluid[])"]("minecraft:lava", "enderio:dew_of_the_void")
+        .adjacentFluids("minecraft:lava", "enderio:dew_of_the_void")
         .posY(-64, -59)
 
     event.recipes.gtceu.rock_cycle_simulator("kubejs:rock_cycle_simulator_grains_of_infinity")
