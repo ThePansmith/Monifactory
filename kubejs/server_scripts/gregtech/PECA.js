@@ -32,19 +32,13 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacetate")
-        .notConsumableFluid("gtceu:fluoroantimonic_acid 2000")
-        .inputFluids("gtceu:ethanol 1000")
-        .itemInputs("gtceu:cyanoacetic_acid_dust")
-        .outputFluids("gtceu:ethyl_cyanoacetate 1000", "minecraft:water 1000")
-        .duration(360)
-        .EUt(GTValues.VA[GTValues.LuV])
-
     event.recipes.gtceu.chemical_reactor("uncracked_ethyl_cyanoacrylate")
-        .inputFluids("gtceu:ethyl_cyanoacetate 1000", "gtceu:formaldehyde 1000")
-        .outputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "minecraft:water 1000")
-        .duration(800)
-        .EUt(GTValues.VA[GTValues.HV])
+        .notConsumableFluid("gtceu:fluoroantimonic_acid 2000")
+        .inputFluids("gtceu:ethanol 1000", "gtceu:formaldehyde 1000")
+        .itemInputs("gtceu:cyanoacetic_acid_dust")
+        .outputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "minecraft:water 2000")
+        .duration(380)
+        .EUt(GTValues.VA[GTValues.LuV])
 
     // Cracking recipes - CR
     event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate_hydro")
