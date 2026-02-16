@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:enderium_foil",
             "16x gtceu:darmstadtium_bolt",
             "5x gtceu:fusion_glass")
-        .inputFluids("gtceu:living_soldering_alloy 864", "gtceu:naquadria 576", "gtceu:polybenzimidazole 288")
+        .inputFluids("gtceu:living_soldering_alloy 864", "gtceu:naquadria 576", "gtceu:polyethyl_cyanoacrylate 288")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(builder => builder

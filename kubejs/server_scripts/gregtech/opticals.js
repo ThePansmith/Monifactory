@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(800)
         .EUt(GTValues.VA[GTValues.EV])
-        .inputFluids("gtceu:polyether_ether_ketone 144")
+        .inputFluids("gtceu:polyethyl_cyanoacrylate 144")
         .itemInputs("2x gtceu:carbon_fiber_mesh")
         .itemOutputs("1x kubejs:carbon_mesh_reinforced_circuit_board")
 

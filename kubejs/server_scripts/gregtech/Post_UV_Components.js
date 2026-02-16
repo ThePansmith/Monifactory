@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
     const hullMaterials = [
         { tier: "uev", material1: "gtceu:infinity", material2: "monilabs:sculk_bioalloy", wire: "darconite_single_cable", plastic: "polyethyl_cyanoacrylate" },
-        { tier: "max", material1: "gtceu:monium", material2: "gtceu:meta_null", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "max", material1: "gtceu:monium", material2: "gtceu:meta_null", wire: "monium_single_wire", plastic: "polyether_ether_ketone" },
     ]
 
     hullMaterials.forEach((value) => {
@@ -643,13 +643,14 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
         // Fluid Regulators don't have research
 
-    // Cables
-    // UHV+ cables are made only with SBR and PEEK, UHV cables require neutronium, UEV+ cables require meta_null
-    const endgameCables = ["europium", "lanthanum_gold_cadmium_curium_sulfate", "omnium", "darconite", "necrosiderite", "eltz"];
-    const cablematsUEV = ["omnium", "darconite", "necrosiderite", "eltz"];
+    // UHV Cables don't have a Silicone Rubber recipe, and require Kapton K in HM.
+    const cablematsUV = ["naquadah_alloy", "yttrium_barium_cuprate", "tritanium", "lanthanum_gold_cadmium_curium_sulfate", "cryococcus", "europium"];
+    cablematsUV.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
+    if(doHarderProcessing) cablematsUV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyphenylene_sulfide_foil", "gtceu:kapton_k_foil"));
 
-    endgameCables.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
-    endgameCables.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyvinyl_chloride_foil", "gtceu:polyether_ether_ketone_foil"));
-    endgameCables.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyphenylene_sulfide_foil", "gtceu:neutronium_foil"));
-    cablematsUEV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:neutronium_foil", "gtceu:meta_null_foil"));
+    // UEV+ cables require meta_null in place of PVC.
+    const cablematsUEV = ["omnium", "darconite", "necrosiderite", "eltz"];
+    cablematsUEV.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
+    cablematsUEV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyvinyl_chloride_foil", "gtceu:meta_null_foil"));
+    if(doHarderProcessing) cablematsUEV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyphenylene_sulfide_foil", "gtceu:kapton_k_foil"));
 })

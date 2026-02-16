@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line("dimensional_superassembler")
         .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uev", "16x gtceu:infinity_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "16x monilabs:eltz_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame")
-        .inputFluids("gtceu:living_soldering_alloy 5760", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
+        .inputFluids("gtceu:living_soldering_alloy 5760", "gtceu:omnium 5760", "gtceu:polyether_ether_ketone 3456")
         .itemOutputs("gtceu:dimensional_superassembler")
         .duration(6000)
         .EUt(13920000)
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
     // Helical Fusion Reactor
     event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
         .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "8x gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:uxpic_chip", "64x kubejs:uxpic_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
-        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:darconite 1152", "gtceu:polyethyl_cyanoacrylate 576")
+        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:darconite 1152", "gtceu:polyether_ether_ketone 576")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(1500)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -447,7 +447,7 @@ ServerEvents.recipes(event => {
     // Knowledge Transmission Array
     event.recipes.gtceu.assembly_line("knowledge_transmission_array")
         .itemInputs("2x monilabs:sculk_bioalloy_frame", "16x gtceu:europium_double_cable", "16x gtceu:uhv_emitter", "16x gtceu:data_transmitter_hatch", "2x #gtceu:circuits/uhv", "32x gtceu:normal_optical_pipe", "16x gtceu:ruthenium_trinium_americium_neutronate_single_wire", "2x gtceu:network_switch", "32x gtceu:rhodium_foil")
-        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:omnium 2304", "gtceu:polyethyl_cyanoacrylate 1152")
+        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:omnium 2304", "gtceu:polyether_ether_ketone 1152")
         .itemOutputs("monilabs:knowledge_transmission_array")
         .duration(2000)
         .EUt(7864320)
