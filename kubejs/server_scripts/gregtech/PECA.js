@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
     // Polymerization recipe
     event.recipes.gtceu.chemical_reactor("polyethyl_cyanoacrylate")
-        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 100, 0)
+        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 500, 0)
         .inputFluids("gtceu:ethyl_cyanoacrylate 144", "minecraft:water 1000")
         .outputFluids("gtceu:polyethyl_cyanoacrylate 144")
         .duration(300)
