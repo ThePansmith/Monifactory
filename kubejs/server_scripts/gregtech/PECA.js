@@ -10,10 +10,11 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(GTValues.VHA[GTValues.HV])
 
+    // Would like to make this a mixer recipe but Mixers only have 2 fluid slots
     event.recipes.gtceu.chemical_reactor("chloroacetic_mixture")
         .notConsumableFluid("gtceu:acetic_anhydride 500")
         .inputFluids("gtceu:acetic_acid 1000", "gtceu:chlorine 3000")
-        .outputFluids("gtceu:chloroacetic_mixture 1000")
+        .outputFluids("gtceu:chloroacetic_mixture 2000")
         .duration(20)
         .EUt(GTValues.VA[GTValues.ZPM])
 
