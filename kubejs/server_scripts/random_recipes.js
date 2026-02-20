@@ -143,8 +143,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
-        [1000, 1800, "gtceu:cetane_boosted_diesel"],
-        [800, 1800, "gtceu:gasoline"],
+        [500, 1600, "gtceu:cetane_boosted_diesel"],
+        [400, 1600, "gtceu:gasoline"],
         [250, 1200, "gtceu:high_octane_gasoline"],
         [150, 900, "gtceu:jean_gasoline"]
     ]
