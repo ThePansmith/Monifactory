@@ -3276,5 +3276,12 @@
     "moni.task1.2BD54071AD23C73C": "Any Space Helmet",
     "moni.task2.2BD54071AD23C73C": "Any Space Suit",
     "moni.task3.2BD54071AD23C73C": "Any Space Pants",
-    "moni.task4.2BD54071AD23C73C": "Any Space Boots"
+    "moni.task4.2BD54071AD23C73C": "Any Space Boots",
+    "moni.quest.7BC6E67521545949.description3": "The &aMax Recipe Tier&r of a machine determines the tier of recipes that are able to be performed, and is derived from the number of the highest tier hatches present. At 1 hatch, it is the tier of that hatch, and at 2 it is the next tier up. ",
+    "moni.quest.7BC6E67521545949.description2": "With these new hatches, there is an important distinction to make:\n\nThe &aMax Eu/t&r of a machine is determined by the combined amperage of its hatches, and is used for determining overclocks &ein only speed&r.",
+    "moni.task.5517C58C7834BFDD": "Any 4A or 16A Energy Hatch",
+    "moni.quest.7BC6E67521545949.description1": "So far, you have been using &6Energy Hatches&r only capable of drawing 2 amps of power. In &5EV&r, you unlock your first hatches capable of drawing 4 and 16 amps, called 4A and 16A Energy Hatches.",
+    "moni.quest.7BC6E67521545949.title": "Higher Amperage Hatches",
+    "moni.quest.2BBAF93506DD79C1.description3": "With &9RF Cards&r and &3Energy Converters&r in this pack, this probably has limited use, but you can build it if you want. &2Notably, you can use an Active Transformer to interface with your Power Substation if you run out of hatch space.&r",
+    "moni.quest.7BC6E67521545949.description4": "Some examples:\n- Using only a 16A &5EV&r hatch will allow for &dLuV&r speeds on recipes &5EV&r and below.\n- Using both a 2A and 16A &5EV&r hatch allows for &dLuV&r speeds on recipes &9IV&r and below.\n- Using two 16A &5EV&r hatches allows for &dLuV&r speeds on recipes &9IV&r and below."
 }
