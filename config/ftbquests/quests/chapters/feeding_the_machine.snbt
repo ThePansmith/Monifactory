@@ -1853,6 +1853,26 @@
 			x: 4.0d
 			y: 9.25d
 		}
+		{
+			dependencies: ["254D6D1470BC197E"]
+			description: [
+				"{moni.quest.5911900438648430.description1}"
+				""
+				"{moni.quest.5911900438648430.description2}"
+			]
+			hide_dependency_lines: true
+			id: "5911900438648430"
+			shape: "hexagon"
+			subtitle: "{moni.quest.5911900438648430.subtitle}"
+			tasks: [{
+				id: "6A6C0D5FFB29C9E1"
+				item: "gtceu:polyethyl_cyanoacrylate_plate"
+				type: "item"
+			}]
+			title: "{moni.quest.5911900438648430.title}"
+			x: -3.5d
+			y: 13.25d
+		}
 	]
 	title: "{moni.chapter.15E8BBD0CD310663.title}"
 }

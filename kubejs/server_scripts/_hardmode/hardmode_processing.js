@@ -458,5 +458,19 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:pyromellitic_dianhydride 1000", "gtceu:oxydianiline 1000")
             .outputFluids("gtceu:kapton_k 1000")
             .duration(400).EUt(480);
+
+        event.recipes.gtceu.assembler("duct_tape_kapton_k")
+            .itemInputs("gtceu:kapton_k_foil", "gtceu:carbon_fiber_mesh")
+            .inputFluids("gtceu:polyethylene 36")
+            .itemOutputs("32x gtceu:duct_tape")
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.autoclave("carbon_fibers_kapton_k")
+            .itemInputs("16x gtceu:carbon_dust")
+            .inputFluids("gtceu:kapton_k 9")
+            .itemOutputs("32x gtceu:carbon_fibers")
+            .duration(37)
+            .EUt(GTValues.VA[GTValues.IV])
     }
 });
