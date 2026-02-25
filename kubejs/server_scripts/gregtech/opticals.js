@@ -164,30 +164,23 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:lubricant", 250))
         .itemOutputs("8x kubejs:optical_chip")
 
+    const plastic_pipes = [
+        { plastic: "polyethylene", type: "fluid", boost_multiplier: 1 },
+        { plastic: "polyvinyl_chloride", type: "item", boost_multiplier: 1.25 },
+        { plastic: "polytetrafluoroethylene", type: "fluid", boost_multiplier: 1.5 },
+        { plastic: "polyethyl_cyanoacrylate", type: "fluid", boost_multiplier: 2 },
+        { plastic: "polyether_ether_ketone", type: "item", boost_multiplier: 2.5 }
+    ]
     // Intermediate Components
-    event.recipes.gtceu.assembler("electro_optic_modulator_pe")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.LuV])
-        .inputFluids("gtceu:glass 144")
-        .itemInputs("1x #forge:lenses/lithium_niobate", "1x #forge:lenses/nether_star", "2x gtceu:indium_tin_barium_titanium_cuprate_foil", "gtceu:small_yttrium_barium_cuprate_spring", "1x gtceu:polyethylene_small_fluid_pipe")
-        .itemOutputs("6x kubejs:electro_optic_modulator")
-
-    event.recipes.gtceu.assembler("electro_optic_modulator_pvc")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.LuV])
-        .inputFluids("gtceu:glass 144")
-        .itemInputs("1x #forge:lenses/lithium_niobate", "1x #forge:lenses/nether_star", "2x gtceu:indium_tin_barium_titanium_cuprate_foil", "gtceu:small_yttrium_barium_cuprate_spring", "1x gtceu:polyvinyl_chloride_small_item_pipe")
-        .itemOutputs("6x kubejs:electro_optic_modulator")
-
-    event.recipes.gtceu.assembler("electro_optic_modulator_ptfe")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.LuV])
-        .inputFluids("gtceu:glass 144")
-        .itemInputs("1x #forge:lenses/lithium_niobate", "1x #forge:lenses/nether_star", "2x gtceu:indium_tin_barium_titanium_cuprate_foil", "gtceu:small_yttrium_barium_cuprate_spring", "1x gtceu:polytetrafluoroethylene_small_fluid_pipe")
-        .itemOutputs("6x kubejs:electro_optic_modulator")
+    plastic_pipes.forEach(data => {
+        event.recipes.gtceu.assembler("electro_optic_modulator_" + data.plastic)
+            .cleanroom(CleanroomType.CLEANROOM)
+            .duration(600 / data.boost_multiplier)
+            .EUt(GTValues.VA[GTValues.LuV])
+            .inputFluids("gtceu:glass 144")
+            .itemInputs("1x #forge:lenses/lithium_niobate", "1x #forge:lenses/nether_star", "2x gtceu:indium_tin_barium_titanium_cuprate_foil", "gtceu:small_yttrium_barium_cuprate_spring", `gtceu:${data.plastic}_small_${data.type}_pipe`)
+            .itemOutputs("6x kubejs:electro_optic_modulator")
+    })
 
     event.recipes.gtceu.circuit_assembler("optical_processing_unit")
         .cleanroom(CleanroomType.CLEANROOM)
