@@ -36,6 +36,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
         .addMaterialInfo(true)
 
+    event.recipes.gtceu.assembler("advanced_sculk_xp_sensor_hatch")
+        .itemInputs("monilabs:sculk_xp_sensor_hatch", "gtceu:zpm_sensor")
+        .inputFluids("enderio:xp_juice 2000")
+        .itemOutputs("monilabs:advanced_sculk_xp_sensor_hatch")
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .addMaterialInfo(true)
+
     // Petri Dish cleaning in the Autoclave
     event.recipes.gtceu.autoclave("petri_dish_sterilization")
         .itemInputs("gtceu:petri_dish")
