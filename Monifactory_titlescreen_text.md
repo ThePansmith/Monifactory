@@ -1,3 +1,3 @@
-# 0.13.0 is out!
-**The biggest update in Moni history!**
-*Please make a backup before attempting to update from a 0.12 world, there are a lot of breaking changes!*
+# 0.13.3 is out!
+**Bringing bugfixes and balance changes!**
+*If you missed 0.13.1 and 0.13.2, those **also** contain updates and balance changes.*
