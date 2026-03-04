@@ -458,19 +458,23 @@ StartupEvents.registry("item", event => {
             .texture("kubejs:item/ender_spore")
     }
 
+    //Thermal Custom Augments Classes
+    const $AugmentItem = Java.loadClass('cofh.thermal.lib.common.item.AugmentItem');
+    const $Item$Properties = Java.loadClass('net.minecraft.world.item.Item$Properties');
+
     // Thermal Augments
     event.create("redstone_transmission_coil")
         .texture("kubejs:item/mod/thermal/redstone_transmission_coil")
-    event.create("thermal:upgrade_augment_1");
-    event.create("thermal:upgrade_augment_2");
-    event.create("thermal:upgrade_augment_4");
-    event.create("thermal:upgrade_augment_3");
+    event.createCustom('thermal:upgrade_augment_1',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Upgrade', BaseMod: 1.5}))
+    event.createCustom('thermal:upgrade_augment_2',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Upgrade', BaseMod: 2.5}))
+    event.createCustom('thermal:upgrade_augment_4',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Upgrade', BaseMod: 5}))
+    event.createCustom('thermal:upgrade_augment_3',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Upgrade', BaseMod: 12}))
 
     // Advanced Thermal Storage augments
-    event.create("thermal:rf_coil_augment_advanced")
-    event.create("thermal:rf_coil_storage_augment_advanced")
-    event.create("thermal:rf_coil_xfer_augment_advanced")
-    event.create("thermal:fluid_tank_augment_advanced")
+    event.createCustom('thermal:rf_coil_augment_advanced',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFMax: 8, RFXfer: 8}))
+    event.createCustom('thermal:rf_coil_storage_augment_advanced',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFMax: 10, RFXfer: 4}))
+    event.createCustom('thermal:rf_coil_xfer_augment_advanced',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFMax: 4, RFXfer: 10}))
+    event.createCustom('thermal:fluid_tank_augment_advanced',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Fluid', FluidMax: 10}))
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK

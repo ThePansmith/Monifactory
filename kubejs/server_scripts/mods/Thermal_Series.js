@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     /* === AUGMENTS/UPGRADES ===*/
-    event.recipes.gtceu.shaped(Item.of("thermal:upgrade_augment_1", '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
+    event.recipes.gtceu.shaped("thermal:upgrade_augment_1", [
         "ABA",
         "RGR",
         "ABA"
@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
         R: "gtceu:fine_red_alloy_wire"
     })
 
-    event.recipes.gtceu.shaped(Item.of("thermal:upgrade_augment_2", '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'), [
+    event.recipes.gtceu.shaped("thermal:upgrade_augment_2", [
         "PGP",
         "BCB",
         "PGP"
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
         C: "thermal:upgrade_augment_1"
     })
 
-    event.recipes.gtceu.shaped(Item.of("thermal:upgrade_augment_4", '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
+    event.recipes.gtceu.shaped("thermal:upgrade_augment_4", [
         "SSS",
         "SCE",
         "RRS"
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
         C: "thermal:upgrade_augment_2"
     })
 
-    event.recipes.gtceu.shaped(Item.of("thermal:upgrade_augment_3", '{AugmentData:{BaseMod:12.0f,Type:"Upgrade"}}'), [
+    event.recipes.gtceu.shaped("thermal:upgrade_augment_3", [
         "ABG",
         "BCB",
         "GBA"
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
     })
 
     // Advanced Thermal Storage augments
-    event.recipes.gtceu.shaped(Item.of("thermal:rf_coil_augment_advanced", '{AugmentData:{RFMax:8.0f,RFXfer:8.0f,Type:"RF"}}'), [
+    event.recipes.gtceu.shaped("thermal:rf_coil_augment_advanced", [
         " G ",
         "SCS",
         " G "
@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
         G: "gtceu:rose_gold_plate"
     }).addMaterialInfo()
 
-    event.recipes.gtceu.shaped(Item.of("thermal:rf_coil_storage_augment_advanced", '{AugmentData:{RFMax:10.0f,RFXfer:4.0f,Type:"RF"}}'), [
+    event.recipes.gtceu.shaped("thermal:rf_coil_storage_augment_advanced", [
         " S ",
         "GCG",
         " G "
@@ -202,7 +202,7 @@ ServerEvents.recipes(event => {
         G: "gtceu:rose_gold_plate"
     }).addMaterialInfo()
 
-    event.recipes.gtceu.shaped(Item.of("thermal:rf_coil_xfer_augment_advanced", '{AugmentData:{RFMax:4.0f,RFXfer:10.0f,Type:"RF"}}'), [
+    event.recipes.gtceu.shaped("thermal:rf_coil_xfer_augment_advanced", [
         " S ",
         "SCS",
         " G "
@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
         G: "gtceu:rose_gold_plate"
     }).addMaterialInfo()
 
-    event.recipes.gtceu.shaped(Item.of("thermal:fluid_tank_augment_advanced", '{AugmentData:{FluidMax:10.0f,Type:"Fluid"}}'), [
+    event.recipes.gtceu.shaped("thermal:fluid_tank_augment_advanced", [
         " P ",
         "RSR",
         " G "
