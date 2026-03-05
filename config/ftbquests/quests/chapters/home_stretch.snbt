@@ -1189,9 +1189,24 @@
 		}
 		{
 			dependencies: ["4C0BCA64D5B409F2"]
-			description: ["{moni.quest.3E1A349F989835F7.description1}"]
+			description: [
+				"{moni.quest.3E1A349F989835F7.description1}"
+				""
+				"{image:monifactory:textures/quests/psoc_switches.png width:200 height:21 align:center}"
+				""
+				"{moni.quest.3E1A349F989835F7.description2}"
+				"{@pagebreak}"
+				"{moni.quest.3E1A349F989835F7.description3}"
+				"{image:monifactory:textures/quests/psoc_ex1.png width:110 height:70 align:center}"
+				""
+				"{moni.quest.3E1A349F989835F7.description4}"
+				"{image:monifactory:textures/quests/psoc_ex2.png width:110 height:70 align:center}"
+				""
+				"{moni.quest.3E1A349F989835F7.description5}"
+			]
 			id: "3E1A349F989835F7"
 			shape: "hexagon"
+			subtitle: "{moni.quest.3E1A349F989835F7.subtitle}"
 			tasks: [
 				{
 					id: "2D0E3E2345C7AD71"
