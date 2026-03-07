@@ -228,6 +228,19 @@
     "__PECA__.header": "==================",
     "__PECA__.flufff": "> Produits Chimiques PECA <",
     "__PECA__.footer": "==================",
+<<<<<<< abridge-peca
+    "material.gtceu.sodium_cyanide": "Sodium Cyanide",
+    "material.gtceu.chloroacetic_mixture": "Chloroacetic Mixture",
+    "material.gtceu.chloroacetate": "Chloroacetic Acid",
+    "material.gtceu.dichloroacetate": "Dichloroacetate",
+    "material.gtceu.trichloroacetate": "Trichloroacetate",
+    "material.gtceu.cyanoacetic_acid": "Cyanoacetic Acid",
+    "material.gtceu.uncracked_ethyl_cyanoacrylate": "Uncracked Ethyl Cyanoacrylate",
+    "material.gtceu.ethyl_cyanoacrylate": "Ethyl Cyanoacrylate",
+    "material.gtceu.polyethyl_cyanoacrylate": "Polyethyl Cyanoacrylate",
+    "material.gtceu.dimethyl_sulfoxide": "Dimethyl Sulfoxide",
+    "material.gtceu.dimethyl_sulfide": "Dimethyl Sulfide",
+=======
     "material.gtceu.sodium_cyanide": "Cyanure de Sodium",
     "material.gtceu.chloroacetic_mixture": "Mélange Chloroacétique",
     "material.gtceu.chloroacetate": "Acide Chloroacétique",
@@ -240,6 +253,7 @@
     "material.gtceu.polyethyl_cyanoacrylate": "Cyanoacrylate de Polyéthyle",
     "material.gtceu.dimethyl_sulfoxide": "Diméthylsulfoxyde",
     "material.gtceu.dimethyl_sulfide": "Diméthylsulfure",
+>>>>>>> main
     "__PLATLINE__.header": "=======================",
     "__PLATLINE__.flufff": "> Objets de la ligne de Platine <",
     "__PLATLINE__.footer": "=======================",
