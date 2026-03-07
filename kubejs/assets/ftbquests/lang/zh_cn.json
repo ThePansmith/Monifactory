@@ -3283,5 +3283,10 @@
     "moni.quest.45752C40878A1689.description9": "注意，从同一点出发的两个箭头表示有随机概率朝任一方向前进。祝你好运！",
     "moni.quest.45752C40878A1689.description5": "&l12种棱彩核心配方 - 普通模式&r（色相超脱）",
     "moni.task.5517C58C7834BFDD": "Any 4A or 16A Energy Hatch",
-    "moni.quest.2BBAF93506DD79C1.description3": "With &9RF Cards&r and &3Energy Converters&r in this pack, this probably has limited use, but you can build it if you want. &2Notably, you can use an Active Transformer to interface with your Power Substation if you run out of hatch space.&r"
+    "moni.quest.2BBAF93506DD79C1.description3": "With &9RF Cards&r and &3Energy Converters&r in this pack, this probably has limited use, but you can build it if you want. &2Notably, you can use an Active Transformer to interface with your Power Substation if you run out of hatch space.&r",
+    "moni.quest.3E1A349F989835F7.description2": "When a PSoC is put into the Crucible, the lever(s) corresponding to the Crucible's colors are toggled. Secondary colors flip both of their primary components' levers. Afterwards, the Crucible changes color to what the PSoC previously was.",
+    "moni.quest.3E1A349F989835F7.description3": "For example, a Red PSoC put into a green Crucible would output a Yellow PSoC, because the green color flipped the green 'lever' on.",
+    "moni.quest.3E1A349F989835F7.description4": "A magenta PSoC put into a cyan Crucible would output a Yellow PSoC, because the cyan color toggled both the blue lever Off and the green lever On.",
+    "moni.quest.3E1A349F989835F7.subtitle": "There are 10 types of people.",
+    "moni.quest.3E1A349F989835F7.description5": "In either case, the Crucible will be left in the state corresponding to the PSoC's color &3at recipe start&r, or to the next primary color clockwise if the PSoC was inert."
 }
