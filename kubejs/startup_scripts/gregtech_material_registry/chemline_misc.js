@@ -173,6 +173,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 })
 
+// Wither Gas
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("alkylbenzene_sulfonate")
+        .fluid()
+        .color(0x8e9134)
+
+    event.create("overbased_magnesium_sulfonate")
+        .fluid()
+        .color(0xa9aa7b)
+
+    event.create("wither_gas")
+        .gas()
+        .color(0x3c3d2d)
+})
+
 // Primal Mana ...Chemline?
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
