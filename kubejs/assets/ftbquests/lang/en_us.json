@@ -2989,6 +2989,7 @@
     "moni.quest.7D72B3FF808CE13C.description1": "The &6Large Gas Turbine&r is a big upgrade to &6Advanced Gas Turbine Generator II&rs, providing &e8x&r as much power for &e8x&r the fuel consumption.",
     "moni.quest.7D72B3FF808CE13C.description2": "This can be further increased by upgrading the &6Rotor Holder&r, which multiplicatively stacks another &e2x&r per tier.",
     "moni.quest.7D72B3FF808CE13C.description3": "It requires a &6Maintenance Hatch&r, though.",
+    "moni.quest.7D72B3FF808CE13C.description4": "At this point you're also able to make &9Wither Gas&r, the most potent Gas Turbine fuel available.",
     "moni.quest.7DACCCE935194E39.description1": "&6Boron&r is currently obtainable by doing ore processing on &6Lepidolite Ore&r and &6Salt Ore&r (via &6Borax&r).",
     "moni.quest.7DB174443D7FAFA0.description1": "A complex material from &bThermal Expansion&r cooked in an &3Electric Blast Furnace&r, or an &2Alloy Blast Smelter&r.",
     "moni.quest.7DB174443D7FAFA0.description2": "&6Enderium&r needs a lot of heat and is quite slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r",
