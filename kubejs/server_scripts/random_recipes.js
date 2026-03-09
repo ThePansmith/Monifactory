@@ -701,8 +701,8 @@ ServerEvents.recipes(event => {
     // Wither Gas
     event.recipes.gtceu.mixer("wither_gas")
         .notConsumable("minecraft:nether_star")
-        .itemInputs("enderio:withering_powder", "gtceu:calcium_perchlorate_dust")
-        .inputFluids("gtceu:nitrobenzene 9000", "gtceu:overbased_magnesium_sulfonate 1000")
+        .itemInputs("enderio:withering_powder", "2x gtceu:small_calcium_perchlorate_dust")
+        .inputFluids("gtceu:nitrobenzene 10000", "gtceu:overbased_magnesium_sulfonate 500")
         .outputFluids("gtceu:wither_gas 12000")
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
@@ -716,28 +716,43 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
 
+    // Tetrapropene (ehehehe environmental destruction be damned)
+    event.recipes.gtceu.chemical_reactor("tetrapropylene_from_propene")
+        .inputFluids("gtceu:propene 4000")
+        .outputFluids("gtceu:tetrapropylene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(4)
+
+    // Alkylbenzene
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_benzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:benzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000")
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_ethylbenzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:ethylbenzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:ethylene 1000")
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_cumene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:cumene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:propene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
     // Overbased Magnesium Sulfonate
-    event.recipes.gtceu.chemical_reactor("alkylbenzene_sulfonate_from_ethylbenzene")
-        .inputFluids("gtceu:ethylbenzene 1000", "gtceu:sulfur_trioxide 1000")
-        .outputFluids("gtceu:alkylbenzene_sulfonate 1000")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.chemical_reactor("alkylbenzene_sulfonate_from_cumene")
-        .inputFluids("gtceu:cumene 1000", "gtceu:sulfur_trioxide 1000")
-        .outputFluids("gtceu:alkylbenzene_sulfonate 1000")
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.LV])
-
     event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium")
-        .inputFluids("gtceu:alkylbenzene_sulfonate 1750")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
         .itemInputs("gtceu:magnesium_dust")
         .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrogen 1750")
         .duration(80)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium_chloride")
-        .inputFluids("gtceu:alkylbenzene_sulfonate 1750")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
         .itemInputs("3x gtceu:magnesium_chloride_dust")
         .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrochloric_acid 1750")
         .duration(60)

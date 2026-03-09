@@ -175,13 +175,17 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 // Wither Gas
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("alkylbenzene_sulfonate")
+    event.create("tetrapropylene")
         .fluid()
-        .color(0x8e9134)
+        .color(0xbfa53f)
+
+    event.create("alkylbenzene")
+        .fluid()
+        .color(0xbcbf65)
 
     event.create("overbased_magnesium_sulfonate")
         .fluid()
-        .color(0xa9aa7b)
+        .color(0x8b8c66)
 
     event.create("wither_gas")
         .gas()
