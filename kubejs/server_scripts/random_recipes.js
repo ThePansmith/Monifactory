@@ -717,21 +717,15 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
 
     // Overbased Magnesium Sulfonate
-    event.recipes.gtceu.chemical_reactor("alkylbenzene_sulfonate_from_toluene")
-        .inputFluids("gtceu:toluene 1000", "gtceu:sulfuric_acid 1000")
-        .outputFluids("gtceu:alkylbenzene_sulfonate 1000", "minecraft:water 1000")
-        .duration(120)
-        .EUt(GTValues.VA[GTValues.LV])
-
     event.recipes.gtceu.chemical_reactor("alkylbenzene_sulfonate_from_ethylbenzene")
-        .inputFluids("gtceu:ethylbenzene 1000", "gtceu:sulfuric_acid 1000")
-        .outputFluids("gtceu:alkylbenzene_sulfonate 1000", "minecraft:water 1000")
+        .inputFluids("gtceu:ethylbenzene 1000", "gtceu:sulfur_trioxide 1000")
+        .outputFluids("gtceu:alkylbenzene_sulfonate 1000")
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.chemical_reactor("alkylbenzene_sulfonate_from_cumene")
-        .inputFluids("gtceu:cumene 1000", "gtceu:sulfuric_acid 1000")
-        .outputFluids("gtceu:alkylbenzene_sulfonate 1000", "minecraft:water 1000")
+        .inputFluids("gtceu:cumene 1000", "gtceu:sulfur_trioxide 1000")
+        .outputFluids("gtceu:alkylbenzene_sulfonate 1000")
         .duration(80)
         .EUt(GTValues.VA[GTValues.LV])
 
