@@ -881,4 +881,7 @@ ServerEvents.recipes(event => {
 
     // Re-tier Palladium Substation to mid-EV, before Platline
     event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
+
+    // Replace Osmium wires in IV Electrolyzer singleblock with RMM for consistency with other IV machines
+    event.replaceInput({ id: "gtceu:shaped/iv_electrolyzer" }, "gtceu:osmium_single_wire", "gtceu:rtm_alloy_single_wire")
 })
