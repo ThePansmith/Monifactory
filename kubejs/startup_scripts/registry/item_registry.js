@@ -9,6 +9,9 @@ StartupEvents.registry("item", event => {
         "2half",
         "2half_damaged",
         "3",
+        "3_damaged",
+        "3half",
+        "3half_damaged",
         "4",
         "4half",
         "4half_damaged",
@@ -27,6 +30,8 @@ StartupEvents.registry("item", event => {
 
     const stabilized_miners = [
         "2half",
+        "3",
+        "3half",
         "4half",
         "6",
         "7",
@@ -263,8 +268,22 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/lines/prismac/infinity/core/c_supercritical_prismatic_core")
 
     // Callibration Devices
-    event.create("chromatic_stabilizer")
-        .texture("kubejs:item/lines/prismac/stabilizer/chromatic_stabilizer")
+    event.create("photonic_alignment_tube")
+        .texture("kubejs:item/lines/prismac/stabilizer/tube")
+
+    event.create("red_photonic_alignment_tube")
+        .texture("kubejs:item/lines/prismac/stabilizer/red_tube")
+        .displayName("Photonic Alignment Tube: §4Red§r")
+    event.create("green_photonic_alignment_tube")
+        .texture("kubejs:item/lines/prismac/stabilizer/green_tube")
+        .displayName("Photonic Alignment Tube: §2Green§r")
+    event.create("blue_photonic_alignment_tube")
+        .texture("kubejs:item/lines/prismac/stabilizer/blue_tube")
+        .displayName("Photonic Alignment Tube: §1Blue§r")
+
+    event.create("photonic_stabilizer")
+        .texture("kubejs:item/lines/prismac/stabilizer/photonic_stabilizer")
+
     event.create("chromatic_capacitor_empty")
         .texture("kubejs:item/lines/prismac/capacitor/chromatic_capacitor_empty")
         .displayName("Chromatic Capacitor: §7Empty§r")

@@ -282,7 +282,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("microversium")
         .ingot().liquid()
         .color(0xa777bf).secondaryColor(0x60417a).iconSet("dull")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("2x steel", "glowstone", "redstone", "deuterium")
         .blastTemp(1700, "mid", 120, 600)
         .cableProperties(128, 4, 2, false)

@@ -31,6 +31,7 @@ moni_titlescreen_projector_button_tooltip = Click to view bases!
 moni_titlescreen_difficulty_text_normal = Playing &9&lNormal&r Mode
 moni_titlescreen_difficulty_text_hard = Playing &9&lHard&r Mode
 moni_titlescreen_difficulty_text_expert = Playing &9&lExpert&r Mode
+moni_titlescreen_difficulty_text_insanity = Playing &9&lInsanity&r Mode
 
 moni_titlescreen_version = Version
 

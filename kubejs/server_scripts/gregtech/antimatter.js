@@ -26,16 +26,29 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    microverse_mission(event, 10, 3, 100).forEach(builder => {
-        builder
-            .inputFluids("gtceu:oxygen_plasma 16000")
-            .itemInputs("kubejs:microversal_alchemy_kit")
-            .inputFluids("gtceu:hydrogen 160000")
-            .inputFluids("gtceu:helium 40000")
-            .damageRate(15)
-            .itemOutputs("64x kubejs:protomatter")
-            .requiredMicroverse(4) // Corrupted
-    })
+    if (doComplexMicroverses) {
+        microverse_mission(event, 10, 3, 60).forEach(builder => {
+            builder
+                .inputFluids("gtceu:oxygen_plasma 16000")
+                .itemInputs("kubejs:microversal_alchemy_kit")
+                .inputFluids("gtceu:hydrogen 160000")
+                .inputFluids("gtceu:helium 40000")
+                .damageRate(-10)
+                .itemOutputs("64x kubejs:protomatter")
+                .requiredMicroverse(7) // Supercharged
+        })
+    } else {
+        microverse_mission(event, 10, 3, 100).forEach(builder => {
+            builder
+                .inputFluids("gtceu:oxygen_plasma 16000")
+                .itemInputs("kubejs:microversal_alchemy_kit")
+                .inputFluids("gtceu:hydrogen 160000")
+                .inputFluids("gtceu:helium 40000")
+                .damageRate(15)
+                .itemOutputs("64x kubejs:protomatter")
+                .requiredMicroverse(4) // Corrupted
+        })
+    }
 
     event.recipes.gtceu.antimatter_manipulation("antimatter_fuel")
         .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")

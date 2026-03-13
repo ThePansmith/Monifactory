@@ -108,3 +108,6 @@ deprecateBlock("gtceu:fluix_block", "ae2:fluix_block", "Fluix Block")
 // Universe Boule
 deprecateItem("kubejs:universe_boule", "kubejs:null_boule", "Universe Boule")
 deprecateItem("kubejs:universe_wafer", "kubejs:null_wafer", "Universe Wafer")
+
+// Insanity Update
+deprecateItem("kubejs:chromatic_stabilizer", "kubejs:photonic_stabilizer", "Chromatic Stabilizer")

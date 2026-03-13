@@ -8,6 +8,8 @@
  */
 const repairDurations = {
     "2half": 20,
+    "3": 30,
+    "3half": 40,
     "4half": 60,
     "6": 80,
     "7": 90,
@@ -19,13 +21,12 @@ ServerEvents.recipes(event => {
      * Starts a recipe builder for a given microminer tier. Must be completed with more chanced input items.
      * The miner tier determines the duration of the recipe.
      * @param {number|string} minerTier Miner tier index. Typically 1 through 12.
-     * @param {string[]} doublePlateList List of the names of the double plate materials used to repair the hull.
-     * @param {string[]} heavyPlatingList List of the names of the heavy plating materials used to repair the hull.
      */
     function repairing(minerTier) {
         let minerTierNumber;
 
         if(minerTier == "2half") minerTierNumber = 2.5;
+        else if(minerTier == "3half") minerTierNumber = 3.5;
         else if(minerTier == "4half") minerTierNumber = 4.5;
         else minerTierNumber = minerTier;
 
@@ -37,6 +38,12 @@ ServerEvents.recipes(event => {
 
         return builder;
     }
+
+    repairing(3)
+        .EUt(GTValues.VHA[GTValues.EV])
+        .chancedInput("2x gtceu:double_titanium_carbide_plate", 7500, 0)
+        .chancedInput("kubejs:reinforced_mining_laser", 2500, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
 
     repairing(6)
         .EUt(GTValues.VHA[GTValues.LuV])
@@ -64,6 +71,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV])
         .chancedInput("2x gtceu:double_dark_steel_plate", 7000, 0)
         .chancedInput("minecraft:crossbow", 3000, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
+
+    repairing("3half")
+        .EUt(GTValues.VHA[GTValues.EV])
+        .chancedInput("2x gtceu:dense_microversium_plate", 5000, 0)
+        .chancedInput("2x gtceu:double_microversium_plate", 5000, 0)
         .chancedItemInputLogic(ChanceLogic.XOR)
 
     repairing("4half")

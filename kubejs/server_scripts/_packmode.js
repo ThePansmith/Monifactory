@@ -28,6 +28,11 @@ const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
 const doHostileMicroverse = !!global.doHostileMicroverse;
 
+// Insanity-only toggles. Welcome to hell >:3 (Never let Withers cook again.)
+const doComplexPrismaC = !!global.doComplexPrismaC;
+const doComplexMicroverses = !!global.doComplexMicroverses;
+const doComplexCircuits = !!global.doComplexCircuits;
+
 PlayerEvents.loggedIn(event => {
     const gameStages = [
         "Boilers",
@@ -44,7 +49,10 @@ PlayerEvents.loggedIn(event => {
         "Stoneline",
         "HalfMMs",
         "QuantumCoolant",
-        "HostileMicroverse"
+        "HostileMicroverse",
+        "ComplexPrismaC",
+        "ComplexMicroverses",
+        "ComplexCircuits"
     ];
 
     gameStages.forEach(stage => {

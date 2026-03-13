@@ -3,18 +3,46 @@
  */
 
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.assembly_line("chromatic_stabilizer")
-        .itemInputs("gtceu:superconducting_coil", "gtceu:dense_rhodium_plated_palladium_plate", "2x #gtceu:circuits/uv", "kubejs:chromatically_inert_frame")
-        .inputFluids("gtceu:omnium 288", "gtceu:polyether_ether_ketone 288")
-        .itemOutputs("3x kubejs:chromatic_stabilizer")
-        .duration(20 * 10)
-        .EUt(GTValues.VA[GTValues.UHV])
-        .stationResearch(b => b
-            .researchStack("kubejs:chromatically_inert_frame")
-            .CWUt(144)
+    if (doComplexPrismaC) {
+        event.recipes.gtceu.assembly_line("photonic_stabilizer")
+            .itemInputs("kubejs:chromatically_inert_frame", "kubejs:red_photonic_alignment_tube", "kubejs:chromatically_inert_frame", "kubejs:green_photonic_alignment_tube", "kubejs:chromatically_inert_frame", "kubejs:blue_photonic_alignment_tube")
+            .inputFluids("gtceu:omnium 288")
+            .itemOutputs("3x kubejs:photonic_stabilizer")
+            .duration(20 * 10)
+            .EUt(GTValues.VA[GTValues.UV])
+            .stationResearch(b => b
+                .researchStack("kubejs:photonic_alignment_tube")
+                .CWUt(72)
+                .EUt(GTValues.VA[GTValues.UV])
+            )
+            .addMaterialInfo(true)
+
+        event.recipes.gtceu.assembly_line("tube")
+            .itemInputs("gtceu:superconducting_coil", "gtceu:dense_rhodium_plated_palladium_plate", "2x #gtceu:circuits/uv")
+            .inputFluids("gtceu:omnium 288")
+            .itemOutputs("3x kubejs:photonic_alignment_tube")
+            .duration(20 * 10)
+            .EUt(GTValues.VA[GTValues.UV])
+            .stationResearch(b => b
+                .researchStack("kubejs:chromatically_inert_frame")
+                .CWUt(72)
+                .EUt(GTValues.VA[GTValues.UV])
+            )
+            .addMaterialInfo(true)
+    } else {
+        event.recipes.gtceu.assembly_line("photonic_stabilizer")
+            .itemInputs("gtceu:superconducting_coil", "gtceu:dense_rhodium_plated_palladium_plate", "2x #gtceu:circuits/uv", "kubejs:chromatically_inert_frame")
+            .inputFluids("gtceu:omnium 288", "gtceu:polyether_ether_ketone 288")
+            .itemOutputs("3x kubejs:photonic_stabilizer")
+            .duration(20 * 10)
             .EUt(GTValues.VA[GTValues.UHV])
-        )
-        .addMaterialInfo(true)
+            .stationResearch(b => b
+                .researchStack("kubejs:chromatically_inert_frame")
+                .CWUt(144)
+                .EUt(GTValues.VA[GTValues.UHV])
+            )
+            .addMaterialInfo(true)
+    }
 
     event.recipes.gtceu.assembly_line("chromatic_capacitor")
         .itemInputs("gtceu:neutronium_small_fluid_pipe", "gtceu:uhv_field_generator", "4x monilabs:crystal_matrix_foil", "2x gtceu:uhv_sensor", "6x gtceu:stainless_steel_ring")
@@ -36,7 +64,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_bath("chromatically_inert_frame")
         .itemInputs("gtceu:small_neutronium_gear")
-        .inputFluids("gtceu:trinaquadalloy 144")
+        .inputFluids("gtceu:trinaquadalloy 72")
         .itemOutputs("kubejs:chromatically_inert_frame")
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])

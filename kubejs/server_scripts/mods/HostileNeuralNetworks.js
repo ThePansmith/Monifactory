@@ -2,6 +2,17 @@
  * ALL HNN-related stuff
  */
 ServerEvents.recipes(event => {
+    if (doHNN || doParticleSynthesis) {
+        event.shaped("kubejs:dark_steel_casing", [
+            "AAA",
+            "ABA",
+            "AAA"
+        ], {
+            A: "gtceu:dark_steel_plate",
+            B: "gtceu:lv_machine_hull"
+        })
+    }
+
     if (doHNN) {
         // remove dml iems
         event.remove({ output: ["hostilenetworks:blank_data_model", "hostilenetworks:deep_learner", "hostilenetworks:loot_fabricator", "hostilenetworks:sim_chamber"] })
@@ -41,15 +52,6 @@ ServerEvents.recipes(event => {
             B: "gtceu:electrical_steel_plate",
             C: "#gtceu:circuits/lv",
             D: "kubejs:pulsating_mesh"
-        })
-
-        event.shaped("kubejs:dark_steel_casing", [
-            "AAA",
-            "ABA",
-            "AAA"
-        ], {
-            A: "gtceu:dark_steel_plate",
-            B: "gtceu:lv_machine_hull"
         })
 
         event.recipes.gtceu.assembler("dark_steel_casing")

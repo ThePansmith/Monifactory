@@ -13,6 +13,7 @@ global.mission_counts = {
     "2": 0,
     "2half": 0,
     "3": 0,
+    "3half": 0,
     "4": 0,
     "4half": 0,
     "5": 0,
@@ -34,6 +35,7 @@ const missionDurations = {
     "2": 120,
     "2half": 50,
     "3": 150,
+    "3half": 20,
     "4": 200,
     "4half": 200,
     "5": 200,
@@ -54,6 +56,7 @@ const missionEUt = {
     "2": GTValues.VHA[GTValues.EV],
     "2half": GTValues.VA[GTValues.EV],
     "3": GTValues.VA[GTValues.EV],
+    "3half": GTValues.VA[GTValues.EV],
     "4": GTValues.VHA[GTValues.IV],
     "4half": GTValues.VA[GTValues.IV],
     "5": GTValues.VA[GTValues.IV],
@@ -109,8 +112,11 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
     }
 
+
     const stabilized_miners = [
         "2half",
+        "3",
+        "3half",
         "4half",
         "6",
         "7",

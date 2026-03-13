@@ -105,22 +105,22 @@ ServerEvents.recipes(event => {
         .duration(20 * 30)
         .EUt(GTValues.VHA[GTValues.MV])
 
-    /*
-    // Move Enriched Bacterial Sludge recipes from Brewery to Sculk Vat
-    let sludge_inputs = [
-        ["u235", "tiny_uranium_235_dust"],
-        ["u238", "uranium_dust"],
-        ["naquadria", "tiny_naquadria_dust"]
-    ]
+    if (doComplexCircuits) {
+        // Move Enriched Bacterial Sludge recipes from Brewery to Sculk Vat
+        let sludge_inputs = [
+            ["u235", "tiny_uranium_235_dust", 750, 2000],
+            ["u238", "uranium_dust", 750, 2000],
+            ["naquadria", "tiny_naquadria_dust", 1500, 3000]
+        ]
 
-    sludge_inputs.forEach(value => {
-        event.remove(`gtceu:brewery/enriched_bacterial_sludge_from_${value[0]}`)
-        event.recipes.gtceu.sculk_vat(`enriched_bacterial_sludge_from_${value[0]}`)
-            .itemInputs(`gtceu:${value[1]}`)
-            .inputFluids("gtceu:bacterial_sludge")
-            .outputFluids("gtceu:enriched_bacterial_sludge")
-            .duration(6.4 * 20)
-            .EUt(GTValues.VHA[GTValues.ULV])
-    })
-    */
+        sludge_inputs.forEach(value => {
+            event.remove(`gtceu:brewery/enriched_bacterial_sludge_from_${value[0]}`)
+            event.recipes.gtceu.sculk_vat(`enriched_bacterial_sludge_from_${value[0]}`)
+                .itemInputs(`gtceu:${value[1]}`)
+                .inputFluids("gtceu:bacterial_sludge 1000")
+                .outputFluidsRanged("gtceu:enriched_bacterial_sludge", value[2], value[3])
+                .duration(6.4 * 20)
+                .EUt(GTValues.VHA[GTValues.MV])
+        })
+    }
 })

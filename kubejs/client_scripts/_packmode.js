@@ -22,3 +22,10 @@ const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
+const doQuantumCoolant = !!global.doQuantumCoolant;
+const doHostileMicroverse = !!global.doHostileMicroverse;
+
+// Insanity-only toggles. Welcome to hell >:3 (Never let Withers cook again.)
+const doComplexPrismaC = !!global.doComplexPrismaC;
+const doComplexMicroverses = !!global.doComplexMicroverses;
+const doComplexCircuits = !!global.doComplexCircuits;

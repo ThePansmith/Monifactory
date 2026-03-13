@@ -4,17 +4,31 @@
 
 ServerEvents.recipes(event => {
     // Controller
-    event.recipes.gtceu.assembly_line("prismatic_crucible")
-        .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "6x gtceu:uv_sensor", "2x #gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "4x gtceu:uhv_electric_pump", "2x gtceu:dense_trinaquadalloy_plate", "16x gtceu:normal_laser_pipe", "12x gtceu:tritanium_single_cable")
-        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:polyether_ether_ketone 1152", "gtceu:omnium 1728")
-        .itemOutputs("monilabs:prismatic_crucible")
-        .duration(20 * 120)
-        .EUt(GTValues.VA[GTValues.UHV])
-        .stationResearch(b => b
-            .researchStack("monilabs:prismatic_focus")
-            .CWUt(144)
+    if (doComplexPrismaC) {
+        event.recipes.gtceu.assembly_line("prismatic_crucible")
+            .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "6x gtceu:uv_sensor", "2x #gtceu:circuits/uhv", "2x gtceu:uv_field_generator", "4x gtceu:uv_electric_pump", "2x gtceu:dense_trinaquadalloy_plate", "16x gtceu:normal_laser_pipe", "12x gtceu:tritanium_single_cable")
+            .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:omnium 1728")
+            .itemOutputs("monilabs:prismatic_crucible")
+            .duration(20 * 120)
+            .EUt(GTValues.VA[GTValues.UV])
+            .stationResearch(b => b
+                .researchStack("monilabs:prismatic_focus")
+                .CWUt(72)
+                .EUt(GTValues.VA[GTValues.UV])
+            )
+    } else {
+        event.recipes.gtceu.assembly_line("prismatic_crucible")
+            .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "6x gtceu:uv_sensor", "2x #gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "4x gtceu:uhv_electric_pump", "2x gtceu:dense_trinaquadalloy_plate", "16x gtceu:normal_laser_pipe", "12x gtceu:tritanium_single_cable")
+            .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:polyether_ether_ketone 1152", "gtceu:omnium 1728")
+            .itemOutputs("monilabs:prismatic_crucible")
+            .duration(20 * 120)
             .EUt(GTValues.VA[GTValues.UHV])
-        )
+            .stationResearch(b => b
+                .researchStack("monilabs:prismatic_focus")
+                .CWUt(144)
+                .EUt(GTValues.VA[GTValues.UHV])
+            )
+    }
 
     // Chroma Sensor Hatch
     event.recipes.gtceu.assembler("chroma_sensor_hatch")
@@ -41,7 +55,7 @@ ServerEvents.recipes(event => {
 
     // Callibration
     event.recipes.gtceu.chromatic_processing("processing_callibration")
-        .itemInputs("kubejs:chromatic_stabilizer")
+        .itemInputs("kubejs:photonic_stabilizer")
         .inputColor(PrismaticColor.PRIMARY)
         .outputStatesRelative(4)
         .duration(40)
@@ -59,13 +73,15 @@ ServerEvents.recipes(event => {
 
     colors.forEach((prismacIn, index) => {
         // Inert psoc recipes
-        event.recipes.gtceu.chromatic_processing(`psoc_inert_${prismacIn[0]}`)
-            .itemInputs("kubejs:photonic_soc_inert")
-            .itemOutputs(`kubejs:photonic_soc_${prismacIn}`)
-            .inputColor(PrismaticColor[prismacIn.toUpperCase()])
-            .outputStatesNormal(PrismaticColor[colors[(Math.floor(index / 2) * 2 + 2) % 6].toUpperCase()])
-            .duration(40)
-            .EUt(GTValues.VHA[GTValues.UV])
+        if (!doComplexPrismaC) {    // TODO: Still not sure on that one. Depends on how the rest pans out.
+            event.recipes.gtceu.chromatic_processing(`psoc_inert_${prismacIn[0]}`)
+                .itemInputs("kubejs:photonic_soc_inert")
+                .itemOutputs(`kubejs:photonic_soc_${prismacIn}`)
+                .inputColor(PrismaticColor[prismacIn.toUpperCase()])
+                .outputStatesNormal(PrismaticColor[colors[(Math.floor(index / 2) * 2 + 2) % 6].toUpperCase()])
+                .duration(40)
+                .EUt(GTValues.VHA[GTValues.UV])
+        }
 
         // Not inert psoc recipes
         psocRecipes.forEach(([psocIn, psocOut]) => {
@@ -102,6 +118,37 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(GTValues.VHA[GTValues.UV])
 
+    if (doComplexPrismaC) {   
+        event.recipes.gtceu.chromatic_processing("not_prism_red")
+            .itemInputs("kubejs:lyso_ce_glass")
+            .itemOutputs("gtceu:fusion_glass")
+            .inputColor(PrismaticColor.NOT_RED)
+            .outputStatesRelative(0)
+            .duration(40)
+            .EUt(GTValues.VHA[GTValues.UV])
+        event.recipes.gtceu.chromatic_processing("not_prism_green")
+            .itemInputs("kubejs:red_aligned_glass")
+            .itemOutputs("kubejs:lyso_ce_glass")
+            .inputColor(PrismaticColor.NOT_GREEN)
+            .outputStatesRelative(0)
+            .duration(40)
+            .EUt(GTValues.VHA[GTValues.UV])
+        event.recipes.gtceu.chromatic_processing("not_prism_blue")
+            .itemInputs("kubejs:green_aligned_glass")
+            .itemOutputs("kubejs:red_aligned_glass")
+            .inputColor(PrismaticColor.NOT_BLUE)
+            .outputStatesRelative(0)
+            .duration(40)
+            .EUt(GTValues.VHA[GTValues.UV])
+        event.recipes.gtceu.chromatic_processing("not_prism")
+            .itemInputs("kubejs:blue_aligned_glass")
+            .itemOutputs("kubejs:green_aligned_glass")
+            .inputColor(PrismaticColor.ANY)
+            .outputStatesRelative(0)
+            .duration(40)
+            .EUt(GTValues.VHA[GTValues.UV])
+    }
+
 
     /**
      * Chromatic transcendence
@@ -110,13 +157,13 @@ ServerEvents.recipes(event => {
 
     // Stabilizer
     event.recipes.gtceu.chromatic_transcendence("stabilizer_primary")
-        .itemInputs("kubejs:chromatic_stabilizer")
+        .itemInputs("kubejs:photonic_stabilizer")
         .inputColor(PrismaticColor.PRIMARY)
         .outputStatesRelative(-2)
         .duration(40)
         .EUt(GTValues.VHA[GTValues.UHV])
     event.recipes.gtceu.chromatic_transcendence("stabilizer_secondary")
-        .itemInputs("kubejs:chromatic_stabilizer")
+        .itemInputs("kubejs:photonic_stabilizer")
         .inputColor(PrismaticColor.SECONDARY)
         .outputStatesRelative(2)
         .duration(40)
@@ -132,7 +179,7 @@ ServerEvents.recipes(event => {
     ]
     tertiaryStabilizerRecipes.forEach(([prismacIn, prismacOut]) => {
         event.recipes.gtceu.chromatic_transcendence(`stabilizer_${prismacIn}`)
-            .itemInputs("kubejs:chromatic_stabilizer")
+            .itemInputs("kubejs:photonic_stabilizer")
             .inputColor(PrismaticColor[prismacIn.toUpperCase()])
             .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()])
             .duration(40)
@@ -175,7 +222,23 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.UHV])
     })
 
-    // Prismatic Core Processing
+    const priscoreComplexActive = [
+        ["red", "yellow", "yellow", "red", 128, 128],
+        ["yellow", "green", "green", "blue", 192, 256],
+        ["green", "cyan", "cyan", "green", 192, 448],
+        ["cyan", "blue", "blue", "red", 256, 640],
+        ["blue", "magenta", "active", "blue", 256, 896]
+    ]
+    
+    const priscoreComplexSupercritical = [
+        ["active", "orange", "orange", 384, 1152],
+        ["orange", "lime", "lime", 384, 1536],
+        ["lime", "teal", "teal", 512, 1920],
+        ["teal", "azure", "azure", 512, 2432],
+        ["azure", "indigo", "indigo", 768, 2944],
+        ["indigo", "pink", "supercritical", 768, 3712]
+    ]
+
     const priscoreRecipes = [
         ["red", "yellow", "yellow", "red", 128, 128, "none"],
         ["yellow", "green", "green", "blue", 192, 256, "none"],
@@ -190,17 +253,25 @@ ServerEvents.recipes(event => {
         ["indigo", "pink", "supercritical", "teal", 768, 3712, "none"]
     ]
 
-    priscoreRecipes.forEach(([coreIn, prismacIn, coreOut, prismacOut, transMb, nullMb, prismacOutHM]) => {
-        if(doHarderProcessing & prismacOutHM != "none") {
-            event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}`)
-                .itemInputs(`kubejs:${coreIn}_prismatic_core`)
-                .inputFluids(`monilabs:transcendental_matrix ${transMb}`)
-                .itemOutputs(`kubejs:${coreOut}_prismatic_core`)
-                .inputColor(PrismaticColor[prismacIn.toUpperCase()])
-                .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()], PrismaticColor[prismacOutHM.toUpperCase()])
-                .duration(20)
-                .EUt(GTValues.VHA[GTValues.UHV])
-        } else {
+    const alignmentDyeRecipes = [
+        ["red", "blue", "magenta"],
+        ["red", "magenta", "red"],
+        ["red", "yellow", "red"],
+        ["red", "green", "yellow"],
+        ["green", "red", "yellow"],
+        ["green", "yellow", "green"],
+        ["green", "cyan", "green"],
+        ["green", "blue", "cyan"],
+        ["blue", "green", "cyan"],
+        ["blue", "cyan", "blue"],
+        ["blue", "magenta", "blue"],
+        ["blue", "red", "magenta"]
+    ]
+
+    if (doComplexPrismaC) {
+        // Prismatic Core Processing
+
+        priscoreComplexActive.forEach(([coreIn, prismacIn, coreOut, prismacOut, transMb, nullMb]) => {
             event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}`)
                 .itemInputs(`kubejs:${coreIn}_prismatic_core`)
                 .inputFluids(`monilabs:transcendental_matrix ${transMb}`)
@@ -209,39 +280,154 @@ ServerEvents.recipes(event => {
                 .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()])
                 .duration(20)
                 .EUt(GTValues.VHA[GTValues.UHV])
-        }
 
-        event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}_void`)
-            .itemInputs(`kubejs:${coreIn}_prismatic_core`)
-            .outputFluids(`gtceu:meta_null ${nullMb}`)
-            .inputColor(PrismaticColor["NOT_" + prismacIn.toUpperCase()])
+            event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}_void`)
+                .itemInputs(`kubejs:${coreIn}_prismatic_core`)
+                .outputFluids(`gtceu:meta_null ${nullMb}`)
+                .inputColor(PrismaticColor["NOT_" + prismacIn.toUpperCase()])
+                .outputStatesRelative(0)
+                .duration(20)
+                .EUt(GTValues.VHA[GTValues.UHV])  
+        })
+
+        priscoreComplexSupercritical.forEach(([coreIn, prismacIn, coreOut, transMb, nullMb]) => {
+            event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}`)
+                .itemInputs(`kubejs:${coreIn}_prismatic_core`)
+                .inputFluids(`monilabs:transcendental_matrix ${transMb}`)
+                .itemOutputs(`kubejs:${coreOut}_prismatic_core`)
+                .inputColor(PrismaticColor[prismacIn.toUpperCase()])
+                .outputStatesSpecial(SpecialCase.BASIC)
+                .duration(20)
+                .EUt(GTValues.VHA[GTValues.UHV])
+
+            event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}_void`)
+                .itemInputs(`kubejs:${coreIn}_prismatic_core`)
+                .outputFluids(`gtceu:meta_null ${nullMb}`)
+                .inputColor(PrismaticColor["NOT_" + prismacIn.toUpperCase()])
+                .outputStatesRelative(0)
+                .duration(20)
+                .EUt(GTValues.VHA[GTValues.UHV])  
+        })
+
+        // Have to do red priscore manually cause it shouldn't output null when voided
+        event.recipes.gtceu.chromatic_transcendence("prismatic_core_r")
+            .itemInputs("kubejs:inert_prismatic_core")
+            .inputFluids("monilabs:transcendental_matrix 128")
+            .itemOutputs("kubejs:red_prismatic_core")
+            .inputColor(PrismaticColor.RED)
+            .outputStatesNormal(PrismaticColor.GREEN)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UHV])
+
+        event.recipes.gtceu.chromatic_transcendence("prismatic_core_r_void")
+            .itemInputs("kubejs:inert_prismatic_core")
+            .inputColor(PrismaticColor.NOT_RED)
             .outputStatesRelative(0)
             .duration(20)
             .EUt(GTValues.VHA[GTValues.UHV])
-    })
 
-    // Have to do red priscore manually cause it shouldn't output null when voided
-    event.recipes.gtceu.chromatic_transcendence("prismatic_core_r")
-        .itemInputs("kubejs:inert_prismatic_core")
-        .inputFluids("monilabs:transcendental_matrix 128")
-        .itemOutputs("kubejs:red_prismatic_core")
-        .inputColor(PrismaticColor.RED)
-        .outputStatesNormal(PrismaticColor.GREEN)
-        .duration(20)
-        .EUt(GTValues.VHA[GTValues.UHV])
+        event.recipes.gtceu.chromatic_transcendence("prismatic_core_supercritical_void")
+            .itemInputs("kubejs:supercritical_prismatic_core")
+            .outputFluids("gtceu:meta_null 4480")
+            .inputColor(PrismaticColor.ANY)
+            .outputStatesRelative(0)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UHV])
 
-    event.recipes.gtceu.chromatic_transcendence("prismatic_core_r_void")
-        .itemInputs("kubejs:inert_prismatic_core")
-        .inputColor(PrismaticColor.NOT_RED)
-        .outputStatesRelative(0)
-        .duration(20)
-        .EUt(GTValues.VHA[GTValues.UHV])
 
-    event.recipes.gtceu.chromatic_transcendence("prismatic_core_supercritical_void")
-        .itemInputs("kubejs:supercritical_prismatic_core")
-        .outputFluids("gtceu:meta_null 4480")
-        .inputColor(PrismaticColor.ANY)
-        .outputStatesRelative(0)
-        .duration(20)
-        .EUt(GTValues.VHA[GTValues.UHV])
+        // Chromatic Alignment
+        event.recipes.gtceu.chromatic_alignment("red_tube")
+            .itemInputs("3x kubejs:photonic_alignment_tube")
+            .itemOutputs("3x kubejs:red_photonic_alignment_tube")
+            .inputColor(PrismaticColor.MAGENTA)
+            .outputStatesNormal(PrismaticColor.RED)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UV])
+
+        event.recipes.gtceu.chromatic_alignment("green_tube")
+            .itemInputs("3x kubejs:photonic_alignment_tube")
+            .itemOutputs("3x kubejs:green_photonic_alignment_tube")
+            .inputColor(PrismaticColor.YELLOW)
+            .outputStatesNormal(PrismaticColor.GREEN)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UV])
+
+        event.recipes.gtceu.chromatic_alignment("blue_tube")
+            .itemInputs("3x kubejs:photonic_alignment_tube")
+            .itemOutputs("3x kubejs:blue_photonic_alignment_tube")
+            .inputColor(PrismaticColor.CYAN)
+            .outputStatesNormal(PrismaticColor.BLUE)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UV])
+
+        alignmentDyeRecipes.forEach(([dyeIn, prismacIn, prismacOut]) => {
+            event.recipes.gtceu.chromatic_alignment(`alignment_dye_${dyeIn}_${prismacIn}`)
+                .itemInputs()
+                .inputFluids(`gtceu:${dyeIn}_dye 288`)
+                .inputColor(PrismaticColor[prismacIn.toUpperCase()])
+                .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()])
+                .duration(10)
+                .EUt(GTValues.VHA[GTValues.UV])
+        })
+
+    } else {
+
+        // Prismatic Core Processing
+        priscoreRecipes.forEach(([coreIn, prismacIn, coreOut, prismacOut, transMb, nullMb, prismacOutHM]) => {
+            if(doHarderProcessing & prismacOutHM != "none") {
+                event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}`)
+                    .itemInputs(`kubejs:${coreIn}_prismatic_core`)
+                    .inputFluids(`monilabs:transcendental_matrix ${transMb}`)
+                    .itemOutputs(`kubejs:${coreOut}_prismatic_core`)
+                    .inputColor(PrismaticColor[prismacIn.toUpperCase()])
+                    .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()], PrismaticColor[prismacOutHM.toUpperCase()])
+                    .duration(20)
+                    .EUt(GTValues.VHA[GTValues.UHV])
+            } else {
+                event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}`)
+                    .itemInputs(`kubejs:${coreIn}_prismatic_core`)
+                    .inputFluids(`monilabs:transcendental_matrix ${transMb}`)
+                    .itemOutputs(`kubejs:${coreOut}_prismatic_core`)
+                    .inputColor(PrismaticColor[prismacIn.toUpperCase()])
+                    .outputStatesNormal(PrismaticColor[prismacOut.toUpperCase()])
+                    .duration(20)
+                    .EUt(GTValues.VHA[GTValues.UHV])
+            }
+
+            event.recipes.gtceu.chromatic_transcendence(`prismatic_core_${prismacIn[0]}_void`)
+                .itemInputs(`kubejs:${coreIn}_prismatic_core`)
+                .outputFluids(`gtceu:meta_null ${nullMb}`)
+                .inputColor(PrismaticColor["NOT_" + prismacIn.toUpperCase()])
+                .outputStatesRelative(0)
+                .duration(20)
+                .EUt(GTValues.VHA[GTValues.UHV])
+            
+            
+        })
+
+        // Have to do red priscore manually cause it shouldn't output null when voided
+        event.recipes.gtceu.chromatic_transcendence("prismatic_core_r")
+            .itemInputs("kubejs:inert_prismatic_core")
+            .inputFluids("monilabs:transcendental_matrix 128")
+            .itemOutputs("kubejs:red_prismatic_core")
+            .inputColor(PrismaticColor.RED)
+            .outputStatesNormal(PrismaticColor.GREEN)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UHV])
+
+        event.recipes.gtceu.chromatic_transcendence("prismatic_core_r_void")
+            .itemInputs("kubejs:inert_prismatic_core")
+            .inputColor(PrismaticColor.NOT_RED)
+            .outputStatesRelative(0)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UHV])
+
+        event.recipes.gtceu.chromatic_transcendence("prismatic_core_supercritical_void")
+            .itemInputs("kubejs:supercritical_prismatic_core")
+            .outputFluids("gtceu:meta_null 4480")
+            .inputColor(PrismaticColor.ANY)
+            .outputStatesRelative(0)
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UHV])
+    }
 })

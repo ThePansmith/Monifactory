@@ -290,7 +290,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("greenhouse")
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([MoniRecipeModifiers.OC_AS_PARALLEL])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("SSSSS", "UDDDU", "UDDDU", "UUGUU", "#UUU#")
             .aisle("SFFFS", "D###D", "D###D", "GO#OG", "#GEG#")
