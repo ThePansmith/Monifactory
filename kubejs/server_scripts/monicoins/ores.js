@@ -653,8 +653,8 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         event.shaped(Item.of("gtceu:platinum_ore", 32), [
-            "A  ",
-            "A  ",
+            " A ",
+            " A ",
             "   "
         ], {
             A: "kubejs:moni_quarter"

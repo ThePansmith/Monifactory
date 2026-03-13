@@ -25,6 +25,15 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
 
+    // Advanced Chroma Sensor Hatch
+    event.recipes.gtceu.assembler("advanced_chroma_sensor_hatch")
+        .itemInputs("monilabs:chroma_sensor_hatch", "gtceu:uv_sensor")
+        .inputFluids("gtceu:omnium 432")
+        .itemOutputs("monilabs:advanced_chroma_sensor_hatch")
+        .duration(20 * 20)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .addMaterialInfo(true)
+
     /**
      * Chromatic Processing map
      * Includes: PSoCs, PRISM

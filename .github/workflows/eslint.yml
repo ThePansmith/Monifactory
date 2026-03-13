@@ -14,14 +14,14 @@ jobs:
   lint-folder:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Setup node and npm
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 23
+          node-version: 25
           cache: 'npm'
           cache-dependency-path: ${{ inputs.folder }}/package-lock.json
-      
+
       - name: ESLint
         id: eslint
         run: |

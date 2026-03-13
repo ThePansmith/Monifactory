@@ -240,6 +240,8 @@
 				"{moni.quest.7D72B3FF808CE13C.description2}"
 				""
 				"{moni.quest.7D72B3FF808CE13C.description3}"
+				""
+				"{moni.quest.7D72B3FF808CE13C.description4}"
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "7D72B3FF808CE13C"
@@ -428,10 +430,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"2D10F2E538486624"
-				"76BAC72CC89F390E"
-			]
+			dependencies: ["2D10F2E538486624"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.1405D08C6A87B3BB.description1}"
@@ -732,6 +731,7 @@
 				"15607184B546F5EE"
 				"22E50A6923EBF5CB"
 				"4E9530E62A4B673B"
+				"425D1C34A82B054D"
 			]
 			description: [
 				"{moni.quest.21E10888F52A3C73.description1}"
