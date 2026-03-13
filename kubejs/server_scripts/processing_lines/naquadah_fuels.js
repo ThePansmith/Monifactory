@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
         .itemInputs("20x kubejs:naquadah_fuel_mixture_dust")
-        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72", "gtceu:infinity 80")
+        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72")
         .outputFluids("gtceu:naquadah_superfuel 20000")
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UHV])
