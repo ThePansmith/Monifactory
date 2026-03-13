@@ -223,6 +223,13 @@ ServerEvents.recipes(event => {
         S: "gtceu:stainless_steel_normal_fluid_pipe"
     }).addMaterialInfo()
 
+    // Temporary Reset NBT recipes
+    const oldNBTAugment = ["thermal:upgrade_augment_1", "thermal:upgrade_augment_2" , "thermal:upgrade_augment_3", "thermal:upgrade_augment_4", "thermal:rf_coil_augment_advanced", "thermal:rf_coil_storage_augment_advanced", "thermal:rf_coil_xfer_augment_advanced", "thermal:fluid_tank_augment_advanced"]
+    
+    oldNBTAugment.forEach((augment) => {
+        event.shapeless(augment, augment)
+    })
+
     // Machine and Dynamo augments
     event.recipes.gtceu.shaped("thermal:dynamo_fuel_augment", [
         "PIP",
