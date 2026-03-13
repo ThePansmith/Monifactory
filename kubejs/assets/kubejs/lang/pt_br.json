@@ -356,7 +356,6 @@
     "enderio.sculk_superconductor_conduit.tooltip": "§7Saída máxima 134,217,728 RF/t",
     "thermal.device_rock_gen.tooltip": "§7Deve ser colocado perto de lava e água para produzir pedregulho.",
     "thermal.device_water_gen.tooltip": "§7Deve ser colocado ao lado de duas fontes de água para funcionar.",
-    "thermal.emi.tooltip": "§aNão puxe os itens do EMI! Use a bancada de trabalho para pegar os dados NBT corretos.",
     "gtceu.basic_tape.tooltip": "§7Usado para empacotar caixas para transporte.",
     "gtceu.nightvision_goggles.tooltip": "§7Alterne com a tecla de [Armor Mode Switch].",
     "functionalstorage.storage_controller.tooltip": "§7Previamente conhecido como Controlador de armazenamento",

@@ -382,7 +382,6 @@
     "thermal.device_water_gen.tooltip": "§7Для работы нужны два источника воды рядом.",
     "gtceu.basic_tape.tooltip": "§7Используется для обёртки ящиков для переноса.",
     "__MISC_TOOLTIPS__.flufff": "> Всякие Подсказки<",
-    "thermal.emi.tooltip": "§aНе используй предметы из EMI! Используй верстак чтобы получить верные NBT данные.",
     "redstoneclock.redstone_clock.tooltip": "§7Требует редстоун сигнал на помеченной точкой стороне для работы.",
     "functionalstorage.framed_storage_controller.tooltip": "§7Известен ранее как Обрамлённый Контроллер ящика",
     "extendedcrafting.auto_table.tooltip.1": "§7Не может принимать предметы!",

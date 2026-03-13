@@ -357,7 +357,6 @@
     "enderio.sculk_superconductor_conduit.tooltip": "§7Max Output 134,217,728 RF/t",
     "thermal.device_rock_gen.tooltip": "§7Must be placed next to lava and water to produce cobblestone.",
     "thermal.device_water_gen.tooltip": "§7Must be placed next to two water source blocks to work.",
-    "thermal.emi.tooltip": "§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.",
     "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
     "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
     "functionalstorage.storage_controller.tooltip": "§7Previously known as a Storage Controller",
