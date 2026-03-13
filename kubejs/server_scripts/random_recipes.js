@@ -21,12 +21,12 @@ ServerEvents.recipes(event => {
 
 
     // snaded sand snad
-    compacting(event, "kubejs:compressed_sand", "minecraft:sand");
-    compacting(event, "kubejs:double_compressed_sand", "kubejs:compressed_sand");
+    compacting(event, "kubejs:compressed_sand", "minecraft:sand")
+    compacting(event, "kubejs:double_compressed_sand", "kubejs:compressed_sand")
 
     // red snaded red sand red snad
-    compacting(event, "kubejs:compressed_red_sand", "minecraft:red_sand");
-    compacting(event, "kubejs:double_compressed_red_sand", "kubejs:compressed_red_sand");
+    compacting(event, "kubejs:compressed_red_sand", "minecraft:red_sand")
+    compacting(event, "kubejs:double_compressed_red_sand", "kubejs:compressed_red_sand")
 
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, "minecraft:iron_ingot", "gtceu:iron_rod")
@@ -528,13 +528,13 @@ ServerEvents.recipes(event => {
     })
 
     // Stonecutting CCI blocks & Marble
-    let sameItemsTags = ["#chisel_chipped_integration:factory_block", "#chisel_chipped_integration:technical_block", "#chisel_chipped_integration:laboratory_block", "#chisel_chipped_integration:tyrian", "#chisel_chipped_integration:futura_block", "#moni:marble"]; // What item tags to go through (change this so you have your tags)
+    let sameItemsTags = ["#chisel_chipped_integration:factory_block", "#chisel_chipped_integration:technical_block", "#chisel_chipped_integration:laboratory_block", "#chisel_chipped_integration:tyrian", "#chisel_chipped_integration:futura_block", "#moni:marble"] // What item tags to go through (change this so you have your tags)
     sameItemsTags.forEach(tag => {
-        let sameItems = Ingredient.of(tag).stacks; // Get all of the items with that tag
+        let sameItems = Ingredient.of(tag).stacks // Get all of the items with that tag
         sameItems.forEach(output => {
             event.stonecutting(output, Ingredient.of(tag))
-        });
-    });
+        })
+    })
 
     // Stonecut GTCEU warning blocks into each other
     let hazardNames = [
@@ -542,7 +542,7 @@ ServerEvents.recipes(event => {
         "generic", "gregification", "high_pressure", "high_temperature", "high_voltage",
         "laser", "magic", "magnetic", "mob_infestation", "mob_spawner", "noise",
         "radioactive", "spatial_storage", "turret", "void"
-    ];
+    ]
     for (let hazardName of hazardNames) {
         let hazard = `gtceu:${hazardName}_hazard_sign_block`
         event.stonecutting(hazard, "gtceu:solid_machine_casing")
@@ -610,7 +610,7 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/iv"
     })
         .addMaterialInfo()
-        .id("moni:shaped/cleaning_maintenance_hatch");
+        .id("moni:shaped/cleaning_maintenance_hatch")
 
     // ZPM Field Gen
     event.remove({ id: "gtceu:field_generator_zpm" })
@@ -707,7 +707,7 @@ ServerEvents.recipes(event => {
         .EUt(15)
 
     // Break Clay blocks into balls
-    event.shapeless("4x minecraft:clay_ball", ["minecraft:clay"]);
+    event.shapeless("4x minecraft:clay_ball", ["minecraft:clay"])
 
     // Parallel Implosion Compressor
     event.recipes.gtceu.assembly_line("gtceu:implosion_collider")
@@ -883,5 +883,18 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
 
     // Replace Osmium wires in IV Electrolyzer singleblock with RMM for consistency with other IV machines
-    event.replaceInput({ id: "gtceu:shaped/iv_electrolyzer" }, "gtceu:osmium_single_wire", "gtceu:rtm_alloy_single_wire")
+    event.remove({ id: "gtceu:shaped/iv_electrolyzer" })
+    event.recipes.gtceu.shaped("gtceu:iv_electrolyzer", [
+        "WLW",
+        "WHW",
+        "ICI"
+    ], {
+        W: "gtceu:rtm_alloy_single_wire",
+        L: "gtceu:laminated_glass",
+        H: "gtceu:iv_machine_hull",
+        C: "gtceu:platinum_single_cable",
+        I: "#gtceu:circuits/iv"
+    })
+        .addMaterialInfo()
+        .id("moni:shaped/iv_electrolyzer")
 })
