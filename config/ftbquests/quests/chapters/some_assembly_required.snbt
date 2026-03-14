@@ -848,10 +848,7 @@
 			y: -9.5d
 		}
 		{
-			dependencies: [
-				"4DB622A78605A2EB"
-				"05F7C3F397B329F5"
-			]
+			dependencies: ["4DB622A78605A2EB"]
 			description: [
 				"{moni.quest.36B1B083B4FA439F.description1}"
 				""

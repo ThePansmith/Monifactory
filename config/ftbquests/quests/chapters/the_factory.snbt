@@ -2592,6 +2592,7 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
+			title: "{moni.quest.7A7907EE1F3FCFBF.title}"
 			x: 9.0d
 			y: 6.0d
 		}
@@ -2609,6 +2610,7 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
+			title: "{moni.quest.0B5613CC79261800.title}"
 			x: 9.0d
 			y: 6.0d
 		}
