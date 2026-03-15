@@ -601,20 +601,20 @@ StartupEvents.registry("item", event => {
     event.create("depleted_naquadah_fuel_dust")
 
     // Crystal Matrix Line
-    event.create("raw_nanotube_substrate")
-        .texture("kubejs:item/lines/matrix/raw_nanotube_substrate")
-    event.create("prepared_nanotube_substrate")
-        .texture("kubejs:item/lines/matrix/prepared_nanotube_substrate")
-    event.create("graphite_electrode")
-        .texture("kubejs:item/lines/matrix/graphite_electrode")
-    event.create("nanotube_soot")
-        .texture("kubejs:item/lines/matrix/nanotube_soot")
+    event.create("nanotube_substrate")
+        .texture("kubejs:item/lines/matrix/nanotube_substrate")
+    event.create("failed_nanotube_substrate")
+        .texture("kubejs:item/lines/matrix/failed_nanotube_substrate")
     event.create("grown_nanotube_substrate")
         .texture("kubejs:item/lines/matrix/grown_nanotube_substrate")
     event.create("carbon_nanotubes")
         .texture("kubejs:item/lines/matrix/carbon_nanotubes")
+    event.create("crystal_seeds")
+        .texture("kubejs:item/lines/matrix/crystal_seeds")
     event.create("adhered_matrix_mesh")
         .texture("kubejs:item/lines/matrix/adhered_matrix_mesh")
+    event.create("graphite_electrode")
+        .texture("kubejs:item/lines/matrix/graphite_electrode")
 
     // Terbium Line
     event.create("rare_earth_sulfate")
