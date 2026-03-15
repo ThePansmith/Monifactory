@@ -30,7 +30,7 @@
 			linked_quest: "6A76B3DCA599B9B5"
 			shape: "hexagon"
 			x: 2.25d
-			y: 2.75d
+			y: 1.75d
 		}
 		{
 			id: "7E04938A5111C9A1"
@@ -38,21 +38,21 @@
 			shape: "hexagon"
 			size: 1.5d
 			x: 3.5d
-			y: 2.75d
+			y: 1.75d
 		}
 		{
 			id: "794ACF30270A3920"
 			linked_quest: "38B1588655AA9BDF"
 			shape: "hexagon"
 			x: 4.75d
-			y: 2.75d
+			y: 1.75d
 		}
 		{
 			id: "6A385521566ECD0E"
 			linked_quest: "062B4DDD703338D1"
 			shape: "hexagon"
-			x: 4.75d
-			y: 4.0d
+			x: 6.0d
+			y: 1.75d
 		}
 	]
 	quests: [
@@ -419,7 +419,7 @@
 			}]
 			title: "{moni.quest.56FB624B384FFAF5.title}"
 			x: -9.0d
-			y: 1.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -455,7 +455,7 @@
 			]
 			title: "{moni.quest.399AE4E449872B8A.title}"
 			x: -11.0d
-			y: 1.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -522,7 +522,7 @@
 			}]
 			title: "{moni.quest.131EAE1541E9C780.title}"
 			x: 7.5d
-			y: 1.5d
+			y: 2.75d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
