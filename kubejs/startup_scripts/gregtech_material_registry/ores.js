@@ -26,6 +26,16 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .oreSmeltInto(GTMaterials.Copper)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    // End
+    event.create("purpurite")
+        .dust().ore(2, 2)
+        .iconSet("rough")
+        .color(0xb18bc6).secondaryColor(0x561944)
+        .components(GTMaterials.Manganese, GTMaterials.Phosphate.multiply(5))
+        .formula("MnPO4")
+        .addOreByproducts(GTMaterials.Iron, GTMaterials.Phosphate)
+        .washedIn(GTMaterials.NitricAcid)
+
     // Moon
     event.create("dilithium")
         .gem().ore(2, 1)

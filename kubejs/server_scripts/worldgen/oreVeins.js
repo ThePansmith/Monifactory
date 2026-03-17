@@ -59,6 +59,28 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    // End vein
+    event.add("end/purpurite", vein => {
+        vein.weight(50)
+        vein.density(1.0)
+        vein.clusterSize(30)
+        vein.layer(WorldGenLayers.ENDSTONE)
+        vein.dimensions("minecraft:the_end")
+        vein.heightRangeUniform(20, 60)
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.get("purpurite"), 2)
+            .oreBlock(GTMaterials.TricalciumPhosphate, 1)
+            .veininessThreshold(0.001)
+            .maxRichnessThreshold(0.1)
+            .minRichness(0.4)
+            .maxRichness(1.0)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get("purpurite"))
+            .placement("above")
+        )
+    })
+
     // Moon veins
     event.add("moon/diamond", vein => {
         vein.weight(20)
