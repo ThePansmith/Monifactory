@@ -201,7 +201,7 @@
     "item.kubejs.inert_serene_infinity_catalyst": "不活性静寂インフィニティカタリスト",
     "item.kubejs.serene_infinity_catalyst": "§d静寂インフィニティカタリスト",
     "item.kubejs.dormant_infinity_compound_ingot": "休眠状態のインフィニティ化合物インゴット",
-    "item.kubejs.field_stabilised_prismatic_pulsar_compound": "フィールド安定化オムニックパルサーコンパウンド",
+    "item.kubejs.field_stabilised_prismatic_pulsar_compound": "フィールド安定化プリズマティックパルサーコンパウンド",
     "item.kubejs.quasi_stable_neutron_star": "準安定ニュートロンスター",
     "item.kubejs.ultimate_core": "アルティメットコア",
     "item.kubejs.ultimate_file": "アルティメットやすり",
@@ -356,7 +356,6 @@
     "enderio.sculk_superconductor_conduit.tooltip": "§7最大出力 134,217,728 RF/t",
     "thermal.device_rock_gen.tooltip": "§7丸石を生成するには、溶岩と水の隣に配置する必要があります。",
     "thermal.device_water_gen.tooltip": "§7動作するには二つの水源を隣り合わせる必要があります。",
-    "thermal.emi.tooltip": "§aEMIからアイテムを取らないでください!クラフトレシピを使用して、正しいNBTデータを取得します。",
     "gtceu.basic_tape.tooltip": "§7輸送用のクレートを包むために使用される。",
     "gtceu.nightvision_goggles.tooltip": "§7[アーマーモードスイッチ]キーで切り替え。",
     "functionalstorage.storage_controller.tooltip": "§7以前はストレージコントローラーと呼ばれていました",
@@ -440,5 +439,9 @@
     "item.kubejs.petri_dish_bacteria": "バクテリアが入ったペトリ皿",
     "item.kubejs.optical_chip": "光学チップ",
     "item.kubejs.completed_optical_wafer": "完成済み光学ウェーハー",
-    "item.kubejs.coated_sapphire_wafer": "コーティング済みサファイアウェハー"
+    "item.kubejs.coated_sapphire_wafer": "コーティング済みサファイアウェハー",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }

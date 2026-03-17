@@ -403,7 +403,6 @@
     "kubejs.meowni_plush.tooltip.normal.1": "§9How did you get your hands on this?",
     "item.kubejs.ultimate_wire_cutter": "Ultimate Wire Cutter",
     "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
-    "thermal.emi.tooltip": "§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.",
     "item.kubejs.solidified_oxygen": "Solidified Oxygen",
     "hostilenetworks.overworld_prediction.tooltip": "§7Experience per item: 10",
     "enderio.vibrant_conduit.tooltip": "§7Max Output 8,192 RF/t",
@@ -440,5 +439,9 @@
     "item.kubejs.ultimate_screwdriver": "Ultimate Screwdriver",
     "item.kubejs.infinity_wire_cutter": "Infinity Wire Cutter",
     "item.kubejs.basic_mining_laser": "§eBasic Mining Laser",
-    "item.kubejs.field_stabilised_prismatic_pulsar_compound": "Field Stabilized Prismatic Pulsar Compound"
+    "item.kubejs.field_stabilised_prismatic_pulsar_compound": "Field Stabilized Prismatic Pulsar Compound",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }

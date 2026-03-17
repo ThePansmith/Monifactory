@@ -27,6 +27,12 @@
     "desc:": "Set the amount of minutes for which network packet history data is saved. Default = 5 minutes",
     "packetHistoryMinutes": 5
   },
+  "malformedtraffic": {
+    "desc:": "Detection and blocking of malformed and/or malicious traffic",
+    "enabled": true,
+    "proxies:": "Add your proxy IP to the whitelist below, if you're using one(e.g. velocity) to avoid blocking the proxy's ip. Format: [\"127.0.0.1\", \"128.0.01\"] without the \\ ",
+    "proxywhitelist": []
+  },
   "showFullResourceLocationException": {
     "desc:": "Enable to see the full log output for all resource location exceptions. Default = false",
     "showFullResourceLocationException": false

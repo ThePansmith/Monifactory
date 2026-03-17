@@ -64,6 +64,9 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
+    "me_expanded_pattern_buffer_proxy_info": true,
+    "me_expanded_pattern_buffer_info": true,
+    "enlarged_me_stocking_bus_info": true,
     "pterb_info": true
   },
   "endertanks": {
@@ -87,6 +90,7 @@
     "recipe_logic_provider": true,
     "maintenance_info": true,
     "machine_mode": true,
+    "battery_info": true,
     "electric_container_provider": true,
     "steam_boiler_info": true,
     "recipe_output_info": true,

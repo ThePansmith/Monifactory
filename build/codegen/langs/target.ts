@@ -26,14 +26,14 @@ const getAllInputLangsAndOutputLangs = (name: string, newName: string) =>
 const UDLocal = getAllInputLangsAndOutputLangs("en_us.local", "en_ud.local")
 const UDJSON = getAllInputLangsAndOutputLangs("en_us.json", "en_ud.json")
 
-const allFiles = [
+const allFilesToUD = [
     UDLocal,
     UDJSON,
 ].flat()
 
-export const CodegenLangsTarget = new Juke.Target({
-    inputs: allFiles.map((f) => f.in),
-    outputs: allFiles.map((f) => f.out),
+const CodegenUDLangTarget = new Juke.Target({
+    inputs: allFilesToUD.map((f) => f.in),
+    outputs: allFilesToUD.map((f) => f.out),
     executes: () => {
         for (const { in: original, out: generated } of UDLocal) {
             // Transforms *.local fancymenu translation files
@@ -56,6 +56,44 @@ export const CodegenLangsTarget = new Juke.Target({
             )
         }
     },
+})
+
+const CodegenNonENLangsTarget = new Juke.Target({
+    executes: () => {
+        const ENLangSourceFiles = fs
+            .readdirSync(
+                fileURLToPath(import.meta.resolve("../../")),
+                { recursive: true, encoding: "utf8" }
+            )
+            .filter((filePath) => basename(filePath) === "en_us.json")
+            .map((filePath) => ({
+                in: filePath,
+                out: fs.readdirSync(
+                    filePath, 
+                    { recursive: false, encoding: "utf8" }).filter((filepath) => basename(filepath).match("[a-z][a-z]_[a-z][a-z].json")
+                ),
+            }))
+        const translationFileSchema = z.record(z.string(), z.string())
+        for (const { in: ENLangSourceFile, out: LangTargetFiles} of ENLangSourceFiles) {
+            // Copies keys from EN *.json translation files
+            const ENTranslations = translationFileSchema.parse(readDatafileJSON(ENLangSourceFile))
+            for( const LangTargetFile of LangTargetFiles) {
+                // Copies keys from Non-EN *.json translation files
+                const NonENTranslations = translationFileSchema.parse(readDatafileJSON(ENLangSourceFile))
+                // Merge keys and write to Non-EN lang file
+                fs.writeFileSync(LangTargetFile, JSON.stringify(
+                    Object.assign( {},
+                        ENTranslations,
+                        NonENTranslations,
+                    ), null, "utf8")
+                )
+            }
+        }
+    },
+})
+
+export const CodegenLangsTarget = new Juke.Target({
+    dependsOn: [CodegenUDLangTarget, CodegenNonENLangsTarget],
 })
 
 export default CodegenLangsTarget

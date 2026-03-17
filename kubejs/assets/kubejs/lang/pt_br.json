@@ -356,7 +356,6 @@
     "enderio.sculk_superconductor_conduit.tooltip": "§7Saída máxima 134,217,728 RF/t",
     "thermal.device_rock_gen.tooltip": "§7Deve ser colocado perto de lava e água para produzir pedregulho.",
     "thermal.device_water_gen.tooltip": "§7Deve ser colocado ao lado de duas fontes de água para funcionar.",
-    "thermal.emi.tooltip": "§aNão puxe os itens do EMI! Use a bancada de trabalho para pegar os dados NBT corretos.",
     "gtceu.basic_tape.tooltip": "§7Usado para empacotar caixas para transporte.",
     "gtceu.nightvision_goggles.tooltip": "§7Alterne com a tecla de [Armor Mode Switch].",
     "functionalstorage.storage_controller.tooltip": "§7Previamente conhecido como Controlador de armazenamento",
@@ -440,5 +439,9 @@
     "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
     "item.kubejs.optical_chip": "Optical Chip",
     "item.kubejs.completed_optical_wafer": "Completed Optical Wafer",
-    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer"
+    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }

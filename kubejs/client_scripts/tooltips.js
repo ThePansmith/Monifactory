@@ -74,19 +74,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("thermal:device_rock_gen", Text.translatable("thermal.device_rock_gen.tooltip"))
     tooltip.add("thermal:device_water_gen", Text.translatable("thermal.device_water_gen.tooltip"))
 
-    tooltip.add(
-        [
-            "thermal:upgrade_augment_1",
-            "thermal:upgrade_augment_2",
-            "thermal:upgrade_augment_4",
-            "thermal:upgrade_augment_3",
-            "thermal:rf_coil_augment_advanced",
-            "thermal:rf_coil_storage_augment_advanced",
-            "thermal:rf_coil_xfer_augment_advanced",
-            "thermal:fluid_tank_augment_advanced"
-        ], Text.translatable("thermal.emi.tooltip")
-    )
-
     // Circuits
     tooltip.addAdvanced("kubejs:optical_processor_mainframe", (item, adv, text) => { text.add(1, Text.gold(Text.translatable("item.kubejs.uev_tier_circuit"))) })
     tooltip.addAdvanced("kubejs:optical_processor_computer", (item, adv, text) => { text.add(1, Text.gold(Text.translatable("item.kubejs.uhv_tier_circuit"))) })
@@ -140,7 +127,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     tooltip.addAdvanced("gtceu:helical_fusion_reactor", (item, adv, text) => {
-        text.add(1, Text.translatable("gtceu.machine.fusion_reactor.capacity", Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
+        text.add(1, Text.translatable("gtceu.machine.fusion_reactor.capacity", Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 32) / 1000000)))
         text.add(2, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
         text.add(3, Text.translatable("gtceu.machine.available_recipe_map_1.tooltip", Text.translatable("gtceu.fusion_reactor")))
         text.add(4, Text.translatable("gtceu.multiblock.helical_fusion_reactor.description"))

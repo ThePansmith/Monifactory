@@ -121,13 +121,6 @@
 			y: -2.75d
 		}
 		{
-			id: "2EE7DC7022138129"
-			linked_quest: "70FD95AEA44548B0"
-			shape: "hexagon"
-			x: -7.5d
-			y: -5.25d
-		}
-		{
 			id: "1E75CED3B4A1296A"
 			linked_quest: "3DD8D9EEA7189186"
 			shape: "hexagon"
@@ -141,6 +134,13 @@
 			size: 1.1d
 			x: 14.025d
 			y: 2.75d
+		}
+		{
+			id: "171E1089E43EE76B"
+			linked_quest: "1405D08C6A87B3BB"
+			size: 1.25d
+			x: -8.25d
+			y: 6.75d
 		}
 	]
 	quests: [
@@ -820,6 +820,8 @@
 				"{moni.quest.2BBAF93506DD79C1.description1}"
 				""
 				"{moni.quest.2BBAF93506DD79C1.description2}"
+				""
+				"{moni.quest.2BBAF93506DD79C1.description3}"
 			]
 			hide_dependency_lines: true
 			id: "2BBAF93506DD79C1"
@@ -1064,8 +1066,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0D3E0D645F80835D.title}"
-			x: -8.25d
-			y: 7.25d
+			x: -10.0d
+			y: 8.75d
 		}
 		{
 			dependencies: ["2BBAF93506DD79C1"]
@@ -1447,6 +1449,7 @@
 			icon: "kubejs:quantum_flux"
 			id: "1EA5F30C5ACADBA9"
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "3105E94F99354675"
 				type: "checkmark"
@@ -1636,7 +1639,7 @@
 			}]
 			title: "{moni.quest.1BADB230EB1BEA4D.title}"
 			x: 8.75d
-			y: 4.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["672D43BD113251EA"]
@@ -1723,6 +1726,128 @@
 			title: "{moni.quest.57C75A5756F62D17.title}"
 			x: 2.75d
 			y: 1.25d
+		}
+		{
+			dependencies: [
+				"46A56A5E3CC2403F"
+				"05F7C3F397B329F5"
+			]
+			description: [
+				"{moni.quest.044EBE36128FBB01.description1}"
+				""
+				"{moni.quest.044EBE36128FBB01.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:quarktech_helmet"
+				tag: {
+					Charge: 99993579L
+					nightVision: 1b
+					nightVisionTimer: 254
+					toggleTimer: 0b
+				}
+			}
+			id: "044EBE36128FBB01"
+			rewards: [{
+				id: "5C26603B3D2DC88B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{moni.quest.044EBE36128FBB01.subtitle}"
+			tasks: [
+				{
+					id: "5B9361A16A3E50C9"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "423B5AC18AFDDD7B"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "22B65244B9B07F25"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "7AC5135E14F22733"
+					item: "gtceu:quarktech_boots"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.044EBE36128FBB01.title}"
+			x: 9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["63C3077124BC81FD"]
+			description: [
+				"{moni.quest.70FD95AEA44548B0.description1}"
+				""
+				"{moni.quest.70FD95AEA44548B0.description2}"
+			]
+			icon: "gtceu:advanced_soldering_alloy_bucket"
+			id: "70FD95AEA44548B0"
+			rewards: [{
+				id: "39A3488F3C1EEF77"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4554FBB55F422385"
+					item: "gtceu:advanced_soldering_alloy_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "67937E0AF20C61E6"
+					item: "gtceu:advanced_soldering_alloy_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{moni.quest.70FD95AEA44548B0.title}"
+			x: -7.5d
+			y: -5.25d
+		}
+		{
+			dependencies: ["785C6332FC7A07A5"]
+			description: [
+				"{moni.quest.63C3077124BC81FD.description1}"
+				""
+				"{moni.quest.63C3077124BC81FD.description2}"
+				""
+				"{moni.quest.63C3077124BC81FD.description3}"
+			]
+			icon: "gtceu:germanium_dust"
+			id: "63C3077124BC81FD"
+			rewards: [{
+				id: "73F86168083D3341"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "46D85CCD66919277"
+					item: "gtceu:coal_fly_ash_dust"
+					type: "item"
+				}
+				{
+					id: "1B19BD8698E6BFD0"
+					item: "gtceu:germanium_dust"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.63C3077124BC81FD.title}"
+			x: -8.75d
+			y: -5.25d
 		}
 	]
 	title: "{moni.chapter.058B7FE882875343.title}"

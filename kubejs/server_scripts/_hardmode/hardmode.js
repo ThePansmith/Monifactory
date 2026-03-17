@@ -57,7 +57,9 @@ ServerEvents.recipes(event => {
         event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
         event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
         event.remove({ id: "enderio:stick" })
+    }
 
+    if (!doHNN) {
         // Mob Heads
         event.shaped("minecraft:skeleton_skull", [
             " A ",

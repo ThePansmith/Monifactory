@@ -1,5 +1,5 @@
 {
-    "item.kubejs.smore_1": "S'more S'mingot",
+    "item.kubejs.smore_1": "Gallingote Galletón",
     "item.kubejs.smore_2": "MoreS'more DoubleS'mingot",
     "item.kubejs.smore_4": "FourS'more QuadS'mingot",
     "item.kubejs.smore_6": "EightS'more OctoS'mingot",
@@ -357,7 +357,6 @@
     "enderio.sculk_superconductor_conduit.tooltip": "§7Max Output 134,217,728 RF/t",
     "thermal.device_rock_gen.tooltip": "§7Must be placed next to lava and water to produce cobblestone.",
     "thermal.device_water_gen.tooltip": "§7Must be placed next to two water source blocks to work.",
-    "thermal.emi.tooltip": "§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.",
     "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
     "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
     "functionalstorage.storage_controller.tooltip": "§7Previously known as a Storage Controller",
@@ -440,5 +439,9 @@
     "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
     "item.kubejs.optical_chip": "Optical Chip",
     "item.kubejs.completed_optical_wafer": "Completed Optical Wafer",
-    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer"
+    "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }

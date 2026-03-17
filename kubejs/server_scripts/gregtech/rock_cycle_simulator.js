@@ -47,13 +47,13 @@ ServerEvents.recipes(event => {
     RockCycle("myalite", "quark:myalite", "quark:myalite", 60)
 
     function DimensionalRockCrushing(namespace, output, EUt, dimension, waterReplacement) {
-        if(waterReplacement == undefined) waterReplacement = "minecraft:water"
+        if (waterReplacement === undefined) waterReplacement = "minecraft:water"
         event.recipes.gtceu.rock_breaker(`${output}`)
             .notConsumable(`${namespace}:${output}`)
             .itemOutputs(`${namespace}:${output}`)
             .duration(16)
             .EUt(EUt)
-            ["adjacentFluid(net.minecraft.world.level.material.Fluid[])"](["minecraft:lava", waterReplacement])
+            .adjacentFluids("minecraft:lava", waterReplacement)
             .dimension(dimension)
 
         event.recipes.gtceu.rock_cycle_simulator(`${output}`)

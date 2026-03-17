@@ -36,6 +36,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
         .addMaterialInfo(true)
 
+    event.recipes.gtceu.assembler("advanced_sculk_xp_sensor_hatch")
+        .itemInputs("monilabs:sculk_xp_sensor_hatch", "gtceu:zpm_sensor")
+        .inputFluids("enderio:xp_juice 2000")
+        .itemOutputs("monilabs:advanced_sculk_xp_sensor_hatch")
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .addMaterialInfo(true)
+
     // Petri Dish cleaning in the Autoclave
     event.recipes.gtceu.autoclave("petri_dish_sterilization")
         .itemInputs("gtceu:petri_dish")
@@ -66,11 +74,11 @@ ServerEvents.recipes(event => {
     // Growth recipes
     event.recipes.gtceu.sculk_vat("bacteria_growth")
         .itemInputs("kubejs:petri_dish_bacteria")
-        .inputFluids("gtceu:biomass 4000")
-        .outputFluids("gtceu:bacteria 3000")
+        .inputFluids("gtceu:biomass 40000")
+        .outputFluids("gtceu:bacteria 30000")
         .circuit(1)
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.sculk_vat("sculk_growth")
         .notConsumable("minecraft:sculk_catalyst")
@@ -91,11 +99,11 @@ ServerEvents.recipes(event => {
     // Transformation recipes
     event.recipes.gtceu.sculk_vat("biomass_fermentation")
         .notConsumable("kubejs:petri_dish_bacteria")
-        .inputFluids("gtceu:biomass 4000")
-        .outputFluids("gtceu:fermented_biomass 4000")
+        .inputFluids("gtceu:biomass 40000")
+        .outputFluids("gtceu:fermented_biomass 40000")
         .circuit(2)
-        .duration(20 * 15)
-        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(20 * 30)
+        .EUt(GTValues.VHA[GTValues.MV])
 
     /*
     // Move Enriched Bacterial Sludge recipes from Brewery to Sculk Vat

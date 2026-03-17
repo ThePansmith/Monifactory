@@ -26,7 +26,7 @@
     "item.kubejs.microminer_t8half": "§dОбшитый Тринием Микро Экскаватор [Уровень Восемь с Половиной]",
     "item.kubejs.microminer_t8half.desc": "§7§oДобывает эксклюзивные драгоценные камни и металлы из неисследованных уголков за пределами микровселенной",
     "item.kubejs.microminer_t9": "§dОбшитый Вечностием Микро Поедатель Солнц [Уровень Девять]",
-    "item.kubejs.microminer_t9.desc": "§7§oРушит звёзды микровселенных и добывает их вкусные нейтронные ядра.",
+    "item.kubejs.microminer_t9.desc": "§7§oДобывает эксклюзивные драгоценные камни и металлы в неизведанных уголках, от границ микромира до ядер умирающих звезд.",
     "item.kubejs.moni_dollar": "§dМонидоллар §r§7[100]",
     "item.kubejs.moni_nickel": "§eМониникель §r§7[5]",
     "item.kubejs.moni_penny": "Монипенни §7[1]",
@@ -382,7 +382,6 @@
     "thermal.device_water_gen.tooltip": "§7Для работы нужны два источника воды рядом.",
     "gtceu.basic_tape.tooltip": "§7Используется для обёртки ящиков для переноса.",
     "__MISC_TOOLTIPS__.flufff": "> Всякие Подсказки<",
-    "thermal.emi.tooltip": "§aНе используй предметы из EMI! Используй верстак чтобы получить верные NBT данные.",
     "redstoneclock.redstone_clock.tooltip": "§7Требует редстоун сигнал на помеченной точкой стороне для работы.",
     "functionalstorage.framed_storage_controller.tooltip": "§7Известен ранее как Обрамлённый Контроллер ящика",
     "extendedcrafting.auto_table.tooltip.1": "§7Не может принимать предметы!",
@@ -440,5 +439,9 @@
     "item.kubejs.petri_dish_bacteria": "Чашка Петри с бактериями",
     "item.kubejs.optical_chip": "Оптический чип",
     "item.kubejs.completed_optical_wafer": "Готовая оптическая пластина",
-    "item.kubejs.coated_sapphire_wafer": "Покрытая сапфировая пластина"
+    "item.kubejs.coated_sapphire_wafer": "Покрытая сапфировая пластина",
+    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
+    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
+    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
+    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
 }
