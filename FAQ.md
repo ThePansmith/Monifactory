@@ -92,6 +92,7 @@ Instead:
     `shaderpacks` (if you have any)
     `emi.json`
     `options.txt`
+    `emi.css` (located in `\config\`)
 3. Replace the contents of your world's `serverconfig` folder with the contents of the `defaultconfigs` folder in the pack's root directory.
 4. Adjust the pack mode of the new instance, if needed (Instructions above)
 

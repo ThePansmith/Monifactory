@@ -356,7 +356,6 @@
     "enderio.sculk_superconductor_conduit.tooltip": "§7最大出力 134,217,728 RF/t",
     "thermal.device_rock_gen.tooltip": "§7丸石を生成するには、溶岩と水の隣に配置する必要があります。",
     "thermal.device_water_gen.tooltip": "§7動作するには二つの水源を隣り合わせる必要があります。",
-    "thermal.emi.tooltip": "§aEMIからアイテムを取らないでください!クラフトレシピを使用して、正しいNBTデータを取得します。",
     "gtceu.basic_tape.tooltip": "§7輸送用のクレートを包むために使用される。",
     "gtceu.nightvision_goggles.tooltip": "§7[アーマーモードスイッチ]キーで切り替え。",
     "functionalstorage.storage_controller.tooltip": "§7以前はストレージコントローラーと呼ばれていました",
