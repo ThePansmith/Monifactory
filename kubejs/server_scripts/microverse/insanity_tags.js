@@ -8,6 +8,6 @@ ServerEvents.tags("item", (event) => {
         "gtceu:raw_dilithium",
         "gtceu:gravi_star",
         "minecraft:bone",
-        "kubejs:dragon_scale"
+        "kubejs:ender_dragon_scale"
     ])
 })
