@@ -1054,36 +1054,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"6F9041F256F517A3"
-				"6EA130B04FDE6868"
-			]
-			description: ["{moni.quest.187083EB66D95726.description1}"]
-			icon: "kubejs:optical_chip"
-			id: "187083EB66D95726"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "4C5EBB424CBA9CEA"
-					item: "kubejs:sapphire_seed_crystal"
-					type: "item"
-				}
-				{
-					id: "3040257AAD9F5759"
-					item: "kubejs:sapphire_wafer"
-					type: "item"
-				}
-				{
-					id: "3EA8C0CBBEFFB9C4"
-					item: "kubejs:optical_chip"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.187083EB66D95726.title}"
-			x: 0.0d
-			y: -5.75d
-		}
-		{
 			dependencies: ["3E45F67F09B6156B"]
 			description: [
 				"{moni.quest.415F2703877FBE21.description1}"
@@ -1205,8 +1175,8 @@
 				}
 			]
 			title: "{moni.quest.3E1A349F989835F7.title}"
-			x: -2.5d
-			y: -6.25d
+			x: -0.5d
+			y: -5.75d
 		}
 	]
 	title: "{moni.chapter.457D17593A814D73.title}"
