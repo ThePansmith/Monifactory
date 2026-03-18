@@ -29,3 +29,4 @@ const doHostileMicroverse = !!global.doHostileMicroverse;
 const doComplexPrismaC = !!global.doComplexPrismaC;
 const doComplexMicroverses = !!global.doComplexMicroverses;
 const doComplexCircuits = !!global.doComplexCircuits;
+const doParticleSynthesis = !!global.doParticleSynthesis;

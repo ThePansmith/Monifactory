@@ -32,6 +32,7 @@ const doHostileMicroverse = !!global.doHostileMicroverse;
 const doComplexPrismaC = !!global.doComplexPrismaC;
 const doComplexMicroverses = !!global.doComplexMicroverses;
 const doComplexCircuits = !!global.doComplexCircuits;
+const doParticleSynthesis = !!global.doParticleSynthesis;
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [
@@ -52,7 +53,8 @@ PlayerEvents.loggedIn(event => {
         "HostileMicroverse",
         "ComplexPrismaC",
         "ComplexMicroverses",
-        "ComplexCircuits"
+        "ComplexCircuits",
+        "ParticleSynthesis"
     ];
 
     gameStages.forEach(stage => {

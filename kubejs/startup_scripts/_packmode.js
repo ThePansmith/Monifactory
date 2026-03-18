@@ -173,6 +173,15 @@ global.doComplexMicroverses = packMode == "Insanity";
  */
 global.doComplexCircuits = packMode == "Insanity";
 
+/* VIRTUAL PARTICLE SYNTHESIS
+ * Ever found the whole "quantum" buzzword annoying and underwhelming?
+ * Well, today's your lucky day, because now anything "Quantum" and more is crafted involving this
+ *  new multiblock, now with even more quantum physics buzzwords.
+ * Features recipes unique per-world, affected by an ever-evolving fluctuating value in each machine.
+ */
+
+global.doParticleSynthesis = packMode == "Insanity";
+
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
@@ -199,3 +208,4 @@ const doHostileMicroverse = !!global.doHostileMicroverse;
 const doComplexPrismaC = !!global.doComplexPrismaC;
 const doComplexMicroverses = !!global.doComplexMicroverses;
 const doComplexCircuits = !!global.doComplexCircuits;
+const doParticleSynthesis = !!global.doParticleSynthesis;
