@@ -1,5 +1,38 @@
 {
-    "conditions": [
-        { "type": "forge:false" }
+    "entity": "minecraft:drowned",
+    "subtypes": [],
+    "name": "entity.minecraft.drowned",
+    "name_color": "#00FFFFFF",
+    "display": {
+        "nbt": {
+            "HandItems": [
+                {
+                    "id": "minecraft:trident"
+                },
+                {}
+            ]
+        }
+    },
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.drowned",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 64
+        },
+        {
+            "item": "minecraft:copper_ingot",
+            "count": 24
+        }
     ]
 }
