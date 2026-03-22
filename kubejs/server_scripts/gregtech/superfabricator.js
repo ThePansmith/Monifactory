@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
         fabricator("creeper", 3, "16x minecraft:coal")
         fabricator("drowned", 1, "64x minecraft:rotten_flesh")
         fabricator("drowned", 2, "24x minecraft:copper_ingot")
+        fabricator("drowned", 3, "1x minecraft:nautilus_shell")
         fabricator("ender_dragon", 1, "2x minecraft:dragon_breath")
         fabricator("ender_dragon", 2, "kubejs:dragon_lair_data")
         fabricator("ender_dragon", 3, "4x kubejs:ender_dragon_scale")

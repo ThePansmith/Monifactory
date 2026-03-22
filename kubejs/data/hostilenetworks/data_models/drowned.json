@@ -33,6 +33,10 @@
         {
             "item": "minecraft:copper_ingot",
             "count": 24
+        },
+        {
+            "item": "minecraft:nautilus_shell",
+            "count": 1
         }
     ]
 }
