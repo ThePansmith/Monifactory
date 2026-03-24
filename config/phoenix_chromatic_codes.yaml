@@ -1,0 +1,13 @@
+colors:
+  # Add custom formatting codes here.
+  # Format: 'char:hex' (e.g., 'z:BF00FF')
+  customColors:
+    - z:BF00FF
+    - y:015a5c
+
+  # Format: 'char:colorSpeed:moveSpeed:movementId:hex1,hex2...'
+  # Example: 'w:1.0:0.5:wave:rainbow'
+  # Movement IDs: wave, shake, pulse, static_rainbow, glitch, discord, breath, stretch, none
+  # Discord is the effect you see on servers with boosts, that smooth gradient. This one needs exactly two hex codes to work properly.
+  customGradients:
+    - w:1.0:1.0:wave:rainbow
