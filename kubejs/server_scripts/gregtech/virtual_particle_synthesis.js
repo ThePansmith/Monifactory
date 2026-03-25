@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (doComplexCircuits) {
+    if (doParticleSynthesis) {
         event.recipes.gtceu.virtual_particle_synthesis("parallel_test")
             .itemInputs("minecraft:stone")
             .itemOutputs("minecraft:deepslate")
@@ -15,20 +15,20 @@ ServerEvents.recipes(event => {
             .itemOutputs("minecraft:diorite", "minecraft:andesite")
             .duration(40)
             .EUt(GTValues.VA[GTValues.EV])
-            .quantumRule(QuantumRule.QUANTUM_ENTANGLEMENT)
+            .quantumRule(QuantumRule.QUANTUM_ENTANGLEMENT, IO.OUT)
 
         event.recipes.gtceu.virtual_particle_synthesis("quantum_entanglement_fluid_test")
             .itemInputs("minecraft:obsidian")
             .outputFluids("minecraft:water 1000", "minecraft:lava 1000")
             .duration(40)
             .EUt(GTValues.VA[GTValues.EV])
-            .quantumRule(QuantumRule.QUANTUM_POLARIZATION)
+            .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.OUT)
     
         event.recipes.gtceu.virtual_particle_synthesis("quantum_waves_test")
             .itemInputs("kubejs:quantum_flux")
             .itemOutputs("minecraft:iron_ingot", "minecraft:gold_ingot", "minecraft:diamond", "minecraft:emerald")
             .duration(40)
             .EUt(GTValues.VA[GTValues.EV])
-            .quantumRule(QuantumRule.QUANTUM_WAVES)
+            .quantumRule(QuantumRule.QUANTUM_WAVES, IO.OUT)
     }
 })

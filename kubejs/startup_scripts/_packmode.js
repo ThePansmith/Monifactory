@@ -161,17 +161,17 @@ global.doComplexPrismaC = packMode == "Insanity";
  */
 global.doComplexMicroverses = packMode == "Insanity";
 
-/* COMPLEX CIRCUITS
- * Whatever reworks I can think of related to circuit themes. Might scrap all or parts of this one if I lack the time. Ideas include:
+/* COMPLEX PROCESSING
+ * Because HM's doHarderProcessing was clearly not enough. Ideas include:
+ * - MC EBF circuits, PTFE patterns, etc.
  * - Reintroducing Refined Circuits from the ol' Nomi CE days (because Withers).
  * - Changing the number of circuit I/O per theme per step (because Withers).
- * - A rework of Quantum Circuits to add spice to them (Virtual Particle Synthesizer?)
  * - In-world crafting steps for Crystal Chips, because I love chaos >:3
  * - Spicier wetware circuits: more biochemistry, and SVat chanced outputs >:3
  * - A full Optical circuits rework based on my "Omicron Industries Training Protocol: Logistical Mastery" idea.
  * - Not touching Extradimensional Circuits much since they'll be affected by all of the above >:3
  */
-global.doComplexCircuits = packMode == "Insanity";
+global.doComplexProcessing = packMode == "Insanity";
 
 /* VIRTUAL PARTICLE SYNTHESIS
  * Ever found the whole "quantum" buzzword annoying and underwhelming?
@@ -207,5 +207,5 @@ const doHostileMicroverse = !!global.doHostileMicroverse;
 // Insanity-only toggles. Welcome to hell >:3 (Never let Withers cook again.)
 const doComplexPrismaC = !!global.doComplexPrismaC;
 const doComplexMicroverses = !!global.doComplexMicroverses;
-const doComplexCircuits = !!global.doComplexCircuits;
+const doComplexProcessing = !!global.doComplexProcessing;
 const doParticleSynthesis = !!global.doParticleSynthesis;

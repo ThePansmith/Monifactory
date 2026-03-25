@@ -135,21 +135,36 @@ ServerEvents.recipes(event => {
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
-    microverse_mission(event, 8, 3, undefined, undefined, 100).forEach(builder => {
-        builder
-            .itemInputs(
-                "64x gtceu:dilithium_gem",
-                "32x kubejs:wither_realm_data"
-            )
-            .damageRate((doComplexMicroverses ? 25 : (doHostileMicroverse ? -40 : 2)))
-            .itemOutputs(
-                "32x gtceu:quantum_star",
-                "16x gtceu:quantum_eye",
-                "4x gtceu:gravi_star",
-                "4x gtceu:neutronium_ingot"
-            )
-            .requiredMicroverse((doComplexMicroverses ? 7 : (doHostileMicroverse ? 2 : 1))) // Supercharged : Hostile : Normal
-    })
+    if (doParticleSynthesis) {
+        microverse_mission(event, 8, 3, undefined, undefined, 100).forEach(builder => {
+            builder
+                .itemInputs(
+                    "64x gtceu:dilithium_gem",
+                    "32x kubejs:wither_realm_data"
+                )
+                .damageRate((doComplexMicroverses ? 25 : (doHostileMicroverse ? -40 : 2)))
+                .itemOutputs(
+                    "5x gtceu:neutronium_ingot"
+                )
+                .requiredMicroverse((doComplexMicroverses ? 7 : (doHostileMicroverse ? 2 : 1))) // Supercharged : Hostile : Normal
+        })
+    } else {
+        microverse_mission(event, 8, 3, undefined, undefined, 100).forEach(builder => {
+            builder
+                .itemInputs(
+                    "64x gtceu:dilithium_gem",
+                    "32x kubejs:wither_realm_data"
+                )
+                .damageRate((doComplexMicroverses ? 25 : (doHostileMicroverse ? -40 : 2)))
+                .itemOutputs(
+                    "32x gtceu:quantum_star",
+                    "16x gtceu:quantum_eye",
+                    "4x gtceu:gravi_star",
+                    "4x gtceu:neutronium_ingot"
+                )
+                .requiredMicroverse((doComplexMicroverses ? 7 : (doHostileMicroverse ? 2 : 1))) // Supercharged : Hostile : Normal
+        })
+    }
 
     // T9MM missions
     microverse_mission(event, 9, 3, (doComplexMicroverses ? 180 : 280)).forEach(builder => {

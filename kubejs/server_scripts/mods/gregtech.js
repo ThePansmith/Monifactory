@@ -56,19 +56,21 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // Other Quantum Flux Recipes
-    event.recipes.gtceu.mixer("quantum_flux_hm")
-        .itemInputs("redstone_arsenal:flux_gem")
-        .inputFluids(Fluid.of("gtceu:mana", 250))
-        .itemOutputs("8x kubejs:quantum_flux")
-        .duration(100)
-        .EUt(480)
+    if (!doParticleSynthesis) {
+        event.recipes.gtceu.mixer("quantum_flux_hm")
+            .itemInputs("redstone_arsenal:flux_gem")
+            .inputFluids(Fluid.of("gtceu:mana", 250))
+            .itemOutputs("8x kubejs:quantum_flux")
+            .duration(100)
+            .EUt(480)
 
-    event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
-        .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
-        .inputFluids("gtceu:dragon_breath 500")
-        .itemOutputs("64x kubejs:quantum_flux")
-        .duration(50)
-        .EUt(GTValues.VA[GTValues.EV])
+        event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
+            .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
+            .inputFluids("gtceu:dragon_breath 500")
+            .itemOutputs("64x kubejs:quantum_flux")
+            .duration(50)
+            .EUt(GTValues.VA[GTValues.EV])
+    }
 
     // Remove Hot MV ingots (And molten fluid counterpart)
     event.remove([

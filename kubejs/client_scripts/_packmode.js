@@ -28,5 +28,5 @@ const doHostileMicroverse = !!global.doHostileMicroverse;
 // Insanity-only toggles. Welcome to hell >:3 (Never let Withers cook again.)
 const doComplexPrismaC = !!global.doComplexPrismaC;
 const doComplexMicroverses = !!global.doComplexMicroverses;
-const doComplexCircuits = !!global.doComplexCircuits;
+const doComplexProcessing = !!global.doComplexProcessing;
 const doParticleSynthesis = !!global.doParticleSynthesis;

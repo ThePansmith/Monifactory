@@ -1,7 +1,6 @@
 /**
  * Recipe definitions for basic microverse projector missions.
  * Builder method calls for inputs typically follow a certain order:
- * - Quantum Flux
  * - Fuel
  * - Drill head (if any)
  * - Gemstone Sensor/Power Thruster (if any)

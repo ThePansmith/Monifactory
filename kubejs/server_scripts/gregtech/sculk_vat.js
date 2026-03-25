@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 30)
         .EUt(GTValues.VHA[GTValues.MV])
 
-    if (doComplexCircuits) {
+    if (doComplexProcessing) {
         // Move Enriched Bacterial Sludge recipes from Brewery to Sculk Vat
         let sludge_inputs = [
             ["u235", "tiny_uranium_235_dust", 750, 2000],

@@ -46,20 +46,31 @@ ServerEvents.recipes(event => {
         })
 
         // Recipes to make quantum flux from planets' rock dusts
-        event.shaped(`${fluxCount + 1}x kubejs:quantum_flux`, [
-            " B ",
-            "BAB",
-            " B "
-        ], {
-            A: `#forge:gems/${planetResources[2]}`,
-            B: `kubejs:${planetResources[0]}_dust`
-        }).id(`kubejs:quantum_flux_from_${planetResources[0]}_dust`)
+        if (doParticleSynthesis) {
+            // Much more inefficient outside of the VPS
+            event.recipes.gtceu.mixer(`quantum_flux_from_${planetResources[0]}_dust`)
+                .itemInputs(`4x kubejs:${planetResources[0]}_dust`, `#forge:gems/${planetResources[2]}`)
+                .outputItemsRanged("kubejs:quantum_flux", 0, fluxCount + 1)
+                .duration(100)
+                .EUt(GTValues.VA[GTValues.HV])
 
-        event.recipes.gtceu.mixer(`quantum_flux_from_${planetResources[0]}_dust`)
-            .itemInputs(`4x kubejs:${planetResources[0]}_dust`, `#forge:gems/${planetResources[2]}`)
-            .itemOutputs(`${fluxCount + 1}x kubejs:quantum_flux`)
-            .duration(100)
-            .EUt(GTValues.VA[GTValues.HV])
+        } else {
+            event.shaped(`${fluxCount + 1}x kubejs:quantum_flux`, [
+                " B ",
+                "BAB",
+                " B "
+            ], {
+                A: `#forge:gems/${planetResources[2]}`,
+                B: `kubejs:${planetResources[0]}_dust`
+            }).id(`kubejs:quantum_flux_from_${planetResources[0]}_dust`)
+
+            event.recipes.gtceu.mixer(`quantum_flux_from_${planetResources[0]}_dust`)
+                .itemInputs(`4x kubejs:${planetResources[0]}_dust`, `#forge:gems/${planetResources[2]}`)
+                .itemOutputs(`${fluxCount + 1}x kubejs:quantum_flux`)
+                .duration(100)
+                .EUt(GTValues.VA[GTValues.HV])
+                
+        }
     })
 
     // Rock dust centrifuging
