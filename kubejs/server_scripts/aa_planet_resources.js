@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
             // Much more inefficient outside of the VPS
             event.recipes.gtceu.mixer(`quantum_flux_from_${planetResources[0]}_dust`)
                 .itemInputs(`4x kubejs:${planetResources[0]}_dust`, `#forge:gems/${planetResources[2]}`)
-                .outputItemsRanged("kubejs:quantum_flux", 0, fluxCount + 1)
+                .itemOutputsRanged("kubejs:quantum_flux", 0, fluxCount + 1)
                 .duration(100)
                 .EUt(GTValues.VA[GTValues.HV])
 
