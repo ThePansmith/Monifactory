@@ -116,10 +116,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(HF)2Ta")
 })
 
-// Guardian Scale Processing
+// Prismarine (Previously Guardian Scale) Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-    event.create("guardian_scale_slurry")
+    event.create("prismarine_slurry")
         .fluid()
         .color(0x8bbeaf)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
