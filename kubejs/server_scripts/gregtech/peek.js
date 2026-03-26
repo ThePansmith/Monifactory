@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:argon 200")
         .outputFluids("gtceu:fluorobenzene_gas_mixture 1000")
         .duration(300)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.mixer("4-4-difluorobenzophenone")
         .inputFluids("gtceu:fluorobenzene 1000", "gtceu:4-fluorobenzoyl_chloride 1000")
