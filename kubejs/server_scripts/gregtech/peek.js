@@ -9,10 +9,10 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.chemical_reactor("analine")
+    event.recipes.gtceu.chemical_reactor("aniline")
         .notConsumable("gtceu:palladium_dust")
         .inputFluids("gtceu:nitrobenzene 1000", "gtceu:hydrogen 6000")
-        .outputFluids("gtceu:analine 1000", "minecraft:water 2000")
+        .outputFluids("gtceu:aniline 1000", "minecraft:water 2000")
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.chemical_reactor("benzenediazonium_chloride")
-        .inputFluids("gtceu:analine 1000", "gtceu:hydrochloric_acid 1000", "gtceu:nitrous_acid 1000")
+        .inputFluids("gtceu:aniline 1000", "gtceu:hydrochloric_acid 1000", "gtceu:nitrous_acid 1000")
         .outputFluids("minecraft:water 2000")
         .itemOutputs("14x gtceu:benzenediazonium_chloride_dust")
         .duration(240)
