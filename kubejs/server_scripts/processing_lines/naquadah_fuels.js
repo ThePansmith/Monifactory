@@ -232,21 +232,23 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.ZPM])
     }
 
-    event.recipes.gtceu.fusion_reactor("exotic_particle_activation")
-        .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 72")
-        .outputFluids("gtceu:exotic_particle_solution 50")
-        .duration(128)
-        .category("gtceu:particle_acceleration")
-        .EUt(GTValues.VA[GTValues.UV])
-        .fusionStartEU(200000000)
+    if(!doParticleSynthesis) {
+        event.recipes.gtceu.fusion_reactor("exotic_particle_activation")
+            .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 72")
+            .outputFluids("gtceu:exotic_particle_solution 50")
+            .duration(128)
+            .category("gtceu:particle_acceleration")
+            .EUt(GTValues.VA[GTValues.UV])
+            .fusionStartEU(200000000)
 
-    event.recipes.gtceu.fusion_reactor("hyperdegenerate_activation")
-        .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:actinium 36")
-        .outputFluids("gtceu:hyperdegenerate_matter 25")
-        .duration(128)
-        .category("gtceu:particle_acceleration")
-        .EUt(GTValues.VA[GTValues.UHV])
-        .fusionStartEU(640000000)
+        event.recipes.gtceu.fusion_reactor("hyperdegenerate_activation")
+            .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:actinium 36")
+            .outputFluids("gtceu:hyperdegenerate_matter 25")
+            .duration(128)
+            .category("gtceu:particle_acceleration")
+            .EUt(GTValues.VA[GTValues.UHV])
+            .fusionStartEU(640000000)
+    }
 
     /*
     // Liquid Waste Processing
