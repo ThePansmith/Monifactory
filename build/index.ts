@@ -109,7 +109,7 @@ export const UpdateModsFolder = new Juke.Target({
     executes: () => {
         try {
             // Nuking mods folder before re-adding them in order to stay up to date
-            if(fs.existsSync("mods/")) fs.rmdirSync("mods/", { recursive: true })
+            if(fs.existsSync("mods/")) fs.rmSync("mods/", { recursive: true })
             fs.mkdirSync("mods/", { recursive: true })
             cpMods("mods/")
         } catch (error) {
