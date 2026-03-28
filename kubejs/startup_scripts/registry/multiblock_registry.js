@@ -89,7 +89,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("quintessence_infuser")
         .category("multiblock")
         .setEUIO("in")
-        .setMaxIOSize(2, 2, 1, 0)
+        .setMaxIOSize(2, 2, (doParticleSynthesis ? 2 : 1), 0)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(MoniGuiTextures.PROGRESS_BAR_XP, FillDirection.DOWN_TO_UP)
         .setSound(GTSoundEntries.CENTRIFUGE)

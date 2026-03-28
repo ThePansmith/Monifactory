@@ -65,13 +65,21 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:transcendental_spirit 48")
         .duration(200)
         .EUt(GTValues.VHA[GTValues.UV])
-
-    event.recipes.gtceu.quintessence_infuser("trans_matrix_infusion")
-        .itemInputs("kubejs:transcendental_soul_vial", "monilabs:crystal_matrix_ingot")
-        .inputFluids("gtceu:considerate_oils 200")
-        .itemOutputs("monilabs:transcendental_matrix_ingot", "enderio:empty_soul_vial")
-        .duration(128)
-        .EUt(GTValues.VHA[GTValues.ZPM])
+    if (doParticleSynthesis) {
+        event.recipes.gtceu.quintessence_infuser("trans_matrix_infusion")
+            .itemInputs("kubejs:transcendental_soul_vial", "monilabs:crystal_matrix_ingot")
+            .inputFluids("gtceu:considerate_oils 200", "kubejs:strange_matter_plasma 10")
+            .itemOutputs("monilabs:transcendental_matrix_ingot", "enderio:empty_soul_vial")
+            .duration(128)
+            .EUt(GTValues.VHA[GTValues.ZPM])
+    } else {
+        event.recipes.gtceu.quintessence_infuser("trans_matrix_infusion")
+            .itemInputs("kubejs:transcendental_soul_vial", "monilabs:crystal_matrix_ingot")
+            .inputFluids("gtceu:considerate_oils 200")
+            .itemOutputs("monilabs:transcendental_matrix_ingot", "enderio:empty_soul_vial")
+            .duration(128)
+            .EUt(GTValues.VHA[GTValues.ZPM])
+    }
 
     // this is horrible but i can't figure out how to get it to work more efficiently
     event.recipes.gtceu.macerator("crushed_circuit_ev")

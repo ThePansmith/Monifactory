@@ -474,19 +474,6 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     // Casings
-    event.recipes.gtceu.assembler("monilabs:eltz_casing")
-        .itemInputs("6x monilabs:eltz_plate", "monilabs:eltz_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
-        .itemOutputs("2x monilabs:eltz_casing")
-        .duration(100)
-        .EUt(GTValues.VHA[GTValues.ZPM])
-        .addMaterialInfo(true)
-
-    event.recipes.gtceu.assembler("kubejs:netherite_casing")
-        .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
-        .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
-        .duration(100)
-        .EUt(GTValues.VHA[GTValues.ZPM])
-        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("monilabs:bioalloy_casing")
         .itemInputs("4x monilabs:sculk_bioalloy_plate", "2x gtceu:cryolobus_frame", "4x kubejs:warden_horn", "6x gtceu:actinium_rod")
@@ -495,32 +482,31 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
 
-    event.recipes.gtceu.assembler("monilabs:bioalloy_fusion_casing")
-        .itemInputs("gtceu:uhv_machine_hull", "2x monilabs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
-        .itemOutputs("4x monilabs:bioalloy_fusion_casing")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.UHV])
-        .addMaterialInfo(true)
-
     if (doParticleSynthesis) {
-        event.recipes.gtceu.assembler("fieldstabilizedcompound")
-            .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")
-            .inputFluids("kubejs:higgs_g3 1000")
-            .itemOutputs("kubejs:field_stabilized_prismatic_pulsar_compound")
-            .duration(255)
-            .EUt(GTValues.VA[GTValues.UEV])
+        // Silly Particle Juice :)
 
-        event.recipes.gtceu.assembly_line("causality_exempt_monic_plating")
-            .itemInputs("3x gtceu:double_monium_plate", "8x monilabs:double_eltz_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "8x monilabs:double_eltz_plate", "3x gtceu:double_monium_plate")
-            .inputFluids("gtceu:living_soldering_alloy 2880", "kubejs:gluon_g3 1250") // Universe's Strongest Glue(TM)
-            .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
-            .duration(400)
-            .EUt(GTValues.VA[GTValues.UIV])
-            .stationResearch(b => b
-                .researchStack("kubejs:causality_exempt_monic_heavy_plating")
-                .CWUt(144, 57600)
-                .EUt(GTValues.VA[GTValues.UEV])
-            )
+        // Gluon-Reinforced Casings
+        event.recipes.gtceu.assembler("monilabs:eltz_casing")
+            .itemInputs("6x monilabs:eltz_plate", "monilabs:eltz_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
+            .itemOutputs("2x monilabs:eltz_casing")
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .addMaterialInfo(true)
+        
+        event.recipes.gtceu.assembler("kubejs:netherite_casing")
+            .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
+            .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .addMaterialInfo(true)
+
+        event.recipes.gtceu.assembler("monilabs:bioalloy_fusion_casing")
+            .itemInputs("gtceu:uhv_machine_hull", "2x monilabs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
+            .itemOutputs("4x monilabs:bioalloy_fusion_casing")
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .addMaterialInfo(true)
+
         event.recipes.gtceu.assembler("fluxed_eternium_plating")
             .itemInputs("gtceu:double_cryococcus_plate", "2x redstone_arsenal:flux_plating", "4x kubejs:quantum_flux", "2x gtceu:americium_foil")
             .inputFluids("kubejs:gluon_g1 200") // Universe's Strongest Glue(TM)
@@ -548,7 +534,67 @@ ServerEvents.recipes(event => {
             .duration(100)
             .itemOutputs("kubejs:dimensionally_stabilized_infinity_heavy_plating")
             .EUt(GTValues.VA[GTValues.UEV])
+
+        event.recipes.gtceu.assembler("fieldstabilizedcompound")
+            .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")
+            .inputFluids("kubejs:higgs_g3 1000")
+            .itemOutputs("kubejs:field_stabilized_prismatic_pulsar_compound")
+            .duration(255)
+            .EUt(GTValues.VA[GTValues.UEV])
+
+        event.recipes.gtceu.assembly_line("causality_exempt_monic_plating")
+            .itemInputs("3x gtceu:double_monium_plate", "8x monilabs:double_eltz_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "8x monilabs:double_eltz_plate", "3x gtceu:double_monium_plate")
+            .inputFluids("gtceu:living_soldering_alloy 2880", "kubejs:gluon_g3 1250") // Universe's Strongest Glue(TM)
+            .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
+            .duration(400)
+            .EUt(GTValues.VA[GTValues.UIV])
+            .stationResearch(b => b
+                .researchStack("kubejs:causality_exempt_monic_heavy_plating")
+                .CWUt(144, 57600)
+                .EUt(GTValues.VA[GTValues.UEV])
+            )
+            .EUt(GTValues.VA[GTValues.UEV])
+
+        event.recipes.gtceu.assembly_line("causality_exempt_monic_plating")
+            .itemInputs("3x gtceu:double_monium_plate", "8x monilabs:double_eltz_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "8x monilabs:double_eltz_plate", "3x gtceu:double_monium_plate")
+            .inputFluids("gtceu:living_soldering_alloy 2880", "kubejs:gluon_g3 1250") // Universe's Strongest Glue(TM)
+            .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
+            .duration(400)
+            .EUt(GTValues.VA[GTValues.UIV])
+            .stationResearch(b => b
+                .researchStack("kubejs:causality_exempt_monic_heavy_plating")
+                .CWUt(144, 57600)
+                .EUt(GTValues.VA[GTValues.UEV])
+            )
     } else {
+        // No silly particle juice :(
+        
+        // Casings
+        event.recipes.gtceu.assembler("monilabs:eltz_casing")
+            .itemInputs("6x monilabs:eltz_plate", "monilabs:eltz_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
+            .inputFluids("kubejs:gluon_g3 100")
+            .itemOutputs("2x monilabs:eltz_casing")
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .addMaterialInfo(true)
+        
+        event.recipes.gtceu.assembler("kubejs:netherite_casing")
+            .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
+            .inputFluids("kubejs:gluon_g2 50")
+            .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .addMaterialInfo(true)
+
+        event.recipes.gtceu.assembler("monilabs:bioalloy_fusion_casing")
+            .itemInputs("gtceu:uhv_machine_hull", "2x monilabs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
+            .inputFluids("kubejs:gluon_g2 100")
+            .itemOutputs("4x monilabs:bioalloy_fusion_casing")
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .addMaterialInfo(true)
+
+        // Misc stuff
         event.recipes.gtceu.assembler("fieldstabilizedcompound")
             .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")
             .itemOutputs("kubejs:field_stabilized_prismatic_pulsar_compound")
@@ -565,6 +611,7 @@ ServerEvents.recipes(event => {
                 .researchStack("kubejs:causality_exempt_monic_heavy_plating")
                 .CWUt(144, 57600)
                 .EUt(GTValues.VA[GTValues.UEV])
+            )
     }
 
     // Shortcut recipes for thrusters

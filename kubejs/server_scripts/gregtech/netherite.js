@@ -82,12 +82,21 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // Activated Nethline Line
-    event.recipes.gtceu.chemical_bath("reactive_netherite_cluster")
-        .itemInputs("kubejs:netherite_cluster")
-        .inputFluids("gtceu:berkelium 18")
-        .itemOutputs("kubejs:reactive_netherite_cluster")
-        .duration(300)
-        .EUt(GTValues.VA[GTValues.LuV])
+    if (doParticleSynthesis) {
+        event.recipes.gtceu.chemical_bath("reactive_netherite_cluster")
+            .itemInputs("kubejs:netherite_cluster")
+            .inputFluids("kubejs:w_z_g1 5")
+            .itemOutputs("kubejs:reactive_netherite_cluster")
+            .duration(300)
+            .EUt(GTValues.VA[GTValues.LuV])
+    } else {
+        event.recipes.gtceu.chemical_bath("reactive_netherite_cluster")
+            .itemInputs("kubejs:netherite_cluster")
+            .inputFluids("gtceu:berkelium 18")
+            .itemOutputs("kubejs:reactive_netherite_cluster")
+            .duration(300)
+            .EUt(GTValues.VA[GTValues.LuV])
+    }
 
     event.recipes.extendedcrafting.combination(
         "kubejs:activated_netherite_scrap",

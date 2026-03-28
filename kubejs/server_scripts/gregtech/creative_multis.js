@@ -28,17 +28,31 @@ ServerEvents.recipes(event => {
         .EUt(7864320)
 
     // Recipes used to run the creative multiblocks
-    event.recipes.gtceu.creative_energy_multi("kubejs:superfuel_infinite_power")
-        .inputFluids("gtceu:naquadah_superfuel 60")
-        .duration(20)
+    if (doParticleSynthesis) {
+        event.recipes.gtceu.creative_energy_multi("kubejs:superfuel_infinite_power")
+            .inputFluids("gtceu:naquadah_superfuel 120", "kubejs:w_z_g2 15")
+            .duration(40)
 
-    event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_neut_infinite_power")
-        .inputFluids("kubejs:antimatter_fuel 1000", "gtceu:neutronium 1000")
-        .duration(5333)
+        event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_degenerate_infinite_power")
+            .inputFluids("kubejs:antimatter_fuel 3550", "kubejs:degenerate_matter 3550")
+            .duration(5333)
 
-    event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_inf_infinite_power")
-        .inputFluids("kubejs:antimatter_fuel 86", "gtceu:infinity 86")
-        .duration(5333)
+        event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_qgp_infinite_power")
+            .inputFluids("kubejs:antimatter_fuel 86", "kubejs:quark_gluon_plasma 86")
+            .duration(5333)
+    } else {
+        event.recipes.gtceu.creative_energy_multi("kubejs:superfuel_infinite_power")
+            .inputFluids("gtceu:naquadah_superfuel 60")
+            .duration(20)
+
+        event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_neut_infinite_power")
+            .inputFluids("kubejs:antimatter_fuel 1000", "gtceu:neutronium 1000")
+            .duration(5333)
+
+        event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_inf_infinite_power")
+            .inputFluids("kubejs:antimatter_fuel 86", "gtceu:infinity 86")
+            .duration(5333)
+    }
 
     if (doQuantumCoolant) {
         event.recipes.gtceu.creative_data_multi("kubejs:infinite_research_hm_em")

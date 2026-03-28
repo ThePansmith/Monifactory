@@ -214,27 +214,54 @@ ServerEvents.recipes(event => {
 
     const eltz_forms = ["gem", "dust"]
 
-    eltz_forms.forEach(form => {
-        event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}`)
-            .itemInputs(`3x gtceu:impure_eltic_${form}`, "1x gtceu:carbon_dust")
-            .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
-            // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
-            .outputFluids("gtceu:carbon_monoxide 1000")
-            .duration(1540)
-            .blastFurnaceTemp(10600)
-            .EUt(GTValues.VA[GTValues.UV])
-            .circuit(1)
+    if (doParticleSynthesis) {
+        // Silly Particle Juice :)
 
-        // Gas-boosted
-        event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}_gas`)
-            .itemInputs(`3x gtceu:impure_eltic_${form}`, "1x gtceu:carbon_dust")
-            .inputFluids("gtceu:xenon 10")
-            .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
-            // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
-            .outputFluids("gtceu:carbon_monoxide 1000")
+        eltz_forms.forEach(form => {
+            // Strange Matter Plasma for stability
+            event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}_smp`)
+                .itemInputs(`3x gtceu:impure_eltic_${form}`, "1x gtceu:carbon_dust")
+                .inputFluids("kubejs:strange_matter_plasma 40") // Stabilizing superheavy elements since 2026
+                .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
+                .outputFluids("gtceu:carbon_monoxide 1000")
+                .duration(1155)
+                .blastFurnaceTemp(10600)
+                .EUt(GTValues.VA[GTValues.UV])
+
+        })
+
+        // SMP in dust too
+        event.remove({ output: "monilabs:eltz_ingot", input: "monilabs:eltz_dust" })
+        event.recipes.gtceu.electric_blast_furnace(`eltz_from_dust_smp`)
+            .itemInputs("monilabs:eltz_dust")
+            .inputFluids("kubejs:strange_matter_plasma 10") // Stabilizing superheavy elements since 2026
+            .itemOutputs("1x monilabs:eltz_ingot")
             .duration(1155)
             .blastFurnaceTemp(10600)
             .EUt(GTValues.VA[GTValues.UV])
-            .circuit(2)
-    })
+    } else {
+        // No silly particle juice :(
+        eltz_forms.forEach(form => {
+            event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}`)
+                .itemInputs(`3x gtceu:impure_eltic_${form}`, "1x gtceu:carbon_dust")
+                .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
+                // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
+                .outputFluids("gtceu:carbon_monoxide 1000")
+                .duration(1540)
+                .blastFurnaceTemp(10600)
+                .EUt(GTValues.VA[GTValues.UV])
+                .circuit(1)
+
+            // Gas-boosted
+            event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}_gas`)
+                .itemInputs(`3x gtceu:impure_eltic_${form}`, "1x gtceu:carbon_dust")
+                .inputFluids("gtceu:xenon 10")
+                .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
+                // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
+                .outputFluids("gtceu:carbon_monoxide 1000")
+                .duration(1155)
+                .blastFurnaceTemp(10600)
+                .EUt(GTValues.VA[GTValues.UV])
+        })
+    }
 })

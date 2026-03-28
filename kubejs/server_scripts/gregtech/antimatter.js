@@ -2,59 +2,105 @@
  * Antimatter-related recipes
  */
 ServerEvents.recipes(event => {
-    // Antimatter Creation
     const types = ["bosonic", "hadronic", "fermionic"]
-    types.forEach((type, index) => {
-        event.recipes.gtceu.antimatter_manipulation(`${type}_upgrade`)
-            .inputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
-            .inputFluidsRanged(`kubejs:${types[(index + 1) % types.length]}_antimatter`, 36, 144)
-            .outputFluidsRanged(`kubejs:refined_${type}_antimatter`, 36, 144)
-            .duration(200)
-            .EUt(GTValues.VA[GTValues.ZPM])
 
-        event.recipes.gtceu.antimatter_manipulation(`${type}_downgrade`)
-            .itemInputs("kubejs:protomatter")
-            .inputFluidsRanged(`kubejs:refined_${type}_antimatter`, 18, 72)
-            .outputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
-            .duration(200)
-            .EUt(GTValues.VA[GTValues.ZPM])
-    })
+    if (doParticleSynthesis) {
+        // Antimatter Creation
+        types.forEach((type, index) => {
+            event.recipes.gtceu.antimatter_manipulation(`${type}_upgrade`)
+                .inputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
+                .inputFluidsRanged(`kubejs:${types[(index + 1) % types.length]}_antimatter`, 36, 144)
+                .outputFluidsRanged(`kubejs:refined_${type}_antimatter`, 36, 144)
+                .duration(200)
+                .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.centrifuge("protomatter_separation")
-        .itemInputs("4x kubejs:protomatter")
-        .outputFluids("kubejs:bosonic_antimatter 4", "kubejs:hadronic_antimatter 4", "kubejs:fermionic_antimatter 4")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.UHV])
+            event.recipes.gtceu.antimatter_manipulation(`${type}_downgrade_g1`)
+                .inputFluidsRanged("kubejs:meson_g1", 50, 400)
+                .inputFluidsRanged(`kubejs:refined_${type}_antimatter`, 18, 72)
+                .outputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
+                .duration(200)
+                .EUt(GTValues.VA[GTValues.ZPM])
 
-    if (doComplexMicroverses) {
-        microverse_mission(event, 10, 3, 60).forEach(builder => {
-            builder
-                .inputFluids("gtceu:oxygen_plasma 16000")
-                .itemInputs("kubejs:microversal_alchemy_kit")
-                .inputFluids("gtceu:hydrogen 160000")
-                .inputFluids("gtceu:helium 40000")
-                .damageRate(-10)
-                .itemOutputs("64x kubejs:protomatter")
-                .requiredMicroverse(7) // Supercharged
+            event.recipes.gtceu.antimatter_manipulation(`${type}_downgrade_g2`)
+                .inputFluidsRanged("kubejs:meson_g2", 25, 200)
+                .inputFluidsRanged(`kubejs:refined_${type}_antimatter`, 18, 72)
+                .outputFluidsRanged(`kubejs:${type}_antimatter`, 144, 512)
+                .duration(200)
+                .EUt(GTValues.VA[GTValues.ZPM])
         })
+
+        event.recipes.gtceu.virtual_particle_synthesis("meson_g1_separation")
+            .inputFluids("kubejs:meson_g1 400")
+            .outputFluids("kubejs:bosonic_antimatter 4", "kubejs:hadronic_antimatter 4", "kubejs:fermionic_antimatter 4", "kubejs:degenerate_matter 200")
+            .duration(40)
+            .EUt(GTValues.VA[GTValues.UV])
+            .quantumRule(QuantumRule.QUANTUM_WAVES, IO.OUT)
+
+        event.recipes.gtceu.virtual_particle_synthesis("meson_g2_separation")
+            .inputFluids("kubejs:meson_g2 200")
+            .outputFluids("kubejs:bosonic_antimatter 16", "kubejs:hadronic_antimatter 16", "kubejs:fermionic_antimatter 16", "kubejs:degenerate_matter 200")
+            .duration(40)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .quantumRule(QuantumRule.QUANTUM_WAVES, IO.OUT)
+
+        event.recipes.gtceu.virtual_particle_synthesis("antimatter_fuel")
+            .inputFluids("kubejs:refined_bosonic_antimatter 288", "kubejs:refined_hadronic_antimatter 288", "kubejs:refined_fermionic_antimatter 288")
+            .outputFluids("kubejs:antimatter_fuel 144")
+            .duration(40)
+            .EUt(GTValues.VA[GTValues.UV])
+            .quantumRule(QuantumRule.QUANTUM_WAVES, IO.IN)
+
+        // Powergen Recipes
+        event.recipes.gtceu.anti_collider("annihilation_neutronium")
+            .inputFluids("kubejs:antimatter_fuel 1", "gtceu:neutronium 1")
+            .duration(1)
+            .EUt(-536870912 / 4)
+
+        event.recipes.gtceu.anti_collider("annihilation_qgp")
+            .inputFluids("kubejs:antimatter_fuel 1", "kubejs:quark_gluon_plasma 1")
+            .duration(1)
+            .EUt(-536870912 * 16)
     } else {
-        microverse_mission(event, 10, 3, 100).forEach(builder => {
-            builder
-                .inputFluids("gtceu:oxygen_plasma 16000")
-                .itemInputs("kubejs:microversal_alchemy_kit")
-                .inputFluids("gtceu:hydrogen 160000")
-                .inputFluids("gtceu:helium 40000")
-                .damageRate(15)
-                .itemOutputs("64x kubejs:protomatter")
-                .requiredMicroverse(4) // Corrupted
-        })
-    }
+        // Antimatter Creation
+        types.forEach((type, index) => {
+            event.recipes.gtceu.antimatter_manipulation(`${type}_upgrade`)
+                .inputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
+                .inputFluidsRanged(`kubejs:${types[(index + 1) % types.length]}_antimatter`, 36, 144)
+                .outputFluidsRanged(`kubejs:refined_${type}_antimatter`, 36, 144)
+                .duration(200)
+                .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.antimatter_manipulation("antimatter_fuel")
-        .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")
-        .outputFluids("kubejs:antimatter_fuel 36")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UHV])
+            event.recipes.gtceu.antimatter_manipulation(`${type}_downgrade`)
+                .itemInputs("kubejs:protomatter")
+                .inputFluidsRanged(`kubejs:refined_${type}_antimatter`, 18, 72)
+                .outputFluidsRanged(`kubejs:${type}_antimatter`, 72, 288)
+                .duration(200)
+                .EUt(GTValues.VA[GTValues.ZPM])
+        })
+
+        event.recipes.gtceu.centrifuge("protomatter_separation")
+            .itemInputs("4x kubejs:protomatter")
+            .outputFluids("kubejs:bosonic_antimatter 4", "kubejs:hadronic_antimatter 4", "kubejs:fermionic_antimatter 4")
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.UHV])
+
+        event.recipes.gtceu.antimatter_manipulation("antimatter_fuel")
+            .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")
+            .outputFluids("kubejs:antimatter_fuel 36")
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.UHV])
+
+        // Powergen Recipes
+        event.recipes.gtceu.anti_collider("annihilation_neutronium")
+            .inputFluids("kubejs:antimatter_fuel 1", "gtceu:neutronium 1")
+            .duration(1)
+            .EUt(-536870912)
+
+        event.recipes.gtceu.anti_collider("annihilation_infinity")
+            .inputFluids("kubejs:antimatter_fuel 1", "gtceu:infinity 1")
+            .duration(1)
+            .EUt(-536870912 * 16)
+    }
 
     // Controller Recipes
     event.recipes.gtceu.assembly_line("antimatter_manipulator")
@@ -83,14 +129,28 @@ ServerEvents.recipes(event => {
         )
         .addMaterialInfo(true)
 
-    // Powergen Recipes
-    event.recipes.gtceu.anti_collider("annihilation_neutronium")
-        .inputFluids("kubejs:antimatter_fuel 1", "gtceu:neutronium 1")
-        .duration(1)
-        .EUt(-536870912)
-
-    event.recipes.gtceu.anti_collider("annihilation_infinity")
-        .inputFluids("kubejs:antimatter_fuel 1", "gtceu:infinity 1")
-        .duration(1)
-        .EUt(-536870912 * 16)
+    // Protomatter
+    if (doComplexMicroverses) {
+        microverse_mission(event, 10, 3, 60).forEach(builder => {
+            builder
+                .inputFluids("gtceu:oxygen_plasma 16000")
+                .itemInputs("kubejs:microversal_alchemy_kit")
+                .inputFluids("gtceu:hydrogen 160000")
+                .inputFluids("gtceu:helium 40000")
+                .damageRate(-10)
+                .itemOutputs("64x kubejs:protomatter")
+                .requiredMicroverse(7) // Supercharged
+        })
+    } else {
+        microverse_mission(event, 10, 3, 100).forEach(builder => {
+            builder
+                .inputFluids("gtceu:oxygen_plasma 16000")
+                .itemInputs("kubejs:microversal_alchemy_kit")
+                .inputFluids("gtceu:hydrogen 160000")
+                .inputFluids("gtceu:helium 40000")
+                .damageRate(15)
+                .itemOutputs("64x kubejs:protomatter")
+                .requiredMicroverse(4) // Corrupted
+        })
+    }
 })

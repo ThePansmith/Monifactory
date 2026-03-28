@@ -58,21 +58,36 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     // Large Naquadah Reactor usage
-    event.recipes.gtceu.large_naquadah_reactor("kubejs:process_crude_fuel")
-        .inputFluids("gtceu:crude_naquadah_fuel 20")
-        // .outputFluids("gtceu:crude_naquadah_fuel_depleted 20")
-        .duration(40)
-        .EUt(-GTValues.V[GTValues.UV], 24)
+    if (doParticleSynthesis) {
+        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_crude_fuel")
+            .inputFluids("gtceu:crude_naquadah_fuel 20", "kubejs:w_z_g1 5")
+            .duration(80)
+            .EUt(-GTValues.V[GTValues.UV], 12)
 
-    event.recipes.gtceu.large_naquadah_reactor("kubejs:process_fuel")
-        .inputFluids("gtceu:naquadah_fuel 30")
-        // .outputFluids("gtceu:naquadah_fuel_depleted 30")
-        .duration(40)
-        .EUt(-GTValues.V[GTValues.UHV], 32)
+        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_fuel")
+            .inputFluids("gtceu:naquadah_fuel 30", "kubejs:w_z_g1 10")
+            .duration(80)
+            .EUt(-GTValues.V[GTValues.UHV], 16)
 
-    event.recipes.gtceu.large_naquadah_reactor("kubejs:process_superfuel")
-        .inputFluids("gtceu:naquadah_superfuel 40")
-        // .outputFluids("gtceu:naquadah_superfuel_depleted 50")
-        .duration(40)
-        .EUt(-GTValues.V[GTValues.UHV], 64)
+        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_superfuel", "kubejs:w_z_g2 5")
+            .inputFluids("gtceu:naquadah_superfuel 40")
+            .duration(80)
+            .EUt(-GTValues.V[GTValues.UHV], 32)
+    } else {
+        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_crude_fuel")
+            .inputFluids("gtceu:crude_naquadah_fuel 20")
+            .duration(80)
+            .EUt(-GTValues.V[GTValues.UV], 12)
+
+        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_fuel")
+            .inputFluids("gtceu:naquadah_fuel 30")
+            .duration(80)
+            .EUt(-GTValues.V[GTValues.UHV], 16)
+
+        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_superfuel")
+            .inputFluids("gtceu:naquadah_superfuel 40")
+            .duration(80)
+            .EUt(-GTValues.V[GTValues.UHV], 32)
+
+    }
 })
