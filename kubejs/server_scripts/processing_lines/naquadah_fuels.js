@@ -119,12 +119,12 @@ ServerEvents.recipes(event => {
     // Cracker Recipes
     // Put tha "Naquadah" in "Naquadah Fuel" except when you use neutronium lmao
     let isotopes = [
-        ["light", "light_naquadah_isotope_fraction"],
-        ["medium", "medium_naquadah_isotope_fraction"],
-        ["heavy", "heavy_naquadah_isotope_fraction"],
-        ["sludge", "naquadah_isotope_sludge"],
-        ["heavy_residue", "heavy_atomic_residue"],
-        ["superheavy_residue", "superheavy_atomic_residue"]
+        ["light", "light_naquadah_isotope_fraction", 1],
+        ["medium", "medium_naquadah_isotope_fraction", 1],
+        ["heavy", "heavy_naquadah_isotope_fraction", 1],
+        ["sludge", "naquadah_isotope_sludge", 2],
+        ["heavy_residue", "heavy_atomic_residue", 1],
+        ["superheavy_residue", "superheavy_atomic_residue", 2]
     ]
 
     let cracking_mats = [
@@ -134,17 +134,29 @@ ServerEvents.recipes(event => {
         ["neutronium", 2],
     ]
 
-    isotopes.forEach(isotope => {
-        cracking_mats.forEach((cracking_mat, mat_tier) => {
-            event.recipes.gtceu.fusion_reactor(`${isotope[0]}_isotope_cracking_fusion_${cracking_mat[0]}`)
-                .inputFluids(`gtceu:${isotope[1]} 125`, `gtceu:${cracking_mat[0]} ${cracking_mat[1]}`)
+    if (doParticleSynthesis) {
+        isotopes.forEach(isotope => {
+            event.recipes.gtceu.fusion_reactor(`${isotope[0]}_isotope_cracking_fusion_boson`)
+                .inputFluids(`gtceu:${isotope[1]} 125`, `kubejs:w_z_g${isotope[2]} 25`) // Decay In A Bottle(TM)
                 .outputFluids(`gtceu:cracked_${isotope[1]} 125`)
-                .duration(60 / (1 + Math.floor(mat_tier / 2)))
+                .duration(30)
                 .category("gtceu:particle_acceleration")
-                .EUt(GTValues.VA[GTValues.IV + Math.floor(mat_tier / 2)])
-                .fusionStartEU(120000000 * (Math.floor(mat_tier / 2) + 1))
+                .EUt(GTValues.VA[GTValues.IV + isotope[2]])
+                .fusionStartEU(120000000 * (isotope[2] + 1))
         })
-    })
+    } else {
+        isotopes.forEach(isotope => {
+            cracking_mats.forEach((cracking_mat, mat_tier) => {
+                event.recipes.gtceu.fusion_reactor(`${isotope[0]}_isotope_cracking_fusion_${cracking_mat[0]}`)
+                    .inputFluids(`gtceu:${isotope[1]} 125`, `gtceu:${cracking_mat[0]} ${cracking_mat[1]}`)
+                    .outputFluids(`gtceu:cracked_${isotope[1]} 125`)
+                    .duration(60 / (1 + Math.floor(mat_tier / 2)))
+                    .category("gtceu:particle_acceleration")
+                    .EUt(GTValues.VA[GTValues.IV + Math.floor(mat_tier / 2)])
+                    .fusionStartEU(120000000 * (Math.floor(mat_tier / 2) + 1))
+            })
+        })
+    }
 
     // Fraction Distillation
     event.recipes.gtceu.distillation_tower("light_isotope_distillation")
@@ -233,6 +245,7 @@ ServerEvents.recipes(event => {
     }
 
     if(!doParticleSynthesis) {
+        // Handled in the VPS file if VPS is on
         event.recipes.gtceu.fusion_reactor("exotic_particle_activation")
             .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 72")
             .outputFluids("gtceu:exotic_particle_solution 50")
@@ -360,4 +373,19 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:duranium_dust", 1000, 0)
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV])
+
+    if (doParticleSynthesis) {
+        event.recipes.gtceu.virtual_particle_synthesizer("naquadah_waste_accelerated_decay")
+            .itemInputs("4x kubejs:naquadah_waste")
+            .inputFluids("kubejs:w_z_g1 50") // Decay In A Bottle(TM)
+            .itemOutputs(
+                "gtceu:trinium_dust",
+                "gtceu:curium_dust",
+                "gtceu:duranium_dust",
+                "3x gtceu:lead_dust"
+            )
+            .duration(40)
+            .EUt(GTValues.VA[GTValues.IV])
+        .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.OUT)
+    }
 })

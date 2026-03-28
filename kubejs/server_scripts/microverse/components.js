@@ -61,18 +61,7 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/ev"
     })
 
-    // Warp Core
-    event.recipes.gtceu.shaped("kubejs:warp_core", [
-        "LTL",
-        "TNT",
-        "LTL"
-    ], {
-        L: "gtceu:lumium_block",
-        N: "gtceu:nether_star_block",
-        T: "gtceu:titanium_block"
-    })
-
-    // Warp Controller
+    // Warp Controller (It's a computer, no need for silly quantum juice)
     event.recipes.gtceu.shaped("kubejs:warp_controller", [
         "SMS",
         "CHC",
@@ -84,40 +73,221 @@ ServerEvents.recipes(event => {
         S: "gtceu:ev_sensor"
     })
 
-    // Universal Warp Core
-    if (doComplexPrismaC) {
-        event.recipes.gtceu.discharger("universal_warp_core")
-            .itemInputs("4x gtceu:void_block", "kubejs:warp_core", "kubejs:photonic_stabilizer", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
-            .itemOutputs("kubejs:universal_warp_core")
-            .duration(10)
-    } else {
-        event.recipes.gtceu.discharger("universal_warp_core")
-            .itemInputs("4x gtceu:void_block", "kubejs:warp_core", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
-            .itemOutputs("kubejs:universal_warp_core")
-            .duration(10)
-    }
-
     // Universal Warp Controller
     event.recipes.gtceu.discharger("universal_warp_controller")
         .itemInputs("4x gtceu:double_naquadria_plate", "2x #gtceu:circuits/luv", "kubejs:warp_controller", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())
         .itemOutputs("kubejs:universal_warp_controller")
         .duration(10)
 
-    // Warp engine
-    event.recipes.gtceu.assembly_line("warp_engine")
-        .itemInputs("gtceu:microversium_frame",
-            "6x gtceu:enderium_plate",
-            "8x ae2:quantum_ring",
-            "ae2:quantum_link",
-            "2x #forge:plates/crystal_matrix",
-            "2x gtceu:iv_field_generator",
-            "kubejs:fluxed_thruster",
-            "kubejs:dark_soularium_thruster")
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("ae2:quantum_ring").EUt(480).duration(1200))
-        .itemOutputs("kubejs:warp_engine")
-        .inputFluids("gtceu:advanced_soldering_alloy 576")
-        .duration(1800)
-        .EUt(30720)
+    if (doParticleSynthesis) {
+        // Silly Particle Juice :)
+
+        event.recipes.gtceu.assembler("warp_core")
+            .itemInputs(
+                "16x gtceu:double_lumium_plate",
+                "16x gtceu:double_titanium_plate",
+                "gtceu:nether_star_block"
+            )
+            .inputFluids("kubejs:higgs_g1 2000") // Gravity In A Bottle(TM)
+            .duration(80)
+            .itemOutputs("kubejs:warp_core")
+            .EUt(GTValues.VA[GTValues.IV])
+
+        // Universal Warp Core
+        if (doComplexPrismaC) {
+            event.recipes.gtceu.discharger("universal_warp_core")
+                .itemInputs("4x gtceu:void_block", "kubejs:warp_core", "kubejs:photonic_stabilizer", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
+                .inputFluids("kubejs:higgs_g2 2000") // Gravity In A Bottle(TM)
+                .itemOutputs("kubejs:universal_warp_core")
+                .duration(10)
+        } else {
+            event.recipes.gtceu.discharger("universal_warp_core")
+                .itemInputs("4x gtceu:void_block", "kubejs:warp_core", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
+                .inputFluids("kubejs:higgs_g2 2000") // Gravity In A Bottle(TM)
+                .itemOutputs("kubejs:universal_warp_core")
+                .duration(10)
+        }
+
+        // Warp engine
+        event.recipes.gtceu.assembly_line("warp_engine")
+            .itemInputs("gtceu:microversium_frame",
+                "6x gtceu:enderium_plate",
+                "8x ae2:quantum_ring",
+                "ae2:quantum_link",
+                "2x #forge:plates/crystal_matrix",
+                "2x gtceu:iv_field_generator",
+                "kubejs:fluxed_thruster",
+                "kubejs:dark_soularium_thruster")
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("ae2:quantum_ring").EUt(480).duration(1200))
+            .itemOutputs("kubejs:warp_engine")
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "kubejs:higgs_g1 2000") // Gravity In A Bottle(TM)
+            .duration(1800)
+            .EUt(30720)   
+
+        // Potential ingredient additions: Bolts, Screws, Plates, Wires, circuits, frame boxes
+        event.recipes.gtceu.assembly_line("gravitational_amplifier")
+            .itemOutputs("kubejs:gravitational_amplifier")
+            .itemInputs(
+                "8x ae2:singularity",
+                "4x gtceu:gravi_star",
+                Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
+                "gtceu:zpm_field_generator",
+                "12x redstone_arsenal:flux_plating",
+                "16x gtceu:enderium_foil",
+                "16x gtceu:darmstadtium_bolt",
+                "5x gtceu:fusion_glass")
+            .inputFluids(
+                "gtceu:living_soldering_alloy 864",
+                "gtceu:naquadria 576",
+                "gtceu:polybenzimidazole 288",
+                "kubejs:higgs_g2 800"
+            )   // Gravity In A Bottle(TM)
+            .duration(1000)
+            .EUt(GTValues.VA[GTValues.UV])
+            .stationResearch(builder => builder
+                .researchStack("ae2:singularity")
+                .CWUt(64, 256000)
+                .EUt(GTValues.VA[GTValues.UV])
+            )
+        event.recipes.gtceu.assembly_line("universal_collapse_device")
+            .itemOutputs("kubejs:universal_collapse_device")
+            .itemInputs(
+                "2x kubejs:gravitational_amplifier",
+                "16x thermal:nuke_tnt",
+                "16x kubejs:quantum_flux",
+                "gtceu:uv_field_generator",
+                "kubejs:universal_warp_core",
+                "kubejs:universal_warp_controller",
+                "4x kubejs:universe_resistant_neutronium_heavy_plating",
+                "12x gtceu:styrene_butadiene_rubber_foil"
+            )
+            .inputFluids(
+                "gtceu:living_soldering_alloy 1152",
+                "monilabs:crystal_matrix 576",
+                "gtceu:microversium 1152",
+                "kubejs:higgs_g2 1000"
+            )   // Gravity In A Bottle(TM)
+                // G3 regrettably is post-heart. But I'll use it later.
+            .duration(1000)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .stationResearch(builder => builder
+                .researchStack("kubejs:gravitational_amplifier")
+                .CWUt(108, 512000)
+                .EUt(GTValues.VA[GTValues.UHV])
+            )
+
+        // Believe it or not, this is even less how a nuke is made.
+        event.recipes.gtceu.assembler("nuke_tnt_itnt")
+            .itemOutputs("thermal:nuke_tnt")
+            .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "3x gtceu:industrial_tnt", "3x gtceu:dense_steel_plate")
+            .inputFluids("kubejs:w_z_g1 500") // Decay In A Bottle(TM)
+            .EUt(GTValues.VA[GTValues.LuV])
+            .duration(500)
+        event.recipes.gtceu.assembler("nuke_tnt_regular_tnt")
+            .itemOutputs("thermal:nuke_tnt")
+            .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "12x minecraft:tnt", "3x gtceu:dense_steel_plate")
+            .inputFluids("kubejs:w_z_g1 500") // Decay In A Bottle(TM)
+            .EUt(GTValues.VA[GTValues.LuV])
+            .duration(500)
+
+    } else {
+        // No Silly particle juice :(
+
+        // Warp Core
+        event.recipes.gtceu.shaped("kubejs:warp_core", [
+            "LTL",
+            "TNT",
+            "LTL"
+        ], {
+            L: "gtceu:lumium_block",
+            N: "gtceu:nether_star_block",
+            T: "gtceu:titanium_block"
+        })
+
+        // Universal Warp Core
+        if (doComplexPrismaC) {
+            event.recipes.gtceu.discharger("universal_warp_core")
+                .itemInputs("4x gtceu:void_block", "kubejs:warp_core", "kubejs:photonic_stabilizer", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
+                .itemOutputs("kubejs:universal_warp_core")
+                .duration(10)
+        } else {
+            event.recipes.gtceu.discharger("universal_warp_core")
+                .itemInputs("4x gtceu:void_block", "kubejs:warp_core", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
+                .itemOutputs("kubejs:universal_warp_core")
+                .duration(10)
+        }
+
+        // Warp engine
+        event.recipes.gtceu.assembly_line("warp_engine")
+            .itemInputs("gtceu:microversium_frame",
+                "6x gtceu:enderium_plate",
+                "8x ae2:quantum_ring",
+                "ae2:quantum_link",
+                "2x #forge:plates/crystal_matrix",
+                "2x gtceu:iv_field_generator",
+                "kubejs:fluxed_thruster",
+                "kubejs:dark_soularium_thruster")
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("ae2:quantum_ring").EUt(480).duration(1200))
+            .itemOutputs("kubejs:warp_engine")
+            .inputFluids("gtceu:advanced_soldering_alloy 576")
+            .duration(1800)
+            .EUt(30720)   
+
+        // Potential ingredient additions: Bolts, Screws, Plates, Wires, circuits, frame boxes
+        event.recipes.gtceu.assembly_line("gravitational_amplifier")
+            .itemOutputs("kubejs:gravitational_amplifier")
+            .itemInputs(
+                "8x ae2:singularity",
+                "4x gtceu:gravi_star",
+                Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
+                "gtceu:zpm_field_generator",
+                "12x redstone_arsenal:flux_plating",
+                "16x gtceu:enderium_foil",
+                "16x gtceu:darmstadtium_bolt",
+                "5x gtceu:fusion_glass")
+            .inputFluids("gtceu:living_soldering_alloy 864", "gtceu:naquadria 576", "gtceu:polybenzimidazole 288")
+            .duration(1000)
+            .EUt(GTValues.VA[GTValues.UV])
+            .stationResearch(builder => builder
+                .researchStack("ae2:singularity")
+                .CWUt(64, 256000)
+                .EUt(GTValues.VA[GTValues.UV])
+            )
+        event.recipes.gtceu.assembly_line("universal_collapse_device")
+            .itemOutputs("kubejs:universal_collapse_device")
+            .itemInputs(
+                "2x kubejs:gravitational_amplifier",
+                "16x thermal:nuke_tnt",
+                "16x kubejs:quantum_flux",
+                "gtceu:uv_field_generator",
+                "kubejs:universal_warp_core",
+                "kubejs:universal_warp_controller",
+                "4x kubejs:universe_resistant_neutronium_heavy_plating",
+                "12x gtceu:styrene_butadiene_rubber_foil"
+            )
+            .inputFluids("gtceu:living_soldering_alloy 1152", "monilabs:crystal_matrix 576", "gtceu:microversium 1152")
+            .duration(1000)
+            .EUt(GTValues.VA[GTValues.UHV])
+            .stationResearch(builder => builder
+                .researchStack("kubejs:gravitational_amplifier")
+                .CWUt(108, 512000)
+                .EUt(GTValues.VA[GTValues.UHV])
+            )
+
+        // Believe it or not, this is not how a nuke is made.
+        event.recipes.gtceu.assembler("nuke_tnt_itnt")
+            .itemOutputs("thermal:nuke_tnt")
+            .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "3x gtceu:industrial_tnt", "3x gtceu:dense_steel_plate")
+            .inputFluids("gtceu:deuterium 500")
+            .EUt(GTValues.VA[GTValues.LuV])
+            .duration(500)
+        event.recipes.gtceu.assembler("nuke_tnt_regular_tnt")
+            .itemOutputs("thermal:nuke_tnt")
+            .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "12x minecraft:tnt", "3x gtceu:dense_steel_plate")
+            .inputFluids("gtceu:deuterium 500")
+            .EUt(GTValues.VA[GTValues.LuV])
+            .duration(500)
+    }
 
     // Supercharged laser array
     event.recipes.gtceu.chemical_reactor("supercharged_laser_array")
@@ -295,59 +465,4 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:potion", 750, { Potion: "minecraft:awkward" }))
         .EUt(GTValues.VA[GTValues.EV])
         .duration(500)
-
-    // Believe it or not, this is not how a nuke is made.
-    event.recipes.gtceu.assembler("nuke_tnt_itnt")
-        .itemOutputs("thermal:nuke_tnt")
-        .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "3x gtceu:industrial_tnt", "3x gtceu:dense_steel_plate")
-        .inputFluids("gtceu:deuterium 500")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(500)
-    event.recipes.gtceu.assembler("nuke_tnt_regular_tnt")
-        .itemOutputs("thermal:nuke_tnt")
-        .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "12x minecraft:tnt", "3x gtceu:dense_steel_plate")
-        .inputFluids("gtceu:deuterium 500")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(500)
-
-    // Potential ingredient additions: Bolts, Screws, Plates, Wires, circuits, frame boxes
-    event.recipes.gtceu.assembly_line("gravitational_amplifier")
-        .itemOutputs("kubejs:gravitational_amplifier")
-        .itemInputs(
-            "8x ae2:singularity",
-            "4x gtceu:gravi_star",
-            Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
-            "gtceu:zpm_field_generator",
-            "12x redstone_arsenal:flux_plating",
-            "16x gtceu:enderium_foil",
-            "16x gtceu:darmstadtium_bolt",
-            "5x gtceu:fusion_glass")
-        .inputFluids("gtceu:living_soldering_alloy 864", "gtceu:naquadria 576", "gtceu:polybenzimidazole 288")
-        .duration(1000)
-        .EUt(GTValues.VA[GTValues.UV])
-        .stationResearch(builder => builder
-            .researchStack("ae2:singularity")
-            .CWUt(64, 256000)
-            .EUt(GTValues.VA[GTValues.UV])
-        )
-    event.recipes.gtceu.assembly_line("universal_collapse_device")
-        .itemOutputs("kubejs:universal_collapse_device")
-        .itemInputs(
-            "2x kubejs:gravitational_amplifier",
-            "16x thermal:nuke_tnt",
-            "16x kubejs:quantum_flux",
-            "gtceu:uv_field_generator",
-            "kubejs:universal_warp_core",
-            "kubejs:universal_warp_controller",
-            "4x kubejs:universe_resistant_neutronium_heavy_plating",
-            "12x gtceu:styrene_butadiene_rubber_foil"
-        )
-        .inputFluids("gtceu:living_soldering_alloy 1152", "monilabs:crystal_matrix 576", "gtceu:microversium 1152")
-        .duration(1000)
-        .EUt(GTValues.VA[GTValues.UHV])
-        .stationResearch(builder => builder
-            .researchStack("kubejs:gravitational_amplifier")
-            .CWUt(108, 512000)
-            .EUt(GTValues.VA[GTValues.UHV])
-        )
 })

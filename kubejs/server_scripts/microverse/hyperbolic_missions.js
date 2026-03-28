@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
                 "kubejs:gravitational_amplifier",
                 "64x gtceu:gravi_star"
             )
-            .inputFluids("gtceu:crude_naquadah_fuel 500")
+            .inputFluids("gtceu:crude_naquadah_fuel 500", "kubejs:higgs_g3 6400")
             .damageRate(2)
             .itemOutputs(
                 "64x kubejs:quasi_stable_neutron_star"
@@ -106,9 +106,15 @@ ServerEvents.recipes(event => {
     if (doComplexMicroverses) {
         microverse_mission(event, 12, 4, 60).forEach(builder => {
             builder
-                .itemInputs("kubejs:field_stabilized_prismatic_pulsar_compound", "64x gtceu:infinity_ingot", "64x gtceu:meta_null_ingot")
+                .itemInputs(
+                    "monilabs:shard_of_causality",
+                    "kubejs:field_stabilized_prismatic_pulsar_compound",
+                    "64x gtceu:infinity_ingot",
+                    "64x gtceu:meta_null_ingot"                    
+                )
+                .inputFluids("kubejs:quark_gluon_plasma 2000")
                 .damageRate(20)
-                .itemOutputs("64x gtceu:monium_ingot")
+                .itemOutputs("64x gtceu:monium_ingot", "64x gtceu:monium_ingot")
                 .requiredMicroverse(7) // Supercharged
                 .updateMicroverse(8) // Degenerate
                 .blacklistMicroverseParallels()
