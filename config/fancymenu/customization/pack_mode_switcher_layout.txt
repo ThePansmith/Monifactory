@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_mode_switcher
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1773166049850
+  last_edited_time = 1773799406380
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:d4beec06-800d-42ac-8cd5-820bd289b5cb-1773166040099] = [groups:][instances:]
+  [loading_requirement_container_meta:aecfd868-5a95-4f75-a02e-c733e2010f7c-1773799385458] = [groups:][instances:]
 }
 
 customization {
@@ -414,7 +414,7 @@ element {
 element {
   button_element_executable_block_identifier = 92ed1469-8731-4014-a6f6-ddf8da048886-1756055758125
   [executable_action_instance:c1d59a6f-992a-4019-8987-7f9e0f044f40-1756071575544][action_type:savetmpmodefileaction] = I
-  [executable_action_instance:560e6348-4d56-4b2b-9977-25d99f8093de-1756058476853][action_type:opengui] = restart_game_em
+  [executable_action_instance:560e6348-4d56-4b2b-9977-25d99f8093de-1756058476853][action_type:opengui] = restart_game_im
   [executable_block:92ed1469-8731-4014-a6f6-ddf8da048886-1756055758125][type:generic] = [executables:c1d59a6f-992a-4019-8987-7f9e0f044f40-1756071575544;560e6348-4d56-4b2b-9977-25d99f8093de-1756058476853;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false

@@ -10,6 +10,8 @@ custom_gui {
   transparent_world_background = false
   transparent_world_background_overlay = false
   pause_game = false
+  popup_mode = false
+  popup_mode_background_overlay = true
 }
 
 custom_gui {
@@ -19,6 +21,8 @@ custom_gui {
   transparent_world_background = true
   transparent_world_background_overlay = true
   pause_game = true
+  popup_mode = false
+  popup_mode_background_overlay = true
 }
 
 custom_gui {
@@ -28,6 +32,8 @@ custom_gui {
   transparent_world_background = true
   transparent_world_background_overlay = true
   pause_game = true
+  popup_mode = false
+  popup_mode_background_overlay = true
 }
 
 custom_gui {
@@ -37,6 +43,8 @@ custom_gui {
   transparent_world_background = false
   transparent_world_background_overlay = false
   pause_game = false
+  popup_mode = false
+  popup_mode_background_overlay = true
 }
 
 custom_gui {
@@ -46,6 +54,19 @@ custom_gui {
   transparent_world_background = true
   transparent_world_background_overlay = true
   pause_game = true
+  popup_mode = false
+  popup_mode_background_overlay = true
+}
+
+custom_gui {
+  identifier = restart_game_im
+  title = Are you sure you want to do this?
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+  popup_mode = false
+  popup_mode_background_overlay = true
 }
 
 custom_gui {
@@ -55,6 +76,8 @@ custom_gui {
   transparent_world_background = false
   transparent_world_background_overlay = true
   pause_game = true
+  popup_mode = false
+  popup_mode_background_overlay = true
 }
 
 custom_gui {
@@ -64,5 +87,7 @@ custom_gui {
   transparent_world_background = false
   transparent_world_background_overlay = true
   pause_game = true
+  popup_mode = false
+  popup_mode_background_overlay = true
 }
 
