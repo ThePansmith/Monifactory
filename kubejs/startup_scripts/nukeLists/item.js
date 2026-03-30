@@ -187,8 +187,13 @@ global.itemNukeList = [
 
     // KubeJS
     "kubejs:debug_ctm_block",
-    "kubejs:corrupted_universe_data",
     "kubejs:shattered_universe_data",
+    "kubejs:corrupted_universe_data",
+    "kubejs:hostile_universe_data",
+    "kubejs:abyssal_universe_data",
+    "kubejs:necrosed_universe_data",
+    "kubejs:supercharged_universe_data",
+    "kubejs:degenerate_universe_data",
 
     // LaserIO
     "laserio:logic_chip",

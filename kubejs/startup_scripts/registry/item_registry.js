@@ -88,8 +88,15 @@ StartupEvents.registry("item", event => {
         .displayName("§dQuantum Flux")
     event.create("universe_creation_data")
         .displayName("§dUniverse Creation Data")
+
     event.create("shattered_universe_data")
     event.create("corrupted_universe_data")
+    event.create("hostile_universe_data")
+    event.create("necrosed_universe_data")
+    event.create("abyssal_universe_data")
+    event.create("supercharged_universe_data")
+    event.create("degenerate_universe_data")
+
 
     // Miner kits
     event.create("gem_sensor")

@@ -568,7 +568,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV])
 
         event.recipes.gtceu.assembler("dimensional_infinity_plating")
-            .itemInputs("gtceu:double_infinity_plate", "2x gtceu:activated_netherite_plate", "2x kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "gtceu:infinity_plate", "4x gtceu:null_foil")
+            .itemInputs("gtceu:double_infinity_plate", "2x gtceu:activated_netherite_plate", "2x kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "gtceu:infinity_plate", "4x gtceu:meta_null_foil")
             .inputFluids("kubejs:gluon_g3 250") // Universe's Strongest Glue(TM)
             .duration(100)
             .itemOutputs("kubejs:dimensionally_stabilized_infinity_heavy_plating")
@@ -592,7 +592,6 @@ ServerEvents.recipes(event => {
                 .CWUt(144, 57600)
                 .EUt(GTValues.VA[GTValues.UEV])
             )
-            .EUt(GTValues.VA[GTValues.UEV])
     } else {
         // No silly particle juice :(
         

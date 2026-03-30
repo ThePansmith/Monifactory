@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer0":"kubejs:item/microverse/hostile_universe",
+      "layer1":"kubejs:item/microverse/hostile_overlay"
+    }
+}

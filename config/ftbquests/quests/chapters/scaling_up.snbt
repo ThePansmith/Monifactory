@@ -2992,7 +2992,7 @@
 				"{moni.quest.6A76B3DCA599B9B5.description3}"
 			]
 			hide_until_deps_visible: true
-			icon: "minecraft:tnt"
+			icon: "kubejs:hostile_universe_data"
 			id: "6A76B3DCA599B9B5"
 			optional: true
 			shape: "hexagon"

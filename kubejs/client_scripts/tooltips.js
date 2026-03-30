@@ -250,7 +250,7 @@ ItemEvents.tooltip(tooltip => {
         "gtceu:treated_wood_large_fluid_pipe",
         "gtceu:wooden_multiblock_tank"
     ], Text.translatable("gtceu.wood_pipe_warning.tooltip"))
-/*
+
     // Chipped workbenches
     tooltip.addAdvanced([
         "chipped:botanist_workbench",
@@ -277,5 +277,4 @@ ItemEvents.tooltip(tooltip => {
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
     }
-        */
 })

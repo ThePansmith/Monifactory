@@ -69,8 +69,8 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(-GTValues.V[GTValues.UHV], 16)
 
-        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_superfuel", "kubejs:w_z_g2 5")
-            .inputFluids("gtceu:naquadah_superfuel 40")
+        event.recipes.gtceu.large_naquadah_reactor("kubejs:process_superfuel")
+            .inputFluids("gtceu:naquadah_superfuel 40", "kubejs:w_z_g2 5")
             .duration(80)
             .EUt(-GTValues.V[GTValues.UHV], 32)
     } else {

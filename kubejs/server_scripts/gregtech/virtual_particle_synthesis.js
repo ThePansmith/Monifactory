@@ -6,6 +6,40 @@
 
 ServerEvents.recipes(event => {
     if (doParticleSynthesis) {
+        // Controller
+        event.recipes.extendedcrafting.shaped_table("monilabs:virtual_particle_synthesizer", [
+            "SCFCS",
+            "CALAC",
+            "FLBLF",
+            "CALAC",
+            "SCFCS",
+        ], {
+            S: "gtceu:hv_sensor",
+            C: "monilabs:dark_steel_casing",
+            F: "ae2:controller",
+            A: "gtceu:laser_safe_engraving_casing",
+            L: "#gtceu:circuits/ev",
+            B: "gtceu:ev_field_generator"
+        }).id("kubejs:shaped/virtual_particle_synthesizer")
+
+        // Microverse Stability Sensor Hatch
+        event.recipes.gtceu.assembler("quantum_sensor_hatch")
+            .itemInputs("gtceu:ev_machine_hull", "4x gtceu:dark_steel_plate", "gtceu:hv_sensor", "3x gtceu:red_alloy_screw")
+            .inputFluids("gtceu:soldering_alloy 288")
+            .itemOutputs("monilabs:quantum_sensor_hatch")
+            .duration(20 * 3)
+            .EUt(GTValues.VA[GTValues.EV])
+            .addMaterialInfo(true)
+
+        // Advanced Microverse Stability Sensor Hatch
+        event.recipes.gtceu.assembler("advanced_quantum_sensor_hatch")
+            .itemInputs("monilabs:quantum_sensor_hatch", "gtceu:ev_sensor")
+            .inputFluids("gtceu:soldering_alloy 576")
+            .itemOutputs("monilabs:advanced_quantum_sensor_hatch")
+            .duration(20 * 6)
+            .EUt(GTValues.VA[GTValues.IV])
+            .addMaterialInfo(true)
+
         // EV Recipes
         event.recipes.gtceu.virtual_particle_synthesis("particle_soup")
             .itemInputs("8x kubejs:quantum_flux", "2x gtceu:uranium_235_dust")

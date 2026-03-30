@@ -387,7 +387,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     if (doParticleSynthesis) {
-        event.recipes.gtceu.virtual_particle_synthesizer("naquadah_waste_accelerated_decay")
+        event.recipes.gtceu.virtual_particle_synthesis("naquadah_waste_accelerated_decay")
             .itemInputs("4x kubejs:naquadah_waste")
             .inputFluids("kubejs:w_z_g1 50") // Decay In A Bottle(TM)
             .itemOutputs(
@@ -398,6 +398,6 @@ ServerEvents.recipes(event => {
             )
             .duration(40)
             .EUt(GTValues.VA[GTValues.IV])
-        .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.OUT)
+            .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.OUT)
     }
 })

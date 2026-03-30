@@ -2,6 +2,7 @@
     "parent":"item/generated",
     "textures": {
       "layer0":"kubejs:item/microverse/shattered_universe",
-      "layer1":"kubejs:item/microverse/shattered_overlay"
+      "layer1":"kubejs:item/microverse/shattered_middle",
+      "layer2":"kubejs:item/microverse/shattered_overlay"
     }
 }

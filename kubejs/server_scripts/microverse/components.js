@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
                     "gtceu:uhv_field_generator",
                     "8x gtceu:hyperdegenerate_darconite_single_wire",
                     "8x kubejs:universe_resistant_neutronium_heavy_plating",
-                    "12x gtceu:null_foil",
+                    "12x gtceu:meta_null_foil",
                     "16x kubejs:prism_pane"
                 )
                 .inputFluids(
@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
                     "gtceu:uhv_field_generator",
                     "8x gtceu:hyperdegenerate_darconite_single_wire",
                     "8x kubejs:universe_resistant_neutronium_heavy_plating",
-                    "12x gtceu:null_foil",
+                    "12x gtceu:meta_null_foil",
                     "16x kubejs:prism_pane"
                 )
                 .inputFluids(

@@ -67,11 +67,11 @@ ServerEvents.recipes(event => {
 
     // Microverse Stability Sensor Hatch
     event.recipes.gtceu.assembler("microverse_stability_sensor_hatch")
-        .itemInputs("gtceu:ev_machine_hull", "2x gtceu:microversium_plate", "gtceu:ev_sensor", "3x gtceu:red_alloy_screw")
+        .itemInputs("gtceu:hv_machine_hull", "2x gtceu:microversium_plate", "gtceu:hv_sensor", "3x gtceu:red_alloy_screw")
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("monilabs:microverse_stability_sensor_hatch")
         .duration(20 * 3)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.HV])
         .addMaterialInfo(true)
 
     // Advanced Microverse Stability Sensor Hatch
@@ -85,11 +85,11 @@ ServerEvents.recipes(event => {
 
     // Microverse Type Sensor Hatch
     event.recipes.gtceu.assembler("microverse_type_sensor_hatch")
-        .itemInputs("gtceu:ev_machine_hull", "2x gtceu:microversium_plate", "gtceu:ev_sensor", "3x gtceu:end_steel_screw")
+        .itemInputs("gtceu:ev_machine_hull", "2x gtceu:microversium_plate", "gtceu:hv_sensor", "3x gtceu:end_steel_screw")
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("monilabs:microverse_type_sensor_hatch")
         .duration(20 * 3)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.HV])
         .addMaterialInfo(true)
 
     // Microverse Type Sensor Hatch
