@@ -407,42 +407,81 @@ ServerEvents.recipes(event => {
     })
 
     // Creative Chest
-    event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
-        "BMMMMMMMMMB",
-        "MhXXFWFXXcM",
-        "MXMMMWMMMXM",
-        "MMMFGWGFMMP",
-        "HCMGALAGSmP",
-        "HCwgDQDSOmP",
-        "HCMGALAGSmP",
-        "MMMFGWGFMMP",
-        "MXMMMWMMMXM",
-        "MfXXFWFXXsM",
-        "BMMMMMMMMMB"
-    ], {
-        A: "monilabs:max_robot_arm",
-        B: "gtceu:monium_block",
-        C: "monilabs:max_conveyor_module",
-        D: "kubejs:field_stabilized_prismatic_pulsar_compound",
-        F: "gtceu:monium_frame",
-        G: "monilabs:max_field_generator",
-        H: "gtceu:polyether_ether_ketone_huge_item_pipe",
-        L: "monilabs:max_4096a_laser_source_hatch",
-        M: "kubejs:causality_exempt_monic_heavy_plating",
-        O: "gtceu:object_holder",
-        P: "monilabs:prism_glass",
-        Q: "gtceu:uev_quantum_chest",
-        S: "monilabs:max_sensor",
-        W: "gtceu:monium_hex_wire",
-        X: "#gtceu:circuits/max",
-        c: "kubejs:infinity_wire_cutter",
-        f: "kubejs:infinity_file",
-        g: "gtceu:monium_gear",
-        h: "kubejs:infinity_hammer",
-        m: "gtceu:computer_monitor_cover",
-        s: "kubejs:infinity_screwdriver",
-        w: "kubejs:infinity_wrench"
-    })
+    if (doComplexMicroverses) {
+        event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
+            "BMMMMMMMMMB",
+            "MhXXFWFXXcM",
+            "MXMMMWMMMXM",
+            "MMMFGLGFMMP",
+            "HCMGADAGSmP",
+            "HCwgDQDSOmP",
+            "HCMGADAGSmP",
+            "MMMFGLGFMMP",
+            "MXMMMWMMMXM",
+            "MfXXFWFXXsM",
+            "BMMMMMMMMMB"
+        ], {
+            A: "monilabs:max_robot_arm",
+            B: "gtceu:monium_block",
+            C: "monilabs:max_conveyor_module",
+            D: "monilabs:shard_of_causality",
+            F: "gtceu:monium_frame",
+            G: "monilabs:max_field_generator",
+            H: "gtceu:polyether_ether_ketone_huge_item_pipe",
+            L: "monilabs:max_4096a_laser_source_hatch",
+            M: "kubejs:causality_exempt_monic_heavy_plating",
+            O: "gtceu:object_holder",
+            P: "monilabs:prism_glass",
+            Q: "gtceu:uev_quantum_chest",
+            S: "monilabs:max_sensor",
+            W: "gtceu:monium_hex_wire",
+            X: "#gtceu:circuits/max",
+            c: "kubejs:infinity_wire_cutter",
+            f: "kubejs:infinity_file",
+            g: "gtceu:monium_gear",
+            h: "kubejs:infinity_hammer",
+            m: "gtceu:computer_monitor_cover",
+            s: "kubejs:infinity_screwdriver",
+            w: "kubejs:infinity_wrench"
+        })
+    } else {
+        event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
+            "BMMMMMMMMMB",
+            "MhXXFWFXXcM",
+            "MXMMMWMMMXM",
+            "MMMFGWGFMMP",
+            "HCMGALAGSmP",
+            "HCwgDQDSOmP",
+            "HCMGALAGSmP",
+            "MMMFGWGFMMP",
+            "MXMMMWMMMXM",
+            "MfXXFWFXXsM",
+            "BMMMMMMMMMB"
+        ], {
+            A: "monilabs:max_robot_arm",
+            B: "gtceu:monium_block",
+            C: "monilabs:max_conveyor_module",
+            D: "kubejs:field_stabilized_prismatic_pulsar_compound",
+            F: "gtceu:monium_frame",
+            G: "monilabs:max_field_generator",
+            H: "gtceu:polyether_ether_ketone_huge_item_pipe",
+            L: "monilabs:max_4096a_laser_source_hatch",
+            M: "kubejs:causality_exempt_monic_heavy_plating",
+            O: "gtceu:object_holder",
+            P: "monilabs:prism_glass",
+            Q: "gtceu:uev_quantum_chest",
+            S: "monilabs:max_sensor",
+            W: "gtceu:monium_hex_wire",
+            X: "#gtceu:circuits/max",
+            c: "kubejs:infinity_wire_cutter",
+            f: "kubejs:infinity_file",
+            g: "gtceu:monium_gear",
+            h: "kubejs:infinity_hammer",
+            m: "gtceu:computer_monitor_cover",
+            s: "kubejs:infinity_screwdriver",
+            w: "kubejs:infinity_wrench"
+        })
+    }
 
     // Knowledge Transmission Array
     event.recipes.gtceu.assembly_line("knowledge_transmission_array")
