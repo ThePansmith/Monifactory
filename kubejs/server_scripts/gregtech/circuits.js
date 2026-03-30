@@ -178,6 +178,22 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(150000)
 
+    if (!doComplexPrismaC) {
+        // SoC recipe for cheaper Optical Processor
+        event.recipes.gtceu.circuit_assembler("optical_processor_soc")
+            .itemInputs(
+                "kubejs:optical_processing_unit",
+                "kubejs:photonic_soc_active",
+                "8x gtceu:fine_naquadah_wire",
+                "8x gtceu:necrosiderite_bolt"
+            )
+            .inputFluids("gtceu:living_soldering_alloy 18")
+            .itemOutputs("4x kubejs:optical_processor")
+            .cleanroom(CleanroomType.CLEANROOM)
+            .duration(5 * 20)
+            .EUt(2400000)
+    }
+
     event.recipes.gtceu.assembly_line("optical_processor_assembly")
         .itemInputs(
             "kubejs:optical_processing_unit",
@@ -240,20 +256,6 @@ ServerEvents.recipes(event => {
             .CWUt(128)
             .EUt(GTValues.VA[GTValues.UV])
         )
-
-    // SoC recipe for cheaper Optical Processor
-    event.recipes.gtceu.circuit_assembler("optical_processor_soc")
-        .itemInputs(
-            "kubejs:optical_processing_unit",
-            "kubejs:photonic_soc_active",
-            "8x gtceu:fine_naquadah_wire",
-            "8x gtceu:necrosiderite_bolt"
-        )
-        .inputFluids("gtceu:living_soldering_alloy 18")
-        .itemOutputs("4x kubejs:optical_processor")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(5 * 20)
-        .EUt(2400000)
 
 
     // Extradimensional Circuits

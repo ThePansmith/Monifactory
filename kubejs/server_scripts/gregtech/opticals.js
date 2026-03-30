@@ -182,14 +182,37 @@ ServerEvents.recipes(event => {
             .itemOutputs("6x kubejs:electro_optic_modulator")
     })
 
-    event.recipes.gtceu.circuit_assembler("optical_processing_unit")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(800)
-        .EUt(GTValues.VA[GTValues.UV])
-        .inputFluids("gtceu:dielectric_mirror_solution 1152")
-        .itemInputs("8x kubejs:carbon_mesh_reinforced_printed_circuit_board", "gtceu:luv_emitter", "16x gtceu:normal_optical_pipe", "12x gtceu:lumium_foil", "32x gtceu:duranium_bolt")
-        .itemOutputs("8x kubejs:optical_processing_unit")
-
+    if (doComplexPrismaC) {
+        event.recipes.gtceu.circuit_assembler("optical_processing_unit")
+            .cleanroom(CleanroomType.CLEANROOM)
+            .duration(800)
+            .EUt(GTValues.VA[GTValues.UV])
+            .inputFluids("gtceu:dielectric_mirror_solution 1152")
+            .itemInputs(
+                "8x kubejs:carbon_mesh_reinforced_printed_circuit_board",
+                "gtceu:iv_emitter",
+                "8x kubejs:photonic_soc_active",
+                "16x gtceu:normal_optical_pipe",
+                "12x gtceu:lumium_foil",
+                "32x gtceu:duranium_bolt"
+            )
+            .itemOutputs("8x kubejs:optical_processing_unit")
+    } else {
+        event.recipes.gtceu.circuit_assembler("optical_processing_unit")
+            .cleanroom(CleanroomType.CLEANROOM)
+            .duration(800)
+            .EUt(GTValues.VA[GTValues.UV])
+            .inputFluids("gtceu:dielectric_mirror_solution 1152")
+            .itemInputs(
+                "8x kubejs:carbon_mesh_reinforced_printed_circuit_board",
+                "gtceu:luv_emitter",
+                "16x gtceu:normal_optical_pipe",
+                "12x gtceu:lumium_foil",
+                "32x gtceu:duranium_bolt"
+            )
+            .itemOutputs("8x kubejs:optical_processing_unit")
+    }
+    
     // Non-PrismaC PSoC Steps
 
     event.recipes.gtceu.cutter("prism_pane_water")

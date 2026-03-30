@@ -126,7 +126,6 @@ ServerEvents.recipes(event => {
 
         // Potential ingredient additions: Bolts, Screws, Plates, Wires, circuits, frame boxes
         event.recipes.gtceu.assembly_line("gravitational_amplifier")
-            .itemOutputs("kubejs:gravitational_amplifier")
             .itemInputs(
                 "8x ae2:singularity",
                 "4x gtceu:gravi_star",
@@ -149,6 +148,7 @@ ServerEvents.recipes(event => {
                 .CWUt(64, 256000)
                 .EUt(GTValues.VA[GTValues.UV])
             )
+
         event.recipes.gtceu.assembly_line("universal_collapse_device")
             .itemOutputs("kubejs:universal_collapse_device")
             .itemInputs(
@@ -189,6 +189,37 @@ ServerEvents.recipes(event => {
             .inputFluids("kubejs:w_z_g1 500") // Decay In A Bottle(TM)
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(500)
+
+        if (doComplexMicroverses) {
+            // So THAT is how I get rid of it!
+            event.recipes.gtceu.assembly_line("causality_collapser")
+                .itemInputs(
+                    "2x kubejs:universal_collapse_device",
+                    "16x kubejs:quasi_stable_neutron_star",
+                    "#gtceu:circuits/uev",
+                    "gtceu:uhv_field_generator",
+                    "8x gtceu:hyperdegenerate_darconite_single_wire",
+                    "8x kubejs:universe_resistant_neutronium_heavy_plating",
+                    "12x gtceu:null_foil",
+                    "16x kubejs:prism_pane"
+                )
+                .inputFluids(
+                    "gtceu:living_soldering_alloy 1152",
+                    "kubejs:higgs_g3 2000",
+                    "kubejs:gluon_g3 1000",
+                    "kubejs:w_z_g2 1000"
+                )   // Gravity In A Bottle(TM)
+                    // Universe's Strongest Glue (TM)
+                    // Decay In A Bottle(TM)
+                .duration(1000)
+                .EUt(GTValues.VA[GTValues.UEV])
+                .itemOutputs("monilabs:causality_collapser")
+                .stationResearch(builder => builder
+                    .researchStack("kubejs:supercritical_prismatic_core")
+                    .CWUt(128, 512000)
+                    .EUt(GTValues.VA[GTValues.UHV])
+                )
+        }
 
     } else {
         // No Silly particle juice :(
@@ -253,6 +284,7 @@ ServerEvents.recipes(event => {
                 .CWUt(64, 256000)
                 .EUt(GTValues.VA[GTValues.UV])
             )
+
         event.recipes.gtceu.assembly_line("universal_collapse_device")
             .itemOutputs("kubejs:universal_collapse_device")
             .itemInputs(
@@ -287,6 +319,34 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:deuterium 500")
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(500)
+
+        if (doComplexMicroverses) {
+            // So THAT is how I get rid of it!
+            event.recipes.gtceu.assembly_line("causality_collapser")
+                .itemInputs(
+                    "2x kubejs:universal_collapse_device",
+                    "16x kubejs:quasi_stable_neutron_star",
+                    "#gtceu:circuits/uev",
+                    "gtceu:uhv_field_generator",
+                    "8x gtceu:hyperdegenerate_darconite_single_wire",
+                    "8x kubejs:universe_resistant_neutronium_heavy_plating",
+                    "12x gtceu:null_foil",
+                    "16x kubejs:prism_pane"
+                )
+                .inputFluids(
+                    "gtceu:living_soldering_alloy 1152",
+                    "gtceu:infinity 576",
+                    "monilabs:eltz 576"
+                )
+                .duration(1000)
+                .EUt(GTValues.VA[GTValues.UEV])
+                .itemOutputs("monilabs:causality_collapser")
+                .stationResearch(builder => builder
+                    .researchStack("kubejs:supercritical_prismatic_core")
+                    .CWUt(128, 512000)
+                    .EUt(GTValues.VA[GTValues.UHV])
+                )
+        }
     }
 
     // Supercharged laser array

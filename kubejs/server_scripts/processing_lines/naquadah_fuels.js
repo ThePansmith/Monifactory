@@ -109,12 +109,23 @@ ServerEvents.recipes(event => {
         .duration(1800)
         .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
-        .itemInputs("20x kubejs:naquadah_fuel_mixture_dust")
-        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72", "gtceu:infinity 80")
-        .outputFluids("gtceu:naquadah_superfuel 20000")
-        .duration(3000)
-        .EUt(GTValues.VA[GTValues.UHV])
+    if (doParticleSynthesis) {
+        // Silly Particle Juice :)
+        // Also use more Californium because actneth doesn't sink berk anymore.
+        event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
+            .itemInputs("20x kubejs:naquadah_fuel_mixture_dust")
+            .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 144", "kubejs:quark_gluon_plasma 80")
+            .outputFluids("gtceu:naquadah_superfuel 20000")
+            .duration(3000)
+            .EUt(GTValues.VA[GTValues.UHV])
+    } else {
+        event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
+            .itemInputs("20x kubejs:naquadah_fuel_mixture_dust")
+            .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72", "gtceu:infinity 80")
+            .outputFluids("gtceu:naquadah_superfuel 20000")
+            .duration(3000)
+            .EUt(GTValues.VA[GTValues.UHV])
+    }
 
     // Cracker Recipes
     // Put tha "Naquadah" in "Naquadah Fuel" except when you use neutronium lmao
@@ -136,6 +147,7 @@ ServerEvents.recipes(event => {
 
     if (doParticleSynthesis) {
         isotopes.forEach(isotope => {
+            // Proceed to completely ignore cracking mats lol
             event.recipes.gtceu.fusion_reactor(`${isotope[0]}_isotope_cracking_fusion_boson`)
                 .inputFluids(`gtceu:${isotope[1]} 125`, `kubejs:w_z_g${isotope[2]} 25`) // Decay In A Bottle(TM)
                 .outputFluids(`gtceu:cracked_${isotope[1]} 125`)

@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     if (doHNN || doParticleSynthesis) {
-        event.shaped("kubejs:dark_steel_casing", [
+        event.shaped("monilabs:dark_steel_casing", [
             "AAA",
             "ABA",
             "AAA"
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("dark_steel_casing")
             .itemInputs("gtceu:lv_machine_hull", "8x #forge:plates/dark_steel")
-            .itemOutputs("kubejs:dark_steel_casing")
+            .itemOutputs("monilabs:dark_steel_casing")
             .duration(50)
             .EUt(16)
             .circuit(6)
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:pulsating_mesh",
             B: "#gtceu:circuits/lv",
             C: "minecraft:glass_pane",
-            D: "kubejs:dark_steel_casing"
+            D: "monilabs:dark_steel_casing"
         })
 
         event.shaped("hostilenetworks:loot_fabricator", [
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
             A: "gtceu:energetic_alloy_plate",
             B: "#gtceu:circuits/mv",
             C: "minecraft:glass_pane",
-            D: "kubejs:dark_steel_casing",
+            D: "monilabs:dark_steel_casing",
             H: "minecraft:hopper"
         })
 

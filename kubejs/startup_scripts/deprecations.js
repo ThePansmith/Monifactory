@@ -67,6 +67,8 @@ deprecateBlock("kubejs:cryolobus_casing", "monilabs:cryolobus_casing", "Cryolobu
 deprecateBlock("kubejs:bioalloy_casing", "monilabs:bioalloy_casing", "Bioalloy Casing")
 deprecateBlock("kubejs:bioalloy_fusion_casing", "monilabs:bioalloy_fusion_casing", "Bioalloy Fusion Casing")
 
+deprecateBlock("kubejs:dark_steel_casing", "monilabs:dark_steel_casing", "Dark Steel Casing")
+
 deprecateItem("gtceu:eltz_ingot", "monilabs:eltz_ingot", "Eltz Ingot")
 deprecateItem("gtceu:crystal_matrix_ingot", "monilabs:crystal_matrix_ingot", "Crystal Matrix Ingot")
 deprecateItem("gtceu:sculk_bioalloy_ingot", "monilabs:sculk_bioalloy_ingot", "Sculk Bioalloy Ingot")

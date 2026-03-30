@@ -554,18 +554,6 @@ ServerEvents.recipes(event => {
                 .EUt(GTValues.VA[GTValues.UEV])
             )
             .EUt(GTValues.VA[GTValues.UEV])
-
-        event.recipes.gtceu.assembly_line("causality_exempt_monic_plating")
-            .itemInputs("3x gtceu:double_monium_plate", "8x monilabs:double_eltz_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "8x monilabs:double_eltz_plate", "3x gtceu:double_monium_plate")
-            .inputFluids("gtceu:living_soldering_alloy 2880", "kubejs:gluon_g3 1250") // Universe's Strongest Glue(TM)
-            .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
-            .duration(400)
-            .EUt(GTValues.VA[GTValues.UIV])
-            .stationResearch(b => b
-                .researchStack("kubejs:causality_exempt_monic_heavy_plating")
-                .CWUt(144, 57600)
-                .EUt(GTValues.VA[GTValues.UEV])
-            )
     } else {
         // No silly particle juice :(
         

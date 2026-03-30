@@ -15,6 +15,14 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VHA[GTValues.ZPM])
         .fusionStartEU(360000000)
+    if (doParticleSynthesis) {
+        event.recipes.gtceu.fusion_reactor("californium_fusion_berkelium")
+            .inputFluids("gtceu:berkelium 16", "gtceu:helium 125")
+            .outputFluids("gtceu:californium 16")
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .fusionStartEU(360000000)
+    }    
 
     solidify("stabilized_berkelium", Fluid.of("gtceu:berkelium", 144), "8x kubejs:stabilized_berkelium");
     solidify("stabilized_neptunium", Fluid.of("gtceu:neptunium", 144), "2x kubejs:stabilized_neptunium");

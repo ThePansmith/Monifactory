@@ -88,20 +88,35 @@ ServerEvents.recipes(event => {
                 .requiredMicroverse(3) // Shattered
         })
     }
-
-    microverse_mission(event, 11, 4, 100).forEach(builder => {
-        builder
-            .itemInputs(
-                "kubejs:gravitational_amplifier",
-                "64x gtceu:gravi_star"
-            )
-            .inputFluids("gtceu:crude_naquadah_fuel 500", "kubejs:higgs_g3 6400")
-            .damageRate(2)
-            .itemOutputs(
-                "64x kubejs:quasi_stable_neutron_star"
-            )
-            .requiredMicroverse((doComplexMicroverses ? 6 : 3)) // Necrosed /
-    })
+    if (doParticleSynthesis) {
+        microverse_mission(event, 11, 4, 100).forEach(builder => {
+            builder
+                .itemInputs(
+                    "kubejs:gravitational_amplifier",
+                    "64x gtceu:gravi_star"
+                )
+                .inputFluids("gtceu:crude_naquadah_fuel 500", "kubejs:higgs_g3 6400")
+                .damageRate(2)
+                .itemOutputs(
+                    "64x kubejs:quasi_stable_neutron_star"
+                )
+                .requiredMicroverse((doComplexMicroverses ? 6 : 3)) // Necrosed / Shattered
+        })
+    } else {
+        microverse_mission(event, 11, 4, 100).forEach(builder => {
+            builder
+                .itemInputs(
+                    "kubejs:gravitational_amplifier",
+                    "64x gtceu:gravi_star"
+                )
+                .inputFluids("gtceu:crude_naquadah_fuel 500")
+                .damageRate(2)
+                .itemOutputs(
+                    "64x kubejs:quasi_stable_neutron_star"
+                )
+                .requiredMicroverse((doComplexMicroverses ? 6 : 3)) // Necrosed / Shattered
+        })
+    }
 
     if (doComplexMicroverses) {
         microverse_mission(event, 12, 4, 60).forEach(builder => {

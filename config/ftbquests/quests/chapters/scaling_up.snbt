@@ -2822,7 +2822,7 @@
 				{
 					count: 17L
 					id: "7BC42B5A0DB23D7A"
-					item: "kubejs:dark_steel_casing"
+					item: "monilabs:dark_steel_casing"
 					type: "item"
 				}
 				{
@@ -2865,7 +2865,7 @@
 				{
 					count: 17L
 					id: "372051DF4441A75D"
-					item: "kubejs:dark_steel_casing"
+					item: "monilabs:dark_steel_casing"
 					type: "item"
 				}
 				{

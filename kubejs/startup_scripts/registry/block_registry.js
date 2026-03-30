@@ -173,7 +173,6 @@ StartupEvents.registry("block", event => {
     // Machine Casings
     const casings = [
         "dark_soularium",
-        "dark_steel",
     ]
 
     casings.forEach(casing => {

@@ -313,7 +313,7 @@
 				{
 					count: 44L
 					id: "5DEC122EDABB5D6F"
-					item: "kubejs:dark_steel_casing"
+					item: "monilabs:dark_steel_casing"
 					type: "item"
 				}
 				{
@@ -394,7 +394,7 @@
 				{
 					count: 44L
 					id: "6DCABB6D6F8FC3E5"
-					item: "kubejs:dark_steel_casing"
+					item: "monilabs:dark_steel_casing"
 					type: "item"
 				}
 				{
