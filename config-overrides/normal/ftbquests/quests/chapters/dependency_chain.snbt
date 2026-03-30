@@ -1,0 +1,547 @@
+{
+	always_invisible: true
+	autofocus_id: "7DC209D400BCD708"
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "dependency_chain"
+	group: ""
+	icon: "gtceu:monium_frame"
+	id: "1956832191841F25"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{moni.quest.7DC209D400BCD708.description1}"]
+			disable_toast: true
+			icon: "minecraft:oak_sign"
+			id: "7DC209D400BCD708"
+			subtitle: "{moni.quest.7DC209D400BCD708.subtitle}"
+			tasks: [{
+				id: "424451AEEE23C1AF"
+				title: "{moni.task.424451AEEE23C1AF}"
+				type: "custom"
+			}]
+			title: "{moni.quest.7DC209D400BCD708.title}"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "7423181A27FC773B"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 69336E3C51A54E5D"
+				elevate_perms: true
+				id: "470ECAAF3CF308CC"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "60B6D35823E62D9E"
+				stage: "doBoilers"
+				type: "gamestage"
+			}]
+			x: -6.25d
+			y: -1.75d
+		}
+		{
+			id: "69336E3C51A54E5D"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 7423181A27FC773B"
+				elevate_perms: true
+				id: "4C25E490C6BD4A7F"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "03410679590D974A"
+				stage: "dontBoilers"
+				type: "gamestage"
+			}]
+			x: -6.25d
+			y: -0.5d
+		}
+		{
+			id: "1C30B0E57E195FD7"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 4FED4D05A1173337"
+				elevate_perms: true
+				id: "306CC9B1DC1DD526"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "071D80D9B78E499B"
+				stage: "doCompacting"
+				type: "gamestage"
+			}]
+			x: -5.0d
+			y: -1.75d
+		}
+		{
+			id: "4FED4D05A1173337"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 1C30B0E57E195FD7"
+				elevate_perms: true
+				id: "1DF9972DD91F3700"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "7D96862803CBA3FE"
+				stage: "dontCompacting"
+				type: "gamestage"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			id: "2A11706D3D63925C"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 2693904E2D3ECAD8"
+				elevate_perms: true
+				id: "1B35808DA0EE1AB7"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "6785CB9417749A09"
+				stage: "doConverters"
+				type: "gamestage"
+			}]
+			x: -3.75d
+			y: -1.75d
+		}
+		{
+			id: "2693904E2D3ECAD8"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 2A11706D3D63925C"
+				elevate_perms: true
+				id: "757F7C0BCBDF859E"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "0EE667EF637679A4"
+				stage: "dontConverters"
+				type: "gamestage"
+			}]
+			x: -3.75d
+			y: -0.5d
+		}
+		{
+			id: "72DC8EC6821F577D"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 752ABD4AAE3FE686"
+				elevate_perms: true
+				id: "273DC3E6C808AB54"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "277267A8A4A6C878"
+				stage: "doHarderProcessing"
+				type: "gamestage"
+			}]
+			x: -1.25d
+			y: -1.75d
+		}
+		{
+			id: "752ABD4AAE3FE686"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 72DC8EC6821F577D"
+				elevate_perms: true
+				id: "3862D69ED43F9662"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "0F2DD246184EEA83"
+				stage: "dontHarderProcessing"
+				type: "gamestage"
+			}]
+			x: -1.25d
+			y: -0.5d
+		}
+		{
+			id: "5BE3E37772FAF6CB"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 14A873812E309A1D"
+				elevate_perms: true
+				id: "1D1E8D69AEED1680"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "22C8D789526A6E97"
+				stage: "doHNN"
+				type: "gamestage"
+			}]
+			x: 2.5d
+			y: -1.75d
+		}
+		{
+			id: "14A873812E309A1D"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 5BE3E37772FAF6CB"
+				elevate_perms: true
+				id: "533F66993EC4E31C"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "4B09A6176FBBBD2B"
+				stage: "dontHNN"
+				type: "gamestage"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			id: "50F8254A16DCBD35"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 7C84BF4ADFFF3A3A"
+				elevate_perms: true
+				id: "28696B98648F8AC2"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "54BD8284F4F480F0"
+				stage: "doMonicoins"
+				type: "gamestage"
+			}]
+			x: 5.0d
+			y: -1.75d
+		}
+		{
+			id: "7C84BF4ADFFF3A3A"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 50F8254A16DCBD35"
+				elevate_perms: true
+				id: "1EEC54DCE21ADFEB"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "2E98124CA4009093"
+				stage: "dontMonicoins"
+				type: "gamestage"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			id: "134AD7825E3324B4"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 708BE2838E4BA420"
+				elevate_perms: true
+				id: "0A9591EC6C77017A"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "44065B3B3627E0BE"
+				stage: "doSnad"
+				type: "gamestage"
+			}]
+			x: 6.25d
+			y: -1.75d
+		}
+		{
+			id: "708BE2838E4BA420"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 134AD7825E3324B4"
+				elevate_perms: true
+				id: "1B79B479CB2FDCF0"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "058FFA81D2F81E45"
+				stage: "dontSnad"
+				type: "gamestage"
+			}]
+			x: 6.25d
+			y: -0.5d
+		}
+		{
+			id: "5E3CBC929557418F"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 64ABEB1EF9F81EA4"
+				elevate_perms: true
+				id: "1392C2DB45EC7B62"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "654A2795D76FAD4C"
+				stage: "doSteamAge"
+				type: "gamestage"
+			}]
+			x: 7.5d
+			y: -1.75d
+		}
+		{
+			id: "64ABEB1EF9F81EA4"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 5E3CBC929557418F"
+				elevate_perms: true
+				id: "595B1AC63FAE8E00"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "0990CA84CC3BE08D"
+				stage: "dontSteamAge"
+				type: "gamestage"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			id: "07C571669B023A30"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 467BD25ED78C7EF8"
+				elevate_perms: true
+				id: "46DB4693A9F22903"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "76389B0D87A20BA3"
+				stage: "doHardGlassRecipesWarning"
+				type: "gamestage"
+			}]
+			x: 1.25d
+			y: -1.75d
+		}
+		{
+			id: "467BD25ED78C7EF8"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 07C571669B023A30"
+				elevate_perms: true
+				id: "38F745EBCF5FA1E1"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "088830CB0782831A"
+				stage: "dontHardGlassRecipesWarning"
+				type: "gamestage"
+			}]
+			x: 1.25d
+			y: -0.5d
+		}
+		{
+			id: "68897FC5F720BB4F"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 261D2F3B1F2162D0"
+				elevate_perms: true
+				id: "0274837683E2B2DF"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "7666244CE6708329"
+				stage: "doHarderRecipes"
+				type: "gamestage"
+			}]
+			x: 0.0d
+			y: -1.75d
+		}
+		{
+			id: "261D2F3B1F2162D0"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 68897FC5F720BB4F"
+				elevate_perms: true
+				id: "55015E360BF92A60"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "34D57BA27DFCFAC0"
+				stage: "dontHarderRecipes"
+				type: "gamestage"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "6E63E7FEC6EA7F63"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 793C3A7F5E84CF3E"
+				elevate_perms: true
+				id: "4767074C713DD4E1"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "5C03E370E94FD596"
+				stage: "doLaserIO"
+				type: "gamestage"
+			}]
+			x: 3.75d
+			y: -1.75d
+		}
+		{
+			id: "793C3A7F5E84CF3E"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 6E63E7FEC6EA7F63"
+				elevate_perms: true
+				id: "4149CBE523F43DED"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "1CC1795965648126"
+				stage: "dontLaserIO"
+				type: "gamestage"
+			}]
+			x: 3.75d
+			y: -0.5d
+		}
+		{
+			id: "776886E9296912DD"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 0412D46926C075FF"
+				elevate_perms: true
+				id: "3EB61E55554FA706"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "78BB667CB3C32851"
+				stage: "doQuantumCoolant"
+				type: "gamestage"
+			}]
+			x: -7.5d
+			y: -1.75d
+		}
+		{
+			id: "0412D46926C075FF"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 776886E9296912DD"
+				elevate_perms: true
+				id: "4CCF413223F39D3F"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "3499A1DA63A64CBB"
+				stage: "dontQuantumCoolant"
+				type: "gamestage"
+			}]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			id: "05ABE2A5DE6128C4"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 61F1DC57A2D50DD8"
+				elevate_perms: true
+				id: "66B7DC9AF69F5251"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "557815002739FCCD"
+				stage: "doHostileMicroverse"
+				type: "gamestage"
+			}]
+			x: 8.75d
+			y: -1.75d
+		}
+		{
+			id: "61F1DC57A2D50DD8"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 05ABE2A5DE6128C4"
+				elevate_perms: true
+				id: "3F0F7D06EC066447"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "1684F5D61E0A8B14"
+				stage: "dontHostileMicroverse"
+				type: "gamestage"
+			}]
+			x: 8.75d
+			y: -0.5d
+		}
+		{
+			id: "62E94BBA2523F5D7"
+			invisible: true
+			tasks: [{
+				id: "508D4A657F22A38A"
+				stage: "doComplexMicroverses"
+				type: "gamestage"
+			}]
+			x: 11.25d
+			y: -1.75d
+		}
+		{
+			id: "3058EA50D53CED19"
+			invisible: true
+			tasks: [{
+				id: "7BBE1560141F6F24"
+				stage: "dontComplexMicroverses"
+				type: "gamestage"
+			}]
+			x: 11.25d
+			y: -0.5d
+		}
+	]
+	title: "{moni.chapter.1956832191841F25.title}"
+}
