@@ -4,11 +4,6 @@
 
 ServerEvents.tags("item", (event) => {
     event.add("monilabs:degenerate_microverse_requestable", [
-        "gtceu:raw_emerald",
-        "gtceu:raw_dilithium",
-        "gtceu:gravi_star",
-        "minecraft:bone",
-        "kubejs:ender_dragon_scale",
         "gtceu:raw_diamond",
         "gtceu:raw_apatite",
         "gtceu:raw_tricalcium_phosphate",
@@ -155,6 +150,7 @@ ServerEvents.tags("item", (event) => {
         "minecraft:rotten_flesh",
         "minecraft:gunpowder",
         "minecraft:string",
+        "minecraft:bone",
         "minecraft:slime_ball",
         "kubejs:guardian_scale",
         "minecraft:blaze_rod",
