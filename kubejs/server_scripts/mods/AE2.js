@@ -76,15 +76,27 @@ ServerEvents.recipes(event => {
 
     // Patterns
     event.remove({ id: "ae2:network/crafting/patterns_blank" })
-    event.shaped(Item.of("ae2:blank_pattern", 8), [
-        "AAA",
-        "BCB",
-        "BBB"
-    ], {
-        A: "gtceu:fine_silver_wire",
-        B: "gtceu:polyethylene_plate",
-        C: "#gtceu:circuits/hv"
-    }).id("kubejs:ae2/blank_pattern")
+    if(doComplexProcessing) {
+        event.shaped(Item.of("ae2:blank_pattern", 8), [
+            "AAA",
+            "BCB",
+            "BBB"
+        ], {
+            A: "gtceu:fine_silver_wire",
+            B: "gtceu:polytetrafluoroethylene_plate",
+            C: "#gtceu:circuits/hv"
+        }).id("kubejs:ae2/blank_pattern")
+    } else {
+        event.shaped(Item.of("ae2:blank_pattern", 8), [
+            "AAA",
+            "BCB",
+            "BBB"
+        ], {
+            A: "gtceu:fine_silver_wire",
+            B: "gtceu:polyethylene_plate",
+            C: "#gtceu:circuits/hv"
+        }).id("kubejs:ae2/blank_pattern")
+    }
 
     // Pattern Provider
     event.remove({ id: "ae2:network/blocks/pattern_providers_interface" })

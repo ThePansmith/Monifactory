@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = restart_game_im
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1757388375549
+  last_edited_time = 1773799602188
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:1cb9e687-2d01-49a7-a8b3-f0c683f06c2b-1757388249444] = [groups:][instances:]
+  [loading_requirement_container_meta:6c5bbd13-c76d-4ffc-a64a-f484c6f58cef-1773799547650] = [groups:][instances:]
 }
 
 customization {
@@ -43,6 +43,7 @@ element {
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
   image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
   element_type = image
   instance_identifier = c8a040af-c24f-4d34-85dd-53cc5e583b3a-1756241933513
   appearance_delay = no_delay
@@ -74,11 +75,17 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
   interactable = true
-  source = ^^^%n%You are going to regret this. Are you sure this is what you want? UI%n%^^^
+  source = ^^^%n%You are going to regret this. Are you sure this is what you want? I am warning you, this isn't safe for you!!!%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -120,7 +127,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
   x = -100
@@ -140,6 +147,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -178,13 +191,13 @@ element {
   base_opacity = 1.0
   auto_sizing = true
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = true
   anchor_point = mid-centered
   x = 165
   y = 10
-  width = 71
-  height = 20
+  width = 66
+  height = 18
   stretch_x = false
   stretch_y = false
   stay_on_screen = false
@@ -198,6 +211,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -255,5 +274,11 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
