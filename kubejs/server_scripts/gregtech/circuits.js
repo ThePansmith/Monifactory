@@ -59,7 +59,19 @@ ServerEvents.recipes(event => {
     replaceGTRecipeAmount(event, "gtceu:chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
     replaceGTRecipeAmount(event, "gtceu:large_chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
 
-
+    if (doParticleSynthesis) {
+        // Quantuming up the quantum CPUs
+        event.remove({ output: "gtceu:qbit_cpu_wafer" })
+        event.recipes.gtceu.virtual_particle_synthesis("qbit_cpu_wafer")
+            .itemInputs("2x gtceu:nano_cpu_wafer", "gtceu:quantum_star", "gtceu:indium_gallium_phosphide_dust")
+            .inputFluids("kubejs:bosonic_matter 400", "kubejs:hadronic_matter 800")
+            .duration(160)
+            .itemOutputs("2x gtceu:qbit_cpu_wafer")
+            .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.IN)
+            .quantumRule(QuantumRule.QUANTUM_ENTANGLEMENT, IO.OUT)
+            .EUt(GTValues.VA[GTValues.IV])
+    }
+    
     // Complex SMDs
     const smds = [
         ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 72],

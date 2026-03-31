@@ -99,3 +99,50 @@ StartupEvents.registry("fluid", event => {
             .stillTexture("kubejs:block/vps/degenerate_matter")
     }
 })
+
+StartupEvents.registry("item", event => {
+    if (doParticleSynthesis) {
+
+        event.create("ftbq_particle_soup")
+            .texture("kubejs:block/vps/particle_soup")
+        event.create("ftbq_hadronic_matter")
+            .texture("kubejs:block/vps/hadronic_matter")
+        event.create("ftbq_bosonic_matter")
+            .texture("kubejs:block/vps/bosonic_matter")
+
+        event.create("ftbq_higgs_g1")
+            .texture("kubejs:block/vps/higgs_g1")
+        event.create("ftbq_higgs_g2")
+            .texture("kubejs:block/vps/higgs_g2")
+        event.create("ftbq_higgs_g3")
+            .texture("kubejs:block/vps/higgs_g3")
+
+        event.create("ftbq_gluon_g1")
+            .texture("kubejs:block/vps/gluon_g1")
+        event.create("ftbq_gluon_g2")
+            .texture("kubejs:block/vps/gluon_g2")
+        event.create("ftbq_gluon_g3")
+            .texture("kubejs:block/vps/gluon_g3")
+
+        event.create("ftbq_w_z_g1")
+            .texture("kubejs:block/vps/w_z_g1")
+        event.create("ftbq_w_z_g2")
+            .texture("kubejs:block/vps/w_z_g2")
+
+        event.create("ftbq_meson_g1")
+            .texture("kubejs:block/vps/meson_g1")
+        event.create("ftbq_meson_g2")
+            .texture("kubejs:block/vps/meson_g2")
+
+        event.create("ftbq_strange_matter_plasma")
+            .texture("kubejs:block/vps/strange_matter_plasma")
+        event.create("ftbq_quark_gluon_plasma")
+            .texture("kubejs:block/vps/quark_gluon_plasma")
+
+        event.create("ftbq_degenerate_matter")
+            .texture("kubejs:block/vps/degenerate_matter")
+
+        event.create("ftbq_hyperdegenerate_matter")
+            .texture("gtceu:block/fluids/fluid.hyperdegenerate_matter")
+    }
+})

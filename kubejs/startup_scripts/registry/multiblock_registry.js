@@ -53,7 +53,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("naquadah_reactor")
         .category("multiblock")
         .setEUIO("out")
-        .setMaxIOSize(2, 2, (doParticleSynthesis ? 1 : 0), 0)
+        .setMaxIOSize(2, 2, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
@@ -62,7 +62,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("large_naquadah_reactor")
         .category("multiblock")
         .setEUIO("out")
-        .setMaxIOSize(0, 0, 1, 0)
+        .setMaxIOSize(0, 0, (doParticleSynthesis ? 2 : 1), 0)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC)

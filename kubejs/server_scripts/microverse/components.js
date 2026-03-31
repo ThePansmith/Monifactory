@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
                 "16x gtceu:double_titanium_plate",
                 "gtceu:nether_star_block"
             )
-            .inputFluids("kubejs:higgs_g1 2000") // Gravity In A Bottle(TM)
+            .inputFluids("kubejs:higgs_g2 1000") // Gravity In A Bottle(TM)
             .duration(80)
             .itemOutputs("kubejs:warp_core")
             .EUt(GTValues.VA[GTValues.IV])
@@ -120,12 +120,13 @@ ServerEvents.recipes(event => {
                 "kubejs:dark_soularium_thruster")
             ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("ae2:quantum_ring").EUt(480).duration(1200))
             .itemOutputs("kubejs:warp_engine")
-            .inputFluids("gtceu:advanced_soldering_alloy 576", "kubejs:higgs_g1 2000") // Gravity In A Bottle(TM)
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "kubejs:higgs_g2 1000") // Gravity In A Bottle(TM)
             .duration(1800)
-            .EUt(30720)   
+            .EUt(30720)
 
         // Potential ingredient additions: Bolts, Screws, Plates, Wires, circuits, frame boxes
         event.recipes.gtceu.assembly_line("gravitational_amplifier")
+            .itemOutputs("kubejs:gravitational_amplifier")
             .itemInputs(
                 "8x ae2:singularity",
                 "4x gtceu:gravi_star",

@@ -6,76 +6,104 @@ ServerEvents.recipes(event => {
 
     // Generate thermal thruster recipes
     const thermalThrusters = [
-        ["leadstone", "lead", "lead", "steamdynamo:steam_dynamo"],
-        ["hardened", "invar", "invar", "thermal:dynamo_magmatic"],
-        ["reinforced", "aluminium", "electrum", "thermal:dynamo_compression"],
-        ["resonant", "enderium", "enderium", "thermal:dynamo_numismatic"]
+        ["leadstone", "lead", "lead", "steamdynamo:steam_dynamo", true],
+        ["hardened", "invar", "invar", "thermal:dynamo_magmatic", true],
+        ["reinforced", "aluminium", "electrum", "thermal:dynamo_compression", true],
+        ["resonant", "enderium", "enderium", "thermal:dynamo_numismatic", false]
     ]
 
-    thermalThrusters.forEach(([newTier, plate1, plate2, dynamo]) => {
-        event.recipes.gtceu.shaped(Item.of(`kubejs:${newTier}_thruster`), [
-            "PCP",
-            "MDM",
-            "BBB"
-        ], {
-            P: `#forge:plates/${plate1}`,
-            M: `#forge:plates/${plate2}`,
-            C: "thermal:rf_coil",
-            D: dynamo,
-            B: "#forge:plates/red_alloy"
-        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`)
-            .addMaterialInfo();
+    thermalThrusters.forEach(([newTier, plate1, plate2, dynamo, doWithVPS]) => {
+        if (doWithVPS || !doParticleSynthesis) {
+            event.recipes.gtceu.shaped(Item.of(`kubejs:${newTier}_thruster`), [
+                "PCP",
+                "MDM",
+                "BBB"
+            ], {
+                P: `#forge:plates/${plate1}`,
+                M: `#forge:plates/${plate2}`,
+                C: "thermal:rf_coil",
+                D: dynamo,
+                B: "#forge:plates/red_alloy"
+            }).id(`kubejs:ironjetpacks/thrusters/${newTier}`)
+                .addMaterialInfo();
+        }
     })
 
     // Generate EnderIO thruster recipes
     const eioThrusters = [
-        ["conductive_iron", "conductive_alloy", "1", "kubejs:resonating_crystal", "gtceu:red_alloy_plate"],
-        ["electrical_steel", "electrical_steel", "1", "enderio:pulsating_crystal", Item.of("kubejs:conductive_iron_thruster").weakNBT()],
-        ["energetic", "energetic_alloy", "2", "enderio:vibrant_crystal", Item.of("kubejs:electrical_steel_thruster").weakNBT()],
-        ["vibrant", "vibrant_alloy", "3", "enderio:prescient_crystal", Item.of("kubejs:energetic_thruster").weakNBT()]
+        ["conductive_iron", "conductive_alloy", "1", "kubejs:resonating_crystal", "gtceu:red_alloy_plate", true],
+        ["electrical_steel", "electrical_steel", "1", "enderio:pulsating_crystal", Item.of("kubejs:conductive_iron_thruster").weakNBT(), true],
+        ["energetic", "energetic_alloy", "2", "enderio:vibrant_crystal", Item.of("kubejs:electrical_steel_thruster").weakNBT(), true],
+        ["vibrant", "vibrant_alloy", "3", "enderio:prescient_crystal", Item.of("kubejs:energetic_thruster").weakNBT(), false]
     ]
 
-    eioThrusters.forEach(([newTier, plate, card, crystal, lastTier]) => {
-        event.recipes.gtceu.shaped(Item.of(`kubejs:${newTier}_thruster`), [
-            "PCP",
-            "PRP",
-            "BTB"
-        ], {
-            P: `#forge:plates/${plate}`,
-            C: `laserio:energy_overclocker_card_tier_${card}`,
-            R: crystal,
-            T: lastTier,
-            B: "gtceu:red_alloy_plate"
-        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`)
-            .addMaterialInfo();
+    eioThrusters.forEach(([newTier, plate, card, crystal, lastTier, doWithVPS]) => {
+        if (doWithVPS || !doParticleSynthesis) {
+            event.recipes.gtceu.shaped(Item.of(`kubejs:${newTier}_thruster`), [
+                "PCP",
+                "PRP",
+                "BTB"
+            ], {
+                P: `#forge:plates/${plate}`,
+                C: `laserio:energy_overclocker_card_tier_${card}`,
+                R: crystal,
+                T: lastTier,
+                B: "gtceu:red_alloy_plate"
+            }).id(`kubejs:ironjetpacks/thrusters/${newTier}`)
+                .addMaterialInfo();
+        }
     })
 
     // Special thrusters
 
-    // Dark Soularium
-    event.recipes.gtceu.shaped(Item.of("kubejs:dark_soularium_thruster"), [
-        "ICI",
-        "IFI",
-        "TTT"
-    ], {
-        I: "gtceu:double_dark_soularium_plate",
-        C: "laserio:energy_overclocker_card_tier_8",
-        F: "enderio:weather_crystal",
-        T: Item.of("kubejs:vibrant_thruster").weakNBT()
-    }).id("kubejs:ironjetpacks/thrusters/dark_soularium")
-        .addMaterialInfo();
+    if (doParticleSynthesis) {
+        event.remove({ id: "kubejs:ironjetpacks/thrusters/resonant" })
+        event.remove({ id: "kubejs:ironjetpacks/thrusters/vibrant" })
 
-    // Fluxed
-    event.recipes.gtceu.shaped(Item.of("kubejs:fluxed_thruster"), [
-        " P ",
-        "PSP",
-        "STS"
-    ], {
-        P: "redstone_arsenal:flux_plating",
-        S: "gtceu:double_signalum_plate",
-        T: Item.of("kubejs:resonant_thruster").weakNBT()
-    }).id("kubejs:ironjetpacks/thrusters/fluxed")
-        .addMaterialInfo();
+        // Silly particle juice :)
+        event.recipes.gtceu.assembler("kubejs:ironjetpacks/thrusters/resonant")
+            .itemInputs("4x gtceu:enderium_plate", "3x gtceu:red_alloy_plate", "thermal:dynamo_numismatic", "thermal:rf_coil")
+            .inputFluids("kubejs:higgs_g1 500") // Gravity In A Bottle(TM)
+            .duration(100)
+            .itemOutputs("kubejs:resonant_thruster")
+            .EUt(GTValues.VA[GTValues.EV])
+
+        event.recipes.gtceu.assembler("kubejs:ironjetpacks/thrusters/vibrant")
+            .itemInputs("4x gtceu:vibrant_alloy_plate", "2x gtceu:red_alloy_plate", "enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_3", "kubejs:energetic_thruster")
+            .inputFluids("kubejs:higgs_g1 500") // Gravity In A Bottle(TM)
+            .duration(100)
+            .itemOutputs("kubejs:vibrant_thruster")
+            .EUt(GTValues.VA[GTValues.EV])
+
+        // Only shortcut recipes, no T5 thrusters here.
+
+    } else {
+        // No silly particle juice :(
+        // Dark Soularium
+        event.recipes.gtceu.shaped(Item.of("kubejs:dark_soularium_thruster"), [
+            "ICI",
+            "IFI",
+            "TTT"
+        ], {
+            I: "gtceu:double_dark_soularium_plate",
+            C: "laserio:energy_overclocker_card_tier_8",
+            F: "enderio:weather_crystal",
+            T: "kubejs:vibrant_thruster"
+        }).id("kubejs:ironjetpacks/thrusters/dark_soularium")
+            .addMaterialInfo();
+
+        // Fluxed
+        event.recipes.gtceu.shaped(Item.of("kubejs:fluxed_thruster"), [
+            " P ",
+            "PSP",
+            "STS"
+        ], {
+            P: "redstone_arsenal:flux_plating",
+            S: "gtceu:double_signalum_plate",
+            T: "kubejs:resonant_thruster"
+        }).id("kubejs:ironjetpacks/thrusters/fluxed")
+            .addMaterialInfo();
+    }
 
     //
     // Jetpacks

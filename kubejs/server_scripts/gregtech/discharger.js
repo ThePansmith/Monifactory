@@ -37,10 +37,26 @@ ServerEvents.recipes(event => {
     const hadal = Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT()
 
     Discharge("cryococcus_block", "5x gtceu:cryococcus_block", ["5x gtceu:cryolobus_block", "2x kubejs:warden_heart", bathyal, bathyal], 40000000)
-    if (doComplexPrismaC) {
-        Discharge("hadal_warp_engine", "kubejs:hadal_warp_engine", ["gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", "2x kubejs:photonic_stabilizer", hadal, abyssal], 40000000)
+    if (doParticleSynthesis) {
+        if (doComplexPrismaC) {
+            event.recipes.gtceu.discharger("hadal_warp_engine")
+                .itemInputs("gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", "2x kubejs:photonic_stabilizer", hadal, abyssal)
+                .inputFluids("kubejs:higgs_g2 2000")
+                .itemOutputs("kubejs:hadal_warp_engine")
+                .duration(10)
+        } else {
+            event.recipes.gtceu.discharger("hadal_warp_engine")
+                .itemInputs("gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", hadal, abyssal)
+                .inputFluids("kubejs:higgs_g2 2000")
+                .itemOutputs("kubejs:hadal_warp_engine")
+                .duration(10)
+        }
     } else {
-        Discharge("hadal_warp_engine", "kubejs:hadal_warp_engine", ["gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", hadal, abyssal], 40000000)
+        if (doComplexPrismaC) {
+            Discharge("hadal_warp_engine", "kubejs:hadal_warp_engine", ["gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", "2x kubejs:photonic_stabilizer", hadal, abyssal], 40000000)
+        } else {
+            Discharge("hadal_warp_engine", "kubejs:hadal_warp_engine", ["gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", hadal, abyssal], 40000000)
+        }
     }
 
     // event.recipes.gtceu.charger("kubejs:sculk_core_charge")

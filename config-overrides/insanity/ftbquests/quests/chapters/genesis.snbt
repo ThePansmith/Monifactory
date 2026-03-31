@@ -78,6 +78,8 @@
 				"{moni.quest.66FCC26399376B55.description8}"
 				""
 				"[\"\",{\"translate\":\"moni.quest.66FCC26399376B55.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.66FCC26399376B55.rich_description2\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.66FCC26399376B55.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.66FCC26399376B55.rich_description3\"}]"
+				""
+				"{moni.quest.66FCC26399376B55.description0.insanity}"
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
@@ -109,13 +111,13 @@
 			]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "{moni.quest.66FCC26399376B55.subtitle.expert}"
+			subtitle: "{moni.quest.66FCC26399376B55.subtitle.insanity}"
 			tasks: [{
 				id: "1FF132DED1748D11"
 				title: "{moni.task.1FF132DED1748D11}"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.66FCC26399376B55.title}"
+			title: "{moni.quest.66FCC26399376B55.title.insanity}"
 			x: 0.0d
 			y: 0.0d
 		}

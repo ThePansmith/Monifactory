@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
             .duration(40)
 
         event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_degenerate_infinite_power")
-            .inputFluids("kubejs:antimatter_fuel 3550", "kubejs:degenerate_matter 3550")
+            .inputFluids("kubejs:antimatter_fuel 3550", "gtceu:neutronium 3550")
             .duration(5333)
 
         event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_qgp_infinite_power")

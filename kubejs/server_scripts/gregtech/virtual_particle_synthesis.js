@@ -40,13 +40,12 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.IV])
             .addMaterialInfo(true)
 
-        // HV Recipes (VPS is a gate to EV hatches)
         event.recipes.gtceu.virtual_particle_synthesis("particle_soup")
             .itemInputs("8x kubejs:quantum_flux", "2x gtceu:uranium_235_dust")
             .inputFluids("gtceu:mana 250", "gtceu:radon 1000")
             .duration(80)
             .outputFluids("kubejs:particle_soup 1000")
-            .EUt(GTValues.VA[GTValues.HV])
+            .EUt(GTValues.VA[GTValues.EV])
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.OUT)
 
         event.remove({ output: "gtceu:quantum_eye" })

@@ -576,7 +576,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("fieldstabilizedcompound")
             .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")
-            .inputFluids("kubejs:higgs_g3 1000")
+            .inputFluids("kubejs:higgs_g3 1000") // Gravity In A Bottle(TM)
             .itemOutputs("kubejs:field_stabilized_prismatic_pulsar_compound")
             .duration(255)
             .EUt(GTValues.VA[GTValues.UEV])
@@ -592,6 +592,21 @@ ServerEvents.recipes(event => {
                 .CWUt(144, 57600)
                 .EUt(GTValues.VA[GTValues.UEV])
             )
+
+        // Shortcut recipes for thrusters
+        event.recipes.gtceu.assembler("kubejs:assembler_dark_soularium_thruster")
+            .itemInputs("4x gtceu:double_dark_soularium_plate", "6x gtceu:vibrant_alloy_plate", "2x enderio:weather_crystal", "2x enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_8")
+            .inputFluids("kubejs:higgs_g1 1000") // Gravity In A Bottle(TM)
+            .itemOutputs("kubejs:dark_soularium_thruster")
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.IV])
+
+        event.recipes.gtceu.assembler("kubejs:assembler_flux_thruster")
+            .itemInputs("3x redstone_arsenal:flux_plating", "4x gtceu:enderium_plate", "3x gtceu:double_signalum_plate", "thermal:dynamo_numismatic", "thermal:rf_coil")
+            .inputFluids("kubejs:higgs_g1 1000") // Gravity In A Bottle(TM)
+            .itemOutputs("kubejs:fluxed_thruster")
+            .duration(70)
+            .EUt(GTValues.VA[GTValues.IV])
     } else {
         // No silly particle juice :(
         
@@ -638,18 +653,18 @@ ServerEvents.recipes(event => {
                 .CWUt(144, 57600)
                 .EUt(GTValues.VA[GTValues.UEV])
             )
+
+        // Shortcut recipes for thrusters
+        event.recipes.gtceu.assembler("kubejs:assembler_dark_soularium_thruster")
+            .itemInputs("4x gtceu:double_dark_soularium_plate", "6x gtceu:vibrant_alloy_plate", "2x enderio:weather_crystal", "2x enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_8")
+            .itemOutputs("kubejs:dark_soularium_thruster")
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.IV])
+
+        event.recipes.gtceu.assembler("kubejs:assembler_flux_thruster")
+            .itemInputs("3x redstone_arsenal:flux_plating", "4x gtceu:enderium_plate", "3x gtceu:double_signalum_plate", "thermal:dynamo_numismatic", "thermal:rf_coil")
+            .itemOutputs("kubejs:fluxed_thruster")
+            .duration(70)
+            .EUt(GTValues.VA[GTValues.IV])
     }
-
-    // Shortcut recipes for thrusters
-    event.recipes.gtceu.assembler("kubejs:assembler_dark_soularium_thruster")
-        .itemInputs("4x gtceu:double_dark_soularium_plate", "6x gtceu:vibrant_alloy_plate", "2x enderio:weather_crystal", "2x enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_8")
-        .itemOutputs("kubejs:dark_soularium_thruster")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.IV])
-
-    event.recipes.gtceu.assembler("kubejs:assembler_flux_thruster")
-        .itemInputs("3x redstone_arsenal:flux_plating", "4x gtceu:enderium_plate", "3x gtceu:double_signalum_plate", "thermal:dynamo_numismatic", "thermal:rf_coil")
-        .itemOutputs("kubejs:fluxed_thruster")
-        .duration(70)
-        .EUt(GTValues.VA[GTValues.IV])
 })

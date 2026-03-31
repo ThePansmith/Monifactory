@@ -195,6 +195,9 @@ global.itemNukeList = [
     "kubejs:supercharged_universe_data",
     "kubejs:degenerate_universe_data",
 
+    // Quest-only items
+    /^kubejs:ftbq_.*/,
+
     // LaserIO
     "laserio:logic_chip",
     "laserio:logic_chip_raw",
