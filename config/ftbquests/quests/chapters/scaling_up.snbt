@@ -116,20 +116,6 @@
 			x: -9.75d
 			y: -5.5d
 		}
-		{
-			id: "3A26F31746EC77A0"
-			linked_quest: "3B0865F802EC0B48"
-			shape: "hexagon"
-			x: -0.25d
-			y: 5.25d
-		}
-		{
-			id: "5CD281A3925EC2BF"
-			linked_quest: "2CEA270E7AFB5D17"
-			shape: "hexagon"
-			x: 9.0d
-			y: 4.25d
-		}
 	]
 	quests: [
 		{
@@ -754,8 +740,8 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["57624991C8AD6DB3"]
-			description: ["{moni.quest.11154356854B64DA.description1.insanity}"]
+			dependencies: ["49D33146A1F417E8"]
+			description: ["{moni.quest.11154356854B64DA.description1}"]
 			id: "11154356854B64DA"
 			rewards: [{
 				id: "3BB23BE4C21AB7BD"
@@ -1934,7 +1920,7 @@
 			}]
 			title: "{moni.quest.664107ED03A944CD.title}"
 			x: 9.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["358D9A7B1BCFA30A"]
@@ -2715,8 +2701,8 @@
 				}
 			]
 			title: "{moni.quest.059A9B12C8478025.title}"
-			x: -3.25d
-			y: -6.25d
+			x: -3.75d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]
@@ -2994,6 +2980,32 @@
 			y: 4.25d
 		}
 		{
+			dependencies: [
+				"6DBD1492197AC92D"
+				"05ABE2A5DE6128C4"
+			]
+			description: [
+				"{moni.quest.6A76B3DCA599B9B5.description1}"
+				""
+				"{moni.quest.6A76B3DCA599B9B5.description2}"
+				""
+				"{moni.quest.6A76B3DCA599B9B5.description3}"
+			]
+			hide_until_deps_visible: true
+			icon: "kubejs:hostile_universe_data"
+			id: "6A76B3DCA599B9B5"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2034B77FED29D890"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.6A76B3DCA599B9B5.title}"
+			x: -0.5d
+			y: 5.25d
+		}
+		{
 			dependencies: ["605062720747B482"]
 			description: [
 				"{moni.quest.5732018AA35D69B6.description1}"
@@ -3082,7 +3094,6 @@
 				""
 				"{moni.quest.386DB3C9E646764D.description3}"
 			]
-			hide_dependent_lines: true
 			id: "386DB3C9E646764D"
 			shape: "hexagon"
 			tasks: [
@@ -3149,99 +3160,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7BC6E67521545949.title}"
-			x: 0.0d
-			y: 1.125d
-		}
-		{
-			dependencies: ["0FA959478905FFF3"]
-			description: [
-				"You are about to enter the wonderful realm of &dQuantum Technology&r, and this requires having the proper machinery."
-				""
-				"The Virtual Particle Synthesizer exploits Quantum Fluctuations to isolate, stabilize and refine elementary particles out of &6radioactive materials and Primal Mana&r."
-				""
-				"However, finding those exotic ingredients is the easiest part of operating this multiblock, since each recipe is affected by multiple factors."
-				""
-				"{@pagebreak}"
-				"First of all, the multiblock measures the &3Local Quantum Fluctuation&r, a value between 0 and 15 that affects recipe inputs and outputs. A given value will always affect a given recipe the same way."
-				""
-				"Second, each recipe is affected by &3Quantum Rules&r. A recipe can have one Rule affecting its inputs, and one affecting its outputs. The recipe then calculates its actual inputs and outputs based on the Rules, the fluctuation, and most importantly, the &6World Seed&r. This means that, while a recipe's outputs will be consistent in your world, every player will experience different ideal ratios and fluctuation values. Happy Experimenting!"
-				"The next two pages will explain the way the Quantum Rules affect recipe inputs and outputs. But only so much can be explained by words, and trying it out is your best bet."
-				""
-				"{@pagebreak}"
-				"&l&nOutput Rule of Quantum Entanglement&r&r"
-				"The recipe generates a \"target Fluctuation value\". Running the recipe at that value guarantees the first item output. Running it at a mod 16 distance of 8 (the opposite on a circle 0 to 15) guarantees the 2nd item output. Points in between have a &3random chance&r to give either output with a bias towards the nearest pole."
-				"Fluid outputs, and item outputs past the 2nd, are unaffected."
-				""
-				"&l&nOutput Rule of Quantum Polarization&r&r"
-				"The logic is similar to the above, instead applying to fluid outputs. Instead of having a random chance to produce items in-between values, it interpolates both fluid amounts."
-				"Item outputs, and fluid outputs past the 2nd, are unaffected."
-				"{@pagebreak}"
-				"&l&nOutput Rule of Quantum Fields&r&r"
-				"Each output item gets independently assigned exactly 4 Fluctuation values at which it is successfully produced. Each is exclusively produced at those values."
-				"Fluid outputs are unaffected."
-				""
-				"&l&nOutput Rule of Quantum Waves&r&r"
-				"The logic is identical to the above, applying to fluids instead of items. Item outputs are unaffected."
-				""
-				"{@pagebreak}"
-				"&l&nInput Rule of Quantum Entanglement&r&r"
-				"The recipe generates a \"target Fluctuation value\". Running it at that value consumes half of input A. Running it at a mod 16 distance of 8 consumes half of input B. Points in between have a random chance to consume half of of either input with a bias towards the nearest pole."
-				""
-				"&l&nInput Rule of Quantum Polarization&r&r"
-				"The logic is similar to the above, instead applying to fluid inputs. Instead of having a random chance to consume the extra items in-between values, it interpolates both fluid amounts."
-				"Item outputs, and fluid outputs past the 2nd, are unaffected."
-				""
-				"{@pagebreak}"
-				"&l&nInput Rule of Quantum Fields&r&r"
-				"Each Fluctuation value has the recipe consume between 1/16 and 1 times each input (rolled independently). Both item and fluid outputs are then multiplied by the average of each multiplier, leading to a similar total cost for every roll, but different ratios. This applies multiplicatively with any quantum output rule."
-				"Fluid inputs are unaffected."
-				""
-				"&l&nInput Rule of Quantum Waves&r&r"
-				"The logic is identical to the above, applying to fluids instead of items. Item inputs are unaffected."
-			]
-			id: "1CBECB3BF1F15CFC"
-			shape: "hexagon"
-			size: 1.8d
-			tasks: [{
-				id: "22A5678A6B8EADA6"
-				item: "monilabs:virtual_particle_synthesizer"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"386DB3C9E646764D"
-				"49D33146A1F417E8"
-				"1CBECB3BF1F15CFC"
-			]
-			description: [
-				"The &3Virtual Particle Synthesizer&r is an extremely potent machine that will unlock access to the universe's fundamental forces, if you have the skills to use it."
-				""
-				"The road to this power starts with &6Particle Soup&r. While it has few use in its crude state, you will later be able to refine it. As of now, however, you can still use its quantum properties for a few things."
-				""
-				"The first Soup recipe (and currently the only one you have access to) is affected by the Output Rule of Quantum Polarization, which means that it will produce better results the closer you are to a specific fluctuation value. Figuring out which one is up to you."
-				"Later on, you will get access to better &6Particle Soup&r recipes, which will require more advanced automation to optimize."
-			]
-			icon: "kubejs:particle_soup_bucket"
-			id: "57624991C8AD6DB3"
-			subtitle: "Getting Elementary"
-			tasks: [
-				{
-					id: "190A098AB961D2B9"
-					item: "kubejs:particle_soup_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1A1E0CCFCAF90EE4"
-					type: "checkmark"
-				}
-			]
-			title: "Particle Soup"
-			x: -3.75d
-			y: -3.0d
+			x: 0.25d
+			y: -1.75d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"

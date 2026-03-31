@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
             B: "gtceu:ev_field_generator"
         }).id("kubejs:shaped/virtual_particle_synthesizer")
 
-        // Microverse Stability Sensor Hatch
+        // Quantum Sensor Hatch
         event.recipes.gtceu.assembler("quantum_sensor_hatch")
             .itemInputs("gtceu:ev_machine_hull", "4x gtceu:dark_steel_plate", "gtceu:hv_sensor", "3x gtceu:red_alloy_screw")
             .inputFluids("gtceu:soldering_alloy 288")
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.EV])
             .addMaterialInfo(true)
 
-        // Advanced Microverse Stability Sensor Hatch
+        // Advanced Quantum Sensor Hatch
         event.recipes.gtceu.assembler("advanced_quantum_sensor_hatch")
             .itemInputs("monilabs:quantum_sensor_hatch", "gtceu:ev_sensor")
             .inputFluids("gtceu:soldering_alloy 576")
@@ -40,10 +40,11 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.IV])
             .addMaterialInfo(true)
 
+        // EV Recipes
         event.recipes.gtceu.virtual_particle_synthesis("particle_soup")
             .itemInputs("8x kubejs:quantum_flux", "2x gtceu:uranium_235_dust")
             .inputFluids("gtceu:mana 250", "gtceu:radon 1000")
-            .duration(80)
+            .duration(40)
             .outputFluids("kubejs:particle_soup 1000")
             .EUt(GTValues.VA[GTValues.EV])
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.OUT)
@@ -58,7 +59,6 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.EV])
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.IN)
 
-        // EV Recipes (you will SUFFER until you get that hatch)
         event.recipes.gtceu.virtual_particle_synthesis("quantum_flux_vps")
             .itemInputs("redstone_arsenal:flux_gem")
             .inputFluids("gtceu:mana 200", "kubejs:particle_soup 200")

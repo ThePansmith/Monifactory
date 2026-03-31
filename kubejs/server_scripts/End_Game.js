@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
         .itemInputs("minecraft:diamond")
         .inputFluids("gtceu:redstone 720")
         .itemOutputs("redstone_arsenal:flux_gem")
-        .duration((doParticleSynthesis ? 80 : 200)) // You'll need a LOT more with that enabled, and I hate pointless timegates.
+        .duration(200)
         .EUt(400)
 
     // Flux Plating
