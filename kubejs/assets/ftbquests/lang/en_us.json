@@ -453,6 +453,7 @@
     "moni.quest.11124D8CC9403E67.description3": "Alternatively, you can make a &6UEV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead.",
     "moni.quest.11124D8CC9403E67.title": "&2UEV Circuit Assembler",
     "moni.quest.11154356854B64DA.description1": "You'll need an HV or better &3Chemical Bath&r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe.",
+    "moni.quest.11154356854B64DA.description1.insanity": "You'll need a &3Virtual Particle Synthesizer&r running at EV power to craft this. You can craft it at any Quantum Fluctuation, but bad timing will cost twice the &3Particle Soup&r.",
     "moni.quest.11154356854B64DA.subtitle": "When &6Ender Eyes&r just aren't creepy enough.",
     "moni.quest.113E9543ADB1666B.subtitle": "Just like how the Ancient Builders used to make it.",
     "moni.quest.113E9543ADB1666B.description1": "&6Ancient Debris Dust&r can be processed into &6Ardite Dust&r and &6Activated Netherite Scrap&r, used for &6Manyullyn&r and &6Activated Netherite&r respectively.",
@@ -3292,5 +3293,59 @@
     "moni.task1.2BD54071AD23C73C": "Any Space Helmet",
     "moni.task2.2BD54071AD23C73C": "Any Space Suit",
     "moni.task3.2BD54071AD23C73C": "Any Space Pants",
-    "moni.task4.2BD54071AD23C73C": "Any Space Boots"
+    "moni.task4.2BD54071AD23C73C": "Any Space Boots",
+
+    "moni.quest.077D3FE11B44CEF8.title": "Normal Microverses",
+    "moni.quest.077D3FE11B44CEF8.subtitle": "Reality Can Be Whatever I Want",
+    "moni.quest.077D3FE11B44CEF8.description1": "Sending spaceships into a Microverse is often quite taxing on the projected Microverse. As the recipes run, the Integrity of the microverse depletes. The total depletion a recipe causes can be seen in &bEMI&r.",
+    "moni.quest.077D3FE11B44CEF8.description2": "To combat this decay, &6Quantum Flux&r can be used to patch up the microverse. By placing the Flux in any input bus, it will be automatically consumed to repair the microverse, regardless of if a recipe is running. Each Flux repairs 1%% integrity.",
+    "moni.quest.077D3FE11B44CEF8.description3": "However, be careful to not overfeed it. Flux can now be consumed even when less than 1%% of Integrity is missing, and when it does so the recipe progress regresses.",
+    "moni.quest.077D3FE11B44CEF8.description4": "Note that the above behavior is specific to Normal microverses. &eEach microverse type repairs in different ways&r, so make sure to read their quests!",
+    "moni.quest.077D3FE11B44CEF8.description5": "If a Microverse does reach 0 Integrity, it will turn into a &6Shattered Microverse&r, and the microminer on the mission will be returned, but nothing else. You can make use of the Shattered Microverse, or project a new Normal Microverse to run more recipes.",
+    "moni.quest.077D3FE11B44CEF8.description6": "The stability of the microverse can be read out in the form of a redstone signal using the &6Microverse Stability Sensor Hatch&r.",
+
+    "moni.quest.049005214A45A6A5.title": "Shattered Microverses",
+    "moni.quest.049005214A45A6A5.subtitle": "A World Crushed To Splinters",
+    "moni.quest.049005214A45A6A5.description1": "When a Microverse is overused and underm-maintained, it becomes highly unstable, transforming into a &3Shatterd Microverse&r &ewith random integrity ranging from 75%% to 100%%&r.",
+    "moni.quest.049005214A45A6A5.description2": "Shattered microverses cannot be repaired in any way. To run more missions, you must re-shatter a Normal microverse. When a Shattered microverse reaches 0%% Integrity, it becomes a &3Corrupted Microverse&r.",
+    "moni.quest.049005214A45A6A5.description3": "The Microverse type can be read out in the form of a redstone signal using the &6Microverse Type Sensor Hatch&r.",
+
+    "moni.quest.3B0865F802EC0B48.title": "Hostile Microverses",
+    "moni.quest.3B0865F802EC0B48.subtitle": "Quite Literally Star Wars",
+    "moni.quest.3B0865F802EC0B48.description1": "Micro miners that perform combat require a special microverse, a &3Hostile Microverse&r. To create one, declare war on a Normal microverse with a bomb strapped to a &6T2.5MM&r.",
+    "moni.quest.3B0865F802EC0B48.description2": "A Hostile Microverse behaves very different from a Normal microverse. Hostile microverses cannot be repaired with &6Quantum Flux&r, and decay naturally even when no recipe is running. However, as your micro miner thins the hordes, stability is restored to the microverse.",
+    "moni.quest.3B0865F802EC0B48.description3": "Be wary, however, as bringing Integrity back to 100%% and fully eradicating the horde will pacify the Microverse, turning it back to Normal and failing any ongoing mission.",
+    "moni.quest.3B0865F802EC0B48.description4": "You will need to run missions periodically to prevent the collapse of the Hostile microverse and make sure not to run too many, making it quite the challenge to automate. Consider using a &6Microverse Stability Sensor Hatch&r to help.",
+    "moni.quest.3B0865F802EC0B48.description5": "Letting a Hostile Microverse fully decay into chaos will lead to the formation of an &6Abyssal Microverse&r.",
+
+    "moni.quest.77D1EE523551FAB8.title": "Abyssal Microverses",
+    "moni.quest.77D1EE523551FAB8.subtitle": "Diving In Too Deep",
+    "moni.quest.77D1EE523551FAB8.description1": "&6Abyssal Microverses&r behave the same way as &6Hostile Microverses&r, except that they decay even faster.",
+    "moni.quest.77D1EE523551FAB8.description2": "Eradicating the hordes will turn the Microverse back to hostile, while letting it decay might have &4disastrous consequences&r.",
+
+    "moni.quest.71687C7BA84AD60D.title": "Necrosed Microverses",
+    "moni.quest.71687C7BA84AD60D.subtitle": "An Astral Infection",
+    "moni.quest.71687C7BA84AD60D.description1": "Ripping the Heart out of a Microverse will cause it to slowly die out.",
+    "moni.quest.71687C7BA84AD60D.description2": "A Necrosed Microverse behaves in a similar way to a &6Shattered Microverse&r, except that it also slowly yet constantly loses Integrity.",
+    "moni.quest.71687C7BA84AD60D.description3": "This can still be useful to you, since Cosmic Necrosis happens to form the ideal conditions for the formation of some special materials.",
+
+    "moni.quest.2CEA270E7AFB5D17.title": "Corrupted Microverses",
+    "moni.quest.2CEA270E7AFB5D17.subtitle": "A Glitch In The Matrix",
+    "moni.quest.2CEA270E7AFB5D17.description1": "When a &3Shattered&r or &3Necrosed Microverse&r runs out of integrity, it becomes a &3Corrupted Microverse&r.",
+    "moni.quest.2CEA270E7AFB5D17.description2": "Corrupted Microverses decay passively, even when a recipe is running. Letting it decay fully may have &4disastrous consequences&r.",
+    "moni.quest.2CEA270E7AFB5D17.description3": "Corrupted microverses can be repaired with &6Quantum Flux&r, however be careful to not overfeed it. Repairing it beyond 100%% leads to the formation of a highly explosive &6Supercharged Microverse&r.",
+
+    "moni.quest.1EF7FC3593A3F1DF.title": "Supercharged Microverses",
+    "moni.quest.1EF7FC3593A3F1DF.subtitle": "And For My Next Trick, BOOOOOOOMBS!",
+    "moni.quest.1EF7FC3593A3F1DF.description1": "Overfeeding a &6Corrupted Microverse&r will cause it to become highly unstable.",
+    "moni.quest.1EF7FC3593A3F1DF.description2": "A &6Supercharged Microverse&r forms at extremely low integrity, and rapidly regenerates over time. But make sure not to let it reach full charge, or it will &3violently explode&r, destroying your projector and any automation placed too close.",
+    "moni.quest.1EF7FC3593A3F1DF.description3": "Some missions will drain its energy back down, while others will cause it to charge up even faster. Make sure to read EMI properly, and not to blow up your base.",
+    "moni.quest.1EF7FC3593A3F1DF.description4": "Managing a Supercharged Microverse is an act of balance, as fully depleting its charge could have &4disastrous consequences&r.",
+
+    "moni.quest.19D412E80C793058.title": "&4Degenerate Microverses&r",
+    "moni.quest.19D412E80C793058.subtitle": "What is this and how do I get rid of it?",
+    "moni.quest.19D412E80C793058.description1": "A &4Degenerate Microverse&r should never be able to form under normal Projector operation.\nWhether it happens by making a critical mistake in Projector operation, or by trying something as insane as ripping multiple hearts out of a Microverse, the result is the same: a Rift in the Microverse's Causality Flux.",
+    "moni.quest.19D412E80C793058.description2": "But if you are reading this &lafter&r creating one, chances are it's already too late to fix it. If you however have commom sense and are reading the instruction manual before operating a Projector, you will have a chance to survive if you ever create one.",
+    "moni.quest.19D412E80C793058.description4": "&4Make sure not to inject anything else into the Projector&r, as the Microverse is too unstable to handle even a single Microminer. Similarly, do not let the Projector be damaged, and do not let the Microverse run out of integrity.\nThe details of what would happen are unknown to us, but chances are that the following total rupture of the Causality Flux would damage our own reality in unpredictable ways.",
+    "moni.quest.19D412E80C793058.description3": "The truth is, little is known about Degenerate Microverses, as our scientists at Moni Labs try their best to &lavoid&r creating one.\nBut according to our simulations, your best chance at survival is to try to &3patch the Projector's simulation by injecting &6Universe Creation Data&3 into it.&r"
 }

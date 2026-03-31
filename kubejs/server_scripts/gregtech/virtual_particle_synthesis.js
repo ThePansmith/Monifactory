@@ -40,13 +40,13 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.IV])
             .addMaterialInfo(true)
 
-        // EV Recipes
+        // HV Recipes (VPS is a gate to EV hatches)
         event.recipes.gtceu.virtual_particle_synthesis("particle_soup")
             .itemInputs("8x kubejs:quantum_flux", "2x gtceu:uranium_235_dust")
             .inputFluids("gtceu:mana 250", "gtceu:radon 1000")
-            .duration(40)
+            .duration(80)
             .outputFluids("kubejs:particle_soup 1000")
-            .EUt(GTValues.VA[GTValues.EV])
+            .EUt(GTValues.VA[GTValues.HV])
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.OUT)
 
         event.remove({ output: "gtceu:quantum_eye" })
@@ -59,8 +59,9 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.EV])
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.IN)
 
+        // EV Recipes (you will SUFFER until you get that hatch)
         event.recipes.gtceu.virtual_particle_synthesis("quantum_flux_vps")
-            .itemInputs("minecraft:diamond")
+            .itemInputs("redstone_arsenal:flux_gem")
             .inputFluids("gtceu:mana 200", "kubejs:particle_soup 200")
             .itemOutputs(
                 "8x kubejs:quantum_flux",
@@ -91,7 +92,7 @@ ServerEvents.recipes(event => {
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.IN)
 
         event.recipes.gtceu.virtual_particle_synthesis("more_quantum_flux_vps")
-            .itemInputs("minecraft:diamond", "gtceu:quantum_eye")
+            .itemInputs("redstone_arsenal:flux_gem", "gtceu:quantum_eye")
             .inputFluids("kubejs:bosonic_matter 400", "kubejs:hadronic_matter 400", "gtceu:dragon_breath 500")
             .itemOutputs(
                 "64x kubejs:quantum_flux",

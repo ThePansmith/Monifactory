@@ -520,28 +520,6 @@
 			x: 8.75d
 			y: -0.5d
 		}
-		{
-			id: "62E94BBA2523F5D7"
-			invisible: true
-			tasks: [{
-				id: "508D4A657F22A38A"
-				stage: "doComplexMicroverses"
-				type: "gamestage"
-			}]
-			x: 11.25d
-			y: -1.75d
-		}
-		{
-			id: "3058EA50D53CED19"
-			invisible: true
-			tasks: [{
-				id: "7BBE1560141F6F24"
-				stage: "dontComplexMicroverses"
-				type: "gamestage"
-			}]
-			x: 11.25d
-			y: -0.5d
-		}
 	]
 	title: "{moni.chapter.1956832191841F25.title}"
 }
