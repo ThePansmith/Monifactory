@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
 
         // SMP in dust too
         event.remove({ output: "monilabs:eltz_ingot", input: "monilabs:eltz_dust" })
-        event.recipes.gtceu.electric_blast_furnace(`eltz_from_dust_smp`)
+        event.recipes.gtceu.electric_blast_furnace("eltz_from_dust_smp")
             .itemInputs("monilabs:eltz_dust")
             .inputFluids("kubejs:strange_matter_plasma 10") // Stabilizing superheavy elements since 2026
             .itemOutputs("1x monilabs:eltz_ingot")

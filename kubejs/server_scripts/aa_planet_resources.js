@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
                 .itemOutputs(`${fluxCount + 1}x kubejs:quantum_flux`)
                 .duration(100)
                 .EUt(GTValues.VA[GTValues.HV])
-                
+
         }
     })
 

@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
                 "gtceu:microversium 1152",
                 "kubejs:higgs_g2 1000"
             )   // Gravity In A Bottle(TM)
-                // G3 regrettably is post-heart. But I'll use it later.
+        // G3 regrettably is post-heart. But I'll use it later.
             .duration(1000)
             .EUt(GTValues.VA[GTValues.UHV])
             .stationResearch(builder => builder
@@ -210,8 +210,8 @@ ServerEvents.recipes(event => {
                     "kubejs:gluon_g3 1000",
                     "kubejs:w_z_g2 1000"
                 )   // Gravity In A Bottle(TM)
-                    // Universe's Strongest Glue (TM)
-                    // Decay In A Bottle(TM)
+            // Universe's Strongest Glue (TM)
+            // Decay In A Bottle(TM)
                 .duration(1000)
                 .EUt(GTValues.VA[GTValues.UEV])
                 .itemOutputs("monilabs:causality_collapser")
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:warp_engine")
             .inputFluids("gtceu:advanced_soldering_alloy 576")
             .duration(1800)
-            .EUt(30720)   
+            .EUt(30720)
 
         // Potential ingredient additions: Bolts, Screws, Plates, Wires, circuits, frame boxes
         event.recipes.gtceu.assembly_line("gravitational_amplifier")

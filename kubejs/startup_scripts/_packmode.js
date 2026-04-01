@@ -125,7 +125,7 @@ global.doHostileMicroverse = packMode == "Hard" || packMode == "Expert" || packM
  * Despite this, I am going out of my way to implement them in a future-proof way where my skills allow it, so that preserving any of those in the future
  *  is doable if one so chooses, and to make this more believable.
  * PLAY AT YOUR OWN RISK.
- * 
+ *
  * P.S. I don't know who I'm typing this for because I want to troll the devs as well and so this comment will likely be removed before pushing LMAO.
  */
 

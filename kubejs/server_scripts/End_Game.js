@@ -531,7 +531,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(GTValues.VHA[GTValues.ZPM])
             .addMaterialInfo(true)
-        
+
         event.recipes.gtceu.assembler("kubejs:netherite_casing")
             .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
             .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
@@ -609,7 +609,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.IV])
     } else {
         // No silly particle juice :(
-        
+
         // Casings
         event.recipes.gtceu.assembler("monilabs:eltz_casing")
             .itemInputs("6x monilabs:eltz_plate", "monilabs:eltz_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
@@ -618,7 +618,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(GTValues.VHA[GTValues.ZPM])
             .addMaterialInfo(true)
-        
+
         event.recipes.gtceu.assembler("kubejs:netherite_casing")
             .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
             .inputFluids("kubejs:gluon_g2 50")
