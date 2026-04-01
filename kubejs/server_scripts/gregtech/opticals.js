@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
             )
             .itemOutputs("8x kubejs:optical_processing_unit")
     }
-    
+
     // Non-PrismaC PSoC Steps
 
     event.recipes.gtceu.cutter("prism_pane_water")

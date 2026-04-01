@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(GTValues.VHA[GTValues.UV])
 
-    if (doComplexPrismaC) {   
+    if (doComplexPrismaC) {
         event.recipes.gtceu.chromatic_processing("not_prism_red")
             .itemInputs("kubejs:lyso_ce_glass")
             .itemOutputs("gtceu:fusion_glass")
@@ -229,7 +229,7 @@ ServerEvents.recipes(event => {
         ["cyan", "blue", "blue", "red", 256, 640],
         ["blue", "magenta", "active", "blue", 256, 896]
     ]
-    
+
     const priscoreComplexSupercritical = [
         ["active", "orange", "orange", 384, 1152],
         ["orange", "lime", "lime", 384, 1536],
@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
                 .inputColor(PrismaticColor["NOT_" + prismacIn.toUpperCase()])
                 .outputStatesRelative(0)
                 .duration(20)
-                .EUt(GTValues.VHA[GTValues.UHV])  
+                .EUt(GTValues.VHA[GTValues.UHV])
         })
 
         priscoreComplexSupercritical.forEach(([coreIn, prismacIn, coreOut, transMb, nullMb]) => {
@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
                 .inputColor(PrismaticColor["NOT_" + prismacIn.toUpperCase()])
                 .outputStatesRelative(0)
                 .duration(20)
-                .EUt(GTValues.VHA[GTValues.UHV])  
+                .EUt(GTValues.VHA[GTValues.UHV])
         })
 
         // Have to do red priscore manually cause it shouldn't output null when voided
@@ -401,8 +401,8 @@ ServerEvents.recipes(event => {
                 .outputStatesRelative(0)
                 .duration(20)
                 .EUt(GTValues.VHA[GTValues.UHV])
-            
-            
+
+
         })
 
         // Have to do red priscore manually cause it shouldn't output null when voided

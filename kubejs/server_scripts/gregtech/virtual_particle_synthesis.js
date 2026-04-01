@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
             .outputFluids("kubejs:particle_soup 20000")
             .EUt(GTValues.VA[GTValues.LuV])
             .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.IN)
-        
+
         event.recipes.gtceu.virtual_particle_synthesis("degenerate_recycling_LuV")
             .itemInputs("4x kubejs:quantum_flux")
             .inputFluids("kubejs:degenerate_matter 1000")
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
             .outputFluids("kubejs:particle_soup 250", "kubejs:particle_soup 250", "kubejs:bosonic_matter 250", "kubejs:hadronic_matter 250")
             .EUt(GTValues.VA[GTValues.LuV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.OUT)
-        
+
         // ZPM Recipes
         event.recipes.gtceu.virtual_particle_synthesis("higgs_g2_gluon_g1")
             .itemInputs("2x gtceu:quantum_star", "2x gtceu:enriched_naquadah_dust")
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("gtceu:gravi_star")
             .EUt(GTValues.VA[GTValues.ZPM])
             .quantumRule(QuantumRule.QUANTUM_ENTANGLEMENT, IO.OUT)
-        
+
         event.recipes.gtceu.virtual_particle_synthesis("degenerate_recycling_zpm")
             .itemInputs("4x gtceu:quantum_eye")
             .inputFluids("kubejs:degenerate_matter 1000")
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
             .outputFluids("kubejs:bosonic_matter 300", "kubejs:hadronic_matter 300", "kubejs:higgs_g1 200", "kubejs:higgs_g1 200")
             .EUt(GTValues.VA[GTValues.ZPM])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.OUT)
-        
+
         // UV Recipes
         event.recipes.gtceu.virtual_particle_synthesis("meson_g1")
             .itemInputs("2x gtceu:enriched_naquadah_dust", "8x kubejs:protomatter")
@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV])
             .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.IN)
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.OUT)
-        
+
         // No more recycling
         // UEV Recipes
         event.recipes.gtceu.virtual_particle_synthesis("meson_g2")
@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
             )
             .EUt(GTValues.VA[GTValues.UEV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.BOTH)
-        
+
         event.recipes.gtceu.virtual_particle_synthesis("hyperdegenerate_matter")
             .inputFluids("gtceu:superheavy_atomic_residue 400", "kubejs:degenerate_matter 400", "kubejs:meson_g2 400")
             .duration(80)
@@ -267,7 +267,7 @@ ServerEvents.recipes(event => {
             .outputFluids("kubejs:gluon_g3 240", "kubejs:w_z_g2 360", "gtceu:exotic_particle_solution 240")
             .EUt(GTValues.VA[GTValues.UEV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.BOTH)
-        
+
         // --- QUARK GLUON PLASMA ---
         event.recipes.gtceu.virtual_particle_synthesis("quark_gluon_plasma")
             .inputFluids("kubejs:strange_matter_plasma 256", "kubejs:gluon_g3 256", "kubejs:w_z_g2 256", "gtceu:hyperdegenerate_matter 256")

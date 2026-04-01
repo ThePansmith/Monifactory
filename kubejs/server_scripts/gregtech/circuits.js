@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
             .quantumRule(QuantumRule.QUANTUM_ENTANGLEMENT, IO.OUT)
             .EUt(GTValues.VA[GTValues.IV])
     }
-    
+
     // Complex SMDs
     const smds = [
         ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 72],

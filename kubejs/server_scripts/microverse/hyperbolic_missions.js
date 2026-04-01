@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
                     "monilabs:shard_of_causality",
                     "kubejs:field_stabilized_prismatic_pulsar_compound",
                     "64x gtceu:infinity_ingot",
-                    "64x gtceu:meta_null_ingot"                    
+                    "64x gtceu:meta_null_ingot"
                 )
                 .inputFluids("kubejs:quark_gluon_plasma 2000")
                 .damageRate(20)
