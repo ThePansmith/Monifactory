@@ -79,6 +79,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID, 1324);
     GTMaterials.Americium.setMaterialSecondaryARGB(0x083946);
 
+    // Beryllium Plasma
+    let beryllium_plasma_prop = GTMaterials.Beryllium.getProperty($PropertyKey.FLUID)
+    beryllium_plasma_prop.getStorage().enqueueRegistration($FluidStorageKeys.PLASMA, new $FluidBuilder())
+
     // Liquid Sculk
     let liquid_sculk_prop = new $FluidProperty();
     liquid_sculk_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder().temperature(310).customStill())
