@@ -1269,7 +1269,11 @@
 		}
 		{
 			dependencies: ["1CC092A2F2CD4589"]
-			description: ["{moni.quest.62C85A1F451C4855.description5}"]
+			description: [
+				"{moni.quest.77DB862BCC7BF6A5.description1}"
+				""
+				"{moni.quest.62C85A1F451C4855.description5}"
+			]
 			id: "77DB862BCC7BF6A5"
 			shape: "hexagon"
 			tasks: [{

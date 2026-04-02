@@ -1770,7 +1770,7 @@
 		{
 			dependencies: ["297B523B6C503957"]
 			description: [
-				"{moni.quest.5A94534682807314.description1.expert}"
+				"{moni.quest.5A94534682807314.description1}"
 				""
 				"{moni.quest.5A94534682807314.description2}"
 				""
@@ -2058,10 +2058,7 @@
 			y: 3.75d
 		}
 		{
-			dependencies: [
-				"754C416FB3F5DBDA"
-				"4B338515E84FC51A"
-			]
+			dependencies: ["4B338515E84FC51A"]
 			description: [
 				"{moni.quest.70784021A2D4E520.description1.expert}"
 				""
@@ -2075,26 +2072,14 @@
 			id: "70784021A2D4E520"
 			shape: "hexagon"
 			subtitle: "{moni.quest.70784021A2D4E520.subtitle.expert}"
-			tasks: [
-				{
-					id: "47B3AE212EB051F2"
-					item: "gtceu:nugget_casting_mold"
-					type: "item"
-				}
-				{
-					id: "6EAF71E5BF140718"
-					item: "minecraft:iron_nugget"
-					type: "item"
-				}
-				{
-					id: "1D5FB685C74458E9"
-					item: "gtceu:wrought_iron_nugget"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1D5FB685C74458E9"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
 			title: "{moni.quest.70784021A2D4E520.title.expert}"
 			x: -1.5d
-			y: 11.0d
+			y: 9.75d
 		}
 		{
 			can_repeat: false

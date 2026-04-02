@@ -132,8 +132,8 @@
 				}
 			]
 			title: "{moni.quest.62BBD1F6767A4D90.title}"
-			x: -2.4375d
-			y: 1.5625d
+			x: -1.25d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -181,8 +181,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.19233A97579E0BDD.title}"
-			x: -2.0d
-			y: -2.75d
+			x: -3.0d
+			y: 1.25d
 		}
 		{
 			dependencies: ["2D31856F6EF1ED69"]
@@ -224,8 +224,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.0381DCD3FD3C9ED2.title}"
-			x: -4.6875d
-			y: 1.5625d
+			x: -3.0d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -327,8 +327,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2A84013C14085C7B.title}"
-			x: -0.75d
-			y: -3.25d
+			x: -1.5d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -383,8 +383,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3EDD0A986384F2A7.title}"
-			x: 2.0d
-			y: -2.75d
+			x: 3.0d
+			y: 1.25d
 		}
 		{
 			dependencies: ["1C30B0E57E195FD7"]
@@ -451,7 +451,7 @@
 			}]
 			title: "{moni.quest.5795EE147D4879B7.title}"
 			x: -3.5d
-			y: -1.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -493,8 +493,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.038D06BCA022C1BF.title}"
-			x: -3.0d
-			y: -2.0d
+			x: -3.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -550,8 +550,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4685AC9E6CD87B77.title}"
-			x: 3.0d
-			y: -2.0d
+			x: 3.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -598,8 +598,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4EAD8756BAAC6B2E.title}"
-			x: 0.75d
-			y: -3.25d
+			x: 1.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["604CCBE824D03A74"]
@@ -682,7 +682,7 @@
 			}]
 			title: "{moni.quest.47094A5717952699.title}"
 			x: 3.5d
-			y: 0.0d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -732,7 +732,7 @@
 			]
 			title: "{moni.quest.63ADD9B48834AA39.title}"
 			x: 5.0d
-			y: 0.0d
+			y: -0.25d
 		}
 		{
 			dependencies: ["4EAD8756BAAC6B2E"]
@@ -769,8 +769,8 @@
 				}
 			]
 			title: "{moni.quest.404C9497C46E7608.title}"
-			x: 0.0d
-			y: -4.25d
+			x: 2.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -841,7 +841,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5301E546BAA69844.title}"
-			x: 1.0d
+			x: 0.75d
 			y: 5.0d
 		}
 		{
@@ -948,7 +948,7 @@
 			}]
 			title: "{moni.quest.46AF35D4EECA5BDB.title}"
 			x: -4.0d
-			y: 6.75d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1032,7 +1032,7 @@
 			}]
 			title: "{moni.quest.500E619D568C07C2.title}"
 			x: 3.5d
-			y: -1.0d
+			y: -1.25d
 		}
 		{
 			dependencies: ["0EDFB0C24B9129AB"]
@@ -1056,7 +1056,7 @@
 			}]
 			title: "{moni.quest.4624889F738AB21B.title}"
 			x: -5.0d
-			y: 0.0d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -1099,7 +1099,7 @@
 			}]
 			title: "{moni.quest.0EDFB0C24B9129AB.title}"
 			x: -3.5d
-			y: 0.0d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -1973,8 +1973,8 @@
 				}
 			]
 			title: "{moni.quest.1A427A8CB43C8B59.title}"
-			x: 2.5625d
-			y: 1.5625d
+			x: 1.25d
+			y: -3.75d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2580,7 +2580,7 @@
 			}]
 			title: "{moni.quest.604CCBE824D03A74.title}"
 			x: 0.0d
-			y: 0.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -2724,6 +2724,32 @@
 			}]
 			x: 2.25d
 			y: 14.25d
+		}
+		{
+			dependencies: ["1BC6DDC2D50F9C46"]
+			description: [
+				"{moni.quest.02B78A0C4F3C4ECA.description1}"
+				""
+				"{moni.quest.02B78A0C4F3C4ECA.description2}"
+				""
+				"{moni.quest.02B78A0C4F3C4ECA.description3}"
+				""
+				"{moni.quest.02B78A0C4F3C4ECA.description4}"
+				""
+				"{moni.quest.02B78A0C4F3C4ECA.description5}"
+			]
+			icon: "gtceu:lv_voltage_coil"
+			id: "02B78A0C4F3C4ECA"
+			require_sequential_tasks: false
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "480CE98BB705369B"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.02B78A0C4F3C4ECA.title}"
+			x: 1.0d
+			y: 11.25d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"
