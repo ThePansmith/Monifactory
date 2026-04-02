@@ -20,6 +20,10 @@
         {
             "item": "gtceu:lead_ingot",
             "count": 12
+        },
+        {
+            "item": "minecraft:coal",
+            "count": 64
         }
     ]
 }

@@ -1,5 +1,31 @@
 {
-    "conditions": [
-        { "type": "forge:false" }
+    "entity": "minecraft:zombified_piglin",
+    "subtypes": [
+        "minecraft:piglin"
+    ],
+    "name": "entity.minecraft.zombified_piglin",
+    "name_color": "#00FFFFFF",
+    "display": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.zombified_piglin",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 64
+        },
+        {
+            "item": "minecraft:gold_ingot",
+            "count": 3
+        }
     ]
 }
