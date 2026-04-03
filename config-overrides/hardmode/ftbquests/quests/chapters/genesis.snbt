@@ -1399,9 +1399,9 @@
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"{moni.quest.34CA940B412284F2.description1.hardmode}"
+				"{moni.quest.34CA940B412284F2.description1}"
 				""
-				"{moni.quest.34CA940B412284F2.description2.hardmode}"
+				"{moni.quest.34CA940B412284F2.description2}"
 			]
 			id: "34CA940B412284F2"
 			tasks: [{
@@ -1425,7 +1425,7 @@
 				title: "{moni.task.34E57B9F8FF4E1AE.hardmode}"
 				type: "item"
 			}]
-			title: "{moni.quest.34CA940B412284F2.title.hardmode}"
+			title: "{moni.quest.34CA940B412284F2.title}"
 			x: 0.0d
 			y: 8.5d
 		}
@@ -1956,12 +1956,17 @@
 				"{moni.quest.5A94534682807314.description1}"
 				""
 				"{moni.quest.5A94534682807314.description2}"
-				"{@pagebreak}"
+				""
 				"{moni.quest.5A94534682807314.description3}"
-				""
 				"{moni.quest.5A94534682807314.description4}"
-				""
 				"{moni.quest.5A94534682807314.description5}"
+				"{moni.quest.5A94534682807314.description6}"
+				"{@pagebreak}"
+				"{moni.quest.5A94534682807314.description7}"
+				""
+				"{moni.quest.5A94534682807314.description8}"
+				""
+				"{moni.quest.5A94534682807314.description9}"
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"

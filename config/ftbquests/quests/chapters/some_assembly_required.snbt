@@ -592,7 +592,7 @@
 				""
 				"{moni.quest.0508D3CCB6C876A3.description4}"
 			]
-			icon: "gtceu:naquadria_dust"
+			icon: "gtceu:enriched_naquadah_dust"
 			id: "0508D3CCB6C876A3"
 			rewards: [{
 				id: "67B0A4C33D2EDC21"
@@ -600,30 +600,23 @@
 				type: "item"
 			}]
 			size: 1.5d
-			tasks: [{
-				id: "15E690653306B02C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:enriched_naquadah_dust"
-							}
-							{
-								Count: 1b
-								id: "gtceu:trinium_dust"
-							}
-							{
-								Count: 1b
-								id: "gtceu:naquadria_dust"
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "15E690653306B02C"
+					item: "gtceu:trinium_sulfide_dust"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "35C5447F3A7F3A87"
+					item: "gtceu:enriched_naquadah_sulfate_dust"
+					type: "item"
+				}
+				{
+					id: "1A54942E18E330D7"
+					item: "gtceu:naquadria_sulfate_dust"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.0508D3CCB6C876A3.title}"
 			x: 4.25d
 			y: 6.75d
@@ -841,10 +834,7 @@
 			y: -9.5d
 		}
 		{
-			dependencies: [
-				"4DB622A78605A2EB"
-				"05F7C3F397B329F5"
-			]
+			dependencies: ["4DB622A78605A2EB"]
 			description: [
 				"{moni.quest.36B1B083B4FA439F.description1}"
 				""
@@ -1848,6 +1838,29 @@
 			title: "{moni.quest.63C3077124BC81FD.title}"
 			x: -8.75d
 			y: -5.25d
+		}
+		{
+			dependencies: ["36B1B083B4FA439F"]
+			description: [
+				"{moni.quest.6CFAAF68D4B10062.description1}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description2}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description3}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description4}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description5}"
+			]
+			icon: "gtceu:empty_tier_i_battery"
+			id: "6CFAAF68D4B10062"
+			tasks: [{
+				id: "5AF8E611CFEF3599"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.6CFAAF68D4B10062.title}"
+			x: 0.25d
+			y: -9.5d
 		}
 	]
 	title: "{moni.chapter.058B7FE882875343.title}"
