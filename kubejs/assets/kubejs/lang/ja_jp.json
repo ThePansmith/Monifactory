@@ -30,7 +30,7 @@
     "item.kubejs.microminer_t8half": "§dトリニウム製マイクロエクスカベーカター [Tier 8.5]",
     "item.kubejs.microminer_t8half.desc": "§7§o未踏の片隅から、マイクロバースの向こう側から、特別な宝石と金属を採取します。",
     "item.kubejs.microminer_t9": "§dエタニウム製マイクロエクスカベーター [Tier 9]",
-    "item.kubejs.microminer_t9.desc": "§7§oマイクロバースの星々を崩壊させ、美味しいニュートロニウムの核を採取します。",
+    "item.kubejs.microminer_t9.desc": "§7§o未開拓の領域から、マイクロバースの彼方から死にゆく星の中心部まで、特別な宝石や金属を収穫します。",
     "item.kubejs.microminer_t10": "§dニュートロニウム製マイクロユニバースハーベスター [Tier 10]",
     "item.kubejs.microminer_t10.desc": "§7§oマイクロバース全体を崩壊させ、丸ごと採集します。人がいないところを狙いましょう。",
     "item.kubejs.microminer_t11": "§dオムニックマトリックスマイクロユニバーサルスカベンジャー [Tier 11]",
@@ -440,8 +440,8 @@
     "item.kubejs.optical_chip": "光学チップ",
     "item.kubejs.completed_optical_wafer": "完成済み光学ウェーハー",
     "item.kubejs.coated_sapphire_wafer": "コーティング済みサファイアウェハー",
-    "item.kubejs.extradimensional_optical_cpu_core": "Extradimensional Optical CPU Core",
-    "item.kubejs.extradimensional_wetware_cpu_core": "Extradimensional Wetware CPU Core",
-    "item.kubejs.extradimensional_crystal_cpu_core": "Extradimensional Crystal CPU Core",
-    "item.kubejs.extradimensional_quantum_cpu_core": "Extradimensional Quantum CPU Core"
+    "item.kubejs.extradimensional_optical_cpu_core": "超次元光学CPU コアコア",
+    "item.kubejs.extradimensional_wetware_cpu_core": "超次元ウェットウェアCPUコア",
+    "item.kubejs.extradimensional_crystal_cpu_core": "超次元クリスタルCPUコア",
+    "item.kubejs.extradimensional_quantum_cpu_core": "超次元量子CPUコア"
 }
