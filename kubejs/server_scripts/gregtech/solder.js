@@ -37,16 +37,6 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1916)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    event.recipes.gtceu.alloy_blast_smelter("living_solder_base_gas")
-        .itemInputs("5x gtceu:rose_gold_dust", "12x gtceu:tin_alloy_dust", "11x gtceu:gallium_dust", "7x gtceu:molybdenum_dust")
-        .inputFluids("gtceu:xenon 10")
-        .outputFluids("gtceu:living_solder_base 5040")
-        .duration(97.5 * 20)
-        .EUt(GTValues.VA[GTValues.IV])
-        .circuit(10)
-        .blastFurnaceTemp(1916)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
-
     event.recipes.gtceu.sculk_vat("living_soldering_alloy_dust")
         .itemInputs("8x gtceu:living_solder_base_dust", "3x gtceu:stem_cells")
         .inputFluids("gtceu:blood 3000")
