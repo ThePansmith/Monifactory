@@ -46,7 +46,8 @@ const clientMods = [
     "drippyloadingscreen",
     "badoptimizations",
     "fancymenu",
-    "gtmoldraw"
+    "gtmoldraw",
+    "phoenixchromaticcodes"
 ]
 
 const symlinkSync = (ourDir: fs.PathLike, newDir: fs.PathLike) => {
