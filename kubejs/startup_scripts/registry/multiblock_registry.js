@@ -472,6 +472,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("discharger", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("discharger")
+        .recipeModifiers((machine, recipe) => global.dischargerParallel(machine, recipe))
         .appearanceBlock(() => Block.getBlock("monilabs:cryolobus_casing"))
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
