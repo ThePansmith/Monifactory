@@ -807,14 +807,35 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(480)
 
-    // Germanium is used in diodes
-    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_germanium_dust")
+    // Germanium can be used in diodes
+    event.recipes.gtceu.mixer("silicon_germanium_mixing")
+        .itemInputs("4x gtceu:silicon_dust", "1x gtceu:germanium_dust")
+        .itemOutputs("5x gtceu:silicon_germanium_dust")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20)
+
+    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_silicon_germanium_dust")
     event.recipes.gtceu.assembler("germanium_smd_diode")
-        .itemInputs("1x gtceu:small_germanium_dust", "4x gtceu:fine_platinum_wire")
+        .itemInputs("1x gtceu:small_silicon_germanium_dust", "4x gtceu:fine_platinum_wire")
         .inputFluids("gtceu:polyethylene 144")
         .itemOutputs("64x gtceu:smd_diode")
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Germanium fusion
+    event.recipes.gtceu.fusion_reactor("argon_and_silicon_to_germanium")
+        .inputFluids("gtceu:argon 125", "gtceu:silicon 16")
+        .outputFluids("gtceu:germanium 16")
+        .duration(128)
+        .EUt(0.75 * GTValues.V[GTValues.LuV])
+        .fusionStartEU(220000000)
+
+    // No dust mold, sadly
+    event.recipes.gtceu.fluid_solidifier("solidify_germanium_to_dust")
+        .inputFluids("gtceu:germanium 144")
+        .itemOutputs("gtceu:germanium_dust")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     event.recipes.gtceu.fluid_solidifier("petri_dish_borosilicate")
         .notConsumable("gtceu:cylinder_casting_mold")

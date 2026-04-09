@@ -36,6 +36,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Germanium.setProperty($PropertyKey.DUST, new $DustProperty())
     GTMaterials.Germanium.setMaterialARGB(0x66806d)
     GTMaterials.Germanium.setMaterialSecondaryARGB(0x5d5e3a)
+    addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID, 1211);
 
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
