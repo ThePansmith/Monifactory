@@ -291,13 +291,6 @@ ServerEvents.recipes(event => {
             .itemOutputs("7x gtceu:naquadah_hydroxide_dust", "3x gtceu:sodium_dust")
             .duration(480).EUt(480)
 
-        event.recipes.gtceu.chemical_reactor("caesium_hydroxide")
-            .itemInputs("gtceu:caesium_dust")
-            .inputFluids("minecraft:water 1000")
-            .itemOutputs("3x gtceu:caesium_hydroxide_dust")
-            .outputFluids("gtceu:hydrogen 1000")
-            .duration(5).EUt(7)
-
         event.recipes.gtceu.large_chemical_reactor("neocryolite")
             .itemInputs("9x gtceu:caesium_hydroxide_dust", "7x gtceu:naquadah_hydroxide_dust")
             .notConsumable("gtceu:signalum_dust")
