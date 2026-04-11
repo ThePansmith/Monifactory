@@ -376,6 +376,7 @@ global.itemNukeList = [
     "nuclearcraft:dominos",
     "nuclearcraft:radaway",
     "nuclearcraft:coil_bscco",
+    "nuclearcraft:supercold_ice_block",
 
     // NuclearCraft Heat Sinks
     "nuclearcraft:slime_heat_sink",
