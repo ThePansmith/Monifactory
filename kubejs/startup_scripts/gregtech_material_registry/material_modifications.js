@@ -30,8 +30,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
-    GTMaterials.Actinium.setMaterialARGB(0xaa3399)
+    GTMaterials.Actinium.setMaterialARGB(0xa034a8)
+    GTMaterials.Actinium.setMaterialSecondaryARGB(0x1e8ccc)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
+    GTMaterials.Actinium.setMaterialIconSet(GTMaterialIconSet.RADIOACTIVE)
 
     GTMaterials.Germanium.setProperty($PropertyKey.DUST, new $DustProperty())
     GTMaterials.Germanium.setMaterialARGB(0x66806d)
