@@ -2227,7 +2227,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3E4DEA4FFD019AB9.title}"
-			x: -2.75d
+			x: -2.5d
 			y: 14.0d
 		}
 		{
@@ -2737,6 +2737,8 @@
 				"{moni.quest.02B78A0C4F3C4ECA.description4}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description5}"
+				""
+				"{moni.quest.02B78A0C4F3C4ECA.description6}"
 			]
 			icon: "gtceu:lv_voltage_coil"
 			id: "02B78A0C4F3C4ECA"

@@ -1719,12 +1719,10 @@
 				"{moni.quest.5A94534682807314.description4}"
 				"{moni.quest.5A94534682807314.description5}"
 				"{moni.quest.5A94534682807314.description6}"
-				"{@pagebreak}"
+				""
 				"{moni.quest.5A94534682807314.description7}"
 				""
 				"{moni.quest.5A94534682807314.description8}"
-				""
-				"{moni.quest.5A94534682807314.description9}"
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"

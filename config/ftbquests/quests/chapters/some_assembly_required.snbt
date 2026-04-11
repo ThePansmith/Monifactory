@@ -893,9 +893,7 @@
 				""
 				"{moni.quest.19C2D208A2FC9968.description3}"
 			]
-			hide_until_deps_visible: true
 			id: "19C2D208A2FC9968"
-			optional: true
 			rewards: [{
 				id: "7003E20DD8EE9891"
 				item: "kubejs:moni_quarter"
