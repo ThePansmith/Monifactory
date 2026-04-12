@@ -507,9 +507,6 @@ StartupEvents.registry("item", event => {
         .displayName("Nether Star Center")
 
     // ArmorPlus monster drops
-    event.create("guardian_scale")
-        .rarity("rare")
-        .texture("kubejs:item/lines/mob_guts/guardian_scale")
     event.create("ender_dragon_scale")
         .rarity("epic")
         .texture("kubejs:item/lines/mob_guts/ender_dragon_scale")
