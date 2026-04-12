@@ -881,4 +881,12 @@ ServerEvents.recipes(event => {
 
     // Re-tier Palladium Substation to mid-EV, before Platline
     event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
+
+    // recipe for Caesium Hydroxide loop
+    event.recipes.gtceu.chemical_reactor("caesium_hydroxide")
+        .itemInputs("gtceu:caesium_dust")
+        .inputFluids("minecraft:water 1000")
+        .itemOutputs("3x gtceu:caesium_hydroxide_dust")
+        .outputFluids("gtceu:hydrogen 1000")
+        .duration(20).EUt(GTValues.VA[GTValues.MV])
 })
