@@ -408,6 +408,8 @@ global.itemNukeList = [
     "nuclearcraft:fuel_mixed_mix_241",
     "nuclearcraft:lithium_6",
     "nuclearcraft:lithium_7",
+    "nuclearcraft:berkelium_247",
+    "nuclearcraft:berkelium_248",
     "nuclearcraft:boron_10",
     "nuclearcraft:boron_11",
     "nuclearcraft:thorium_230",

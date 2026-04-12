@@ -1438,12 +1438,6 @@
 					type: "item"
 				}
 				{
-					id: "43461F39D99C80A3"
-					item: "kubejs:stabilized_berkelium"
-					optional_task: true
-					type: "item"
-				}
-				{
 					id: "6C9F5279150C5A28"
 					item: "kubejs:stabilized_californium"
 					optional_task: true
