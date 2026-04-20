@@ -1,0 +1,8 @@
+{
+  "item.functionalstorage.copper_upgrade": "Upgrade di Bronzo",
+  "item.functionalstorage.gold_upgrade": "Upgrade di Acciaio",
+  "item.functionalstorage.diamond_upgrade": "Upgrade di Alluminio",
+  "item.functionalstorage.netherite_upgrade": "Upgrade di Acciaio Inossidabile",
+  "block.functionalstorage.storage_controller": "Controllore di Cassetti",
+  "block.functionalstorage.framed_storage_controller": "Controllore di Cassetti Incorniciato"
+}

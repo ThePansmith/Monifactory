@@ -1,3 +1,3 @@
-# 0.13.3 is out!
-**Bringing bugfixes and balance changes!**
-*If you missed 0.13.1 and 0.13.2, those **also** contain updates and balance changes.*
+# 0.13.4 is out!
+**Not to be confused with 0.13.4-snapshot-insanity, the April Fools build!**
+*The April Fools build does bring an extra hard gamemode (Insanity), so feel free to check that out if you don't mind a possibly unbalanced experience. No promises of stability tho.*

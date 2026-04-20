@@ -113,3 +113,6 @@ deprecateItem("kubejs:universe_wafer", "kubejs:null_wafer", "Universe Wafer")
 
 // Insanity Update
 deprecateItem("kubejs:chromatic_stabilizer", "kubejs:photonic_stabilizer", "Chromatic Stabilizer")
+// Guardian Scale processing
+deprecateItem("kubejs:guardian_scale", "minecraft:prismarine_shard", "Guardian Scale")
+deprecateFluid("gtceu:guardian_scale_slurry", "gtceu:prismarine_slurry", "Guardian Scale Slurry")

@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.discharger("universal_warp_controller")
         .itemInputs("4x gtceu:double_naquadria_plate", "2x #gtceu:circuits/luv", "kubejs:warp_controller", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())
         .itemOutputs("kubejs:universal_warp_controller")
-        .duration(10)
+        .duration(12)
 
     if (doParticleSynthesis) {
         // Silly Particle Juice :)
@@ -99,13 +99,13 @@ ServerEvents.recipes(event => {
                 .itemInputs("4x gtceu:void_block", "kubejs:warp_core", "kubejs:photonic_stabilizer", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
                 .inputFluids("kubejs:higgs_g2 2000") // Gravity In A Bottle(TM)
                 .itemOutputs("kubejs:universal_warp_core")
-                .duration(10)
+                .duration(12)
         } else {
             event.recipes.gtceu.discharger("universal_warp_core")
                 .itemInputs("4x gtceu:void_block", "kubejs:warp_core", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
                 .inputFluids("kubejs:higgs_g2 2000") // Gravity In A Bottle(TM)
                 .itemOutputs("kubejs:universal_warp_core")
-                .duration(10)
+                .duration(12)
         }
 
         // Warp engine
@@ -241,12 +241,12 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.discharger("universal_warp_core")
                 .itemInputs("4x gtceu:void_block", "kubejs:warp_core", "kubejs:photonic_stabilizer", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
                 .itemOutputs("kubejs:universal_warp_core")
-                .duration(10)
+                .duration(12)
         } else {
             event.recipes.gtceu.discharger("universal_warp_core")
                 .itemInputs("4x gtceu:void_block", "kubejs:warp_core", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(), Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
                 .itemOutputs("kubejs:universal_warp_core")
-                .duration(10)
+                .duration(12)
         }
 
         // Warp engine

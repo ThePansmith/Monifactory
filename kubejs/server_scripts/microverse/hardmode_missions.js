@@ -49,7 +49,8 @@ ServerEvents.recipes(event => {
             .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "48x minecraft:slime_ball",
-                "24x kubejs:guardian_scale",
+                "64x minecraft:prismarine_shard",
+                "24x minecraft:prismarine_crystals"
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })

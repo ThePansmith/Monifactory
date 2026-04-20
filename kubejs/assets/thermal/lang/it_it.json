@@ -1,0 +1,78 @@
+{
+  "item.thermal.upgrade_augment_1": "Componenti Integrali Induriti",
+  "item.thermal.upgrade_augment_1.desc": "Migliora statistiche di base. Alti componenti potrebbere essere più efficaci di conseguenza.",
+  "item.thermal.upgrade_augment_2": "Componenti Integrali Rinforzati",
+  "item.thermal.upgrade_augment_2.desc": "Migliora statistiche di base. Alti componenti potrebbere essere più efficaci di conseguenza.",
+  "item.thermal.upgrade_augment_3": "Componenti Integrali Resonant",
+  "item.thermal.upgrade_augment_3.desc": "Migliora statistiche di base. Alti componenti potrebbere essere più efficaci di conseguenza.",
+  "item.thermal.upgrade_augment_4": "Componenti Integrali in Signalum",
+  "item.thermal.upgrade_augment_4.desc": "Migliora statistiche di base. Alti componenti potrebbere essere più efficaci di conseguenza.",
+
+  "item.thermal.rf_coil_augment_advanced": "Bobina RF Ampliata Avanzata",
+  "item.thermal.rf_coil_storage_augment_advanced": "Bobina RF Stabilizzata Avanzata",
+  "item.thermal.rf_coil_xfer_augment_advanced": "Bobina RF High-Flux Avanzata",
+  "item.thermal.fluid_tank_augment_advanced": "Costruzione Cisterna Ampliata Avanzata",
+
+  "info.thermal.dynamo_stirling.0": "Genera RF usando combustibili solidi.",
+  "info.thermal.dynamo_stirling.1": "Tutte le cose che funzionano in una fornace funzionano anche qua.",
+
+  "info.thermal.machine_bottler.0": "Riempe contenitori con fluidi.",
+  "info.thermal.machine_bottler.1": "é richiesto per consumare certe bevande.",
+  "info.thermal.machine_bottler.2": "Rinfrescante!",
+
+  "info.thermal.machine_brewer.0": "Prepara pozioni e imbeve fluidi.",
+  "info.thermal.machine_brewer.1": "Potresti volere alcuni di questi in fila.",
+  "info.thermal.machine_brewer.2": "Bottiglie non incluse.",
+
+  "info.thermal.machine_centrifuge.0": "Separa oggetti nei loro componenti.",
+  "info.thermal.machine_centrifuge.1": "Alcuni oggetti verrano processati risultando in fluidi.",
+  "info.thermal.machine_centrifuge.2": "Gira per vincere!",
+
+  "info.thermal.machine_chiller.0": "Congela oggetti e fluidi rapidamente.",
+  "info.thermal.machine_chiller.1": "Può usare uno stampo con fluidi per determinare l'output.",
+  "info.thermal.machine_chiller.2": "Brrr!",
+
+  "info.thermal.machine_crafter.0": "Inserisci oggetti nella griglia per impostare una ricetta.",
+  "info.thermal.machine_crafter.1": "Semplicemente premi il bottone di conferma e fa da solo!",
+  "info.thermal.machine_crafter.2": "Non tutte le ricette sono valide.",
+
+  "info.thermal.machine_crucible.0": "Trasforma oggetti solidi in fluidi, a temperature elevate.",
+  "info.thermal.machine_crucible.1": "Molto utile per creare blocchi avanzati.",
+  "info.thermal.machine_crucible.2": "Tenere lontano dalla portata di bambini.",
+
+  "info.thermal.machine_crystallizer.0": "Cresce e ricrea strutture cristalline.",
+  "info.thermal.machine_crystallizer.1": "Richiede un fluido e almeno un oggetto.",
+  "info.thermal.machine_crystallizer.2": "Shine on, you crazy diamond.",
+
+  "info.thermal.machine_furnace.0": "Cuoce cose utilizzando RF.",
+  "info.thermal.machine_furnace.1": "Utilizza molta poca energia per cuocere cibo.",
+  "info.thermal.machine_furnace.2": "Om nom nom.",
+
+  "info.thermal.machine_insolator.0": "Infonde nutrienti e luce in piante utilizzando RF.",
+  "info.thermal.machine_insolator.1": "Non esattamente agricoltura 'organica'.",
+  "info.thermal.machine_insolator.2": "Gloriosamente incandescente!",
+
+  "info.thermal.machine_press.0": "Stringe e deforma oggetti.",
+  "info.thermal.machine_press.1": "Può usare uno stampo di produzione per determinare l'output.",
+  "info.thermal.machine_press.2": "Versatile e soddisfacente!",
+
+  "info.thermal.machine_pulverizer.0": "Spacca cose in cose più rotte.",
+  "info.thermal.machine_pulverizer.1": "Utile per processare minerali o convertire oggetti.",
+  "info.thermal.machine_pulverizer.2": "Questo è tipicamente irreversibile.",
+
+  "info.thermal.machine_pyrolyzer.0": "Decompone solidi usando alte temperature.",
+  "info.thermal.machine_pyrolyzer.1": "Molto utile nella purificazione di combustibili.",
+  "info.thermal.machine_pyrolyzer.2": "Non toccare.",
+
+  "info.thermal.machine_refinery.0": "Raffina vari fluidi in altri prodotti.",
+  "info.thermal.machine_refinery.1": "Alcuni fluidi lasceranno un porodotto collaterale.",
+  "info.thermal.machine_refinery.2": "I prodotti potrebbero essere o non essere potabili.",
+
+  "info.thermal.machine_sawmill.0": "Taglia tronchi in assi e rielabora oggetti di legno.",
+  "info.thermal.machine_sawmill.1": "Molti utile per sfruttare al massimo un albero.",
+  "info.thermal.machine_sawmill.2": "Stai attento alle mani.",
+
+  "info.thermal.machine_smelter.0": "Fonde metalli e cose che richiedono alte temperature.",
+  "info.thermal.machine_smelter.1": "Utile per processare minerali e creari blocchi avanzati.",
+  "info.thermal.machine_smelter.2": "Non cuocerà cibo assolutamente."
+}
