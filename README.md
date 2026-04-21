@@ -94,14 +94,13 @@ To spice up your Monifactory experience, you can add any of the following mods t
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
 4. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
 5. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
-6. [Project Red: Transmission](https://www.curseforge.com/minecraft/mc-mods/project-red-transmission)
-7. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
-8. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
-9. [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
+6. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
+7. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
+8. [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
-2. Download the ``47.4.0`` forge installer from [here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
+2. Download the ``47.4.13`` forge installer from [here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
 3. Create a folder for the server (``mkdir MonifactoryServer``, name doesn't matter)
 4. Move the server.zip and forge installer into your server directory. The rest of the guide assumes your current directory is the server directory.
 5. Run the forge installer and install the forge server, this can be done with the command ``java -jar TheForgeInstallerName.jar --installServer``

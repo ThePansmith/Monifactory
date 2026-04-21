@@ -96,7 +96,7 @@ jobs:
               ;;
           esac
         shell: bash
-    
+
       - name: Determine version format
         id: version_format
         run: |
@@ -107,7 +107,7 @@ jobs:
 
       - name: Checkout
         if: ${{ inputs.format_only == false }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -162,7 +162,7 @@ jobs:
           version="${{ steps.previous_version.outputs.previous_version }}"
           version=${version:-0.0.0}
           IFS='.' read -r major minor patch <<< "$version"
-          
+
           case "${{ inputs.version_increment }}" in
             major)
               major=$((major + 1))

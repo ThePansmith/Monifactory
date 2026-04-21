@@ -116,13 +116,29 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(HF)2Ta")
 })
 
-// Guardian Scale Processing
+// Prismarine (Previously Guardian Scale) Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-    event.create("guardian_scale_slurry")
+    event.create("prismarine_slurry")
         .fluid()
         .color(0x8bbeaf)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("chitinous_mixture")
+        .fluid()
+        .color(0xad9c8a)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("cracked_chitinous_mixture")
+        .fluid()
+        .color(0xbfa589)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    // Byproduct of processing Chitin IRL. Only useful for electrolysis in Moni.
+    event.create("glucosamine")
+        .dust()
+        .color(0xf9d6d1)
+        .components(GTMaterials.Carbon.multiply(6), GTMaterials.Hydrogen.multiply(13), GTMaterials.Nitrogen.multiply(1), GTMaterials.Oxygen.multiply(5))
 })
 
 // Ad Astra Ore processing

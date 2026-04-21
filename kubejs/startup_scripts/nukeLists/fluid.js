@@ -37,6 +37,7 @@ global.fluidNukeList = [
     "thermal:crude_oil",
     "thermal:heavy_oil",
     "thermal:light_oil",
+    "thermal:refined_fuel",
 
     // Sophisticated Core
     "sophisticatedcore:xp_still",

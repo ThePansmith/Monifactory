@@ -1,0 +1,17 @@
+{
+  "tag.item.gtceu.circuits": "Circuiti",
+  "tag.item.gtceu.circuits.ulv": "Circuiti ULV",
+  "tag.item.gtceu.circuits.lv": "Circuiti LV",
+  "tag.item.gtceu.circuits.mv": "Circuiti MV",
+  "tag.item.gtceu.circuits.hv": "Circuiti HV",
+  "tag.item.gtceu.circuits.ev": "Circuiti EV",
+  "tag.item.gtceu.circuits.iv": "Circuiti IV",
+  "tag.item.gtceu.circuits.luv": "Circuiti LuV",
+  "tag.item.gtceu.circuits.zpm": "Circuiti ZPM",
+  "tag.item.moni_quest.backpack": "Zaini",
+  "tag.item.moni.output_bus": "Bus Output Item",
+  "tag.item.moni.input_bus": "Bus Input Item",
+  "tag.item.moni.input_hatch": "Portelli Input Fluidi",
+  "tag.item.moni.output_hatch": "Portelli Output Fluidi",
+  "tag.item.moni.coins": "Monete"
+}
