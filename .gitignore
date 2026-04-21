@@ -53,7 +53,7 @@ config/defaultworldtype/world-presets.txt
 
 # FTBQuests
 !/config/ftbquests
-/config/ftbquests/quests/chapters/genesis.snbt
+/config/ftbquests/quests/chapters
 
 # Functional Storage
 !/config/functionalstorage
