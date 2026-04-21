@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
                 "12x kubejs:deep_dark_data",
                 "16x kubejs:warden_horn"
             )
-            .damageRate((doComplexMicroverses ? -60 : (doHostileMicroverse ? -40 : 2)))
+            .damageRate((doComplexMicroverses ? -30 : (doHostileMicroverse ? -40 : 2)))
             .itemOutputs(
                 "16x kubejs:warden_heart",
                 "40x minecraft:sculk_catalyst",
