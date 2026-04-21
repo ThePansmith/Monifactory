@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
                 "2x kubejs:quantum_flux",
                 "kubejs:quantum_flux"
             )
-            .duration(100)
+            .duration(80)
             .EUt(GTValues.VA[GTValues.EV])
             .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.OUT)
 
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
                 "16x kubejs:quantum_flux",
                 "8x kubejs:quantum_flux"
             )
-            .duration(100)
+            .duration(80)
             .EUt(GTValues.VA[GTValues.IV])
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.IN)
             .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.OUT)
@@ -148,8 +148,8 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.virtual_particle_synthesis("gravi_star")
             .itemInputs("gtceu:quantum_star")
             .inputFluids("gtceu:neutronium 288", "kubejs:higgs_g2 200")
-            .duration(200)
-            .itemOutputs("gtceu:gravi_star")
+            .duration(80)
+            .itemOutputs("gtceu:gravi_star", "gtceu:quantum_star")
             .EUt(GTValues.VA[GTValues.ZPM])
             .quantumRule(QuantumRule.QUANTUM_ENTANGLEMENT, IO.OUT)
 
@@ -169,14 +169,14 @@ ServerEvents.recipes(event => {
                 "kubejs:hadronic_matter 400",
                 "kubejs:w_z_g1 400"
             )
-            .duration(120)
+            .duration(80)
             .outputFluids("kubejs:meson_g1 800")
             .EUt(GTValues.VA[GTValues.UV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.IN)
 
         event.recipes.gtceu.virtual_particle_synthesis("gluon_g2")
             .inputFluids("kubejs:gluon_g1 800", "kubejs:meson_g1 800", "gtceu:neutronium 288")
-            .duration(120)
+            .duration(80)
             .outputFluids("kubejs:gluon_g2 400", "kubejs:w_z_g1 400", "kubejs:degenerate_matter 800")
             .EUt(GTValues.VA[GTValues.UV])
             .quantumRule(QuantumRule.QUANTUM_POLARIZATION, IO.BOTH)
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.virtual_particle_synthesis("higgs_g3")
             .inputFluids("kubejs:higgs_g2 800", "kubejs:gluon_g2 400", "gtceu:exotic_particle_solution 400")
-            .duration(120)
+            .duration(80)
             .outputFluids("kubejs:higgs_g3 400", "kubejs:w_z_g2 600", "kubejs:degenerate_matter 600")
             .EUt(GTValues.VA[GTValues.UHV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.BOTH)
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
                 "kubejs:hadronic_matter 400",
                 "kubejs:w_z_g2 400"
             )
-            .duration(120)
+            .duration(80)
             .outputFluids(
                 "kubejs:meson_g2 200",
                 "kubejs:meson_g2 200",
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.virtual_particle_synthesis("gluon_g3")
             .inputFluids("kubejs:gluon_g2 480", "kubejs:higgs_g3 240", "gtceu:hyperdegenerate_matter 240")
-            .duration(120)
+            .duration(80)
             .outputFluids("kubejs:gluon_g3 240", "kubejs:w_z_g2 360", "gtceu:exotic_particle_solution 240")
             .EUt(GTValues.VA[GTValues.UEV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.BOTH)

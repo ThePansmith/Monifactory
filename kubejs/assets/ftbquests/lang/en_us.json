@@ -453,7 +453,7 @@
     "moni.quest.11124D8CC9403E67.description3": "Alternatively, you can make a &6UEV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead.",
     "moni.quest.11124D8CC9403E67.title": "&2UEV Circuit Assembler",
     "moni.quest.11154356854B64DA.description1": "You'll need an HV or better &3Chemical Bath&r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe.",
-    "moni.quest.11154356854B64DA.description1.insanity": "You'll need a &3Virtual Particle Synthesizer&r running at HV power to craft this. You can craft it at any Quantum Fluctuation, but bad timing will cost twice the &3Particle Soup&r.",
+    "moni.quest.11154356854B64DA.description1.insanity": "You'll need a &3Virtual Particle Synthesizer&r running at EV power to craft this. You can craft it at any Quantum Fluctuation, but bad timing will cost twice the &3Particle Soup&r.",
     "moni.quest.11154356854B64DA.subtitle": "When &6Ender Eyes&r just aren't creepy enough.",
     "moni.quest.113E9543ADB1666B.subtitle": "Just like how the Ancient Builders used to make it.",
     "moni.quest.113E9543ADB1666B.description1": "&6Ancient Debris Dust&r can be processed into &6Ardite Dust&r and &6Activated Netherite Scrap&r, used for &6Manyullyn&r and &6Activated Netherite&r respectively.",
