@@ -527,6 +527,7 @@ ServerEvents.recipes(event => {
         // Gluon-Reinforced Casings
         event.recipes.gtceu.assembler("monilabs:eltz_casing")
             .itemInputs("6x monilabs:eltz_plate", "monilabs:eltz_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
+            .inputFluids("kubejs:gluon_g3 100")
             .itemOutputs("2x monilabs:eltz_casing")
             .duration(100)
             .EUt(GTValues.VHA[GTValues.ZPM])
@@ -534,6 +535,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("kubejs:netherite_casing")
             .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
+            .inputFluids("kubejs:gluon_g2 50")
             .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
             .duration(100)
             .EUt(GTValues.VHA[GTValues.ZPM])
@@ -541,6 +543,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("monilabs:bioalloy_fusion_casing")
             .itemInputs("gtceu:uhv_machine_hull", "2x monilabs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
+            .inputFluids("kubejs:gluon_g2 100")
             .itemOutputs("4x monilabs:bioalloy_fusion_casing")
             .duration(200)
             .EUt(GTValues.VA[GTValues.UHV])
@@ -613,7 +616,6 @@ ServerEvents.recipes(event => {
         // Casings
         event.recipes.gtceu.assembler("monilabs:eltz_casing")
             .itemInputs("6x monilabs:eltz_plate", "monilabs:eltz_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
-            .inputFluids("kubejs:gluon_g3 100")
             .itemOutputs("2x monilabs:eltz_casing")
             .duration(100)
             .EUt(GTValues.VHA[GTValues.ZPM])
@@ -621,7 +623,6 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("kubejs:netherite_casing")
             .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
-            .inputFluids("kubejs:gluon_g2 50")
             .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
             .duration(100)
             .EUt(GTValues.VHA[GTValues.ZPM])
@@ -629,7 +630,6 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("monilabs:bioalloy_fusion_casing")
             .itemInputs("gtceu:uhv_machine_hull", "2x monilabs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
-            .inputFluids("kubejs:gluon_g2 100")
             .itemOutputs("4x monilabs:bioalloy_fusion_casing")
             .duration(200)
             .EUt(GTValues.VA[GTValues.UHV])
