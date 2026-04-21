@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.LuV])
             .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.IN)
 
-        event.recipes.gtceu.virtual_particle_synthesis("degenerate_recycling_LuV")
+        event.recipes.gtceu.virtual_particle_synthesis("degenerate_recycling_luv")
             .itemInputs("4x kubejs:quantum_flux")
             .inputFluids("kubejs:degenerate_matter 1000")
             .duration(40)
