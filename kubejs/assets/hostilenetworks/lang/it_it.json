@@ -1,0 +1,13 @@
+{
+  "item.hostilenetworks.prediction_matrix": "Matrice Predittiva Pulsante",
+  "item.hostilenetworks.overworld_prediction": "Materia dell'\u00A7aOverworld\u00A7f",
+  "item.hostilenetworks.nether_prediction": "Materia \u00A7cInfernale\u00A7f",
+  "item.hostilenetworks.end_prediction": "Materia \u00A7dExtraterrestre\u00A7f",
+
+  "hostilenetworks.name.thermal_elemental": "Elementale Termale",
+
+  "hostilenetworks.trivia.basalz": "Il cugino molto più grosso\ndel nostro amico infiammabile.\nConferito di potenza terrena.",
+  "hostilenetworks.trivia.blitz": "Conosciuto diversamente\ncome elementale di vento.\nFortunatamente, non può controllare\nil tuono.",
+  "hostilenetworks.trivia.blizz": "Prendi un Blaze\ne rimuovi il calore.\nIl guscio risultante è\nil Blizz ghiacciante.",
+  "hostilenetworks.trivia.thermal_elemental": "Una combinazione di tutti\ni mob termali in uno.\né stabilo solo\n in una simulazione."
+}

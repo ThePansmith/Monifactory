@@ -121,13 +121,6 @@
 			y: -2.75d
 		}
 		{
-			id: "2EE7DC7022138129"
-			linked_quest: "70FD95AEA44548B0"
-			shape: "hexagon"
-			x: -7.5d
-			y: -5.25d
-		}
-		{
 			id: "1E75CED3B4A1296A"
 			linked_quest: "3DD8D9EEA7189186"
 			shape: "hexagon"
@@ -1791,6 +1784,70 @@
 			title: "{moni.quest.044EBE36128FBB01.title}"
 			x: 9.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["63C3077124BC81FD"]
+			description: [
+				"{moni.quest.70FD95AEA44548B0.description1}"
+				""
+				"{moni.quest.70FD95AEA44548B0.description2}"
+			]
+			icon: "gtceu:advanced_soldering_alloy_bucket"
+			id: "70FD95AEA44548B0"
+			rewards: [{
+				id: "39A3488F3C1EEF77"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4554FBB55F422385"
+					item: "gtceu:advanced_soldering_alloy_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "67937E0AF20C61E6"
+					item: "gtceu:advanced_soldering_alloy_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{moni.quest.70FD95AEA44548B0.title}"
+			x: -7.5d
+			y: -5.25d
+		}
+		{
+			dependencies: ["785C6332FC7A07A5"]
+			description: [
+				"{moni.quest.63C3077124BC81FD.description1}"
+				""
+				"{moni.quest.63C3077124BC81FD.description2}"
+				""
+				"{moni.quest.63C3077124BC81FD.description3}"
+			]
+			icon: "gtceu:germanium_dust"
+			id: "63C3077124BC81FD"
+			rewards: [{
+				id: "73F86168083D3341"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "46D85CCD66919277"
+					item: "gtceu:coal_fly_ash_dust"
+					type: "item"
+				}
+				{
+					id: "1B19BD8698E6BFD0"
+					item: "gtceu:germanium_dust"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.63C3077124BC81FD.title}"
+			x: -8.75d
+			y: -5.25d
 		}
 	]
 	title: "{moni.chapter.058B7FE882875343.title}"

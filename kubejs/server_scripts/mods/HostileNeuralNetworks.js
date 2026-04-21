@@ -213,6 +213,7 @@ ServerEvents.recipes(event => {
         let dataModelData = [
             ["blaze", "minecraft:blaze_powder", "nether", true],
             ["creeper", "minecraft:gunpowder", "overworld", true],
+            ["drowned", "minecraft:copper_ingot", "overworld", true],
             ["ender_dragon", "kubejs:dragon_lair_data", "end", true],
             ["enderman", "minecraft:ender_pearl", "end", true],
             ["ghast", "minecraft:ghast_tear", "nether", true],
@@ -226,6 +227,7 @@ ServerEvents.recipes(event => {
             ["wither", "minecraft:nether_star", "nether", false],
             ["wither_skeleton", "minecraft:wither_skeleton_skull", "nether", true],
             ["zombie", "minecraft:rotten_flesh", "overworld", false],
+            ["zombified_piglin", "minecraft:golden_sword", "nether", true],
             ["thermal/thermal_elemental", ["kubejs:aerotheum_dust", "kubejs:cryotheum_dust", "kubejs:petrotheum_dust", "kubejs:pyrotheum_dust"], "overworld", true]
         ]
 
