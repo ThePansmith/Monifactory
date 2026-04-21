@@ -910,4 +910,15 @@ ServerEvents.recipes(event => {
         .itemOutputs("3x gtceu:caesium_hydroxide_dust")
         .outputFluids("gtceu:hydrogen 1000")
         .duration(20).EUt(GTValues.VA[GTValues.MV])
+    
+    if (doComplexProcessing) {
+        event.remove({ id: "gtceu:distillery/distill_seed_oil_to_lubricant"})
+        event.remove({ id: "gtceu:distillery/distill_fish_oil_to_lubricant"})
+        event.remove({ id: "gtceu:distillery/distill_creosote_to_lubricant"})
+        event.remove({ id: "gtceu:distillation_tower/distill_seed_oil"})
+        event.remove({ id: "gtceu:distillation_tower/distill_fish_oil"})
+        event.remove({ id: "gtceu:distillation_tower/distill_creosote"})
+        event.remove({ id: "gtceu:mixer/fertilizer"})
+        event.remove({ id: "gtceu:mixer/concrete_from_clay"})
+    }
 })

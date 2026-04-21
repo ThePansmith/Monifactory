@@ -68,6 +68,8 @@
   "gtceu.placeholder_info.sculkVatXPBuffer.1": "Usage:",
   "gtceu.placeholder_info.sculkVatXPBuffer.2": "  {sculkVatXPBuffer} -> XP Stored: (value in millibuckets)",
   "itemGroup.monilabs.creative_tab": "Moni Labs (Coremod)",
+  "item.monilabs.causality_collapser": "§=Causality Collapser",
+  "item.monilabs.shard_of_causality": "§+Shard Of Causality",
   "material.monilabs.crystal_matrix": "Crystal Matrix",
   "material.monilabs.eltz": "Eltz",
   "material.monilabs.sculk_bioalloy": "Sculk Bioalloy",
