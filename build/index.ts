@@ -195,7 +195,7 @@ export const BuildDevTarget = getZipModPackTarget("dev", PackSwitchTarget => [
 
                 fs.mkdirSync("dist/dev/overrides", { recursive: true })
                 cpMods("dist/.devtmp")
-                fs.cpSync("mods", "dist/.devtmp", { recursive: true })
+                fs.cpSync("../mods", "dist/.devtmp", { recursive: true })
                 return
             }
 
@@ -206,7 +206,7 @@ export const BuildDevTarget = getZipModPackTarget("dev", PackSwitchTarget => [
 
             // "merge" both mod folders
             cpMods("dist/.devtmp")
-            fs.cpSync("mods", "dist/.devtmp", { recursive: true, force: true })
+            fs.cpSync("../mods", "dist/.devtmp", { recursive: true, force: true })
             symlinkSync(resolve("dist/.devtmp"), resolve("dist/dev/overrides/mods"))
             // fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
             fs.cpSync("config", "dist/dev/overrides/config", { recursive: true })
