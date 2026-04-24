@@ -26,7 +26,7 @@ export const getZipModPackTarget = (
         dependsOn: () => dependsOn(
             // Automatically switch to normal mode if no other mode was previously set
             getPackModeSwitchTarget(
-                "normal",
+                "insanity",
                 {
                     cwd: packSwitchPath,
                     onlyWhen: () => !fs.existsSync("config/packmode.json"),

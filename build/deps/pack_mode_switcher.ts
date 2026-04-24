@@ -10,7 +10,7 @@ const getCoreModManifestFileEntry = () => readManifest()
     .files
     .find(file => file.projectID === CORE_MOD_PROJECT_ID)
 
-export type TPackMode = "normal" | "hard" | "expert"
+export type TPackMode = "normal" | "hard" | "expert" | "insanity"
 
 let mutex = false
 
