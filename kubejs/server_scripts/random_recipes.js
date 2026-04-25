@@ -910,6 +910,13 @@ ServerEvents.recipes(event => {
         .itemOutputs("3x gtceu:caesium_hydroxide_dust")
         .outputFluids("gtceu:hydrogen 1000")
         .duration(20).EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.fusion_reactor("fuse_iridium_from_tantalum_beryllium")
+        .inputFluids("gtceu:tantalum 16", "gtceu:beryllium 16")
+        .outputFluids("gtceu:iridium 16")
+        .duration(64)
+        .EUt(0.75 * GTValues.V[GTValues.LuV])
+        .fusionStartEU(300000000)
     
     if (doComplexProcessing) {
         event.remove({ id: "gtceu:distillery/distill_seed_oil_to_lubricant"})
