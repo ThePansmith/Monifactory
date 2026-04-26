@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
 
     // Infinity Ingots
     event.recipes.extendedcrafting.combination(
-        "2x gtceu:infinity_ingot",
+        "4x gtceu:infinity_ingot",
         "kubejs:active_prismatic_core", ["2x gtceu:activated_netherite_ingot", "2x gtceu:neutronium_ingot", "4x monilabs:transcendental_matrix_ingot"],
         320000000, 8000000
     )
@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("infinity_better")
         .itemInputs("kubejs:active_prismatic_core", "4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot", "8x monilabs:transcendental_matrix_ingot")
         .inputFluids("gtceu:monium 8")
-        .itemOutputs("8x gtceu:infinity_ingot")
+        .itemOutputs("16x gtceu:infinity_ingot")
         .EUt(GTValues.VA[GTValues.MAX])
         .duration(20)
 
