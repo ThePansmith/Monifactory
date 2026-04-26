@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
         "   ZZZ   ",
         "   PPP   "
     ], {
-        B: "kubejs:stabilized_berkelium",
+        B: "kubejs:stabilized_plutonium",
         C: "kubejs:stabilized_californium",
         F: "gtceu:zpm_field_generator",
         P: "nuclearcraft:plate_elite",
