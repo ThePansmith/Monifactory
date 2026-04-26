@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:iv_field_generator",
         C: "nuclearcraft:fission_reactor_controller",
         P: "nuclearcraft:fission_reactor_port",
-        T: "kubejs:resonant_thruster"
+        T: "kubejs:fluxed_thruster"
     })
 
     // T7 Microminer
