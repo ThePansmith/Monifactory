@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
     const stabilized_miners = [
         "2half",
         "3",
+        "3half",
         "4half",
         "6",
         "7",
