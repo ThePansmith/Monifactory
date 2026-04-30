@@ -152,7 +152,6 @@ ServerEvents.tags("item", (event) => {
         "minecraft:string",
         "minecraft:bone",
         "minecraft:slime_ball",
-        "kubejs:guardian_scale",
         "minecraft:blaze_rod",
         "thermal:blizz_rod",
         "thermal:blitz_rod",
