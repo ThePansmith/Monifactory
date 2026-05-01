@@ -31,6 +31,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.virtual_particle_synthesis("meson_g1_separation")
             .inputFluids("kubejs:meson_g1 400")
+            .circuit(1)
             .outputFluids("kubejs:bosonic_antimatter 4", "kubejs:hadronic_antimatter 4", "kubejs:fermionic_antimatter 4", "kubejs:degenerate_matter 200")
             .duration(40)
             .EUt(GTValues.VA[GTValues.UV])
@@ -38,6 +39,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.virtual_particle_synthesis("meson_g2_separation")
             .inputFluids("kubejs:meson_g2 200")
+            .circuit(1)
             .outputFluids("kubejs:bosonic_antimatter 16", "kubejs:hadronic_antimatter 16", "kubejs:fermionic_antimatter 16", "kubejs:degenerate_matter 200")
             .duration(40)
             .EUt(GTValues.VA[GTValues.UHV])

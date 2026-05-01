@@ -93,6 +93,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.virtual_particle_synthesis("more_quantum_flux_vps")
             .itemInputs("redstone_arsenal:flux_gem", "gtceu:quantum_eye")
             .inputFluids("kubejs:bosonic_matter 400", "kubejs:hadronic_matter 400", "gtceu:dragon_breath 500")
+            .circuit(1)
             .itemOutputs(
                 "64x kubejs:quantum_flux",
                 "32x kubejs:quantum_flux",
@@ -108,6 +109,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.virtual_particle_synthesis("higgs_g1")
             .itemInputs("gtceu:quantum_eye")
             .inputFluids("kubejs:bosonic_matter 1000")
+            .circuit(2)
             .outputFluids("kubejs:higgs_g1 250", "kubejs:higgs_g1 250", "kubejs:degenerate_matter 250", "kubejs:degenerate_matter 250")
             .duration(80)
             .EUt(GTValues.VA[GTValues.LuV])
@@ -176,6 +178,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.virtual_particle_synthesis("gluon_g2")
             .inputFluids("kubejs:gluon_g1 800", "kubejs:meson_g1 800", "gtceu:neutronium 288")
+            .circuit(2)
             .duration(80)
             .outputFluids("kubejs:gluon_g2 400", "kubejs:w_z_g1 400", "kubejs:degenerate_matter 800")
             .EUt(GTValues.VA[GTValues.UV])
@@ -192,6 +195,7 @@ ServerEvents.recipes(event => {
         // UHV Recipes
         event.recipes.gtceu.virtual_particle_synthesis("exotic_particle_solution")
             .inputFluids("gtceu:purified_heavy_residue 400", "kubejs:meson_g1 400")
+            .circuit(2)
             .duration(40)
             .outputFluids("gtceu:exotic_particle_solution 400")
             .EUt(GTValues.VA[GTValues.UHV])
@@ -244,6 +248,7 @@ ServerEvents.recipes(event => {
                 "kubejs:hadronic_matter 400",
                 "kubejs:w_z_g2 400"
             )
+            .circuit(2)
             .duration(80)
             .outputFluids(
                 "kubejs:meson_g2 200",
@@ -256,6 +261,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.virtual_particle_synthesis("hyperdegenerate_matter")
             .inputFluids("gtceu:superheavy_atomic_residue 400", "kubejs:degenerate_matter 400", "kubejs:meson_g2 400")
+            .circuit(2)
             .duration(80)
             .outputFluids("gtceu:hyperdegenerate_matter 400")
             .EUt(GTValues.VA[GTValues.UEV])
