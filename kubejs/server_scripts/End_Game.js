@@ -558,7 +558,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("universe_neutronium_plating")
             .itemInputs("gtceu:double_neutronium_plate", "2x gtceu:omnium_plate", "4x gtceu:quantum_eye")
-            .inputFluids("kubejs:gluon_g2 100") // Universe's Strongest Glue(TM)
+            .inputFluids("kubejs:gluon_g1 300") // Universe's Strongest Glue(TM)
             .duration(100)
             .itemOutputs("kubejs:universe_resistant_neutronium_heavy_plating")
             .EUt(GTValues.VA[GTValues.UV])
