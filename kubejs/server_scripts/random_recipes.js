@@ -903,6 +903,11 @@ ServerEvents.recipes(event => {
     // Re-tier Palladium Substation to mid-EV, before Platline
     event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
 
+    // Re-tier the Gregicality multiblocks of IV to be after platline Pt1, but before platline pt2
+    event.replaceInput({ id: "gtceu:shaped/large_distillery"}, "gtceu:iridium_large_fluid_pipe", "gtceu:tungsten_carbide_large_fluid_pipe")
+    event.replaceInput({ id: "gtceu:shaped/large_mixer"}, "gtceu:osmiridium_rotor", "gtceu:rhodium_plated_palladium_rotor")
+    event.replaceInput({ id: "gtceu:shaped/large_electromagnet"}, "gtceu:osmium_quadruple_wire", "gtceu:niobium_nitride_quadruple_wire")
+
     // recipe for Caesium Hydroxide loop
     event.recipes.gtceu.chemical_reactor("caesium_hydroxide")
         .itemInputs("gtceu:caesium_dust")
