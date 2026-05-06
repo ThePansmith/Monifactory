@@ -607,9 +607,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/lines/netherite/netherite_shards")
     event.create("reactive_netherite_cluster")
         .texture("kubejs:item/lines/netherite/reactive_netherite_cluster")
-    event.create("activated_netherite_scrap")
-        .texture("kubejs:item/lines/netherite/pure_netherite_scrap")
-        .glow(true);
     event.create("inert_nether_compound_ingot")
         .texture("kubejs:item/lines/netherite/inert_nether_compound_ingot")
 

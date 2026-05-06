@@ -137,4 +137,12 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x gtceu:petri_dish")
         .duration(0.5 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Glue from ECA
+    event.recipes.gtceu.mixer("glue_from_ethyl_cyanoacrylate")
+        .inputFluids("gtceu:ethyl_cyanoacrylate 2000")
+        .itemInputs("gtceu:small_silicon_dioxide_dust")
+        .outputFluids("gtceu:glue 10000")
+        .duration(3 * 20)
+        .EUt(GTValues.VA[GTValues.ULV])
 })
