@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:gravitational_amplifier", "6x gtceu:neutron_reflector")
             .damageRate((doComplexMicroverses ? 25 : 8))
             .itemOutputs("32x gtceu:neutronium_ingot")
-            .requiredMicroverse(1) // Normal
+            .requiredMicroverse((doComplexMicroverses ? 7 : 1)) // Supercharged / Normal
     })
 
     microverse_mission(event, 9, 3).forEach(builder => {
@@ -183,13 +183,13 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x gtceu:neutron_reflector",)
             .itemInputs("gtceu:ruridit_block")
-            .damageRate((doComplexMicroverses ? 2 : 5))
+            .damageRate((doComplexMicroverses ? 10 : 5))
             .itemOutputs(
                 "64x gtceu:raw_darmstadtite",
                 "64x gtceu:raw_darmstadtite",
                 "64x gtceu:raw_darmstadtite"
             )
-            .requiredMicroverse((doComplexMicroverses ? 3 : 1)) // Shattered / Normal
+            .requiredMicroverse((doComplexMicroverses ? 7 : 1)) // Supercharged / Normal
     })
 
     microverse_mission(event, 9, 3).forEach(builder => {
@@ -199,14 +199,14 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x kubejs:gem_sensor")
             .itemInputs("gtceu:naquadah_block")
-            .damageRate((doComplexMicroverses ? 2 : 5))
+            .damageRate((doComplexMicroverses ? 10 : 5))
             .itemOutputs(
                 "64x gtceu:raw_dulysite",
                 "64x gtceu:raw_dulysite",
                 "64x gtceu:raw_dulysite",
                 "32x gtceu:raw_dulysite",
             )
-            .requiredMicroverse((doComplexMicroverses ? 3 : 1)) // Shattered / Normal
+            .requiredMicroverse((doComplexMicroverses ? 7 : 1)) // Supercharged / Normal
     })
 
     microverse_mission(event, 9, 3).forEach(builder => {
@@ -216,7 +216,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x nuclearcraft:plate_du")
             .itemInputs("gtceu:uranium_block")
-            .damageRate(6)
+            .damageRate((doComplexMicroverses ? 12 : 6))
             .itemOutputs(
                 "64x gtceu:raw_plutonium",
                 "64x gtceu:raw_plutonium",
@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_plutonium",
                 "64x gtceu:raw_plutonium",
             )
-            .requiredMicroverse(3) // Shattered
+            .requiredMicroverse((doComplexMicroverses ? 7 : 3)) // Supercharged / Shattered
     })
 
     // T10MM missions

@@ -535,7 +535,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler("kubejs:netherite_casing")
             .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
-            .inputFluids("kubejs:gluon_g2 50")
+            .inputFluids("kubejs:gluon_g1 100")
             .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
             .duration(100)
             .EUt(GTValues.VHA[GTValues.ZPM])

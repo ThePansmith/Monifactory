@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.BOTH)
 
         event.recipes.gtceu.virtual_particle_synthesis("hyperdegenerate_matter")
-            .inputFluids("gtceu:superheavy_atomic_residue 400", "kubejs:degenerate_matter 400", "kubejs:meson_g2 400")
+            .inputFluids("gtceu:purified_superheavy_residue 400", "kubejs:degenerate_matter 400", "kubejs:meson_g2 400")
             .circuit(2)
             .duration(80)
             .outputFluids("gtceu:hyperdegenerate_matter 400")

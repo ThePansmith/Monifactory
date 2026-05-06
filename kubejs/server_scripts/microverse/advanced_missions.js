@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:naquadah_alloy_drill_head")
             .itemInputs("16x kubejs:wither_realm_data")
-            .requiredMicroverse((doComplexMicroverses ? 4 : 1)) // Corrupted / Normal
+            .requiredMicroverse((doComplexMicroverses ? 7 : 1)) // Supercharged / Normal
             .itemOutputs(
                 "64x gtceu:raw_uraninite",
                 "64x gtceu:raw_uraninite",

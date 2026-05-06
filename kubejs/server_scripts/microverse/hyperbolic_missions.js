@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
                     "64x gtceu:meta_null_ingot"
                 )
                 .inputFluids("kubejs:quark_gluon_plasma 2000")
-                .damageRate(20)
+                .damageRate(200)
                 .itemOutputs("64x gtceu:monium_ingot", "64x gtceu:monium_ingot")
                 .requiredMicroverse(7) // Supercharged
                 .updateMicroverse(8) // Degenerate

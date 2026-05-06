@@ -237,30 +237,4 @@ ServerEvents.recipes(event => {
             )
             .requiredMicroverse((doComplexMicroverses ? 5 : (doHostileMicroverse ? 2 : 1))) // Abyssal : Hostile : Normal
     })
-
-    if (doComplexMicroverses) {
-        microverse_mission(event, "4half", 2, 10, undefined, 100).forEach(builder => {
-            builder
-                .itemInputs(
-                    "12x kubejs:aerotheum_dust",
-                    "4x kubejs:deep_dark_data",
-                    "2x kubejs:warden_horn",
-                )
-                .inputFluids("enderio:xp_juice 500")
-                .damageRate(50)
-                .requiredMicroverse(5) // Abyssal
-        })
-
-        microverse_mission(event, "4half", 2, 10, undefined, 100).forEach(builder => {
-            builder
-                .itemInputs(
-                    "16x kubejs:aerotheum_dust",
-                    "8x kubejs:deep_dark_data",
-                    "kubejs:warden_heart",
-                )
-                .inputFluids("enderio:xp_juice 1000")
-                .damageRate(200)
-                .requiredMicroverse(5) // Abyssal
-        })
-    }
 })
