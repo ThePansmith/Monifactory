@@ -153,23 +153,24 @@ ServerEvents.recipes(event => {
         "BCB",
         "PGP"
     ], {
-        B: "gtceu:cobalt_brass_gear",
+        B: "gtceu:black_bronze_gear",
         P: "gtceu:double_electrum_plate",
         G: "thermal:obsidian_glass",
         C: "thermal:upgrade_augment_1"
     })
 
     event.recipes.gtceu.shaped(Item.of("thermal:upgrade_augment_4", '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
-        "RSR",
-        "SCS",
-        "RSR"
+        "SSS",
+        "SCE",
+        "RRS"
     ], {
         R: "gtceu:restonia_gem",
         S: "gtceu:signalum_plate",
+        E: "gtceu:energy_crystal",
         C: "thermal:upgrade_augment_2"
     })
 
-    event.recipes.gtceu.shaped(Item.of("thermal:upgrade_augment_3", '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
+    event.recipes.gtceu.shaped(Item.of("thermal:upgrade_augment_3", '{AugmentData:{BaseMod:12.0f,Type:"Upgrade"}}'), [
         "ABG",
         "BCB",
         "GBA"
