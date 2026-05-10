@@ -253,11 +253,12 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:photonic_soc_base", "gtceu:lithium_niobate_lens", "kubejs:prism_pane")
             .itemOutputs("kubejs:photonic_soc_inert")
 
-        event.recipes.gtceu.forming_press("psoc_primary_from_inert")
+        event.recipes.gtceu.large_chemical_reactor("psoc_primary_from_inert")
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(400)
             .EUt(GTValues.VA[GTValues.LuV])
-            .itemInputs("3x kubejs:photonic_soc_inert", "#forge:lenses/red", "#forge:lenses/green", "#forge:lenses/blue", "3x kubejs:prism_pane")
+            .itemInputs("3x kubejs:photonic_soc_inert", "3x kubejs:prism_pane")
+            .inputFluids("gtceu:red_dye 576", "gtceu:green_dye 576", "gtceu:blue_dye 576")
             .itemOutputs("kubejs:photonic_soc_red", "kubejs:photonic_soc_green", "kubejs:photonic_soc_blue")
     } else {
         event.recipes.gtceu.forming_press("psoc_inert")
