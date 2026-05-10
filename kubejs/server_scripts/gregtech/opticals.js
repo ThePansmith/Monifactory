@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(400)
             .EUt(GTValues.VA[GTValues.LuV])
-            .itemInputs("3x kubejs:photonic_soc_inert", "#gtceu:lenses/red", "#gtceu:lenses/green", "#gtceu:lenses/blue", "3x kubejs:prism_pane")
+            .itemInputs("3x kubejs:photonic_soc_inert", "#forge:lenses/red", "#forge:lenses/green", "#forge:lenses/blue", "3x kubejs:prism_pane")
             .itemOutputs("kubejs:photonic_soc_red", "kubejs:photonic_soc_green", "kubejs:photonic_soc_blue")
     } else {
         event.recipes.gtceu.forming_press("psoc_inert")
