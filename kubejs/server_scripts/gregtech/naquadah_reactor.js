@@ -60,17 +60,17 @@ ServerEvents.recipes(event => {
     // Large Naquadah Reactor usage
     if (doParticleSynthesis) {
         event.recipes.gtceu.large_naquadah_reactor("kubejs:process_crude_fuel")
-            .inputFluids("gtceu:crude_naquadah_fuel 20", "kubejs:w_z_g1 5")
+            .inputFluids("gtceu:crude_naquadah_fuel 20", "kubejs:w_z_g1 2")
             .duration(80)
             .EUt(-GTValues.V[GTValues.UV], 12)
 
         event.recipes.gtceu.large_naquadah_reactor("kubejs:process_fuel")
-            .inputFluids("gtceu:naquadah_fuel 30", "kubejs:w_z_g1 10")
+            .inputFluids("gtceu:naquadah_fuel 30", "kubejs:w_z_g1 4")
             .duration(80)
             .EUt(-GTValues.V[GTValues.UHV], 16)
 
         event.recipes.gtceu.large_naquadah_reactor("kubejs:process_superfuel")
-            .inputFluids("gtceu:naquadah_superfuel 40", "kubejs:w_z_g2 5")
+            .inputFluids("gtceu:naquadah_superfuel 40", "kubejs:w_z_g2 2")
             .duration(80)
             .EUt(-GTValues.V[GTValues.UHV], 32)
     } else {

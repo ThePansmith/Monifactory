@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
         isotopes.forEach(isotope => {
             // Proceed to completely ignore cracking mats lol
             event.recipes.gtceu.fusion_reactor(`${isotope[0]}_isotope_cracking_fusion_boson`)
-                .inputFluids(`gtceu:${isotope[1]} 125`, `kubejs:w_z_g${isotope[2]} 25`) // Decay In A Bottle(TM)
+                .inputFluids(`gtceu:${isotope[1]} 125`, `kubejs:w_z_g${isotope[2]} 10`) // Decay In A Bottle(TM)
                 .outputFluids(`gtceu:cracked_${isotope[1]} 125`)
                 .duration(30)
                 .category("gtceu:particle_acceleration")
@@ -389,7 +389,7 @@ ServerEvents.recipes(event => {
     if (doParticleSynthesis) {
         event.recipes.gtceu.virtual_particle_synthesis("naquadah_waste_accelerated_decay")
             .itemInputs("4x kubejs:naquadah_waste")
-            .inputFluids("kubejs:w_z_g1 50") // Decay In A Bottle(TM)
+            .inputFluids("kubejs:w_z_g1 20") // Decay In A Bottle(TM)
             .itemOutputs(
                 "gtceu:trinium_dust",
                 "gtceu:curium_dust",

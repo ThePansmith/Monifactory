@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.virtual_particle_synthesis("higgs_g3")
             .inputFluids("kubejs:higgs_g2 800", "kubejs:gluon_g2 400", "gtceu:exotic_particle_solution 400")
             .duration(80)
-            .outputFluids("kubejs:higgs_g3 400", "kubejs:w_z_g2 600", "kubejs:degenerate_matter 600")
+            .outputFluids("kubejs:higgs_g3 400", "kubejs:w_z_g2 800", "kubejs:degenerate_matter 400")
             .EUt(GTValues.VA[GTValues.UHV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.BOTH)
 
@@ -283,7 +283,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.virtual_particle_synthesis("gluon_g3")
             .inputFluids("kubejs:gluon_g2 480", "kubejs:higgs_g3 240", "gtceu:hyperdegenerate_matter 240")
             .duration(80)
-            .outputFluids("kubejs:gluon_g3 240", "kubejs:w_z_g2 360", "gtceu:exotic_particle_solution 240")
+            .outputFluids("kubejs:gluon_g3 240", "kubejs:w_z_g2 480", "gtceu:exotic_particle_solution 240")
             .EUt(GTValues.VA[GTValues.UEV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.BOTH)
 

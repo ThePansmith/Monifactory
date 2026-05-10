@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     // Recipes used to run the creative multiblocks
     if (doParticleSynthesis) {
         event.recipes.gtceu.creative_energy_multi("kubejs:superfuel_infinite_power")
-            .inputFluids("gtceu:naquadah_superfuel 120", "kubejs:w_z_g2 15")
+            .inputFluids("gtceu:naquadah_superfuel 120", "kubejs:w_z_g2 6")
             .duration(40)
 
         event.recipes.gtceu.creative_energy_multi("kubejs:antimatter_degenerate_infinite_power")

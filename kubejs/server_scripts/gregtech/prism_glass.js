@@ -34,12 +34,20 @@ ServerEvents.recipes(event => {
         .duration(12 * 20)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.alloy_smelter("lyso_ce_glass")
-        .notConsumable("gtceu:block_casting_mold")
-        .itemInputs("1x gtceu:lyso_ce_dust")
-        .itemOutputs("kubejs:lyso_ce_glass")
-        .duration(6 * 20)
-        .EUt(GTValues.VA[GTValues.LV])
+    if (doComplexPrismaC) {
+        event.recipes.gtceu.alloy_smelter("lyso_ce_glass")
+            .itemInputs("gtceu:fusion_glass", "gtceu:lyso_ce_dust")
+            .itemOutputs("kubejs:lyso_ce_glass")
+            .duration(6 * 20)
+            .EUt(GTValues.VA[GTValues.LV])
+    } else {
+        event.recipes.gtceu.alloy_smelter("lyso_ce_glass")
+            .notConsumable("gtceu:block_casting_mold")
+            .itemInputs("1x gtceu:lyso_ce_dust")
+            .itemOutputs("kubejs:lyso_ce_glass")
+            .duration(6 * 20)
+            .EUt(GTValues.VA[GTValues.LV])
+    }
 
     event.recipes.gtceu.macerator("macerate_lyso_ce_glass")
         .itemInputs("1x kubejs:lyso_ce_glass")

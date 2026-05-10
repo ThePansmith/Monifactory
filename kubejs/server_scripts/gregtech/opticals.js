@@ -246,18 +246,19 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x kubejs:photonic_soc_base")
 
     if (doComplexPrismaC) {
-        event.recipes.gtceu.forming_press("psoc_red_from_base")
+        event.recipes.gtceu.forming_press("psoc_inert_from_base")
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(400)
             .EUt(GTValues.VA[GTValues.LuV])
-            .itemInputs("kubejs:photonic_soc_base", "gtceu:lithium_niobate_lens", "2x kubejs:prism_pane")
-            .itemOutputs("kubejs:photonic_soc_red")
-        event.recipes.gtceu.forming_press("psoc_red_from_inert")
+            .itemInputs("kubejs:photonic_soc_base", "gtceu:lithium_niobate_lens", "kubejs:prism_pane")
+            .itemOutputs("kubejs:photonic_soc_inert")
+
+        event.recipes.gtceu.forming_press("psoc_primary_from_inert")
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(400)
             .EUt(GTValues.VA[GTValues.LuV])
-            .itemInputs("kubejs:photonic_soc_inert", "gtceu:lithium_niobate_lens", "gtceu:ruby_lens", "4x kubejs:prism_pane")
-            .itemOutputs("kubejs:photonic_soc_red")
+            .itemInputs("3x kubejs:photonic_soc_inert", "#gtceu:lenses/red", "#gtceu:lenses/green", "#gtceu:lenses/blue", "3x kubejs:prism_pane")
+            .itemOutputs("kubejs:photonic_soc_red", "kubejs:photonic_soc_green", "kubejs:photonic_soc_blue")
     } else {
         event.recipes.gtceu.forming_press("psoc_inert")
             .cleanroom(CleanroomType.CLEANROOM)
