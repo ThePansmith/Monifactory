@@ -33,39 +33,13 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.chemical_reactor("uncracked_ethyl_cyanoacrylate")
+    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate")
         .notConsumableFluid("gtceu:fluoroantimonic_acid 2000")
         .inputFluids("gtceu:ethanol 1000", "gtceu:formaldehyde 1000")
         .itemInputs("gtceu:cyanoacetic_acid_dust")
-        .outputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "minecraft:water 2000")
+        .outputFluids("gtceu:ethyl_cyanoacrylate 1000", "minecraft:water 2000")
         .duration(380)
         .EUt(GTValues.VA[GTValues.LuV])
-
-    // Cracking recipes - CR
-    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate_hydro")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 500", "gtceu:hydrogen 3000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 250")
-        .duration(160)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate_steam")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "gtceu:steam 1000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 500")
-        .duration(240)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // Cracking recipes - Cracker
-    event.recipes.gtceu.cracker("ethyl_cyanoacrylate_hydro")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "gtceu:hydrogen 6000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 1000")
-        .duration(160)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.cracker("ethyl_cyanoacrylate_steam")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "gtceu:steam 1000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 1000")
-        .duration(240)
-        .EUt(GTValues.VA[GTValues.HV])
 
     // Polymerization recipe
     event.recipes.gtceu.chemical_reactor("polyethyl_cyanoacrylate")
