@@ -115,12 +115,25 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.LuV])
             .quantumRule(QuantumRule.QUANTUM_WAVES, IO.OUT)
 
-        event.recipes.gtceu.virtual_particle_synthesis("more_particle_soup")
+        event.recipes.gtceu.virtual_particle_synthesis("more_particle_soup_enriched_naquadah")
             .itemInputs(
                 "64x kubejs:quantum_flux",
                 "64x kubejs:quantum_flux",
                 "16x gtceu:quantum_eye",
                 "16x gtceu:small_enriched_naquadah_dust"
+            )
+            .inputFluids("gtceu:mana 1000")
+            .duration(40)
+            .outputFluids("kubejs:particle_soup 20000")
+            .EUt(GTValues.VA[GTValues.LuV])
+            .quantumRule(QuantumRule.QUANTUM_FIELDS, IO.IN)
+
+        event.recipes.gtceu.virtual_particle_synthesis("more_particle_soup_naquadria")
+            .itemInputs(
+                "64x kubejs:quantum_flux",
+                "64x kubejs:quantum_flux",
+                "16x gtceu:quantum_eye",
+                "16x gtceu:small_naquadria_dust"
             )
             .inputFluids("gtceu:mana 1000")
             .duration(40)
