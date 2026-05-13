@@ -882,7 +882,7 @@
 			size: 1.5d
 			subtitle: "{moni.quest.3E45F67F09B6156B.subtitle}"
 			tasks: [{
-				id: "5152715C85EFA712"
+				id: "279C89B6CCA0C22E"
 				item: "monilabs:prismatic_crucible"
 				type: "item"
 			}]
