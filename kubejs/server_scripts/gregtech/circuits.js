@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler("optical_processor")
         .itemInputs(
             "1x kubejs:optical_processing_unit",
-            "1x kubejs:optical_chip",
+            "1x kubejs:photonic_soc_active",
             "2x kubejs:electro_optic_modulator",
             "10x gtceu:advanced_smd_resistor",
             "10x gtceu:advanced_smd_transistor",
@@ -240,20 +240,6 @@ ServerEvents.recipes(event => {
             .CWUt(128)
             .EUt(GTValues.VA[GTValues.UV])
         )
-
-    // SoC recipe for cheaper Optical Processor
-    event.recipes.gtceu.circuit_assembler("optical_processor_soc")
-        .itemInputs(
-            "kubejs:optical_processing_unit",
-            "kubejs:photonic_soc_active",
-            "8x gtceu:fine_naquadah_wire",
-            "8x gtceu:necrosiderite_bolt"
-        )
-        .inputFluids("gtceu:living_soldering_alloy 18")
-        .itemOutputs("4x kubejs:optical_processor")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(5 * 20)
-        .EUt(2400000)
 
 
     // Extradimensional Circuits
@@ -444,9 +430,8 @@ ServerEvents.recipes(event => {
         .itemInputs(
             "kubejs:microminer_t11",
             "16x kubejs:microverse_containment_unit",
-            "16x kubejs:optical_chip",
+            "24x kubejs:photonic_soc_active",
             "32x kubejs:electro_optic_modulator",
-            "4x kubejs:photonic_soc_active",
             "64x gtceu:fine_naquadah_wire"
         )
         .inputFluids("gtceu:crude_naquadah_fuel 50")
