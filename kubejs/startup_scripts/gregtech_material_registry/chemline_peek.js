@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x8c6029)
         .components("7x carbon", "7x hydrogen", "1x nitrogen", "2x oxygen")
 
-    event.create("analine")
+    event.create("aniline")
         .liquid()
         .color(0x78663a)
         .components("5x carbon", "7x hydrogen", "1x nitrogen")

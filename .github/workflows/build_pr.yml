@@ -35,15 +35,15 @@ jobs:
       group: pack_pr-${{ github.head_ref || github.run_id }}
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Setup node and npm
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 23
           cache: 'npm'
           cache-dependency-path: build/package-lock.json
       - name: Restore mods cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           # observe if this makes broken builds due to outdated mods (server onl)
           path: |
@@ -52,7 +52,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-mods-
       - name: Restore modlist cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: dist/modlist.html
           key: ${{ runner.os }}-modlist-${{ hashFiles('manifest.json') }}
@@ -74,7 +74,7 @@ jobs:
           node index.ts ${{ inputs.target }}
         shell: bash
       - name: Upload client build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: client-build
           path: dist/client.zip
@@ -82,7 +82,7 @@ jobs:
           overwrite: true
           compression-level: 9
       - name: Upload server build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: server-build
           path: dist/server.zip

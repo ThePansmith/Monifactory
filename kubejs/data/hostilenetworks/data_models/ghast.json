@@ -25,6 +25,10 @@
         {
             "item": "gtceu:silver_ingot",
             "count": 12
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 64
         }
     ]
 }
