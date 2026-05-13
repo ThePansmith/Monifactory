@@ -46,9 +46,6 @@ global.itemNukeList = [
     // CBMultipart
     /cb_microblock:.*/,
 
-    // Chisels & Bits
-    "chiselsandbits:block_bit",
-
     // EnderIO
     "enderio:alloy_smelter",
     "enderio:clayed_glowstone",
