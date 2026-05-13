@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x gtceu:cryolobus_plate", "2x gtceu:europium_plate", "8x gtceu:vanadium_gallium_bolt")
         .inputFluids("gtceu:advanced_soldering_alloy 144")
         .itemOutputs("kubejs:empty_bathyal_energy_core")
-        .duration(10)
+        .duration(20)
         .EUt(GTValues.VA[GTValues.IV])
         .addMaterialInfo(true, true)
 
@@ -50,14 +50,14 @@ ServerEvents.recipes(event => {
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_americium", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 288")
         .itemOutputs("kubejs:empty_abyssal_energy_core")
-        .duration(10)
+        .duration(5)
         .addMaterialInfo(true, true)
 
     event.recipes.gtceu.discharger("kubejs:empty_hadal_energy_core")
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:neutronium_plate", "8x gtceu:omnium_bolt", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
         .inputFluids("gtceu:living_soldering_alloy 288")
         .itemOutputs("kubejs:empty_hadal_energy_core")
-        .duration(10)
+        .duration(5)
         .addMaterialInfo(true, true)
 
     // Energy core filling

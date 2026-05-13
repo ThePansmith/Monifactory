@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.distillation_tower("superheavy_residue_distillation")
         .inputFluids("gtceu:cracked_superheavy_atomic_residue")
         .chancedOutput("kubejs:naquadah_waste", 9000, 0)
-        .outputFluids("gtceu:californium 150", "gtceu:berkelium 200", "gtceu:curium 250", "gtceu:heavy_atomic_residue 400")
+        .outputFluids("gtceu:californium 150", "gtceu:plutonium_241 100", "gtceu:curium 350", "gtceu:heavy_atomic_residue 400")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 

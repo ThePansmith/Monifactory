@@ -30,12 +30,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
-    GTMaterials.Actinium.setMaterialARGB(0xaa3399)
+    GTMaterials.Actinium.setMaterialARGB(0xa034a8)
+    GTMaterials.Actinium.setMaterialSecondaryARGB(0x1e8ccc)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
+    GTMaterials.Actinium.setMaterialIconSet(GTMaterialIconSet.RADIOACTIVE)
 
     GTMaterials.Germanium.setProperty($PropertyKey.DUST, new $DustProperty())
     GTMaterials.Germanium.setMaterialARGB(0x66806d)
     GTMaterials.Germanium.setMaterialSecondaryARGB(0x5d5e3a)
+    addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID, 1211);
 
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
@@ -60,9 +63,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Lead.addFlags(GTMaterialFlags.GENERATE_GEAR)
 
     // Radioactive materials that get liquid forms and/or a new color
-    addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID, 1259);
-    GTMaterials.Berkelium.setMaterialARGB(0xa33f20);
-    GTMaterials.Berkelium.setMaterialSecondaryARGB(0x87001c);
     addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID, 1173);
     GTMaterials.Californium.setMaterialARGB(0x7d0222);
     GTMaterials.Californium.setMaterialSecondaryARGB(0x410022);
@@ -114,7 +114,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // HM-exclusive modifications
     if (doHarderProcessing) {
-        // GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         GTMaterials.RhodiumSulfate.setProperty($PropertyKey.DUST, new $DustProperty());
     }
 })
