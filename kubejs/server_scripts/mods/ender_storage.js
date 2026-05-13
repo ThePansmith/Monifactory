@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     // event.remove({ output: ["endertanks:ender_tank", "enderchests:ender_chest"] })
 
     // Chest
-    event.shaped("enderchests:ender_chest", [
+    event.recipes.gtceu.shaped("enderchests:ender_chest", [
         "ABA",
         "DED",
         "AFA"
@@ -15,9 +15,9 @@ ServerEvents.recipes(event => {
         A: "minecraft:blaze_rod",
         B: "#minecraft:wool",
         D: "minecraft:obsidian",
-        E: "gtceu:steel_crate",
+        E: "gtceu:aluminium_crate",
         F: "gtceu:ender_pearl_block"
-    }).id("enderchests:ender_chest")
+    }).id("enderchests:ender_chest").addMaterialInfo()
 
     // Pouch
     event.shaped("enderchests:ender_bag", [
@@ -27,13 +27,13 @@ ServerEvents.recipes(event => {
     ], {
         A: "minecraft:blaze_powder",
         B: "#minecraft:wool",
-        D: "gtceu:obsidian_plate",
+        D: "gtceu:dense_obsidian_plate",
         E: "enderchests:ender_pouch",
-        F: "gtceu:ender_pearl_plate"
+        F: "gtceu:ender_eye_plate"
     }).id("enderchests:ender_bag")
 
     // Tank
-    event.shaped("endertanks:ender_tank", [
+    event.recipes.gtceu.shaped("endertanks:ender_tank", [
         "ABA",
         "DED",
         "AFA"
@@ -41,9 +41,9 @@ ServerEvents.recipes(event => {
         A: "minecraft:blaze_rod",
         B: "#minecraft:wool",
         D: "minecraft:obsidian",
-        E: "enderio:pressurized_fluid_tank",
+        E: "gtceu:aluminium_drum",
         F: "gtceu:ender_pearl_block"
-    }).id("endertanks:tank")
+    }).id("endertanks:tank").addMaterialInfo()
 
     // Bucket
     event.shaped("endertanks:ender_bucket", [
@@ -53,8 +53,8 @@ ServerEvents.recipes(event => {
     ], {
         A: "minecraft:blaze_powder",
         B: "#minecraft:wool",
-        D: "gtceu:obsidian_plate",
+        D: "gtceu:dense_obsidian_plate",
         E: "minecraft:bucket",
-        F: "gtceu:ender_pearl_plate"
+        F: "gtceu:ender_eye_plate"
     }).id("endertanks:bucket")
 })
