@@ -25,7 +25,6 @@
 
 # AE2
 !/config/ae2
-/config/ae2/client.json
 /config/ae2/common.json
 
 # Almost Unified
