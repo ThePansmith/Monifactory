@@ -585,7 +585,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:fluix_dust")
         .itemOutputs("gtceu:fluix_plate")
         .duration(400)
-        .EUt(2)
+        .EUt(0.25 * GTValues.V[GTValues.ULV])
 
     // Cable Recipes
     event.remove({ id: "ae2:network/cables/covered_fluix" })
@@ -870,7 +870,7 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:redstone 72")
             .itemOutputs(`2x ae2:${processorType.type}_processor`)
             .duration(50)
-            .EUt(2560)
+            .EUt(1.25 * GTValues.V[GTValues.EV])
             .cleanroom(CleanroomType.CLEANROOM)
     })
 
@@ -887,7 +887,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:indium_gallium_phosphide 36")
         .itemOutputs("2x megacells:accumulation_processor")
         .duration(100)
-        .EUt(2560)
+        .EUt(1.25 * GTValues.V[GTValues.EV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     /** ExtendedAE **/
