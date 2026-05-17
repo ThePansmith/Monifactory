@@ -240,6 +240,8 @@
 				"{moni.quest.7D72B3FF808CE13C.description2}"
 				""
 				"{moni.quest.7D72B3FF808CE13C.description3}"
+				""
+				"{moni.quest.7D72B3FF808CE13C.description4}"
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "7D72B3FF808CE13C"
