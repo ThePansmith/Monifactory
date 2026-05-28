@@ -451,7 +451,7 @@
     "material.gtceu.plutonium_242": "Plutonium 242",
     "gtceu.uhv_voltage_coil.desc": "Legendary Coil",
     "gtceu.uev_voltage_coil.desc": "Supreme Coil",
-    "mateial.gtceu.compost_mix": "Compost Mix",
+    "item.gtceu.compost_mix_dust": "Compost Mix",
     "__HM_MISC__.header": "============",
     "__HM_MISC__.flufff": "> HM Misc. <",
     "__HM_MISC__.footer": "============",
