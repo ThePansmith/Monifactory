@@ -70,6 +70,14 @@ ServerEvents.recipes(event => {
             .itemOutputs(boostedOutputs)
             .duration(duration / 2)
             .EUt(80)
+        event.recipes.gtceu.greenhouse(`kubejs:${input}_phytogro`)
+            .circuit(3)
+            .notConsumable(InputItem.of(Item.of(`${mod}:${input}`)))
+            .itemInputs("1x thermal:phytogro")
+            .inputFluids(Fluid.of("minecraft:water", 4000 * waterMod))
+            .itemOutputs(boostedOutputs)
+            .duration(duration / 4)
+            .EUt(80)
     }
 
 
