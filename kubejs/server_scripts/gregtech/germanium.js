@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:fly_ash_iron_mineral_mixture_dust", 6666, 0)
         .chancedOutput("gtceu:fly_ash_aluminosilicate_dust", 5500, 0)
         .duration(400)
-        .EUt(GTValues.VA[GTValues.MV])
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Aluminosilicate Line
     event.recipes.gtceu.electric_blast_furnace("kubejs:salt_roasted_aluminosilicate_dust")
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of("gtceu:carbon_dioxide", 3000))
         .blastFurnaceTemp(3600)
         .duration(1200)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.chemical_bath("kubejs:aluminosilicate_leachate")
         .itemInputs("2x gtceu:salt_roasted_aluminosilicate_dust")
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x gtceu:sodium_dust", "gtceu:germanium_dust", "4x gtceu:lithium_dust", "gtceu:silicon_dust", "gtceu:aluminium_dust", "gtceu:vanadium_dust")
         .outputFluids(Fluid.of("gtceu:oxalic_acid_solution", 1250))
         .duration(160)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Polymineral Line
     event.recipes.gtceu.chemical_bath("kubejs:polymineral_leachate")
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .chancedItemOutputLogic(ChanceLogic.XOR)
         .outputFluids(Fluid.of("gtceu:polymineral_leachate", 1000))
         .duration(300)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.centrifuge("polymineral_leachate_centrifuge")
         .inputFluids(Fluid.of("gtceu:polymineral_leachate", 3000))
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of("gtceu:oxalic_acid_solution", 500))
         .outputFluids(Fluid.of("minecraft:water", 500))
         .duration(500)
-        .EUt(GTValues.VA[GTValues.MV])
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Iron Mineral Line
     event.recipes.gtceu.chemical_bath("kubejs:iron_mineral_solution")
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:small_zinc_dust")
         .outputFluids(Fluid.of("gtceu:iron_mineral_solution", 1000))
         .duration(900)
-        .EUt(GTValues.VA[GTValues.MV])
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.electrolyzer("kubejs:iron_mineral_solution_electrolysis")
         .inputFluids(Fluid.of("gtceu:iron_mineral_solution", 3000))
@@ -76,5 +76,5 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:small_gallium_dust", 2000, 0)
         .outputFluids(Fluid.of("minecraft:water", 1000))
         .duration(200)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.HV])
 })
