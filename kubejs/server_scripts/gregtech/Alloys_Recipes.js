@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VHA[GTValues.LV])
     event.recipes.gtceu.centrifuge("glowstone_separation")
-        .itemInputs("4x minecraft:glowstone_dust")
+        .itemInputs("5x minecraft:glowstone_dust")
         .itemOutputs("gtceu:tricalcium_phosphate_dust", "gtceu:gold_dust", "gtceu:barite_dust")
         .duration(976)  // Copied from the default Glowstone Separation recipe
         .EUt(80)        // Copied from the default Glowstone Separation recipe
