@@ -129,6 +129,14 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(120)
 
+    event.recipes.gtceu.chemical_reactor("kubejs:oxalic_acid_solution")
+        .itemInputs("gtceu:oxalic_acid_dust")
+        .inputFluids(Fluid.of("minecraft:water", 1000))
+        .outputFluids(Fluid.of("gtceu:oxalic_acid_solution", 1000))
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // New electrolysis recipe to reflect Sugar's altered formula
     event.recipes.gtceu.electrolyzer("sugar_electrolysis")
         .itemInputs("23x minecraft:sugar")
         .itemOutputs("12x gtceu:carbon_dust")
