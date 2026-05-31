@@ -308,4 +308,7 @@ ServerEvents.recipes(event => {
             defineFertRecipesForReagentPair(left_reagent, right_reagent)
         })
     })
+
+    // Remove Fertilizer elecrolysis recipe to prevent Fertilizer Alchemy
+    event.remove({ id: "gtceu:electrolyzer/fertilizer_decomposition" })
 })
