@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             .itemInputs("8x #forge:dusts/tungsten_trioxide", "3x #forge:dusts/carbon")
             .itemOutputs("2x gtceu:hot_tungsten_ingot")
             .outputFluids(Fluid.of("gtceu:carbon_dioxide", 3000))
-            .blastFurnaceTemp(3600)
+            .blastFurnaceTemp(4500)
             .duration(2400).EUt(1920)
 
         event.recipes.gtceu.chemical_reactor("kubejs:tungsten_dust")
