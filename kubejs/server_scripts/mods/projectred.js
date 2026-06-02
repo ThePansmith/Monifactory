@@ -75,6 +75,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`1x projectred_transmission:${type.color}_insulated_wire`)
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
+            .circuit(1)
 
         event.recipes.gtceu.assembler("projectred_bundled_wire_" + type.name)
             .itemInputs("8x projectred_transmission:red_alloy_wire")
