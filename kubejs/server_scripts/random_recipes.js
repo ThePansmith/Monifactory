@@ -699,11 +699,11 @@ ServerEvents.recipes(event => {
         .EUt(-GTValues.V[GTValues.LV])
 
     // Wither Gas
-    event.recipes.gtceu.mixer("wither_gas")
+    event.recipes.gtceu.large_chemical_reactor("wither_gas")
         .notConsumable("minecraft:nether_star")
         .itemInputs("enderio:withering_powder", "2x gtceu:small_calcium_perchlorate_dust")
-        .inputFluids("gtceu:nitrobenzene 10000", "gtceu:overbased_magnesium_sulfonate 500")
-        .outputFluids("gtceu:wither_gas 12000")
+        .inputFluids("gtceu:lpg 8000", "gtceu:nitrobenzene 10000", "gtceu:overbased_magnesium_sulfonate 500")
+        .outputFluids("gtceu:wither_gas 20000")
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
 
