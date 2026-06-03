@@ -97,7 +97,7 @@ if (Platform.isLoaded("railways")) {
     })
     ServerEvents.recipes(event => {
 
-        event.remove({ output: "#kubejs:create_tracks" }) // KILL 'EM ALL! - demoman tf2
+        event.remove({ output: "#kubejs:create_tracks" }) // KILL "EM ALL! - demoman tf2
 
         /**
          * Creates a shaped crafting recipe and a Gregtech Assembler recipe, both to make normal-gauge tracks.
@@ -128,7 +128,7 @@ if (Platform.isLoaded("railways")) {
 
         /**
          * Creates a shaped crafting recipe and a Gregtech Assembler recipe, both to make wide-gauge tracks.
-         * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be 'widened'.
+         * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be "widened".
          * @param {string} sleeperItem A ResourceLocation of the item representing the sleeper/tie of the track. Will typically be a slab.
          * @param {string} outputItem A ResourceLocation of the wide-gauge track item to be output by the recipes.
          * @param {int} outputCount How many wide-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation.
@@ -197,7 +197,7 @@ if (Platform.isLoaded("railways")) {
          */
         let stoneToPaintRecipes = function (stone, paint) {
             event.recipes.gtceu.chemical_reactor(`kubejs:chemical_reactor_paint_${paint}`)
-                .itemInputs(stone, '2x #forge:dusts/salt')
+                .itemInputs(stone, "2x #forge:dusts/salt")
                 .inputFluids("minecraft:water 1000", "gtceu:sulfuric_acid 250")
                 .outputFluids(Fluid.of("railways:paint", 1000, { Color: paint }))
                 .duration(600 + 200)
@@ -246,7 +246,6 @@ if (Platform.isLoaded("railways")) {
                 .itemInputs(inputItem)
                 // Pitchers can be used to paint locometal with a Potato Cannon.
                 // A bucket of paint can be used on up to 8 blocks at once.
-                //.inputFluids(Fluid.of("railways:paint", 125, { Color: paintColor }))
                 .inputFluids(fluid)
                 .itemOutputs(outputItem)
                 .duration(10)
@@ -255,7 +254,7 @@ if (Platform.isLoaded("railways")) {
 
         /**
          * List of locometal blocks.
-         * Contains a tag for the group, the uncolored variant's id, and a function to get colored variants.
+         * Contains a tag for the group, the uncolored variant"s id, and a function to get colored variants.
          */
         let locometals = [
             {
@@ -597,7 +596,7 @@ if (Platform.isLoaded("railways")) {
         // Locometal
         for (let locometal of locometals) {
             // Clean
-            locometalPaintRecipes(locometal.tag, locometal.base, 'minecraft:water 125');
+            locometalPaintRecipes(locometal.tag, locometal.base, "minecraft:water 125");
             for (let paint of paints) {
                 locometalPaintRecipes(locometal.tag, locometal.painted(paint), Fluid.of("railways:paint", 125, { Color: paint }));
             }
