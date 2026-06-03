@@ -188,12 +188,19 @@ if (Platform.isLoaded("create")) {
 
         // stone variant rock crusher recipes
         let rockCrushing = function (modName, itemName, EUt) {
-            return event.recipes.gtceu.rock_breaker(`kubejs:${itemName}`)
-                .notConsumable(`${modName}:${itemName}`)
-                .itemOutputs(`${modName}:${itemName}`)
-                .adjacentFluids("minecraft:lava", "minecraft:water")
-                .duration(16)
-                .EUt(EUt)
+            return [
+                event.recipes.gtceu.rock_breaker(`kubejs:${itemName}`)
+                    .notConsumable(`${modName}:${itemName}`)
+                    .itemOutputs(`${modName}:${itemName}`)
+                    .adjacentFluids("minecraft:lava", "minecraft:water")
+                    .duration(16)
+                    .EUt(EUt),
+                event.recipes.gtceu.rock_cycle_simulator(`kubejs:${itemName}_rock_cycle`)
+                    .notConsumable(`${modName}:${itemName}`)
+                    .itemOutputs(`${modName}:${itemName}`)
+                    .duration(16)
+                    .EUt(EUt),
+            ]
         }
         rockCrushing("minecraft", "dripstone_block", 60)
         rockCrushing("minecraft", "tuff", 60)
