@@ -20,6 +20,10 @@ if (Platform.isLoaded("create")) {
         event.remove({ id: "create:crafting/kinetics/mechanical_press" })
         // Remove the hand crank since it's easy to abuse contraptions using it
         event.remove({ id: "create:crafting/kinetics/hand_crank" })
+        // Remove a few more items that are useless without their machines
+        event.remove({ id: "create:crafting/kinetics/whisk" })
+        event.remove({ id: "create:crafting/kinetics/crafter_slot_cover" })
+        event.remove({ id: "create:crafting/kinetics/nozzle" })
 
         // w h a t ?
         event.remove({ id: "gtceu:shaped/lv_kinetic_mixer" })
@@ -75,7 +79,7 @@ if (Platform.isLoaded("create")) {
             .EUt(7)
 
         event.recipes.gtceu.mixer("kubejs:blaze_cake_base")
-            .itemInputs("minecraft:egg", "minecraft:sugar", "create:cinder_flour")
+            .itemInputs("minecraft:egg", "minecraft:sugar", "gtceu:netherrack_dust")
             .itemOutputs("create:blaze_cake_base")
             .duration(200)
             .EUt(7)
