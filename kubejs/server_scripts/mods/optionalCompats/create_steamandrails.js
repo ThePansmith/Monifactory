@@ -178,9 +178,50 @@ if (Platform.isLoaded("railways")) {
         };
 
         /**
+         * Creates a Chemical Reactor recipe that converts 288mB of GregTech Dye into 1B of paint.
+         * @param {string} dye A ResourceLocation of the dye to use.
+         * @param {string} paint The color of the paint produced.
+         */
+        let dyeToPaintRecipes = function (dye, paint) {
+            event.recipes.gtceu.chemical_reactor(`kubejs:chemical_reactor_paint_${paint}`)
+                .inputFluids("minecraft:water 1000", `gtceu:${dye}_dye 288`)
+                .outputFluids(Fluid.of("railways:paint", 1000, { Color: paint }))
+                .duration(200)
+                .EUt(16); // Low Voltage
+        };
+
+        /**
+         * Creates a Chemical Reactor recipe that converts a stone into 1B of paint with the same costs as if from dyes.
+         * @param {string} stone A ResourceLocation of the stone to use.
+         * @param {string} paint The color of the paint produced.
+         */
+        let stoneToPaintRecipes = function (stone, paint) {
+            event.recipes.gtceu.chemical_reactor(`kubejs:chemical_reactor_paint_${paint}`)
+                .itemInputs(stone, '2x #forge:dusts/salt')
+                .inputFluids("minecraft:water 1000", "gtceu:sulfuric_acid 250")
+                .outputFluids(Fluid.of("railways:paint", 1000, { Color: paint }))
+                .duration(600 + 200)
+                .EUt(24); // Low Voltage
+        }
+
+        /**
+         * Creates a Mixer recipe that converts 500mB of two paints into 1B of a third paint.
+         * @param {string} first The first paint to use.
+         * @param {string} second The second paint to use.
+         * @param {string} result The resulting paint.
+         */
+        let mixTwoPaintsRecipes = function (first, second, result) {
+            event.recipes.gtceu.mixer(`kubejs:mixer_paint_${result}`)
+                .inputFluids(Fluid.of("railways:paint", 500, { Color: first }), Fluid.of("railways:paint", 500, { Color: second }))
+                .outputFluids(Fluid.of("railways:paint", 1000, { Color: result }))
+                .duration(200)
+                .EUt(16); // Low Voltage
+        };
+
+        /**
          * Creates an Assembler recipe to make locometal boilers
          * @param {string} inputLocometal A ResourceLocation of the base locometal block
-         * @param {string} outputItem A ResourceLocation 
+         * @param {string} outputItem A ResourceLocation
          */
         let boilerRecipes = function (inputLocometal, outputItem) {
             event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/, "")}`)
@@ -211,7 +252,7 @@ if (Platform.isLoaded("railways")) {
                 .duration(10)
                 .EUt(2); // Ultra Low Voltage
         };
-        
+
         /**
          * List of locometal blocks.
          * Contains a tag for the group, the uncolored variant's id, and a function to get colored variants.
@@ -506,6 +547,41 @@ if (Platform.isLoaded("railways")) {
             narrowTrackRecipes("railways:track_biomesoplenty_willow", "railways:track_biomesoplenty_willow_narrow", "biomesoplenty:willow_slab", 1);
         }
 
+        // Paint
+        // From Dye
+        dyeToPaintRecipes("brown", "brown");
+        dyeToPaintRecipes("red", "red");
+        dyeToPaintRecipes("orange", "orange");
+        dyeToPaintRecipes("yellow", "yellow");
+        dyeToPaintRecipes("lime", "lime");
+        dyeToPaintRecipes("green", "green");
+        dyeToPaintRecipes("cyan", "cyan");
+        dyeToPaintRecipes("light_blue", "light_blue");
+        dyeToPaintRecipes("blue", "blue");
+        dyeToPaintRecipes("purple", "purple");
+        dyeToPaintRecipes("magenta", "magenta");
+        dyeToPaintRecipes("pink", "pink");
+        dyeToPaintRecipes("white", "white");
+        dyeToPaintRecipes("light_gray", "light_gray");
+        dyeToPaintRecipes("gray", "gray");
+        dyeToPaintRecipes("black", "black");
+        // From Paints
+        mixTwoPaintsRecipes("red", "black", "maroon");
+        mixTwoPaintsRecipes("red", "orange", "vermilion");
+        mixTwoPaintsRecipes("yellow", "green", "chartreuse");
+        mixTwoPaintsRecipes("lime", "green", "olive_green");
+        mixTwoPaintsRecipes("green", "black", "pine_green");
+        mixTwoPaintsRecipes("cyan", "black", "sea_green");
+        mixTwoPaintsRecipes("cyan", "white", "turquoise");
+        mixTwoPaintsRecipes("blue", "black", "royal_blue");
+        // From Stone
+        stoneToPaintRecipes("minecraft:granite", "granite");
+        stoneToPaintRecipes("minecraft:dripstone_block", "dripstone");
+        stoneToPaintRecipes("create:ochrum", "ochrum");
+        stoneToPaintRecipes("create:limestone", "limestone");
+        stoneToPaintRecipes("minecraft:tuff", "tuff");
+        stoneToPaintRecipes("create:scorchia", "scorchia");
+
         // Boilers
         boilerRecipes("railways:slashed_locometal", "railways:locometal_boiler");
         boilerRecipes("railways:brass_wrapped_locometal", "railways:brass_wrapped_locometal_boiler");
@@ -517,8 +593,6 @@ if (Platform.isLoaded("railways")) {
             boilerRecipes(`railways:${paint}_copper_wrapped_locometal`, `railways:${paint}_copper_wrapped_locometal_boiler`);
             boilerRecipes(`railways:${paint}_iron_wrapped_locometal`, `railways:${paint}_iron_wrapped_locometal_boiler`);
         }
-
-        // Paint
 
         // Locometal
         for (let locometal of locometals) {
