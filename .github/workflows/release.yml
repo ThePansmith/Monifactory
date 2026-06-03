@@ -69,7 +69,7 @@ jobs:
       - name: Config git user
         run: |
           git config user.name 'Release workflow'
-          git config user.email 'ThePansmith@users.noreply.github.com'
+          git config user.email 'illya.chernyshov888@gmail.com'
         shell: bash
       - name: Merge lang branch
         run: |

@@ -1,2 +1,3 @@
-# KNOWN ISSUE: Crash on server
-\*Can be fixed by updating Monilabs to 0.21.5 on server *ONLY* and leaving the client unchanged.
+# Moni 0.13.5
+*Fixed server crash, Infinite Spray Can and more!
+*HOTFIX: KubeJS crash on startup because of lang files fixed now.
