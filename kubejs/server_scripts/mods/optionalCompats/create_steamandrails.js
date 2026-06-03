@@ -178,6 +178,23 @@ if (Platform.isLoaded("railways")) {
         };
 
         /**
+         * Creates an Assembler recipe to make locometal boilers
+         * @param {string} inputLocometal A ResourceLocation of the base locometal block
+         * @param {string} outputItem A ResourceLocation 
+         */
+        let boilerRecipes = function (inputLocometal, outputItem) {
+            event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/, "")}`)
+                .itemInputs(
+                    `8x ${inputLocometal}`,
+                    "minecraft:bucket",
+                    "4x minecraft:blaze_rod"
+                )
+                .itemOutputs(`4x ${outputItem}`)
+                .duration(5)
+                .EUt(16); // Low Voltage
+        };
+
+        /**
          * Creates a chemical bath recipe to paint a given locometal block with another.
          * @param {string} inputItem A ResourceLocation of the base item/tag to paint.
          * @param {string} outputItem A ResourceLocation of the painted block output by the recipe.
@@ -487,6 +504,18 @@ if (Platform.isLoaded("railways")) {
             narrowTrackRecipes("railways:track_biomesoplenty_redwood", "railways:track_biomesoplenty_redwood_narrow", "biomesoplenty:redwood_slab", 1);
             narrowTrackRecipes("railways:track_biomesoplenty_umbran", "railways:track_biomesoplenty_umbran_narrow", "biomesoplenty:umbran_slab", 1);
             narrowTrackRecipes("railways:track_biomesoplenty_willow", "railways:track_biomesoplenty_willow_narrow", "biomesoplenty:willow_slab", 1);
+        }
+
+        // Boilers
+        boilerRecipes("railways:slashed_locometal", "railways:locometal_boiler");
+        boilerRecipes("railways:brass_wrapped_locometal", "railways:brass_wrapped_locometal_boiler");
+        boilerRecipes("railways:copper_wrapped_locometal", "railways:copper_wrapped_locometal_boiler");
+        boilerRecipes("railways:iron_wrapped_locometal", "railways:iron_wrapped_locometal_boiler");
+        for (let paint of paints) {
+            boilerRecipes(`railways:${paint}_slashed_locometal`, `railways:${paint}_locometal_boiler`);
+            boilerRecipes(`railways:${paint}_brass_wrapped_locometal`, `railways:${paint}_brass_wrapped_locometal_boiler`);
+            boilerRecipes(`railways:${paint}_copper_wrapped_locometal`, `railways:${paint}_copper_wrapped_locometal_boiler`);
+            boilerRecipes(`railways:${paint}_iron_wrapped_locometal`, `railways:${paint}_iron_wrapped_locometal_boiler`);
         }
 
         // Paint
