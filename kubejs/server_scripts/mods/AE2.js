@@ -87,14 +87,14 @@ ServerEvents.recipes(event => {
     }).id("kubejs:ae2/blank_pattern")
 
     // PTFE Patterns
-    event.shaped(Item.of("ae2:blank_pattern", 32), [
+    event.shaped(Item.of("ae2:blank_pattern", 16), [
         "AAA",
         "BCB",
         "BBB"
     ], {
         A: "gtceu:fine_silver_wire",
         B: "gtceu:polytetrafluoroethylene_plate",
-        C: "#gtceu:circuits/hv"
+        C: "#gtceu:circuits/ev"
     }).id("kubejs:ae2/blank_pattern_ptfe")
 
     // Pattern Provider
