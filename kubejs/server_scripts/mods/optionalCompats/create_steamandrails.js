@@ -577,6 +577,7 @@ if (Platform.isLoaded("railways")) {
         stoneToPaintRecipes("minecraft:granite", "granite");
         stoneToPaintRecipes("minecraft:dripstone_block", "dripstone");
         stoneToPaintRecipes("create:ochrum", "ochrum");
+        stoneToPaintRecipes("minecraft:diorite", "diorite");
         stoneToPaintRecipes("create:limestone", "limestone");
         stoneToPaintRecipes("minecraft:tuff", "tuff");
         stoneToPaintRecipes("create:scorchia", "scorchia");
