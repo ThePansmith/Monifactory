@@ -43,6 +43,16 @@ ServerEvents.recipes(event => {
                 {name: "vanadium", chance: 500},
             ]
         },
+        // Beryl
+        {
+            name: "emerald",
+            products: [
+                {name: "aluminium", chance: 5000},
+                {name: "beryllium", chance: 5000},
+                {name: "thorium", chance: 800},
+                {name: "vanadium", chance: 500},
+            ]
+        },
         // Garnets
         {
             name: "pyrope",
@@ -101,6 +111,26 @@ ServerEvents.recipes(event => {
                 {name: "iron", chance: 1500},
                 {name: "aluminium", chance: 2500},
                 {name: "chromium", chance: 1000},
+            ]
+        },
+        // Ad Astra gem ores
+        {
+            name: "anorthite",
+            products: [
+                {name: "aluminium", chance: 5000},
+                {name: "sodium", chance: 9500},
+                {name: "calcium", chance: 2500},
+                {name: "chromium", chance: 1500},
+                {name: "vanadium", chance: 500},
+            ]
+        },
+        {
+            name: "titanite",
+            products: [
+                {name: "rutile", chance: 9500},
+                {name: "calcium", chance: 5000},
+                {name: "iron", chance: 1500},
+                {name: "vanadium", chance: 500},
             ]
         },
         // Other
