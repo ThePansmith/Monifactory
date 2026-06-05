@@ -5,6 +5,8 @@
  *
  * This was motivated by gems being time-consuming to process
  * with little benefit in return.
+ *
+ * They are especially useful for gathering Chromium, Manganese, and earlygame Vanadium.
  */
 
 ServerEvents.recipes(event => {
@@ -14,31 +16,31 @@ ServerEvents.recipes(event => {
         {
             name: "sapphire",
             products: [
-                {name: "aluminium", chance: 9000},
+                {name: "aluminium", chance: 9500},
                 {name: "magnesium", chance: 1000},
                 {name: "rutile", chance: 1000},
                 {name: "iron", chance: 1500},
-                {name: "vanadium", chance: 500},
+                {name: "vanadium", chance: 1000},
             ]
         },
         {
             name: "green_sapphire",
             products: [
-                {name: "aluminium", chance: 9000},
+                {name: "aluminium", chance: 9500},
                 {name: "beryllium", chance: 800},
                 {name: "rutile", chance: 800},
                 {name: "iron", chance: 2000},
-                {name: "vanadium", chance: 500},
+                {name: "vanadium", chance: 1000},
             ]
         },
         {
             name: "ruby",
             products: [
-                {name: "aluminium", chance: 9000},
-                {name: "chromium", chance: 8000},
+                {name: "aluminium", chance: 5000},
+                {name: "chromium", chance: 9500},
                 {name: "rutile", chance: 800},
                 {name: "iron", chance: 1200},
-                {name: "vanadium", chance: 250},
+                {name: "vanadium", chance: 500},
             ]
         },
         // Garnets
@@ -46,7 +48,7 @@ ServerEvents.recipes(event => {
             name: "pyrope",
             products: [
                 {name: "aluminium", chance: 5000},
-                {name: "magnesium", chance: 5000},
+                {name: "magnesium", chance: 9500},
                 {name: "silver", chance: 1000},
                 {name: "chromium", chance: 1000},
                 {name: "manganese", chance: 1000},
@@ -55,7 +57,7 @@ ServerEvents.recipes(event => {
         {
             name: "almandine",
             products: [
-                {name: "aluminium", chance: 5000},
+                {name: "aluminium", chance: 9500},
                 {name: "iron", chance: 5000},
                 {name: "gold", chance: 1000},
                 {name: "rutile", chance: 800},
@@ -66,7 +68,7 @@ ServerEvents.recipes(event => {
             name: "spessartine",
             products: [
                 {name: "aluminium", chance: 5000},
-                {name: "manganese", chance: 5000},
+                {name: "manganese", chance: 9500},
                 {name: "calcite", chance: 1500},
                 {name: "magnesium", chance: 1500},
                 {name: "tantalite", chance: 500},
@@ -75,7 +77,7 @@ ServerEvents.recipes(event => {
         {
             name: "grossular",
             products: [
-                {name: "calcium", chance: 5000},
+                {name: "calcium", chance: 9500},
                 {name: "aluminium", chance: 5000},
                 {name: "chromium", chance: 1000},
                 {name: "calcite", chance: 1500},
@@ -154,7 +156,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:calcium_dust", 1500, 0)
         .chancedOutput("gtceu:aluminium_dust", 1000, 0)
         .chancedOutput("gtceu:nickel_dust", 1500, 0)
-        .chancedOutput("gtceu:chromium_dust", 500, 0)
+        .chancedOutput("gtceu:manganese_dust", 500, 0)
         .outputFluids("gtceu:diluted_hydrochloric_acid 1900")
         .duration(8 * 20)
         .EUt(GTValues.VHA[GTValues.MV])
