@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         {
             name: "sapphire",
             products: [
-                {name: "aluminium", chance: 9500},
+                {name: "aluminium", chance: 7500},
                 {name: "magnesium", chance: 1000},
                 {name: "rutile", chance: 1000},
                 {name: "iron", chance: 1500},
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         {
             name: "green_sapphire",
             products: [
-                {name: "aluminium", chance: 9500},
+                {name: "aluminium", chance: 7500},
                 {name: "beryllium", chance: 800},
                 {name: "rutile", chance: 800},
                 {name: "iron", chance: 2000},
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         {
             name: "pyrope",
             products: [
-                {name: "aluminium", chance: 5000},
+                {name: "aluminium", chance: 2500},
                 {name: "magnesium", chance: 9500},
                 {name: "silver", chance: 1000},
                 {name: "chromium", chance: 1000},
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
         {
             name: "spessartine",
             products: [
-                {name: "aluminium", chance: 5000},
+                {name: "aluminium", chance: 2500},
                 {name: "manganese", chance: 9500},
                 {name: "calcite", chance: 1500},
                 {name: "magnesium", chance: 1500},
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
             name: "grossular",
             products: [
                 {name: "calcium", chance: 9500},
-                {name: "aluminium", chance: 5000},
+                {name: "aluminium", chance: 2500},
                 {name: "chromium", chance: 1000},
                 {name: "calcite", chance: 1500},
                 {name: "vanadium", chance: 500},
