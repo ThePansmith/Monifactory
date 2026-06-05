@@ -159,7 +159,7 @@
     "moni.quest.062B4DDD703338D1.description2": "Corrupted Microverses decay passively, even when a recipe is running.",
     "moni.quest.062B4DDD703338D1.description3": "Corrupted microverses can be repaired with &6Quantum Flux&r, however be careful to not overfeed it. Flux can now be consumed even when less than 1%% of Integrity is missing, and when it does so the recipe progress regresses.",
     "moni.quest.061904A6FEED5B66.description1": "&6Chromium&r is used in the production of many alloys. &6Stainless Steel&r, &6Vanadium Steel&r, and &6Kanthal&r are the ones you will encounter soon. ",
-    "moni.quest.061904A6FEED5B66.description2": "It is primarily obtained by electrolyzing &6Ruby Dust&r. Alternatively you can process &6Ruby Ore&r for a small chance to get chromium. You can also mine &6Chromite&r in The End. You will need a lot of this soon, so be sure to accumulate a lot of it.",
+    "moni.quest.061904A6FEED5B66.description2": "There are several ways to get this stuff:\n1. Electrolyze &6Ruby Dust&r.\n2. Process &6Ruby Ore&r for a small chance to get Chromium.\n3. Mix and centrifuge &9Gem Slurries&r. These can also provide &6Manganese&r.\n4. Mine &6Chromite&r in The End.\nYou will need a lot of this soon, so be sure to accumulate a lot of it.",
     "moni.quest.061904A6FEED5B66.title": "Chromium",
     "moni.quest.06794F93613F1496.description1": "&6Oversize Interfaces&r have the same number of slots as &6Extended Interfaces&r, but each slot can hold up to 1024 items or 64 buckets of fluids.",
     "moni.quest.06794F93613F1496.title": "Oversize Interface",
