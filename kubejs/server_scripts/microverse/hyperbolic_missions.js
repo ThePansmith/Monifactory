@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:helium_plasma 16000")
             .itemInputs("kubejs:universal_collapse_device", "2x kubejs:active_prismatic_core")
             .damageRate(75)
-            .itemOutputs("16x kubejs:heart_of_a_universe")
+            .itemOutputs("8x kubejs:heart_of_a_universe")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
             .blacklistMicroverseParallels()
