@@ -243,6 +243,7 @@ if (Platform.isLoaded("railways")) {
          */
         let locometalPaintRecipes = function (inputItem, outputItem, fluid) {
             event.recipes.gtceu.chemical_bath(`kubejs:${outputItem.replace(/^.*:/, "")}`)
+                .category("gtceu:chem_dyes")
                 .itemInputs(inputItem)
                 // Pitchers can be used to paint locometal with a Potato Cannon.
                 // A bucket of paint can be used on up to 8 blocks at once.
