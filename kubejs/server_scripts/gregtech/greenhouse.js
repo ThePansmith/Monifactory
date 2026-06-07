@@ -82,40 +82,40 @@ ServerEvents.recipes(event => {
 
 
     // //// Trees //////
-    Greenhouse("gtceu", "rubber_sapling", 2560, ["32x gtceu:rubber_log", "8x gtceu:sticky_resin"], 2, 4)
-    Greenhouse("minecraft", "oak_sapling", 2560, ["64x minecraft:oak_log", "4x minecraft:apple"], 2, 4)
-    Greenhouse("minecraft", "dark_oak_sapling", 2560, ["64x minecraft:dark_oak_log", "4x minecraft:apple"], 2, 4)
-    Greenhouse("minecraft", "spruce_sapling", 2560, ["64x minecraft:spruce_log"], 2, 4)
-    Greenhouse("minecraft", "birch_sapling", 2560, ["64x minecraft:birch_log"], 2, 4)
-    Greenhouse("minecraft", "acacia_sapling", 2560, ["64x minecraft:acacia_log"], 2, 4)
-    Greenhouse("minecraft", "jungle_sapling", 2560, ["64x minecraft:jungle_log"], 2, 4)
-    Greenhouse("minecraft", "azalea", 2560, ["64x minecraft:oak_log"], 2, 4)
-    Greenhouse("minecraft", "flowering_azalea", 2560, ["64x minecraft:oak_log"], 2, 4)
-    Greenhouse("minecraft", "cherry_sapling", 2560, ["64x minecraft:cherry_log"], 2, 4)
-    Greenhouse("minecraft", "mangrove_propagule", 2560, ["64x minecraft:mangrove_log"], 2, 4)
-    Greenhouse("minecraft", "chorus_flower", 2560, ["32x minecraft:chorus_fruit"], 2, 4)
-    Greenhouse("minecraft", "warped_fungus", 2560, ["64x minecraft:warped_stem", "32x minecraft:warped_wart_block", "16x minecraft:shroomlight"], 2, 4)
-    Greenhouse("minecraft", "crimson_fungus", 2560, ["64x minecraft:crimson_stem", "32x minecraft:nether_wart_block", "16x minecraft:shroomlight"], 2, 4)
-    Greenhouse("thermal", "rubberwood_sapling", 2560, ["64x thermal:rubberwood_log"], 2, 4)
+    Greenhouse("gtceu", "rubber_sapling", 1280, ["32x gtceu:rubber_log", "8x gtceu:sticky_resin"], 2, 4)
+    Greenhouse("minecraft", "oak_sapling", 1280, ["64x minecraft:oak_log", "4x minecraft:apple"], 2, 4)
+    Greenhouse("minecraft", "dark_oak_sapling", 1280, ["64x minecraft:dark_oak_log", "4x minecraft:apple"], 2, 4)
+    Greenhouse("minecraft", "spruce_sapling", 1280, ["64x minecraft:spruce_log"], 2, 4)
+    Greenhouse("minecraft", "birch_sapling", 1280, ["64x minecraft:birch_log"], 2, 4)
+    Greenhouse("minecraft", "acacia_sapling", 1280, ["64x minecraft:acacia_log"], 2, 4)
+    Greenhouse("minecraft", "jungle_sapling", 1280, ["64x minecraft:jungle_log"], 2, 4)
+    Greenhouse("minecraft", "azalea", 1280, ["64x minecraft:oak_log"], 2, 4)
+    Greenhouse("minecraft", "flowering_azalea", 1280, ["64x minecraft:oak_log"], 2, 4)
+    Greenhouse("minecraft", "cherry_sapling", 1280, ["64x minecraft:cherry_log"], 2, 4)
+    Greenhouse("minecraft", "mangrove_propagule", 1280, ["64x minecraft:mangrove_log"], 2, 4)
+    Greenhouse("minecraft", "chorus_flower", 1280, ["32x minecraft:chorus_fruit"], 2, 4)
+    Greenhouse("minecraft", "warped_fungus", 1280, ["64x minecraft:warped_stem", "32x minecraft:warped_wart_block", "16x minecraft:shroomlight"], 2, 4)
+    Greenhouse("minecraft", "crimson_fungus", 1280, ["64x minecraft:crimson_stem", "32x minecraft:nether_wart_block", "16x minecraft:shroomlight"], 2, 4)
+    Greenhouse("thermal", "rubberwood_sapling", 1280, ["64x thermal:rubberwood_log"], 2, 4)
 
     // //// Crops //////
-    Greenhouse("minecraft", "sugar_cane", 1280, ["32x minecraft:sugar_cane"], 2, 0)
-    Greenhouse("minecraft", "kelp", 1280, ["32x minecraft:kelp"], 4, 0)
-    Greenhouse("minecraft", "bamboo", 1280, ["48x minecraft:bamboo"], 2, 0)
-    Greenhouse("minecraft", "cactus", 1280, ["32x minecraft:cactus"], 0.5, 0)
-    Greenhouse("minecraft", "wheat_seeds", 1280, ["32x minecraft:wheat"], 1, 0)
-    Greenhouse("minecraft", "carrot", 1280, ["32x minecraft:carrot"], 1, 0)
-    Greenhouse("minecraft", "potato", 1280, ["32x minecraft:potato"], 1, 0)
-    Greenhouse("minecraft", "beetroot_seeds", 1280, ["32x minecraft:beetroot"], 1, 0)
-    Greenhouse("minecraft", "sweet_berries", 1280, ["32x minecraft:sweet_berries"], 1, 0)
-    Greenhouse("minecraft", "glow_berries", 1280, ["32x minecraft:glow_berries"], 1, 0)
-    Greenhouse("minecraft", "cocoa_beans", 1280, ["32x minecraft:cocoa_beans"], 1, 0)
-    Greenhouse("minecraft", "melon_seeds", 1280, ["16x minecraft:melon"], 2, 0)
-    Greenhouse("minecraft", "pumpkin_seeds", 1280, ["16x minecraft:pumpkin"], 2, 0)
-    Greenhouse("minecraft", "nether_wart", 1280, ["16x minecraft:nether_wart"], 0.5, 0)
-    Greenhouse("minecraft", "red_mushroom", 1280, ["16x minecraft:red_mushroom"], 1, 0)
-    Greenhouse("minecraft", "brown_mushroom", 1280, ["16x minecraft:brown_mushroom"], 1, 0)
-    Greenhouse("minecraft", "moss_block", 1280, ["48x minecraft:moss_block"], 1, 0)
+    Greenhouse("minecraft", "sugar_cane", 640, ["32x minecraft:sugar_cane"], 2, 0)
+    Greenhouse("minecraft", "kelp", 640, ["32x minecraft:kelp"], 4, 0)
+    Greenhouse("minecraft", "bamboo", 640, ["48x minecraft:bamboo"], 2, 0)
+    Greenhouse("minecraft", "cactus", 640, ["32x minecraft:cactus"], 0.5, 0)
+    Greenhouse("minecraft", "wheat_seeds", 640, ["32x minecraft:wheat"], 1, 0)
+    Greenhouse("minecraft", "carrot", 640, ["32x minecraft:carrot"], 1, 0)
+    Greenhouse("minecraft", "potato", 640, ["32x minecraft:potato"], 1, 0)
+    Greenhouse("minecraft", "beetroot_seeds", 640, ["32x minecraft:beetroot"], 1, 0)
+    Greenhouse("minecraft", "sweet_berries", 640, ["32x minecraft:sweet_berries"], 1, 0)
+    Greenhouse("minecraft", "glow_berries", 640, ["32x minecraft:glow_berries"], 1, 0)
+    Greenhouse("minecraft", "cocoa_beans", 640, ["32x minecraft:cocoa_beans"], 1, 0)
+    Greenhouse("minecraft", "melon_seeds", 640, ["16x minecraft:melon"], 2, 0)
+    Greenhouse("minecraft", "pumpkin_seeds", 640, ["16x minecraft:pumpkin"], 2, 0)
+    Greenhouse("minecraft", "nether_wart", 640, ["16x minecraft:nether_wart"], 0.5, 0)
+    Greenhouse("minecraft", "red_mushroom", 640, ["16x minecraft:red_mushroom"], 1, 0)
+    Greenhouse("minecraft", "brown_mushroom", 640, ["16x minecraft:brown_mushroom"], 1, 0)
+    Greenhouse("minecraft", "moss_block", 640, ["48x minecraft:moss_block"], 1, 0)
 
 
     // //// Flowers & Cosmetic Blocks //////
@@ -155,8 +155,8 @@ ServerEvents.recipes(event => {
     })
 
     // Torchflowers, Pitcher plants are grown from seeds
-    Greenhouse("minecraft", "torchflower_seeds", 1280, [Item.of("torchflower", 12), Item.of("torchflower_seeds", 6)], 1, 0);
-    Greenhouse("minecraft", "pitcher_pod", 1280, [Item.of("pitcher_plant", 12), Item.of("pitcher_pod", 6)], 1, 0);
+    Greenhouse("minecraft", "torchflower_seeds", 640, [Item.of("torchflower", 12), Item.of("torchflower_seeds", 6)], 1, 0);
+    Greenhouse("minecraft", "pitcher_pod", 640, [Item.of("pitcher_plant", 12), Item.of("pitcher_pod", 6)], 1, 0);
 
     // A way to get grass blocks
     event.recipes.gtceu.greenhouse("kubejs:grass_block")
@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
         .itemInputs("64x dirt")
         .inputFluids(Fluid.of("minecraft:water", 24000))
         .itemOutputs("64x grass_block")
-        .duration(1280)
+        .duration(640)
         .EUt(80)
 
     // Processing for Ender Spores and Glow Shrooms
@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x thermal:phytogro")
         .inputFluids(Fluid.of("minecraft:water", 8000))
         .itemOutputs("4x kubejs:ender_spore")
-        .duration(1280)
+        .duration(640)
         .EUt(120)
     event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_glow_shroom")
         .circuit(3)
@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x thermal:phytogro")
         .inputFluids(Fluid.of("minecraft:water", 8000))
         .itemOutputs("2x quark:glow_shroom", "18x quark:glow_shroom_block", "6x quark:glow_shroom_stem", "8x quark:glow_shroom_ring")
-        .duration(1280)
+        .duration(640)
         .EUt(120)
 })
 
