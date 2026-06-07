@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
     // Replace some computer components with magical metals
     replaceCircassItem(event, /workstation_ev/, "tag", "forge:bolts/blue_alloy", "forge:bolts/vibrant_alloy")
     replaceCircassItem(event, /nano_computer_iv/, "tag", "forge:fine_wires/electrum", "forge:fine_wires/lumium")
+    replaceCircassItem(event, /quantum_computer_luv/, "tag", "forge:fine_wires/platinum", "forge:fine_wires/signalum")
     replaceCircassItem(event, /crystal_computer_zpm/, "tag", "forge:fine_wires/niobium_titanium", "forge:fine_wires/enderium")
 
     // Replace some processors' capacitors with resistors so that each circuit theme uses all SMD component types
@@ -228,7 +229,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:advanced_smd_diode",
             "16x kubejs:hyperdynamic_ram_chip",
             "8x kubejs:uxpic_chip",
-            "12x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
+            "12x gtceu:sculk_superconductor_double_wire",
             "12x monilabs:crystal_matrix_plate"
         )
         .inputFluids("gtceu:living_soldering_alloy 720", "gtceu:polyethyl_cyanoacrylate 1152", "gtceu:omnium 288")

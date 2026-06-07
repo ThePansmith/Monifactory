@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(4000, "high", GTValues.VA[GTValues.IV], 700)
         .cableProperties(32768, 3, 0, true)
         .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 
     event.create("enderium")
         .ingot().fluid()
