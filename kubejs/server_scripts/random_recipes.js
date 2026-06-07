@@ -922,4 +922,19 @@ ServerEvents.recipes(event => {
         .duration(64)
         .EUt(0.75 * GTValues.V[GTValues.LuV])
         .fusionStartEU(300000000)
+
+    // Allow MV GT superconductor to be cooled using chemical bath
+    event.recipe.gtceu.chemical_bath("mv_superconductor_chem_bath_cooling")
+        .itemInputs("gtceu:hot_magnesium_diboride")
+        .inputFluids("minecraft:water 100")
+        .itemOutputs("gtceu:magnesium_diboride")
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipe.gtceu.chemical_bath("mv_superconductor_chem_bath_cooling")
+        .itemInputs("gtceu:hot_magnesium_diboride")
+        .inputFluids("gtceu:distilled_water 100")
+        .itemOutputs("gtceu:magnesium_diboride")
+        .duration(250)
+        .EUt(GTValues.VA[GTValues.MV])
 })
