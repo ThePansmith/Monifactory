@@ -100,13 +100,6 @@
 			y: 2.75d
 		}
 		{
-			id: "5522298B1FC30B2B"
-			linked_quest: "2F04FA8D3E15E375"
-			size: 2.0d
-			x: 2.0d
-			y: -6.5d
-		}
-		{
 			id: "618C6CA76FB63461"
 			linked_quest: "6A76B3DCA599B9B5"
 			shape: "hexagon"
@@ -830,36 +823,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2BBAF93506DD79C1.title}"
-			x: 4.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["4DB622A78605A2EB"]
-			description: [
-				"{moni.quest.36B1B083B4FA439F.description1}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description2}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description3}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description4}"
-			]
-			hide_dependency_lines: true
-			id: "36B1B083B4FA439F"
-			rewards: [{
-				id: "74137AF1D413A38D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "07359B5EBA5AA568"
-				item: "gtceu:power_substation"
-				type: "item"
-			}]
-			title: "{moni.quest.36B1B083B4FA439F.title}"
-			x: 2.0d
-			y: -9.5d
+			x: 0.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
@@ -1080,8 +1045,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.20745EB9A695E365.title}"
-			x: 6.0d
-			y: -9.5d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1836,29 +1801,6 @@
 			title: "{moni.quest.63C3077124BC81FD.title}"
 			x: -8.75d
 			y: -5.25d
-		}
-		{
-			dependencies: ["36B1B083B4FA439F"]
-			description: [
-				"{moni.quest.6CFAAF68D4B10062.description1}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description2}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description3}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description4}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description5}"
-			]
-			icon: "gtceu:empty_tier_i_battery"
-			id: "6CFAAF68D4B10062"
-			tasks: [{
-				id: "5AF8E611CFEF3599"
-				type: "checkmark"
-			}]
-			title: "{moni.quest.6CFAAF68D4B10062.title}"
-			x: 0.25d
-			y: -9.5d
 		}
 	]
 	title: "{moni.chapter.058B7FE882875343.title}"

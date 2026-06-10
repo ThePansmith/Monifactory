@@ -2497,8 +2497,8 @@
 				}
 			]
 			title: "{moni.quest.6FB0357E12499B5F.title}"
-			x: 3.0d
-			y: -9.0d
+			x: 5.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["508452E1A3E09B56"]
@@ -2523,8 +2523,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4CC612FF64877C60.title}"
-			x: 5.0d
-			y: -9.0d
+			x: 7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["5BC6DB754207D4A8"]
@@ -2562,8 +2562,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.0F779BEEED8E67BB.title}"
-			x: 7.0d
-			y: -9.0d
+			x: 9.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["2977E1AF13E42DCB"]
@@ -2611,8 +2611,8 @@
 				}
 			]
 			title: "{moni.quest.2F04FA8D3E15E375.title}"
-			x: 1.0d
-			y: -9.0d
+			x: 3.0d
+			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -3160,6 +3160,57 @@
 			title: "{moni.quest.7BC6E67521545949.title}"
 			x: 0.25d
 			y: -1.75d
+		}
+		{
+			dependencies: ["4DB622A78605A2EB"]
+			description: [
+				"{moni.quest.36B1B083B4FA439F.description1}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description2}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description3}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description4}"
+			]
+			hide_dependency_lines: true
+			id: "36B1B083B4FA439F"
+			rewards: [{
+				id: "74137AF1D413A38D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "07359B5EBA5AA568"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			title: "{moni.quest.36B1B083B4FA439F.title}"
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["36B1B083B4FA439F"]
+			description: [
+				"{moni.quest.6CFAAF68D4B10062.description1}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description2}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description3}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description4}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description5}"
+			]
+			icon: "gtceu:empty_tier_i_battery"
+			id: "6CFAAF68D4B10062"
+			tasks: [{
+				id: "5AF8E611CFEF3599"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.6CFAAF68D4B10062.title}"
+			x: -0.75d
+			y: -11.0d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"
