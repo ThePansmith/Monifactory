@@ -1015,24 +1015,9 @@
 					type: "item"
 				}
 				{
-					id: "041C237B750DD674"
-					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "61C9E687614DDE69"
-					item: "gtceu:assembly_line_grating"
-					type: "item"
-				}
-				{
-					count: 16L
+					count: 17L
 					id: "17E44DB94862D5B7"
 					item: "monilabs:microverse_casing"
-					type: "item"
-				}
-				{
-					id: "391034405E831658"
-					item: "gtceu:mv_input_hatch"
 					type: "item"
 				}
 				{
@@ -1042,13 +1027,52 @@
 					type: "item"
 				}
 				{
-					id: "082A16673BE498B5"
-					item: "gtceu:hv_energy_input_hatch"
+					id: "61C9E687614DDE69"
+					item: "gtceu:assembly_line_grating"
 					type: "item"
 				}
 				{
-					id: "4A49BAAC944C706D"
-					item: "gtceu:mv_output_bus"
+					id: "59B3DAF64E6E321D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0481E2A193C0B956"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53D427A60B944BB3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "252519281545DAD2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
 					type: "item"
 				}
 			]

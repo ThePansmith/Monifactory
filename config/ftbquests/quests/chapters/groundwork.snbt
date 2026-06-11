@@ -1284,9 +1284,76 @@
 					type: "item"
 				}
 				{
-					count: 9L
-					id: "6A7F9E26D54EA680"
-					item: "gtceu:heatproof_machine_casing"
+					count: 12L
+					id: "0F6DA40F845EB704"
+					item: { Count: 12, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6A89FBAD7498086D"
+					item: {
+						Count: 8
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:heating_coil"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62F12BA3B6FA408B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C58DEED8CC0A1A1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:muffler_hatch"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1694E5B8C2F84FCB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40A6244AC2D781F8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5069AB6458137945"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1374,30 +1441,65 @@
 					type: "item"
 				}
 				{
-					id: "671F694401534220"
-					item: "gtceu:mv_energy_input_hatch"
+					count: 33L
+					id: "1FB27D5C167BD42B"
+					item: "gtceu:clean_machine_casing"
+					type: "item"
+				}
+				{
+					id: "444A645B6B1BC86C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "7506B76C757A2CB2"
-					item: "gtceu:lv_input_hatch"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "5864B152107FCE6C"
-					item: "gtceu:lv_output_hatch"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "6115A370BFBA1A97"
-					item: "gtceu:maintenance_hatch"
+					id: "601F027D7E5D187D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 33L
-					id: "1FB27D5C167BD42B"
-					item: "gtceu:clean_machine_casing"
+					id: "6DDA8E557481D63E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
 					type: "item"
 				}
 			]

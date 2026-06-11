@@ -340,6 +340,50 @@
 					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
+				{
+					id: "597971EBEA5EEED3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:parallel_hatch"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57970C5F2A8D3AA0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3959605B34EE33AF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CA49671A871458E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "{moni.quest.5A70898C99B828E3.title}"
 			x: -2.5d
@@ -419,6 +463,50 @@
 					count: 17L
 					id: "77269C9328705964"
 					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
+					type: "item"
+				}
+				{
+					id: "0437D37AB4B199BC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:parallel_hatch"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3368B4295FE2E6EB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61809B879181AE14"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45A9D9A28CDD88A4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
 					type: "item"
 				}
 			]
