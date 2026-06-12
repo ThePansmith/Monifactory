@@ -1984,29 +1984,6 @@
 			x: -8.75d
 			y: -5.25d
 		}
-		{
-			dependencies: ["36B1B083B4FA439F"]
-			description: [
-				"{moni.quest.6CFAAF68D4B10062.description1}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description2}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description3}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description4}"
-				""
-				"{moni.quest.6CFAAF68D4B10062.description5}"
-			]
-			icon: "gtceu:empty_tier_i_battery"
-			id: "6CFAAF68D4B10062"
-			tasks: [{
-				id: "5AF8E611CFEF3599"
-				type: "checkmark"
-			}]
-			title: "{moni.quest.6CFAAF68D4B10062.title}"
-			x: 0.25d
-			y: -9.5d
-		}
 	]
 	title: "{moni.chapter.058B7FE882875343.title}"
 }
