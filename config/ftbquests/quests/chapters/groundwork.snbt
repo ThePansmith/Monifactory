@@ -1286,19 +1286,21 @@
 				{
 					count: 12L
 					id: "0F6DA40F845EB704"
-					item: { Count: 12, id: "gtceu:heatproof_machine_casing" }
+					item: "gtceu:heatproof_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "6A89FBAD7498086D"
 					item: {
-						Count: 8
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:heating_coil"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1310,6 +1312,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1321,6 +1324,7 @@
 							value: "moni:muffler_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1332,6 +1336,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1343,6 +1348,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1354,6 +1360,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1444,6 +1451,7 @@
 					count: 33L
 					id: "1FB27D5C167BD42B"
 					item: "gtceu:clean_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1455,6 +1463,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1466,6 +1475,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1478,6 +1488,7 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1489,6 +1500,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1500,6 +1512,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]

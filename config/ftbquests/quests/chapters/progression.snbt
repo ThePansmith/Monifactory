@@ -1644,6 +1644,7 @@
 							]
 						}
 					}
+					optional_task: true
 					title: "{moni.task.2BD9B381C408FF8B}"
 					type: "item"
 				}
@@ -1651,6 +1652,7 @@
 					count: 8L
 					id: "4D41A87F6EC97F19"
 					item: "gtceu:filter_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1662,6 +1664,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1673,11 +1676,13 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "46EB73137CAAD497"
 					item: "minecraft:iron_door"
+					optional_task: true
 					type: "item"
 				}
 			]

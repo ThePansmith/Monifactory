@@ -314,30 +314,35 @@
 					count: 44L
 					id: "5DEC122EDABB5D6F"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 26L
 					id: "53593263F0B2BD34"
-					item: { Count: 26, id: "gtceu:omnium_block" }
+					item: "gtceu:omnium_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "287AEC44CC7A8A38"
-					item: { Count: 18, id: "gtceu:vibration_safe_casing" }
+					item: "gtceu:vibration_safe_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "11FAD5991B3199F5"
-					item: { Count: 13, id: "gtceu:enderium_block" }
+					item: "gtceu:enderium_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 17L
 					id: "081CB54FA393231E"
-					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
+					item: "ae2:quartz_vibrant_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -349,6 +354,7 @@
 							value: "moni:parallel_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -360,6 +366,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -371,6 +378,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -382,6 +390,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -439,30 +448,35 @@
 					count: 44L
 					id: "6DCABB6D6F8FC3E5"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 26L
 					id: "426F764AA56C5A81"
 					item: "gtceu:omnium_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "3BE7B0A7D3A77CD5"
 					item: "gtceu:shock_proof_cutting_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "7C30A02C61FE6077"
 					item: "gtceu:energetic_alloy_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 17L
 					id: "77269C9328705964"
-					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
+					item: "ae2:quartz_vibrant_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -474,6 +488,7 @@
 							value: "moni:parallel_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -485,6 +500,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -496,6 +512,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -507,6 +524,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]

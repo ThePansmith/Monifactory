@@ -179,18 +179,21 @@
 					count: 49L
 					id: "078732970112DE64"
 					item: "monilabs:microverse_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 36L
 					id: "75F7637F2A28B88D"
 					item: "gtceu:tempered_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "47AE5E0A855FB7CF"
 					item: "gtceu:assembly_line_grating"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -202,6 +205,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -213,6 +217,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -224,6 +229,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -235,6 +241,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -375,35 +382,41 @@
 					count: 29L
 					id: "7497F00CED97F4DA"
 					item: "gtceu:solid_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "65DBFA3899B0BF69"
 					item: "gtceu:assembly_line_unit"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "034A6892C4736EE2"
 					item: "gtceu:assembly_line_grating"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 20L
 					id: "13EA465FE104347C"
 					item: "gtceu:laminated_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "6D2A69F8627ECAB4"
-					item: { Count: 10, id: "gtceu:assembly_line_casing" }
+					item: "gtceu:assembly_line_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1CAF65797B20AC6F"
 					item: "gtceu:data_access_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -428,6 +441,7 @@
 							]
 						}
 					}
+					optional_task: true
 					title: "{moni.task.387214B8A372DF36}"
 					type: "item"
 				}
@@ -728,13 +742,14 @@
 					count: 48L
 					id: "71DEB9E939BE5342"
 					item: "gtceu:fusion_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 31L
 					id: "3679617A11A13CF0"
 					item: {
-						Count: 31
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -749,12 +764,14 @@
 							]
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "3B725EE9F9263150"
 					item: "gtceu:superconducting_coil"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -767,6 +784,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -778,12 +796,14 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "2CC02870B2315C8C"
 					item: "gtceu:luv_energy_input_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -849,6 +869,7 @@
 					count: 20L
 					id: "64797C42E28DEEA5"
 					item: "gtceu:high_power_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -860,6 +881,7 @@
 							value: "moni:substation_input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -871,6 +893,7 @@
 							value: "moni:substation_output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -882,6 +905,7 @@
 							value: "moni:laser_source_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -893,6 +917,7 @@
 							value: "moni:laser_target_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1289,24 +1314,28 @@
 					count: 35L
 					id: "24F2A65FC87AC06E"
 					item: "gtceu:palladium_substation"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 58L
 					id: "0FE1D5A3165173C5"
-					item: { Count: 58, id: "gtceu:high_power_casing" }
+					item: "gtceu:high_power_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 27L
 					id: "1420E116039DDBB5"
-					item: { Count: 27, id: "gtceu:superconducting_coil" }
+					item: "gtceu:superconducting_coil"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 24L
 					id: "6959DC32078B79AF"
-					item: { Count: 24, id: "gtceu:europium_frame" }
+					item: "gtceu:europium_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1318,6 +1347,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1329,6 +1359,7 @@
 							value: "moni:substation_input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1340,6 +1371,7 @@
 							value: "moni:substation_output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1351,6 +1383,7 @@
 							value: "moni:laser_source_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1362,6 +1395,7 @@
 							value: "moni:laser_target_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1810,24 +1844,28 @@
 				{
 					id: "2B4D7DC825D1307C"
 					item: "gtceu:data_transmitter_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "5841BA5408F05A8A"
 					item: "gtceu:computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "3F2108F11943B202"
 					item: "gtceu:high_power_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "7262E610DF6D4DD7"
 					item: "gtceu:computer_heat_vent"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1839,6 +1877,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1850,11 +1889,13 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4FC7A92C7326FB27"
 					item: "gtceu:basic_data_access_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]

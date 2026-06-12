@@ -1018,17 +1018,20 @@
 					count: 17L
 					id: "17E44DB94862D5B7"
 					item: "monilabs:microverse_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 3L
 					id: "2F0E8511C560E506"
 					item: "gtceu:tempered_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "61C9E687614DDE69"
 					item: "gtceu:assembly_line_grating"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1040,6 +1043,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1051,6 +1055,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1062,6 +1067,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1073,6 +1079,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]

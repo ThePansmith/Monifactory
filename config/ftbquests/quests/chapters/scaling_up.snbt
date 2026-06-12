@@ -848,7 +848,8 @@
 				{
 					count: 21L
 					id: "031D8A22AAFE1B3E"
-					item: { Count: 21, id: "gtceu:frostproof_machine_casing" }
+					item: "gtceu:frostproof_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -860,6 +861,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -871,6 +873,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -882,6 +885,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -893,6 +897,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1557,11 +1562,13 @@
 					count: 18L
 					id: "01BC2A4FA1A35088"
 					item: "gtceu:inert_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6E87BEEC10CA1366"
 					item: "gtceu:ptfe_pipe_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1573,6 +1580,7 @@
 							value: "moni:heating_coil"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1584,6 +1592,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1595,6 +1604,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1606,6 +1616,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1617,6 +1628,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1628,6 +1640,7 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1639,6 +1652,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2226,24 +2240,27 @@
 					count: 35L
 					id: "1D22CC5ADFDFD0A0"
 					item: "gtceu:high_temperature_smelting_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "140DE758D9D6D18E"
 					item: "gtceu:heat_vent"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 24L
 					id: "1E8CD23CABF695AE"
 					item: {
-						Count: 24
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:heating_coil"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2255,6 +2272,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2266,6 +2284,7 @@
 							value: "moni:muffler_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2277,6 +2296,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2288,6 +2308,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2299,6 +2320,7 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2310,6 +2332,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2690,12 +2713,14 @@
 					count: 8L
 					id: "7784F218DA88096C"
 					item: "gtceu:solid_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 15L
 					id: "7B08AB8F0B989EF2"
 					item: "gtceu:steel_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2707,6 +2732,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2718,6 +2744,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2729,6 +2756,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2839,12 +2867,14 @@
 					count: 9L
 					id: "47241D10077393C2"
 					item: "gtceu:solid_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 15L
 					id: "7B6BD324D68C5B7F"
 					item: "gtceu:steel_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2856,6 +2886,7 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2867,6 +2898,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2987,19 +3019,21 @@
 				{
 					count: 19L
 					id: "5E1EDCDD48695C0B"
-					item: { Count: 19, id: "gtceu:clean_machine_casing" }
+					item: "gtceu:clean_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "742F9D2EFEF2C66F"
 					item: {
-						Count: 16
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:heating_coil"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3011,6 +3045,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3022,18 +3057,20 @@
 							value: "moni:muffler_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "58530FCD44D4ED70"
 					item: {
-						Count: 2
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3045,6 +3082,7 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -3147,17 +3185,20 @@
 					count: 17L
 					id: "7BC42B5A0DB23D7A"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "35303EB3C0841529"
 					item: "gtceu:pulsating_alloy_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5DCCBCE9A4DE6807"
 					item: "gtceu:mythril_block"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3169,6 +3210,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3180,6 +3222,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3191,6 +3234,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -3223,17 +3267,20 @@
 					count: 17L
 					id: "372051DF4441A75D"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "25FFFADC108CB556"
-					item: { Count: 4, id: "gtceu:energetic_alloy_block" }
+					item: "gtceu:energetic_alloy_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "13090EB618995372"
 					item: "gtceu:mythril_block"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3245,6 +3292,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3256,6 +3304,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3267,6 +3316,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -3583,12 +3633,14 @@
 					count: 44L
 					id: "36BB87BEFFA295E5"
 					item: "gtceu:palladium_substation"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 41L
 					id: "595EFC5BD0293994"
-					item: { Count: 41, id: "gtceu:laminated_glass" }
+					item: "gtceu:laminated_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3600,6 +3652,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3611,6 +3664,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3622,6 +3676,7 @@
 							value: "moni:dynamo_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3633,6 +3688,7 @@
 							value: "moni:substation_input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3644,6 +3700,7 @@
 							value: "moni:substation_output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]

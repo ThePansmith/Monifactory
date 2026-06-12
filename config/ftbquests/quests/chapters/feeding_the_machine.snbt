@@ -465,25 +465,29 @@
 				{
 					count: 85L
 					id: "3591B233996BC2B6"
-					item: { Count: 85, id: "monilabs:cryolobus_casing" }
+					item: "monilabs:cryolobus_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 48L
 					id: "73CD482971E80137"
-					item: { Count: 48, id: "gtceu:laminated_glass" }
+					item: "gtceu:laminated_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "10132D5DCDBACC11"
-					item: { Count: 32, id: "gtceu:nonconducting_casing" }
+					item: "gtceu:nonconducting_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "1BE6E450ED926496"
-					item: { Count: 4, id: "gtceu:electrolytic_cell" }
+					item: "gtceu:electrolytic_cell"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -495,6 +499,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -506,6 +511,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -517,6 +523,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -528,6 +535,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -585,18 +593,21 @@
 					count: 132L
 					id: "55A32096AC5F3262"
 					item: "monilabs:microverse_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 69L
 					id: "6F3A77D019086AE2"
-					item: { Count: 69, id: "gtceu:tempered_glass" }
+					item: "gtceu:tempered_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "2FC22F81CD746C9E"
-					item: { Count: 4, id: "gtceu:titanium_pipe_casing" }
+					item: "gtceu:titanium_pipe_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -608,6 +619,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -619,6 +631,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -630,6 +643,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -641,6 +655,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -792,31 +807,36 @@
 				{
 					count: 67L
 					id: "2E43A58DB1519CB2"
-					item: { Count: 67, id: "kubejs:dark_soularium_casing" }
+					item: "kubejs:dark_soularium_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 36L
 					id: "5BF59752E9522F50"
-					item: { Count: 36, id: "gtceu:fusion_glass" }
+					item: "gtceu:fusion_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 24L
 					id: "7375E5C90B542A1E"
-					item: { Count: 24, id: "gtceu:tungsten_frame" }
+					item: "gtceu:tungsten_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "181FE76CD595DF04"
-					item: { Count: 12, id: "enderio:ensouled_chassis" }
+					item: "enderio:ensouled_chassis"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "47FEFD33C0AFB1A0"
-					item: { Count: 5, id: "gtceu:tungstensteel_pipe_casing" }
+					item: "gtceu:tungstensteel_pipe_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -828,6 +848,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -839,6 +860,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -850,6 +872,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -861,6 +884,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -872,6 +896,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1264,31 +1289,36 @@
 				{
 					count: 70L
 					id: "2965DB261D887AC8"
-					item: { Count: 70, id: "monilabs:cryolobus_casing" }
+					item: "monilabs:cryolobus_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "64885EE1EF48314D"
-					item: { Count: 12, id: "gtceu:laminated_glass" }
+					item: "gtceu:laminated_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 9L
 					id: "7191C1CEC8E35C7D"
-					item: { Count: 9, id: "gtceu:sterilizing_filter_casing" }
+					item: "gtceu:sterilizing_filter_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "58697D2961848218"
-					item: { Count: 8, id: "gtceu:black_steel_frame" }
+					item: "gtceu:black_steel_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "57D42FEF73893C78"
-					item: { Count: 4, id: "gtceu:titanium_pipe_casing" }
+					item: "gtceu:titanium_pipe_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1300,6 +1330,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1311,6 +1342,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1322,6 +1354,7 @@
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1333,6 +1366,7 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1522,43 +1556,50 @@
 				{
 					count: 232L
 					id: "178181F0C9ECFBB1"
-					item: { Count: 232, id: "gtceu:atomic_casing" }
+					item: "gtceu:atomic_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 45L
 					id: "581880973EE7DAEF"
-					item: { Count: 45, id: "gtceu:cleanroom_glass" }
+					item: "gtceu:cleanroom_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 35L
 					id: "2BED3771D79FA124"
-					item: { Count: 35, id: "gtceu:advanced_computer_casing" }
+					item: "gtceu:advanced_computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 28L
 					id: "5FD3003A7F0505B2"
-					item: { Count: 28, id: "gtceu:high_power_casing" }
+					item: "gtceu:high_power_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 28L
 					id: "6B39493048AAEFB3"
-					item: { Count: 28, id: "gtceu:computer_casing" }
+					item: "gtceu:computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 24L
 					id: "0CAC3610027E87D5"
-					item: { Count: 24, id: "monilabs:crystal_matrix_frame" }
+					item: "monilabs:crystal_matrix_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 9L
 					id: "1BB95D107B994F45"
-					item: { Count: 9, id: "gtceu:naquadah_alloy_frame" }
+					item: "gtceu:naquadah_alloy_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1570,6 +1611,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1581,6 +1623,7 @@
 							value: "moni:input_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1592,6 +1635,7 @@
 							value: "moni:output_bus"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1603,6 +1647,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1833,13 +1878,14 @@
 					count: 48L
 					id: "01C009785BE10D67"
 					item: "gtceu:fusion_casing_mk2"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 31L
 					id: "3679617A11A13CF3"
 					item: {
-						Count: 31
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -1854,24 +1900,27 @@
 							]
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "3F8428A9521D1FD9"
 					item: "gtceu:fusion_coil"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "4774B17376DD0795"
 					item: {
-						Count: 2
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1883,12 +1932,14 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "4F996D6D51BF9050"
 					item: "gtceu:zpm_energy_input_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2021,40 +2072,47 @@
 					count: 15L
 					id: "4DC31C441D81AFA8"
 					item: "gtceu:computer_heat_vent"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "2593E8CA09114408"
 					item: "gtceu:advanced_computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "671960FED0771DD9"
 					item: "gtceu:computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2D706239B6466475"
 					item: "gtceu:computation_transmitter_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "3E264A85174F9B37"
 					item: "gtceu:hpca_computation_component"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "3D46E7A04715342E"
 					item: "gtceu:hpca_active_cooler_component"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1B8F146BECFFFC5D"
 					item: "gtceu:hpca_empty_component"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2066,6 +2124,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2101,28 +2160,33 @@
 					count: 49L
 					id: "18B4DC694262045C"
 					item: "gtceu:computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 23L
 					id: "0C95764D74768CB4"
 					item: "gtceu:advanced_computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 14L
 					id: "7AA21CF7DB131044"
 					item: "gtceu:computer_heat_vent"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "23103B6326C92E62"
 					item: "gtceu:object_holder"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "41A8916DAC27BCD0"
 					item: "gtceu:computation_receiver_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2134,6 +2198,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2173,13 +2238,14 @@
 					count: 48L
 					id: "5DA79E1DA2A1487B"
 					item: "gtceu:fusion_casing_mk3"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 31L
 					id: "3679617A11A13CF1"
 					item: {
-						Count: 31
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -2194,24 +2260,27 @@
 							]
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "0034F7B9BF08655C"
-					item: { Count: 4, id: "gtceu:fusion_coil" }
+					item: "gtceu:fusion_coil"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "1BD3ACA634093523"
 					item: {
-						Count: 2
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:input_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2223,12 +2292,14 @@
 							value: "moni:output_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "59615AB26BAA31DA"
 					item: "gtceu:uv_energy_input_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2264,22 +2335,26 @@
 					count: 20L
 					id: "698C9026857CD0F9"
 					item: "gtceu:computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "2CAF4E12B432094F"
 					item: "gtceu:computation_receiver_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3D1EA3341AC4C3B6"
 					item: "gtceu:advanced_computer_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "09E3C1019A70EAB5"
 					item: "gtceu:computation_transmitter_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2291,6 +2366,7 @@
 							value: "moni:maintenance_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2302,6 +2378,7 @@
 							value: "moni:energy_hatch"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
