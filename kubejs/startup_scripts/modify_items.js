@@ -49,7 +49,21 @@ ItemEvents.modification(event => {
         item.maxStackSize = 64
     })
 
-
+    // Increase the maximum stack size of LaserIO Cards to 16
+    const Cards = [
+        ["item"],
+        ["fluid"],
+        ["energy"],
+        ["redstone"]
+    ]
+    
+    Cards.forEach(card => {
+        event.modify(`laserio:card_${card[0]}`, item => {
+            item.maxStackSize = 16  
+        })
+    
+    })
+    
     // Make Infinity and Ultimate tools work as unbreakable crafting tools
     const toolTypes = [
         "file",
