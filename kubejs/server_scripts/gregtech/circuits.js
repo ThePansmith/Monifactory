@@ -44,6 +44,38 @@ function replaceGTRecipeAmount(event, recipeType, idRegex, tagOrItem, toAlter, m
 
 ServerEvents.recipes(event => {
 
+    // Make Integrated Circuits cheaper :3c
+    // Integrated LV - Removes Diodes, increases ILC Chips required from 1 > 2
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_lv" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_lv")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "2x #gtceu:resistors", "2x gtceu:fine_copper_wire", "2x gtceu:tin_bolt")
+        .inputFluids("gtceu:tin 144")
+        .itemOutputs("2x gtceu:basic_integrated_circuit")
+        .duration(10 * 20)
+        .EUt(16)
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_lv_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_lv_soldering_alloy")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "2x #gtceu:resistors", "2x gtceu:fine_copper_wire", "2x gtceu:tin_bolt")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("2x gtceu:basic_integrated_circuit")
+        .duration(10 * 20)
+        .EUt(16)
+    // Integrated HV - Swaps ILCs with Diodes
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_hv" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_hv")
+        .itemInputs("2x gtceu:good_integrated_circuit", "2x gtceu:ram_chip", "2x #gtceu:diodes", "4x #gtceu:transistors", "8x gtceu:fine_electrum_wire", "8x gtceu:annealed_copper_bolt")
+        .inputFluids("gtceu:tin 144")
+        .itemOutputs("gtceu:advanced_integrated_circuit")
+        .duration(40 * 20)
+        .EUt(30)
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_hv_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_hv_soldering_alloy")
+        .itemInputs("2x gtceu:good_integrated_circuit", "2x gtceu:ram_chip", "2x #gtceu:diodes", "4x #gtceu:transistors", "8x gtceu:fine_electrum_wire", "8x gtceu:annealed_copper_bolt")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("gtceu:advanced_integrated_circuit")
+        .duration(40 * 20)
+        .EUt(30)
+    
     // Replace some computer components with magical metals
     replaceCircassItem(event, /workstation_ev/, "tag", "forge:bolts/blue_alloy", "forge:bolts/vibrant_alloy")
     replaceCircassItem(event, /nano_computer_iv/, "tag", "forge:fine_wires/electrum", "forge:fine_wires/lumium")
