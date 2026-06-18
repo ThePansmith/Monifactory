@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:advanced_integrated_circuit")
         .duration(40 * 20)
         .EUt(30)
-    
+
     // Replace some computer components with magical metals
     replaceCircassItem(event, /workstation_ev/, "tag", "forge:bolts/blue_alloy", "forge:bolts/vibrant_alloy")
     replaceCircassItem(event, /nano_computer_iv/, "tag", "forge:fine_wires/electrum", "forge:fine_wires/lumium")
