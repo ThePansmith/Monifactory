@@ -2761,8 +2761,8 @@
 				}
 			]
 			title: "{moni.quest.6FB0357E12499B5F.title}"
-			x: 3.0d
-			y: -9.0d
+			x: 5.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["508452E1A3E09B56"]
@@ -2789,8 +2789,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4CC612FF64877C60.title}"
-			x: 5.0d
-			y: -9.0d
+			x: 7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["5BC6DB754207D4A8"]
@@ -2828,8 +2828,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.0F779BEEED8E67BB.title}"
-			x: 7.0d
-			y: -9.0d
+			x: 9.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["2977E1AF13E42DCB"]
@@ -2903,8 +2903,8 @@
 				}
 			]
 			title: "{moni.quest.2F04FA8D3E15E375.title}"
-			x: 1.0d
-			y: -9.0d
+			x: 3.0d
+			y: -11.0d
 		}
 		{
 			dependencies: [

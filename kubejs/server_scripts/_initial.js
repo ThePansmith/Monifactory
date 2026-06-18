@@ -37,11 +37,16 @@ const compacting = (ev, output, input, make_uncompacting) => {
     ], { a: input });
 }
 
-// Java Classes
+// Java Classes used across several files
 // used to create FluidIngredientJS objects
 const JSONObject = Java.loadClass("com.google.gson.JsonObject")
 // Required to use fluid tags in gregtech recipes
 const FluidIngredientJS = Java.loadClass("com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS")
+// Used to replace materialInfos for GT recycling recipes
+const $ItemMaterialData = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.ItemMaterialData")
+const $ItemMaterialInfo = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.stack.ItemMaterialInfo")
+const $MaterialStack = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.stack.MaterialStack")
+
 // Tier enums for easier data handling
 const TIER_ULV = 0; // ulv
 const TIER_LV = 1;
