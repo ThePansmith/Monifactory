@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
     }).id("kubejs:ae2/inscriber")
         .addMaterialInfo()
 
-    // Patterns
+    // PE Patterns
     event.remove({ id: "ae2:network/crafting/patterns_blank" })
     event.shaped(Item.of("ae2:blank_pattern", 8), [
         "AAA",
@@ -85,6 +85,17 @@ ServerEvents.recipes(event => {
         B: "gtceu:polyethylene_plate",
         C: "#gtceu:circuits/hv"
     }).id("kubejs:ae2/blank_pattern")
+
+    // PTFE Patterns
+    event.shaped(Item.of("ae2:blank_pattern", 16), [
+        "AAA",
+        "BCB",
+        "BBB"
+    ], {
+        A: "gtceu:fine_silver_wire",
+        B: "gtceu:polytetrafluoroethylene_plate",
+        C: "#gtceu:circuits/ev"
+    }).id("kubejs:ae2/blank_pattern_ptfe")
 
     // Pattern Provider
     event.remove({ id: "ae2:network/blocks/pattern_providers_interface" })

@@ -2333,7 +2333,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5F9C7FB40AD2640B.title}"
-			x: 4.25d
+			x: 3.5d
 			y: 0.75d
 		}
 		{
@@ -2527,6 +2527,49 @@
 			title: "{moni.quest.349869EBF2D9FAF1.title}"
 			x: -8.0d
 			y: -4.25d
+		}
+		{
+			dependencies: ["3E42B4AAA6D2A05B"]
+			description: [
+				"{moni.quest.31EE6E41F509A8CF.description1}"
+				""
+				"{moni.quest.31EE6E41F509A8CF.description2}"
+				"{@pagebreak}"
+				"{moni.quest.31EE6E41F509A8CF.description3}"
+				""
+				"{moni.quest.31EE6E41F509A8CF.description4}"
+				""
+				"{moni.quest.31EE6E41F509A8CF.description5}"
+			]
+			id: "31EE6E41F509A8CF"
+			subtitle: "{moni.quest.31EE6E41F509A8CF.subtitle}"
+			tasks: [{
+				id: "24B4E26B05F638D6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_storage"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_cloner"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_replacer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.31EE6E41F509A8CF.title}"
+			x: 5.0d
+			y: 0.75d
 		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"
