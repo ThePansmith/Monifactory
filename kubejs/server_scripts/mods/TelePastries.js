@@ -58,10 +58,10 @@ ServerEvents.recipes(event => {
             "OBO",
             "SSS"
         ], {
-            N: "hostilenetworks:nether_prediction",
+            N: "gtceu:dark_steel_dust",
             O: "minecraft:obsidian",
             B: "enderio:cake_base",
-            S: "minecraft:soul_sand"
+            S: "minecraft:netherrack"
         })
         event.shaped("telepastries:end_cake", [
             "NNN",
