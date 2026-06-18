@@ -1,13 +1,13 @@
 {
     "textures": {
-        "particle": "kubejs:block/mod/thermal/dynamo/dynamo_coil_redstone_anim",
-        "tex": "kubejs:block/mod/thermal/dynamo/dynamo_coil_redstone_anim",
-        "base": "minecraft:block/white_concrete",
-        "parent": "minecraft:block/block"
+        "particle": "thermal:block/dynamos/dynamo_coil_rf",
+        "coil": "thermal:block/dynamos/dynamo_coil_rf_active",
+        "base": "minecraft:block/white_concrete"
     },
-    "elements": [{
+    "elements": [
+        {
             "from": [3, 0, 3],
-            "to": [13, 1, 13],
+            "to": [13, 2, 13],
             "faces": {
                 "down": { "texture": "#base", "cullface": "down" },
                 "up": { "texture": "#base" },
@@ -21,11 +21,30 @@
             "from": [4, 1, 4],
             "to": [12, 9, 12],
             "faces": {
-                "up": { "uv": [4, 0, 8, 4], "texture": "#tex" },
-                "north": { "uv": [0, 4, 4, 8], "texture": "#tex" },
-                "east": { "uv": [4, 4, 8, 8], "texture": "#tex" },
-                "south": { "uv": [8, 4, 12, 8], "texture": "#tex" },
-                "west": { "uv": [12, 4, 16, 8], "texture": "#tex" }
+                "north": {
+                    "texture": "#coil",
+                    "uv": [0, 8, 8, 16]
+                },
+                "east": {
+                    "texture": "#coil",
+                    "uv": [8, 8, 16, 16]
+                },
+                "south": {
+                    "texture": "#coil",
+                    "uv": [0, 8, 8, 16]
+                },
+                "west": {
+                    "texture": "#coil",
+                    "uv": [8, 8, 16, 16]
+                },
+                "up": {
+                    "texture": "#coil",
+                    "uv": [0, 0, 8, 8]
+                },
+                "down": {
+                    "texture": "#coil",
+                    "uv": [8, 0, 16, 8]
+                }
             }
         }
     ],

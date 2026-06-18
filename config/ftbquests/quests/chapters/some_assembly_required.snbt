@@ -100,13 +100,6 @@
 			y: 2.75d
 		}
 		{
-			id: "5522298B1FC30B2B"
-			linked_quest: "2F04FA8D3E15E375"
-			size: 2.0d
-			x: 2.0d
-			y: -6.5d
-		}
-		{
 			id: "618C6CA76FB63461"
 			linked_quest: "6A76B3DCA599B9B5"
 			shape: "hexagon"
@@ -592,7 +585,7 @@
 				""
 				"{moni.quest.0508D3CCB6C876A3.description4}"
 			]
-			icon: "gtceu:naquadria_dust"
+			icon: "gtceu:enriched_naquadah_dust"
 			id: "0508D3CCB6C876A3"
 			rewards: [{
 				id: "67B0A4C33D2EDC21"
@@ -600,30 +593,23 @@
 				type: "item"
 			}]
 			size: 1.5d
-			tasks: [{
-				id: "15E690653306B02C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:enriched_naquadah_dust"
-							}
-							{
-								Count: 1b
-								id: "gtceu:trinium_dust"
-							}
-							{
-								Count: 1b
-								id: "gtceu:naquadria_dust"
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "15E690653306B02C"
+					item: "gtceu:trinium_sulfide_dust"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "35C5447F3A7F3A87"
+					item: "gtceu:enriched_naquadah_sulfate_dust"
+					type: "item"
+				}
+				{
+					id: "1A54942E18E330D7"
+					item: "gtceu:naquadria_sulfate_dust"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.0508D3CCB6C876A3.title}"
 			x: 4.25d
 			y: 6.75d
@@ -837,39 +823,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2BBAF93506DD79C1.title}"
-			x: 4.0d
-			y: -9.5d
-		}
-		{
-			dependencies: [
-				"4DB622A78605A2EB"
-				"05F7C3F397B329F5"
-			]
-			description: [
-				"{moni.quest.36B1B083B4FA439F.description1}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description2}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description3}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description4}"
-			]
-			hide_dependency_lines: true
-			id: "36B1B083B4FA439F"
-			rewards: [{
-				id: "74137AF1D413A38D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "07359B5EBA5AA568"
-				item: "gtceu:power_substation"
-				type: "item"
-			}]
-			title: "{moni.quest.36B1B083B4FA439F.title}"
-			x: 2.0d
-			y: -9.5d
+			x: 0.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
@@ -903,9 +858,7 @@
 				""
 				"{moni.quest.19C2D208A2FC9968.description3}"
 			]
-			hide_until_deps_visible: true
 			id: "19C2D208A2FC9968"
-			optional: true
 			rewards: [{
 				id: "7003E20DD8EE9891"
 				item: "kubejs:moni_quarter"
@@ -1092,8 +1045,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.20745EB9A695E365.title}"
-			x: 6.0d
-			y: -9.5d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1825,6 +1778,8 @@
 				"{moni.quest.63C3077124BC81FD.description2}"
 				""
 				"{moni.quest.63C3077124BC81FD.description3}"
+				""
+				"{moni.quest.63C3077124BC81FD.description4}"
 			]
 			icon: "gtceu:germanium_dust"
 			id: "63C3077124BC81FD"

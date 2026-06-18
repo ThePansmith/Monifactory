@@ -583,5 +583,16 @@
     "material.gtceu.essence_of_knowledge": "Essence of Knowledge",
     "material.gtceu.logical_residue": "Logical Residue",
     "material.gtceu.considerate_oils": "Considerate Oils",
-    "material.gtceu.transcendental_spirit": "Transcendental Spirit"
+    "material.gtceu.transcendental_spirit": "Transcendental Spirit",
+    "__GEM_SLURRIES__.header": "================",
+    "__GEM_SLURRIES__.flufff": "> Gem Slurries <",
+    "__GEM_SLURRIES__.footer": "================",
+    "material.gtceu.pyrope_slurry": "Pyrope Slurry",
+    "material.gtceu.almandine_slurry": "Almandine Slurry",
+    "material.gtceu.spessartine_slurry": "Spessartine Slurry",
+    "material.gtceu.grossular_slurry": "Grossular Slurry",
+    "material.gtceu.red_garnet_slurry": "Red Garnet Slurry",
+    "material.gtceu.yellow_garnet_slurry": "Yellow Garnet Slurry",
+    "material.gtceu.malachite_slurry": "Malachite Slurry",
+    "material.gtceu.olivine_slurry": "Olivine Slurry"
 }
