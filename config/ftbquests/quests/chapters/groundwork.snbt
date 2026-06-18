@@ -799,7 +799,11 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["517A89E954C7EA74"]
+			dependencies: [
+				"517A89E954C7EA74"
+				"776199B37A19A592"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.061904A6FEED5B66.description1}"
 				""
