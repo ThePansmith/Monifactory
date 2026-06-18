@@ -1123,7 +1123,7 @@
     {
       "fileID": 8198871,
       "projectID": 1528726,
-      "required": false
+      "required": true
     }
   ]
 }
