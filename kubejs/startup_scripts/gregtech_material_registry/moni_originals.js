@@ -40,7 +40,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(GTValues.V[GTValues.UHV], 4, 6, false);
 
 
-
     // Prismatic Crucible Materials
 
     event.create("infinity")
