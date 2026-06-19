@@ -1559,12 +1559,14 @@
 					count: 9L
 					id: "7998F0B9E0714746"
 					item: "gtceu:heatproof_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "0D6F9EF349C45ADA"
 					item: "gtceu:cupronickel_coil_block"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2098,12 +2100,14 @@
 					count: 10L
 					id: "30B3B90B99DE0109"
 					item: "gtceu:ulv_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "44F21473555B9484"
 					item: "gtceu:cupronickel_coil_block"
+					optional_task: true
 					type: "item"
 				}
 				{
