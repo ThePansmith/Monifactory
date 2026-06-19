@@ -163,39 +163,4 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x laserio:energy_overclocker_card_tier_4")
         .duration(80)
         .EUt(16)
-
-    // Lumium
-    event.recipes.gtceu.assembler("kubejs:lumium_card")
-        .itemInputs("2x gtceu:lumium_single_wire", "laserio:energy_overclocker_card_tier_4", "6x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_5")
-        .duration(80)
-        .EUt(16)
-
-    // Signalum
-    event.recipes.gtceu.assembler("kubejs:signalum_card")
-        .itemInputs("2x gtceu:signalum_single_wire", "laserio:energy_overclocker_card_tier_5", "6x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_6")
-        .duration(80)
-        .EUt(16)
-
-    // Enderium
-    event.recipes.gtceu.assembler("kubejs:enderium_card")
-        .itemInputs("2x gtceu:enderium_single_wire", "laserio:energy_overclocker_card_tier_6", "6x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_7")
-        .duration(80)
-        .EUt(16)
-
-    // Cryolobus
-    event.recipes.gtceu.assembler("kubejs:cryolobus_card")
-        .itemInputs("2x gtceu:cryolobus_single_wire", "laserio:energy_overclocker_card_tier_7", "6x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_8")
-        .duration(80)
-        .EUt(16)
-
-    // Sculk Superconductor
-    event.recipes.gtceu.assembler("kubejs:sculk_superconductor_card")
-        .itemInputs("2x gtceu:sculk_superconductor_single_wire", "laserio:energy_overclocker_card_tier_8", "6x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_9")
-        .duration(80)
-        .EUt(16)
 })
