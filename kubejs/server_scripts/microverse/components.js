@@ -225,7 +225,6 @@ ServerEvents.recipes(event => {
         .itemInputs("#forge:lenses", "3x gtceu:stainless_steel_plate", "gtceu:hv_sensor")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20)
-        .addMaterialInfo(true)
 
     event.shaped("4x kubejs:gem_sensor", [
         " A ",
@@ -242,13 +241,12 @@ ServerEvents.recipes(event => {
         .itemInputs("#forge:lenses", "3x gtceu:tungsten_carbide_plate", "gtceu:iv_sensor")
         .EUt(GTValues.VA[GTValues.IV])
         .duration(20)
-        .addMaterialInfo(true)
 
     // Microminer kits are consumed in place of the miner.
     event.recipes.gtceu.assembler("basic_drilling_kit")
         .itemOutputs("kubejs:basic_drilling_kit")
         .itemInputs("3x gtceu:double_steel_plate", "gtceu:mv_electric_motor", "2x #gtceu:circuits/lv", "2x minecraft:glass")
-        .inputFluids("gtceu:glue 200")
+        .inputFluids("gtceu:lubricant 20")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(300)
 
@@ -276,8 +274,7 @@ ServerEvents.recipes(event => {
     explosives.forEach(explosive => {
         event.recipes.gtceu.assembler(`blasting_kit_${explosive[2]}`)
             .itemOutputs("kubejs:blasting_kit")
-            .itemInputs("3x gtceu:double_black_steel_plate", `${explosive[0]}x ${explosive[1]}:${explosive[2]}`, "3x #gtceu:circuits/lv", "2x #enderio:fused_quartz")
-            .inputFluids("gtceu:reinforced_epoxy_resin 576")
+            .itemInputs("3x gtceu:double_black_steel_plate", `${explosive[0]}x ${explosive[1]}:${explosive[2]}`, "3x #gtceu:circuits/lv", "2x gtceu:reinforced_epoxy_resin_plate", "2x #enderio:fused_quartz")
             .EUt(GTValues.VA[GTValues.EV])
             .duration(400)
     })

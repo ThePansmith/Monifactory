@@ -417,8 +417,6 @@ ServerEvents.recipes(event => {
         Z: "gtceu:zinc_foil",
         L: "gtceu:lead_plate"
     })
-    // Making ABS take aluminium rather than osmium so it's obtainable in EV
-    event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
     // Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter("kubejs:resonating_redstone")
@@ -900,8 +898,10 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Re-tier Palladium Substation to mid-EV, before Platline
-    event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
+    // Re-tier the Gregicality multiblocks of IV to be after platline Pt1, but before platline pt2
+    event.replaceInput({ id: "gtceu:shaped/large_distillery"}, "gtceu:iridium_large_fluid_pipe", "gtceu:tungsten_carbide_large_fluid_pipe")
+    event.replaceInput({ id: "gtceu:shaped/large_mixer"}, "gtceu:osmiridium_rotor", "gtceu:rhodium_plated_palladium_rotor")
+    event.replaceInput({ id: "gtceu:shaped/large_electromagnet"}, "gtceu:osmium_quadruple_wire", "gtceu:niobium_nitride_quadruple_wire")
 
     // recipe for Caesium Hydroxide loop
     event.recipes.gtceu.chemical_reactor("caesium_hydroxide")
@@ -910,4 +910,11 @@ ServerEvents.recipes(event => {
         .itemOutputs("3x gtceu:caesium_hydroxide_dust")
         .outputFluids("gtceu:hydrogen 1000")
         .duration(20).EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.fusion_reactor("fuse_iridium_from_tantalum_beryllium")
+        .inputFluids("gtceu:tantalum 16", "gtceu:beryllium 16")
+        .outputFluids("gtceu:iridium 16")
+        .duration(64)
+        .EUt(0.75 * GTValues.V[GTValues.LuV])
+        .fusionStartEU(300000000)
 })

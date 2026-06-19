@@ -104,16 +104,6 @@ ServerEvents.recipes(event => {
             .addMaterialInfo(true)
     }
 
-    function canmod(name, input) {
-        event.remove({ output: `nuclearcraft:${name}_block` })
-        event.recipes.gtceu.canner(`${name}_heat_sink`)
-            .itemInputs("nuclearcraft:empty_heat_sink", `9x ${input}`)
-            .itemOutputs(`nuclearcraft:${name}_block`)
-            .duration(400)
-            .EUt(2)
-            .addMaterialInfo(true)
-    }
-
     canfluid("water", "minecraft:water")
     cansolid("redstone", "minecraft:redstone")
     cansolid("quartz", "gtceu:nether_quartz_dust")
@@ -129,8 +119,6 @@ ServerEvents.recipes(event => {
     cansolid("tin", "gtceu:tin_dust")
     cansolid("aluminum", "gtceu:aluminium_dust")
     cansolid("manganese", "gtceu:manganese_dust")
-    canmod("graphite", "gtceu:graphite_dust")
-    canmod("beryllium", "gtceu:beryllium_dust")
 
     event.remove({ id: "nuclearcraft:empty_heat_sink" })
     event.recipes.gtceu.shaped("nuclearcraft:empty_heat_sink", [

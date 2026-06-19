@@ -435,6 +435,9 @@ global.itemNukeList = [
     "nuclearcraft:empty_active_heat_sink",
     /^nuclearcraft:active_[\w_]+_heat_sink$/,
 
+    "nuclearcraft:graphite_block",
+    "nuclearcraft:beryllium_block",
+
     "nuclearcraft:heat_exchanger",
 
     // Nuclearcraft Machines

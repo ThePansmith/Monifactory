@@ -4,7 +4,7 @@
 ServerEvents.recipes(event => {
     /* Circuit plates using GT cutter and saw */
     event.remove({ id: "projectred_core:plate" })
-    event.shaped("3x projectred_core:plate", [
+    event.shaped("4x projectred_core:plate", [
         "S",
         "B"
     ], {
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
     ];
     dyeColors.forEach(color => {
         /* Insulated Red Alloy Wire */
-        event.shapeless(`projectred_transmission:${color}_insulated_wire`, [
+        event.shapeless(`2x projectred_transmission:${color}_insulated_wire`, [
             "2x projectred_transmission:red_alloy_wire",
             "#forge:wool/" + color
         ]).id(`projectred_transmission:${color}_insulated_wire`)
@@ -61,31 +61,21 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.ULV])
     });
 
-    event.shapeless("4x projectred_transmission:black_insulated_wire", [
-        "4x projectred_transmission:red_alloy_wire",
-        "#forge:rubber_plates"
-    ])
-
-    /* Bundled Wire using moar rubba' mate as a second insulation mimicking multi-core cable instead of String */
-    event.shapeless("2x projectred_transmission:neutral_bundled_wire", [
-        "8x #projectred_transmission:insulated_wire",
-        "#forge:rubber_plates"
-    ])
-
     const rubber_types = [
-        { name: "rubber", amount: 144 },
-        { name: "silicone_rubber", amount: 72 },
-        { name: "styrene_butadiene_rubber", amount: 36 },
+        { name: "rubber", amount: 144, color: "black"},
+        { name: "silicone_rubber", amount: 72, color: "white"},
+        { name: "styrene_butadiene_rubber", amount: 36, color: "black"},
     ]
 
     /* Insulated Wire & Bundled Wire using Assembly Machine */
     rubber_types.forEach(type => {
-        event.recipes.gtceu.assembler("projectred_black_insulated_wire_" + type.name)
+        event.recipes.gtceu.assembler(`projectred_insulated_wire_${type.name}`)
             .itemInputs("1x projectred_transmission:red_alloy_wire")
             .inputFluids(Fluid.of("gtceu:" + type.name, type.amount / 4))
-            .itemOutputs("1x projectred_transmission:black_insulated_wire")
+            .itemOutputs(`1x projectred_transmission:${type.color}_insulated_wire`)
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
+            .circuit(1)
 
         event.recipes.gtceu.assembler("projectred_bundled_wire_" + type.name)
             .itemInputs("8x projectred_transmission:red_alloy_wire")

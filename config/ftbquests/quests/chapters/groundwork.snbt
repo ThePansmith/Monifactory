@@ -799,7 +799,11 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["517A89E954C7EA74"]
+			dependencies: [
+				"517A89E954C7EA74"
+				"776199B37A19A592"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.061904A6FEED5B66.description1}"
 				""
@@ -823,7 +827,10 @@
 			y: -4.25d
 		}
 		{
-			dependencies: ["3B639F4061B00F1A"]
+			dependencies: [
+				"3B639F4061B00F1A"
+				"5C4E189A3E401566"
+			]
 			description: [
 				"{moni.quest.517A89E954C7EA74.description1}"
 				""
@@ -930,7 +937,10 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["3B639F4061B00F1A"]
+			dependencies: [
+				"3B639F4061B00F1A"
+				"5C4E189A3E401566"
+			]
 			description: [
 				"{moni.quest.64B52DA2ABD5152D.description1}"
 				""
@@ -1000,7 +1010,10 @@
 			y: -4.25d
 		}
 		{
-			dependencies: ["6A262AA410619C23"]
+			dependencies: [
+				"2D31856F6EF1ED69"
+				"604CCBE824D03A74"
+			]
 			description: ["{moni.quest.3E51686E2DBD380F.description1}"]
 			id: "3E51686E2DBD380F"
 			rewards: [{
@@ -1893,7 +1906,10 @@
 			y: 6.25d
 		}
 		{
-			dependencies: ["6A262AA410619C23"]
+			dependencies: [
+				"5C4E189A3E401566"
+				"1510DC51CDC3F609"
+			]
 			description: [
 				"{moni.quest.48E83C38B37DFEE6.description1}"
 				""
@@ -2317,7 +2333,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5F9C7FB40AD2640B.title}"
-			x: 4.25d
+			x: 3.5d
 			y: 0.75d
 		}
 		{
@@ -2511,6 +2527,49 @@
 			title: "{moni.quest.349869EBF2D9FAF1.title}"
 			x: -8.0d
 			y: -4.25d
+		}
+		{
+			dependencies: ["3E42B4AAA6D2A05B"]
+			description: [
+				"{moni.quest.31EE6E41F509A8CF.description1}"
+				""
+				"{moni.quest.31EE6E41F509A8CF.description2}"
+				"{@pagebreak}"
+				"{moni.quest.31EE6E41F509A8CF.description3}"
+				""
+				"{moni.quest.31EE6E41F509A8CF.description4}"
+				""
+				"{moni.quest.31EE6E41F509A8CF.description5}"
+			]
+			id: "31EE6E41F509A8CF"
+			subtitle: "{moni.quest.31EE6E41F509A8CF.subtitle}"
+			tasks: [{
+				id: "24B4E26B05F638D6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_storage"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_cloner"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_replacer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.31EE6E41F509A8CF.title}"
+			x: 5.0d
+			y: 0.75d
 		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"
