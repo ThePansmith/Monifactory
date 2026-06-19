@@ -3299,5 +3299,12 @@
     "moni.quest.6F1530D71AA11FFE.description2": "One way to do this is with the &6Name Casting Mold&r from &bGT&r in a &3Forming Press&r. Rename the mold in an anvil block to set the desired name.",
     "moni.quest.7A7907EE1F3FCFBF.title": "Aluminium Dust (NM)",
     "moni.task.306DF07EDDE30066": "Any Conveyor Module",
-    "moni.quest.6CFAAF68D4B10062.description3": "A main &3Power Substation&r (&3PSS&r) will serve as your power storage as its storage capacity and I/O rates far surpass normal battery buffers. Consistently adding and upgrading the capacitors and hatches should let a single PSS should suffice for the rest of the pack."
+    "moni.quest.6CFAAF68D4B10062.description3": "A main &3Power Substation&r (&3PSS&r) will serve as your power storage as its storage capacity and I/O rates far surpass normal battery buffers. Consistently adding and upgrading the capacitors and hatches should let a single PSS should suffice for the rest of the pack.",
+    "moni.quest.31EE6E41F509A8CF.description4": "For example, if you &8shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use &6Cobblestone&r from that chest to place blocks.",
+    "moni.quest.31EE6E41F509A8CF.subtitle": "This pack has &bSpatial Tools Compatible&r.",
+    "moni.quest.31EE6E41F509A8CF.description3": "A very cool feature of this mod is how you can &8shift-right click&r an inventory with the Portable Spatial Cloner in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory.",
+    "moni.quest.31EE6E41F509A8CF.description5": "By default, the context menu GUI is bound to &8Left Alt&r.",
+    "moni.quest.31EE6E41F509A8CF.title": "Pocket-sized pocket dimensions",
+    "moni.quest.31EE6E41F509A8CF.description2": "Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks.",
+    "moni.quest.31EE6E41F509A8CF.description1": "These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 }
