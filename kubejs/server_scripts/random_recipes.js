@@ -356,36 +356,6 @@ ServerEvents.recipes(event => {
         .duration(25408)
         .EUt(302)
 
-
-    // Ender Chest and Tank (gives the full slot version)
-    event.remove({ output: ["endertanks:ender_tank", "enderchests:ender_chest"] })
-
-    // Chest
-    event.shaped("enderchests:ender_chest", [
-        "ABA",
-        "DED",
-        "AFA"
-    ], {
-        A: "minecraft:blaze_rod",
-        B: "minecraft:white_wool",
-        D: "minecraft:obsidian",
-        E: "gtceu:steel_crate",
-        F: "minecraft:ender_pearl"
-    })
-
-    // Tank
-    event.shaped("endertanks:ender_tank", [
-        "ABA",
-        "DED",
-        "AFA"
-    ], {
-        A: "minecraft:blaze_rod",
-        B: "minecraft:white_wool",
-        D: "minecraft:obsidian",
-        E: "enderio:pressurized_fluid_tank",
-        F: "gtceu:ender_pearl_block"
-    })
-
     // Strings Recipe
     event.shaped("6x minecraft:string", [
         " A ",
