@@ -2660,7 +2660,6 @@
     "moni.task.423B4FAF11B1C0FA": "Перемещение между измерениями с помощью торта",
     "moni.task.424451AEEE23C1AF": "Никогда не завершено",
     "moni.task.42DE11F1A04B0B97": "Любой #gtceu:circuits/luv",
-    "moni.task.42F1327485BA2D3A": "Любая #moni:input_bus",
     "moni.task.4348AEED28459C0F": " ",
     "moni.task.4404A112A80D0522": "Любой управляющий люк",
     "moni.task.4425D77A0E138B1B": "LV, MV или HV Дуговая печь",
@@ -2708,7 +2707,6 @@
     "moni.task.65EF130C1913A8AD": "Накрутить Выходные стороны!",
     "moni.task.676F242143EEB857": " ",
     "moni.task.67B8DFBE1AE7297F": " ",
-    "moni.task.696B8CE2A4872407": "Любой #moni:input_hatch (жидкостный входной люк)",
     "moni.task.6A1B4224E18DC3EC": "Булыжник",
     "moni.task.6B2421DDCE5F8C75": "LV, MV, или HV Просеиватель",
     "moni.task.6B68D20D0B8C8886": "Любой #gtceu:transistors (транзистор)",
@@ -3298,5 +3296,13 @@
     "moni.quest.6F1530D71AA11FFE.description2": "Один способ — использовать &6форму отливки имени&r из &bGT&r в &3формовочном прессе&r. Переименуйте форму на наковальне, чтобы задать нужное имя.",
     "moni.quest.7A7907EE1F3FCFBF.title": "Алюминиевая пыль (NM)",
     "moni.task.306DF07EDDE30066": "Любой конвейерный модуль",
-    "moni.quest.6CFAAF68D4B10062.description3": "Основная &3энергетическая подстанция&r (&3PSS&r) будет служить вашим хранилищем энергии, потому что её ёмкость и скорость ввода/вывода намного превосходят обычные батарейные буферы. Постоянное добавление и улучшение конденсаторов и люков должно позволить одной PSS хватить на остаток сборки."
+    "moni.quest.6CFAAF68D4B10062.description3": "Основная &3энергетическая подстанция&r (&3PSS&r) будет служить вашим хранилищем энергии, потому что её ёмкость и скорость ввода/вывода намного превосходят обычные батарейные буферы. Постоянное добавление и улучшение конденсаторов и люков должно позволить одной PSS хватить на остаток сборки.",
+    "moni.quest.31EE6E41F509A8CF.description4": "For example, if you &8shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use &6Cobblestone&r from that chest to place blocks.",
+    "moni.quest.31EE6E41F509A8CF.subtitle": "This pack has &bSpatial Tools Compatible&r.",
+    "moni.quest.31EE6E41F509A8CF.description3": "A very cool feature of this mod is how you can &8shift-right click&r an inventory with the Portable Spatial Cloner in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory.",
+    "moni.quest.31EE6E41F509A8CF.description5": "By default, the context menu GUI is bound to &8Left Alt&r.",
+    "moni.quest.31EE6E41F509A8CF.title": "Pocket-sized pocket dimensions",
+    "moni.quest.31EE6E41F509A8CF.description2": "Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks.",
+    "moni.quest.31EE6E41F509A8CF.description1": "These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing.",
+    "moni.quest.4CC612FF64877C60.description4": "Please note that beyond this point not all multiblock quests will have a bill of materials attached. You will need to use &3EMI/JEI&r to determine the structure and hatch requirements."
 }
