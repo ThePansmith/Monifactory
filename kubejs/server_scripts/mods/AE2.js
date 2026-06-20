@@ -747,7 +747,7 @@ ServerEvents.recipes(event => {
         "B B",
         "ABA"
     ], {
-        A: "gtceu:fine_lumium_wire",
+        A: "gtceu:fine_niobium_titanium_wire",
         B: "gtceu:naquadah_plate"
     }).id("kubejs:mega/item_cell_housing")
 
@@ -757,7 +757,7 @@ ServerEvents.recipes(event => {
         "B B",
         "ABA"
     ], {
-        A: "gtceu:fine_lumium_wire",
+        A: "gtceu:fine_niobium_titanium_wire",
         B: "monilabs:crystal_matrix_plate"
     }).id("kubejs:mega/fluid_cell_housing")
 
