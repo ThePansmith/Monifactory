@@ -25,6 +25,35 @@
 			x: 2.75d
 			y: -12.5d
 		}
+		{
+			id: "0A3DC598AC6F99B1"
+			linked_quest: "6A76B3DCA599B9B5"
+			shape: "hexagon"
+			x: 2.25d
+			y: 1.75d
+		}
+		{
+			id: "7E04938A5111C9A1"
+			linked_quest: "1EA5F30C5ACADBA9"
+			shape: "hexagon"
+			size: 1.5d
+			x: 3.5d
+			y: 1.75d
+		}
+		{
+			id: "794ACF30270A3920"
+			linked_quest: "38B1588655AA9BDF"
+			shape: "hexagon"
+			x: 4.75d
+			y: 1.75d
+		}
+		{
+			id: "6A385521566ECD0E"
+			linked_quest: "062B4DDD703338D1"
+			shape: "hexagon"
+			x: 6.0d
+			y: 1.75d
+		}
 	]
 	quests: [
 		{
@@ -390,7 +419,7 @@
 			}]
 			title: "{moni.quest.56FB624B384FFAF5.title}"
 			x: -9.0d
-			y: 1.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -426,7 +455,7 @@
 			]
 			title: "{moni.quest.399AE4E449872B8A.title}"
 			x: -11.0d
-			y: 1.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -493,7 +522,7 @@
 			}]
 			title: "{moni.quest.131EAE1541E9C780.title}"
 			x: 7.5d
-			y: 1.5d
+			y: 2.75d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
@@ -986,40 +1015,71 @@
 					type: "item"
 				}
 				{
-					id: "041C237B750DD674"
-					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "61C9E687614DDE69"
-					item: "gtceu:assembly_line_grating"
-					type: "item"
-				}
-				{
-					count: 16L
+					count: 17L
 					id: "17E44DB94862D5B7"
 					item: "monilabs:microverse_casing"
-					type: "item"
-				}
-				{
-					id: "391034405E831658"
-					item: "gtceu:mv_input_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 3L
 					id: "2F0E8511C560E506"
 					item: "gtceu:tempered_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "082A16673BE498B5"
-					item: "gtceu:hv_energy_input_hatch"
+					id: "61C9E687614DDE69"
+					item: "gtceu:assembly_line_grating"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "4A49BAAC944C706D"
-					item: "gtceu:mv_output_bus"
+					id: "59B3DAF64E6E321D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0481E2A193C0B956"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "53D427A60B944BB3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "252519281545DAD2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]

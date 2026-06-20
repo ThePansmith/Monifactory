@@ -3,59 +3,6 @@
  */
 
 ServerEvents.recipes(event => {
-    const converter = [
-        ["uev", "cable", "darconite", "hyperdegenerate_darconite", 1966080],
-        ["max", "wire", "monium", "monium", 80000000],
-    ]
-
-    converter.forEach(([tier, mat1, mat2, mat3, eut]) => {
-        event.remove({ output: [`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter`] })
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_single_cable",
-            B: `gtceu:${mat2}_single_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-
-
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_4a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_quadruple_cable",
-            B: `gtceu:${mat2}_quadruple_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_8a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_octal_cable",
-            B: `gtceu:${mat2}_octal_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_16a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_hex_cable",
-            B: `gtceu:${mat2}_hex_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-    })
-
     // UHV components
     const plateFix = [
         /gtceu:.*casing_uhv/,
@@ -66,13 +13,46 @@ ServerEvents.recipes(event => {
         event.replaceInput({ id: `${value}`}, "gtceu:neutronium_plate", "gtceu:manyullyn_plate" )
     })
 
+    // Fortunately, no need to fix Quantum Chest/Tank materialInfos because the difference is too small to affect recycling recipes
+    // Unfortunately, these changes don't affect items or blocks that use these as ingredients. There's not any neatly scalable way to fix them either.
+    $ItemMaterialData.clearMaterialInfo(GTBlocks.MACHINE_CASING_UHV.asItem())
+    $ItemMaterialData.clearMaterialInfo(GTBlocks.HERMETIC_CASING_UHV.asItem())
+    $ItemMaterialData.clearMaterialInfo(GTMachines.HULL[GTValues.UHV].item)
+    $ItemMaterialData.clearMaterialInfo(Item.of("gtceu:uhv_quantum_chest"))
+    $ItemMaterialData.clearMaterialInfo(Item.of("gtceu:uhv_quantum_tank"))
+    $ItemMaterialData.registerMaterialInfo(GTBlocks.MACHINE_CASING_UHV.asItem(), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 8),
+        $MaterialStack.EMPTY
+    ))
+    $ItemMaterialData.registerMaterialInfo(GTBlocks.HERMETIC_CASING_UHV.asItem(), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 8),
+        new $MaterialStack(GTMaterials.Duranium, GTValues.M * 6)
+    ))
+    $ItemMaterialData.registerMaterialInfo(GTMachines.HULL[GTValues.UHV].item, new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 8),
+        new $MaterialStack(GTMaterials.Rubber, GTValues.M * 2),
+        new $MaterialStack(GTMaterials.Europium, GTValues.M)
+    ))
+    $ItemMaterialData.registerMaterialInfo(Item.of("gtceu:uhv_quantum_chest"), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.UraniumRhodiumDinaquadide, GTValues.M * 16),
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 11),
+        new $MaterialStack(GTMaterials.NaquadahAlloy, GTValues.M * 8),
+        new $MaterialStack(GTMaterials.Rubber, GTValues.M * 6)
+    ))
+    $ItemMaterialData.registerMaterialInfo(Item.of("gtceu:uhv_quantum_tank"), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.Americium, GTValues.M * 16),
+        new $MaterialStack(GTMaterials.UraniumRhodiumDinaquadide, GTValues.M * 16),
+        new $MaterialStack(GTMaterials.NaquadahAlloy, GTValues.M * 12),
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 10),
+    ))
+
     const hullMaterials = [
         { tier: "uev", material1: "gtceu:infinity", material2: "monilabs:sculk_bioalloy", wire: "darconite_single_cable", plastic: "polyethyl_cyanoacrylate" },
-        { tier: "max", material1: "gtceu:monium", material2: "gtceu:meta_null", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "max", material1: "gtceu:monium", material2: "gtceu:meta_null", wire: "monium_single_wire", plastic: "polyether_ether_ketone" },
     ]
 
     hullMaterials.forEach((value) => {
-        event.shaped(`gtceu:${value.tier}_machine_casing`, [
+        event.recipes.gtceu.shaped(`gtceu:${value.tier}_machine_casing`, [
             "QPQ",
             "PWP",
             "QPQ"
@@ -80,7 +60,7 @@ ServerEvents.recipes(event => {
             P: `${value.material1}_plate`,
             Q: `${value.material2}_plate`,
             W: "#forge:tools/wrenches"
-        }).id(`shaped/casing_${value.tier}`)
+        }).id(`gtceu:shaped/casing_${value.tier}`)
 
         event.recipes.gtceu.assembler(`casing_${value.tier}`)
             .itemInputs(`4x ${value.material1}_plate`, `4x ${value.material2}_plate`)
@@ -643,13 +623,14 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
         // Fluid Regulators don't have research
 
-    // Cables
-    // UHV+ cables are made only with SBR and PEEK, UHV cables require neutronium, UEV+ cables require meta_null
-    const endgameCables = ["europium", "lanthanum_gold_cadmium_curium_sulfate", "omnium", "darconite", "necrosiderite", "eltz"];
-    const cablematsUEV = ["omnium", "darconite", "necrosiderite", "eltz"];
+    // UHV Cables don't have a Silicone Rubber recipe, and require Kapton K in HM.
+    const cablematsUV = ["naquadah_alloy", "yttrium_barium_cuprate", "tritanium", "lanthanum_gold_cadmium_curium_sulfate", "cryococcus", "europium"];
+    cablematsUV.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
+    if(doHarderProcessing) cablematsUV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyphenylene_sulfide_foil", "gtceu:kapton_k_foil"));
 
-    endgameCables.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
-    endgameCables.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyvinyl_chloride_foil", "gtceu:polyether_ether_ketone_foil"));
-    endgameCables.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyphenylene_sulfide_foil", "gtceu:neutronium_foil"));
-    cablematsUEV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:neutronium_foil", "gtceu:meta_null_foil"));
+    // UEV+ cables require meta_null in place of PVC.
+    const cablematsUEV = ["omnium", "darconite", "necrosiderite", "eltz"];
+    cablematsUEV.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
+    cablematsUEV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyvinyl_chloride_foil", "gtceu:meta_null_foil"));
+    if(doHarderProcessing) cablematsUEV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyphenylene_sulfide_foil", "gtceu:kapton_k_foil"));
 })
