@@ -4,6 +4,11 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
+    // Beryl
+    event.create("emerald_slurry")
+        .liquid()
+        .color(0x17ff6c)
+
     // Garnets
     event.create("pyrope_slurry")
         .liquid()
@@ -25,6 +30,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("yellow_garnet_slurry")
         .liquid()
         .color(0xc8c864)
+
+    // Ad Astra gem ores
+    event.create("anorthite_slurry")
+        .liquid()
+        .color(0xddd4af)
+    event.create("titanite_slurry")
+        .liquid()
+        .color(0xa3ba3d)
 
     // Other
     event.create("malachite_slurry")

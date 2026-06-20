@@ -1556,15 +1556,27 @@
 					type: "item"
 				}
 				{
-					count: 16L
-					id: "0D6F9EF349C45ADA"
-					item: "gtceu:cupronickel_coil_block"
+					count: 9L
+					id: "7998F0B9E0714746"
+					item: "gtceu:heatproof_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 2L
-					id: "67A9C3501BB6F0FD"
-					item: "gtceu:lv_energy_input_hatch"
+					count: 16L
+					id: "0D6F9EF349C45ADA"
+					item: "gtceu:cupronickel_coil_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "215E1D7028D4007A"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "41EA282C8B1B05AB"
+					item: "gtceu:lv_muffler_hatch"
 					type: "item"
 				}
 				{
@@ -1588,19 +1600,9 @@
 					type: "item"
 				}
 				{
-					count: 9L
-					id: "7998F0B9E0714746"
-					item: "gtceu:heatproof_machine_casing"
-					type: "item"
-				}
-				{
-					id: "215E1D7028D4007A"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "41EA282C8B1B05AB"
-					item: "gtceu:lv_muffler_hatch"
+					count: 2L
+					id: "67A9C3501BB6F0FD"
+					item: "gtceu:lv_energy_input_hatch"
 					type: "item"
 				}
 			]
@@ -2095,15 +2097,27 @@
 					type: "item"
 				}
 				{
-					count: 16L
-					id: "44F21473555B9484"
-					item: "gtceu:cupronickel_coil_block"
-					type: "item"
-				}
-				{
 					count: 10L
 					id: "30B3B90B99DE0109"
 					item: "gtceu:ulv_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "44F21473555B9484"
+					item: "gtceu:cupronickel_coil_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C89E09A6E371208"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "54A14F8C85862459"
+					item: "gtceu:lv_muffler_hatch"
 					type: "item"
 				}
 				{
@@ -2129,16 +2143,6 @@
 				{
 					id: "0C6857FA9D64E009"
 					item: "gtceu:lv_energy_input_hatch"
-					type: "item"
-				}
-				{
-					id: "0C89E09A6E371208"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "54A14F8C85862459"
-					item: "gtceu:lv_muffler_hatch"
 					type: "item"
 				}
 			]
