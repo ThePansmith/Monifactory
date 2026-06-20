@@ -3,59 +3,6 @@
  */
 
 ServerEvents.recipes(event => {
-    const converter = [
-        ["uev", "cable", "darconite", "hyperdegenerate_darconite", 1966080],
-        ["max", "wire", "monium", "monium", 80000000],
-    ]
-
-    converter.forEach(([tier, mat1, mat2, mat3, eut]) => {
-        event.remove({ output: [`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter`] })
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_single_cable",
-            B: `gtceu:${mat2}_single_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-
-
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_4a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_quadruple_cable",
-            B: `gtceu:${mat2}_quadruple_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_8a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_octal_cable",
-            B: `gtceu:${mat2}_octal_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped(Item.of(`gtceu:${tier}_16a_energy_converter`), [
-            " BB",
-            "AHC",
-            " BB"
-        ], {
-            A: "gtceu:red_alloy_hex_cable",
-            B: `gtceu:${mat2}_hex_${mat1}`,
-            H: `gtceu:${tier}_machine_hull`,
-            C: `#gtceu:circuits/${tier}`
-        }).addMaterialInfo()
-    })
-
     // UHV components
     const plateFix = [
         /gtceu:.*casing_uhv/,
