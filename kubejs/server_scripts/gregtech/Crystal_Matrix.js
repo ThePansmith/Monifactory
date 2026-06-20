@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     ]
     carbon_containing_fluids.forEach( fluid_type => {
         event.recipes.gtceu.autoclave(`nanotube_growing_in_${fluid_type.name}`)
-            .itemInputs("kubejs:nanotube_substrate", "gtceu:diamond_dust")
+            .itemInputs("kubejs:nanotube_substrate", "2x gtceu:diamond_dust")
             .inputFluids(Fluid.of("gtceu:" + fluid_type.name, 1000 * fluid_type.amount))
             .chancedOutput("kubejs:grown_nanotube_substrate", 7000, 0)
             .chancedOutput("kubejs:failed_nanotube_substrate", 3000, 0)
@@ -89,7 +89,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator("recycle_nanotubes")
         .itemInputs("kubejs:carbon_nanotubes")
         .itemOutputs("gtceu:small_carbon_dust")
-        .chancedOutput("kubejs:crystal_seeds", 1000, 0)
+        .chancedOutput("kubejs:crystal_seeds", 1500, 0)
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.macerator("recycle_nanotube_mesh")
+        .itemInputs("kubejs:adhered_matrix_mesh")
+        .itemOutputs("gtceu:small_carbon_dust", "gtceu:small_nether_star_dust")
+        .chancedOutput("kubejs:crystal_seeds", 1500, 0)
         .duration(240)
         .EUt(GTValues.VA[GTValues.ULV])
 
