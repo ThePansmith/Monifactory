@@ -287,6 +287,7 @@ global.itemNukeList = [
     "thermal:sawdust",
     "thermal:sulfur",
     "thermal:tar",
+    "thermal:tar_block",
     "thermal:refined_fuel_bucket",
     /^thermal:.*_cast$/,
 
@@ -296,7 +297,6 @@ global.itemNukeList = [
     "thermal:machine_pulverizer",
     "thermal:machine_smelter",
     "thermal:machine_centrifuge",
-    "thermal:machine_crucible",
     "thermal:machine_chiller",
     "thermal:machine_refinery",
     "thermal:machine_pyrolyzer",

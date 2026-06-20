@@ -146,30 +146,6 @@ ServerEvents.recipes(event => {
     }
 
     if(doHarderRecipes) {
-        event.recipes.gtceu.shaped("thermal:dynamo_numismatic", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:zeron_100_plate",
-            C: "ironfurnaces:diamond_furnace",
-            D: "enderio:vibrant_gear",
-            E: "kubejs:redstone_transmission_coil"
-        }).addMaterialInfo()
-    } else {
-        event.recipes.gtceu.shaped("thermal:dynamo_numismatic", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:vibrant_alloy_plate",
-            C: "ironfurnaces:diamond_furnace",
-            D: "enderio:vibrant_gear",
-            E: "kubejs:redstone_transmission_coil"
-        }).addMaterialInfo()
-
         // Make clay electrolysis an LV recipe
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
         event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")

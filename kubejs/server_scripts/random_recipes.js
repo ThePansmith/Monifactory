@@ -420,7 +420,7 @@ ServerEvents.recipes(event => {
 
     // Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter("kubejs:resonating_redstone")
-        .itemInputs("minecraft:redstone_block", "kubejs:ender_shard")
+        .itemInputs("4x minecraft:redstone", "kubejs:ender_shard")
         .itemOutputs("kubejs:resonating_crystal")
         .duration(180)
         .EUt(16)
