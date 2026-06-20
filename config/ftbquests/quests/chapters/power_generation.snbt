@@ -98,15 +98,77 @@
 					type: "item"
 				}
 				{
-					count: 24L
+					count: 28L
 					id: "49363E4CC67FE532"
-					item: { Count: 24, id: "gtceu:steel_turbine_casing" }
+					item: "gtceu:steel_turbine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "42BBECB34497F4A4"
-					item: { Count: 2, id: "gtceu:steel_gearbox" }
+					item: "gtceu:steel_gearbox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "301CF2A3BA001822"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:rotor_holder"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "63F4FAC8E029A009"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "775AD2C090731966"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "004DD7D2B9EC4FC8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F08B37942BEA3E9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -161,21 +223,73 @@
 					type: "item"
 				}
 				{
+					count: 20L
+					id: "1A63BEB000BBBEC7"
+					item: "gtceu:stable_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
 					count: 8L
 					id: "55E057B94D78E0B4"
-					item: { Count: 8, id: "gtceu:engine_intake_casing" }
+					item: "gtceu:engine_intake_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "4DD5A8C1BCC9D848"
-					item: { Count: 2, id: "gtceu:titanium_gearbox" }
+					item: "gtceu:titanium_gearbox"
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 19L
-					id: "1A63BEB000BBBEC7"
-					item: "gtceu:stable_machine_casing"
+					id: "6DCB7529F995D084"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1BB40E614CD157CD"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:muffler_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0B273647ED198545"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7CC906C9ACF550A0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -207,21 +321,73 @@
 					type: "item"
 				}
 				{
+					count: 20L
+					id: "50CADE7BF4DB9D98"
+					item: "gtceu:robust_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
 					count: 8L
 					id: "34F1CEFB649E5CE3"
-					item: { Count: 8, id: "gtceu:extreme_engine_intake_casing" }
+					item: "gtceu:extreme_engine_intake_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "02419C5F82366B67"
-					item: { Count: 2, id: "gtceu:tungstensteel_gearbox" }
+					item: "gtceu:tungstensteel_gearbox"
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 19L
-					id: "50CADE7BF4DB9D98"
-					item: "gtceu:robust_machine_casing"
+					id: "68518BE60919B608"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7DAC029E717D9714"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:muffler_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "245ACBD325101089"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "020C7B58AB5D77C5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -251,15 +417,77 @@
 					type: "item"
 				}
 				{
-					count: 24L
+					count: 28L
 					id: "4967F0BFCEDB782F"
 					item: "gtceu:stainless_steel_turbine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "018B4A4FCCF4C006"
 					item: "gtceu:stainless_steel_gearbox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4AA4FFC8D6999D40"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:rotor_holder"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "254E48F08E28E45B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2664982E2F0E4FE1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:muffler_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B102A02B05A2310"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B92FCE6B3CBCAE7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -453,12 +681,74 @@
 					count: 24L
 					id: "6324614154FC58BF"
 					item: "gtceu:tungstensteel_turbine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "3D5916D81DAB1BCC"
 					item: "gtceu:tungstensteel_gearbox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DEBD8A6A8BC0170"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:rotor_holder"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "596B8FB04A7A1632"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "000856171A15B268"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "123613F91F5DF726"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B8B86BDA4967B87"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -642,27 +932,67 @@
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "4F11D4069AEF06CA"
-					item: "gtceu:trinium_coil_block"
+					count: 14L
+					id: "2D40468415EA637F"
+					item: "gtceu:reaction_safe_mixing_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "2FF2B4C219053E6A"
 					item: "ae2:spatial_pylon"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "27B323E3ADED4829"
 					item: "gtceu:fusion_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 12L
-					id: "2D40468415EA637F"
-					item: "gtceu:reaction_safe_mixing_casing"
+					count: 4L
+					id: "4F11D4069AEF06CA"
+					item: "gtceu:trinium_coil_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4FE47BEFAE4E9E6C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "721FF89E84E9906E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "445CE7EB4B5AE481"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -711,15 +1041,107 @@
 				"{moni.quest.19084E91F357C8C2.description1}"
 				""
 				"{moni.quest.19084E91F357C8C2.description2}"
+				""
+				"{moni.quest.19084E91F357C8C2.description3}"
 			]
+			icon: "monilabs:creative_energy_multi"
 			id: "19084E91F357C8C2"
 			size: 1.0d
 			subtitle: "{moni.quest.19084E91F357C8C2.subtitle}"
-			tasks: [{
-				id: "0312D4E6C4C1C552"
-				item: "monilabs:creative_energy_multi"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0312D4E6C4C1C552"
+					item: "monilabs:creative_energy_multi"
+					type: "item"
+				}
+				{
+					count: 230L
+					id: "79FE36D6072A5662"
+					item: "monilabs:dimensional_stabilization_netherite_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 175L
+					id: "6BEAAF4B3C1E82DD"
+					item: "gtceu:atomic_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 84L
+					id: "0ADE2D96AE891B4F"
+					item: "gtceu:high_power_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3787F80E70ED6992"
+					item: "gtceu:superconducting_coil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "29D0F93DC1F493B1"
+					item: "monilabs:eltz_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "222886166B3D73B9"
+					item: "monilabs:eltz_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2AAB4A2C3350A98E"
+					item: "gtceu:heat_vent"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "5EE6666A4EDADBDD"
+					item: "gtceu:ptfe_pipe_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5332123FE5D91A7F"
+					item: "gtceu:uev_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "41D0FA4040EC3D96"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C9AA0B7472B7A34"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.19084E91F357C8C2.title}"
 			x: 11.0d
 			y: -1.0d
@@ -743,11 +1165,100 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
-			tasks: [{
-				id: "51C99B20F637AA2C"
-				item: "gtceu:large_naquadah_reactor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "51C99B20F637AA2C"
+					item: "gtceu:large_naquadah_reactor"
+					type: "item"
+				}
+				{
+					count: 170L
+					id: "735C1733E96029C6"
+					item: "gtceu:atomic_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 96L
+					id: "264506E3BF561E65"
+					item: "gtceu:fusion_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 72L
+					id: "0CDC3230F8226D66"
+					item: "gtceu:tritanium_coil_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "1454471FB0635EF4"
+					item: "gtceu:high_temperature_smelting_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "531672A1EA9FE108"
+					item: "ae2:spatial_pylon"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "4997B8A1A60256C5"
+					item: "gtceu:heat_vent"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "552162424282713A"
+					item: "gtceu:fusion_coil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "5E6F1984D122A181"
+					item: "gtceu:naquadah_alloy_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7043FBE6B2CDA7FD"
+					item: "gtceu:tungsten_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "18055674BE83C339"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "78CF01BB53CA4768"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.21E10888F52A3C73.title}"
 			x: 5.5d
 			y: -1.0d
@@ -768,13 +1279,88 @@
 				""
 				"{moni.quest.5EE2338113F22952.description5}"
 			]
+			icon: "gtceu:antimatter_collider"
 			id: "5EE2338113F22952"
 			optional: true
-			tasks: [{
-				id: "0AFCD5A8CB53424F"
-				item: "gtceu:antimatter_collider"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0AFCD5A8CB53424F"
+					item: "gtceu:antimatter_collider"
+					type: "item"
+				}
+				{
+					count: 202L
+					id: "4E7968B0C145FFD2"
+					item: "gtceu:atomic_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 163L
+					id: "5D19F043CA2830BB"
+					item: "monilabs:dimensional_stabilization_netherite_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 55L
+					id: "1CDD1BC04403A6A6"
+					item: "gtceu:superconducting_coil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "649E69133E0FB4A6"
+					item: "gtceu:fusion_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 136L
+					id: "72B341D3FFB75DFD"
+					item: "gtceu:hsse_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "403A7248D61807FB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2376BF2FB1E854F0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "69008CFFD19026C7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.5EE2338113F22952.title}"
 			x: 6.5d
 			y: -2.0d

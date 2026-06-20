@@ -830,6 +830,7 @@
 				""
 				"{moni.quest.3000798ACA51BFDC.description5}"
 			]
+			icon: "gtceu:vacuum_freezer"
 			id: "3000798ACA51BFDC"
 			rewards: [{
 				id: "219281A5FEE8A69B"
@@ -838,11 +839,68 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			tasks: [{
-				id: "00BC07CA2824F6C0"
-				item: "gtceu:vacuum_freezer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "00BC07CA2824F6C0"
+					item: "gtceu:vacuum_freezer"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "031D8A22AAFE1B3E"
+					item: "gtceu:frostproof_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23845830830BCF9E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "42D43C71C08BF962"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "225C49AF7F59064D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "453A00FCB7204DE8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -10.75d
 			y: -0.25d
 		}
@@ -1501,19 +1559,100 @@
 					type: "item"
 				}
 				{
-					count: 10L
+					count: 18L
 					id: "01BC2A4FA1A35088"
 					item: "gtceu:inert_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6E87BEEC10CA1366"
 					item: "gtceu:ptfe_pipe_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "0D8F083927C13B6B"
-					item: "gtceu:cupronickel_coil_block"
+					id: "2F1EA4DBA0F1AB0A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:heating_coil"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "37887F0566785330"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "145EE4395CE04F02"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "712400E527F1FF3B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1183DBEA9D844DED"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1A741C0D8AA27D32"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6C8A751C48E6EBBC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2098,15 +2237,102 @@
 					type: "item"
 				}
 				{
-					count: 34L
+					count: 35L
 					id: "1D22CC5ADFDFD0A0"
 					item: "gtceu:high_temperature_smelting_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "140DE758D9D6D18E"
 					item: "gtceu:heat_vent"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "1E8CD23CABF695AE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:heating_coil"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "15C250422178A9A0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "15CCED1CDF19C732"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:muffler_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "71AE3301FD0800BB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "57427F93B3C60700"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5781845D5CC10C99"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "69E6D655D12BF0B9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2487,18 +2713,56 @@
 					count: 8L
 					id: "7784F218DA88096C"
 					item: "gtceu:solid_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 15L
 					id: "7B08AB8F0B989EF2"
 					item: "gtceu:steel_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6262EB98BAF52813"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6FA7938B8E0C5C36"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7EE78DB4BBB14E96"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "{moni.quest.6FB0357E12499B5F.title}"
-			x: 3.0d
-			y: -9.0d
+			x: 5.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["508452E1A3E09B56"]
@@ -2508,6 +2772,8 @@
 				"{moni.quest.4CC612FF64877C60.description2}"
 				""
 				"{moni.quest.4CC612FF64877C60.description3}"
+				""
+				"{moni.quest.4CC612FF64877C60.description4}"
 			]
 			id: "4CC612FF64877C60"
 			rewards: [{
@@ -2523,8 +2789,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4CC612FF64877C60.title}"
-			x: 5.0d
-			y: -9.0d
+			x: 7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["5BC6DB754207D4A8"]
@@ -2562,8 +2828,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.0F779BEEED8E67BB.title}"
-			x: 7.0d
-			y: -9.0d
+			x: 9.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["2977E1AF13E42DCB"]
@@ -2598,21 +2864,47 @@
 					type: "item"
 				}
 				{
-					count: 8L
+					count: 9L
 					id: "47241D10077393C2"
 					item: "gtceu:solid_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 15L
 					id: "7B6BD324D68C5B7F"
 					item: "gtceu:steel_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7B6551F5880BED06"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2891E51789BADFAC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "{moni.quest.2F04FA8D3E15E375.title}"
-			x: 1.0d
-			y: -9.0d
+			x: 3.0d
+			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -2711,17 +3003,89 @@
 				""
 				"{moni.quest.60B16BB064E2FF4C.description2}"
 			]
+			icon: "gtceu:cracker"
 			id: "60B16BB064E2FF4C"
 			rewards: [{
 				id: "70B5CA698487B70D"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			tasks: [{
-				id: "55F52E742F32D3A0"
-				item: "gtceu:cracker"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "55F52E742F32D3A0"
+					item: "gtceu:cracker"
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "5E1EDCDD48695C0B"
+					item: "gtceu:clean_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "742F9D2EFEF2C66F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:heating_coil"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "451FD82CFFF2D9CF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7CDC9D5A1DB7C42A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:muffler_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "58530FCD44D4ED70"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "51DC55FFAC05DD48"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.60B16BB064E2FF4C.title}"
 			x: 13.25d
 			y: -8.75d
@@ -2782,9 +3146,7 @@
 				""
 				"{moni.quest.6DBD1492197AC92D.description3}"
 			]
-			hide_until_deps_visible: true
 			id: "6DBD1492197AC92D"
-			optional: true
 			subtitle: "{moni.quest.47A81FADD828772D.subtitle}"
 			tasks: [{
 				id: "41777324B5E2118C"
@@ -2823,17 +3185,56 @@
 					count: 17L
 					id: "7BC42B5A0DB23D7A"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "35303EB3C0841529"
 					item: "gtceu:pulsating_alloy_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5DCCBCE9A4DE6807"
 					item: "gtceu:mythril_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "308C86CBD462C45E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "14619CD4237B1232"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2ECD7C641EF94755"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2866,17 +3267,56 @@
 					count: 17L
 					id: "372051DF4441A75D"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "25FFFADC108CB556"
-					item: { Count: 4, id: "gtceu:energetic_alloy_block" }
+					item: "gtceu:energetic_alloy_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "13090EB618995372"
 					item: "gtceu:mythril_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23FAD96831658F1D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F5053C9DBDDEB95"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "786EE88B2E008B81"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -3162,6 +3602,134 @@
 			title: "{moni.quest.7BC6E67521545949.title}"
 			x: 0.25d
 			y: -1.75d
+		}
+		{
+			dependencies: ["4DB622A78605A2EB"]
+			description: [
+				"{moni.quest.36B1B083B4FA439F.description1}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description2}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description3}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description4}"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:power_substation"
+			id: "36B1B083B4FA439F"
+			rewards: [{
+				id: "74137AF1D413A38D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "07359B5EBA5AA568"
+					item: "gtceu:power_substation"
+					type: "item"
+				}
+				{
+					count: 44L
+					id: "36BB87BEFFA295E5"
+					item: "gtceu:palladium_substation"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 41L
+					id: "595EFC5BD0293994"
+					item: "gtceu:laminated_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7398C5C724D3CE9D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "27A121A9CA1E8558"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "79A9C7566D21DEDE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D35604B28E50444"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0669A9EE76224BE7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{moni.quest.36B1B083B4FA439F.title}"
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["36B1B083B4FA439F"]
+			description: [
+				"{moni.quest.6CFAAF68D4B10062.description1}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description2}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description3}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description4}"
+				""
+				"{moni.quest.6CFAAF68D4B10062.description5}"
+			]
+			icon: "gtceu:empty_tier_i_battery"
+			id: "6CFAAF68D4B10062"
+			tasks: [{
+				id: "5AF8E611CFEF3599"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.6CFAAF68D4B10062.title}"
+			x: -0.75d
+			y: -11.0d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"

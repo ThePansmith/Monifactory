@@ -95,28 +95,87 @@ Monifactory supports localization for nearly everything, including the questbook
 
 If you wish to add a language for localization, either ask Pansmith to add it, or make a pull request with some translations already done in that language. (Weblate will automatically add lang files for everything upon detecting a new language). Also note that the discord has a thread for Monifactory's Translations in the #moni-dev channel for easy communication with other contributors.
 
-## Things to Watch Out For ##
+## Questbook Formatting Guidelines ##
 
-### Questbook Highlighting ###
+### Title text colors ###
 
-| Color  | Info Highlighted |
+| Color | Use case |
 | ------------- | ------------- |
-| Black (0)  | Currently Unused |
-| Dark Blue (l)  | Currently Unused  |
-| Dark Green (2)  | Currently Unused  |
-| Cyan (3)  | Machines & other processing  |
-| Red (4)  | Warnings  |
-| Dark Purple (5) | Notes about things in Beta  |
-| Orange (6) | Items AND fluids  |
-| Light Gray (7) | Currently Unused  |
-| Gray (8)  | Keyboard/mouse controls  |
-| Light Blue (9)  | Content new to Monifactory |
-| Lime (A) | RF and EU Power |
-| Aqua (B) | Mod names |
-| Light Red (C) | HM/EM exclusive info |
-| Pink (D) | CWU & Data |
-| Yellow (E) | Supplemental Information |
-| White (F) | Default text |
+| Black (0) | Unused due to low contrast |
+| Dark Blue (l) | Unused due to low contrast |
+| Dark Green (2) | Features that differ in other GT versions |
+| Dark Aqua (3) | Unused |
+| Dark Red (4) | Unused due to low contrast |
+| Dark Purple (5) | Unused due to low contrast |
+| Gold (6) | Unused |
+| Gray (7) | Unused |
+| Dark Gray (8) | Unused due to low contrast |
+| Blue (9) | Features or quests present in Monifactory but not Nomi CEu |
+| Green (A) | Unused |
+| Aqua (B) | Unused |
+| Red (C) | Unused |
+| Light Purple (D) | Unused |
+| Yellow (E) | Unused |
+| White (F) | Default title text color |
+
+### Subtitle and description text colors ###
+
+| Color | Use case |
+| ------------- | ------------- |
+| Black (0) | Unused due to low contrast |
+| Dark Blue (l) | Unused due to low contrast |
+| Dark Green (2) | Behavior that differs in other GT versions |
+| Dark Aqua (3) | Machines & tools |
+| Dark Red (4) | Unused due to low contrast |
+| Dark Purple (5) | Unused due to low contrast |
+| Gold (6) | Items |
+| Gray (7) | Keyboard/mouse controls |
+| Dark Gray (8) | Unused due to low contrast |
+| Blue (9) | Fluids |
+| Green (A) | Temperature, Power, and Energy |
+| Aqua (B) | Mod names & dimension names |
+| Red (C) | Warnings and HM/EM exclusive info |
+| Light Purple (D) | CWU & Data |
+| Yellow (E) | Highlight for important info |
+| White (F) | Default text color |
+
+Most of the above are informed by GregTech: Modern tooltip highlighting conventions, as seen in this Pull Request on their repository:
+https://github.com/GregTechCEu/GregTech-Modern/pull/2099
+
+Exceptions apply for GT Voltage Tier colors. (e.g. 'EV' should always be colored Dark Purple)
+
+Highlights that apply to nouns or terms (Dark Aqua, Gold, Blue) should only be applied the first time that the noun or term is used in the quest description.
+
+"Accessibility" of a text color is defined using WCAG AAA standards with a background color of #17182D.
+
+A spreadsheet with information on text colors' accessibility with reference to this standard can be found here:
+https://docs.google.com/spreadsheets/d/1QzdlHhY-MfNL4DXdsbeaufQsIHqMIW-x7duTPEqXuMY/edit?usp=sharing
+
+### Quest Size and Shape ###
+
+Larger quests should be reserved for important milestones or high-priority objectives.
+Quests that cover optional content should be smaller.
+
+Quests for the first circuit of each tier should use the gear shape.
+Other quests should either be hexagonal or square. 
+
+### Chapter layout ###
+
+Quest chapters in the "Main Progression" should have a "flow" to them where quests earlier on in the chapter tend to be physically segregated from quests later in the chapter. In most cases, this is implemented by placing earlier quests toward the top of the chapter, and more advanced quests toward the bottom.
+There is no need to have such a "flow" for quest chapters in "Guides and Help".
+
+Most quest chapters in the "Main Progression" have a sidebar-like arrangement of several quests that are visually separate from the main quest graph. This area is reserved for quests that provide information on a feature or features that become available to the player earlier than they may be relevant or necessary. This ambiguity in when the quest's information becomes necessary to the player is why the quest should be separated from the main graph: it decouples the quest from any particular point in progression, providing an indication to the player that they should take more agency in deciding when they choose to read the quest.
+
+### Quest Links and dependency relationships ###
+
+All quests should have at least one dependency except the quests in the "dependencies" chapter and the first quest in Genesis.
+
+Some quests may be helpful to have in multiple chapters. Quest Links are used to accomplish this.
+1. If a quest is needed in multiple "Main Progression" chapters, then the quest should be present in the earliest of those chapters and a quest link made in all subsequent chapters.
+2. If a quest is needed in both "Main Progression" and "Guides & Help" chapters, then the quest should be present in the "Guides & Help" chapter and quest links made in any "Main Progression" chapters.
+3. No quest should be needed in more than one "Guides & Help" chapter.
+
+## Things to Watch Out For ##
 
 ### Config Overrides ###
 
@@ -157,5 +216,5 @@ It's easy to forget, but mod updates can break as many things as they fix - don'
 PERFORM THOROUGH CHECKS BEFORE UPDATING:
 | Mod | Problems that result from updating |
 | ------------- | ------------- |
-| HammerLib  | Causes datapack errors when loading into existing worlds |
-| Solar Flux Reborn  | Depends on an updated HammerLib |
+| HammerLib | Causes datapack errors when loading into existing worlds |
+| Solar Flux Reborn | Depends on an updated HammerLib |
