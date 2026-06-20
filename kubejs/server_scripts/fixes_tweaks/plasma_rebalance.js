@@ -45,6 +45,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.plasma_generator("beryllium")
         .inputFluids("gtceu:beryllium_plasma 1")
         .outputFluids("gtceu:beryllium 1")
-        .EUt(-GTValues.V[GTValues.IV])
+        .EUt(-GTValues.V[GTValues.EV])
         .duration(0.8 * 20)
 })
