@@ -10,10 +10,11 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(GTValues.VHA[GTValues.HV])
 
+    // Would like to make this a mixer recipe but Mixers only have 2 fluid slots
     event.recipes.gtceu.chemical_reactor("chloroacetic_mixture")
         .notConsumableFluid("gtceu:acetic_anhydride 500")
         .inputFluids("gtceu:acetic_acid 1000", "gtceu:chlorine 3000")
-        .outputFluids("gtceu:chloroacetic_mixture 1000")
+        .outputFluids("gtceu:chloroacetic_mixture 2000")
         .duration(20)
         .EUt(GTValues.VA[GTValues.ZPM])
 
@@ -32,50 +33,18 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacetate")
+    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate")
         .notConsumableFluid("gtceu:fluoroantimonic_acid 2000")
-        .inputFluids("gtceu:ethanol 1000")
+        .inputFluids("gtceu:ethanol 1000", "gtceu:formaldehyde 1000")
         .itemInputs("gtceu:cyanoacetic_acid_dust")
-        .outputFluids("gtceu:ethyl_cyanoacetate 1000", "minecraft:water 1000")
-        .duration(360)
+        .outputFluids("gtceu:ethyl_cyanoacrylate 1000", "minecraft:water 2000")
+        .duration(380)
         .EUt(GTValues.VA[GTValues.LuV])
-
-    event.recipes.gtceu.chemical_reactor("uncracked_ethyl_cyanoacrylate")
-        .inputFluids("gtceu:ethyl_cyanoacetate 1000", "gtceu:formaldehyde 1000")
-        .outputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "minecraft:water 1000")
-        .duration(800)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    // Cracking recipes - CR
-    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate_hydro")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 500", "gtceu:hydrogen 3000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 250")
-        .duration(160)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate_steam")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "gtceu:steam 1000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 500")
-        .duration(240)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // Cracking recipes - Cracker
-    event.recipes.gtceu.cracker("ethyl_cyanoacrylate_hydro")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "gtceu:hydrogen 6000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 1000")
-        .duration(160)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.cracker("ethyl_cyanoacrylate_steam")
-        .inputFluids("gtceu:uncracked_ethyl_cyanoacrylate 1000", "gtceu:steam 1000")
-        .outputFluids("gtceu:ethyl_cyanoacrylate 1000")
-        .duration(240)
-        .EUt(GTValues.VA[GTValues.HV])
 
     // Polymerization recipe
     event.recipes.gtceu.chemical_reactor("polyethyl_cyanoacrylate")
-        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 100, 0)
-        .inputFluids("gtceu:ethyl_cyanoacrylate 144", "minecraft:water 1000")
+        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 500, 0)
+        .inputFluids("gtceu:ethyl_cyanoacrylate 144", "minecraft:water 200")
         .outputFluids("gtceu:polyethyl_cyanoacrylate 144")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
@@ -83,7 +52,15 @@ ServerEvents.recipes(event => {
     // Polymerization recipe with distilled water
     event.recipes.gtceu.chemical_reactor("polyethyl_cyanoacrylate_distilled")
         .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 100, 0)
-        .inputFluids("gtceu:ethyl_cyanoacrylate 96", "gtceu:distilled_water 1000")
+        .inputFluids("gtceu:ethyl_cyanoacrylate 96", "gtceu:distilled_water 100")
+        .outputFluids("gtceu:polyethyl_cyanoacrylate 144")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    // Polymerization recipe with the moisture in the air like IRL
+    event.recipes.gtceu.chemical_reactor("polyethyl_cyanoacrylate_air")
+        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 100, 0)
+        .inputFluids("gtceu:ethyl_cyanoacrylate 144", "gtceu:air 1000")
         .outputFluids("gtceu:polyethyl_cyanoacrylate 144")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
@@ -123,4 +100,12 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x gtceu:petri_dish")
         .duration(0.5 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Glue from ECA
+    event.recipes.gtceu.mixer("glue_from_ethyl_cyanoacrylate")
+        .inputFluids("gtceu:ethyl_cyanoacrylate 2000")
+        .itemInputs("gtceu:small_silicon_dioxide_dust")
+        .outputFluids("gtceu:glue 10000")
+        .duration(3 * 20)
+        .EUt(GTValues.VA[GTValues.ULV])
 })

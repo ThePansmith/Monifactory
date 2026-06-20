@@ -9,9 +9,10 @@ GTCEuStartupEvents.craftingComponents(event => {
         UEV: "kubejs:extradimensional_processor_mainframe"
     })
 
-    // Make LuV+ electrolyzer wires not osmium for funsies :)
+    // Make IV+ electrolyzer wires not all osmium for funsies :)
     event.setMaterialEntries("wire_single", {
-        LuV: "wireGtSingle:vanadium_gallium",
+        IV: "wireGtSingle:neptunium_palladium_aluminium",
+        LuV: "wireGtSingle:osmium",
         ZPM: "wireGtSingle:naquadah_alloy",
         UV: "wireGtSingle:cryococcus",
         UHV: "wireGtSingle:omnium",

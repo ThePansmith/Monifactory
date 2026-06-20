@@ -66,13 +66,46 @@ ServerEvents.recipes(event => {
         event.replaceInput({ id: `${value}`}, "gtceu:neutronium_plate", "gtceu:manyullyn_plate" )
     })
 
+    // Fortunately, no need to fix Quantum Chest/Tank materialInfos because the difference is too small to affect recycling recipes
+    // Unfortunately, these changes don't affect items or blocks that use these as ingredients. There's not any neatly scalable way to fix them either.
+    $ItemMaterialData.clearMaterialInfo(GTBlocks.MACHINE_CASING_UHV.asItem())
+    $ItemMaterialData.clearMaterialInfo(GTBlocks.HERMETIC_CASING_UHV.asItem())
+    $ItemMaterialData.clearMaterialInfo(GTMachines.HULL[GTValues.UHV].item)
+    $ItemMaterialData.clearMaterialInfo(Item.of("gtceu:uhv_quantum_chest"))
+    $ItemMaterialData.clearMaterialInfo(Item.of("gtceu:uhv_quantum_tank"))
+    $ItemMaterialData.registerMaterialInfo(GTBlocks.MACHINE_CASING_UHV.asItem(), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 8),
+        $MaterialStack.EMPTY
+    ))
+    $ItemMaterialData.registerMaterialInfo(GTBlocks.HERMETIC_CASING_UHV.asItem(), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 8),
+        new $MaterialStack(GTMaterials.Duranium, GTValues.M * 6)
+    ))
+    $ItemMaterialData.registerMaterialInfo(GTMachines.HULL[GTValues.UHV].item, new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 8),
+        new $MaterialStack(GTMaterials.Rubber, GTValues.M * 2),
+        new $MaterialStack(GTMaterials.Europium, GTValues.M)
+    ))
+    $ItemMaterialData.registerMaterialInfo(Item.of("gtceu:uhv_quantum_chest"), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.UraniumRhodiumDinaquadide, GTValues.M * 16),
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 11),
+        new $MaterialStack(GTMaterials.NaquadahAlloy, GTValues.M * 8),
+        new $MaterialStack(GTMaterials.Rubber, GTValues.M * 6)
+    ))
+    $ItemMaterialData.registerMaterialInfo(Item.of("gtceu:uhv_quantum_tank"), new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.Americium, GTValues.M * 16),
+        new $MaterialStack(GTMaterials.UraniumRhodiumDinaquadide, GTValues.M * 16),
+        new $MaterialStack(GTMaterials.NaquadahAlloy, GTValues.M * 12),
+        new $MaterialStack(GTMaterials.get("manyullyn"), GTValues.M * 10),
+    ))
+
     const hullMaterials = [
         { tier: "uev", material1: "gtceu:infinity", material2: "monilabs:sculk_bioalloy", wire: "darconite_single_cable", plastic: "polyethyl_cyanoacrylate" },
         { tier: "max", material1: "gtceu:monium", material2: "gtceu:meta_null", wire: "monium_single_wire", plastic: "polyether_ether_ketone" },
     ]
 
     hullMaterials.forEach((value) => {
-        event.shaped(`gtceu:${value.tier}_machine_casing`, [
+        event.recipes.gtceu.shaped(`gtceu:${value.tier}_machine_casing`, [
             "QPQ",
             "PWP",
             "QPQ"
@@ -80,7 +113,7 @@ ServerEvents.recipes(event => {
             P: `${value.material1}_plate`,
             Q: `${value.material2}_plate`,
             W: "#forge:tools/wrenches"
-        }).id(`shaped/casing_${value.tier}`)
+        }).id(`gtceu:shaped/casing_${value.tier}`)
 
         event.recipes.gtceu.assembler(`casing_${value.tier}`)
             .itemInputs(`4x ${value.material1}_plate`, `4x ${value.material2}_plate`)

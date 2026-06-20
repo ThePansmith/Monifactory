@@ -93,11 +93,6 @@ global.itemNukeList = [
     "enderio:glider_wing",
     "enderio:nutritious_stick",
 
-    // Ender Storage
-    // TODO: Need to add greggy recipes for these
-    "endertanks:ender_bucket",
-    "enderchests:ender_bag",
-
     // ExtendedAE
     "expatternprovider:silicon_block",
     "expatternprovider:circuit_cutter",
@@ -287,6 +282,7 @@ global.itemNukeList = [
     "thermal:sawdust",
     "thermal:sulfur",
     "thermal:tar",
+    "thermal:tar_block",
     "thermal:refined_fuel_bucket",
     /^thermal:.*_cast$/,
 
@@ -296,7 +292,6 @@ global.itemNukeList = [
     "thermal:machine_pulverizer",
     "thermal:machine_smelter",
     "thermal:machine_centrifuge",
-    "thermal:machine_crucible",
     "thermal:machine_chiller",
     "thermal:machine_refinery",
     "thermal:machine_pyrolyzer",
@@ -434,6 +429,9 @@ global.itemNukeList = [
 
     "nuclearcraft:empty_active_heat_sink",
     /^nuclearcraft:active_[\w_]+_heat_sink$/,
+
+    "nuclearcraft:graphite_block",
+    "nuclearcraft:beryllium_block",
 
     "nuclearcraft:heat_exchanger",
 

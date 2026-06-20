@@ -62,6 +62,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Silver.addFlags(GTMaterialFlags.GENERATE_GEAR)
     GTMaterials.Lead.addFlags(GTMaterialFlags.GENERATE_GEAR)
 
+    // Spring for Thermal Transmission Coil
+    GTMaterials.Silver.addFlags(GTMaterialFlags.GENERATE_SPRING)
+
     // Radioactive materials that get liquid forms and/or a new color
     addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID, 1173);
     GTMaterials.Californium.setMaterialARGB(0x7d0222);
@@ -78,6 +81,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
     addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID, 1324);
     GTMaterials.Americium.setMaterialSecondaryARGB(0x083946);
+
+    // Beryllium Plasma
+    let beryllium_plasma_prop = GTMaterials.Beryllium.getProperty($PropertyKey.FLUID)
+    beryllium_plasma_prop.getStorage().enqueueRegistration($FluidStorageKeys.PLASMA, new $FluidBuilder())
 
     // Liquid Sculk
     let liquid_sculk_prop = new $FluidProperty();
@@ -122,8 +129,8 @@ GTCEuStartupEvents.materialModification(event => {
     // Change materials' components
     GTMaterials.EchoShard.setComponents(GTMaterials.Quartzite.multiply(3), GTMaterials.Sculk.multiply(2))
 
-    GTMaterials.Glowstone.setComponents(GTMaterials.TricalciumPhosphate.multiply(1), GTMaterials.Gold.multiply(1))
-    GTMaterials.Glowstone.setFormula("AuCa3(PO4)2", true)
+    GTMaterials.Glowstone.setComponents(GTMaterials.TricalciumPhosphate.multiply(1), GTMaterials.Gold.multiply(1), GTMaterials.Barite.multiply(1))
+    GTMaterials.Glowstone.setFormula("AuCa3(PO4)2BaSO4", true)
 
     GTMaterials.RhodiumPlatedPalladium.setComponents(GTMaterials.Palladium.multiply(3), GTMaterials.Rhodium.multiply(1), "2x lumium")
     GTMaterials.RhodiumPlatedPalladium.setFormula("Pd3Rh(SnFe)4(CuAg4)2", true)
