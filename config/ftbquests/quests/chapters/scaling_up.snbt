@@ -1976,7 +1976,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "5B04A772005B3D99"
-				item: "gtceu:tungsten_ingot"
+				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
 			title: "{moni.quest.3B3F46345D39CAE2.title}"
@@ -1984,7 +1984,7 @@
 			y: 8.75d
 		}
 		{
-			dependencies: ["3B3F46345D39CAE2"]
+			dependencies: ["6DC635766CD40FFF"]
 			description: [
 				"{moni.quest.14F1FF4656693711.description1}"
 				""
@@ -2004,7 +2004,7 @@
 			}]
 			title: "{moni.quest.14F1FF4656693711.title}"
 			x: 7.5d
-			y: 6.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
@@ -2380,7 +2380,10 @@
 			y: -0.25d
 		}
 		{
-			dependencies: ["3B3F46345D39CAE2"]
+			dependencies: [
+				"3B3F46345D39CAE2"
+				"6DC635766CD40FFF"
+			]
 			description: [
 				"{moni.quest.634E056463ED1532.description1}"
 				""
@@ -2635,8 +2638,8 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.5d
+			x: 12.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["634E056463ED1532"]
@@ -3417,7 +3420,7 @@
 				}
 			]
 			x: 6.0d
-			y: 4.25d
+			y: 7.0d
 		}
 		{
 			dependencies: [
