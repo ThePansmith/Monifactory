@@ -139,6 +139,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
         .addMaterialInfo(true)
 
+    // Fortunately, no need to fix materialInfos because the difference is too small to affect recycling recipes
     event.replaceInput({ id: /^gtceu:shaped\/\w+_arc_/, not: [{id: "gtceu:shaped/lv_arc_furnace"}, {id: "gtceu:shaped/mv_arc_furnace"}, {id: "gtceu:shaped/hv_arc_furnace"}] }, "gtceu:graphite_dust", "kubejs:graphite_electrode")
 
 })

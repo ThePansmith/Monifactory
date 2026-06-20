@@ -483,9 +483,9 @@ StartupEvents.registry("item", event => {
     event.createCustom("thermal:upgrade_augment_3",() =>new $AugmentItem(new $Item$Properties(), {Type: "Upgrade", BaseMod: 12}))
 
     // Advanced Thermal Storage augments
-    event.createCustom("thermal:rf_coil_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFMax: 8, RFXfer: 8}))
-    event.createCustom("thermal:rf_coil_storage_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFMax: 10, RFXfer: 4}))
-    event.createCustom("thermal:rf_coil_xfer_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFMax: 4, RFXfer: 10}))
+    event.createCustom("thermal:rf_coil_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFXfer: 8, RFMax: 8}))
+    event.createCustom("thermal:rf_coil_storage_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFXfer: 4, RFMax: 10}))
+    event.createCustom("thermal:rf_coil_xfer_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFXfer: 10, RFMax: 4}))
     event.createCustom("thermal:fluid_tank_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "Fluid", FluidMax: 10}))
 
     // EnderIO Capacitors
@@ -593,9 +593,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/lines/netherite/netherite_shards")
     event.create("reactive_netherite_cluster")
         .texture("kubejs:item/lines/netherite/reactive_netherite_cluster")
-    event.create("activated_netherite_scrap")
-        .texture("kubejs:item/lines/netherite/pure_netherite_scrap")
-        .glow(true);
     event.create("inert_nether_compound_ingot")
         .texture("kubejs:item/lines/netherite/inert_nether_compound_ingot")
 

@@ -33,7 +33,8 @@ deprecateFluid("gtceu:saline_antisceptic", "gtceu:saline_antiseptic", "Saline An
 deprecateItem("kubejs:diamond_lattice", "6x minecraft:diamond", "Diamond Lattice")
 deprecateItem("kubejs:purified_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Purified Ancient Debris Dust")
 deprecateItem("kubejs:processed_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Processed Ancient Debris Dust")
-deprecateItem("kubejs:inert_netherite_scrap", "kubejs:activated_netherite_scrap", "Inert Netherite Scrap")
+deprecateItem("kubejs:inert_netherite_scrap", "kubejs:reactive_netherite_cluster", "Inert Netherite Scrap")
+deprecateItem("kubejs:activated_netherite_scrap", "kubejs:reactive_netherite_cluster", "Activated Netherite Scrap")
 
 // Matter Circuits
 deprecateItem("kubejs:matter_processing_unit", "kubejs:optical_processing_unit", "Matter Processing Unit")

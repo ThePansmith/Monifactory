@@ -89,12 +89,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.extendedcrafting.combination(
-        "kubejs:activated_netherite_scrap",
-        "kubejs:reactive_netherite_cluster", ["4x gtceu:activated_carbon_dust", "4x gtceu:void_gem"],
-        32000000, 1600000
-    )
-
     event.recipes.gtceu.mixer("nether_conduit_dust")
         .itemInputs("3x kubejs:pyrotheum_dust", "4x gtceu:netherrack_dust", "2x enderio:withering_powder")
         .itemOutputs("9x gtceu:nether_conduit_dust")
@@ -102,7 +96,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.forming_press("inert_nether_compound_ingot")
-        .itemInputs("gtceu:hot_ardite_ingot", "3x gtceu:nether_conduit_dust", "4x kubejs:primal_mana", "4x kubejs:activated_netherite_scrap", "4x minecraft:gold_ingot")
+        .itemInputs("gtceu:hot_ardite_ingot", "3x gtceu:nether_conduit_dust", "4x kubejs:primal_mana", "4x kubejs:reactive_netherite_cluster", "4x minecraft:gold_ingot", "16x gtceu:activated_carbon_dust")
         .itemOutputs("kubejs:inert_nether_compound_ingot")
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])

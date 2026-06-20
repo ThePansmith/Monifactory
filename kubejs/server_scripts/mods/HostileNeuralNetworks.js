@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
             .itemInputs("8x kubejs:pulsating_dust")
             .inputFluids(Fluid.of("gtceu:polybenzimidazole", 144))
             .itemOutputs("64x hostilenetworks:prediction_matrix")
-            .duration(200)
+            .duration(20)
             .EUt(GTValues.VA[GTValues.IV])
 
         // IMPOSSIBLE REALM DATA

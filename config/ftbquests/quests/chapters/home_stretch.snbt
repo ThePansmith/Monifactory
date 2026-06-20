@@ -18,8 +18,8 @@
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
 			shape: "hexagon"
-			x: 0.75d
-			y: 2.0d
+			x: 1.0d
+			y: 2.25d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
@@ -119,6 +119,13 @@
 			shape: "hexagon"
 			x: 5.5d
 			y: -3.75d
+		}
+		{
+			id: "371D81F7157CD75A"
+			linked_quest: "5911900438648430"
+			shape: "hexagon"
+			x: -6.0d
+			y: -8.75d
 		}
 	]
 	quests: [
@@ -314,30 +321,83 @@
 					count: 44L
 					id: "5DEC122EDABB5D6F"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 26L
 					id: "53593263F0B2BD34"
-					item: { Count: 26, id: "gtceu:omnium_block" }
+					item: "gtceu:omnium_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "287AEC44CC7A8A38"
-					item: { Count: 18, id: "gtceu:vibration_safe_casing" }
+					item: "gtceu:vibration_safe_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "11FAD5991B3199F5"
-					item: { Count: 13, id: "gtceu:enderium_block" }
+					item: "gtceu:enderium_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 17L
 					id: "081CB54FA393231E"
-					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
+					item: "ae2:quartz_vibrant_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "597971EBEA5EEED3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:parallel_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "57970C5F2A8D3AA0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3959605B34EE33AF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7CA49671A871458E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -350,13 +410,14 @@
 				"0ED041E2114F7C84"
 				"36DF9A3674E1212C"
 				"415F2703877FBE21"
+				"0E9B96B17D140B99"
 			]
 			description: [
 				"{moni.quest.1C861E0C62D5B97D.description1}"
 				""
-				"{moni.quest.1E36AFB19932C805.description2}"
-				""
 				"{moni.quest.1C861E0C62D5B97D.description2}"
+				""
+				"{moni.quest.1C861E0C62D5B97D.description3}"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
@@ -395,30 +456,83 @@
 					count: 44L
 					id: "6DCABB6D6F8FC3E5"
 					item: "kubejs:dark_steel_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 26L
 					id: "426F764AA56C5A81"
 					item: "gtceu:omnium_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "3BE7B0A7D3A77CD5"
 					item: "gtceu:shock_proof_cutting_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "7C30A02C61FE6077"
 					item: "gtceu:energetic_alloy_block"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 17L
 					id: "77269C9328705964"
-					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
+					item: "ae2:quartz_vibrant_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0437D37AB4B199BC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:parallel_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3368B4295FE2E6EB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "61809B879181AE14"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "45A9D9A28CDD88A4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -449,6 +563,7 @@
 			dependencies: [
 				"4C0BCA64D5B409F2"
 				"786AECA42F53B45A"
+				"0E9B96B17D140B99"
 			]
 			description: [
 				"{moni.quest.73A44214C2B44D53.description1}"
@@ -577,7 +692,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0DE1BF1648CAF6D6.title}"
-			x: 0.5d
+			x: 1.0d
 			y: -1.0d
 		}
 		{
@@ -617,13 +732,12 @@
 				}
 			]
 			title: "{moni.quest.1E36AFB19932C805.title}"
-			x: 0.5d
+			x: 1.0d
 			y: 0.25d
 		}
 		{
-			dependencies: ["0E9B96B17D140B99"]
+			dependencies: ["5911900438648430"]
 			description: ["{moni.quest.5A07988F5AD20A06.description1}"]
-			hide_dependency_lines: true
 			id: "5A07988F5AD20A06"
 			shape: "hexagon"
 			tasks: [{
@@ -691,8 +805,8 @@
 				item: "kubejs:null_infused_circuit_board"
 				type: "item"
 			}]
-			x: 0.75d
-			y: 3.5d
+			x: 1.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["33F610CF136278AE"]
@@ -713,6 +827,7 @@
 				"4C0BCA64D5B409F2"
 				"7EE334D3AA1E68ED"
 				"601A47A727AC3BD2"
+				"0E9B96B17D140B99"
 			]
 			description: [
 				"{moni.quest.040B3FCD82533BD9.description1}"
@@ -729,7 +844,7 @@
 			}]
 			title: "{moni.quest.040B3FCD82533BD9.title}"
 			x: -2.0d
-			y: 2.0d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -748,7 +863,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["07057CDE4E021BA7"]
+			dependencies: [
+				"07057CDE4E021BA7"
+				"0E9B96B17D140B99"
+			]
 			description: [
 				"{moni.quest.4E4F03C44623A85D.description1}"
 				""
@@ -764,28 +882,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4E4F03C44623A85D.title}"
-			x: -0.75d
-			y: 0.25d
-		}
-		{
-			dependencies: ["254D6D1470BC197E"]
-			description: [
-				"{moni.quest.5911900438648430.description1}"
-				""
-				"{moni.quest.5911900438648430.description2}"
-			]
-			hide_dependency_lines: true
-			id: "5911900438648430"
-			shape: "hexagon"
-			subtitle: "{moni.quest.5911900438648430.subtitle}"
-			tasks: [{
-				id: "6A6C0D5FFB29C9E1"
-				item: "gtceu:polyethyl_cyanoacrylate_plate"
-				type: "item"
-			}]
-			title: "{moni.quest.5911900438648430.title}"
-			x: -6.0d
-			y: -1.75d
+			x: -0.25d
+			y: 0.75d
 		}
 		{
 			dependencies: ["61301FBD825F8280"]
@@ -864,7 +962,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["6A6983C64374366C"]
+			dependencies: [
+				"6A6983C64374366C"
+				"6F9041F256F517A3"
+			]
 			description: [
 				"{moni.quest.3E45F67F09B6156B.description1}"
 				""
@@ -882,7 +983,7 @@
 			size: 1.5d
 			subtitle: "{moni.quest.3E45F67F09B6156B.subtitle}"
 			tasks: [{
-				id: "5152715C85EFA712"
+				id: "279C89B6CCA0C22E"
 				item: "monilabs:prismatic_crucible"
 				type: "item"
 			}]
@@ -952,7 +1053,6 @@
 				"22E50A6923EBF5CB"
 				"01E542E1C9DAF5B4"
 				"07E757AAA1C7435D"
-				"0E9B96B17D140B99"
 				"113E9543ADB1666B"
 			]
 			description: [
@@ -1050,8 +1150,8 @@
 				}
 			]
 			title: "{moni.quest.7EE334D3AA1E68ED.title}"
-			x: -0.75d
-			y: 2.0d
+			x: -0.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["3E45F67F09B6156B"]
