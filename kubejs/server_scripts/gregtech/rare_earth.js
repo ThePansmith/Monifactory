@@ -113,6 +113,7 @@ ServerEvents.recipes(event => {
         .duration(120).EUt(30720)
         .blastFurnaceTemp(9001)
 
+    // Wet the drys
     event.recipes.gtceu.large_chemical_reactor("oxalic_acid_dihydrate")
         .notConsumable(doHarderProcessing ? "gtceu:vanadium_pentoxide_dust" : "gtceu:vanadium_dust")
         .itemInputs("minecraft:sugar")
@@ -121,6 +122,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:nitric_oxide 12000")
         .duration(600).EUt(30)
 
+    // Dry the wets
     event.recipes.gtceu.electric_blast_furnace("oxalic_acid")
         .itemInputs("gtceu:oxalic_acid_dihydrate_dust")
         .itemOutputs("gtceu:oxalic_acid_dust")
@@ -129,6 +131,15 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(120)
 
+    // Wet the drys again
+    event.recipes.gtceu.chemical_reactor("kubejs:oxalic_acid_solution")
+        .itemInputs("gtceu:oxalic_acid_dust")
+        .inputFluids(Fluid.of("minecraft:water", 1000))
+        .outputFluids(Fluid.of("gtceu:oxalic_acid_solution", 1000))
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // New electrolysis recipe to reflect Sugar's altered formula
     event.recipes.gtceu.electrolyzer("sugar_electrolysis")
         .itemInputs("23x minecraft:sugar")
         .itemOutputs("12x gtceu:carbon_dust")
