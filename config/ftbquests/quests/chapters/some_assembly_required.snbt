@@ -100,13 +100,6 @@
 			y: 2.75d
 		}
 		{
-			id: "5522298B1FC30B2B"
-			linked_quest: "2F04FA8D3E15E375"
-			size: 2.0d
-			x: 2.0d
-			y: -6.5d
-		}
-		{
 			id: "618C6CA76FB63461"
 			linked_quest: "6A76B3DCA599B9B5"
 			shape: "hexagon"
@@ -132,8 +125,8 @@
 			linked_quest: "27A80F018F59EF1E"
 			shape: "hexagon"
 			size: 1.1d
-			x: 14.025d
-			y: 2.75d
+			x: 14.75d
+			y: 4.675d
 		}
 		{
 			id: "171E1089E43EE76B"
@@ -176,25 +169,28 @@
 					type: "item"
 				}
 				{
-					count: 47L
+					count: 49L
 					id: "078732970112DE64"
 					item: "monilabs:microverse_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 36L
 					id: "75F7637F2A28B88D"
 					item: "gtceu:tempered_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "47AE5E0A855FB7CF"
 					item: "gtceu:assembly_line_grating"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "42F1327485BA2D3A"
+					id: "32E17E2541B4A6AA"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -202,12 +198,43 @@
 							value: "moni:input_bus"
 						}
 					}
-					title: "{moni.task.42F1327485BA2D3A}"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "16C7CAB84E336FD7"
-					item: "gtceu:hv_output_bus"
+					id: "2BFE29E8F92DF014"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6986DF3E1F245C79"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "188AD96703592BAB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -348,46 +375,41 @@
 					count: 29L
 					id: "7497F00CED97F4DA"
 					item: "gtceu:solid_machine_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "65DBFA3899B0BF69"
 					item: "gtceu:assembly_line_unit"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "034A6892C4736EE2"
 					item: "gtceu:assembly_line_grating"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 20L
 					id: "13EA465FE104347C"
 					item: "gtceu:laminated_glass"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "7ED2599D4180E9A6"
-					item: { Count: 9, id: "gtceu:ulv_input_bus" }
-					type: "item"
-				}
-				{
-					id: "393A504BEBE2900C"
-					item: "gtceu:ulv_output_bus"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "6D2A69F8627ECAB4"
-					item: { Count: 10, id: "gtceu:assembly_line_casing" }
+					item: "gtceu:assembly_line_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1CAF65797B20AC6F"
 					item: "gtceu:data_access_hatch"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -412,6 +434,7 @@
 							]
 						}
 					}
+					optional_task: true
 					title: "{moni.task.387214B8A372DF36}"
 					type: "item"
 				}
@@ -592,7 +615,7 @@
 				""
 				"{moni.quest.0508D3CCB6C876A3.description4}"
 			]
-			icon: "gtceu:naquadria_dust"
+			icon: "gtceu:enriched_naquadah_dust"
 			id: "0508D3CCB6C876A3"
 			rewards: [{
 				id: "67B0A4C33D2EDC21"
@@ -600,30 +623,23 @@
 				type: "item"
 			}]
 			size: 1.5d
-			tasks: [{
-				id: "15E690653306B02C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:enriched_naquadah_dust"
-							}
-							{
-								Count: 1b
-								id: "gtceu:trinium_dust"
-							}
-							{
-								Count: 1b
-								id: "gtceu:naquadria_dust"
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "15E690653306B02C"
+					item: "gtceu:trinium_sulfide_dust"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "35C5447F3A7F3A87"
+					item: "gtceu:enriched_naquadah_sulfate_dust"
+					type: "item"
+				}
+				{
+					id: "1A54942E18E330D7"
+					item: "gtceu:naquadria_sulfate_dust"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.0508D3CCB6C876A3.title}"
 			x: 4.25d
 			y: 6.75d
@@ -716,53 +732,17 @@
 					type: "item"
 				}
 				{
-					count: 2L
-					id: "696B8CE2A4872407"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:input_hatch"
-						}
-					}
-					title: "{moni.task.696B8CE2A4872407}"
-					type: "item"
-				}
-				{
-					id: "3901C623BB44467A"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:output_hatch"
-						}
-					}
-					title: "{moni.task.3901C623BB44467A}"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "2CC02870B2315C8C"
-					item: "gtceu:luv_energy_input_hatch"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "3B725EE9F9263150"
-					item: "gtceu:superconducting_coil"
-					type: "item"
-				}
-				{
 					count: 48L
 					id: "71DEB9E939BE5342"
 					item: "gtceu:fusion_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 31L
 					id: "3679617A11A13CF0"
 					item: {
-						Count: 31
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -777,6 +757,46 @@
 							]
 						}
 					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3B725EE9F9263150"
+					item: "gtceu:superconducting_coil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "696B8CE2A4872407"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3901C623BB44467A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2CC02870B2315C8C"
+					item: "gtceu:luv_energy_input_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -824,6 +844,7 @@
 				"{moni.quest.2BBAF93506DD79C1.description3}"
 			]
 			hide_dependency_lines: true
+			icon: "gtceu:active_transformer"
 			id: "2BBAF93506DD79C1"
 			rewards: [{
 				id: "3248AEB7F7568507"
@@ -831,45 +852,71 @@
 				type: "item"
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "4690FCEE96F1452A"
-				item: "gtceu:active_transformer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4690FCEE96F1452A"
+					item: "gtceu:active_transformer"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "64797C42E28DEEA5"
+					item: "gtceu:high_power_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24698CBDDEC3C8FB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "721634118A52925F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7995224A01F711F0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:laser_source_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36A9BAA9763B14AA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:laser_target_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.2BBAF93506DD79C1.title}"
-			x: 4.0d
-			y: -9.5d
-		}
-		{
-			dependencies: [
-				"4DB622A78605A2EB"
-				"05F7C3F397B329F5"
-			]
-			description: [
-				"{moni.quest.36B1B083B4FA439F.description1}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description2}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description3}"
-				""
-				"{moni.quest.36B1B083B4FA439F.description4}"
-			]
-			hide_dependency_lines: true
-			id: "36B1B083B4FA439F"
-			rewards: [{
-				id: "74137AF1D413A38D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "07359B5EBA5AA568"
-				item: "gtceu:power_substation"
-				type: "item"
-			}]
-			title: "{moni.quest.36B1B083B4FA439F.title}"
-			x: 2.0d
-			y: -9.5d
+			x: 0.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
@@ -903,9 +950,7 @@
 				""
 				"{moni.quest.19C2D208A2FC9968.description3}"
 			]
-			hide_until_deps_visible: true
 			id: "19C2D208A2FC9968"
-			optional: true
 			rewards: [{
 				id: "7003E20DD8EE9891"
 				item: "kubejs:moni_quarter"
@@ -1092,8 +1137,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.20745EB9A695E365.title}"
-			x: 6.0d
-			y: -9.5d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1252,11 +1297,101 @@
 			}]
 			size: 2.0d
 			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
-			tasks: [{
-				id: "68377567726F542C"
-				item: "gtmutils:pterb_machine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "68377567726F542C"
+					item: "gtmutils:pterb_machine"
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "24F2A65FC87AC06E"
+					item: "gtceu:palladium_substation"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 58L
+					id: "0FE1D5A3165173C5"
+					item: "gtceu:high_power_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "1420E116039DDBB5"
+					item: "gtceu:superconducting_coil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6959DC32078B79AF"
+					item: "gtceu:europium_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0AEC9886FA970981"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "307AC340B102FE7C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24D051F83867B268"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C7552A6B8056F1E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:laser_source_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0262061AAB1B8E6E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:laser_target_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{moni.quest.069D243B809E0D5D.title}"
 			x: 6.0d
 			y: -6.5d
@@ -1457,29 +1592,6 @@
 			title: "{moni.quest.1EA5F30C5ACADBA9.title}"
 			x: 10.5d
 			y: 7.25d
-		}
-		{
-			dependencies: ["27A80F018F59EF1E"]
-			description: ["{moni.quest.62C85A1F451C4855.description3}"]
-			id: "3E7250EFBFF03D89"
-			rewards: [{
-				id: "48E6352BC7E3A682"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "3A145740391DF5FD"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 14.75d
-			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -1702,24 +1814,58 @@
 				{
 					id: "2B4D7DC825D1307C"
 					item: "gtceu:data_transmitter_hatch"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "5841BA5408F05A8A"
+					item: "gtceu:computer_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3F2108F11943B202"
+					item: "gtceu:high_power_casing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "7262E610DF6D4DD7"
 					item: "gtceu:computer_heat_vent"
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 3L
-					id: "5841BA5408F05A8A"
-					item: "gtceu:computer_casing"
+					id: "6CE26DC41EC163F8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "3F2108F11943B202"
-					item: "gtceu:high_power_casing"
+					id: "51E6DAAB5ABEDDEC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4FC7A92C7326FB27"
+					item: "gtceu:basic_data_access_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1825,6 +1971,8 @@
 				"{moni.quest.63C3077124BC81FD.description2}"
 				""
 				"{moni.quest.63C3077124BC81FD.description3}"
+				""
+				"{moni.quest.63C3077124BC81FD.description4}"
 			]
 			icon: "gtceu:germanium_dust"
 			id: "63C3077124BC81FD"

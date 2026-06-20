@@ -143,8 +143,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
-        [1000, 1800, "gtceu:cetane_boosted_diesel"],
-        [800, 1800, "gtceu:gasoline"],
+        [500, 1600, "gtceu:cetane_boosted_diesel"],
+        [400, 1600, "gtceu:gasoline"],
         [250, 1200, "gtceu:high_octane_gasoline"],
         [150, 900, "gtceu:jean_gasoline"]
     ]
@@ -417,8 +417,6 @@ ServerEvents.recipes(event => {
         Z: "gtceu:zinc_foil",
         L: "gtceu:lead_plate"
     })
-    // Making ABS take aluminium rather than osmium so it's obtainable in EV
-    event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
     // Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter("kubejs:resonating_redstone")
@@ -692,6 +690,72 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(7)
 
+    // Wither Gas consumption
+    event.recipes.gtceu.gas_turbine("wither_gas_generator")
+        .inputFluids("gtceu:wither_gas 1")
+        .duration(140)
+        .EUt(-GTValues.V[GTValues.LV])
+
+    // Wither Gas
+    event.recipes.gtceu.large_chemical_reactor("wither_gas")
+        .notConsumable("minecraft:nether_star")
+        .itemInputs("enderio:withering_powder", "2x gtceu:small_calcium_perchlorate_dust")
+        .inputFluids("gtceu:lpg 8000", "gtceu:nitrobenzene 10000", "gtceu:overbased_magnesium_sulfonate 500")
+        .outputFluids("gtceu:wither_gas 20000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // Calcium Perchlorate alternate recipe
+    event.recipes.gtceu.chemical_reactor("calcium_perchlorate_from_calcium_chloride")
+        .notConsumable("gtceu:rutile_dust")
+        .itemInputs("3x gtceu:calcium_chloride_dust")
+        .inputFluids("gtceu:oxygen 8000")
+        .itemOutputs("11x gtceu:calcium_perchlorate_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Tetrapropene (ehehehe environmental destruction be damned)
+    event.recipes.gtceu.chemical_reactor("tetrapropylene_from_propene")
+        .inputFluids("gtceu:propene 4000")
+        .outputFluids("gtceu:tetrapropylene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(4)
+
+    // Alkylbenzene
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_benzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:benzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000")
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_ethylbenzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:ethylbenzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:ethylene 1000")
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_cumene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:cumene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:propene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Overbased Magnesium Sulfonate
+    event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
+        .itemInputs("gtceu:magnesium_dust")
+        .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrogen 1750")
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium_chloride")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
+        .itemInputs("3x gtceu:magnesium_chloride_dust")
+        .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrochloric_acid 1750")
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV])
+
     // Clay synthesis from Dust
     event.recipes.gtceu.forge_hammer("dust")
         .itemInputs("minecraft:sand")
@@ -899,9 +963,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("7x gtceu:tantalum_pentoxide_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
-
-    // Re-tier Palladium Substation to mid-EV, before Platline
-    event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
 
     // Re-tier the Gregicality multiblocks of IV to be after platline Pt1, but before platline pt2
     event.replaceInput({ id: "gtceu:shaped/large_distillery"}, "gtceu:iridium_large_fluid_pipe", "gtceu:tungsten_carbide_large_fluid_pipe")
