@@ -212,7 +212,6 @@ global.itemNukeList = [
     // LaserIO
     "laserio:logic_chip",
     "laserio:logic_chip_raw",
-    /^laserio:energy_overclocker_card_tier_[5-9]/,
 
     // Megacells
     "megacells:mega_crafting_accelerator",
