@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             B: "#gtceu:batteries/hv"
         })
     } else {
-        replaceInput({ id: /^spatialtoolscmp:/}, "minecraft:nether_star", "gtceu:mv_emitter")
+        event.replaceInput({ id: /^spatialtoolscmp:/}, "minecraft:nether_star", "gtceu:mv_emitter")
     }
 
     // Atomic reconstruct Building Gadgets and Spatial tools into one another

@@ -314,8 +314,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer("luminessence")
         .itemInputs("minecraft:redstone", "minecraft:glowstone_dust", "2x gtceu:aluminium_dust")
-        .inputFluids("gtceu:phosphoric_acid 4000")
-        .itemOutputs("8x extendedcrafting:luminessence")
+        .inputFluids("gtceu:phosphoric_acid 2000")
+        .itemOutputs("6x extendedcrafting:luminessence")
         .duration(20)
         .EUt(30)
 })

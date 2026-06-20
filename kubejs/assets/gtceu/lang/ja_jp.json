@@ -587,5 +587,8 @@
     "material.gtceu.red_garnet_slurry": "Red Garnet Slurry",
     "__GEM_SLURRIES__.footer": "================",
     "__GEM_SLURRIES__.header": "================",
-    "material.gtceu.pyrope_slurry": "Pyrope Slurry"
+    "material.gtceu.pyrope_slurry": "Pyrope Slurry",
+    "material.gtceu.emerald_slurry": "Emerald Slurry",
+    "material.gtceu.anorthite_slurry": "Anorthite Slurry",
+    "material.gtceu.titanite_slurry": "Titanite Slurry"
 }
