@@ -190,6 +190,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "32E17E2541B4A6AA"
 					item: {
 						Count: 1
@@ -202,6 +203,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2BFE29E8F92DF014"
 					item: {
 						Count: 1
@@ -214,6 +216,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6986DF3E1F245C79"
 					item: {
 						Count: 1
@@ -226,6 +229,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "188AD96703592BAB"
 					item: {
 						Count: 1
@@ -407,6 +411,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1CAF65797B20AC6F"
 					item: "gtceu:data_access_hatch"
 					optional_task: true
@@ -414,16 +419,19 @@
 				}
 				{
 					count: 9L
+					disable_toast: true
 					id: "65BD8613A3E3515C"
 					item: "gtceu:ulv_input_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "794423EB8C96C999"
 					item: "gtceu:ulv_output_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "387214B8A372DF36"
 					item: {
 						Count: 1
@@ -780,6 +788,7 @@
 				}
 				{
 					count: 2L
+					disable_toast: true
 					id: "696B8CE2A4872407"
 					item: {
 						Count: 1
@@ -792,6 +801,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3901C623BB44467A"
 					item: {
 						Count: 1
@@ -877,6 +887,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "24698CBDDEC3C8FB"
 					item: {
 						Count: 1
@@ -889,6 +900,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "721634118A52925F"
 					item: {
 						Count: 1
@@ -901,6 +913,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "7995224A01F711F0"
 					item: {
 						Count: 1
@@ -913,6 +926,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "36A9BAA9763B14AA"
 					item: {
 						Count: 1
@@ -1343,6 +1357,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0AEC9886FA970981"
 					item: {
 						Count: 1
@@ -1355,6 +1370,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "307AC340B102FE7C"
 					item: {
 						Count: 1
@@ -1367,6 +1383,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "24D051F83867B268"
 					item: {
 						Count: 1
@@ -1379,6 +1396,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4C7552A6B8056F1E"
 					item: {
 						Count: 1
@@ -1391,6 +1409,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0262061AAB1B8E6E"
 					item: {
 						Count: 1
@@ -1879,6 +1898,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6CE26DC41EC163F8"
 					item: {
 						Count: 1
@@ -1891,6 +1911,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "51E6DAAB5ABEDDEC"
 					item: {
 						Count: 1
