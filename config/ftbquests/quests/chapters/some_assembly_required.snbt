@@ -413,6 +413,17 @@
 					type: "item"
 				}
 				{
+					count: 9L
+					id: "65BD8613A3E3515C"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "794423EB8C96C999"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
 					id: "387214B8A372DF36"
 					item: {
 						Count: 1
