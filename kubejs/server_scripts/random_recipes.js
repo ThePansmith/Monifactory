@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
     // Nerfed Ender Air distillation - less Tritium
     event.recipes.gtceu.distillation_tower("distill_liquid_ender_air")
         .inputFluids("gtceu:liquid_ender_air 200000")
-        .outputFluids("gtceu:nitrogen_dioxide 130000", "gtceu:deuterium 50000", "gtceu:helium 15000", "gtceu:tritium 2000", "gtceu:krypton 1000", "gtceu:xenon 1000", "gtceu:radon 1000")
+        .outputFluids("gtceu:nitrogen_dioxide 128000", "gtceu:deuterium 50000", "gtceu:helium 15000", "gtceu:tritium 4000", "gtceu:krypton 1000", "gtceu:xenon 1000", "gtceu:radon 1000")
         .chancedOutput("gtceu:ender_pearl_dust", 1000, 0)
         .EUt(GTValues.VA[GTValues.IV])
         .duration(100 * 20)
@@ -143,8 +143,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
-        [1000, 1800, "gtceu:cetane_boosted_diesel"],
-        [800, 1800, "gtceu:gasoline"],
+        [500, 1600, "gtceu:cetane_boosted_diesel"],
+        [400, 1600, "gtceu:gasoline"],
         [250, 1200, "gtceu:high_octane_gasoline"],
         [150, 900, "gtceu:jean_gasoline"]
     ]
@@ -356,36 +356,6 @@ ServerEvents.recipes(event => {
         .duration(25408)
         .EUt(302)
 
-
-    // Ender Chest and Tank (gives the full slot version)
-    event.remove({ output: ["endertanks:ender_tank", "enderchests:ender_chest"] })
-
-    // Chest
-    event.shaped("enderchests:ender_chest", [
-        "ABA",
-        "DED",
-        "AFA"
-    ], {
-        A: "minecraft:blaze_rod",
-        B: "minecraft:white_wool",
-        D: "minecraft:obsidian",
-        E: "gtceu:steel_crate",
-        F: "minecraft:ender_pearl"
-    })
-
-    // Tank
-    event.shaped("endertanks:ender_tank", [
-        "ABA",
-        "DED",
-        "AFA"
-    ], {
-        A: "minecraft:blaze_rod",
-        B: "minecraft:white_wool",
-        D: "minecraft:obsidian",
-        E: "enderio:pressurized_fluid_tank",
-        F: "gtceu:ender_pearl_block"
-    })
-
     // Strings Recipe
     event.shaped("6x minecraft:string", [
         " A ",
@@ -417,12 +387,10 @@ ServerEvents.recipes(event => {
         Z: "gtceu:zinc_foil",
         L: "gtceu:lead_plate"
     })
-    // Making ABS take aluminium rather than osmium so it's obtainable in EV
-    event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
     // Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter("kubejs:resonating_redstone")
-        .itemInputs("minecraft:redstone_block", "kubejs:ender_shard")
+        .itemInputs("4x minecraft:redstone", "kubejs:ender_shard")
         .itemOutputs("kubejs:resonating_crystal")
         .duration(180)
         .EUt(16)
@@ -692,6 +660,72 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(7)
 
+    // Wither Gas consumption
+    event.recipes.gtceu.gas_turbine("wither_gas_generator")
+        .inputFluids("gtceu:wither_gas 1")
+        .duration(140)
+        .EUt(-GTValues.V[GTValues.LV])
+
+    // Wither Gas
+    event.recipes.gtceu.large_chemical_reactor("wither_gas")
+        .notConsumable("minecraft:nether_star")
+        .itemInputs("enderio:withering_powder", "2x gtceu:small_calcium_perchlorate_dust")
+        .inputFluids("gtceu:lpg 8000", "gtceu:nitrobenzene 10000", "gtceu:overbased_magnesium_sulfonate 500")
+        .outputFluids("gtceu:wither_gas 20000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // Calcium Perchlorate alternate recipe
+    event.recipes.gtceu.chemical_reactor("calcium_perchlorate_from_calcium_chloride")
+        .notConsumable("gtceu:rutile_dust")
+        .itemInputs("3x gtceu:calcium_chloride_dust")
+        .inputFluids("gtceu:oxygen 8000")
+        .itemOutputs("11x gtceu:calcium_perchlorate_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Tetrapropene (ehehehe environmental destruction be damned)
+    event.recipes.gtceu.chemical_reactor("tetrapropylene_from_propene")
+        .inputFluids("gtceu:propene 4000")
+        .outputFluids("gtceu:tetrapropylene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(4)
+
+    // Alkylbenzene
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_benzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:benzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000")
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_ethylbenzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:ethylbenzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:ethylene 1000")
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_cumene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:cumene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:propene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Overbased Magnesium Sulfonate
+    event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
+        .itemInputs("gtceu:magnesium_dust")
+        .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrogen 1750")
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium_chloride")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
+        .itemInputs("3x gtceu:magnesium_chloride_dust")
+        .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrochloric_acid 1750")
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV])
+
     // Clay synthesis from Dust
     event.recipes.gtceu.forge_hammer("dust")
         .itemInputs("minecraft:sand")
@@ -807,14 +841,35 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(480)
 
-    // Germanium is used in diodes
-    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_germanium_dust")
+    // Germanium can be used in diodes
+    event.recipes.gtceu.mixer("silicon_germanium_mixing")
+        .itemInputs("4x gtceu:silicon_dust", "1x gtceu:germanium_dust")
+        .itemOutputs("5x gtceu:silicon_germanium_dust")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20)
+
+    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_silicon_germanium_dust")
     event.recipes.gtceu.assembler("germanium_smd_diode")
-        .itemInputs("1x gtceu:small_germanium_dust", "4x gtceu:fine_platinum_wire")
+        .itemInputs("1x gtceu:small_silicon_germanium_dust", "4x gtceu:fine_platinum_wire")
         .inputFluids("gtceu:polyethylene 144")
         .itemOutputs("64x gtceu:smd_diode")
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Germanium fusion
+    event.recipes.gtceu.fusion_reactor("argon_and_silicon_to_germanium")
+        .inputFluids("gtceu:argon 125", "gtceu:silicon 16")
+        .outputFluids("gtceu:germanium 16")
+        .duration(128)
+        .EUt(0.75 * GTValues.V[GTValues.LuV])
+        .fusionStartEU(220000000)
+
+    // No dust mold, sadly
+    event.recipes.gtceu.fluid_solidifier("solidify_germanium_to_dust")
+        .inputFluids("gtceu:germanium 144")
+        .itemOutputs("gtceu:germanium_dust")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     event.recipes.gtceu.fluid_solidifier("petri_dish_borosilicate")
         .notConsumable("gtceu:cylinder_casting_mold")
@@ -879,6 +934,23 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Re-tier Palladium Substation to mid-EV, before Platline
-    event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
+    // Re-tier the Gregicality multiblocks of IV to be after platline Pt1, but before platline pt2
+    event.replaceInput({ id: "gtceu:shaped/large_distillery"}, "gtceu:iridium_large_fluid_pipe", "gtceu:tungsten_carbide_large_fluid_pipe")
+    event.replaceInput({ id: "gtceu:shaped/large_mixer"}, "gtceu:osmiridium_rotor", "gtceu:rhodium_plated_palladium_rotor")
+    event.replaceInput({ id: "gtceu:shaped/large_electromagnet"}, "gtceu:osmium_quadruple_wire", "gtceu:niobium_nitride_quadruple_wire")
+
+    // recipe for Caesium Hydroxide loop
+    event.recipes.gtceu.chemical_reactor("caesium_hydroxide")
+        .itemInputs("gtceu:caesium_dust")
+        .inputFluids("minecraft:water 1000")
+        .itemOutputs("3x gtceu:caesium_hydroxide_dust")
+        .outputFluids("gtceu:hydrogen 1000")
+        .duration(20).EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.fusion_reactor("fuse_iridium_from_tantalum_beryllium")
+        .inputFluids("gtceu:tantalum 16", "gtceu:beryllium 16")
+        .outputFluids("gtceu:iridium 16")
+        .duration(64)
+        .EUt(0.75 * GTValues.V[GTValues.LuV])
+        .fusionStartEU(300000000)
 })

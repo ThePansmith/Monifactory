@@ -1,3 +1,3 @@
-# 0.13.0 is out!
-**The biggest update in Moni history!**
-*Please make a backup before attempting to update from a 0.12 world, there are a lot of breaking changes!*
+# Moni 0.13.5
+*Fixed server crash, Infinite Spray Can and more!
+*HOTFIX: KubeJS crash on startup because of lang files fixed now.

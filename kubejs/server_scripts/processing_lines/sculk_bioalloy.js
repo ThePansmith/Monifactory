@@ -2,20 +2,22 @@
  * Sculk Bioalloy processing line
  */
 ServerEvents.recipes(event => {
+    // Auxillary production method for Glycerol
+    // IRL saponification also works, but in Moni we have no representative item for "fat" nor any use for "soap"
+    event.recipes.gtceu.large_chemical_reactor("glycerol_from_sugar_hydrogenolysis")
+        .notConsumable("gtceu:ultimet_rod")
+        .itemInputs("4x minecraft:sugar")
+        .chancedInput("gtceu:soda_ash_dust", 1000, 0)
+        .inputFluids("gtceu:hydrogen 8000", "minecraft:water 1000")
+        .outputFluids("gtceu:glycerol 4000")
+        .duration(1600)
+        .EUt(GTValues.VA[GTValues.HV])
+
     event.recipes.gtceu.mixer("experience_attuned_dust")
         .itemInputs("7x gtceu:amethyst_dust", "2x gtceu:dark_soularium_dust", "4x gtceu:lapis_dust")
         .itemOutputs("13x gtceu:experience_attuned_dust")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
-
-    event.remove({ id: "gtceu:extractor/extract_experience_attuned_dust"})
-    event.recipes.gtceu.chemical_bath("experience_attuned_vapor")
-        .itemInputs("gtceu:experience_attuned_dust")
-        .inputFluids("gtceu:americium_plasma 36")
-        .itemOutputs("gtceu:small_americium_dust")
-        .outputFluids("gtceu:experience_attuned 144")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.mixer("sculk_agar")
         .itemInputs("4x gtceu:potassium_cyanide_dust", "7x gtceu:biotite_dust", "9x gtceu:collagen_dust")

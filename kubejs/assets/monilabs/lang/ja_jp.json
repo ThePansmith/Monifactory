@@ -22,7 +22,7 @@
     "block.monilabs.microverse_stability_sensor_hatch": "マイクロバース安定センサーハッチ",
     "block.monilabs.prismatic_crucible": "虹彩の坩堝",
     "block.monilabs.prismatic_focus": "虹彩の焦点",
-    "block.monilabs.sculk_vat": "スカルクバット",
+    "block.monilabs.sculk_vat": "§sスカルクバット",
     "block.monilabs.sculk_xp_draining_hatch": "スカルク製経験値排出ハッチ",
     "block.monilabs.sculk_xp_sensor_hatch": "スカルク製経験値センサーハッチ",
     "config.jade.plugin_monilabs.color_info": "虹彩の坩堝の色詳細",
@@ -97,7 +97,7 @@
     "monilabs.prismatic.color_name.orange": "§6橙色§r",
     "monilabs.prismatic.color_name.pink": "§c桃色§r",
     "monilabs.prismatic.color_name.red": "§4赤色§r",
-    "monilabs.prismatic.color_name.teal": "§3青緑色§r",
+    "monilabs.prismatic.color_name.teal": "§t青緑色§r",
     "monilabs.prismatic.color_name.yellow": "§e黄色§r",
     "monilabs.prismatic.current_color": "現在の色:%s",
     "monilabs.recipe.accepted_colors": "受容初期色: ",
@@ -139,5 +139,5 @@
     "tooltip.monilabs.xp_sensor_hatch.0": "スカルクバットの経験値バッファの状態を",
     "tooltip.monilabs.xp_sensor_hatch.1": "レッドストーン信号で出力する。",
     "block.monilabs.prism_glass": "P.R.I.S.Mガラス",
-    "monilabs.subtitle.microverse": "Microverse Oscillates"
+    "monilabs.subtitle.microverse": "マイクロバース発振器"
 }

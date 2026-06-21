@@ -33,7 +33,7 @@
     "trivia": "hostilenetworks.trivia.creeper",
     "fabricator_drops": [{
             "item": "minecraft:gunpowder",
-            "count": 32
+            "count": 24
         },
         {
             "item": "minecraft:creeper_head",
@@ -41,7 +41,7 @@
         },
         {
             "item": "minecraft:coal",
-            "count": 32
+            "count": 16
         }
     ]
 }

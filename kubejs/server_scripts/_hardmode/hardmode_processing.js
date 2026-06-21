@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             .itemInputs("8x #forge:dusts/tungsten_trioxide", "3x #forge:dusts/carbon")
             .itemOutputs("2x gtceu:hot_tungsten_ingot")
             .outputFluids(Fluid.of("gtceu:carbon_dioxide", 3000))
-            .blastFurnaceTemp(3600)
+            .blastFurnaceTemp(4500)
             .duration(2400).EUt(1920)
 
         event.recipes.gtceu.chemical_reactor("kubejs:tungsten_dust")
@@ -291,13 +291,6 @@ ServerEvents.recipes(event => {
             .itemOutputs("7x gtceu:naquadah_hydroxide_dust", "3x gtceu:sodium_dust")
             .duration(480).EUt(480)
 
-        event.recipes.gtceu.chemical_reactor("caesium_hydroxide")
-            .itemInputs("gtceu:caesium_dust")
-            .inputFluids("minecraft:water 1000")
-            .itemOutputs("3x gtceu:caesium_hydroxide_dust")
-            .outputFluids("gtceu:hydrogen 1000")
-            .duration(5).EUt(7)
-
         event.recipes.gtceu.large_chemical_reactor("neocryolite")
             .itemInputs("9x gtceu:caesium_hydroxide_dust", "7x gtceu:naquadah_hydroxide_dust")
             .notConsumable("gtceu:signalum_dust")
@@ -341,19 +334,6 @@ ServerEvents.recipes(event => {
             .itemOutputs("2x gtceu:naquadah_dust")
             .outputFluids("gtceu:neocryolite 3950", "gtceu:oxygen 3000")
             .duration(250).EUt(7680)
-
-        event.recipes.gtceu.chemical_bath("bathe_molten_aerotheum_to_aerotheum_dust")
-            .inputFluids("kubejs:molten_aerotheum 250")
-            .notConsumable("nuclearcraft:supercold_ice_block")
-            .itemOutputs("kubejs:aerotheum_dust")
-            .duration(100).EUt(7)
-
-        // Supercold ice replacement recipe
-        event.recipes.gtceu.vacuum_freezer("cryotheum_to_supercold_ice")
-            .itemInputs("minecraft:ice")
-            .inputFluids("kubejs:molten_cryotheum 1000")
-            .itemOutputs("nuclearcraft:supercold_ice_block")
-            .duration(600).EUt(1200)
 
         // Tributyl Phosphate
         event.recipes.gtceu.chemical_reactor("phosphorus_trichloride")
@@ -458,5 +438,19 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:pyromellitic_dianhydride 1000", "gtceu:oxydianiline 1000")
             .outputFluids("gtceu:kapton_k 1000")
             .duration(400).EUt(480);
+
+        event.recipes.gtceu.assembler("duct_tape_kapton_k")
+            .itemInputs("gtceu:kapton_k_foil", "gtceu:carbon_fiber_mesh")
+            .inputFluids("gtceu:polyethylene 36")
+            .itemOutputs("32x gtceu:duct_tape")
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.autoclave("carbon_fibers_kapton_k")
+            .itemInputs("16x gtceu:carbon_dust")
+            .inputFluids("gtceu:kapton_k 9")
+            .itemOutputs("32x gtceu:carbon_fibers")
+            .duration(37)
+            .EUt(GTValues.VA[GTValues.IV])
     }
 });

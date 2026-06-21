@@ -46,7 +46,8 @@ const clientMods = [
     "drippyloadingscreen",
     "badoptimizations",
     "fancymenu",
-    "gtmoldraw"
+    "gtmoldraw",
+    "phoenixchromaticcodes"
 ]
 
 const symlinkSync = (ourDir: fs.PathLike, newDir: fs.PathLike) => {
@@ -109,7 +110,7 @@ export const UpdateModsFolder = new Juke.Target({
     executes: () => {
         try {
             // Nuking mods folder before re-adding them in order to stay up to date
-            if(fs.existsSync("mods/")) fs.rmdirSync("mods/", { recursive: true })
+            if(fs.existsSync("mods/")) fs.rmSync("mods/", { recursive: true })
             fs.mkdirSync("mods/", { recursive: true })
             cpMods("mods/")
         } catch (error) {
@@ -194,7 +195,7 @@ export const BuildDevTarget = getZipModPackTarget("dev", PackSwitchTarget => [
 
                 fs.mkdirSync("dist/dev/overrides", { recursive: true })
                 cpMods("dist/.devtmp")
-                fs.cpSync("mods", "dist/.devtmp", { recursive: true })
+                fs.cpSync("../mods", "dist/.devtmp", { recursive: true })
                 return
             }
 
@@ -205,7 +206,7 @@ export const BuildDevTarget = getZipModPackTarget("dev", PackSwitchTarget => [
 
             // "merge" both mod folders
             cpMods("dist/.devtmp")
-            fs.cpSync("mods", "dist/.devtmp", { recursive: true, force: true })
+            fs.cpSync("../mods", "dist/.devtmp", { recursive: true, force: true })
             symlinkSync(resolve("dist/.devtmp"), resolve("dist/dev/overrides/mods"))
             // fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
             fs.cpSync("config", "dist/dev/overrides/config", { recursive: true })

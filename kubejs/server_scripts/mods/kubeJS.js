@@ -3,12 +3,6 @@
  */
 ServerEvents.recipes(event => {
     // Stablized
-    event.recipes.gtceu.fusion_reactor("berkelium_fusion_curium")
-        .inputFluids("gtceu:curium 16", "gtceu:hydrogen 125")
-        .outputFluids("gtceu:berkelium 16")
-        .duration(50)
-        .EUt(GTValues.VHA[GTValues.LuV])
-        .fusionStartEU(360000000)
     event.recipes.gtceu.fusion_reactor("californium_fusion_curium")
         .inputFluids("gtceu:curium 16", "gtceu:helium 125")
         .outputFluids("gtceu:californium 16")
@@ -16,7 +10,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM])
         .fusionStartEU(360000000)
 
-    solidify("stabilized_berkelium", Fluid.of("gtceu:berkelium", 144), "8x kubejs:stabilized_berkelium");
     solidify("stabilized_neptunium", Fluid.of("gtceu:neptunium", 144), "2x kubejs:stabilized_neptunium");
     solidify("stabilized_plutonium", Fluid.of("gtceu:plutonium", 144), "2x kubejs:stabilized_plutonium");
     solidify("stabilized_plutonium_241", Fluid.of("gtceu:plutonium_241", 144), "4x kubejs:stabilized_plutonium");
@@ -52,17 +45,23 @@ ServerEvents.recipes(event => {
     }
 
     // Thermal Fluids
-    thermalextract("primal_mana", "kubejs:primal_mana", Fluid.of("gtceu:mana", 250));
-    thermalextract("cryotheum", "kubejs:cryotheum_dust", Fluid.of("kubejs:molten_cryotheum", 250));
-    thermalextract("pyrotheum", "kubejs:pyrotheum_dust", Fluid.of("kubejs:molten_pyrotheum", 250));
-    thermalextract("aerotheum", "kubejs:aerotheum_dust", Fluid.of("kubejs:molten_aerotheum", 250));
-    thermalextract("petrotheum", "kubejs:petrotheum_dust", Fluid.of("kubejs:molten_petrotheum", 250));
+    thermalextractsolidify("primal_mana", "kubejs:primal_mana", Fluid.of("gtceu:mana", 250));
+    thermalextractsolidify("cryotheum", "kubejs:cryotheum_dust", Fluid.of("kubejs:molten_cryotheum", 250));
+    thermalextractsolidify("pyrotheum", "kubejs:pyrotheum_dust", Fluid.of("kubejs:molten_pyrotheum", 250));
+    thermalextractsolidify("aerotheum", "kubejs:aerotheum_dust", Fluid.of("kubejs:molten_aerotheum", 250));
+    thermalextractsolidify("petrotheum", "kubejs:petrotheum_dust", Fluid.of("kubejs:molten_petrotheum", 250));
 
-    function thermalextract(recipename, input, output) {
-        event.recipes.gtceu.extractor(recipename)
-            .itemInputs(input)
-            .outputFluids(output)
+    function thermalextractsolidify(recipename, dust, fluid) {
+        event.recipes.gtceu.extractor("extract_" + recipename)
+            .itemInputs(dust)
+            .outputFluids(fluid)
             .duration(40)
-            .EUt(30)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.fluid_solidifier("solidify_" + recipename)
+            .inputFluids(fluid)
+            .itemOutputs(dust)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.ULV])
     }
 })

@@ -43,6 +43,9 @@ global.itemNukeList = [
     // Better Angel Ring
     "better_angel_ring:ring",
 
+    // CBMultipart
+    /cb_microblock:.*/,
+
     // Chisels & Bits
     "chiselsandbits:block_bit",
 
@@ -78,11 +81,17 @@ global.itemNukeList = [
     /^enderio:painted_/,
     /^enderio:powdered_/,
     "enderio:infinity_rod",
-
-    // Ender Storage
-    // TODO: Need to add greggy recipes for these
-    "endertanks:ender_bucket",
-    "enderchests:ender_bag",
+    "enderio:vibrant_photovoltaic_module",
+    "enderio:energetic_photovoltaic_module",
+    "enderio:pulsating_photovoltaic_module",
+    "enderio:light",
+    "enderio:light_inverted",
+    "enderio:powered_light",
+    "enderio:powered_light_inverted",
+    "enderio:powered_light_wireless",
+    "enderio:powered_light_inverted_wireless",
+    "enderio:glider_wing",
+    "enderio:nutritious_stick",
 
     // ExtendedAE
     "expatternprovider:silicon_block",
@@ -117,6 +126,14 @@ global.itemNukeList = [
     "gtceu:milk",
     "gtceu:steel_machine_casing",
     "gtceu:uv_world_accelerator",
+    "gtceu:mv_solar_panel",
+    "gtceu:hv_solar_panel",
+    "gtceu:ev_solar_panel",
+    "gtceu:iv_solar_panel",
+    "gtceu:luv_solar_panel",
+    "gtceu:zpm_solar_panel",
+    "gtceu:uv_solar_panel",
+    /^gtceu:(ev|iv|luv|zpm|uv|uhv|uev|max)_\w+a_energy_converter/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
@@ -202,6 +219,30 @@ global.itemNukeList = [
     "packagedexcrafting:ender_crafter",
     "packagedexcrafting:flux_crafter",
 
+    // Project Red
+    "projectred_core:silicon",
+    "projectred_core:sand_coal_comp",
+    "projectred_core:red_iron_comp",
+    "projectred_core:electrotine_iron_comp",
+    "projectred_core:peridot",
+    "projectred_core:sapphire",
+    "projectred_core:ruby",
+    "projectred_core:electrotine_dust",
+    "projectred_core:electrotine_generator",
+    "projectred_core:electrotine_ingot",
+    "projectred_core:red_ingot",
+    "projectred_core:sail",
+    "projectred_core:woven_cloth",
+    "projectred_core:motor",
+    "projectred_core:gold_coil",
+    "projectred_core:iron_coil",
+    "projectred_core:copper_coil",
+    "projectred_core:boule",
+    "projectred_core:draw_plate",
+    "projectred_core:multimeter",
+    "projectred_transmission:low_load_power_wire",
+    "projectred_transmission:low_load_framed_power_wire",
+
     // Solar Flux
     /^solarflux:.*/,
 
@@ -242,6 +283,8 @@ global.itemNukeList = [
     "thermal:sawdust",
     "thermal:sulfur",
     "thermal:tar",
+    "thermal:tar_block",
+    "thermal:refined_fuel_bucket",
     /^thermal:.*_cast$/,
 
     // Thermal Series Machines
@@ -250,7 +293,6 @@ global.itemNukeList = [
     "thermal:machine_pulverizer",
     "thermal:machine_smelter",
     "thermal:machine_centrifuge",
-    "thermal:machine_crucible",
     "thermal:machine_chiller",
     "thermal:machine_refinery",
     "thermal:machine_pyrolyzer",
@@ -349,6 +391,20 @@ global.itemNukeList = [
     "nuclearcraft:dominos",
     "nuclearcraft:radaway",
     "nuclearcraft:coil_bscco",
+    "nuclearcraft:supercold_ice_block",
+    "nuclearcraft:silicon_wafer",
+    "nuclearcraft:basic_processor",
+    "nuclearcraft:advanced_processor",
+    "nuclearcraft:elite_processor",
+    "nuclearcraft:empty_detector",
+    "nuclearcraft:silicon_boule",
+    "nuclearcraft:laser_assembly",
+    "nuclearcraft:scintillator_pwo",
+    "nuclearcraft:scintillator_plastic",
+    "nuclearcraft:coil_magnesium_diboride",
+    "nuclearcraft:wire_gold_tungsten",
+    "nuclearcraft:silicon_p_doped",
+    "nuclearcraft:silicon_n_doped",
 
     // NuclearCraft Heat Sinks
     "nuclearcraft:slime_heat_sink",
@@ -374,6 +430,9 @@ global.itemNukeList = [
 
     "nuclearcraft:empty_active_heat_sink",
     /^nuclearcraft:active_[\w_]+_heat_sink$/,
+
+    "nuclearcraft:graphite_block",
+    "nuclearcraft:beryllium_block",
 
     "nuclearcraft:heat_exchanger",
 
@@ -408,6 +467,8 @@ global.itemNukeList = [
     "nuclearcraft:fuel_mixed_mix_241",
     "nuclearcraft:lithium_6",
     "nuclearcraft:lithium_7",
+    "nuclearcraft:berkelium_247",
+    "nuclearcraft:berkelium_248",
     "nuclearcraft:boron_10",
     "nuclearcraft:boron_11",
     "nuclearcraft:thorium_230",
