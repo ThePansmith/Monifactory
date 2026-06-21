@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
         })
     }
 
-    if(doHarderRecipes) {
+    if(!doHarderRecipes) {
         // Make clay electrolysis an LV recipe
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
         event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")
