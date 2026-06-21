@@ -199,15 +199,15 @@ ServerEvents.recipes(event => {
         .itemInputs(
             "1x kubejs:optical_processing_unit",
             "1x kubejs:photonic_soc_active",
-            "2x kubejs:electro_optic_modulator",
-            "10x gtceu:advanced_smd_resistor",
-            "10x gtceu:advanced_smd_transistor",
-            "4x gtceu:fine_naquadah_wire"
+            "4x kubejs:electro_optic_modulator",
+            "16x gtceu:advanced_smd_resistor",
+            "16x gtceu:advanced_smd_transistor",
+            "8x gtceu:fine_naquadah_wire"
         )
         .inputFluids("gtceu:living_soldering_alloy 18")
-        .itemOutputs("2x kubejs:optical_processor")
+        .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(10 * 20)
+        .duration(20 * 20)
         .EUt(150000)
 
     event.recipes.gtceu.assembly_line("optical_processor_assembly")
@@ -462,7 +462,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             "kubejs:microminer_t11",
             "16x kubejs:microverse_containment_unit",
-            "24x kubejs:photonic_soc_active",
+            "20x kubejs:photonic_soc_active",
             "32x kubejs:electro_optic_modulator",
             "64x gtceu:fine_naquadah_wire"
         )
