@@ -344,29 +344,6 @@
 			y: 0.25d
 		}
 		{
-			dependencies: ["0562D9F4C441EAF9"]
-			description: [
-				"{moni.quest.186C14C113B6F3AD.description1}"
-				""
-				"{moni.quest.186C14C113B6F3AD.description2}"
-			]
-			id: "186C14C113B6F3AD"
-			rewards: [{
-				id: "5074404224B5E530"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "3C6395EDE0AE8FE3"
-				item: "gtceu:sculk_superconductor_single_wire"
-				type: "item"
-			}]
-			title: "{moni.quest.186C14C113B6F3AD.title}"
-			x: 4.25d
-			y: 5.25d
-		}
-		{
 			dependencies: [
 				"7E3A179376673590"
 				"7C89BC235C988689"
