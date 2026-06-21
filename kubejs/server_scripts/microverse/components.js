@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
 
     // Electrum Engine Core
     event.recipes.gtceu.canner("electrum_micro_miner_core")
-        .itemInputs("kubejs:electrum_micro_miner_frame", "2x minecraft:redstone_block")
+        .itemInputs("kubejs:electrum_micro_miner_frame", "1x minecraft:redstone_block")
         .itemOutputs("kubejs:electrum_micro_miner_core")
         .duration(500)
         .EUt(480)
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
 
     // Signalum Engine Core
     event.recipes.gtceu.canner("signalum_micro_miner_core")
-        .itemInputs("kubejs:signalum_micro_miner_frame", "4x minecraft:redstone_block")
+        .itemInputs("kubejs:signalum_micro_miner_frame", "2x minecraft:redstone_block")
         .itemOutputs("kubejs:signalum_micro_miner_core")
         .duration(1000)
         .EUt(2000)
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 
     // Enderium Engine Core
     event.recipes.gtceu.canner("enderium_micro_miner_core")
-        .itemInputs("kubejs:enderium_micro_miner_frame", "8x minecraft:redstone_block")
+        .itemInputs("kubejs:enderium_micro_miner_frame", "4x minecraft:redstone_block")
         .itemOutputs("kubejs:enderium_micro_miner_core")
         .duration(2000)
         .EUt(8000)
@@ -312,7 +312,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:enderium_foil",
             "16x gtceu:darmstadtium_bolt",
             "5x gtceu:fusion_glass")
-        .inputFluids("gtceu:living_soldering_alloy 864", "gtceu:naquadria 576", "gtceu:polybenzimidazole 288")
+        .inputFluids("gtceu:living_soldering_alloy 864", "gtceu:naquadria 576", "gtceu:polyethyl_cyanoacrylate 288")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(builder => builder

@@ -62,7 +62,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(1250, "low", 120, 400)
         .components("2x gold", "redstone", "glowstone")
         .cableProperties(128, 1, 0, true)
-        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)");
+        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)");
 
     event.create("vibrant_alloy")
         .ingot().fluid()
@@ -71,7 +71,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(1350, "low", 120, 400)
         .components("energetic_alloy", "ender_pearl")
         .cableProperties(512, 2, 0, true)
-        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5)");
+        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)(BeK4N5)");
 
     event.create("pulsating_alloy") // Pulsating Iron
         .ingot().fluid()
@@ -94,7 +94,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
         .cableProperties(2048, 2, 0, true)
         .components("dark_steel", "endstone", "vibrant_alloy")
-        .formula("Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))");
+        .formula("Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)(BeK4N5))");
 
     event.create("soularium")
         .ingot().fluid()
@@ -286,7 +286,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("2x steel", "glowstone", "redstone", "deuterium")
         .blastTemp(1700, "mid", 120, 600)
         .cableProperties(128, 4, 2, false)
-        .formula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D");
+        .formula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)D");
 
     // Ardite isn't here since it's more closely related to nethline than actually being a TiC material.
 
