@@ -271,7 +271,7 @@ ServerEvents.recipes(event => {
     // Technically not an ExCrafting recipe but it's also infinity ingots
     event.recipes.gtceu.assembler("infinity_better")
         .itemInputs("kubejs:active_prismatic_core", "4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot", "4x monilabs:transcendental_matrix_ingot")
-        .inputFluids("gtceu:monium 8")
+        .inputFluids("gtceu:monium 16")
         .itemOutputs("24x gtceu:infinity_ingot")
         .EUt(GTValues.VA[GTValues.MAX])
         .duration(20)
