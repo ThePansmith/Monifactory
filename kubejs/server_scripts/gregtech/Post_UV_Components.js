@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("hull_max")
         .itemInputs("gtceu:max_machine_casing", "2x gtceu:monium_single_wire")
-        .inputFluids("gtceu:polyethyl_cyanoacrylate 288")
+        .inputFluids("gtceu:polyether_ether_ketone 288")
         .itemOutputs("gtceu:max_machine_hull")
         .duration(50)
         .EUt(GTValues.VHA[GTValues.LV])
