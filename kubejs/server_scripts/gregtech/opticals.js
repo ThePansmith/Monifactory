@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
-        .inputFluids("gtceu:lithium_niobate 36")
+        .inputFluids("gtceu:lithium_niobate 36", "gtceu:dielectric_mirror_solution 72")
         .itemInputs("kubejs:photonic_soc_base", "gtceu:small_indium_phosphide_dust")
         .notConsumable("gtceu:zpm_emitter")
         .itemOutputs("kubejs:photonic_soc_inert")
