@@ -268,7 +268,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("3x kubejs:naquadah_waste", 6600, 0)
         .chancedFluidOutput("gtceu:exotic_particle_solution 100", 3300, 0)
         .duration(1200)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.centrifuge("superfuel_waste_processing")
         .inputFluids("gtceu:naquadah_superfuel_depleted 12000")
@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
         .chancedFluidOutput("monilabs:eltz 228", 5000, 0)
         .chancedFluidOutput("gtceu:hyperdegenerate_matter 100", 3300, 0)
         .duration(1200)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
     */
 
     // Solid Fuel Recipes

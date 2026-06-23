@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:duranium 288")
         .itemOutputs("gtceu:naquadah_reactor")
         .duration(1500)
-        .EUt(122880)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .stationResearch(b => b.researchStack(Item.of("kubejs:empty_fuel_rod")).EUt(GTValues.VA[GTValues.LuV]).CWUt(16, 64000))
         .addMaterialInfo(true)
 

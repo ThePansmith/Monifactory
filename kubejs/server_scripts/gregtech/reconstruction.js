@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.atomic_reconstruction(`kubejs:${level}_universal_circuit`)
             .itemInputs(`#gtceu:circuits/${level}`)
             .itemOutputs(`kubejs:${level}_universal_circuit`)
-            .EUt(32)
+            .EUt(GTValues.VA[GTValues.LV])
             .duration(5)
     })
 

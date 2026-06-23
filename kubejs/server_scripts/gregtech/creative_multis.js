@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             .CWUt(144, 512000)
         )
         .duration(1200)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
 
     event.recipes.gtceu.assembly_line("omniscience_research_beacon")
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
             .CWUt(128, 57600)
         )
         .duration(1200)
-        .EUt(7864320)
+        .EUt(GTValues.VA[GTValues.UEV])
 
     // Recipes used to run the creative multiblocks
     event.recipes.gtceu.creative_energy_multi("kubejs:superfuel_infinite_power")

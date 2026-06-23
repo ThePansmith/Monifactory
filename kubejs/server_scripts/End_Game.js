@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
         .itemInputs("6x gtceu:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
         .itemOutputs("2x gtceu:atomic_casing")
         .duration(100)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
         .circuit(6)
         .addMaterialInfo(true)
 
@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:enderium 1152", "gtceu:soldering_alloy 1152")
         .itemOutputs("gtceu:ev_world_accelerator")
         .duration(6000)
-        .EUt(122880)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .stationResearch(b => b
             .researchStack("gtceu:hv_world_accelerator")
             .CWUt(16, 128000)
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:enderium 1152", "gtceu:soldering_alloy 1152")
         .itemOutputs("gtceu:iv_world_accelerator")
         .duration(6000)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(b => b
             .researchStack("gtceu:ev_world_accelerator")
             .CWUt(48, 256000)
@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:omnium 1152", "gtceu:soldering_alloy 1152")
         .itemOutputs("gtceu:luv_world_accelerator")
         .duration(6000)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .stationResearch(b => b
             .researchStack("gtceu:iv_world_accelerator")
             .CWUt(108, 512000)
@@ -362,7 +362,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:omnium 1152", "gtceu:soldering_alloy 1152")
         .itemOutputs("gtceu:zpm_world_accelerator")
         .duration(6000)
-        .EUt(7864320)
+        .EUt(GTValues.VA[GTValues.UEV])
         .stationResearch(b => b
             .researchStack("gtceu:luv_world_accelerator")
             .CWUt(192, 512000)
@@ -440,7 +440,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:omnium 2304", "gtceu:polyether_ether_ketone 1152")
         .itemOutputs("monilabs:knowledge_transmission_array")
         .duration(2000)
-        .EUt(7864320)
+        .EUt(GTValues.VA[GTValues.UEV])
         .stationResearch(b => b
             .researchStack("gtceu:data_transmitter_hatch")
             .CWUt(96, 57600)

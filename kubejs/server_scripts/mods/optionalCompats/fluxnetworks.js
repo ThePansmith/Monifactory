@@ -13,7 +13,7 @@ if (Platform.isLoaded("fluxnetworks")) {
             .inputFluids("gtceu:redstone 144")
             .itemOutputs("fluxnetworks:flux_dust")
             .duration(40)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
 
         // Flux Block
         event.shaped("fluxnetworks:flux_block", [

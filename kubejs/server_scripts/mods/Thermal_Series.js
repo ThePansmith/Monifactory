@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:red_alloy 72")
         .itemOutputs("thermal:rf_coil")
         .duration(100)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
     event.shaped("kubejs:redstone_transmission_coil", [
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:red_alloy 72")
         .itemOutputs("kubejs:redstone_transmission_coil")
         .duration(100)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
     // Insightful Crystal
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
         .itemInputs("kubejs:redstone_transmission_coil", "2x #forge:plates/red_alloy", "1x #forge:plates/tin")
         .itemOutputs("kubejs:excitationcoil")
         .duration(180)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
     if (doBoilers) {
