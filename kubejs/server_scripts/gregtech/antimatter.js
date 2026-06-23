@@ -74,10 +74,10 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.anti_collider("annihilation_neutronium")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:neutronium 1")
         .duration(1)
-        .EUt(-536870912)
+        .EUt(-GTValues.V[GTValues.UIV] * 16)
 
     event.recipes.gtceu.anti_collider("annihilation_infinity")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:infinity 1")
         .duration(1)
-        .EUt(-536870912 * 16)
+        .EUt(-GTValues.V[GTValues.OpV] * 256)
 })
