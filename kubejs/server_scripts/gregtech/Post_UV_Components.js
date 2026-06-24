@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_electric_motor")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_electric_motor")
@@ -314,7 +314,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:lubricant 3000", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_electric_motor")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_electric_motor")
@@ -341,7 +341,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_electric_piston")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_electric_piston")
@@ -354,7 +354,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:lubricant 3000", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_electric_piston")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_electric_piston")
@@ -381,7 +381,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_robot_arm")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_robot_arm")
@@ -394,7 +394,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:lubricant 3000", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_robot_arm")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_robot_arm")
@@ -421,7 +421,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_sensor")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_sensor")
@@ -434,7 +434,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_sensor")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_sensor")
@@ -461,7 +461,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_emitter")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_emitter")
@@ -474,7 +474,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_emitter")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_emitter")
@@ -501,7 +501,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_field_generator")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_field_generator")
@@ -514,7 +514,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_field_generator")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_field_generator")
@@ -541,7 +541,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "gtceu:lubricant 2000", "gtceu:styrene_butadiene_rubber 5760", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_conveyor_module")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_conveyor_module")
@@ -554,7 +554,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:lubricant 3000", "gtceu:styrene_butadiene_rubber 5760", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_conveyor_module")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_conveyor_module")
@@ -581,7 +581,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1440", "gtceu:lubricant 2000", "monilabs:crystal_matrix 576")
         .itemOutputs("gtceu:uhv_electric_pump")
         .duration(600)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uv_electric_pump")
@@ -594,7 +594,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:lubricant 3000", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_electric_pump")
         .duration(600)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         .stationResearch(b => b
             .researchStack("gtceu:uhv_electric_pump")
@@ -621,7 +621,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .itemOutputs("gtceu:uhv_fluid_regulator")
         .duration(50)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
         .addMaterialInfo(true)
         // Fluid Regulators don't have research
 

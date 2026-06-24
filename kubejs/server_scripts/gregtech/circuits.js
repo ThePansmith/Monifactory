@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:wetware_circuit_board", "24x minecraft:sculk_vein", "8x gtceu:stem_cells")
         .inputFluids("gtceu:sodium_persulfate 3000", "gtceu:iron_iii_chloride 1500", "enderio:xp_juice 1000")
         .itemOutputs("gtceu:wetware_printed_circuit_board")
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
         .duration(1800)
         .cleanroom(CleanroomType.CLEANROOM)
 

@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(output)
             .notConsumable("gtceu:ball_casting_mold")
             .duration(500)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
     }
 
     // Thermal Fluids

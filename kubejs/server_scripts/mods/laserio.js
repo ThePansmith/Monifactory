@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
                 .itemInputs(card[1], cardChip, "3x gtceu:tin_plate", "6x minecraft:gold_nugget")
                 .itemOutputs(`2x laserio:card_${card[0]}`)
                 .duration(80)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
             */
         })
 
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         .itemInputs("3x gtceu:conductive_alloy_single_wire", "6x gtceu:iron_plate")
         .itemOutputs("4x laserio:energy_overclocker_card_tier_1")
         .duration(80)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Energetic Alloy
     event.shaped("3x laserio:energy_overclocker_card_tier_2", [
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x gtceu:energetic_alloy_single_wire", "laserio:energy_overclocker_card_tier_1", "6x gtceu:iron_plate")
         .itemOutputs("4x laserio:energy_overclocker_card_tier_2")
         .duration(80)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Vibrant Alloy
     event.shaped("3x laserio:energy_overclocker_card_tier_3", [
@@ -155,12 +155,12 @@ ServerEvents.recipes(event => {
         .itemInputs("2x gtceu:vibrant_alloy_single_wire", "laserio:energy_overclocker_card_tier_2", "6x gtceu:iron_plate")
         .itemOutputs("4x laserio:energy_overclocker_card_tier_3")
         .duration(80)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Endsteel
     event.recipes.gtceu.assembler("kubejs:endsteel_card")
         .itemInputs("2x gtceu:end_steel_single_wire", "laserio:energy_overclocker_card_tier_3", "6x gtceu:iron_plate")
         .itemOutputs("4x laserio:energy_overclocker_card_tier_4")
         .duration(80)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 })

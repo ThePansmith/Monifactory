@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             .itemInputs(input)
             .outputFluids(output)
             .duration(200)
-            .EUt(30)
+            .EUt(GTValues.VA[GTValues.LV])
     }
     function extractisotope(recipename, input, output) {
         event.recipes.gtceu.extractor(recipename)

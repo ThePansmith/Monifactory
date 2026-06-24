@@ -293,7 +293,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:distilled_water 20")
         .circuit(5)
         .outputFluids("nuclearcraft:technical_water 20")
-        .duration(20).EUt(120)
+        .duration(20).EUt(GTValues.VA[GTValues.MV])
 
     function rtg(name, input) {
         event.remove({ output: `nuclearcraft:${name}_rtg` })
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
             .itemInputs("4x gtceu:graphite_plate", "4x nuclearcraft:plate_advanced", `4x ${input}`)
             .itemOutputs(`nuclearcraft:${name}_rtg`)
             .duration(200)
-            .EUt(1920)
+            .EUt(GTValues.VA[GTValues.EV])
             .addMaterialInfo(true)
     }
 
@@ -317,7 +317,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:coil_${name}`)
             .circuit(1)
             .duration(200)
-            .EUt(480)
+            .EUt(GTValues.VA[GTValues.HV])
     }
 
     coils("copper")
