@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         .EUt(7)
 
     // Coal tar from coke & coal dusts (with fly ash)
-    e.recipes.gtceu.pyrolyse_oven("coke_dust_to_coal_tar")
+    event.recipes.gtceu.pyrolyse_oven("coke_dust_to_coal_tar")
         .circuit(8)
         .itemInputs("8x gtceu:coke_dust")
         .chancedOutput("gtceu:coal_fly_ash_dust", 7500, 0)
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(96);
 
-    e.recipes.gtceu.pyrolyse_oven("coal_dust_to_coal_tar")
+    event.recipes.gtceu.pyrolyse_oven("coal_dust_to_coal_tar")
         .circuit(8)
         .itemInputs("12x gtceu:coal_dust")
         .chancedOutput("gtceu:coal_fly_ash_dust", 5000, 0)
