@@ -963,7 +963,7 @@
 				}
 			]
 			title: "{moni.quest.4C475D22CC95EB93.title}"
-			x: -12.75d
+			x: -13.0d
 			y: 1.75d
 		}
 		{
@@ -1001,7 +1001,7 @@
 				}
 			]
 			title: "{moni.quest.77CEA89E47BB3B7A.title}"
-			x: -12.75d
+			x: -13.0d
 			y: -0.25d
 		}
 		{
@@ -1052,8 +1052,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2DCD08F30EC049D1.title}"
-			x: -12.75d
-			y: -2.25d
+			x: -13.0d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -1090,7 +1090,7 @@
 				}
 			]
 			title: "{moni.quest.6203088E30E34B45.title}"
-			x: -14.25d
+			x: -14.5d
 			y: -0.25d
 		}
 		{
@@ -1134,7 +1134,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.27CE1D6B9683755F.title}"
-			x: -14.25d
+			x: -14.5d
 			y: -2.25d
 		}
 		{
@@ -3756,6 +3756,44 @@
 			title: "{moni.quest.6CFAAF68D4B10062.title}"
 			x: -0.75d
 			y: -11.0d
+		}
+		{
+			dependencies: [
+				"7A67E519745A8361"
+				"3000798ACA51BFDC"
+				"2DCD08F30EC049D1"
+			]
+			description: [
+				"{moni.quest.45DD07F2BB9C6A59.description1}"
+				""
+				"{moni.quest.45DD07F2BB9C6A59.description2}"
+				""
+				"{moni.quest.45DD07F2BB9C6A59.description3}"
+			]
+			hide_until_deps_visible: true
+			icon: "gtceu:liquid_nether_air_bucket"
+			id: "45DD07F2BB9C6A59"
+			rewards: [{
+				id: "5EEB9D28CDCA083B"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "485B18F9D8C07C54"
+					item: "gtceu:liquid_nether_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64B2FB57C29031C6"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			title: "{moni.quest.45DD07F2BB9C6A59.title}"
+			x: -11.5d
+			y: -2.25d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"
