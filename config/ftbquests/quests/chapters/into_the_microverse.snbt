@@ -1035,6 +1035,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "59B3DAF64E6E321D"
 					item: {
 						Count: 1
@@ -1047,6 +1048,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0481E2A193C0B956"
 					item: {
 						Count: 1
@@ -1059,6 +1061,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "53D427A60B944BB3"
 					item: {
 						Count: 1
@@ -1071,6 +1074,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "252519281545DAD2"
 					item: {
 						Count: 1
