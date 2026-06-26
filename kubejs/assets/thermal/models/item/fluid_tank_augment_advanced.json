@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thermal:item/fluid_tank_augment_advanced"
+  }
+}

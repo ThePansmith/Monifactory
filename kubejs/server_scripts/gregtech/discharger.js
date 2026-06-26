@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    event.shaped("gtceu:discharger", [
+    event.recipes.gtceu.shaped("gtceu:discharger", [
         "PLP",
         "CFC",
         "PHP"
@@ -14,19 +14,21 @@ ServerEvents.recipes(event => {
         L: "gtceu:iv_field_generator",
         H: "gtceu:hsse_frame"
     }).id("kubejs:shaped/discharger")
+        .addMaterialInfo()
 
     event.recipes.gtceu.assembler("monilabs:cryolobus_casing")
         .itemInputs("6x gtceu:cryolobus_plate", "gtceu:cryolobus_frame")
         .itemOutputs("2x monilabs:cryolobus_casing")
         .duration(50)
         .circuit(6)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     function Discharge(id, output, input, refund) {
         event.recipes.gtceu.discharger(`kubejs:${id}`)
             .itemInputs(input)
             .itemOutputs(output)
-            .duration(10) // wip
+            .duration(15) // wip
         // .EUt(-(refund / 4)) Enable once that gets fixed.
     }
 

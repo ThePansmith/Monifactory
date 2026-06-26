@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "wirelesschargers:advanced_wireless_block_charger" })
 
     event.remove({ id: "wirelesschargers:basic_wireless_player_charger" })
-    event.shaped(Item.of("wirelesschargers:basic_wireless_player_charger"), [
+    event.recipes.gtceu.shaped(Item.of("wirelesschargers:basic_wireless_player_charger"), [
         "SES",
         "CHC",
         "SSS"
@@ -16,10 +16,10 @@ ServerEvents.recipes(event => {
         E: "gtceu:lv_emitter",
         H: "gtceu:lv_machine_hull",
         C: "gtceu:tin_quadruple_wire",
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "wirelesschargers:advanced_wireless_player_charger" })
-    event.shaped(Item.of("wirelesschargers:advanced_wireless_player_charger"), [
+    event.recipes.gtceu.shaped(Item.of("wirelesschargers:advanced_wireless_player_charger"), [
         "SES",
         "CHC",
         "SSS"
@@ -28,5 +28,5 @@ ServerEvents.recipes(event => {
         E: "gtceu:hv_emitter",
         H: "gtceu:hv_machine_hull",
         C: "gtceu:gold_quadruple_wire",
-    })
+    }).addMaterialInfo()
 })

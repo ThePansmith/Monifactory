@@ -13,16 +13,63 @@
 ServerEvents.recipes(event => {
     event.replaceInput({ id: "gtceu:assembler/voltage_coil_iv" }, "gtceu:fine_iridium_wire", "gtceu:fine_neptunium_palladium_aluminium_wire")
     event.replaceInput([{ output: "gtceu:iv_sensor" }, { output: "gtceu:iv_emitter" }], "gtceu:iridium_rod", "gtceu:rhodium_rod")
+    // Replace MaterialInfo for the above replaceInputs for correct decomposition recipes
+    $ItemMaterialData.clearMaterialInfo(GTItems.VOLTAGE_COIL_IV)
+    $ItemMaterialData.clearMaterialInfo(GTItems.SENSOR_IV)
+    $ItemMaterialData.clearMaterialInfo(GTItems.EMITTER_IV)
+    $ItemMaterialData.registerMaterialInfo(GTItems.VOLTAGE_COIL_IV, new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.get("neptunium_palladium_aluminium"), GTValues.M * 2),
+        new $MaterialStack(GTMaterials.Neodymium, GTValues.M / 2)
+    ))
+    $ItemMaterialData.registerMaterialInfo(GTItems.SENSOR_IV, new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.TungstenSteel, GTValues.M * 4),
+        new $MaterialStack(GTMaterials.Rhodium, GTValues.M / 2)
+    ))
+    $ItemMaterialData.registerMaterialInfo(GTItems.EMITTER_IV, new $ItemMaterialInfo(
+        new $MaterialStack(GTMaterials.Rhodium, GTValues.M * 2),
+        new $MaterialStack(GTMaterials.Rubber, GTValues.M * 2),
+        new $MaterialStack(GTMaterials.Tungsten, GTValues.M)
+    ))
+
     event.remove({ id: "gtceu:assembler/casing_high_temperature_smelting" })
+    event.remove({ output: "gtceu:heat_vent"})
+    event.remove({ id: "gtceu:assembler/casing_palladium_substation"})
 
     event.recipes.gtceu.assembler("casing_high_temperature_smelting")
         .itemInputs("2x gtceu:titanium_carbide_plate", "2x gtceu:ruthenium_plate", "2x gtceu:hsla_steel_plate", "gtceu:tungsten_carbide_frame")
         .itemOutputs("2x gtceu:high_temperature_smelting_casing")
         .circuit(6)
         .duration(50)
-        .EUt(GTValues.VH[GTValues.LV]) // Yes, original recipe is VH, not VHA
+        .EUt(GTValues.VH[GTValues.LV]) // Yes, original recipes are VH, not VHA
+        .addMaterialInfo(true)
 
-    event.replaceInput([{ output: "gtceu:heat_vent"}], "gtceu:long_molybdenum_disilicide_rod", "gtceu:long_rhodium_rod")
+    event.recipes.gtceu.assembler("heat_vent")
+        .itemInputs("3x #forge:plates/tantalum_carbide", "2x #forge:double_plates/molybdenum_disilicide", "#forge:rotors/titanium", "#forge:rods/long/rhodium")
+        .itemOutputs("2x gtceu:heat_vent")
+        .duration(50)
+        .EUt(GTValues.VH[GTValues.LV])
+        .addMaterialInfo(true)
+
+    event.recipes.gtceu.assembler("casing_palladium_substation")
+        .itemInputs("6x #forge:plates/palladium", "#forge:frames/platinum")
+        .itemOutputs("2x gtceu:palladium_substation")
+        .circuit(6)
+        .duration(50)
+        .EUt(GTValues.VH[GTValues.LV])
+        .addMaterialInfo(true)
+
+    // Downtier PSS fully into EV and fix material info at the same time
+    event.recipes.gtceu.shaped("gtceu:power_substation", [
+        "LML",
+        "IPI",
+        "LML"
+    ], {
+        L: "gtceu:lapotron_crystal",
+        M: "gtceu:mpic_chip",
+        I: "#gtceu:circuits/iv",
+        P: "gtceu:palladium_substation"
+    }).id("gtceu:shaped/power_substation").addMaterialInfo()
+
 
     event.recipes.gtceu.mixer("neptunium_palladium_aluminium")
         .itemInputs("gtceu:neptunium_dust", "5x gtceu:palladium_dust", "2x gtceu:aluminium_dust")

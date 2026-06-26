@@ -67,8 +67,9 @@ ServerEvents.recipes(event => {
         .itemInputs("minecraft:furnace", "4x gtceu:iron_plate")
         .itemOutputs("ironfurnaces:iron_furnace")
         .duration(200)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(5)
+        .addMaterialInfo(true)
 
     let furnaceupgrade = [
         ["copper", "iron"],
@@ -82,7 +83,7 @@ ServerEvents.recipes(event => {
             .itemInputs(`ironfurnaces:${mat1}_furnace`, `4x gtceu:${tier}_plate`)
             .itemOutputs(`ironfurnaces:${tier}_furnace`)
             .duration(300)
-            .EUt(30)
+            .EUt(GTValues.VA[GTValues.LV])
             .circuit(5)
     })
 
@@ -90,14 +91,14 @@ ServerEvents.recipes(event => {
         .itemInputs("2x ironfurnaces:diamond_furnace", "4x gtceu:obsidian_plate")
         .itemOutputs("ironfurnaces:obsidian_furnace")
         .duration(200)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(5)
 
     event.recipes.gtceu.assembler("kubejs:obsidian_to_netherite_furnace")
         .itemInputs("5x ironfurnaces:obsidian_furnace", "4x minecraft:netherite_ingot")
         .itemOutputs("ironfurnaces:netherite_furnace")
         .duration(200)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(5)
 
 
@@ -116,6 +117,7 @@ ServerEvents.recipes(event => {
             .duration(300)
             .EUt(GTValues.VA[index - 1])
             .circuit(8)
+            .addMaterialInfo(true)
     }
 
     event.recipes.gtceu.assembler("kubejs:stone_to_obsidian_furnace")
@@ -124,6 +126,7 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
         .circuit(8)
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.assembler("kubejs:stone_to_netherite_furnace")
         .itemInputs("5x minecraft:furnace", "20x gtceu:diamond_plate", "20x gtceu:obsidian_plate", "4x minecraft:netherite_ingot")
@@ -131,4 +134,5 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VA[GTValues.IV])
         .circuit(8)
+        .addMaterialInfo(true)
 })

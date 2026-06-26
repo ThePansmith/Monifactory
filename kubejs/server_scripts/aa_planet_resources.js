@@ -163,13 +163,22 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(110)
 
+    // Hydrofluoric Acid from Fluorite
+    event.recipes.gtceu.chemical_reactor("hydrofluoric_acid_from_fluorite")
+        .itemInputs("3x gtceu:fluorite_dust")
+        .inputFluids("gtceu:sulfuric_acid 1000", "minecraft:water 2000")
+        .itemOutputs("8x gtceu:gypsum_dust")
+        .outputFluids("gtceu:hydrofluoric_acid 2000")
+        .duration(10 * 20)
+        .EUt(GTValues.VHA[GTValues.LV])
+
     // Ad Astra boosted ores
 
     // Arsenopyrite metallurgy like Cobaltite
     event.recipes.gtceu.electric_blast_furnace("arsenopyrite_metallurgy")
         .itemInputs("gtceu:arsenopyrite_dust")
-        .inputFluids("gtceu:oxygen 2500")
-        .itemOutputs("2x gtceu:small_wrought_iron_dust", "gtceu:arsenic_trioxide_dust")
+        .inputFluids("gtceu:oxygen 3000")
+        .itemOutputs("gtceu:hematite_dust", "gtceu:arsenic_trioxide_dust")
         .outputFluids("gtceu:sulfur_dioxide 1000")
         .duration(100)
         .EUt(GTValues.VA[GTValues.MV])

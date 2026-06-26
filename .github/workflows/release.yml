@@ -19,6 +19,14 @@ on:
           - "Beta"
           - "Alpha"
         default: "Beta"
+      version_increment:
+        description: "Version increment"
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
       draft:
         description: "Draft GitHub release (CF release will always be normal)"
         type: boolean
@@ -55,13 +63,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Config git user
         run: |
           git config user.name 'Release workflow'
-          git config user.email 'ThePansmith@users.noreply.github.com'
+          git config user.email 'illya.chernyshov888@gmail.com'
         shell: bash
       - name: Merge lang branch
         run: |
@@ -74,6 +82,10 @@ jobs:
 
   pre-build:
     uses: ./.github/workflows/get_version_info.yml
+    with:
+      format_only: false
+      version_increment: ${{ inputs.version_increment }}
+      type: ${{ inputs.type }}
 
   build:
     needs: [pre-build, merge-lang]
@@ -103,7 +115,7 @@ jobs:
         shell: bash
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-tags: true
 
@@ -130,14 +142,14 @@ jobs:
 
       - name: Download artifacts - Current Flow
         if: ${{ inputs.skip_build == false }}
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v8
         with:
           path: artifacts
           merge-multiple: true
 
       - name: Download artifacts - Previous Flow
         if: ${{ inputs.skip_build == true}}
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v8
         with:
           path: artifacts
           merge-multiple: true
@@ -169,7 +181,7 @@ jobs:
         shell: bash
 
       - name: Create GitHub Release
-        uses: ncipollo/release-action@v1.14.0
+        uses: ncipollo/release-action@v1.20.0
         id: release
         if: ${{ inputs.skip_github_release == false }}
         with:

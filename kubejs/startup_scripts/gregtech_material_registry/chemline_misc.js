@@ -116,13 +116,29 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(HF)2Ta")
 })
 
-// Guardian Scale Processing
+// Prismarine (Previously Guardian Scale) Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-    event.create("guardian_scale_slurry")
+    event.create("prismarine_slurry")
         .fluid()
         .color(0x8bbeaf)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("chitinous_mixture")
+        .fluid()
+        .color(0xad9c8a)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("cracked_chitinous_mixture")
+        .fluid()
+        .color(0xbfa589)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    // Byproduct of processing Chitin IRL. Only useful for electrolysis in Moni.
+    event.create("glucosamine")
+        .dust()
+        .color(0xf9d6d1)
+        .components(GTMaterials.Carbon.multiply(6), GTMaterials.Hydrogen.multiply(13), GTMaterials.Nitrogen.multiply(1), GTMaterials.Oxygen.multiply(5))
 })
 
 // Ad Astra Ore processing
@@ -171,6 +187,25 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0xF16AA5)
 
+})
+
+// Wither Gas
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("tetrapropylene")
+        .fluid()
+        .color(0xbfa53f)
+
+    event.create("alkylbenzene")
+        .fluid()
+        .color(0xbcbf65)
+
+    event.create("overbased_magnesium_sulfonate")
+        .fluid()
+        .color(0x8b8c66)
+
+    event.create("wither_gas")
+        .gas()
+        .color(0x3c3d2d)
 })
 
 // Primal Mana ...Chemline?
@@ -243,7 +278,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color(0xe2fff9)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .components("7x silicon_dioxide", "1x enderium", (doHarderProcessing ? "4x tantalum_pentoxide" : "1x tantalum"), "5x rutile", "11x polyethylene", "3x germanium")
+        .components("7x silicon_dioxide", "1x enderium", (doHarderProcessing ? "4x tantalum_pentoxide" : "1x tantalum"), "5x rutile", "11x polyethylene", "2x germanium")
 
 })
 
@@ -304,4 +339,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0x72728A).iconSet("rough")
         .components("2x tantalum", "5x oxygen")
+
+    event.create("purpur")
+        .dust()
+        .color(0xaf7baf).secondaryColor(0x965196).iconSet("rough")
 })

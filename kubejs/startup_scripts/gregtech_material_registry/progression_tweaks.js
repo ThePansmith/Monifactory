@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
         .components(GTMaterials.Neptunium.multiply(1), GTMaterials.Palladium.multiply(5), GTMaterials.Aluminium.multiply(2))
         .blastTemp(3600, "mid", GTValues.VA[GTValues.HV], 61.5 * 20)
-        .cableProperties(GTValues.VA[GTValues.LuV], 8, 8, false);
+        .cableProperties(GTValues.V[GTValues.LuV], 8, 8, false);
 
     // Lanthanum Gold Cadmium Curium Sulfate
     event.create("lanthanum_gold_cadmium_curium_sulfate")
@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_SPRING_SMALL, GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
         .components(GTMaterials.Lanthanum.multiply(2), GTMaterials.Gold.multiply(3), GTMaterials.Cadmium.multiply(3), GTMaterials.Curium.multiply(1), GTMaterials.Sulfur.multiply(1), GTMaterials.Oxygen.multiply(4))
         .blastTemp(7400, "higher", GTValues.VA[GTValues.LuV], 65 * 20)
-        .cableProperties(GTValues.VA[GTValues.UHV], 8, 8, false);
+        .cableProperties(GTValues.V[GTValues.UHV], 8, 8, false);
 
     // Advanced Solders
     // TODO: mixer, ABS | processing lines
@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0x74b59b)
         .iconSet("dull")
-        .components("15x bismuth", "11x tin", "9x zinc", "4x germanium")
+        .components("5x bismuth", "4x tin", "3x zinc", "1x germanium")
 
     event.create("living_solder_base")
         .dust()
@@ -45,4 +45,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("dull")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components(GTMaterials.get("living_solder_base").multiply(7), GTMaterials.Meat.multiply(3))
+
+    event.create("silicon_germanium")
+        .dust()
+        .color(0x6B7873)
+        .components(GTMaterials.Silicon.multiply(4), GTMaterials.Germanium.multiply(1))
 })

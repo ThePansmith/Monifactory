@@ -74,10 +74,10 @@ ServerEvents.recipes(event => {
     decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "3x nuclearcraft:plutonium_242", "16x gtceu:plutonium_nugget", "2x nuclearcraft:americium_242", GTValues.IV)
 
     // Plutonium fuels yield Curium. (Especially Cu-245, which comes from Pu-242) Pu-239 fuels yield a bit of Np-237, while Pu-241 fuels yield Am-243. LE fuels, with their high Pu-242 content, also yield Am-243.
-    decompdepleted("plutonium_lep_239", "2x nuclearcraft:plutonium_242", "nuclearcraft:neptunium_237", "4x nuclearcraft:curium_245", "1x nuclearcraft:berkelium_247", GTValues.LuV)
-    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "2x nuclearcraft:neptunium_237", "3x nuclearcraft:curium_245", "2x nuclearcraft:berkelium_247", GTValues.LuV)
-    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "4x nuclearcraft:curium_245", "2x nuclearcraft:berkelium_248", GTValues.LuV)
-    decompdepleted("plutonium_hep_241", "2x nuclearcraft:americium_243", "3x nuclearcraft:curium_243", "1x nuclearcraft:berkelium_247", "2x nuclearcraft:berkelium_248", GTValues.LuV)
+    decompdepleted("plutonium_lep_239", "2x nuclearcraft:plutonium_242", "nuclearcraft:neptunium_237", "4x nuclearcraft:curium_245", "8x gtceu:plutonium_nugget", GTValues.LuV)
+    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "2x nuclearcraft:neptunium_237", "3x nuclearcraft:curium_245", "2x nuclearcraft:plutonium_239", GTValues.LuV)
+    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "4x nuclearcraft:curium_245", "2x nuclearcraft:plutonium_239", GTValues.LuV)
+    decompdepleted("plutonium_hep_241", "2x nuclearcraft:americium_243", "3x nuclearcraft:curium_243", "1x nuclearcraft:americium_242", "2x nuclearcraft:plutonium_241", GTValues.LuV)
 
     // Americium yields Curium. (Cu-243 from Americium-241, and Cu-245 from  Americium-243) LEA, with its high Am-243 content, also yields Pu-239.
     decompdepleted("americium_lea_242", "8x gtceu:plutonium_nugget", "5x nuclearcraft:curium_245", "nuclearcraft:californium_251", "nuclearcraft:californium_252", GTValues.LuV)
@@ -90,6 +90,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:${name}_heat_sink`)
             .duration(400)
             .EUt(2)
+            .addMaterialInfo(true)
     }
 
     function canfluid(name, input) {
@@ -100,15 +101,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:${name}_heat_sink`)
             .duration(400)
             .EUt(2)
-    }
-
-    function canmod(name, input) {
-        event.remove({ output: `nuclearcraft:${name}_block` })
-        event.recipes.gtceu.canner(`${name}_heat_sink`)
-            .itemInputs("nuclearcraft:empty_heat_sink", `9x ${input}`)
-            .itemOutputs(`nuclearcraft:${name}_block`)
-            .duration(400)
-            .EUt(2)
+            .addMaterialInfo(true)
     }
 
     canfluid("water", "minecraft:water")
@@ -126,21 +119,19 @@ ServerEvents.recipes(event => {
     cansolid("tin", "gtceu:tin_dust")
     cansolid("aluminum", "gtceu:aluminium_dust")
     cansolid("manganese", "gtceu:manganese_dust")
-    canmod("graphite", "gtceu:graphite_dust")
-    canmod("beryllium", "gtceu:beryllium_dust")
 
     event.remove({ id: "nuclearcraft:empty_heat_sink" })
-    event.shaped("nuclearcraft:empty_heat_sink", [
+    event.recipes.gtceu.shaped("nuclearcraft:empty_heat_sink", [
         "TST",
         "S S",
         "TST"
     ], {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:steel_ingot"
-    })
+    }).addMaterialInfo()
 
     event.remove({ output: "nuclearcraft:plate_basic" })
-    event.shaped("2x nuclearcraft:plate_basic", [
+    event.recipes.gtceu.shaped("2x nuclearcraft:plate_basic", [
         "TST",
         "SDS",
         "TST"
@@ -148,10 +139,10 @@ ServerEvents.recipes(event => {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:tungsten_plate",
         D: "gtceu:double_steel_plate"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:plate_advanced" })
-    event.shaped("2x nuclearcraft:plate_advanced", [
+    event.recipes.gtceu.shaped("2x nuclearcraft:plate_advanced", [
         "TST",
         "SDS",
         "TST"
@@ -159,7 +150,7 @@ ServerEvents.recipes(event => {
         T: "nuclearcraft:hard_carbon_ingot",
         S: "gtceu:yttrium_barium_cuprate_plate",
         D: "nuclearcraft:plate_basic"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:plate_du" })
     event.recipes.gtceu.alloy_smelter("du_plating")
@@ -181,27 +172,27 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: "nuclearcraft:fission_reactor_casing" })
-    event.shaped("8x nuclearcraft:fission_reactor_casing", [
+    event.recipes.gtceu.shaped("8x nuclearcraft:fission_reactor_casing", [
         "DDD",
         "DFD",
         "DDD"
     ], {
         F: "gtceu:robust_machine_casing",
         D: "nuclearcraft:plate_basic"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:fission_reactor_solid_fuel_cell" })
-    event.shaped("nuclearcraft:fission_reactor_solid_fuel_cell", [
+    event.recipes.gtceu.shaped("nuclearcraft:fission_reactor_solid_fuel_cell", [
         "TST",
         "S S",
         "TST"
     ], {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:tempered_glass"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:fission_reactor_controller" })
-    event.shaped("nuclearcraft:fission_reactor_controller", [
+    event.recipes.gtceu.shaped("nuclearcraft:fission_reactor_controller", [
         "DED",
         "EFE",
         "DED"
@@ -209,7 +200,7 @@ ServerEvents.recipes(event => {
         F: "gtceu:robust_machine_casing",
         E: "#gtceu:circuits/ev",
         D: "nuclearcraft:plate_advanced"
-    })
+    }).addMaterialInfo()
 
     event.remove({ id: "nuclearcraft:fission_reactor_port" })
     event.shapeless("nuclearcraft:fission_reactor_port", ["nuclearcraft:fission_reactor_casing", "minecraft:hopper"])
@@ -271,8 +262,6 @@ ServerEvents.recipes(event => {
             "nuclearcraft:neptunium_237",
             "nuclearcraft:curium_245",
             "nuclearcraft:curium_243",
-            "nuclearcraft:berkelium_247",
-            "nuclearcraft:berkelium_248",
             "nuclearcraft:uranium_233",
             "nuclearcraft:americium_241",
             "nuclearcraft:americium_242",
@@ -304,7 +293,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:distilled_water 20")
         .circuit(5)
         .outputFluids("nuclearcraft:technical_water 20")
-        .duration(20).EUt(120)
+        .duration(20).EUt(GTValues.VA[GTValues.MV])
 
     function rtg(name, input) {
         event.remove({ output: `nuclearcraft:${name}_rtg` })
@@ -312,7 +301,8 @@ ServerEvents.recipes(event => {
             .itemInputs("4x gtceu:graphite_plate", "4x nuclearcraft:plate_advanced", `4x ${input}`)
             .itemOutputs(`nuclearcraft:${name}_rtg`)
             .duration(200)
-            .EUt(1920)
+            .EUt(GTValues.VA[GTValues.EV])
+            .addMaterialInfo(true)
     }
 
     rtg("americium", "nuclearcraft:americium_241")
@@ -327,7 +317,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:coil_${name}`)
             .circuit(1)
             .duration(200)
-            .EUt(480)
+            .EUt(GTValues.VA[GTValues.HV])
     }
 
     coils("copper")

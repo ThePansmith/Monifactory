@@ -716,7 +716,10 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["126ED4A0AEA05DCD"]
+			dependencies: [
+				"126ED4A0AEA05DCD"
+				"3000798ACA51BFDC"
+			]
 			description: [
 				"{moni.quest.5CFBAB5F83E33064.description1}"
 				""
@@ -840,6 +843,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: -8.5d
@@ -868,6 +872,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 14.0d
 			y: -8.5d
@@ -895,6 +900,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{moni.quest.7B1D349ADD9D1140.title}"
 			x: 14.0d
@@ -924,6 +930,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{moni.quest.15A43AB700CADF2D.title}"
 			x: 14.0d
@@ -949,6 +956,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: -7.0d
@@ -982,10 +990,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"6F5BB99060FF03AC"
-				"5911900438648430"
-			]
+			dependencies: ["6F5BB99060FF03AC"]
 			description: ["{moni.quest.4EB9D1ADC4814330.description1}"]
 			id: "4EB9D1ADC4814330"
 			shape: "hexagon"
@@ -1060,7 +1065,7 @@
 			dependencies: [
 				"0F56F4E642BC2B85"
 				"44E2C12FC4C26CA9"
-				"187083EB66D95726"
+				"3E1A349F989835F7"
 			]
 			description: [
 				"{moni.quest.248ABB7F26EB72EE.description1}"
@@ -1618,13 +1623,7 @@
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "4D41A87F6EC97F19"
-					item: "gtceu:filter_casing"
-					type: "item"
-				}
-				{
-					count: 75L
+					count: 86L
 					id: "2BD9B381C408FF8B"
 					item: {
 						Count: 1
@@ -1642,7 +1641,45 @@
 							]
 						}
 					}
+					optional_task: true
 					title: "{moni.task.2BD9B381C408FF8B}"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4D41A87F6EC97F19"
+					item: "gtceu:filter_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "734A8736E913F3B9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "44D6926CD41BC346"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "46EB73137CAAD497"
+					item: "minecraft:iron_door"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2361,6 +2398,7 @@
 			dependencies: [
 				"67663B49B80849C1"
 				"75DD12FBC8AA39FC"
+				"5911900438648430"
 			]
 			description: ["{moni.quest.01E542E1C9DAF5B4.description1}"]
 			id: "01E542E1C9DAF5B4"
@@ -2402,6 +2440,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: -5.5d
@@ -3431,8 +3470,9 @@
 		{
 			dependencies: [
 				"63CC578C3558E0AF"
-				"07057CDE4E021BA7"
-				"0ED041E2114F7C84"
+				"4E9530E62A4B673B"
+				"38B1588655AA9BDF"
+				"7C9C91EC9F3930C2"
 			]
 			description: [
 				"{moni.quest.33F610CF136278AE.description1}"
@@ -3455,10 +3495,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: [
-				"040B3FCD82533BD9"
-				"786AECA42F53B45A"
-			]
+			dependencies: ["040B3FCD82533BD9"]
 			description: ["{moni.quest.13578427FD9CC2CE.description1}"]
 			hide_dependency_lines: true
 			id: "55919EFAB081C7C4"

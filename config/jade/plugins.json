@@ -9,6 +9,7 @@
     "color_info": true,
     "sculk_vat_xp_info": true,
     "omnic_synth_info": true,
+    "virtual_particle_synth_info": true,
     "microverse_info": true
   },
   "minecraft": {
@@ -64,6 +65,7 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
+    "enlarged_me_stocking_bus_info": true,
     "pterb_info": true
   },
   "endertanks": {
@@ -78,6 +80,7 @@
     "workable_provider": true,
     "transformer": true,
     "energy_converter_provider": true,
+    "ldp_endpoint": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,
@@ -86,6 +89,7 @@
     "recipe_logic_provider": true,
     "maintenance_info": true,
     "machine_mode": true,
+    "battery_info": true,
     "electric_container_provider": true,
     "steam_boiler_info": true,
     "recipe_output_info": true,

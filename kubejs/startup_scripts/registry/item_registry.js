@@ -304,23 +304,36 @@ StartupEvents.registry("item", event => {
         .rarity("epic")
         .maxStackSize(1)
 
+    // Photonic Chips
+    event.create("photonic_soc_base")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_base")
+        .displayName("Photonic Chip Base")
+    event.create("photonic_soc_inert")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_inert")
+        .displayName("Photonic Chip: §7Inert§r")
+    event.create("photonic_soc_red")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_r")
+        .displayName("Photonic Chip: §4Red§r")
+    event.create("photonic_soc_yellow")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_y")
+        .displayName("Photonic Chip: §eYellow§r")
+    event.create("photonic_soc_green")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_g")
+        .displayName("Photonic Chip: §2Green§r")
+    event.create("photonic_soc_cyan")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_c")
+        .displayName("Photonic Chip: §bCyan§r")
+    event.create("photonic_soc_blue")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_b")
+        .displayName("Photonic Chip: §1Blue§r")
+    event.create("photonic_soc_magenta")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_m")
+        .displayName("Photonic Chip: §dMagenta§r")
+    event.create("photonic_soc_active")
+        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_active")
+        .displayName("Photonic Chip: Active")
+
     // Optical Circuit intermediates
-    event.create("sapphire_seed_crystal")
-        .texture("kubejs:item/circuits/theme/optical/wafer/sapphire_seed_crystal")
-    event.create("sapphire_boule")
-        .texture("kubejs:item/circuits/theme/optical/wafer/sapphire_boule")
-    event.create("sapphire_wafer")
-        .texture("kubejs:item/circuits/theme/optical/wafer/sapphire_wafer")
-    event.create("coated_sapphire_wafer")
-        .texture("kubejs:item/circuits/theme/optical/wafer/coated_sapphire_wafer")
-    event.create("engraved_sapphire_wafer")
-        .texture("kubejs:item/circuits/theme/optical/wafer/engraved_sapphire_wafer")
-    event.create("incomplete_sapphire_wafer")
-        .texture("kubejs:item/circuits/theme/optical/wafer/incomplete_sapphire_wafer")
-    event.create("completed_optical_wafer")
-        .texture("kubejs:item/circuits/theme/optical/wafer/completed_optical_wafer")
-    event.create("optical_chip")
-        .texture("kubejs:item/circuits/theme/optical/wafer/optical_chip")
     event.create("electro_optic_modulator")
         .texture("kubejs:item/circuits/theme/optical/electro_optic_modulator")
     event.create("carbon_mesh_reinforced_circuit_board")
@@ -359,7 +372,6 @@ StartupEvents.registry("item", event => {
 
     // Stabilized Elements
     const stabilized_elements = [
-        ["berkelium", "#a33f20", "#87001c"], // #ffaa4f // #a33f20 // Colors changed by us!
         ["neptunium", "#486d7b", "#003064"], // #b4eaff // #486d7b // Colors changed by us!
         ["plutonium", "#ba2727", "#222730"], // #ff4c4c //  #ba2727
         ["uranium", "#1d891d", "#33342c"], // #46FA46 // #1d891d
@@ -458,19 +470,23 @@ StartupEvents.registry("item", event => {
             .texture("kubejs:item/ender_spore")
     }
 
+    // Thermal Custom Augments Classes
+    const $AugmentItem = Java.loadClass("cofh.thermal.lib.common.item.AugmentItem");
+    const $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties");
+
     // Thermal Augments
     event.create("redstone_transmission_coil")
         .texture("kubejs:item/mod/thermal/redstone_transmission_coil")
-    event.create("thermal:upgrade_augment_1");
-    event.create("thermal:upgrade_augment_2");
-    event.create("thermal:upgrade_augment_4");
-    event.create("thermal:upgrade_augment_3");
+    event.createCustom("thermal:upgrade_augment_1",() =>new $AugmentItem(new $Item$Properties(), {Type: "Upgrade", BaseMod: 1.5}))
+    event.createCustom("thermal:upgrade_augment_2",() =>new $AugmentItem(new $Item$Properties(), {Type: "Upgrade", BaseMod: 2.5}))
+    event.createCustom("thermal:upgrade_augment_4",() =>new $AugmentItem(new $Item$Properties(), {Type: "Upgrade", BaseMod: 5}))
+    event.createCustom("thermal:upgrade_augment_3",() =>new $AugmentItem(new $Item$Properties(), {Type: "Upgrade", BaseMod: 12}))
 
     // Advanced Thermal Storage augments
-    event.create("thermal:rf_coil_augment_advanced")
-    event.create("thermal:rf_coil_storage_augment_advanced")
-    event.create("thermal:rf_coil_xfer_augment_advanced")
-    event.create("thermal:fluid_tank_augment_advanced")
+    event.createCustom("thermal:rf_coil_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFXfer: 8, RFMax: 8}))
+    event.createCustom("thermal:rf_coil_storage_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFXfer: 4, RFMax: 10}))
+    event.createCustom("thermal:rf_coil_xfer_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "RF", RFXfer: 10, RFMax: 4}))
+    event.createCustom("thermal:fluid_tank_augment_advanced",() =>new $AugmentItem(new $Item$Properties(), {Type: "Fluid", FluidMax: 10}))
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
@@ -503,9 +519,6 @@ StartupEvents.registry("item", event => {
         .displayName("Nether Star Center")
 
     // ArmorPlus monster drops
-    event.create("guardian_scale")
-        .rarity("rare")
-        .texture("kubejs:item/lines/mob_guts/guardian_scale")
     event.create("ender_dragon_scale")
         .rarity("epic")
         .texture("kubejs:item/lines/mob_guts/ender_dragon_scale")
@@ -580,9 +593,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/lines/netherite/netherite_shards")
     event.create("reactive_netherite_cluster")
         .texture("kubejs:item/lines/netherite/reactive_netherite_cluster")
-    event.create("activated_netherite_scrap")
-        .texture("kubejs:item/lines/netherite/pure_netherite_scrap")
-        .glow(true);
     event.create("inert_nether_compound_ingot")
         .texture("kubejs:item/lines/netherite/inert_nether_compound_ingot")
 
@@ -601,20 +611,20 @@ StartupEvents.registry("item", event => {
     event.create("depleted_naquadah_fuel_dust")
 
     // Crystal Matrix Line
-    event.create("raw_nanotube_substrate")
-        .texture("kubejs:item/lines/matrix/raw_nanotube_substrate")
-    event.create("prepared_nanotube_substrate")
-        .texture("kubejs:item/lines/matrix/prepared_nanotube_substrate")
-    event.create("graphite_electrode")
-        .texture("kubejs:item/lines/matrix/graphite_electrode")
-    event.create("nanotube_soot")
-        .texture("kubejs:item/lines/matrix/nanotube_soot")
+    event.create("nanotube_substrate")
+        .texture("kubejs:item/lines/matrix/nanotube_substrate")
+    event.create("failed_nanotube_substrate")
+        .texture("kubejs:item/lines/matrix/failed_nanotube_substrate")
     event.create("grown_nanotube_substrate")
         .texture("kubejs:item/lines/matrix/grown_nanotube_substrate")
     event.create("carbon_nanotubes")
         .texture("kubejs:item/lines/matrix/carbon_nanotubes")
+    event.create("crystal_seeds")
+        .texture("kubejs:item/lines/matrix/crystal_seeds")
     event.create("adhered_matrix_mesh")
         .texture("kubejs:item/lines/matrix/adhered_matrix_mesh")
+    event.create("graphite_electrode")
+        .texture("kubejs:item/lines/matrix/graphite_electrode")
 
     // Terbium Line
     event.create("rare_earth_sulfate")
@@ -647,35 +657,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/lines/scrap/necrosiderite_compound")
     event.create("necrosiderite_oxide_glass_dust")
         .texture("kubejs:item/lines/scrap/necrosiderite_oxide_glass_dust")
-
-    // Photonic SoCs
-    event.create("photonic_soc_base")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_base")
-        .displayName("Photonic SoC Base")
-    event.create("photonic_soc_inert")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_inert")
-        .displayName("Photonic SoC: §7Inert§r")
-    event.create("photonic_soc_red")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_r")
-        .displayName("Photonic SoC: §4Red§r")
-    event.create("photonic_soc_yellow")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_y")
-        .displayName("Photonic SoC: §eYellow§r")
-    event.create("photonic_soc_green")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_g")
-        .displayName("Photonic SoC: §2Green§r")
-    event.create("photonic_soc_cyan")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_c")
-        .displayName("Photonic SoC: §bCyan§r")
-    event.create("photonic_soc_blue")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_b")
-        .displayName("Photonic SoC: §1Blue§r")
-    event.create("photonic_soc_magenta")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_m")
-        .displayName("Photonic SoC: §dMagenta§r")
-    event.create("photonic_soc_active")
-        .texture("kubejs:item/lines/prismac/psoc/photonic_soc_active")
-        .displayName("Photonic SoC: Active")
 
     // Endgame Wafer items
     event.create("uxpic_wafer")

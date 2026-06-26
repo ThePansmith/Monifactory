@@ -25,7 +25,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:microverse_casing")
         .duration(50)
         .circuit(6)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // Single-recipe microverse projectors
     let projector = [
@@ -35,7 +36,7 @@ ServerEvents.recipes(event => {
     ]
 
     projector.forEach(projector => {
-        event.shaped(`monilabs:${projector[0]}`, [
+        event.recipes.gtceu.shaped(`monilabs:${projector[0]}`, [
             "MCM",
             "FAF",
             "MCM"
@@ -45,6 +46,7 @@ ServerEvents.recipes(event => {
             A: "gtceu:computer_monitor_cover",
             F: projector[2]
         }).id(`kubejs:${projector[0]}`)
+            .addMaterialInfo()
     })
 
     // Hyperbolic Microverse Projector
@@ -70,6 +72,16 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:microverse_stability_sensor_hatch")
         .duration(20 * 3)
         .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
+
+    // Advanced Microverse Stability Sensor Hatch
+    event.recipes.gtceu.assembler("advanced_microverse_stability_sensor_hatch")
+        .itemInputs("monilabs:microverse_stability_sensor_hatch", "gtceu:iv_sensor")
+        .inputFluids("gtceu:soldering_alloy 576")
+        .itemOutputs("monilabs:advanced_microverse_stability_sensor_hatch")
+        .duration(20 * 6)
+        .EUt(GTValues.VA[GTValues.IV])
+        .addMaterialInfo(true)
 
     // Microverse Type Sensor Hatch
     event.recipes.gtceu.assembler("microverse_type_sensor_hatch")
@@ -78,4 +90,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:microverse_type_sensor_hatch")
         .duration(20 * 3)
         .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
+
+    // Microverse Type Sensor Hatch
+    event.recipes.gtceu.assembler("advanced_microverse_type_sensor_hatch")
+        .itemInputs("monilabs:microverse_type_sensor_hatch", "gtceu:iv_sensor")
+        .inputFluids("gtceu:soldering_alloy 576")
+        .itemOutputs("monilabs:advanced_microverse_type_sensor_hatch")
+        .duration(20 * 6)
+        .EUt(GTValues.VA[GTValues.IV])
+        .addMaterialInfo(true)
 })

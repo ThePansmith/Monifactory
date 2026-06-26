@@ -44,6 +44,38 @@ function replaceGTRecipeAmount(event, recipeType, idRegex, tagOrItem, toAlter, m
 
 ServerEvents.recipes(event => {
 
+    // Make Integrated Circuits cheaper :3c
+    // Integrated LV - Removes Diodes, increases ILC Chips required from 1 > 2
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_lv" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_lv")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "2x #gtceu:resistors", "2x gtceu:fine_copper_wire", "2x gtceu:tin_bolt")
+        .inputFluids("gtceu:tin 144")
+        .itemOutputs("2x gtceu:basic_integrated_circuit")
+        .duration(10 * 20)
+        .EUt(GTValues.VHA[GTValues.LV])
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_lv_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_lv_soldering_alloy")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "2x #gtceu:resistors", "2x gtceu:fine_copper_wire", "2x gtceu:tin_bolt")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("2x gtceu:basic_integrated_circuit")
+        .duration(10 * 20)
+        .EUt(GTValues.VHA[GTValues.LV])
+    // Integrated HV - Swaps ILCs with Diodes
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_hv" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_hv")
+        .itemInputs("2x gtceu:good_integrated_circuit", "2x gtceu:ram_chip", "2x #gtceu:diodes", "4x #gtceu:transistors", "8x gtceu:fine_electrum_wire", "8x gtceu:annealed_copper_bolt")
+        .inputFluids("gtceu:tin 144")
+        .itemOutputs("gtceu:advanced_integrated_circuit")
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_hv_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("integrated_circuit_hv_soldering_alloy")
+        .itemInputs("2x gtceu:good_integrated_circuit", "2x gtceu:ram_chip", "2x #gtceu:diodes", "4x #gtceu:transistors", "8x gtceu:fine_electrum_wire", "8x gtceu:annealed_copper_bolt")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("gtceu:advanced_integrated_circuit")
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
     // Replace some computer components with magical metals
     replaceCircassItem(event, /workstation_ev/, "tag", "forge:bolts/blue_alloy", "forge:bolts/vibrant_alloy")
     replaceCircassItem(event, /nano_computer_iv/, "tag", "forge:fine_wires/electrum", "forge:fine_wires/lumium")
@@ -64,7 +96,7 @@ ServerEvents.recipes(event => {
     const smds = [
         ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 72],
         ["resistor", "monilabs:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 144],
-        ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 36],
+        ["capacitor", doHarderRecipes ? "gtceu:kapton_k_foil" : "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 36],
         ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_necrosiderite_wire", 72],
         ["inductor", "gtceu:terbium_ring", "4x gtceu:fine_necrosiderite_wire", 72]
     ]
@@ -95,7 +127,7 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:wetware_circuit_board", "24x minecraft:sculk_vein", "8x gtceu:stem_cells")
         .inputFluids("gtceu:sodium_persulfate 3000", "gtceu:iron_iii_chloride 1500", "enderio:xp_juice 1000")
         .itemOutputs("gtceu:wetware_printed_circuit_board")
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
         .duration(1800)
         .cleanroom(CleanroomType.CLEANROOM)
 
@@ -130,10 +162,10 @@ ServerEvents.recipes(event => {
             "12x gtceu:advanced_smd_diode",
             "24x gtceu:ram_chip",
             "4x gtceu:uhpic_chip",
-            "8x gtceu:cryolobus_double_wire",
+            "8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
             "8x gtceu:europium_plate"
         )
-        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:polybenzimidazole 1152")
+        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("gtceu:wetware_processor_mainframe")
         .EUt(GTValues.VA[GTValues.ZPM]).duration(2000)
         .stationResearch(b => b
@@ -151,10 +183,10 @@ ServerEvents.recipes(event => {
             "12x gtceu:advanced_smd_diode",
             "24x gtceu:ram_chip",
             "4x gtceu:uhpic_chip",
-            "8x gtceu:cryolobus_double_wire",
+            "8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
             "8x gtceu:europium_plate"
         )
-        .inputFluids("gtceu:living_soldering_alloy 576", "gtceu:polybenzimidazole 1152")
+        .inputFluids("gtceu:living_soldering_alloy 576", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("gtceu:wetware_processor_mainframe")
         .EUt(GTValues.VA[GTValues.ZPM]).duration(2000)
         .stationResearch(b => b
@@ -166,16 +198,16 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler("optical_processor")
         .itemInputs(
             "1x kubejs:optical_processing_unit",
-            "1x kubejs:optical_chip",
-            "2x kubejs:electro_optic_modulator",
-            "10x gtceu:advanced_smd_resistor",
-            "10x gtceu:advanced_smd_transistor",
-            "4x gtceu:fine_naquadah_wire"
+            "1x kubejs:photonic_soc_active",
+            "4x kubejs:electro_optic_modulator",
+            "16x gtceu:advanced_smd_resistor",
+            "16x gtceu:advanced_smd_transistor",
+            "8x gtceu:fine_naquadah_wire"
         )
         .inputFluids("gtceu:living_soldering_alloy 18")
-        .itemOutputs("2x kubejs:optical_processor")
+        .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(10 * 20)
+        .duration(20 * 20)
         .EUt(150000)
 
     event.recipes.gtceu.assembly_line("optical_processor_assembly")
@@ -240,20 +272,6 @@ ServerEvents.recipes(event => {
             .CWUt(128)
             .EUt(GTValues.VA[GTValues.UV])
         )
-
-    // SoC recipe for cheaper Optical Processor
-    event.recipes.gtceu.circuit_assembler("optical_processor_soc")
-        .itemInputs(
-            "kubejs:optical_processing_unit",
-            "kubejs:photonic_soc_active",
-            "8x gtceu:fine_naquadah_wire",
-            "8x gtceu:necrosiderite_bolt"
-        )
-        .inputFluids("gtceu:living_soldering_alloy 18")
-        .itemOutputs("4x kubejs:optical_processor")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(5 * 20)
-        .EUt(2400000)
 
 
     // Extradimensional Circuits
@@ -430,7 +448,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:fine_necrosiderite_wire",
             "gtceu:infinity_plate"
         )
-        .inputFluids("gtceu:living_soldering_alloy 576", "gtceu:polyethyl_cyanoacrylate 1152")
+        .inputFluids("gtceu:living_soldering_alloy 576", "gtceu:polyether_ether_ketone 1152")
         .itemOutputs("1x kubejs:extradimensional_processor_computer")
         .duration(20 * 20)
         .EUt(GTValues.VHA[GTValues.UHV])
@@ -444,9 +462,8 @@ ServerEvents.recipes(event => {
         .itemInputs(
             "kubejs:microminer_t11",
             "16x kubejs:microverse_containment_unit",
-            "16x kubejs:optical_chip",
+            "20x kubejs:photonic_soc_active",
             "32x kubejs:electro_optic_modulator",
-            "4x kubejs:photonic_soc_active",
             "64x gtceu:fine_naquadah_wire"
         )
         .inputFluids("gtceu:crude_naquadah_fuel 50")
@@ -474,7 +491,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:necrosiderite_single_wire",
             "8x gtceu:double_infinity_plate"
         )
-        .inputFluids("gtceu:living_soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 1152")
+        .inputFluids("gtceu:living_soldering_alloy 4320", "gtceu:polyether_ether_ketone 576", "gtceu:omnium 1152")
         .itemOutputs("kubejs:extradimensional_processor_mainframe")
         .duration(3200)
         .EUt(GTValues.VA[GTValues.UHV])

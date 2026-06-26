@@ -17,9 +17,9 @@ ServerEvents.recipes(event => {
         ["#forge:storage_blocks/emerald", "gtceu:emeradic_block", GTValues.VA[GTValues.MV], "emeradic_block"],
         ["#forge:storage_blocks/iron", "gtceu:enori_block", GTValues.VA[GTValues.MV], "enori_block"],
         ["minecraft:sand", "minecraft:soul_sand", GTValues.VA[GTValues.MV], "soul_sand"],
-        ["minecraft:quartz", "minecraft:prismarine_shard", GTValues.VA[GTValues.MV], "prismarine_shard"],
         ["minecraft:rotten_flesh", "minecraft:leather", GTValues.VA[GTValues.LV], "leather"],
-        ["gtceu:topaz_gem", "minecraft:prismarine_crystals", GTValues.VA[GTValues.MV], "prismarine_crystals"],
+        ["minecraft:prismarine_shard", "minecraft:prismarine_crystals", GTValues.VA[GTValues.MV], "prismarine_crystals"],
+        ["minecraft:prismarine_crystals", "minecraft:prismarine_shard", GTValues.VA[GTValues.MV], "prismarine_shards"],
         ["gtceu:steel_ingot", "gtceu:damascus_steel_ingot", GTValues.VA[GTValues.MV], "damascus_steel"],
         ["gtceu:diamatine_block", "kubejs:starry_diamond_block", GTValues.VA[GTValues.MV], "starry_diamond"],
         ["minecraft:dried_kelp", "minecraft:wither_rose", GTValues.VA[GTValues.LV], "wither_rose"],
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     // Black quartz, tag-based recipes for Tinted Glass
     event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:glass", "#forge:glass")
     event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:amethyst_shard", "#forge:gems/amethyst")
-    event.shaped("2x minecraft:tinted_glass", [
+    event.recipes.gtceu.shaped("2x minecraft:tinted_glass", [
         " Q ",
         "QGQ",
         " Q "
@@ -63,6 +63,7 @@ ServerEvents.recipes(event => {
         Q: "#forge:gems/black_quartz",
         G: "#forge:glass"
     }).id("kubejs:tinted_glass_black_quartz")
+        .addMaterialInfo()
     event.recipes.gtceu.assembler("tinted_glass_black_quartz")
         .itemInputs("2x #forge:gems/black_quartz", "#forge:glass")
         .itemOutputs("minecraft:tinted_glass")
@@ -84,7 +85,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.atomic_reconstruction(`kubejs:${level}_universal_circuit`)
             .itemInputs(`#gtceu:circuits/${level}`)
             .itemOutputs(`kubejs:${level}_universal_circuit`)
-            .EUt(32)
+            .EUt(GTValues.VA[GTValues.LV])
             .duration(5)
     })
 
@@ -101,7 +102,7 @@ ServerEvents.recipes(event => {
         ["uev", "omnium"]
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
-        event.shaped(`gtceu:${tier}_atomic_reconstructor`, [
+        event.recipes.gtceu.shaped(`gtceu:${tier}_atomic_reconstructor`, [
             "CPC",
             "EHE",
             "PPM"
@@ -112,6 +113,7 @@ ServerEvents.recipes(event => {
             C: `#gtceu:circuits/${tier}`,
             M: `gtceu:${tier}_electric_motor`
         }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
+            .addMaterialInfo()
     })
 
     // Flower conversion convenience recipes

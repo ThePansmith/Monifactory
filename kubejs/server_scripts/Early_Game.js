@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:aluminium_dust")
         .itemOutputs("gtceu:aluminium_ingot")
         .duration(400)
-        .EUt(120)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(1)
         .blastFurnaceTemp(1700)
 
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:nitrogen 1000")
         .itemOutputs("gtceu:aluminium_ingot")
         .duration(268)
-        .EUt(120)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(2)
         .blastFurnaceTemp(1700)
 
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         .itemInputs("#forge:gems/diamond", "#forge:dusts/pulsating")
         .itemOutputs("minecraft:ender_pearl")
         .duration(300)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
 
     const plantMaterial = ["#minecraft:leaves", "#minecraft:saplings", "minecraft:vine"]
@@ -46,7 +46,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:bronze_machine_casing")
         .circuit(8)
         .duration(25)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     // Hand-crushing
     event.shapeless("minecraft:gravel", ["#forge:cobblestone/normal", "#forge:tools/mortars"])
@@ -61,19 +62,10 @@ ServerEvents.recipes(event => {
         .itemInputs("2x enderio:photovoltaic_composite", "gtceu:electrical_steel_plate")
         .itemOutputs("enderio:photovoltaic_plate")
         .duration(180)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Solar composite
     event.shapeless("3x enderio:photovoltaic_composite", ["gtceu:lapis_dust", "gtceu:coal_dust", "gtceu:silicon_dust"]).id("enderio:photovoltaic_composite")
-
-    event.remove({ id: "gtceu:assembler/phenolic_board" })
-    event.recipes.gtceu.chemical_reactor("phenolic_board")
-        .itemInputs("gtceu:resin_circuit_board")
-        .inputFluids("gtceu:phenol 100")
-        .itemOutputs("gtceu:phenolic_circuit_board")
-        .duration(100)
-        .EUt(8)
-
 
     // Resin Board stuff
     event.recipes.gtceu.assembler("kubejs:resin_board_assembler")
@@ -82,42 +74,63 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:resin_circuit_board")
         .circuit(1)
         .duration(150)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     event.recipes.gtceu.assembler("gtceu:basic_circuit_board")
         .itemInputs("#minecraft:planks", "4x gtceu:copper_foil")
         .inputFluids("gtceu:glue 100")
         .itemOutputs("gtceu:resin_printed_circuit_board")
         .duration(200)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
 
-    // phenol
-
-    let steam = new JSONObject()
-    steam.add("amount", 4000)
-    steam.add("value", { tag: "forge:steam" })
-
-    // JSON object and FluidIngredientJS are loaded in server script _initial.js
-    event.recipes.gtceu.pyrolyse_oven("phenol_coal")
+    // Phenol direct from Coal
+    event.recipes.gtceu.pyrolyse_oven("coal_to_phenol")
         .itemInputs("16x minecraft:coal")
-        .inputFluids(FluidIngredientJS.of(steam))
-        .itemOutputs("20x gtceu:coke_gem")
+        .inputFluids("#forge:steam 4000")
+        .chancedOutput("gtceu:coal_fly_ash_dust", 5000, 0)
         .outputFluids("gtceu:phenol 1000")
         .circuit(14)
-        .duration(600)
-        .EUt(30)
+        .duration(640)
+        .EUt(GTValues.VA[GTValues.LV])
 
-    event.recipes.gtceu.pyrolyse_oven("phenol_coal_dust")
+    event.recipes.gtceu.pyrolyse_oven("coal_dust_to_phenol")
         .itemInputs("16x gtceu:coal_dust")
-        .inputFluids(FluidIngredientJS.of(steam))
-        .itemOutputs("20x gtceu:coke_dust")
+        .inputFluids("#forge:steam 4000")
+        .chancedOutput("gtceu:coal_fly_ash_dust", 5000, 0)
         .outputFluids("gtceu:phenol 1000")
         .circuit(14)
-        .duration(600)
-        .EUt(30)
+        .duration(640)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Phenol direct from Wood
+    event.recipes.gtceu.pyrolyse_oven("log_to_phenol")
+        .itemInputs("16x #minecraft:logs_that_burn")
+        .itemOutputs("2x gtceu:ash_dust")
+        .outputFluids("gtceu:phenol 500")
+        .circuit(11)
+        .duration(1280)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.pyrolyse_oven("log_to_phenol_nitrogen")
+        .itemInputs("16x #minecraft:logs_that_burn")
+        .inputFluids("gtceu:nitrogen 1000")
+        .itemOutputs("2x gtceu:ash_dust")
+        .outputFluids("gtceu:phenol 500")
+        .circuit(12)
+        .duration(640)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Phenolic circuit board
+    event.remove({ id: "gtceu:assembler/phenolic_board" })
+    event.recipes.gtceu.chemical_reactor("phenolic_board")
+        .itemInputs("gtceu:resin_circuit_board")
+        .inputFluids("gtceu:phenol 100")
+        .itemOutputs("gtceu:phenolic_circuit_board")
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     // Pyro Oven
-    event.shaped("gtceu:pyrolyse_oven", [
+    event.recipes.gtceu.shaped("gtceu:pyrolyse_oven", [
         "PCW",
         "CHC",
         "PUW"
@@ -127,9 +140,7 @@ ServerEvents.recipes(event => {
         U: "gtceu:lv_electric_pump",
         W: "gtceu:cupronickel_quadruple_wire",
         H: "gtceu:ulv_machine_hull"
-    }).id("gtceu:shaped/pyrolyse_oven")
-    event.remove({ id: "gtceu:arc_furnace/arc_pyrolyse_oven" })
-    event.remove({ id: "gtceu:macerator/macerate_pyrolyse_oven" })
+    }).id("gtceu:shaped/pyrolyse_oven").addMaterialInfo()
 
     // Toolbelts
     event.replaceInput({ output: "toolbelt:pouch" }, "minecraft:gold_ingot", "gtceu:steel_ingot")
@@ -151,7 +162,7 @@ ServerEvents.recipes(event => {
             .itemInputs(Item.of(input))
             .itemOutputs(output)
             .duration(10)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
     }
 
     CobbleToGravel("cobbletogravel", "minecraft:cobblestone", "minecraft:gravel")

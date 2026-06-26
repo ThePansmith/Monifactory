@@ -9,9 +9,11 @@ enable_lightmap_caching: true
 # Higher values will result in less frequent updates
 # to block lighting, but slightly better performance.
 # Values below 2 will disable the optimization.
+# Has no effect in Minecraft 1.21.11+ as lightmap caching no longer directly uses time.
 lightmap_time_change_needed_for_update: 80
 
 # Whether the sky's color should be cached unless you're on a biome border.
+# Has no effect in Minecraft 1.21.11+ as the sky color was made data-driven.
 enable_sky_color_caching: true
 # How much the in-game time must change in ticks for the sky color to
 # be recalculated when not between biome borders. Higher values will result in
@@ -36,7 +38,7 @@ enable_toast_optimizations: true
 # for the entire frame during rendering.
 enable_sky_angle_caching_in_worldrenderer: true
 # Whether entity renderers should be stored directly in EntityType instead of a HashMap.
-# If your entity-adding mod crashes with this mod, it's probably this option's fault.
+# If your entity-adding mod crashes with BadOptimizations, try disabling this first.
 enable_entity_renderer_caching: true
 # Whether block entity renderers should be stored in BlockEntityType instead of a HashMap.
 enable_block_entity_renderer_caching: true
@@ -76,4 +78,4 @@ ignore_mod_cache_hooks: false
 log_config: true
 
 # Do not change this
-config_version: 5
+config_version: 6

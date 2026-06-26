@@ -1,12 +1,12 @@
 /**
- * Custom recipes for AE2
+ * Custom recipes for AE2 & addons
  */
 ServerEvents.recipes(event => {
 
     // Base AE2
     // ME Controller
     event.remove({ id: "ae2:network/blocks/controller" })
-    event.shaped(Item.of("ae2:controller"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:controller"), [
         "ABA",
         "BCB",
         "ABA"
@@ -15,10 +15,11 @@ ServerEvents.recipes(event => {
         B: "gtceu:fluix_plate",
         C: "ae2:energy_acceptor"
     }).id("kubejs:ae2/controller")
+        .addMaterialInfo()
 
     // Energy Acceptor
     event.remove({ id: "ae2:network/blocks/energy_energy_acceptor" })
-    event.shaped(Item.of("ae2:energy_acceptor"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:energy_acceptor"), [
         "ABA",
         "BCB",
         "ABA"
@@ -27,6 +28,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:fluix_plate",
         C: "gtceu:lv_machine_hull"
     }).id("kubejs:ae2/energy_acceptor")
+        .addMaterialInfo()
 
     // ME Chest
     event.remove({ id: "ae2:network/blocks/storage_chest" })
@@ -60,7 +62,7 @@ ServerEvents.recipes(event => {
 
     // Inscriber
     event.remove({ id: "ae2:network/blocks/inscribers" })
-    event.shaped(Item.of("ae2:inscriber"), [
+    event.recipes.gtceu.shaped(Item.of("ae2:inscriber"), [
         "ABA",
         "CDA",
         "ABA"
@@ -70,8 +72,9 @@ ServerEvents.recipes(event => {
         C: "ae2:fluix_crystal",
         D: "gtceu:mv_machine_hull"
     }).id("kubejs:ae2/inscriber")
+        .addMaterialInfo()
 
-    // Patterns
+    // PE Patterns
     event.remove({ id: "ae2:network/crafting/patterns_blank" })
     event.shaped(Item.of("ae2:blank_pattern", 8), [
         "AAA",
@@ -82,6 +85,17 @@ ServerEvents.recipes(event => {
         B: "gtceu:polyethylene_plate",
         C: "#gtceu:circuits/hv"
     }).id("kubejs:ae2/blank_pattern")
+
+    // PTFE Patterns
+    event.shaped(Item.of("ae2:blank_pattern", 16), [
+        "AAA",
+        "BCB",
+        "BBB"
+    ], {
+        A: "gtceu:fine_silver_wire",
+        B: "gtceu:polytetrafluoroethylene_plate",
+        C: "#gtceu:circuits/ev"
+    }).id("kubejs:ae2/blank_pattern_ptfe")
 
     // Pattern Provider
     event.remove({ id: "ae2:network/blocks/pattern_providers_interface" })
@@ -130,12 +144,13 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of("merequester:requester"), [
         "ABA",
         "CDC",
-        "AAA"
+        "AFA"
     ], {
         A: "gtceu:rhodium_plated_palladium_plate",
         B: "gtceu:luv_robot_arm",
         C: "#gtceu:circuits/zpm",
         D: "gtceu:luv_machine_hull",
+        F: "gtceu:fluix_plate"
     }).id("kubejs:ae2/requster")
 
     // Quantum Ring
@@ -232,17 +247,19 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:distilled_water 100")
         .itemOutputs("ae2:charged_certus_quartz_crystal")
         .duration(20)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Matter Condenser
     event.remove({ id: "ae2:network/blocks/io_condenser" })
     event.shaped(Item.of("ae2:condenser"), [
-        "AAA",
-        "ABA",
-        "AAA"
+        "APA",
+        "FBF",
+        "APA"
     ], {
-        A: "gtceu:titanium_plate",
-        B: "gtceu:quantum_star"
+        A: "gtceu:double_titanium_plate",
+        B: "gtceu:quantum_star",
+        F: "gtceu:fluix_plate",
+        P :"gtceu:mv_field_generator"
     }).id("kubejs:ae2/matter_condensor")
 
     // Storage Components
@@ -306,7 +323,7 @@ ServerEvents.recipes(event => {
             )
             .inputFluids(Fluid.of(curIngredients[3], 144 * curIngredients[4]))
             .itemOutputs(curTier)
-            .EUt(240)
+            .EUt(GTValues.VHA[GTValues.HV])
             .duration(200)
             .cleanroom(CleanroomType.CLEANROOM)
     }
@@ -530,7 +547,7 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:steel_bolt")
         .itemOutputs("2x ae2:cable_anchor")
         .duration(20)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Cables
     event.remove({ id: "ae2:network/parts/quartz_fiber_part" })
@@ -541,13 +558,15 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:certus_quartz_crystal")
         .itemOutputs("ae2:quartz_fiber")
         .duration(50)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
     event.recipes.gtceu.alloy_smelter("kubejs:ae2/fluix_cable")
         .itemInputs(["ae2:fluix_dust", "ae2:quartz_fiber"])
         .itemOutputs("2x ae2:fluix_glass_cable")
         .duration(50)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
+        .addMaterialInfo(true)
 
 
     // Skystone
@@ -563,14 +582,14 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:distilled_water 100")
         .itemOutputs("ae2:flawless_budding_quartz")
         .duration(20)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.mixer("fluix")
         .itemInputs("ae2:charged_certus_quartz_crystal", "minecraft:redstone", "minecraft:quartz")
         .inputFluids(Fluid.of("minecraft:water", 100))
         .itemOutputs("2x ae2:fluix_crystal")
         .duration(20)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
         .circuit(3)
 
     event.recipes.gtceu.compressor("fluix_plate")
@@ -664,7 +683,7 @@ ServerEvents.recipes(event => {
             .notConsumable(lens)
             .itemOutputs(press)
             .duration(1600)
-            .EUt(120)
+            .EUt(GTValues.VA[GTValues.MV])
     }
 
     pressengrave("kubejs:ae2/engineering_processor_press", "ae2:engineering_processor_press", "#forge:lenses/red");
@@ -680,7 +699,7 @@ ServerEvents.recipes(event => {
         .notConsumable("#forge:lenses/magenta")
         .itemOutputs("megacells:accumulation_processor_press")
         .duration(1600)
-        .EUt(240)
+        .EUt(GTValues.VHA[GTValues.HV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     event.remove({ id: "megacells:inscriber/accumulation_processor_print" })
@@ -747,7 +766,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x gtceu:stainless_steel_plate", "8x gtceu:aluminium_plate", "gtceu:mv_emitter", "gtceu:mv_sensor", "2x #gtceu:circuits/mv")
         .inputFluids("gtceu:soldering_alloy 144")
         .itemOutputs("8x megacells:cell_dock")
-        .EUt(240)
+        .EUt(GTValues.VHA[GTValues.HV])
         .duration(200)
 
     event.remove({ id: "megacells:crafting/mega_crafting_unit" })
@@ -831,7 +850,7 @@ ServerEvents.recipes(event => {
                 .itemInputs("4x " + wafer[0] + wafer[1])
                 .itemOutputs(Item.of("ae2:printed_silicon", 4 * (2 ** tier)))
                 .duration(10)
-                .EUt(2048)
+                .EUt(GTValues.VA[GTValues.EV])
         })
     } else {
         event.recipes.gtceu.forming_press("ae2_printed_silicon_greg")
@@ -839,70 +858,50 @@ ServerEvents.recipes(event => {
             .itemInputs("4x ae2:silicon")
             .itemOutputs("4x ae2:printed_silicon")
             .duration(10)
-            .EUt(2048)
+            .EUt(GTValues.VA[GTValues.EV])
     }
 
-    event.recipes.gtceu.forming_press("ae2_printed_engineering_greg")
-        .notConsumable("ae2:engineering_processor_press")
-        .itemInputs("4x minecraft:diamond")
-        .itemOutputs("4x ae2:printed_engineering_processor")
-        .duration(10)
-        .EUt(2048)
+    // Processors
+    const processor_info = [
+        {type: "engineering", material:"minecraft:diamond"},
+        {type: "logic", material:"minecraft:gold_ingot"},
+        {type: "calculation", material:"ae2:certus_quartz_crystal"},
+    ]
 
-    event.recipes.gtceu.forming_press("ae2_printed_logic_greg")
-        .notConsumable("ae2:logic_processor_press")
-        .itemInputs("4x minecraft:gold_ingot")
-        .itemOutputs("4x ae2:printed_logic_processor")
-        .duration(10)
-        .EUt(2048)
+    processor_info.forEach(processorType => {
+        event.recipes.gtceu.forming_press(`ae2_printed_${processorType.type}_greg`)
+            .notConsumable(`ae2:${processorType.type}_processor_press`)
+            .itemInputs(Item.of(processorType.material, 4))
+            .itemOutputs(`4x ae2:printed_${processorType.type}_processor`)
+            .duration(10)
+            .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.forming_press("ae2_printed_calcuation_greg")
-        .notConsumable("ae2:calculation_processor_press")
-        .itemInputs("4x ae2:certus_quartz_crystal")
-        .itemOutputs("4x ae2:printed_calculation_processor")
-        .duration(10)
-        .EUt(2048)
+        event.recipes.gtceu.circuit_assembler(`ae2_${processorType.type}_processor_greg`)
+            .itemInputs(`ae2:printed_${processorType.type}_processor`, "ae2:printed_silicon", "#gtceu:circuits/lv")
+            .inputFluids("gtceu:redstone 72")
+            .itemOutputs(`2x ae2:${processorType.type}_processor`)
+            .duration(50)
+            .EUt(1.25 * GTValues.V[GTValues.EV])
+            .cleanroom(CleanroomType.CLEANROOM)
+    })
 
+    // Accumulation processor done separately
     event.recipes.gtceu.forming_press("mega_printed_accumulation_greg")
         .notConsumable("megacells:accumulation_processor_press")
         .itemInputs("4x gtceu:black_steel_plate")
         .itemOutputs("4x megacells:printed_accumulation_processor")
         .duration(10)
-        .EUt(2048)
-
-    // Processors
-    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg")
-        .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:redstone 72")
-        .itemOutputs("2x ae2:engineering_processor")
-        .duration(50)
-        .EUt(2560)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg")
-        .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:redstone 72")
-        .itemOutputs("2x ae2:logic_processor")
-        .duration(50)
-        .EUt(2560)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg")
-        .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
-        .inputFluids("gtceu:redstone 72")
-        .itemOutputs("2x ae2:calculation_processor")
-        .duration(50)
-        .EUt(2560)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg")
         .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
         .inputFluids("gtceu:indium_gallium_phosphide 36")
         .itemOutputs("2x megacells:accumulation_processor")
         .duration(100)
-        .EUt(2560)
+        .EUt(1.25 * GTValues.V[GTValues.EV])
         .cleanroom(CleanroomType.CLEANROOM)
-    // ExtendedAE
+
+    /** ExtendedAE **/
 
     // Pattern Modifier (NAE2's Pattern Multitool)
     event.remove({ id: "expatternprovider:pattern_modifier" })
@@ -914,7 +913,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x ae2:pattern_provider", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:ex_pattern_provider")
         .duration(180)
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(4)
 
     event.remove({ id: "expatternprovider:epp_upgrade" })
@@ -922,7 +921,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:pattern_provider", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:pattern_provider_upgrade")
         .duration(180)
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(3)
 
     // Extended Interface
@@ -931,7 +930,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x ae2:interface", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:ex_interface")
         .duration(180)
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(4)
 
     event.remove({ id: "expatternprovider:ei_upgrade" })
@@ -939,7 +938,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:interface", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:interface_upgrade")
         .duration(180)
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(3)
 
     // Oversize Interface
@@ -948,7 +947,7 @@ ServerEvents.recipes(event => {
         .itemInputs("8x expatternprovider:ex_interface", "8x ae2:capacity_card", "8x gtceu:stainless_steel_plate")
         .itemOutputs("expatternprovider:oversize_interface")
         .duration(240)
-        .EUt(512)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Extended MA
     event.remove({ id: "expatternprovider:ex_molecular_assembler" })
@@ -956,7 +955,7 @@ ServerEvents.recipes(event => {
         .itemInputs("8x ae2:molecular_assembler", "8x gtceu:fluix_plate", "8x ae2:capacity_card")
         .itemOutputs("expatternprovider:ex_molecular_assembler")
         .duration(240)
-        .EUt(512)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Extended Inscriber
     event.remove({ id: "expatternprovider:ex_inscriber" })
@@ -964,7 +963,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x ae2:inscriber", "2x ae2:capacity_card")
         .itemOutputs("expatternprovider:ex_inscriber")
         .duration(180)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Extended Charger
     event.remove({ id: "expatternprovider:ex_charger" })
@@ -972,7 +971,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x ae2:charger", "2x ae2:capacity_card")
         .itemOutputs("expatternprovider:ex_charger")
         .duration(180)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Tag storage bus
     event.remove({ id: "expatternprovider:tag_storage_bus" })
@@ -980,7 +979,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:storage_bus", "2x gtceu:aluminium_plate", "ae2:logic_processor")
         .itemOutputs("expatternprovider:tag_storage_bus")
         .duration(180)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Mod storage bus
     event.remove({ id: "expatternprovider:mod_storage_bus" })
@@ -988,14 +987,13 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:storage_bus", "2x gtceu:aluminium_plate", "ae2:calculation_processor")
         .itemOutputs("expatternprovider:mod_storage_bus")
         .duration(180)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Extended Pattern Access Terminal
-    // I do want to eventually just outright remove the default one in favor of this one, but will happen once EPAT gets a fullblock eng block
+    // Note that the terminal doesn't have a fullblock version.
     event.remove({ id: "expatternprovider:epa" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("kubejs:epp/epa")
-    event.remove({ id: "expatternprovider:epa_upgrade" })
-    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("expatternprovider:epa_upgrade")
+    event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:engineering_processor", "#ae2:pattern_provider", "ae2:logic_processor"]).id("expatternprovider:epa_direct")
 
     // ExtendedAE Silicon Block
     event.remove({id:"expatternprovider:silicon_block"})
@@ -1015,7 +1013,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:polyethylene 288")
         .itemOutputs("4x expatternprovider:assembler_matrix_frame")
         .duration(150)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     // Assembler Matrix Wall
     event.remove({ id: "expatternprovider:assembler_matrix_wall" })
@@ -1024,7 +1023,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_wall")
         .circuit(1)
         .duration(100)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     // Assembler Matrix Glass
     event.remove({ id: "expatternprovider:assembler_matrix_glass" })
@@ -1033,7 +1033,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:assembler_matrix_glass")
         .circuit(2)
         .duration(100)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     // Assembler Matrix Pattern Core
     event.remove({ id: "expatternprovider:assembler_matrix_pattern" })
@@ -1042,7 +1043,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:polyethylene 288")
         .itemOutputs("expatternprovider:assembler_matrix_pattern")
         .duration(150)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     // Assembler Matrix Craft Core
     event.remove({ id: "expatternprovider:assembler_matrix_crafter" })
@@ -1051,7 +1053,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:polyethylene 288")
         .itemOutputs("expatternprovider:assembler_matrix_crafter")
         .duration(150)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     // Assembler Matrix Speed Core
     event.remove({ id: "expatternprovider:assembler_matrix_speed" })
@@ -1060,7 +1063,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:polyethylene 288")
         .itemOutputs("expatternprovider:assembler_matrix_speed")
         .duration(150)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
 
     // Misc stuff
     event.shaped("expatternprovider:ingredient_buffer", [
@@ -1081,7 +1085,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x ae2:drive", "4x gtceu:fluix_plate", "ae2:capacity_card")
         .itemOutputs("expatternprovider:ex_drive")
         .duration(240)
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(4)
 
     event.remove({ id: "expatternprovider:ex_drive_upgrade" })
@@ -1089,7 +1093,7 @@ ServerEvents.recipes(event => {
         .itemInputs("1x ae2:drive", "4x gtceu:fluix_plate", "ae2:capacity_card")
         .itemOutputs("expatternprovider:drive_upgrade")
         .duration(240)
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(3)
 
     // Quantum Bridge Card
@@ -1110,19 +1114,6 @@ ServerEvents.recipes(event => {
         mode: "press",
         result: { item: "ae2wtlib:quantum_bridge_card" }
     }).id("kubejs:ae2wtlib/quantum_bridge_card")
-
-    // Certus Quartz and Fluix Blocks
-    event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
-        .itemInputs(["4x ae2:certus_quartz_crystal"])
-        .itemOutputs("ae2:quartz_block")
-        .duration(300)
-        .EUt(2)
-
-    event.recipes.gtceu.compressor("kubejs:fluix_block")
-        .itemInputs(["4x ae2:fluix_crystal"])
-        .itemOutputs("ae2:fluix_block")
-        .duration(300)
-        .EUt(2)
 
     // Vibrant Quartz Glass
     event.remove({ output: "ae2:quartz_vibrant_glass" })

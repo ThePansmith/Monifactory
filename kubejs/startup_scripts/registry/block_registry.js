@@ -135,6 +135,40 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
+    // Dense Ores
+    const ores = [
+        "redstone",
+        "diamond",
+        "emerald",
+        "gold",
+        "lapis",
+        "iron",
+        "coal",
+        "copper",
+        "nether_quartz",
+        "oilsands"
+    ]
+
+    ores.forEach(ore => {
+        event.create(`dense_${ore}_ore`)
+            .textureAll(`kubejs:block/deprecated/dense_${ore}_ore`)
+            .soundType("stone")
+            .tagBlock("mineable/pickaxe")
+            .tagBoth("forge:ores/dense")
+            .tagBoth(`forge:ores/dense/${ore}`)
+            .requiresTool(true);
+    });
+
+    event.create("dense_magma_block")
+        .textureAll("kubejs:block/deprecated/dense_magma_block")
+        .soundType("stone")
+        .tagBlock("mineable/pickaxe")
+        .tagBoth("forge:ores/dense")
+        .tagBoth("forge:ores/dense/magma")
+        .requiresTool(true)
+        .lightLevel(1.0);
+
+
     // Machine Casings
     const casings = [
         "dark_soularium",
@@ -176,21 +210,26 @@ StartupEvents.registry("block", event => {
         .tag("mineable/shovel").displayName("Dust Block")
         .property(BlockProperties.FALLING);
 
-    event.create("excitationcoil", "cardinal")
+    event.create("excitationcoil")
         .displayName("Excitation Coil")
         .soundType("metal")
-        .renderType("cutout")
-        .box(3, 0, 3, 13, 1, 13)
-        .box(4, 1, 4, 12, 9, 12)
+        .renderType("solid")
+        .notSolid()
+        .fullBlock(false)
+        .noValidSpawns(true)
+        .property(BlockProperties.FACING)
+        .property(BlockProperties.WATERLOGGED)
+        .placementState((/** @type {Internal.BlockStateModifyPlacementCallbackJS} */ context) => context.set(BlockProperties.FACING, context.clickedFace))
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
-        .requiresTool(true);
+        .requiresTool(true)
+        .lightLevel(0.5);
 
     event.create("lyso_ce_glass")
         .displayName("Cerium-doped Lutetium Yttrium Oxyorthosilicate Glass")
         .soundType("glass")
         .renderType("cutout")
-        .resistance(6).hardness(5)
+        .resistance(0.4).hardness(0.4)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/lines/prism/lyso_ce_glass")
         .defaultCutout()
@@ -198,7 +237,7 @@ StartupEvents.registry("block", event => {
     event.create("red_aligned_glass")
         .soundType("glass")
         .renderType("cutout")
-        .resistance(6).hardness(5)
+        .resistance(0.5).hardness(0.5)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/lines/prism/red_aligned_glass")
         .defaultCutout()
@@ -206,7 +245,7 @@ StartupEvents.registry("block", event => {
     event.create("green_aligned_glass")
         .soundType("glass")
         .renderType("cutout")
-        .resistance(6).hardness(5)
+        .resistance(0.5).hardness(0.5)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/lines/prism/green_aligned_glass")
         .defaultCutout()
@@ -214,7 +253,7 @@ StartupEvents.registry("block", event => {
     event.create("blue_aligned_glass")
         .soundType("glass")
         .renderType("cutout")
-        .resistance(6).hardness(5)
+        .resistance(0.5).hardness(0.5)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/lines/prism/blue_aligned_glass")
         .defaultCutout()

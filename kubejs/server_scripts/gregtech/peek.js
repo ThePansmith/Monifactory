@@ -9,10 +9,10 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.chemical_reactor("analine")
+    event.recipes.gtceu.chemical_reactor("aniline")
         .notConsumable("gtceu:palladium_dust")
         .inputFluids("gtceu:nitrobenzene 1000", "gtceu:hydrogen 6000")
-        .outputFluids("gtceu:analine 1000", "minecraft:water 2000")
+        .outputFluids("gtceu:aniline 1000", "minecraft:water 2000")
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV])
 
@@ -55,6 +55,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV])
 
+    event.recipes.gtceu.canner("fluorotoluene_mixture_canning")
+        .itemInputs("gtceu:fluid_cell")
+        .inputFluids("gtceu:fluorotoluene_mixture 1000")
+        .itemOutputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:fluorotoluene_mixture"}}'))
+        .duration(16)
+        .EUt(4)
+
     event.recipes.gtceu.laser_engraver("fluorotoluene_mixture_activation")
         .notConsumable("gtceu:black_glass_lens")
         .itemInputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:fluorotoluene_mixture"}}').weakNBT())
@@ -62,12 +69,12 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.canner("fluorotoluene_mixture_separation")
+    event.recipes.gtceu.canner("fluorotoluene_mixture_uncanning")
         .itemInputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:activated_fluorotoluene_mixture"}}').weakNBT())
         .itemOutputs("gtceu:fluid_cell")
         .outputFluids("gtceu:activated_fluorotoluene_mixture 1000")
-        .duration(60)
-        .EUt(GTValues.VA[GTValues.LV])
+        .duration(16)
+        .EUt(4)
 
     event.recipes.gtceu.centrifuge("4-fluorotrichlorotoluene")
         .inputFluids("gtceu:activated_fluorotoluene_mixture 1000")
@@ -83,7 +90,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.chemical_reactor("benzenediazonium_chloride")
-        .inputFluids("gtceu:analine 1000", "gtceu:hydrochloric_acid 1000", "gtceu:nitrous_acid 1000")
+        .inputFluids("gtceu:aniline 1000", "gtceu:hydrochloric_acid 1000", "gtceu:nitrous_acid 1000")
         .outputFluids("minecraft:water 2000")
         .itemOutputs("14x gtceu:benzenediazonium_chloride_dust")
         .duration(240)
@@ -102,7 +109,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:argon 200")
         .outputFluids("gtceu:fluorobenzene_gas_mixture 1000")
         .duration(300)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.mixer("4-4-difluorobenzophenone")
         .inputFluids("gtceu:fluorobenzene 1000", "gtceu:4-fluorobenzoyl_chloride 1000")

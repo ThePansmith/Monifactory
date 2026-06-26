@@ -1,0 +1,31 @@
+{
+  "block.sophisticatedstorage.iron_barrel": "%s%sBarile in Bronzo",
+  "block.sophisticatedstorage.gold_barrel": "%s%sBarile in Acciaio",
+  "block.sophisticatedstorage.diamond_barrel": "%s%sBarile in alluminio",
+  "block.sophisticatedstorage.netherite_barrel": "%s%sBarile in Acciaio Inossidabile",
+
+  "block.sophisticatedstorage.iron_chest": "%s%sChest in Bronzo",
+  "block.sophisticatedstorage.gold_chest": "%s%sChest in Acciao",
+  "block.sophisticatedstorage.diamond_chest": "%s%sChest in Alluminio",
+  "block.sophisticatedstorage.netherite_chest": "%s%sChest in Acciaio Inossidabile",
+
+  "item.sophisticatedstorage.iron_shulker_box": "Shulker Box in Bronzo",
+  "block.sophisticatedstorage.iron_shulker_box": "Shulker Box in Bronzo",
+  "item.sophisticatedstorage.gold_shulker_box": "Shulker Box in Acciaio",
+  "block.sophisticatedstorage.gold_shulker_box": "Shulker Box in Acciaio",
+  "item.sophisticatedstorage.diamond_shulker_box": "Shulker Box in Alluminio",
+  "block.sophisticatedstorage.diamond_shulker_box": "Shulker Box in Alluminio",
+  "item.sophisticatedstorage.netherite_shulker_box": "Shulker Box in Acciaio Inossidabile",
+  "block.sophisticatedstorage.netherite_shulker_box": "Shulker Box in Acciaio Inossidabile",
+
+  "item.sophisticatedstorage.basic_to_iron_tier_upgrade": "Upgrade di Livello da Base a Bronzo",
+  "item.sophisticatedstorage.basic_to_gold_tier_upgrade": "Upgrade di Livello da Base ad Acciaio",
+  "item.sophisticatedstorage.basic_to_diamond_tier_upgrade": "Upgrade di Livello da Base ad Alluminio",
+  "item.sophisticatedstorage.basic_to_netherite_tier_upgrade": "Upgrade di Livello da Base ad Acciaio Inossidabile",
+  "item.sophisticatedstorage.iron_to_gold_tier_upgrade": "Upgrade di Livello da Bronzo ad Acciaio",
+  "item.sophisticatedstorage.iron_to_diamond_tier_upgrade": "Upgrade di Livello da Bronzo ad Alluminio",
+  "item.sophisticatedstorage.iron_to_netherite_tier_upgrade": "Upgrade di Livello da Bronzo ad Acciaio Inossidabile",
+  "item.sophisticatedstorage.gold_to_diamond_tier_upgrade": "Upgrade di Livello da Acciaio ad Alluminio",
+  "item.sophisticatedstorage.gold_to_netherite_tier_upgrade": "Upgrade di Livello da Acciaio ad Acciaio Inossidabile",
+  "item.sophisticatedstorage.diamond_to_netherite_tier_upgrade": "Upgrade di Livello da Alluminio ad Acciaio Inossidabile"
+}

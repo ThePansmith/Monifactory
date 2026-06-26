@@ -195,6 +195,7 @@ function parseRecipe(recipe) {
             if(matters)
                 for(let matter of matters)
                     matter.amount *= by
+        duration *= by
     }
     /** @param {number} by */
     let isRecipeDivisible = by =>
@@ -202,7 +203,7 @@ function parseRecipe(recipe) {
             .filter(matters => matters)
             .every(matters => matters.every(
                 matter => matter.amount % by === 0
-            ))
+            )) && duration % by === 0
 
     /**
      * @param {() => void} cb
@@ -381,43 +382,6 @@ function generateAlternatives(event, javaRecipe) {
             }
         }, 4, 2, 16)
         r.register(event, recipeName + "/complex_smd", machineName)
-    }
-
-    // Ethyl Cyanoacrylate is Krazy Glue
-    if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
-        i.content.value.some(v => "tag" in v
-            ? v.tag === "forge:glue"
-            : v.fluid === "gtceu:glue"
-        )
-    )) {
-        let r1 = parseRecipe(recipe)
-        r1.useMultiplier(() => {
-            // Replace all old solder with better one
-            for (let inp of r1.newInputFluids) {
-                if (inp.id !== "gtceu:glue") continue
-                inp.id = "gtceu:epoxy"
-                inp.amount *= (1 / 5)
-            }
-        }, 4, 2)
-        r1.register(
-            event,
-            recipeName + "/epoxy",
-            machineName,
-        )
-        let r2 = parseRecipe(recipe)
-        r2.useMultiplier(() => {
-            // Replace all old solder with better one
-            for (let inp of r2.newInputFluids) {
-                if (inp.id !== "gtceu:glue") continue
-                inp.id = "gtceu:ethyl_cyanoacrylate"
-                inp.amount *= (1 / 25)
-            }
-        }, 4, 2)
-        r2.register(
-            event,
-            recipeName + "/krazy_glue",
-            machineName,
-        )
     }
 
     // Oxalic Acid etchant
