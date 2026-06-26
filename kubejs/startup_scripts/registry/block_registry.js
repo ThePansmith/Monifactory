@@ -135,7 +135,6 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
-
     // Dense Ores
     const ores = [
         "redstone",
