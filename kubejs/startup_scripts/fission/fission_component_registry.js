@@ -137,6 +137,7 @@ StartupEvents.registry("block", event => {
         // .textureAll("phoenix_fission:block/casings/lead_lined/casing")
         .soundType("metal")
         .resistance(6).hardness(5)
+        .noValidSpawns(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
@@ -146,6 +147,7 @@ StartupEvents.registry("block", event => {
         .soundType("glass")
         .renderType("cutout")
         .resistance(6).hardness(5)
+        .noValidSpawns(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .defaultCutout()
@@ -173,13 +175,13 @@ StartupEvents.registry("item", event => {
 GTCEuStartupEvents.registry("gtceu:material", event => {
     // Hot Coolants
     event.create("superheated_steam")
-        .gas(773)
+        .gas(647)
         .color(0xFFFFFF)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components(GTMaterials.Hydrogen.multiply(2), GTMaterials.Oxygen.multiply(1))
 
     event.create("hot_sodium_potassium")
-        .liquid(773)
+        .liquid(873)
         .color(0xc8fcb4)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components(GTMaterials.Sodium.multiply(1), GTMaterials.Potassium.multiply(1))

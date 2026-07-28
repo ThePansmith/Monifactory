@@ -47,5 +47,6 @@
     "item.nuclearcraft.plate_du": "DU Nuclear Plate",
     "item.nuclearcraft.plate_elite": "Elite Nuclear Plate",
     "block.phoenix_fission.graphite_moderator": "Graphite Moderator",
-    "block.phoenix_fission.beryllium_moderator": "Beryllium Moderator"
+    "block.phoenix_fission.beryllium_moderator": "Beryllium Moderator",
+    "item.phoenix_fission.control_rod": "Fission Control Rod"
 }

@@ -291,7 +291,19 @@ ServerEvents.recipes(event => {
     }).addMaterialInfo()
 
     // High Pressure Steam Turbine recipes
-    // Steam recipe is at -20% efficiency compared to regular Steam Turbines, though the significantly increased scalability may be worth it for some
+    // Controller
+    event.recipes.gtceu.shaped("gtceu:high_pressure_steam_turbine", [
+        "IGI",
+        "GHG",
+        "TGT"
+    ], {
+        H: "gtceu:iv_machine_hull",
+        G: "gtceu:titanium_gear",
+        I: "#gtceu:circuits/iv",
+        T: "gtceu:titanium_large_fluid_pipe"
+    }).addMaterialInfo()
+
+    // Steam recipe is at -20% efficiency compared to regular Steam Turbines, though the significantly increased scalability can still be worth it
     event.recipes.gtceu.hp_steam_turbine("steam")
         .inputFluids("#forge:steam 640")
         .outputFluids("gtceu:distilled_water 4")

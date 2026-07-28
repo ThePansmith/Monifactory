@@ -57,7 +57,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
             )
-            .where("I", Predicates.blocks(PhoenixFissionBlocks.EMPTY_REACTOR_COMPONENT)
+            .where("I", Predicates.blocks(PhoenixFissionBlocks.EMPTY_REACTOR_COMPONENT.get())
                 .or(PhoenixFissionPredicates.fissionCoolers())
                 .or(PhoenixFissionPredicates.fissionFuelRods())
                 .or(PhoenixFissionPredicates.fissionModerators())
