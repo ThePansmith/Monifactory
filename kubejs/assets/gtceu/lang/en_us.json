@@ -168,6 +168,8 @@
     "block.gtceu.fission_reactor": "Fission Reactor",
     "block.gtceu.high_pressure_steam_turbine": "High Pressure Steam Turbine",
     "gtceu.hp_steam_turbine": "High Pressure Steam Turbine",
+    "block.gtceu.thermoelectric_generator": "Thermoelectric Generator",
+    "gtceu.thermoelectric_generator": "Thermoelectric Generation",
     "__CREATIVE_MACHINES__.header": "=====================",
     "__CREATIVE_MACHINES__.flufff": "> Creative Machines <",
     "__CREATIVE_MACHINES__.footer": "=====================",

@@ -315,4 +315,68 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:distilled_water 160")
         .duration(4 * GTValues.SECONDS)
         .EUt(-GTValues.V[GTValues.MV])
+
+    // Thermoelectric Generator (Heat Exchanger) recipes
+    // Controller
+    event.recipes.gtceu.shaped("gtceu:thermoelectric_generator", [
+        "PPP",
+        "BGB",
+        "CSC"
+    ], {
+        B: "systeams:magmatic_boiler",
+        G: "gtceu:laminated_glass",
+        C: "#gtceu:circuits/iv",
+        P: "gtceu:steel_normal_fluid_pipe",
+        S: "gtceu:steel_pipe_casing"
+    }).addMaterialInfo()
+
+    // Seebeck Module
+    event.recipes.gtceu.assembler("seebeck_module")
+        .itemInputs(
+            Item.of("gtceu:hpic_chip", 2),
+            Item.of("#forge:plates/battery_alloy", 3),
+            Item.of("#forge:plates/bismuth_bronze", 3),
+            Item.of("#forge:plates/silver", 6),
+            Item.of("#forge:dusts/silicon_germanium", 1)
+        )
+        .itemOutputs(Item.of("phoenix_fission:seebeck_module", 2))
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * GTValues.SECONDS)
+        .addMaterialInfo(true)
+
+    // Fissile-safe Gearbox
+    event.recipes.gtceu.shaped(Item.of("phoenix_fission:fissile_safe_gearbox_casing", 2), [
+        "PHP",
+        "GFG",
+        "PWP"
+    ], {
+        F: "#forge:frames/ruridit",
+        G: "#forge:gears/ruridit",
+        P: "#forge:plates/ruridit",
+        H: "#gtceu:tools/crafting_hammers",
+        W: "#gtceu:tools/crafting_wrenches"
+    })
+
+    event.recipes.gtceu.assembler("fissile_safe_gearbox_casing")
+        .itemInputs(
+            Item.of("#forge:plates/ruridit", 4),
+            Item.of("#forge:gears/ruridit", 2),
+            Item.of("#forge:frames/ruridit", 1)
+        )
+        .itemOutputs(Item.of("phoenix_fission:fissile_safe_gearbox_casing", 2))
+        .EUt(GTValues.VH[GTValues.LV])
+        .duration(2.5 * GTValues.SECONDS)
+        .circuit(4)
+        .addMaterialInfo(true)
+
+    event.recipes.gtceu.thermoelectric_generator("sodium_potassium")
+        .inputFluids(Fluid.of("gtceu:hot_sodium_potassium", 100))
+        .outputFluids(Fluid.of("gtceu:sodium_potassium", 100))
+        .duration(1 * GTValues.SECONDS)
+        .EUt(-GTValues.V[GTValues.IV])
+
+    event.recipes.gtceu.thermoelectric_generator("lava")
+        .inputFluids(Fluid.of("minecraft:lava", 2000))
+        .duration(1 * GTValues.SECONDS)
+        .EUt(-GTValues.V[GTValues.HV])
 })

@@ -4,6 +4,7 @@
  */
 
 const DynamicFissionReactorMachine = Java.loadClass("net.phoenix.phoenix_fission.common.data.multiblock.fission.DynamicFissionReactorMachine")
+const HeatExchangerMachine = Java.loadClass("net.phoenix.phoenix_fission.common.data.multiblock.fission.HeatExchangerMachine")
 const PhoenixRecipeTypes = Java.loadClass("net.phoenix.phoenix_fission.common.data.PhoenixRecipeTypes")
 const RelativeDirection = Java.loadClass("com.gregtechceu.gtceu.api.pattern.util.RelativeDirection")
 const PhoenixFissionPredicates = Java.loadClass("net.phoenix.phoenix_fission.api.pattern.PhoenixFissionPredicates")
@@ -23,6 +24,15 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setEUIO("out")
         .setMaxIOSize(0, 0, 1, 1)
         .setSlotOverlay(false, false, GuiTextures.CENTRIFUGE_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.TURBINE)
+
+    // Thermoelectric Generator "Heat Exchanger" recipe type
+    event.create("thermoelectric_generator")
+        .category("multiblock")
+        .setEUIO("out")
+        .setMaxIOSize(0, 0, 1, 1)
+        .setSlotOverlay(false, false, GuiTextures.LIGHTNING_OVERLAY_1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 })
@@ -115,6 +125,39 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             Component.translatable("gtceu.multiblock.turbine.efficiency_tooltip", GTValues.VNF[GTValues.IV]))
         .workableCasingModel("gtceu:block/casings/mechanic/machine_casing_turbine_titanium",
             "gtceu:block/multiblock/generator/large_steam_turbine")
+
+    // Heat Exchanger/Thermoelectric Generator
+    event.create("thermoelectric_generator", "multiblock")
+        .machine((holder) => new HeatExchangerMachine(holder))
+        .rotationState(RotationState.ALL)
+        .recipeTypes("thermoelectric_generator")
+        .recipeModifiers((machine, recipe) => HeatExchangerMachine.recipeModifier(machine, recipe))
+        .appearanceBlock(() => GTBlocks.CASING_STEEL_PIPE.get())
+        .pattern(definition => FactoryBlockPattern.start(RelativeDirection.LEFT, RelativeDirection.UP, RelativeDirection.BACK)
+            .aisle("FSHSF", "FD@DF", "FSHSF")
+            .aisle("FSHSF", "ISGSI", "FSHSF")
+            .aisleRepeatable(1, 10, "FSHSF", "PSGSP", "FSHSF")
+            .aisle("FSHSF", "ISGSI", "FSHSF")
+            .aisle("FSHSF", "FDHDF", "FSHSF")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            .where("F", Predicates.blocks(GTBlocks.CASING_ALUMINIUM_FROSTPROOF.get()))
+            .where("H", Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get()))
+            .where("S", Predicates.blocks("phoenix_fission:seebeck_module"))
+            .where("P", Predicates.blocks(GTBlocks.CASING_STEEL_PIPE.get()))
+            .where("G", Predicates.blocks(PhoenixFissionBlocks.FISSILE_SAFE_GEARBOX_CASING.get()))
+            .where("I", Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2)
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(2))
+            )
+            .where("D", Predicates.abilities(PartAbility.OUTPUT_ENERGY)
+                .setMinGlobalLimited(1)
+                .setMaxGlobalLimited(2)
+                .setPreviewCount(2)
+                .or(Predicates.blocks("phoenix_fission:seebeck_module"))
+            )
+            .build()
+        )
+        .workableCasingModel("gtceu:block/casings/pipe/machine_casing_pipe_steel",
+            "gtceu:block/multiblock/fluid_drilling_rig")
 })
 
 
