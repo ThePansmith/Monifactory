@@ -2,7 +2,7 @@
  * Buffs producing Wood Tar from Charcoal to make it actually even remotely doable in any tier beyond HV.
  */
 ServerEvents.recipes(event => {
-    //Buff Charcoal Extraction to take 2.4s each instead of 6.4s
+    // Buff Charcoal Extraction to take 2.4s each instead of 6.4s
     event.remove({ id: "gtceu:extractor/charcoal_extraction" })
     event.recipes.gtceu.extractor("charcoal_extraction")
         .itemInputs("minecraft:charcoal")
