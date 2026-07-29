@@ -153,7 +153,6 @@ StartupEvents.registry("block", event => {
         .requiresTool(true);
 
     event.create("phoenix_fission:control_rod_assembly")
-        .displayName("Fission Control Rod Assembly")
         .soundType("metal")
         .resistance(6).hardness(5)
         .renderType("solid")
@@ -166,7 +165,6 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
 
     event.create("phoenix_fission:seebeck_module")
-        .displayName("Seebeck Module")
         .soundType("metal")
         .resistance(6).hardness(5)
         .noValidSpawns(true)

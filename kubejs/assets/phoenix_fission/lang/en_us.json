@@ -48,5 +48,7 @@
     "item.nuclearcraft.plate_elite": "Elite Nuclear Plate",
     "block.phoenix_fission.graphite_moderator": "Graphite Moderator",
     "block.phoenix_fission.beryllium_moderator": "Beryllium Moderator",
-    "item.phoenix_fission.control_rod": "Fission Control Rod"
+    "item.phoenix_fission.control_rod": "Fission Control Rod",
+    "block.phoenix_fission.control_rod_assembly": "Fission Control Rod Assembly",
+    "bloc.phoenix_fission.seebeck_module": "Seebeck Module"
 }
