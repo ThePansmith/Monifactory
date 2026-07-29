@@ -134,7 +134,6 @@ StartupEvents.registry("block", event => {
     */
 
     event.create("phoenix_fission:lead_lined_casing")
-        // .textureAll("phoenix_fission:block/casings/lead_lined/casing")
         .soundType("metal")
         .resistance(6).hardness(5)
         .noValidSpawns(true)
