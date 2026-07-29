@@ -334,11 +334,11 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("seebeck_module")
         .itemInputs(
             Item.of("gtceu:hpic_chip", 2),
-            Item.of("#forge:plates/battery_alloy", 3),
             Item.of("#forge:plates/bismuth_bronze", 3),
-            Item.of("#forge:plates/silver", 6),
+            Item.of("#forge:plates/hsla_steel", 6),
             Item.of("#forge:dusts/silicon_germanium", 1)
         )
+        .inputFluids(Fluid.of("gtceu:soldering_alloy", 576))
         .itemOutputs(Item.of("phoenix_fission:seebeck_module", 2))
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * GTValues.SECONDS)
