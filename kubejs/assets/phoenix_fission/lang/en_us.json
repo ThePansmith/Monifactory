@@ -50,5 +50,7 @@
     "block.phoenix_fission.beryllium_moderator": "Beryllium Moderator",
     "item.phoenix_fission.control_rod": "Fission Control Rod",
     "block.phoenix_fission.control_rod_assembly": "Fission Control Rod Assembly",
-    "bloc.phoenix_fission.seebeck_module": "Seebeck Module"
+    "block.phoenix_fission.seebeck_module": "Seebeck Module",
+    "item.phoenix_fission.light_radiation_shielding": "Light Radiation Shielding",
+    "item.phoenix_fission.heavy_radiation_shielding": "Heavy Radiation Shielding"
 }

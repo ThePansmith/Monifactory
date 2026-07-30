@@ -329,8 +329,8 @@ ServerEvents.recipes(event => {
     event.replaceInput({ input: "nuclearcraft:lithium_ion_cell" }, "nuclearcraft:lithium_ion_cell", "#gtceu:batteries/hv")
     event.replaceInput({ output: /nuclearcraft:hev/ }, "nuclearcraft:plate_extreme", "nuclearcraft:plate_advanced")
 
-    event.remove({ id: "nuclearcraft:heavy_shielding" })
-    event.shaped("nuclearcraft:heavy", [
+    event.remove({ id: "phoenix_fission:heavy_radiation_shielding_shielding" })
+    event.shaped("phoenix_fission:heavy_radiation_shielding", [
         "BBB",
         "MPM",
         "DDD"

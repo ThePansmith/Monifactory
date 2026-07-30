@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
 
     // Reactor component recipes
     event.recipes.gtceu.assembler("phoenix_fission:lead_lined_casing")
-        .itemInputs(Item.of("gtceu:tungsten_steel_frame"), Item.of("gtceu:lead_plate", 6))
+        .itemInputs(Item.of("gtceu:tungsten_steel_frame"), Item.of("phoenix_fission:light_radiation_shielding", 6))
         .inputFluids(Fluid.of("gtceu:concrete", 144))
         .itemOutputs(Item.of("phoenix_fission:lead_lined_casing", 2))
         .duration(10 * GTValues.SECONDS)
@@ -379,4 +379,43 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("minecraft:lava", 2000))
         .duration(1 * GTValues.SECONDS)
         .EUt(-GTValues.V[GTValues.HV])
+
+    // Radiation Shielding
+    event.recipes.gtceu.shaped("phoenix_fission:light_radiation_shielding", [
+        "H",
+        "F",
+        "L"
+    ], {
+        H: "#gtceu:tools/crafting_hammers",
+        F: "#forge:plates/ferroboron",
+        L: "#forge:plates/lead"
+    })
+    event.recipes.gtceu.forming_press("phoenix_fission:light_radiation_shielding")
+        .itemInputs(Item.of("#forge:plates/ferroboron"), Item.of("#forge:plates/lead"))
+        .itemOutputs(Item.of("phoenix_fission:light_radiation_shielding"))
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(1.5 * GTValues.SECONDS)
+        .addMaterialInfo(true)
+
+    event.recipes.gtceu.shaped("2x phoenix_fission:heavy_radiation_shielding", [
+        "UUU",
+        "SGS",
+        "PPP"
+    ], {
+        U: "#forge:plates/uranium",
+        S: "phoenix_fission:light_radiation_shielding",
+        G: "#forge:dusts/graphite",
+        P: "#forge:plates/polybenzimidazole"
+    })
+    event.recipes.gtceu.assembler("phoenix_fission:light_radiation_shielding")
+        .itemInputs(
+            Item.of("#forge:plates/uranium", 3),
+            Item.of("#forge:plates/polybenzimidazole", 3),
+            Item.of("phoenix_fission:light_radiation_shielding", 2),
+            Item.of("#forge:dusts/graphite")
+        )
+        .itemOutputs(Item.of("phoenix_fission:heavy_radiation_shielding", 2))
+        .EUt(GTValues.VHA[GTValues.HV])
+        .duration(3 * GTValues.SECONDS)
+        .addMaterialInfo(true)
 })
