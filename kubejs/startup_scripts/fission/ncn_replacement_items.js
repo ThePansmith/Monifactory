@@ -1,5 +1,5 @@
 /**
- * Replacement Fission-related items for after NCN is removed.
+ * Replacement Fission-related items for after Nuclearcraft: Neoteric is removed.
  */
 
 StartupEvents.registry("item", event => {
