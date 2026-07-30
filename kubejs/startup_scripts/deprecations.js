@@ -207,5 +207,7 @@ deprecateItem("nuclearcraft:curium_245", "gtceu:curium_dust", "Curium Mote")
 deprecateItem("nuclearcraft:uranium_233", "gtceu:uranium_233_dust", "Uranium Mote")
 deprecateItem("nuclearcraft:uranium_234", "gtceu:uranium_233_dust", "Uranium Mote")
 
-// Nuclearcraft Neoteric s'more line
-// TODO
+// Nuclearcraft Neoteric s'more stuff
+deprecateItem("nuclearcraft:graham_cracker", "kubejs:graham_cracker", "Graham Cracker")
+deprecateItem("nuclearcraft:milk_chocolate", "kubejs:milk_chocolate", "Milk Chocolate")
+deprecateItem("nuclearcraft:marshmallow", "kubejs:marshmallow", "Marshmallow")
