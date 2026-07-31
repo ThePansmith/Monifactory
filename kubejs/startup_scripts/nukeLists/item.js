@@ -219,6 +219,11 @@ global.itemNukeList = [
     "packagedexcrafting:ender_crafter",
     "packagedexcrafting:flux_crafter",
 
+    // Phoenix Fission
+    "phoenix_fission:heat_exchanger",
+    "phoenix_fission:fissile_heat_safe_casing",
+    "phoenix_fission:fissile_reaction_safe_casing",
+
     // Project Red
     "projectred_core:silicon",
     "projectred_core:sand_coal_comp",

@@ -1,12 +1,12 @@
 fission:
   # Enable the base Fission Reactor multiblock.
-  fissionReactorEnabled: true
+  fissionReactorEnabled: false
 
   # Enable the High-Performance Breeder Reactor multiblock.
-  breederReactorEnabled: true
+  breederReactorEnabled: false
 
   # Enable the Molten Salt Reactor multiblock.
-  msrEnabled: true
+  msrEnabled: false
 
   # The Fluid that poisons the Molten Salt Reactor's efficiency
   msrReactorPoisoningOutputFluid: minecraft:lava
