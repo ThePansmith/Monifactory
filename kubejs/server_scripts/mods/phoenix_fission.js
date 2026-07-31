@@ -119,11 +119,20 @@ ServerEvents.recipes(event => {
         let outputDusts = outputs.map((value, index, array) => {
             return ChemicalHelper.getDust(value)
         })
-        event.recipes.gtceu.centrifuge(`depleted_${fuel_name}_fuel_decomposition`)
-            .itemInputs(`phoenix_fission:depleted_${fuel_name}_fuel`)
-            .itemOutputs(outputDusts)
-            .duration(400)
-            .EUt(GTValues.VHA[voltage_tier])
+        if(doHarderProcessing) {
+            event.recipes.gtceu.centrifuge(`depleted_${fuel_name}_fuel_decomposition`)
+                .itemInputs(`phoenix_fission:depleted_${fuel_name}_fuel`)
+                .inputFluids(Fluid.of("gtceu:tributyl_phosphate", 100))
+                .itemOutputs(outputDusts)
+                .duration(400)
+                .EUt(GTValues.VHA[voltage_tier])
+        } else {
+            event.recipes.gtceu.centrifuge(`depleted_${fuel_name}_fuel_decomposition`)
+                .itemInputs(`phoenix_fission:depleted_${fuel_name}_fuel`)
+                .itemOutputs(outputDusts)
+                .duration(400)
+                .EUt(GTValues.VHA[voltage_tier])
+        }
     }
     /*
     IRL the vast majority of spent nuclear fuel is the fertile isotope, with trace amounts of transmuted fissile product.
