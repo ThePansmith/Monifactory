@@ -311,8 +311,8 @@ ServerEvents.recipes(event => {
         .EUt(-GTValues.V[GTValues.LV])
 
     event.recipes.gtceu.hp_steam_turbine("superheated_steam")
-        .inputFluids("gtceu:superheated_steam 320")
-        .outputFluids("gtceu:distilled_water 80")
+        .inputFluids("gtceu:superheated_steam 160")
+        .outputFluids("gtceu:distilled_water 40")
         .duration(4 * GTValues.SECONDS)
         .EUt(-GTValues.V[GTValues.MV])
 
