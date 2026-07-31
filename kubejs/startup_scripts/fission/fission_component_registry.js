@@ -70,7 +70,7 @@ StartupEvents.registry("block", event => {
 
     event.create("phoenix_fission:distilled_water_cooler", "fission_cooler")
         .coolerTemperature(295)
-        .coolantUsagePerTick(1000)
+        .coolantUsagePerTick(2000)
         .isPassive(false)
         .requiredCoolantMaterialId("gtceu:distilled_water")
         .outputCoolantFluidId("gtceu:superheated_steam")

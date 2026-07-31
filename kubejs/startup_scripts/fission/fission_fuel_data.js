@@ -23,12 +23,12 @@
  * @type {{identifier: string, category: string, baseHeat: number, depletionTime: number, enrichment:Boolean}[]}
  */
 const fission_fuels = [
-    {identifier: "tbu", category: "thorium", baseHeat: 30, depletionTime: 300, enrichment: false},
-    {identifier: "235", category: "uranium", baseHeat: 50, depletionTime: 240, enrichment: true},
-    {identifier: "233", category: "uranium", baseHeat: 55, depletionTime: 230, enrichment: true},
-    {identifier: "mix_237", category: "neptunium", baseHeat: 40, depletionTime: 200, enrichment: false},
-    {identifier: "mix_239", category: "plutonium", baseHeat: 60, depletionTime: 200, enrichment: false},
-    {identifier: "mix_241", category: "plutonium", baseHeat: 70, depletionTime: 180, enrichment: false},
-    {identifier: "239", category: "plutonium", baseHeat: 80, depletionTime: 120, enrichment: true},
-    {identifier: "241", category: "plutonium", baseHeat: 90, depletionTime: 100, enrichment: true},
+    {identifier: "tbu", category: "thorium", baseHeat: 30, depletionTime: 3000, enrichment: false},
+    {identifier: "235", category: "uranium", baseHeat: 50, depletionTime: 2400, enrichment: true},
+    {identifier: "233", category: "uranium", baseHeat: 55, depletionTime: 2300, enrichment: true},
+    {identifier: "mix_237", category: "neptunium", baseHeat: 40, depletionTime: 2000, enrichment: false},
+    {identifier: "mix_239", category: "plutonium", baseHeat: 60, depletionTime: 2000, enrichment: false},
+    {identifier: "mix_241", category: "plutonium", baseHeat: 70, depletionTime: 1800, enrichment: false},
+    {identifier: "239", category: "plutonium", baseHeat: 80, depletionTime: 1200, enrichment: true},
+    {identifier: "241", category: "plutonium", baseHeat: 90, depletionTime: 1000, enrichment: true},
 ]

@@ -33,7 +33,7 @@ fission:
     # Meltdown sequence begins when the reactor temperature exceeds this value.
     # Actual HU threshold = maxSafeTempK * heatCapacity (scales with multi size).
     # Default 1000 K matches old 100 000 HU behaviour for a 100-block reactor.
-    maxSafeTempK: 1000.0
+    maxSafeTempK: 1200.0
 
     # Heat floor - reactor cannot cool below ambient temperature.
     minHeat: 0.0
@@ -57,7 +57,7 @@ fission:
     # Fuel heat conductivity constant (C_fuel).
     # Scales how effectively your fuel rods emit thermal energy.
     # Formula: baseHeatRate * ((totalRods+1)/2) * (1 + temp/maxSafeTemp)^2 * parallels * moderatorBonus * reactivity * C_fuel
-    fuelConductivity: 1.0
+    fuelConductivity: 0.2
 
     # Exponent scaling for the fuel consumption rate curve. Xefyr recommends: 4.0
     fuelConsumptionExponent: 4.0
@@ -68,12 +68,12 @@ fission:
     # Active cooling conductivity constant (C_active).
     # Scales how effectively coolant cells transfer heat away.
     # Formula: (coolantTemp - reactorTemp) * parallels * C_active
-    activeCoolingConductivity: 0.25
+    activeCoolingConductivity: 0.005
 
     # Passive cooling conductivity constant (C_passive).
     # Scales the thermal leak rate to ambient air.
     # Formula: (ambientTemp - reactorTemp) * C_passive
-    passiveCoolingConductivity: 0.005
+    passiveCoolingConductivity: 0.0015
 
     # How quickly the reactor ramps reactivity up or down when control state changes, as a fraction per tick.
     # 1.0 = instant transition, 0.02 = ~1-second ramp, 0.005 = ~4-second ramp.
@@ -87,13 +87,13 @@ fission:
 
   euOutput:
     # EU generated per unit of heat activity per tick.
-    euPerHeatUnit: 1.0
+    euPerHeatUnit: 0.0
 
     # Optional EU/t ceiling. Set <= 0 for no cap.
     maxGeneratedEUt: 0
 
     # Minimum EU/t while the reactor is active. Set 0 to allow zero output.
-    minGeneratedEUt: 1024
+    minGeneratedEUt: 0
 
     # Exponent for the heat-to-power curve. 1 = linear, >1 rewards high heat.
     powerCurveExponent: 2.0
@@ -115,10 +115,10 @@ fission:
 
   meltdown:
     # Grace period in seconds when heat barely exceeds maxSafeHeat.
-    baseGraceSeconds: 60.0
+    baseGraceSeconds: 10.0
 
     # Minimum grace period in seconds when heat is far above maxSafeHeat.
-    minGraceSeconds: 15.0
+    minGraceSeconds: 5.0
 
     # Severity multiplier - higher values shorten the grace period faster as heat rises.
     excessHeatSeverity: 1.0
@@ -160,4 +160,3 @@ fission:
 
   # Replace destroyed blocks with fire instead of air.
   nukeReplaceWithFire: false
-
