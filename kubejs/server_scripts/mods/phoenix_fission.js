@@ -324,24 +324,25 @@ ServerEvents.recipes(event => {
         "CSC"
     ], {
         B: "systeams:magmatic_boiler",
-        G: "gtceu:laminated_glass",
-        C: "#gtceu:circuits/iv",
-        P: "gtceu:steel_normal_fluid_pipe",
-        S: "gtceu:steel_pipe_casing"
+        G: "phoenix_fission:seebeck_module",
+        C: "#gtceu:circuits/luv",
+        P: "gtceu:niobium_titanium_normal_fluid_pipe",
+        S: "gtceu:luv_machine_hull"
     }).addMaterialInfo()
 
     // Seebeck Module
     event.recipes.gtceu.assembler("seebeck_module")
         .itemInputs(
-            Item.of("gtceu:hpic_chip", 2),
+            Item.of("gtceu:uhpic_chip", 2),
             Item.of("#forge:plates/bismuth_bronze", 3),
             Item.of("#forge:plates/hsla_steel", 6),
-            Item.of("#forge:dusts/silicon_germanium", 1)
+            Item.of("#forge:dusts/silicon_germanium", 1),
+            Item.of("gtceu:neptunium_palladium_aluminium_single_cable", 2)
         )
         .inputFluids(Fluid.of("gtceu:soldering_alloy", 576))
         .itemOutputs(Item.of("phoenix_fission:seebeck_module", 2))
         .EUt(GTValues.VA[GTValues.HV])
-        .duration(5 * GTValues.SECONDS)
+        .duration(15 * GTValues.SECONDS)
         .addMaterialInfo(true)
 
     // Fissile-safe Gearbox
