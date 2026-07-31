@@ -887,14 +887,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
         .circuit(1)
 
-    // Give Acetic Acid from Methanol a Circuit
-    event.recipes.gtceu.chemical_reactor("acetic_acid_from_methanol_circuit")
-        .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
-        .outputFluids("gtceu:acetic_acid 1000")
-        .duration(300)
-        .EUt(GTValues.VA[GTValues.LV])
-        .circuit(1)
-
     // Gilded Blackstone maceration
     event.recipes.gtceu.macerator("macerate_gilded_blackstone")
         .itemInputs("minecraft:gilded_blackstone")
@@ -968,4 +960,97 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:magnesium_diboride_ingot")
         .duration(250)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // Skip recipe for conveniently converting Ilmenite directly to Titanium Tetrachloride and Iron III Chloride
+    event.recipes.gtceu.large_chemical_reactor("titanium_tetrachloride_from_ilmenite")
+        .itemInputs("10x gtceu:ilmenite_dust", "5x gtceu:carbon_dust")
+        .inputFluids("gtceu:chlorine 14000")
+        .outputFluids("gtceu:titanium_tetrachloride 2000", "gtceu:iron_iii_chloride 2000", "gtceu:carbon_monoxide 4000", "gtceu:carbon_dioxide 1000")
+        .circuit(24)
+        .duration(120 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // Aluminothermic process for reducing Chromite (Not so sure about this one)
+    event.recipes.gtceu.large_chemical_reactor("chromium_from_chromite")
+        .itemInputs("7x gtceu:purified_chromite_ore", "3x gtceu:aluminium_dust")
+        .itemOutputs("4x gtceu:chromium_dust", "1x gtceu:iron_dust", "7x gtceu:bauxite_dust")
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    // Smelting recipes for reducing earlygame oxides similar to ores like Hematite, Magnetite, and Garnierite.
+    event.smelting("gtceu:lead_ingot", "gtceu:massicot_dust")
+    event.smelting("gtceu:cobalt_ingot", "gtceu:cobalt_oxide_dust")
+    event.smelting("minecraft:copper_ingot", "gtceu:cupric_oxide_dust")
+
+    event.recipes.gtceu.chemical_reactor("sodium_hydroxide_from_sodium_sulfide")
+        .itemInputs("3x gtceu:sodium_sulfide_dust")
+        .inputFluids("minecraft:water 2000")
+        .itemOutputs("6x gtceu:sodium_hydroxide_dust")
+        .outputFluids("gtceu:hydrogen_sulfide 1000")
+        .duration(3 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Reduce Sodium Sulfide from Sodium Bisulfate
+    event.recipes.gtceu.chemical_reactor("sodium_sulfide_from_sodium_bisulfate_coal")
+        .itemInputs("14x gtceu:sodium_bisulfate_dust", "2x gtceu:coal_dust")
+        .itemOutputs("3x gtceu:sodium_sulfide_dust")
+        .outputFluids("gtceu:carbon_dioxide 2000", "gtceu:sulfuric_acid")
+        .duration(7 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("sodium_sulfide_from_sodium_bisulfate_charcoal")
+        .itemInputs("14x gtceu:sodium_bisulfate_dust", "2x gtceu:charcoal_dust")
+        .itemOutputs("3x gtceu:sodium_sulfide_dust")
+        .outputFluids("gtceu:carbon_dioxide 2000", "gtceu:sulfuric_acid")
+        .duration(7 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Produce Phenol from Aniline
+    event.recipes.gtceu.chemical_reactor("phenol_from_benzenediazonium_chloride")
+        .itemInputs("14x gtceu:benzenediazonium_chloride_dust")
+        .inputFluids("minecraft:water")
+        .outputFluids("gtceu:phenol", "gtceu:hydrochloric_acid", "gtceu:nitrogen 2000")
+        .duration(6 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Reduce Benzene from Phenol
+    event.recipes.gtceu.chemical_reactor("benzene_from_phenol")
+        .itemInputs("gtceu:zinc_dust")
+        .inputFluids("gtceu:phenol")
+        .itemOutputs("gtceu:zincite_dust")
+        .outputFluids("gtceu:benzene")
+        .duration(6 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // Replace recipes that use liquid Acetic Anhydride with the new dust form
+    event.recipes.gtceu.chemical_reactor("acetic_anhydride")
+        .inputFluids("gtceu:ethenone", "gtceu:acetic_acid")
+        .itemOutputs("13x gtceu:acetic_anhydride_dust")
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VH[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("paracetamol")
+        .itemInputs("13x gtceu:acetic_anhydride_dust")
+        .inputFluids("gtceu:aminophenol")
+        .itemOutputs("gtceu:paracetamol_dust")
+        .outputFluids("gtceu:acetic_acid")
+        .duration(5 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Direct recipe for Acetic Anhydride from Methyl Acetate
+    event.recipes.gtceu.large_chemical_reactor("acetic_anhydride_from_methyl_acetate")
+        .notConsumable("gtceu:rhodium_rod")
+        .inputFluids("gtceu:methyl_acetate", "gtceu:carbon_monoxide")
+        .itemOutputs("13x gtceu:acetic_anhydride_dust")
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(24)
+
+    // Hydrate Acetic Anhydride for Acetic Acid
+    event.recipes.gtceu.chemical_reactor("hydrate_acetic_anhydride")
+        .itemInputs("13x gtceu:acetic_anhydride_dust")
+        .inputFluids("minecraft:water")
+        .outputFluids("gtceu:acetic_acid 2000")
+        .duration(3 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.ULV])
 })

@@ -10,9 +10,8 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(GTValues.VHA[GTValues.HV])
 
-    // Would like to make this a mixer recipe but Mixers only have 2 fluid slots
-    event.recipes.gtceu.chemical_reactor("chloroacetic_mixture")
-        .notConsumableFluid("gtceu:acetic_anhydride 500")
+    event.recipes.gtceu.mixer("chloroacetic_mixture")
+        .notConsumable("gtceu:acetic_anhydride_dust")
         .inputFluids("gtceu:acetic_acid 1000", "gtceu:chlorine 3000")
         .outputFluids("gtceu:chloroacetic_mixture 2000")
         .duration(20)
@@ -34,7 +33,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.chemical_reactor("ethyl_cyanoacrylate")
-        .notConsumableFluid("gtceu:fluoroantimonic_acid 2000")
+        .notConsumableFluid("gtceu:fluoroantimonic_acid")
         .inputFluids("gtceu:ethanol 1000", "gtceu:formaldehyde 1000")
         .itemInputs("gtceu:cyanoacetic_acid_dust")
         .outputFluids("gtceu:ethyl_cyanoacrylate 1000", "minecraft:water 2000")

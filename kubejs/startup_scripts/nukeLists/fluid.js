@@ -29,6 +29,7 @@ global.fluidNukeList = [
     "gtceu:americium_plasma",
     "gtceu:molten_kanthal",
     "gtceu:iron_ii_chloride",   // Removing the FluidProperty causes errors in GT's hard-coded recipes
+    "gtceu:acetic_anhydride",   // Same as previous
 
     // Thermal Series
     "cofh_core:experience",

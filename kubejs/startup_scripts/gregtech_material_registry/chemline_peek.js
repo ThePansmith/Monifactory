@@ -17,8 +17,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("nitrous_acid")
         .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
-        .color(0xffc129)
+        .color(0x7281A6)
         .components("1x hydrogen", "1x nitrogen", "2x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("fluoroboric_acid")
         .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))

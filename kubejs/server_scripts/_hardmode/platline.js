@@ -36,17 +36,38 @@ if (doHarderProcessing) {
             .outputFluids("gtceu:hydrogen 1000")
             .duration(10).EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.chemical_reactor("methyl_formate")
+        event.recipes.gtceu.chemical_reactor("methyl_formate_from_sodium_methoxide")
             .itemInputs("gtceu:tiny_sodium_methoxide_dust")
             .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
             .outputFluids("gtceu:methyl_formate 1000")
             .duration(16).EUt(GTValues.VA[GTValues.LV])
             .circuit(3)
 
+        event.recipes.gtceu.chemical_reactor("methyl_formate_from_sodium_hydroxide")
+            .itemInputs("gtceu:small_sodium_hydroxide_dust")
+            .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
+            .outputFluids("gtceu:methyl_formate 1000")
+            .duration(16).EUt(GTValues.VA[GTValues.LV])
+            .circuit(4)
+
+        event.recipes.gtceu.chemical_reactor("methyl_formate_from_sodium_carbonate")
+            .itemInputs("gtceu:small_soda_ash_dust")
+            .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
+            .outputFluids("gtceu:methyl_formate 1000")
+            .duration(16).EUt(GTValues.VA[GTValues.LV])
+            .circuit(5)
+
         event.recipes.gtceu.chemical_reactor("formic_acid")
             .inputFluids("gtceu:methyl_formate 1000", "minecraft:water 1000")
             .outputFluids("gtceu:formic_acid 1000", "gtceu:methanol 1000")
             .duration(16).EUt(GTValues.VA[GTValues.LV])
+
+        // alt route to Formamide
+        event.recipes.gtceu.chemical_reactor("formamide")
+            .inputFluids("gtceu:methyl_formate 1000", "gtceu:ammonia 1000")
+            .outputFluids("gtceu:formamide 1000", "gtceu:methanol 1000")
+            .duration(2 * GTValues.SECONDS)
+            .EUt(GTValues.VA[GTValues.MV])
 
         // Potassium Pyrosulfate
         event.recipes.gtceu.chemical_bath("rock_salt_to_potassium_bisulfate")

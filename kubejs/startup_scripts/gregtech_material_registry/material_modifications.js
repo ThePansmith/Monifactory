@@ -107,6 +107,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // Give Zincite an ore form
     let zincite_ore_prop = new $OreProperty(2, 2);
     zincite_ore_prop.setOreByProducts(GTMaterials.Iron, GTMaterials.Manganese)
+    zincite_ore_prop.setDirectSmeltResult(GTMaterials.Zinc)
     GTMaterials.Zincite.setProperty($PropertyKey.ORE, zincite_ore_prop)
 
     // Give Borax an ore form
@@ -118,6 +119,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // Removing the FluidProperty causes errors in GT's hard-coded recipes so we add the fluid to the nukelist instead
     GTMaterials.Iron2Chloride.setProperty($PropertyKey.DUST, new $DustProperty());
     GTMaterials.Iron2Chloride.setMaterialARGB(0xC5E1A5)
+
+    // Give Acetic Anhydride a dust form to replace fluid.
+    // Removing the FluidProperty causes errors in GT's hard-coded recipes so we add the fluid to the nukelist instead
+    GTMaterials.AceticAnhydride.setProperty($PropertyKey.DUST, new $DustProperty());
 
     // HM-exclusive modifications
     if (doHarderProcessing) {
