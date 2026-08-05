@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             C: "#gtceu:circuits/lv",
             B: "#gtceu:batteries/hv"
         })
-                event.shaped("spatialtoolscmp:portable_spatial_piper", [
+        event.shaped("spatialtoolscmp:portable_spatial_piper", [
             "SE",
             "CM",
             "PB"
