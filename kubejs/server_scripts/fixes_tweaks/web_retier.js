@@ -5,6 +5,7 @@
 ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:assembly_line/pterb" })
     event.remove({ id: "gtceu:research_station/1x_gtceu_active_transformer" })
+    event.remove({ id: "gtceu:research_station/1x_gtmutils_web_receiver" })
     event.remove({ id: "gtceu:assembly_line/web" })
 
     event.recipes.gtceu.assembly_line("pterb")
