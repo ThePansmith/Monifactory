@@ -536,7 +536,7 @@ if (Platform.isLoaded("advanced_ae")) {
         "advanced_ae:small_adv_pattern_provider_part",
         "advanced_ae:small_adv_pattern_provider",
         "advanced_ae:stock_export_bus_part",
-    )
+    );
 }
 
 // If not doing boilers, nuke them.
