@@ -55,6 +55,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Tritanium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Platinum.addFlags(GTMaterialFlags.GENERATE_FRAME)
+    GTMaterials.Naquadah.addFlags(GTMaterialFlags.GENERATE_FRAME)
 
     // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
