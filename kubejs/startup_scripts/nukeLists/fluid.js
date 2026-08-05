@@ -56,7 +56,7 @@ if (Platform.isLoaded("advanced_ae")) {
     global.fluidNukeList.push(
         "advanced_ae:quantum_infusion",
         "advanced_ae:quantum_infusion_source"
-    )
+    );
 }
 
 StartupEvents.postInit(event => {
