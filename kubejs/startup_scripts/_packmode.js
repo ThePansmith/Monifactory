@@ -112,7 +112,6 @@ global.doMeowniPlush = packMode == "Hard" || packMode == "Expert";
 global.doMonicoins = packMode == "Normal";
 global.doSnad = packMode == "Normal" || packMode == "Hard";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
-global.doEUP2P = packMode == "Normal"
 global.doFluxbore = packMode == "Normal" || packMode == "Hard";
 global.doHarderFluxBore = packMode == "Normal" || packMode == "Hard";
 global.doQuantumCoolant = packMode == "Hard" || packMode == "Expert";
