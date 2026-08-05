@@ -1,14 +1,2 @@
 {
-    "moni.quest.193B7038EAB6EFA3.title": "&9Gregtech Rocketery",
-    "moni.quest.2977E1AF13E42DCB.title": "&2Vanadiumsteel",
-    "moni.quest.410EA68D6EF15CEC.title": "P2P Tunnels",
-    "moni.quest.425D1C34A82B054D.title": "&9 Naquadah Reactor",
-    "moni.quest.4261BDA34D716EC8.description1": "The &3Omnic Synthesizer&r…synthesizes &6Omnium&r. The Synthesizer will create one &6Omnium Nugget&r when its progress value reaches 100. Recipes run in the Synthesizer will grant exponentially more progress based on how many other unique recipes have run since that recipe.",
-    "moni.quest.4E9530E62A4B673B.description1": "Refines materials into potent &6Liquid Naquadah Fuels&r.",
-    "moni.quest.5357A16B5BF62C96.description2": "It might seem crazy right now, but you'll want a dedicated &3Chemical Reactor&r for pretty much every chemical you want to process. You probably want to hold off on doing that until you've got a solid base with autocrafting though… it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system.",
-    "moni.quest.5C4E189A3E401566.description3": "Additionally, ULV recipes will not overclock to LV. A ≤8 EU/t recipe won't overclock at all in an LV machine, will only overclock once in an MV machine, etc.",
-    "moni.quest.616555E46F314F04.description1": "&2Sodium Potassium is an alloy of… take a guess.",
-    "moni.quest.7A09229ACC000B09.description2": "It might seem crazy right now, but you'll want a dedicated &3Chemical Reactor&r for pretty much every chemical you want to process. You probably want to hold off on doing that until you've got a solid base with autocrafting though… it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system.",
-    "moni.quest.62C85A1F451C4855.description4": "With a &3Tier Three Rocket&r you can make it to &eMercury&r and &eVenus&r. Before you go, make a &eNetherite Space Suit&r, otherwise the atmosphere will &cburn you to death&r.\n\nMercury has &6Argentite&r for &eIndium&r, &6Plutonium&r, and &6Laurite&r, as well as fluid veins of &9Blazing Pyrotheum&r, &9Sodium Persulfate&r, and… &9Mercury&r.\nVenus has &6Xenotime&r, &6Gallite&r, &9Sulfuric Acid&r fluid veins, and lots of &6Platinum Group ores&r.",
-    "moni.quest.62C85A1F451C4855.title": "&9…and let me play among the stars…"
 }
