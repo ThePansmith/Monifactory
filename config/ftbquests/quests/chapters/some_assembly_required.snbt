@@ -1325,7 +1325,7 @@
 			tasks: [
 				{
 					id: "68377567726F542C"
-					item: "gtmutils:pterb_machine"
+					item: "gtmutils:web_hub"
 					type: "item"
 				}
 				{
@@ -1443,7 +1443,7 @@
 			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
 			tasks: [{
 				id: "6CC31FF5936A485F"
-				item: "gtmutils:pterb_machine"
+				item: "gtmutils:web_hub"
 				type: "item"
 			}]
 			title: "{moni.quest.10E63A0428E6BA25.title}"
