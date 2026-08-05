@@ -57,8 +57,6 @@
     "moni.quest.040B3FCD82533BD9.description2": "Como você provavelmente pode imaginar, eles são caros.",
     "moni.quest.040B3FCD82533BD9.subtitle": "Manuseie com cuidado: pode destruir o universo.",
     "moni.quest.040B3FCD82533BD9.title": "&9Composto de pulsar ômnico estabilizado em campo",
-    "moni.quest.193B7038EAB6EFA3.title": "&9Gregtech Rocketery",
-    "moni.quest.2977E1AF13E42DCB.title": "&2Vanadiumsteel",
     "moni.quest.3B200AD6EFF90DFA.description1": "&b&lEMI&r é a lista de todos os itens que você vê toda vez que abre seu inventário. É o livro de receitas better(tm) que mostra todos os itens e receitas disponíveis no modpack. Note que &b&lEMI&r é baseado em &b&lJEI&r, e as pessoas tendem a usar os nomes de forma intercambiável.",
     "moni.quest.3B200AD6EFF90DFA.description2": "Para vê-lo em ação, abra uma missão que exija algum tipo de item e clique no item!",
     "moni.quest.3B200AD6EFF90DFA.rich_description.hover_text10": "\"Adicionar/Remover Marcador\" na opção de atalho de teclado",
@@ -84,7 +82,6 @@
     "moni.quest.542F0090D8975D3C.description3": "&cNão se esqueça de ter uma maneira de voltar!&r Se você esquecer, clique no coração Itens de Emergência no lado direito da tela do livro de missões.",
     "moni.quest.542F0090D8975D3C.subtitle": "Bolos são objetos quânticos!",
     "moni.quest.542F0090D8975D3C.title": "Trânsito dimensional baseado em bolo",
-    "moni.quest.616555E46F314F04.description1": "&2Sodium Potassium is an alloy of… take a guess.",
     "moni.quest.70026930847E8EC0.description1": "&n&9Monifactory&r&r compartilha um servidor oficial do Discord com outros projetos de Omicron Industries, o que serve como um recurso útil de comunidade.",
     "moni.quest.70026930847E8EC0.description2": "No servidor, há fluxogramas e guias para ajudar você com muitas partes do pacote, acessíveis por meio do bot do servidor, anúncios de desenvolvimento e muito mais estão disponíveis no canal &n#announcements&r, e a comunidade ajuda com perguntas de suporte técnico e investiga possíveis relatórios de bugs.",
     "moni.quest.70026930847E8EC0.description3": "Se quiser, você também pode conversar com outros jogadores, que estão dispostos a ajudar com dúvidas gerais.",
@@ -96,7 +93,5 @@
     "moni.quest.70026930847E8EC0.subtitle": "o que é voltagem? posso comê-la?",
     "moni.quest.70026930847E8EC0.title": "Discord e GitHub",
     "moni.chapter.0102198269F850CD.title": "geração de energia",
-    "moni.quest.63B27CA5BB60B740.rich_description5": ".",
-    "moni.quest.62C85A1F451C4855.description4": "With a &3Tier Three Rocket&r you can make it to &eMercury&r and &eVenus&r. Before you go, make a &eNetherite Space Suit&r, otherwise the atmosphere will &cburn you to death&r.\n\nMercury has &6Argentite&r for &eIndium&r, &6Plutonium&r, and &6Laurite&r, as well as fluid veins of &9Blazing Pyrotheum&r, &9Sodium Persulfate&r, and… &9Mercury&r.\nVenus has &6Xenotime&r, &6Gallite&r, &9Sulfuric Acid&r fluid veins, and lots of &6Platinum Group ores&r.",
-    "moni.quest.62C85A1F451C4855.title": "&9…and let me play among the stars…"
+    "moni.quest.63B27CA5BB60B740.rich_description5": "."
 }
