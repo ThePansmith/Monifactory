@@ -15,7 +15,7 @@ if (Platform.isLoaded("advanced_ae")) {
         event.remove({ id: "advanced_ae:fluixcrystalfromdust" })
         event.remove({ id: "advanced_ae:quantum_infusion" })
 
-        //Q. Crafter and Throughput Monitor
+        // Q. Crafter and Throughput Monitor
         event.remove({ id: "advanced_ae:quantumcrafter" })
         event.shaped("advanced_ae:quantum_crafter", [
             "ABA",
