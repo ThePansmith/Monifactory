@@ -15,29 +15,29 @@ if (Platform.isLoaded("advanced_ae")) {
         event.remove({ id: "advanced_ae:fluixcrystalfromdust" })
         event.remove({ id: "advanced_ae:quantum_infusion" })
 
-        // Q. Crafter and Throughput Monitor
+        //Q. Crafter and Throughput Monitor
         event.remove({ id: "advanced_ae:quantumcrafter" })
         event.shaped("advanced_ae:quantum_crafter", [
-            "CSC",
-            "MAM",
-            "CPC"
+            "ABA",
+            "CDC",
+            "AEA"
         ], {
-            A: "gtceu:ev_assembler",
-            C: "#gtceu:circuits/iv",
-            M: "expatternprovider:ex_molecular_assembler",
-            P: "ae2:crafting_accelerator",
-            S: "ae2:16k_crafting_storage"
+            A: "#gtceu:circuits/iv",
+            B: "ae2:16k_crafting_storage",
+            C: "expatternprovider:ex_molecular_assembler",
+            D: "gtceu:ev_assembler",
+            E: "ae2:crafting_accelerator"
         })
 
         event.remove({ id: "advanced_ae:throughput_monitor_configurator" })
         event.shaped("advanced_ae:throughput_monitor_configurator", [
-            " MR",
-            " RC",
-            "R  "
+            " AB",
+            " BC",
+            "B  "
         ], {
-            C: "#gtceu:circuits/hv",
-            M: "advanced_ae:throughput_monitor",
-            R: "gtceu:stainless_steel_rod"
+            A: "advanced_ae:throughput_monitor",
+            B: "gtceu:stainless_steel_rod",
+            C: "#gtceu:circuits/hv"
         })
 
         event.remove({ id: "advanced_ae:quantum_crafter_terminal" })
