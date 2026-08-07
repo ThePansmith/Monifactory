@@ -509,6 +509,54 @@ if (Platform.isLoaded("create")) {
     );
 }
 
+// Integrated Dynamics & Tunnels Compat
+if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+    global.itemNukeList.push(
+        "integrateddynamics:energy_battery",
+        "integrateddynamics:energy_battery_creative",
+        "integrateddynamics:coal_generator",
+        "integrateddynamics:drying_basin",
+        "integrateddynamics:squeezer",
+        "integrateddynamics:mechanical_drying_basin",
+        "integrateddynamics:mechanical_squeezer",
+        "integrateddynamics:crystalized_chorus_chunk",
+        "integrateddynamics:logic_director",
+        "integrateddynamics:proto_chorus",
+        "integrateddynamics:part_entity_writer",
+        "integrateddynamics:part_machine_writer",
+        "integrateddynamics:part_inventory_writer",
+        "integrateddynamics:crystalized_chorus_block",
+        "integrateddynamics:crystalized_chorus_brick",
+        "integrateddynamics:crystalized_chorus_block_stairs",
+        "integrateddynamics:crystalized_chorus_brick_stairs",
+        "integrateddynamics:crystalized_chorus_block_slab",
+        "integrateddynamics:crystalized_chorus_brick_slab",
+        "integrateddynamics:part_connector_mono_directional",
+        "integrateddynamics:part_connector_omni_directional",
+        "integrateddynamics:bucket_liquid_chorus",
+        "integrateddynamics:part_audio_reader",
+        "integrateddynamics:part_entity_reader",
+        "integrateddynamics:part_extradimensional_reader",
+        "integrateddynamics:part_machine_reader",
+        "integrateddynamics:part_world_reader",
+        "integrateddynamics:part_audio_writer",
+        "integrateddynamics:part_effect_writer",
+        "integratedtunnels:part_interface_energy",
+        "integratedtunnels:part_interface_filter_energy",
+        "integratedtunnels:part_importer_energy",
+        "integratedtunnels:part_exporter_energy",
+        "integratedtunnels:part_importer_world_energy",
+        "integratedtunnels:part_exporter_world_energy",
+        "integratedtunnels:part_importer_world_item",
+        "integratedtunnels:part_exporter_world_item",
+        "integratedtunnels:part_importer_world_fluid",
+        "integratedtunnels:part_exporter_world_fluid",
+        "integratedtunnels:part_importer_world_block",
+        "integratedtunnels:part_exporter_world_block",
+        "integratedtunnels:part_player_simulator"
+    );
+}
+
 // If not doing boilers, nuke them.
 if (!global.doBoilers) {
     global.itemNukeList.push(
