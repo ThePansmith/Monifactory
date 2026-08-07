@@ -44,7 +44,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
 
         // Logic Cables
         event.remove({ output: "integrateddynamics:cable" })
-        event.shaped(("2x integrateddynamics:cable"), [
+        event.shaped("2x integrateddynamics:cable", [
             "AAA",
             "BCB",
             "AAA"
@@ -53,7 +53,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
             B: "gtceu:iron_rod",
             C: "gtceu:fine_red_alloy_wire"
         })
-        event.shaped(("4x integrateddynamics:cable"), [
+        event.shaped("4x integrateddynamics:cable", [
             "AAA",
             "BCB",
             "AAA"
@@ -98,7 +98,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
 
         // Facades
         event.remove({ id: "integrateddynamics:crafting/facade" })
-        event.shaped(("32x integrateddynamics:facade"), [
+        event.shaped("32x integrateddynamics:facade", [
             " A ",
             "ABA",
             " A "
@@ -110,7 +110,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
         // Wrench and Labeller
         event.remove({ id: "integrateddynamics:crafting/wrench" })
         event.remove({ id: "integrateddynamics:crafting/labeller" })
-        event.shaped(("integrateddynamics:wrench"), [
+        event.shaped("integrateddynamics:wrench", [
             " AB",
             " CA",
             "C  "
@@ -119,7 +119,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
             B: "#gtceu:circuits/lv",
             C: "minecraft:stick"
         })
-        event.shaped(("integrateddynamics:labeller"), [
+        event.shaped("integrateddynamics:labeller", [
             " AB",
             " CA",
             "C  "
@@ -132,7 +132,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
         // Torches
         event.remove({ id: "integrateddynamics:crafting/menril_torch" })
         event.remove({ output: "integrateddynamics:menril_torch_stone" })
-        event.shaped((Item.of("integrateddynamics:menril_torch", 4)), [
+        event.shaped("4x integrateddynamics:menril_torch", [
             " A ",
             "ABA",
             " A "
@@ -234,7 +234,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
         event.remove({ id: "integrateddynamics:crafting/proxy" })
         event.remove({ id: "integrateddynamics:crafting/materializer" })
         event.remove({ id: "integrateddynamics:crafting/delay" })
-        event.shaped(("integrateddynamics:logic_programmer"), [
+        event.shaped("integrateddynamics:logic_programmer", [
             "ABA",
             "CDC",
             "ABA"
@@ -244,7 +244,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
             C: "integrateddynamics:cable",
             D: "minecraft:crafting_table"
         })
-        event.shaped(("integrateddynamics:variablestore"), [
+        event.shaped("integrateddynamics:variablestore", [
             "ABA",
             "CDC",
             "ABA"
@@ -314,7 +314,7 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
             .itemOutputs("integrateddynamics:part_display_panel")
             .duration(400)
             .EUt(GTValues.VA[GTValues.MV])
-    
+
         // Readers and Writer
         event.remove({ id: "integrateddynamics:crafting/part_block_reader" })
         event.remove({ id: "integrateddynamics:crafting/part_fluid_reader" })
@@ -420,7 +420,6 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
             .itemOutputs("2x integratedtunnels:part_exporter_fluid")
             .duration(300)
             .EUt(GTValues.VA[GTValues.MV])
-        })
-        console.log("Integrated Dynamics/Tunnels compat scripts successfully loaded!")
-    } else { console.log("Integrated Dynamics and/or Integrated Tunnels not found, skipping their compat scripts.")
-}
+    })
+    console.log("Integrated Dynamics/Tunnels compat scripts successfully loaded!")
+} else { console.log("Integrated Dynamics and/or Integrated Tunnels not found, skipping their compat scripts.") }
