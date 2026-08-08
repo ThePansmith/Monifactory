@@ -132,6 +132,7 @@ global.itemNukeList = [
     "gtceu:luv_solar_panel",
     "gtceu:zpm_solar_panel",
     "gtceu:uv_solar_panel",
+    "gtceu:configurable_maintenance_hatch",
     /^gtceu:(ev|iv|luv|zpm|uv|uhv|uev|max)_\w+a_energy_converter/,
     /^gtceu:\w+_world_accelerator/,
     /^gtceu:uiv/,

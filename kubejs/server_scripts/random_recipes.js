@@ -78,35 +78,6 @@ ServerEvents.recipes(event => {
     event.shapeless("minecraft:blaze_rod", "minecraft:brewing_stand")
     event.replaceInput({ input: "gtceu:wood_plate" }, "gtceu:wood_plate", "#minecraft:planks")
 
-    // Processing for Ender Spores
-    if (!doHNN) {
-        event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
-        event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
-
-        event.custom({
-            "type": "thermal:insolator",
-            "ingredient": {
-                "item": "kubejs:ender_spore"
-            },
-            "result": [
-                {
-                    "item": "kubejs:ender_spore",
-                    "chance": 2.0
-                }
-            ],
-            "energy_mod": 3.0
-        })
-
-        event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
-            .circuit(2)
-            .notConsumable("kubejs:ender_spore")
-            .itemInputs("4x gtceu:fertilizer")
-            .inputFluids(Fluid.of("minecraft:water"))
-            .itemOutputs("8x kubejs:ender_spore")
-            .duration(640)
-            .EUt(GTValues.VA[GTValues.MV])
-    }
-
     // Change recipes for LV and MV macerators
     event.shaped("gtceu:lv_macerator", [
         "PMB",
@@ -486,11 +457,11 @@ ServerEvents.recipes(event => {
     p2p.forEach(type => {
         event.stonecutting(`ae2:${type}_p2p_tunnel`, "ae2:me_p2p_tunnel")
     })
-    const mae2_p2p = doEUP2P ? ["pattern", "eu"] : ["pattern"]
+    const mae2_p2p = ["pattern"]
     mae2_p2p.forEach(type => {
         event.stonecutting(`mae2:${type}_p2p_tunnel`, "ae2:me_p2p_tunnel")
     })
-    const multi_p2p = doEUP2P ? ["pattern", "redstone", "fluid", "fe", "eu"] : ["pattern", "redstone", "fluid", "fe"]
+    const multi_p2p = ["pattern", "redstone", "fluid", "fe"]
     multi_p2p.forEach(type => {
         event.stonecutting(`mae2:${type}_multi_p2p_tunnel`, "mae2:item_multi_p2p_tunnel")
     })
@@ -968,4 +939,35 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:magnesium_diboride_ingot")
         .duration(250)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // Mixer for recipes that fit in singleblocks
+    const xpjuice_small = [
+        ["enderio:pulsating_powder", 6720],
+        ["enderio:vibrant_powder", 8960],
+        ["kubejs:grains_of_innocence", 16000]
+    ]
+
+    for (const [input, output] of xpjuice_small) {
+        event.recipes.gtceu.mixer(`kubejs:xpjuice_${output}`)
+            .inputFluids(Fluid.of("gtceu:mana", 250))
+            .itemInputs(input)
+            .outputFluids(Fluid.of("enderio:xp_juice", output))
+            .EUt(GTValues.VA[GTValues.HV])
+            .duration(100)
+    }
+
+    // LCR needed for larger recipes
+    const xpjuice_large = [
+        ["enderio:ender_crystal_powder", 35840],
+        ["enderio:prescient_powder", 44800]
+    ]
+
+    for (const [input, output] of xpjuice_large) {
+        event.recipes.gtceu.large_chemical_reactor(`kubejs:xpjuice_${output}`)
+            .inputFluids(Fluid.of("gtceu:mana", 500))
+            .itemInputs(input)
+            .outputFluids(Fluid.of("enderio:xp_juice", output))
+            .EUt(GTValues.VA[GTValues.EV])
+            .duration(100)
+    }
 })
