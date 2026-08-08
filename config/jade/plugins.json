@@ -166,6 +166,9 @@
     "hud": true,
     "hud.redstone": true
   },
+  "pipez": {
+    "pipe": true
+  },
   "waystones": {
     "waystone": true
   },
