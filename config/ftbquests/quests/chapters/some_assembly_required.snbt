@@ -135,6 +135,12 @@
 			x: -8.25d
 			y: 6.75d
 		}
+		{
+			id: "431DA0890FF11DE1"
+			linked_quest: "63C3077124BC81FD"
+			x: -8.5d
+			y: -5.25d
+		}
 	]
 	quests: [
 		{
@@ -1993,40 +1999,6 @@
 			]
 			title: "{moni.quest.70FD95AEA44548B0.title}"
 			x: -7.5d
-			y: -5.25d
-		}
-		{
-			dependencies: ["785C6332FC7A07A5"]
-			description: [
-				"{moni.quest.63C3077124BC81FD.description1}"
-				""
-				"{moni.quest.63C3077124BC81FD.description2}"
-				""
-				"{moni.quest.63C3077124BC81FD.description3}"
-				""
-				"{moni.quest.63C3077124BC81FD.description4}"
-			]
-			icon: "gtceu:germanium_dust"
-			id: "63C3077124BC81FD"
-			rewards: [{
-				id: "73F86168083D3341"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "46D85CCD66919277"
-					item: "gtceu:coal_fly_ash_dust"
-					type: "item"
-				}
-				{
-					id: "1B19BD8698E6BFD0"
-					item: "gtceu:germanium_dust"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.63C3077124BC81FD.title}"
-			x: -8.75d
 			y: -5.25d
 		}
 	]
