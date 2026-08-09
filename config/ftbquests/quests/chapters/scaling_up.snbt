@@ -467,46 +467,6 @@
 			y: 1.25d
 		}
 		{
-			dependencies: ["3E12862AD553EB8A"]
-			description: [
-				"{moni.quest.46C6F922B4ADCC8C.description1}"
-				""
-				"{moni.quest.46C6F922B4ADCC8C.description2}"
-			]
-			id: "46C6F922B4ADCC8C"
-			rewards: [{
-				id: "795FED529D7E9BFE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6D7A22C9F492E678"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
-			title: "{moni.quest.46C6F922B4ADCC8C.title}"
-			x: -7.0d
-			y: 1.25d
-		}
-		{
-			dependencies: ["46C6F922B4ADCC8C"]
-			description: ["{moni.quest.7045BE273C44BA35.description1}"]
-			id: "7045BE273C44BA35"
-			rewards: [{
-				id: "54871D72B9A05DF7"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				id: "16A558E310D05EC5"
-				item: "thermal:device_fisher"
-				type: "item"
-			}]
-			x: -8.25d
-			y: 2.0d
-		}
-		{
 			dependencies: ["441E5CDAD5007906"]
 			description: [
 				"{moni.quest.5BE9EDB88D656840.description1}"
@@ -3168,19 +3128,6 @@
 			title: "{moni.quest.053DDDCD2505E20B.title}"
 			x: 1.5d
 			y: 7.5d
-		}
-		{
-			dependencies: ["46C6F922B4ADCC8C"]
-			description: ["{moni.quest.62C8DB9874421C79.description1}"]
-			id: "62C8DB9874421C79"
-			subtitle: "{moni.quest.62C8DB9874421C79.subtitle}"
-			tasks: [{
-				id: "5F057A7E53C35A16"
-				item: "thermal:machine_crafter"
-				type: "item"
-			}]
-			x: -8.25d
-			y: 0.5d
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]
