@@ -3848,6 +3848,35 @@
 			x: -11.5d
 			y: -2.25d
 		}
+		{
+			dependencies: ["4EC59BC9BCCB3C5D"]
+			description: [
+				"{moni.quest.64035276DDDD7325.description1}"
+				""
+				"{moni.quest.64035276DDDD7325.description2}"
+				""
+				"{moni.quest.64035276DDDD7325.description3}"
+				""
+				"{moni.quest.64035276DDDD7325.description4}"
+				"{@pagebreak}"
+				"{moni.quest.64035276DDDD7325.description5}"
+				""
+				"{moni.quest.64035276DDDD7325.description6}"
+				""
+				"{moni.quest.64035276DDDD7325.description7}"
+				""
+				"{moni.quest.64035276DDDD7325.description8}"
+			]
+			icon: "gtceu:small_cadmium_dust"
+			id: "64035276DDDD7325"
+			tasks: [{
+				id: "510F9A7F7E846C25"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.64035276DDDD7325.title}"
+			x: 9.0d
+			y: 1.0d
+		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"
 }
