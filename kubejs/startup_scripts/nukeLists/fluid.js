@@ -51,13 +51,6 @@ global.fluidNukeList = [
 
 ]
 
-// Integrated Dynamics & Tunnels Compat
-if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
-    global.fluidNukeList.push(
-        "integrateddynamics:liquid_chorus"
-    );
-}
-
 StartupEvents.postInit(event => {
     /**
      * NuclearCraft is most easily dealt with by removing *everything* but a select few fluids
