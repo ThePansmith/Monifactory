@@ -277,4 +277,9 @@ ItemEvents.tooltip(tooltip => {
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
     }
+
+    // Integrated Dynamics & Tunnels
+    if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+        tooltip.add("integrateddynamics:on_the_dyanmics_of_integration", Text.translatable("integrateddynamics.on_the_dynamics_of_integration.tooltip"))
+    }
 })
