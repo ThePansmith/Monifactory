@@ -509,7 +509,7 @@ if (Platform.isLoaded("create")) {
     );
 }
 
-// Integrated Dynamics & Tunnels Compat
+// Integrated Dynamics/Tunnels Compat
 if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
     global.itemNukeList.push(
         "integrateddynamics:energy_battery",
@@ -519,21 +519,13 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
         "integrateddynamics:squeezer",
         "integrateddynamics:mechanical_drying_basin",
         "integrateddynamics:mechanical_squeezer",
-        "integrateddynamics:crystalized_chorus_chunk",
         "integrateddynamics:logic_director",
         "integrateddynamics:proto_chorus",
         "integrateddynamics:part_entity_writer",
         "integrateddynamics:part_machine_writer",
         "integrateddynamics:part_inventory_writer",
-        "integrateddynamics:crystalized_chorus_block",
-        "integrateddynamics:crystalized_chorus_brick",
-        "integrateddynamics:crystalized_chorus_block_stairs",
-        "integrateddynamics:crystalized_chorus_brick_stairs",
-        "integrateddynamics:crystalized_chorus_block_slab",
-        "integrateddynamics:crystalized_chorus_brick_slab",
         "integrateddynamics:part_connector_mono_directional",
         "integrateddynamics:part_connector_omni_directional",
-        "integrateddynamics:bucket_liquid_chorus",
         "integrateddynamics:part_audio_reader",
         "integrateddynamics:part_entity_reader",
         "integrateddynamics:part_extradimensional_reader",
@@ -547,12 +539,6 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
         "integratedtunnels:part_exporter_energy",
         "integratedtunnels:part_importer_world_energy",
         "integratedtunnels:part_exporter_world_energy",
-        "integratedtunnels:part_importer_world_item",
-        "integratedtunnels:part_exporter_world_item",
-        "integratedtunnels:part_importer_world_fluid",
-        "integratedtunnels:part_exporter_world_fluid",
-        "integratedtunnels:part_importer_world_block",
-        "integratedtunnels:part_exporter_world_block",
         "integratedtunnels:part_player_simulator"
     );
 }
