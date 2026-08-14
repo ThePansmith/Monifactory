@@ -472,6 +472,7 @@
     "material.gtceu.marshmallow": "Marshmallow",
     "material.gtceu.milk_chocolate": "Milk Chocolate",
     "material.gtceu.chocolate_liquor": "Chocolate Liquor",
+    "item.gtceu.compost_mix_dust": "Compost Mix",
     "__HM_MISC__.header": "============",
     "__HM_MISC__.flufff": "> HM Misc. <",
     "__HM_MISC__.footer": "============",
@@ -613,4 +614,6 @@
     "material.gtceu.titanite_slurry": "Titanite Slurry",
     "material.gtceu.malachite_slurry": "Malachite Slurry",
     "material.gtceu.olivine_slurry": "Olivine Slurry"
+    "block.gtceu.battery_buffer.tooltip": "§cEach battery provides 2A input and 1A output!"
+}
 }
