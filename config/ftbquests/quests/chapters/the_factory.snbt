@@ -916,6 +916,10 @@
 								Count: 1b
 								id: "gtceu:hv_alloy_smelter"
 							}
+							{
+								Count: 1b
+								id: "steamadditions:steam_foundry"
+							}
 						]
 					}
 				}
