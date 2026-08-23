@@ -1315,6 +1315,7 @@
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
 			id: "069D243B809E0D5D"
+			optional: true
 			rewards: [{
 				id: "05346384A9F2EAF1"
 				item: "kubejs:moni_quarter"
@@ -1439,6 +1440,7 @@
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
 			id: "10E63A0428E6BA25"
+			optional: true
 			size: 2.0d
 			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
 			tasks: [{

@@ -2053,6 +2053,7 @@
 			]
 			hide_until_deps_visible: true
 			id: "4F239316765C7CA1"
+			optional: true
 			rewards: [{
 				id: "189732EC89DA656B"
 				item: "kubejs:moni_nickel"
