@@ -1,6 +1,6 @@
 /**
  * A little bit of software wizardry that alters any Titanium Tetrachloride-boosted polymerization recipes in LCRs
- * to use 1/2 of the TiCl4 they normally do.
+ * to use 1/4 of the TiCl4 they normally do.
  */
 ServerEvents.recipes(event => {
     // Get all GTCEu Assembler recipes with an ID matching the regex
