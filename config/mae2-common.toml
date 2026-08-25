@@ -3,9 +3,9 @@
 
 	[Parts."EU P2P"]
 		#Whether the EU P2P (single or multi) is enabled. !!Requires Game Restart!!
-		enabled = true
+		enabled = false
 		#Enable/Disable nerf to EU p2p. Nerf penalizes higher energy transfer rates across the entire ME network with higher taxes, but in such a way that stepping up voltage reduces tax. Also prevents EU p2ps from getting channels though an ME p2p
-		nerf = true
+		nerf = false
 		#A factor used in calculating the nerfed EU p2p's tax. Higher means the tax is higher. Linearly affects tax
 		#Range: 0.0 ~ 1.7976931348623157E308
 		nerfFactor = 0.05
