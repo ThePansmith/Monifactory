@@ -421,8 +421,8 @@ ServerEvents.recipes(event => {
             .duration(400).EUt(GTValues.VA[GTValues.HV]);
 
         event.recipes.gtceu.chemical_reactor("pyromellitic_dianhydride")
-            .inputFluids("gtceu:durene 500", "gtceu:oxygen 3000")
-            .outputFluids("minecraft:water 3000")
+            .inputFluids("gtceu:durene 1000", "gtceu:oxygen 6000")
+            .outputFluids("minecraft:water 6000")
             .itemOutputs("9x gtceu:pyromellitic_dianhydride_dust")
             .duration(800).EUt(GTValues.VA[GTValues.HV]);
 
@@ -448,7 +448,7 @@ ServerEvents.recipes(event => {
             .duration(160).EUt(GTValues.VA[GTValues.MV]);
 
         event.recipes.gtceu.chemical_reactor("kapton_k")
-            .itemInputs("18x gtceu:pyromellitic_dianhydride_dust")
+            .itemInputs("9x gtceu:pyromellitic_dianhydride_dust")
             .inputFluids("gtceu:oxydianiline 1000")
             .outputFluids("gtceu:kapton_k 1000")
             .duration(400).EUt(GTValues.VA[GTValues.HV]);
