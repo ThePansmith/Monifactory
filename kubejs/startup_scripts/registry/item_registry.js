@@ -9,6 +9,8 @@ StartupEvents.registry("item", event => {
         "2half",
         "2half_damaged",
         "3",
+        "3half",
+        "3half_damaged",
         "4",
         "4half",
         "4half_damaged",
@@ -27,6 +29,7 @@ StartupEvents.registry("item", event => {
 
     const stabilized_miners = [
         "2half",
+        "3half",
         "4half",
         "6",
         "7",

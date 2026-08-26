@@ -14,6 +14,7 @@ ItemEvents.tooltip(tooltip => {
     }
 
     tooltip.add("kubejs:microminer_t2half", Text.translatable("item.kubejs.microminer_t2half.desc"))
+    tooltip.add("kubejs:microminer_t3half", Text.translatable("item.kubejs.microminer_t3half.desc"))
     tooltip.add("kubejs:microminer_t4half", Text.translatable("item.kubejs.microminer_t4half.desc"))
 
     tooltip.addAdvanced(["/kubejs:stabilized_microminer/"], (item, adv, text) => {
