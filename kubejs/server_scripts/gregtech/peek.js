@@ -32,18 +32,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.chemical_reactor("nitrous_acid_disproportionation")
-        .inputFluids("gtceu:nitrous_acid 2000")
-        .outputFluids("gtceu:nitrogen_dioxide", "gtceu:nitric_oxide", "minecraft:water")
+        .inputFluids("gtceu:nitrous_acid 3000", "minecraft:water 1000")
+        .outputFluids("gtceu:nitric_oxide 2000", "gtceu:nitric_acid", "minecraft:water 2000")
         .duration(0.8 * GTValues.SECONDS)
         .EUt(GTValues.VA[GTValues.ULV])
-        .circuit(1)
-
-    event.recipes.gtceu.chemical_reactor("nitrous_acid_disproportionation_alt")
-        .inputFluids("gtceu:nitrous_acid 3000")
-        .outputFluids("gtceu:nitric_oxide 2000", "gtceu:nitric_acid", "minecraft:water")
-        .duration(0.8 * GTValues.SECONDS)
-        .EUt(GTValues.VA[GTValues.ULV])
-        .circuit(2)
 
     event.recipes.gtceu.chemical_reactor("potassium_sulfate_from_nitrous_acid")
         .itemInputs("4x gtceu:potassium_iodide_dust")
