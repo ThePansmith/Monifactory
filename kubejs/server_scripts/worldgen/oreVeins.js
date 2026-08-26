@@ -42,16 +42,12 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(50)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
-        vein.heightRangeUniform(20, 60)
-        vein.veinedVeinGenerator(generator => generator
-            .oreBlock(GTMaterials.Malachite, 1)
-            .oreBlock(GTMaterials.get("azurite"), 2)
-            .oreBlock(GTMaterials.Calcite, 1)
-            .rareBlock(GTMaterials.Barite, 1)
-            .veininessThreshold(0.001)
-            .maxRichnessThreshold(0.1)
-            .minRichness(0.4)
-            .maxRichness(1.0)
+        vein.heightRangeUniform(20, 100)
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.get("azurite"), 6, 50, 100)
+            .withBlock(GTMaterials.Malachite, 4, 40, 70)
+            .withBlock(GTMaterials.Calcite, 2, 25, 50)
+            .withBlock(GTMaterials.Barite, 1, 25, 90)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get("azurite"))

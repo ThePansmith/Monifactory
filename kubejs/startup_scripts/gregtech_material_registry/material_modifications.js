@@ -107,6 +107,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // Give Zincite an ore form
     let zincite_ore_prop = new $OreProperty(2, 2);
     zincite_ore_prop.setOreByProducts(GTMaterials.Iron, GTMaterials.Manganese)
+    zincite_ore_prop.setDirectSmeltResult(GTMaterials.Zinc)
     GTMaterials.Zincite.setProperty($PropertyKey.ORE, zincite_ore_prop)
 
     // Give Borax an ore form

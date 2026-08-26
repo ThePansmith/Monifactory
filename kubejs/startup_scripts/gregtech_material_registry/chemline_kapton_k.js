@@ -15,7 +15,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
         event.create("pyromellitic_dianhydride")
             .dust()
-            .fluid()
             .color(0xB48C63)
             .components("10x carbon", "2x hydrogen", "6x oxygen")
             .formula("C6H2(C2O3)2");

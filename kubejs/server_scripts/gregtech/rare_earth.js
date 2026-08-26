@@ -114,20 +114,28 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(9001)
 
     // Wet the drys
-    event.recipes.gtceu.large_chemical_reactor("oxalic_acid_dihydrate")
+    event.recipes.gtceu.chemical_reactor("oxalic_acid_dihydrate_sugar")
         .notConsumable(doHarderProcessing ? "gtceu:vanadium_pentoxide_dust" : "gtceu:vanadium_dust")
-        .itemInputs("minecraft:sugar")
-        .inputFluids(Fluid.of("gtceu:nitric_acid", 12000), "minecraft:water")
-        .itemOutputs("6x gtceu:oxalic_acid_dihydrate_dust")
-        .outputFluids("gtceu:nitric_oxide 12000")
-        .duration(600).EUt(GTValues.VA[GTValues.LV])
+        .itemInputs(Item.of("minecraft:sugar", 15))
+        .inputFluids(Fluid.of("gtceu:nitric_acid", 12000))
+        .itemOutputs("20x gtceu:oxalic_acid_dihydrate_dust")
+        .outputFluids(Fluid.of("gtceu:nitrogen_dioxide", 12000), Fluid.of("minecraft:water", 3500)) // Full yield of water is irrational (11/3 B) so we say some is lost.
+        .duration(12 * GTValues.SECONDS).EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("oxalic_acid_dihydrate_sawdust")
+        .notConsumable("gtceu:coal_fly_ash_dust")
+        .itemInputs(Item.of("gtceu:wood_dust", 23))
+        .inputFluids(Fluid.of("gtceu:nitric_acid", 12000))
+        .itemOutputs("20x gtceu:oxalic_acid_dihydrate_dust")
+        .outputFluids(Fluid.of("gtceu:nitrogen_dioxide", 12000), Fluid.of("minecraft:water", 2500))
+        .duration(12 * GTValues.SECONDS).EUt(GTValues.VA[GTValues.HV])
 
     // Dry the wets
     event.recipes.gtceu.electric_blast_furnace("oxalic_acid")
-        .itemInputs("gtceu:oxalic_acid_dihydrate_dust")
-        .itemOutputs("gtceu:oxalic_acid_dust")
-        .outputFluids(Fluid.of("gtceu:steam", 19200))
-        .duration(400)
+        .itemInputs(Item.of("gtceu:oxalic_acid_dihydrate_dust", 5))
+        .itemOutputs(Item.of("gtceu:oxalic_acid_dust", 4))
+        .outputFluids(Fluid.of("gtceu:steam", 9600))
+        .duration(5 * GTValues.SECONDS)
         .blastFurnaceTemp(1700)
         .EUt(GTValues.VA[GTValues.MV])
 
@@ -146,4 +154,37 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of("minecraft:water", 11000))
         .duration(3.2 * 20)
         .EUt(GTValues.VA[GTValues.LV])
+
+    // Alternate recipe for Formic Acid via Oxalic Acid Dust
+    event.recipes.gtceu.chemical_reactor("formic_acid_from_oxalic_acid")
+        .notConsumableFluid("gtceu:glycerol 500")
+        .itemInputs("gtceu:oxalic_acid_dust")
+        .outputFluids("gtceu:formic_acid 1000", "gtceu:carbon_dioxide 1000")
+        .duration(2 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Alternate recipes for Formic Acid via oxidation of alkanes
+    event.recipes.gtceu.chemical_reactor("formic_acid_from_methane")
+        .inputFluids("gtceu:methane 4000", "gtceu:sulfuric_acid 3000")
+        .outputFluids("gtceu:formic_acid 4000", "gtceu:hydrogen_sulfide 3000", "minecraft:water 4000")
+        .duration(4 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("formic_acid_from_ethane")
+        .inputFluids("gtceu:ethane 4000", "gtceu:sulfuric_acid 5000")
+        .outputFluids("gtceu:formic_acid 8000", "gtceu:hydrogen_sulfide 5000", "minecraft:water 4000")
+        .duration(8 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_reactor("formic_acid_from_propane")
+        .inputFluids("gtceu:propane 4000", "gtceu:sulfuric_acid 7000")
+        .outputFluids("gtceu:formic_acid 12000", "gtceu:hydrogen_sulfide 7000", "minecraft:water 4000")
+        .duration(12 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_reactor("formic_acid_from_butane")
+        .inputFluids("gtceu:butane 4000", "gtceu:sulfuric_acid 9000")
+        .outputFluids("gtceu:formic_acid 16000", "gtceu:hydrogen_sulfide 9000", "minecraft:water 4000")
+        .duration(12 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.MV])
 })

@@ -78,35 +78,6 @@ ServerEvents.recipes(event => {
     event.shapeless("minecraft:blaze_rod", "minecraft:brewing_stand")
     event.replaceInput({ input: "gtceu:wood_plate" }, "gtceu:wood_plate", "#minecraft:planks")
 
-    // Processing for Ender Spores
-    if (!doHNN) {
-        event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
-        event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
-
-        event.custom({
-            "type": "thermal:insolator",
-            "ingredient": {
-                "item": "kubejs:ender_spore"
-            },
-            "result": [
-                {
-                    "item": "kubejs:ender_spore",
-                    "chance": 2.0
-                }
-            ],
-            "energy_mod": 3.0
-        })
-
-        event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
-            .circuit(2)
-            .notConsumable("kubejs:ender_spore")
-            .itemInputs("4x gtceu:fertilizer")
-            .inputFluids(Fluid.of("minecraft:water"))
-            .itemOutputs("8x kubejs:ender_spore")
-            .duration(640)
-            .EUt(GTValues.VA[GTValues.MV])
-    }
-
     // Change recipes for LV and MV macerators
     event.shaped("gtceu:lv_macerator", [
         "PMB",
@@ -486,11 +457,11 @@ ServerEvents.recipes(event => {
     p2p.forEach(type => {
         event.stonecutting(`ae2:${type}_p2p_tunnel`, "ae2:me_p2p_tunnel")
     })
-    const mae2_p2p = doEUP2P ? ["pattern", "eu"] : ["pattern"]
+    const mae2_p2p = ["pattern"]
     mae2_p2p.forEach(type => {
         event.stonecutting(`mae2:${type}_p2p_tunnel`, "ae2:me_p2p_tunnel")
     })
-    const multi_p2p = doEUP2P ? ["pattern", "redstone", "fluid", "fe", "eu"] : ["pattern", "redstone", "fluid", "fe"]
+    const multi_p2p = ["pattern", "redstone", "fluid", "fe"]
     multi_p2p.forEach(type => {
         event.stonecutting(`mae2:${type}_multi_p2p_tunnel`, "mae2:item_multi_p2p_tunnel")
     })
@@ -887,14 +858,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
         .circuit(1)
 
-    // Give Acetic Acid from Methanol a Circuit
-    event.recipes.gtceu.chemical_reactor("acetic_acid_from_methanol_circuit")
-        .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
-        .outputFluids("gtceu:acetic_acid 1000")
-        .duration(300)
-        .EUt(GTValues.VA[GTValues.LV])
-        .circuit(1)
-
     // Gilded Blackstone maceration
     event.recipes.gtceu.macerator("macerate_gilded_blackstone")
         .itemInputs("minecraft:gilded_blackstone")
@@ -968,4 +931,88 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:magnesium_diboride_ingot")
         .duration(250)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // Mixer for recipes that fit in singleblocks
+    const xpjuice_small = [
+        ["enderio:pulsating_powder", 6720],
+        ["enderio:vibrant_powder", 8960],
+        ["kubejs:grains_of_innocence", 16000]
+    ]
+
+    for (const [input, output] of xpjuice_small) {
+        event.recipes.gtceu.mixer(`kubejs:xpjuice_${output}`)
+            .inputFluids(Fluid.of("gtceu:mana", 250))
+            .itemInputs(input)
+            .outputFluids(Fluid.of("enderio:xp_juice", output))
+            .EUt(GTValues.VA[GTValues.HV])
+            .duration(100)
+    }
+
+    // LCR needed for larger recipes
+    const xpjuice_large = [
+        ["enderio:ender_crystal_powder", 35840],
+        ["enderio:prescient_powder", 44800]
+    ]
+
+    for (const [input, output] of xpjuice_large) {
+        event.recipes.gtceu.large_chemical_reactor(`kubejs:xpjuice_${output}`)
+            .inputFluids(Fluid.of("gtceu:mana", 500))
+            .itemInputs(input)
+            .outputFluids(Fluid.of("enderio:xp_juice", output))
+            .EUt(GTValues.VA[GTValues.EV])
+            .duration(100)
+    }
+
+    // Skip recipe for conveniently converting Ilmenite directly to Titanium Tetrachloride and Iron III Chloride
+    event.recipes.gtceu.large_chemical_reactor("titanium_tetrachloride_from_ilmenite")
+        .itemInputs("10x gtceu:ilmenite_dust", "5x gtceu:carbon_dust")
+        .inputFluids("gtceu:chlorine 14000")
+        .outputFluids("gtceu:titanium_tetrachloride 2000", "gtceu:iron_iii_chloride 2000", "gtceu:carbon_monoxide 4000", "gtceu:carbon_dioxide 1000")
+        .circuit(24)
+        .duration(120 * 20)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // Aluminothermic process for reducing Chromite (Not so sure about this one)
+    event.recipes.gtceu.large_chemical_reactor("chromium_from_chromite")
+        .itemInputs("7x gtceu:purified_chromite_ore", "3x gtceu:aluminium_dust")
+        .itemOutputs("4x gtceu:chromium_dust", "1x gtceu:iron_dust", "7x gtceu:bauxite_dust")
+        .duration(15 * 20)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    // Smelting recipes for reducing earlygame oxides similar to ores like Hematite, Magnetite, and Garnierite.
+    event.smelting("gtceu:lead_ingot", "gtceu:massicot_dust")
+    event.smelting("gtceu:cobalt_ingot", "gtceu:cobalt_oxide_dust")
+    event.smelting("minecraft:copper_ingot", "gtceu:cupric_oxide_dust")
+
+    event.recipes.gtceu.chemical_reactor("sodium_hydroxide_from_sodium_sulfide")
+        .itemInputs("3x gtceu:sodium_sulfide_dust")
+        .inputFluids("minecraft:water 2000")
+        .itemOutputs("6x gtceu:sodium_hydroxide_dust")
+        .outputFluids("gtceu:hydrogen_sulfide 1000")
+        .duration(3 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Reduce Sodium Sulfide from Sodium Bisulfate
+    event.recipes.gtceu.chemical_reactor("sodium_sulfide_from_sodium_bisulfate_coal")
+        .itemInputs("14x gtceu:sodium_bisulfate_dust", "2x gtceu:coal_dust")
+        .itemOutputs("3x gtceu:sodium_sulfide_dust")
+        .outputFluids("gtceu:carbon_dioxide 2000", "gtceu:sulfuric_acid")
+        .duration(7 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("sodium_sulfide_from_sodium_bisulfate_charcoal")
+        .itemInputs("14x gtceu:sodium_bisulfate_dust", "2x gtceu:charcoal_dust")
+        .itemOutputs("3x gtceu:sodium_sulfide_dust")
+        .outputFluids("gtceu:carbon_dioxide 2000", "gtceu:sulfuric_acid")
+        .duration(7 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Reduce Benzene from Phenol
+    event.recipes.gtceu.chemical_reactor("benzene_from_phenol")
+        .itemInputs("gtceu:zinc_dust")
+        .inputFluids("gtceu:phenol")
+        .itemOutputs("gtceu:zincite_dust")
+        .outputFluids("gtceu:benzene")
+        .duration(6 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.HV])
 })
