@@ -222,16 +222,16 @@ if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunn
         function Cutting(mod, input, output, outMod, lubeMod, lubeTime, energyCost) {
             event.recipes.gtceu.cutter(`${output}_water`)
                 .itemInputs(`${mod}:${input}`)
-                .inputFluids(`minecraft:water ${lubeMod*4}`)
+                .inputFluids(`minecraft:water ${lubeMod * 4}`)
                 .itemOutputs(`${outMod}x ${mod}:${output}`)
-                .duration(lubeTime*2)
+                .duration(lubeTime * 2)
                 .EUt(energyCost)
 
             event.recipes.gtceu.cutter(`${output}_distilled_water`)
                 .itemInputs(`${mod}:${input}`)
-                .inputFluids(`gtceu:distilled_water ${lubeMod*3}`)
+                .inputFluids(`gtceu:distilled_water ${lubeMod * 3}`)
                 .itemOutputs(`${outMod}x ${mod}:${output}`)
-                .duration(lubeTime*1.5)
+                .duration(lubeTime * 1.5)
                 .EUt(energyCost)
 
             event.recipes.gtceu.cutter(`${output}`)
