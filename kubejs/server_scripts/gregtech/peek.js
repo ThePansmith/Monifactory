@@ -21,6 +21,28 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:nitrous_acid 1000")
         .circuit(6)
         .duration(160)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("nitrous_acid_from_sodium_nitrite")
+        .itemInputs("4x gtceu:sodium_nitrite_dust")
+        .inputFluids("gtceu:hydrochloric_acid")
+        .itemOutputs("2x gtceu:salt_dust")
+        .outputFluids("gtceu:nitrous_acid")
+        .duration(5 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("nitrous_acid_disproportionation")
+        .inputFluids("gtceu:nitrous_acid 3000", "minecraft:water 1000")
+        .outputFluids("gtceu:nitric_oxide 2000", "gtceu:nitric_acid", "minecraft:water 2000")
+        .duration(0.8 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.chemical_reactor("potassium_sulfate_from_nitrous_acid")
+        .itemInputs("4x gtceu:potassium_iodide_dust")
+        .inputFluids("gtceu:nitrous_acid 2000", "gtceu:sulfuric_acid")
+        .itemOutputs("2x gtceu:iodine_dust", "7x gtceu:potassium_sulfate_dust")
+        .outputFluids("gtceu:nitric_oxide 2000", "minecraft:water 2000")
+        .duration(10 * GTValues.SECONDS)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.large_chemical_reactor("fluoroboric_acid")

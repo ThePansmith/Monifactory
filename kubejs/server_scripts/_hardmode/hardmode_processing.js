@@ -31,20 +31,37 @@ ServerEvents.recipes(event => {
         event.remove({ id: "gtceu:large_chemical_reactor/phthalic_acid_from_naphthalene" })
         event.remove({ id: "gtceu:large_chemical_reactor/phthalic_acid_from_naphthalene_9" })
 
-        event.recipes.gtceu.chemical_reactor("kubejs:phthalic_anhydride_dust")
+        // Anhydride from Naphthalene
+        event.recipes.gtceu.chemical_reactor("kubejs:phthalic_anhydride_dust_from_naphthalene")
             .itemInputs("#forge:tiny_dusts/vanadium_pentoxide")
             .inputFluids(Fluid.of("gtceu:naphthalene", 1000), Fluid.of("gtceu:oxygen", 5000))
             .itemOutputs("15x gtceu:phthalic_anhydride_dust")
             .outputFluids(Fluid.of("gtceu:carbon_dioxide", 1000))
             .duration(125).EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.large_chemical_reactor("kubejs:phthalic_anhydride_dust")
+        event.recipes.gtceu.large_chemical_reactor("kubejs:phthalic_anhydride_dust_from_naphthalene")
             .itemInputs("#forge:dusts/vanadium_pentoxide")
             .inputFluids(Fluid.of("gtceu:naphthalene", 9000), Fluid.of("gtceu:oxygen", 45000))
             .itemOutputs("64x gtceu:phthalic_anhydride_dust", "64x gtceu:phthalic_anhydride_dust", "7x gtceu:phthalic_anhydride_dust")
             .outputFluids(Fluid.of("gtceu:carbon_dioxide", 9000))
             .duration(1125).EUt(GTValues.VA[GTValues.LV])
 
+        // Anhydride from Dimethylbenzene (treated as equivalent to ortho-xylene)
+        event.recipes.gtceu.chemical_reactor("kubejs:phthalic_anhydride_dust_from_dimethylbenzene")
+            .itemInputs("#forge:tiny_dusts/vanadium_pentoxide")
+            .inputFluids(Fluid.of("gtceu:dimethylbenzene", 1000), Fluid.of("gtceu:oxygen", 3000))
+            .itemOutputs("15x gtceu:phthalic_anhydride_dust")
+            .outputFluids(Fluid.of("minecraft:water", 3000))
+            .duration(125).EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.large_chemical_reactor("kubejs:phthalic_anhydride_dust_from_dimethylbenzene")
+            .itemInputs("#forge:dusts/vanadium_pentoxide")
+            .inputFluids(Fluid.of("gtceu:dimethylbenzene", 9000), Fluid.of("gtceu:oxygen", 27000))
+            .itemOutputs("64x gtceu:phthalic_anhydride_dust", "64x gtceu:phthalic_anhydride_dust", "7x gtceu:phthalic_anhydride_dust")
+            .outputFluids(Fluid.of("minecraft:water", 27000))
+            .duration(1125).EUt(GTValues.VA[GTValues.LV])
+
+        // Two-way conversion between the fluid acid and solid anhydride
         event.recipes.gtceu.chemical_reactor("kubejs:phthalic_acid")
             .itemInputs("15x #forge:dusts/phthalic_anhydride")
             .inputFluids(Fluid.of("water", 1000))
@@ -398,20 +415,16 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.MV])
             .duration(120)
 
-        event.recipes.gtceu.chemical_reactor("pyrometillic_dianhydride")
-            .inputFluids("gtceu:durene 250", "gtceu:oxygen 1500")
-            .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
-            .duration(400).EUt(GTValues.VA[GTValues.HV]);
-
         event.recipes.gtceu.chemical_reactor("chloronitrobenzene")
             .inputFluids("gtceu:chlorobenzene 1000", "gtceu:nitric_acid 1000")
             .outputFluids("gtceu:nitrochlorobenzene 1000", "minecraft:water 1000")
             .duration(400).EUt(GTValues.VA[GTValues.HV]);
 
         event.recipes.gtceu.chemical_reactor("pyromellitic_dianhydride")
-            .inputFluids("gtceu:durene 250", "gtceu:oxygen 1500")
-            .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
-            .duration(400).EUt(GTValues.VA[GTValues.HV]);
+            .inputFluids("gtceu:durene 1000", "gtceu:oxygen 6000")
+            .outputFluids("minecraft:water 6000")
+            .itemOutputs("9x gtceu:pyromellitic_dianhydride_dust")
+            .duration(800).EUt(GTValues.VA[GTValues.HV]);
 
         event.recipes.gtceu.chemical_reactor("dinitrodiphenyl_ether")
             .inputFluids("gtceu:nitrochlorobenzene 2000")
@@ -435,7 +448,8 @@ ServerEvents.recipes(event => {
             .duration(160).EUt(GTValues.VA[GTValues.MV]);
 
         event.recipes.gtceu.chemical_reactor("kapton_k")
-            .inputFluids("gtceu:pyromellitic_dianhydride 1000", "gtceu:oxydianiline 1000")
+            .itemInputs("9x gtceu:pyromellitic_dianhydride_dust")
+            .inputFluids("gtceu:oxydianiline 1000")
             .outputFluids("gtceu:kapton_k 1000")
             .duration(400).EUt(GTValues.VA[GTValues.HV]);
 
