@@ -595,7 +595,7 @@
 			}]
 			title: "{moni.quest.78DCEF2FF2E1AC8C.title}"
 			x: -7.5d
-			y: -4.75d
+			y: -4.5d
 		}
 		{
 			dependencies: ["476F71CC0B0AC2A4"]
@@ -3796,6 +3796,77 @@
 			y: -2.25d
 		}
 		{
+			dependencies: [
+				"4F4D0F44B615AF4C"
+				"78DCEF2FF2E1AC8C"
+			]
+			description: [
+				"{moni.quest.7ABC7057BC2E8CE4.description1}"
+				""
+				"{moni.quest.7ABC7057BC2E8CE4.description2}"
+			]
+			icon: "gtceu:oxalic_acid_solution_bucket"
+			id: "7ABC7057BC2E8CE4"
+			rewards: [{
+				id: "63338D828354FAAE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7D564A2C88DE58B3"
+					item: "gtceu:oxalic_acid_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6E5CE9387C5205B1"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"785C6332FC7A07A5"
+				"7ABC7057BC2E8CE4"
+			]
+			description: [
+				"{moni.quest.63C3077124BC81FD.description1}"
+				""
+				"{moni.quest.63C3077124BC81FD.description2}"
+				""
+				"{moni.quest.63C3077124BC81FD.description3}"
+				""
+				"{moni.quest.63C3077124BC81FD.description4}"
+			]
+			icon: "gtceu:germanium_dust"
+			id: "63C3077124BC81FD"
+			rewards: [{
+				id: "73F86168083D3341"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "46D85CCD66919277"
+					item: "gtceu:coal_fly_ash_dust"
+					type: "item"
+				}
+				{
+					id: "1B19BD8698E6BFD0"
+					item: "gtceu:germanium_dust"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.63C3077124BC81FD.title}"
+			x: -3.0d
+			y: -2.0d
+    }
+    {
 			dependencies: ["4EC59BC9BCCB3C5D"]
 			description: [
 				"{moni.quest.64035276DDDD7325.description1}"

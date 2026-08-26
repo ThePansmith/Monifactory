@@ -2491,40 +2491,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"5357A16B5BF62C96"
-				"4F4D0F44B615AF4C"
-			]
-			description: [
-				"{moni.quest.7ABC7057BC2E8CE4.description1}"
-				""
-				"{moni.quest.7ABC7057BC2E8CE4.description2}"
-			]
-			icon: "gtceu:oxalic_acid_solution_bucket"
-			id: "7ABC7057BC2E8CE4"
-			rewards: [{
-				id: "63338D828354FAAE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7D564A2C88DE58B3"
-					item: "gtceu:oxalic_acid_solution_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6E5CE9387C5205B1"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
-			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
-			x: 6.0d
-			y: 5.5d
-		}
-		{
 			dependencies: ["1EBF9D9EADB7C451"]
 			description: [
 				"{moni.quest.11D0058859BD6F88.description1}"

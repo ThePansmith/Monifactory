@@ -114,20 +114,28 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(9001)
 
     // Wet the drys
-    event.recipes.gtceu.large_chemical_reactor("oxalic_acid_dihydrate")
+    event.recipes.gtceu.chemical_reactor("oxalic_acid_dihydrate_sugar")
         .notConsumable(doHarderProcessing ? "gtceu:vanadium_pentoxide_dust" : "gtceu:vanadium_dust")
-        .itemInputs("minecraft:sugar")
-        .inputFluids(Fluid.of("gtceu:nitric_acid", 12000), "minecraft:water")
-        .itemOutputs("6x gtceu:oxalic_acid_dihydrate_dust")
-        .outputFluids("gtceu:nitric_oxide 12000")
-        .duration(600).EUt(GTValues.VA[GTValues.LV])
+        .itemInputs(Item.of("minecraft:sugar", 15))
+        .inputFluids(Fluid.of("gtceu:nitric_acid", 12000))
+        .itemOutputs("20x gtceu:oxalic_acid_dihydrate_dust")
+        .outputFluids(Fluid.of("gtceu:nitrogen_dioxide", 12000), Fluid.of("minecraft:water", 3500)) // Full yield of water is irrational (11/3 B) so we say some is lost.
+        .duration(12 * GTValues.SECONDS).EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("oxalic_acid_dihydrate_sawdust")
+        .notConsumable("gtceu:coal_fly_ash_dust")
+        .itemInputs(Item.of("gtceu:wood_dust", 23))
+        .inputFluids(Fluid.of("gtceu:nitric_acid", 12000))
+        .itemOutputs("20x gtceu:oxalic_acid_dihydrate_dust")
+        .outputFluids(Fluid.of("gtceu:nitrogen_dioxide", 12000), Fluid.of("minecraft:water", 2500))
+        .duration(12 * GTValues.SECONDS).EUt(GTValues.VA[GTValues.HV])
 
     // Dry the wets
     event.recipes.gtceu.electric_blast_furnace("oxalic_acid")
-        .itemInputs("gtceu:oxalic_acid_dihydrate_dust")
-        .itemOutputs("gtceu:oxalic_acid_dust")
-        .outputFluids(Fluid.of("gtceu:steam", 19200))
-        .duration(400)
+        .itemInputs(Item.of("gtceu:oxalic_acid_dihydrate_dust", 5))
+        .itemOutputs(Item.of("gtceu:oxalic_acid_dust", 4))
+        .outputFluids(Fluid.of("gtceu:steam", 9600))
+        .duration(5 * GTValues.SECONDS)
         .blastFurnaceTemp(1700)
         .EUt(GTValues.VA[GTValues.MV])
 
