@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
         let minerTierNumber;
 
         if(minerTier == "2half") minerTierNumber = 2.5;
+        else if(minerTier == "3half") minerTierNumber = 3.5;
         else if(minerTier == "4half") minerTierNumber = 4.5;
         else minerTierNumber = minerTier;
 
