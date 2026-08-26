@@ -279,6 +279,7 @@ ItemEvents.tooltip(tooltip => {
     if (Platform.isLoaded("advanced_ae")) {
         tooltip.add([
             "advanced_ae:water_breathing_card",
+            "advanced_ae:auto_feeding_card",
             "advanced_ae:hp_buffer_card",
             "advanced_ae:evasion_card",
             "advanced_ae:regeneration_card",
