@@ -1007,14 +1007,6 @@ ServerEvents.recipes(event => {
         .duration(7 * GTValues.SECONDS)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // Produce Phenol from Aniline
-    event.recipes.gtceu.chemical_reactor("phenol_from_benzenediazonium_chloride")
-        .itemInputs("14x gtceu:benzenediazonium_chloride_dust")
-        .inputFluids("minecraft:water")
-        .outputFluids("gtceu:phenol", "gtceu:hydrochloric_acid", "gtceu:nitrogen 2000")
-        .duration(6 * GTValues.SECONDS)
-        .EUt(GTValues.VA[GTValues.LV])
-
     // Reduce Benzene from Phenol
     event.recipes.gtceu.chemical_reactor("benzene_from_phenol")
         .itemInputs("gtceu:zinc_dust")
