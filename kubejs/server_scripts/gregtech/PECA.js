@@ -10,8 +10,8 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(GTValues.VHA[GTValues.HV])
 
-    event.recipes.gtceu.mixer("chloroacetic_mixture")
-        .notConsumable("gtceu:acetic_anhydride_dust")
+    event.recipes.gtceu.chemical_reactor("chloroacetic_mixture")
+        .notConsumableFluid("gtceu:acetic_anhydride")
         .inputFluids("gtceu:acetic_acid 1000", "gtceu:chlorine 3000")
         .outputFluids("gtceu:chloroacetic_mixture 2000")
         .duration(20)

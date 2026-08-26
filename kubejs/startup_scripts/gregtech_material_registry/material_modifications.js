@@ -120,10 +120,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Iron2Chloride.setProperty($PropertyKey.DUST, new $DustProperty());
     GTMaterials.Iron2Chloride.setMaterialARGB(0xC5E1A5)
 
-    // Give Acetic Anhydride a dust form to replace fluid.
-    // Removing the FluidProperty causes errors in GT's hard-coded recipes so we add the fluid to the nukelist instead
-    GTMaterials.AceticAnhydride.setProperty($PropertyKey.DUST, new $DustProperty());
-
     // HM-exclusive modifications
     if (doHarderProcessing) {
         GTMaterials.RhodiumSulfate.setProperty($PropertyKey.DUST, new $DustProperty());

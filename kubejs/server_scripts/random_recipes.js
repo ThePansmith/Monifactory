@@ -1023,36 +1023,4 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:benzene")
         .duration(6 * GTValues.SECONDS)
         .EUt(GTValues.VA[GTValues.HV])
-
-    // Replace recipes that use liquid Acetic Anhydride with the new dust form
-    event.recipes.gtceu.chemical_reactor("acetic_anhydride")
-        .inputFluids("gtceu:ethenone", "gtceu:acetic_acid")
-        .itemOutputs("13x gtceu:acetic_anhydride_dust")
-        .duration(10 * GTValues.SECONDS)
-        .EUt(GTValues.VH[GTValues.LV])
-
-    event.recipes.gtceu.chemical_reactor("paracetamol")
-        .itemInputs("13x gtceu:acetic_anhydride_dust")
-        .inputFluids("gtceu:aminophenol")
-        .itemOutputs("gtceu:paracetamol_dust")
-        .outputFluids("gtceu:acetic_acid")
-        .duration(5 * GTValues.SECONDS)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // Direct recipe for Acetic Anhydride from Methyl Acetate
-    event.recipes.gtceu.large_chemical_reactor("acetic_anhydride_from_methyl_acetate")
-        .notConsumable("gtceu:rhodium_rod")
-        .inputFluids("gtceu:methyl_acetate", "gtceu:carbon_monoxide")
-        .itemOutputs("13x gtceu:acetic_anhydride_dust")
-        .duration(10 * GTValues.SECONDS)
-        .EUt(GTValues.VA[GTValues.HV])
-        .circuit(24)
-
-    // Hydrate Acetic Anhydride for Acetic Acid
-    event.recipes.gtceu.chemical_reactor("hydrate_acetic_anhydride")
-        .itemInputs("13x gtceu:acetic_anhydride_dust")
-        .inputFluids("minecraft:water")
-        .outputFluids("gtceu:acetic_acid 2000")
-        .duration(3 * GTValues.SECONDS)
-        .EUt(GTValues.VA[GTValues.ULV])
 })
