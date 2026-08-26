@@ -15,6 +15,15 @@ if (Platform.isLoaded("advanced_ae")) {
         event.remove({ id: "advanced_ae:fluixcrystalfromdust" })
         event.remove({ id: "advanced_ae:quantum_infusion" })
 
+        // Quantum Infusion
+        event.recipes.gtceu.mixer("quantum_infusion")
+            .itemInputs("ae2:singularity", "8x kubejs:quantum_flux", "4x #forge:dusts/ender_pearl", "2x gtceu:obsidian_dust")
+            .inputFluids("gtceu:mana 1000")
+            .circuit(4)
+            .outputFluids("advanced_ae:quantum_infusion_source 2000")
+            .duration(10 * 20)
+            .EUt(GTValues.VA[GTValues.EV])
+
         // Q. Crafter and Throughput Monitor
         event.remove({ id: "advanced_ae:quantumcrafter" })
         event.shaped("advanced_ae:quantum_crafter", [
@@ -68,7 +77,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "24x advanced_ae:quantum_structure",
                 "24x advanced_ae:quantum_structure"
             )
-            .inputFluids("gtceu:advanced_soldering_alloy 2304")
+            .inputFluids("gtceu:advanced_soldering_alloy 2304", "advanced_ae:quantum_infusion_source 24000")
             .itemOutputs("advanced_ae:quantum_core")
             .EUt(GTValues.VA[GTValues.ZPM])
             .duration(60 * 20)
@@ -89,7 +98,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "24x advanced_ae:quantum_structure",
                 "24x advanced_ae:quantum_structure"
             )
-            .inputFluids("gtceu:living_soldering_alloy 1152")
+            .inputFluids("gtceu:living_soldering_alloy 1152", "advanced_ae:quantum_infusion_source 24000")
             .itemOutputs("advanced_ae:quantum_core")
             .EUt(GTValues.VA[GTValues.ZPM])
             .duration(60 * 20)
@@ -111,7 +120,7 @@ if (Platform.isLoaded("advanced_ae")) {
         event.remove({ id: "advanced_ae:quantumstorage256" })
         event.recipes.gtceu.assembler("quantum_storage")
             .itemInputs("advanced_ae:quantum_unit", "megacells:cell_component_256m", "#gtceu:circuits/luv")
-            .inputFluids("gtceu:advanced_soldering_alloy 144")
+            .inputFluids("advanced_ae:quantum_infusion_source 1000")
             .itemOutputs("advanced_ae:quantum_storage_256")
             .duration(10 * 20)
             .EUt(GTValues.VA[GTValues.LuV])
@@ -119,7 +128,7 @@ if (Platform.isLoaded("advanced_ae")) {
         event.remove({ id: "advanced_ae:quantumaccel" })
         event.recipes.gtceu.assembler("quantum_coprocessor")
             .itemInputs("advanced_ae:quantum_unit", "2x mae2:16x_crafting_accelerator", "#gtceu:circuits/luv")
-            .inputFluids("gtceu:advanced_soldering_alloy 144")
+            .inputFluids("advanced_ae:quantum_infusion_source 1000")
             .itemOutputs("advanced_ae:quantum_accelerator")
             .duration(10 * 20)
             .EUt(GTValues.VA[GTValues.LuV])
@@ -136,7 +145,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
                 "gtceu:uv_parallel_hatch"
             )
-            .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
+            .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152", "advanced_ae:quantum_infusion_source 40000")
             .itemOutputs("advanced_ae:data_entangler")
             .EUt(GTValues.VA[GTValues.UHV])
             .duration(240 * 20)
@@ -158,7 +167,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
                 "gtceu:uv_parallel_hatch"
             )
-            .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
+            .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152", "advanced_ae:quantum_infusion_source 40000")
             .itemOutputs("advanced_ae:quantum_multi_threader")
             .EUt(GTValues.VA[GTValues.UHV])
             .duration(240 * 20)
@@ -182,7 +191,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
             )
-            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152", "advanced_ae:quantum_infusion_source 16000")
             .itemOutputs("advanced_ae:quantum_helmet")
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(30 * 20)
@@ -204,7 +213,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
             )
-            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152", "advanced_ae:quantum_infusion_source 16000")
             .itemOutputs("advanced_ae:quantum_chestplate")
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(30 * 20)
@@ -226,7 +235,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
             )
-            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152", "advanced_ae:quantum_infusion_source 16000")
             .itemOutputs("advanced_ae:quantum_leggings")
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(30 * 20)
@@ -248,7 +257,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
             )
-            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152", "advanced_ae:quantum_infusion_source 16000")
             .itemOutputs("advanced_ae:quantum_boots")
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(30 * 20)
