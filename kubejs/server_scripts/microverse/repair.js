@@ -8,6 +8,7 @@
  */
 const repairDurations = {
     "2half": 20,
+    "3half": 40,
     "4half": 60,
     "6": 80,
     "7": 90,
@@ -64,6 +65,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV])
         .chancedInput("2x gtceu:double_dark_steel_plate", 7000, 0)
         .chancedInput("minecraft:crossbow", 3000, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
+
+    repairing("3half")
+        .EUt(GTValues.VHA[GTValues.EV])
+        .chancedInput("2x gtceu:dense_microversium_plate", 5000, 0)
+        .chancedInput("2x gtceu:double_microversium_plate", 5000, 0)
         .chancedItemInputLogic(ChanceLogic.XOR)
 
     repairing("4half")
