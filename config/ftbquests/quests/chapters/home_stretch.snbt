@@ -977,6 +977,8 @@
 				"{moni.quest.3E45F67F09B6156B.description2}"
 				""
 				"{moni.quest.3E45F67F09B6156B.description3}"
+				""
+				"{moni.quest.3E45F67F09B6156B.description4}"
 			]
 			icon: "monilabs:prismatic_crucible"
 			id: "3E45F67F09B6156B"

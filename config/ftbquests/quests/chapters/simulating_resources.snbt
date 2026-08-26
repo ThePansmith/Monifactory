@@ -165,6 +165,21 @@
 					type: "item"
 					weak_nbt_match: true
 				}
+				{
+					id: "4A978A377C6FDB16"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:zombified_piglin"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
 			]
 			title: "{moni.quest.1062A387E899434C.title}"
 			x: -0.5d

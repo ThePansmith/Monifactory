@@ -125,7 +125,6 @@ global.itemNukeList = [
     "gtceu:hot_silicon_ingot",
     "gtceu:milk",
     "gtceu:steel_machine_casing",
-    "gtceu:uv_world_accelerator",
     "gtceu:mv_solar_panel",
     "gtceu:hv_solar_panel",
     "gtceu:ev_solar_panel",
@@ -135,6 +134,7 @@ global.itemNukeList = [
     "gtceu:uv_solar_panel",
     "gtceu:configurable_maintenance_hatch",
     /^gtceu:(ev|iv|luv|zpm|uv|uhv|uev|max)_\w+a_energy_converter/,
+    /^gtceu:\w+_world_accelerator/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
@@ -489,6 +489,11 @@ global.itemNukeList = [
     "nuclearcraft:magnesium_24",
     "nuclearcraft:iridium_192",
     "nuclearcraft:cobalt_60",
+
+    // Pipez
+    "pipez:gas_pipe",
+    "pipez:universal_pipe",
+    "pipez:infinity_upgrade"
 ];
 
 // Create Compat
@@ -517,5 +522,6 @@ if (!global.doBoilers) {
         "systeams:gourmand_boiler",
         "systeams:magmatic_boiler",
         "systeams:numismatic_boiler",
+        "systeams:boiler_pipe"
     );
 }

@@ -542,11 +542,9 @@
     "material.gtceu.nitrous_acid": "Nitrous Acid",
     "material.gtceu.fluoroboric_acid": "Fluoroboric Acid",
     "material.gtceu.boron_trifluoride": "Boron Trifluoride",
-    "material.gtceu.p-toluidine": "p-Toluidine",
     "material.gtceu.4-fluorotoluene": "4-Fluorotoluene",
     "material.gtceu.4-fluorotrichlorotoluene": "4-Fluorotrichlorotoluene",
     "material.gtceu.4-fluorobenzoyl_chloride": "4-Fluorobenzoyl Chloride",
-    "material.gtceu.benzenediazonium_chloride": "Benzenediazonium Chloride",
     "material.gtceu.benzenediazonium_fluoroborate": "Benzenediazonium Fluoroborate",
     "material.gtceu.fluorobenzene": "Fluorobenzene",
     "material.gtceu.4-4-difluorobenzophenone": "4-4-Difluorobenzophenone",
@@ -556,7 +554,6 @@
     "material.gtceu.fluorotoluene_mixture": "Fluorotoluene Mixture",
     "material.gtceu.activated_fluorotoluene_mixture": "Activated Fluorotoluene Mixture",
     "material.gtceu.fluorobenzene_gas_mixture": "Fluorobenzene Mixture",
-    "material.gtceu.sulfolene": "Sulfolene",
     "__NETHLINE__.header": "==================",
     "__NETHLINE__.flufff": "> NETHERITE LINE <",
     "__NETHLINE__.footer": "==================",
@@ -601,7 +598,6 @@
     "material.gtceu.anorthite_slurry": "Anorthite Slurry",
     "material.gtceu.titanite_slurry": "Titanite Slurry",
     "material.gtceu.malachite_slurry": "Malachite Slurry",
-    "material.gtceu.olivine_slurry": "Olivine Slurry"
+    "material.gtceu.olivine_slurry": "Olivine Slurry",
     "block.gtceu.battery_buffer.tooltip": "§cEach battery provides 2A input and 1A output!"
-}
 }

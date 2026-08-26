@@ -465,10 +465,8 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/mod/thermal/clathrate/resonant_clathrate")
 
     // Ender Spore
-    if (!doHNN) {
-        event.create("ender_spore")
-            .texture("kubejs:item/ender_spore")
-    }
+    event.create("ender_spore")
+        .texture("kubejs:item/ender_spore")
 
     // Thermal Custom Augments Classes
     const $AugmentItem = Java.loadClass("cofh.thermal.lib.common.item.AugmentItem");
