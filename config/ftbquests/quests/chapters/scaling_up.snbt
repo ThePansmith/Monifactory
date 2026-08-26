@@ -3865,8 +3865,8 @@
 			title: "{moni.quest.63C3077124BC81FD.title}"
 			x: -3.0d
 			y: -2.0d
-    }
-    {
+		}
+		{
 			dependencies: ["4EC59BC9BCCB3C5D"]
 			description: [
 				"{moni.quest.64035276DDDD7325.description1}"
