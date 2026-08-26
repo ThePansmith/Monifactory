@@ -460,6 +460,7 @@
     "material.gtceu.plutonium_242": "Plutonium 242",
     "gtceu.uhv_voltage_coil.desc": "Legendary Coil",
     "gtceu.uev_voltage_coil.desc": "Supreme Coil",
+    "item.gtceu.compost_mix_dust": "Compost Mix",
     "__HM_MISC__.header": "============",
     "__HM_MISC__.flufff": "> HM Misc. <",
     "__HM_MISC__.footer": "============",
@@ -600,5 +601,6 @@
     "material.gtceu.anorthite_slurry": "Anorthite Slurry",
     "material.gtceu.titanite_slurry": "Titanite Slurry",
     "material.gtceu.malachite_slurry": "Malachite Slurry",
-    "material.gtceu.olivine_slurry": "Olivine Slurry"
+    "material.gtceu.olivine_slurry": "Olivine Slurry",
+    "block.gtceu.battery_buffer.tooltip": "§cEach battery provides 2A input and 1A output!"
 }
