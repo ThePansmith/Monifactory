@@ -826,33 +826,6 @@
 			y: 6.75d
 		}
 		{
-			dependencies: ["6DAB13A7BDECE94E"]
-			description: [
-				"{moni.quest.72FFB2AAB5EA049D.description1}"
-				""
-				"{moni.quest.72FFB2AAB5EA049D.description2}"
-				""
-				"{moni.quest.72FFB2AAB5EA049D.description3}"
-			]
-			hide_dependency_lines: true
-			id: "72FFB2AAB5EA049D"
-			optional: true
-			rewards: [{
-				id: "7CCDAA726A94F22F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "0DF055B71C2833F8"
-				item: "gtceu:hv_world_accelerator"
-				type: "item"
-			}]
-			title: "{moni.quest.72FFB2AAB5EA049D.title}"
-			x: 4.0d
-			y: -6.5d
-		}
-		{
 			dependencies: [
 				"4DB622A78605A2EB"
 				"458FF3F9BC8E025B"
