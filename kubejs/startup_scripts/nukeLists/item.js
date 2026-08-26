@@ -522,5 +522,6 @@ if (!global.doBoilers) {
         "systeams:gourmand_boiler",
         "systeams:magmatic_boiler",
         "systeams:numismatic_boiler",
+        "systeams:boiler_pipe"
     );
 }

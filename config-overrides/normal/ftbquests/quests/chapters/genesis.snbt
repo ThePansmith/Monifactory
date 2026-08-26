@@ -1518,7 +1518,27 @@
 			tasks: [{
 				count: 4L
 				id: "7923DEDAB3298371"
-				item: { Count: 4, id: "gtceu:lv_battery_hull" }
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_sodium_battery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_lithium_battery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_cadmium_battery"
+							}
+						]
+					}
+				}
+				match_nbt: false
 				type: "item"
 			}]
 			title: "{moni.quest.077AA27F26B7831F.title}"

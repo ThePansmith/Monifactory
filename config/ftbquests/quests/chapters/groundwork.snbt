@@ -501,10 +501,6 @@
 						items: [
 							{
 								Count: 1b
-								id: "gtceu:lv_atomic_reconstructor"
-							}
-							{
-								Count: 1b
 								id: "gtceu:mv_atomic_reconstructor"
 							}
 							{
