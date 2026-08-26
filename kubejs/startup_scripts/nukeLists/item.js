@@ -489,6 +489,11 @@ global.itemNukeList = [
     "nuclearcraft:magnesium_24",
     "nuclearcraft:iridium_192",
     "nuclearcraft:cobalt_60",
+
+    // Pipez
+    "pipez:gas_pipe",
+    "pipez:universal_pipe",
+    "pipez:infinity_upgrade"
 ];
 
 // Create Compat

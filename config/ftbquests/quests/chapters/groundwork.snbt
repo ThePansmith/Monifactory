@@ -2192,11 +2192,18 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			tasks: [{
-				id: "2F9C846B8ABD620C"
-				item: "laserio:energy_overclocker_card_tier_3"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2F9C846B8ABD620C"
+					item: "laserio:energy_overclocker_card_tier_3"
+					type: "item"
+				}
+				{
+					id: "71545946FA1828C9"
+					item: "pipez:advanced_upgrade"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.53205E306EE07F6F.title}"
 			x: 5.75d
 			y: 10.0d

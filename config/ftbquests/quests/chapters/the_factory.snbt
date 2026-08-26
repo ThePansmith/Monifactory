@@ -1681,11 +1681,18 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "45561FC8024BD7F3"
-				item: "laserio:energy_overclocker_card_tier_2"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "45561FC8024BD7F3"
+					item: "laserio:energy_overclocker_card_tier_2"
+					type: "item"
+				}
+				{
+					id: "300A597D5FD2F21E"
+					item: "pipez:improved_upgrade"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.4F4F120AFB3A9250.title}"
 			x: -0.25d
 			y: 17.0d
@@ -2051,20 +2058,75 @@
 				"{moni.quest.4F239316765C7CA1.description1}"
 				""
 				"{moni.quest.4F239316765C7CA1.description2}"
+				""
+				"{moni.quest.4F239316765C7CA1.description3}"
 			]
 			hide_until_deps_visible: true
+			icon: "laserio:laser_node"
 			id: "4F239316765C7CA1"
-			rewards: [{
-				id: "189732EC89DA656B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "733BCE50584B7FC8"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "576F8362A4A48428"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "4687EABAFD3E5842"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+						id: "laserio:card_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "788E688147A8B83B"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "laserio:laseriobook"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
-			tasks: [{
-				id: "6DEB6911246BA1D9"
-				item: "laserio:card_item"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 4L
+					id: "7D0E23630A562F6A"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6DEB6911246BA1D9"
+					item: "laserio:card_item"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "252F1286D3A46E4E"
+					item: "laserio:card_energy"
+					type: "item"
+				}
+				{
+					id: "450A8E8955EDBB51"
+					item: "laserio:energy_overclocker_card_tier_1"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.4F239316765C7CA1.title}"
 			x: 6.5d
 			y: 2.0d
