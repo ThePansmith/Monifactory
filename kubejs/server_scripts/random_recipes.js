@@ -417,8 +417,6 @@ ServerEvents.recipes(event => {
         Z: "gtceu:zinc_foil",
         L: "gtceu:lead_plate"
     })
-    // Making ABS take aluminium rather than osmium so it's obtainable in EV
-    event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
     // Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter("kubejs:resonating_redstone")
@@ -899,9 +897,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("7x gtceu:tantalum_pentoxide_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
-
-    // Re-tier Palladium Substation to mid-EV, before Platline
-    event.replaceInput({ id: "gtceu:assembler/casing_palladium_substation" }, "gtceu:iridium_frame", "gtceu:platinum_frame")
 
     // Re-tier the Gregicality multiblocks of IV to be after platline Pt1, but before platline pt2
     event.replaceInput({ id: "gtceu:shaped/large_distillery"}, "gtceu:iridium_large_fluid_pipe", "gtceu:tungsten_carbide_large_fluid_pipe")

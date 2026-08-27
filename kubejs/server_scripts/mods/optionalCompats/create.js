@@ -20,6 +20,10 @@ if (Platform.isLoaded("create")) {
         event.remove({ id: "create:crafting/kinetics/mechanical_press" })
         // Remove the hand crank since it's easy to abuse contraptions using it
         event.remove({ id: "create:crafting/kinetics/hand_crank" })
+        // Remove a few more items that are useless without their machines
+        event.remove({ id: "create:crafting/kinetics/whisk" })
+        event.remove({ id: "create:crafting/kinetics/crafter_slot_cover" })
+        event.remove({ id: "create:crafting/kinetics/nozzle" })
 
         // w h a t ?
         event.remove({ id: "gtceu:shaped/lv_kinetic_mixer" })
@@ -75,7 +79,7 @@ if (Platform.isLoaded("create")) {
             .EUt(7)
 
         event.recipes.gtceu.mixer("kubejs:blaze_cake_base")
-            .itemInputs("minecraft:egg", "minecraft:sugar", "create:cinder_flour")
+            .itemInputs("minecraft:egg", "minecraft:sugar", "gtceu:netherrack_dust")
             .itemOutputs("create:blaze_cake_base")
             .duration(200)
             .EUt(7)
@@ -188,12 +192,19 @@ if (Platform.isLoaded("create")) {
 
         // stone variant rock crusher recipes
         let rockCrushing = function (modName, itemName, EUt) {
-            return event.recipes.gtceu.rock_breaker(`kubejs:${itemName}`)
-                .notConsumable(`${modName}:${itemName}`)
-                .itemOutputs(`${modName}:${itemName}`)
-                .adjacentFluids("minecraft:lava", "minecraft:water")
-                .duration(16)
-                .EUt(EUt)
+            return [
+                event.recipes.gtceu.rock_breaker(`kubejs:${itemName}`)
+                    .notConsumable(`${modName}:${itemName}`)
+                    .itemOutputs(`${modName}:${itemName}`)
+                    .adjacentFluids("minecraft:lava", "minecraft:water")
+                    .duration(16)
+                    .EUt(EUt),
+                event.recipes.gtceu.rock_cycle_simulator(`kubejs:${itemName}_rock_cycle`)
+                    .notConsumable(`${modName}:${itemName}`)
+                    .itemOutputs(`${modName}:${itemName}`)
+                    .duration(16)
+                    .EUt(EUt),
+            ]
         }
         rockCrushing("minecraft", "dripstone_block", 60)
         rockCrushing("minecraft", "tuff", 60)

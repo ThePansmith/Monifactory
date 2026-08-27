@@ -56,5 +56,7 @@ ServerEvents.recipes(event => {
         supercomp("creeper", "overworld", 16)
         supercomp("enderman", "end", 512)
         supercomp("warden", "overworld", 1666)
+        supercomp("zombified_piglin", "nether", 64)
+        supercomp("drowned", "overworld", 32)
     }
 })

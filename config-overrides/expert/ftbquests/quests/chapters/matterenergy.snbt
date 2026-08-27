@@ -358,7 +358,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4A96659253CCFACF.title}"
-			x: 0.25d
+			x: -0.5d
 			y: 4.25d
 		}
 		{
@@ -525,7 +525,7 @@
 			]
 			title: "{moni.quest.74469710D910C19D.title}"
 			x: 0.25d
-			y: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4174A6C6403DD245"]
@@ -982,7 +982,7 @@
 			]
 			title: "{moni.quest.70D9B3C6539720DE.title}"
 			x: -1.25d
-			y: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0EF85170074E70B3"]
@@ -1411,7 +1411,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0D1A64EBBA742196.title}"
-			x: 2.0d
+			x: 2.75d
 			y: 8.75d
 		}
 		{
@@ -1837,6 +1837,96 @@
 			title: "{moni.quest.7D622F83549C2387.title}"
 			x: 4.5d
 			y: -4.75d
+		}
+		{
+			dependencies: ["6E27B9938B280291"]
+			description: [
+				"{moni.quest.6F1530D71AA11FFE.description1}"
+				""
+				"{moni.quest.6F1530D71AA11FFE.description2}"
+				""
+				"{moni.quest.6F1530D71AA11FFE.description3}"
+				""
+				"{moni.quest.6F1530D71AA11FFE.description4}"
+			]
+			id: "6F1530D71AA11FFE"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "7F1541F5CD18775D"
+					item: "gtceu:name_casting_mold"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B364010E6B59B09"
+					item: {
+						Count: 1
+						id: "ae2:name_press"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{moni.quest.6F1530D71AA11FFE.title}"
+			x: 1.25d
+			y: 8.75d
+		}
+		{
+			dependencies: ["0EF85170074E70B3"]
+			description: [
+				"{moni.quest.51134C49D26C6D4A.description1}"
+				""
+				"{moni.quest.51134C49D26C6D4A.description2}"
+			]
+			id: "51134C49D26C6D4A"
+			rewards: [{
+				id: "483CC2BCF13CD238"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{moni.quest.51134C49D26C6D4A.subtitle}"
+			tasks: [{
+				id: "1C29AFE0918CBC8E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:4x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:16x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:64x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:256x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "megacells:mega_crafting_accelerator"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.51134C49D26C6D4A.title}"
+			x: 0.75d
+			y: 6.0d
 		}
 	]
 	title: "{moni.chapter.118959024F296F70.title}"

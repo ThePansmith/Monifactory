@@ -97,7 +97,7 @@ if (Platform.isLoaded("railways")) {
     })
     ServerEvents.recipes(event => {
 
-        event.remove({ output: "#kubejs:create_tracks" }) // KILL 'EM ALL! - demoman tf2
+        event.remove({ output: "#kubejs:create_tracks" }) // KILL "EM ALL! - demoman tf2
 
         /**
          * Creates a shaped crafting recipe and a Gregtech Assembler recipe, both to make normal-gauge tracks.
@@ -128,7 +128,7 @@ if (Platform.isLoaded("railways")) {
 
         /**
          * Creates a shaped crafting recipe and a Gregtech Assembler recipe, both to make wide-gauge tracks.
-         * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be 'widened'.
+         * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be "widened".
          * @param {string} sleeperItem A ResourceLocation of the item representing the sleeper/tie of the track. Will typically be a slab.
          * @param {string} outputItem A ResourceLocation of the wide-gauge track item to be output by the recipes.
          * @param {int} outputCount How many wide-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation.
@@ -176,6 +176,287 @@ if (Platform.isLoaded("railways")) {
                 .duration(5)
                 .EUt(16); // Low Voltage
         };
+
+        /**
+         * Creates a Chemical Reactor recipe that converts 288mB of GregTech Dye into 1B of paint.
+         * @param {string} dye A ResourceLocation of the dye to use.
+         * @param {string} paint The color of the paint produced.
+         */
+        let dyeToPaintRecipes = function (dye, paint) {
+            event.recipes.gtceu.chemical_reactor(`kubejs:chemical_reactor_paint_${paint}`)
+                .inputFluids("minecraft:water 1000", `gtceu:${dye}_dye 288`)
+                .outputFluids(Fluid.of("railways:paint", 1000, { Color: paint }))
+                .duration(200)
+                .EUt(16); // Low Voltage
+        };
+
+        /**
+         * Creates a Chemical Reactor recipe that converts a stone into 1B of paint with the same costs as if from dyes.
+         * @param {string} stone A ResourceLocation of the stone to use.
+         * @param {string} paint The color of the paint produced.
+         */
+        let stoneToPaintRecipes = function (stone, paint) {
+            event.recipes.gtceu.chemical_reactor(`kubejs:chemical_reactor_paint_${paint}`)
+                .itemInputs(stone, "2x #forge:dusts/salt")
+                .inputFluids("minecraft:water 1000", "gtceu:sulfuric_acid 250")
+                .outputFluids(Fluid.of("railways:paint", 1000, { Color: paint }))
+                .duration(600 + 200)
+                .EUt(24); // Low Voltage
+        }
+
+        /**
+         * Creates a Mixer recipe that converts 500mB of two paints into 1B of a third paint.
+         * @param {string} first The first paint to use.
+         * @param {string} second The second paint to use.
+         * @param {string} result The resulting paint.
+         */
+        let mixTwoPaintsRecipes = function (first, second, result) {
+            event.recipes.gtceu.mixer(`kubejs:mixer_paint_${result}`)
+                .inputFluids(Fluid.of("railways:paint", 500, { Color: first }), Fluid.of("railways:paint", 500, { Color: second }))
+                .outputFluids(Fluid.of("railways:paint", 1000, { Color: result }))
+                .duration(200)
+                .EUt(16); // Low Voltage
+        };
+
+        /**
+         * Creates an Assembler recipe to make locometal boilers
+         * @param {string} inputLocometal A ResourceLocation of the base locometal block
+         * @param {string} outputItem A ResourceLocation
+         */
+        let boilerRecipes = function (inputLocometal, outputItem) {
+            event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/, "")}`)
+                .itemInputs(
+                    `8x ${inputLocometal}`,
+                    "minecraft:bucket",
+                    "4x minecraft:blaze_rod"
+                )
+                .itemOutputs(`4x ${outputItem}`)
+                .duration(5)
+                .EUt(16); // Low Voltage
+        };
+
+        /**
+         * Creates a chemical bath recipe to paint a given locometal block with another.
+         * @param {string} inputItem A ResourceLocation of the base item/tag to paint.
+         * @param {string} outputItem A ResourceLocation of the painted block output by the recipe.
+         * @param {Fluid} fluid The liquid used to paint
+         */
+        let locometalPaintRecipes = function (inputItem, outputItem, fluid) {
+            event.recipes.gtceu.chemical_bath(`kubejs:${outputItem.replace(/^.*:/, "")}`)
+                .category("gtceu:chem_dyes")
+                .itemInputs(inputItem)
+                // Pitchers can be used to paint locometal with a Potato Cannon.
+                // A bucket of paint can be used on up to 8 blocks at once.
+                .inputFluids(fluid)
+                .itemOutputs(outputItem)
+                .duration(10)
+                .EUt(2); // Ultra Low Voltage
+        };
+
+        /**
+         * List of locometal blocks.
+         * Contains a tag for the group, the uncolored variant"s id, and a function to get colored variants.
+         */
+        let locometals = [
+            {
+                tag: "#railways:palettes/dye_groups/riveted",
+                base: "railways:riveted_locometal",
+                painted: color => `railways:${color}_riveted_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/slashed",
+                base: "railways:slashed_locometal",
+                painted: color => `railways:${color}_slashed_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/brass_wrapped_slashed",
+                base: "railways:brass_wrapped_locometal",
+                painted: color => `railways:${color}_brass_wrapped_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/copper_wrapped_slashed",
+                base: "railways:copper_wrapped_locometal",
+                painted: color => `railways:${color}_copper_wrapped_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/iron_wrapped_slashed",
+                base: "railways:iron_wrapped_locometal",
+                painted: color => `railways:${color}_iron_wrapped_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/vent",
+                base: "railways:locometal_vent",
+                painted: color => `railways:${color}_locometal_vent`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/flat_riveted",
+                base: "railways:flat_riveted_locometal",
+                painted: color => `railways:${color}_flat_riveted_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/flat_slashed",
+                base: "railways:flat_slashed_locometal",
+                painted: color => `railways:${color}_flat_slashed_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/plated",
+                base: "railways:plated_locometal",
+                painted: color => `railways:${color}_plated_locometal`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/pillar",
+                base: "railways:locometal_pillar",
+                painted: color => `railways:${color}_locometal_pillar`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/smokebox",
+                base: "railways:locometal_smokebox",
+                painted: color => `railways:${color}_locometal_smokebox`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/brass_wrapped_smokebox",
+                base: "railways:wrapped_locometal_smokebox",
+                painted: color => `railways:${color}_wrapped_locometal_smokebox`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/copper_wrapped_smokebox",
+                base: "railways:copper_wrapped_locometal_smokebox",
+                painted: color => `railways:${color}_copper_wrapped_locometal_smokebox`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/iron_wrapped_smokebox",
+                base: "railways:iron_wrapped_locometal_smokebox",
+                painted: color => `railways:${color}_iron_wrapped_locometal_smokebox`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/boiler",
+                base: "railways:locometal_boiler",
+                painted: color => `railways:${color}_locometal_boiler`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/brass_wrapped_boiler",
+                base: "railways:brass_wrapped_locometal_boiler",
+                painted: color => `railways:${color}_brass_wrapped_locometal_boiler`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/copper_wrapped_boiler",
+                base: "railways:copper_wrapped_locometal_boiler",
+                painted: color => `railways:${color}_copper_wrapped_locometal_boiler`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/iron_wrapped_boiler",
+                base: "railways:iron_wrapped_locometal_boiler",
+                painted: color => `railways:${color}_iron_wrapped_locometal_boiler`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/flywheel",
+                base: "railways:locometal_flywheel",
+                painted: color => `railways:${color}_locometal_flywheel`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/end_ladder",
+                base: "railways:locometal_end_ladder",
+                painted: color => `railways:${color}_locometal_end_ladder`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/rung_ladder",
+                base: "railways:locometal_rung_ladder",
+                painted: color => `railways:${color}_locometal_rung_ladder`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/trapdoor",
+                base: "railways:locometal_trapdoor",
+                painted: color => `railways:${color}_locometal_trapdoor`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/hinged_door",
+                base: "railways:hinged_locometal_door",
+                painted: color => `railways:${color}_hinged_locometal_door`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/sliding_door",
+                base: "railways:sliding_locometal_door",
+                painted: color => `railways:${color}_sliding_locometal_door`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/folding_door",
+                base: "railways:folding_locometal_door",
+                painted: color => `railways:${color}_folding_locometal_door`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/round_pane_window",
+                base: "railways:round_pane_locometal_window",
+                painted: color => `railways:${color}_round_pane_locometal_window`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/single_pane_window",
+                base: "railways:single_pane_locometal_window",
+                painted: color => `railways:${color}_single_pane_locometal_window`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/two_pane_window",
+                base: "railways:two_pane_locometal_window",
+                painted: color => `railways:${color}_two_pane_locometal_window`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/four_pane_window",
+                base: "railways:four_pane_locometal_window",
+                painted: color => `railways:${color}_four_pane_locometal_window`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/hazard_stripes_diagonal_black",
+                base: "railways:hazard_stripes_diagonal_on_black",
+                painted: color => `railways:${color}_hazard_stripes_diagonal_on_black`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/hazard_stripes_chevron_black",
+                base: "railways:hazard_stripes_chevron_on_black",
+                painted: color => `railways:${color}_hazard_stripes_chevron_on_black`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/hazard_stripes_diagonal_white",
+                base: "railways:hazard_stripes_diagonal_on_white",
+                painted: color => `railways:${color}_hazard_stripes_diagonal_on_white`,
+            },
+            {
+                tag: "#railways:palettes/dye_groups/hazard_stripes_chevron_white",
+                base: "railways:hazard_stripes_chevron_on_white",
+                painted: color => `railways:${color}_hazard_stripes_chevron_on_white`,
+            },
+        ];
+        let paints = [
+            "brown",
+            "maroon",
+            "red",
+            "vermilion",
+            "orange",
+            "granite",
+            "dripstone",
+            "ochrum",
+            "yellow",
+            "chartreuse",
+            "olive_green",
+            "lime",
+            "green",
+            "pine_green",
+            "cyan",
+            "sea_green",
+            "turquoise",
+            "light_blue",
+            "blue",
+            "royal_blue",
+            "purple",
+            "magenta",
+            "pink",
+            "white",
+            "diorite",
+            "limestone",
+            "light_gray",
+            "tuff",
+            "gray",
+            "scorchia",
+            "black"
+        ];
 
         // Normal-gauge tracks
         normalTrackRecipes("#create:sleepers", "create:track", "minecraft:iron_nugget", 1);
@@ -264,6 +545,63 @@ if (Platform.isLoaded("railways")) {
             narrowTrackRecipes("railways:track_biomesoplenty_redwood", "railways:track_biomesoplenty_redwood_narrow", "biomesoplenty:redwood_slab", 1);
             narrowTrackRecipes("railways:track_biomesoplenty_umbran", "railways:track_biomesoplenty_umbran_narrow", "biomesoplenty:umbran_slab", 1);
             narrowTrackRecipes("railways:track_biomesoplenty_willow", "railways:track_biomesoplenty_willow_narrow", "biomesoplenty:willow_slab", 1);
+        }
+
+        // Paint
+        // From Dye
+        dyeToPaintRecipes("brown", "brown");
+        dyeToPaintRecipes("red", "red");
+        dyeToPaintRecipes("orange", "orange");
+        dyeToPaintRecipes("yellow", "yellow");
+        dyeToPaintRecipes("lime", "lime");
+        dyeToPaintRecipes("green", "green");
+        dyeToPaintRecipes("cyan", "cyan");
+        dyeToPaintRecipes("light_blue", "light_blue");
+        dyeToPaintRecipes("blue", "blue");
+        dyeToPaintRecipes("purple", "purple");
+        dyeToPaintRecipes("magenta", "magenta");
+        dyeToPaintRecipes("pink", "pink");
+        dyeToPaintRecipes("white", "white");
+        dyeToPaintRecipes("light_gray", "light_gray");
+        dyeToPaintRecipes("gray", "gray");
+        dyeToPaintRecipes("black", "black");
+        // From Paints
+        mixTwoPaintsRecipes("red", "black", "maroon");
+        mixTwoPaintsRecipes("red", "orange", "vermilion");
+        mixTwoPaintsRecipes("yellow", "green", "chartreuse");
+        mixTwoPaintsRecipes("lime", "green", "olive_green");
+        mixTwoPaintsRecipes("green", "black", "pine_green");
+        mixTwoPaintsRecipes("cyan", "black", "sea_green");
+        mixTwoPaintsRecipes("cyan", "white", "turquoise");
+        mixTwoPaintsRecipes("blue", "black", "royal_blue");
+        // From Stone
+        stoneToPaintRecipes("minecraft:granite", "granite");
+        stoneToPaintRecipes("minecraft:dripstone_block", "dripstone");
+        stoneToPaintRecipes("create:ochrum", "ochrum");
+        stoneToPaintRecipes("minecraft:diorite", "diorite");
+        stoneToPaintRecipes("create:limestone", "limestone");
+        stoneToPaintRecipes("minecraft:tuff", "tuff");
+        stoneToPaintRecipes("create:scorchia", "scorchia");
+
+        // Boilers
+        boilerRecipes("railways:slashed_locometal", "railways:locometal_boiler");
+        boilerRecipes("railways:brass_wrapped_locometal", "railways:brass_wrapped_locometal_boiler");
+        boilerRecipes("railways:copper_wrapped_locometal", "railways:copper_wrapped_locometal_boiler");
+        boilerRecipes("railways:iron_wrapped_locometal", "railways:iron_wrapped_locometal_boiler");
+        for (let paint of paints) {
+            boilerRecipes(`railways:${paint}_slashed_locometal`, `railways:${paint}_locometal_boiler`);
+            boilerRecipes(`railways:${paint}_brass_wrapped_locometal`, `railways:${paint}_brass_wrapped_locometal_boiler`);
+            boilerRecipes(`railways:${paint}_copper_wrapped_locometal`, `railways:${paint}_copper_wrapped_locometal_boiler`);
+            boilerRecipes(`railways:${paint}_iron_wrapped_locometal`, `railways:${paint}_iron_wrapped_locometal_boiler`);
+        }
+
+        // Locometal
+        for (let locometal of locometals) {
+            // Clean
+            locometalPaintRecipes(locometal.tag, locometal.base, "minecraft:water 125");
+            for (let paint of paints) {
+                locometalPaintRecipes(locometal.tag, locometal.painted(paint), Fluid.of("railways:paint", 125, { Color: paint }));
+            }
         }
     });
     console.log("Create: Steam and Rails compat script successfully loaded!")

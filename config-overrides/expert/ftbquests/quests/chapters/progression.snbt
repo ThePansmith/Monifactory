@@ -1626,13 +1626,7 @@
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "4D41A87F6EC97F19"
-					item: "gtceu:filter_casing"
-					type: "item"
-				}
-				{
-					count: 75L
+					count: 86L
 					id: "2BD9B381C408FF8B"
 					item: {
 						Count: 1
@@ -1650,7 +1644,47 @@
 							]
 						}
 					}
+					optional_task: true
 					title: "{moni.task.2BD9B381C408FF8B}"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4D41A87F6EC97F19"
+					item: "gtceu:filter_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "734A8736E913F3B9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "44D6926CD41BC346"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:energy_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "46EB73137CAAD497"
+					item: "minecraft:iron_door"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2601,7 +2635,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -2619,6 +2653,7 @@
 						]
 					}
 				}
+				title: "{moni.task.2A5B75587F16782E}"
 				type: "item"
 			}]
 			title: "{moni.quest.6C028CD89745098E.title}"
@@ -2683,7 +2718,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -2701,6 +2736,7 @@
 						]
 					}
 				}
+				title: "{moni.task.4E566F8EF19BE210}"
 				type: "item"
 			}]
 			title: "{moni.quest.6E27637A9C94A0AA.title}"
@@ -2765,7 +2801,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -2783,6 +2819,7 @@
 						]
 					}
 				}
+				title: "{moni.task.04444449DCA34F30}"
 				type: "item"
 			}]
 			title: "{moni.quest.61CC4AD6FAE15248.title}"
@@ -2847,7 +2884,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -2865,6 +2902,7 @@
 						]
 					}
 				}
+				title: "{moni.task.1FEF896D9E8055D5}"
 				type: "item"
 			}]
 			title: "{moni.quest.48CAEBEE83D7C791.title}"
@@ -2929,7 +2967,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -2947,6 +2985,7 @@
 						]
 					}
 				}
+				title: "{moni.task.01AFBFF0D9532F27}"
 				type: "item"
 			}]
 			title: "{moni.quest.30AAFB97813DEB6C.title}"
@@ -3011,7 +3050,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -3029,6 +3068,7 @@
 						]
 					}
 				}
+				title: "{moni.task.553B2A8341469AE8}"
 				type: "item"
 			}]
 			title: "{moni.quest.646B8CD10787D899.title}"
@@ -3093,7 +3133,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -3111,6 +3151,7 @@
 						]
 					}
 				}
+				title: "{moni.task.52571DFFC6CB4D85}"
 				type: "item"
 			}]
 			title: "{moni.quest.11B25506F679ACBD.title}"
@@ -3175,7 +3216,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -3193,6 +3234,7 @@
 						]
 					}
 				}
+				title: "{moni.task.088FB8F945D0645E}"
 				type: "item"
 			}]
 			title: "{moni.quest.4B497D256FB3983F.title}"
@@ -3255,7 +3297,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -3273,6 +3315,7 @@
 						]
 					}
 				}
+				title: "{moni.task.2A4AFA6140DAFF4D}"
 				type: "item"
 			}]
 			title: "{moni.quest.0A34290F579BB4E2.title}"
@@ -3334,7 +3377,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -3352,6 +3395,7 @@
 						]
 					}
 				}
+				title: "{moni.task.22F57F4F6D41251B}"
 				type: "item"
 			}]
 			title: "{moni.quest.63812416270292A4.title}"
@@ -3413,7 +3457,7 @@
 													Count: 1b
 													id: "itemfilters:id_regex"
 													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder"
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|converter|charger|rotor_holder|polarizer"
 													}
 												}]
 											}
@@ -3431,6 +3475,7 @@
 						]
 					}
 				}
+				title: "{moni.task.4BB940DD5512BB62}"
 				type: "item"
 			}]
 			title: "{moni.quest.1A6F087E10DC036E.title}"
