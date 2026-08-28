@@ -437,7 +437,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 2880")
         .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
         .duration(400)
-        .EUt(GTValues.VA[GTValues.UIV])
+        .EUt(GTValues.VA[GTValues.MAX])
         .stationResearch(b => b
             .researchStack("kubejs:causality_exempt_monic_heavy_plating")
             .CWUt(144, 57600)
