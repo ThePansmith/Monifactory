@@ -3,8 +3,8 @@
  * This is the place where the shapes for fission-related multiblock machines are defined.
  */
 
-const DynamicFissionReactorMachine = Java.loadClass("net.phoenix.phoenix_fission.common.data.multiblock.fission.DynamicFissionReactorMachine")
-const HeatExchangerMachine = Java.loadClass("net.phoenix.phoenix_fission.common.data.multiblock.fission.HeatExchangerMachine")
+const DynamicFissionReactorMachine = Java.loadClass("net.phoenix.phoenix_fission.api.machine.multiblock.DynamicFissionReactorMachine")
+const HeatExchangerMachine = Java.loadClass("net.phoenix.phoenix_fission.api.machine.multiblock.ThermoelectricGeneratorMachine")
 const PhoenixRecipeTypes = Java.loadClass("net.phoenix.phoenix_fission.common.data.PhoenixRecipeTypes")
 const RelativeDirection = Java.loadClass("com.gregtechceu.gtceu.api.pattern.util.RelativeDirection")
 const PhoenixFissionPredicates = Java.loadClass("net.phoenix.phoenix_fission.api.pattern.PhoenixFissionPredicates")
