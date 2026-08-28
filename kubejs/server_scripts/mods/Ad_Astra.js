@@ -482,18 +482,14 @@ ServerEvents.tags("item", event => {
         "gtceu:quarktech_leggings",
         "gtceu:quarktech_boots"
     ]
+    // If Advanced AE is found, add Quantum Armour to the list.
     if (Platform.isLoaded("advanced_ae")) {
-        const spaceImmuneEquipment = [
-            "gtceu:quarktech_helmet",
-            "gtceu:quarktech_chestplate",
-            "gtceu:advanced_quarktech_chestplate",
-            "gtceu:quarktech_leggings",
-            "gtceu:quarktech_boots",
+        spaceImmuneEquipment.push(
             "advanced_ae:quantum_helmet",
             "advanced_ae:quantum_chestplate",
             "advanced_ae:quantum_leggings",
             "advanced_ae:quantum_boots"
-        ]
+        )
     }
 
     event.add("ad_astra:space_resistant_armor", spaceImmuneEquipment)
