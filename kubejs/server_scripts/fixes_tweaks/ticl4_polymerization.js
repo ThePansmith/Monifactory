@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
                 if (fluidIngredient.get(j).getAsJsonPrimitive("tag").asString == "forge:titanium_tetrachloride") {
                     // Change fluid ingredient to 1/2 the amount if it does match
                     curFluidIngredient.remove("amount")
-                    curFluidIngredient["addProperty(java.lang.String,java.lang.Number)"]("amount", fluidAmount / 4)
+                    curFluidIngredient["addProperty(java.lang.String,java.lang.Number)"]("amount", fluidAmount / 25)
                 }
             }
         }
