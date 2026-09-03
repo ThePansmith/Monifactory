@@ -31,13 +31,13 @@ ServerEvents.recipes(event => {
         .itemInputs("1x gtceu:lithium_dust", "1x gtceu:niobium_dust")
         .outputFluids("gtceu:lithium_niobate 720")
 
-    event.recipes.gtceu.chemical_bath("carbon_mesh_reinforced_circuit_board")
+    event.recipes.gtceu.assembler("carbon_mesh_reinforced_circuit_board")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(800)
         .EUt(GTValues.VA[GTValues.EV])
         .inputFluids("gtceu:polyethyl_cyanoacrylate 144")
-        .itemInputs("2x gtceu:carbon_fiber_mesh")
-        .itemOutputs("1x kubejs:carbon_mesh_reinforced_circuit_board")
+        .itemInputs("2x gtceu:carbon_fiber_plate", "kubejs:adhered_matrix_mesh", "4x gtceu:ruridit_foil")
+        .itemOutputs("2x kubejs:carbon_mesh_reinforced_circuit_board")
 
     event.recipes.gtceu.chemical_reactor("carbon_mesh_reinforced_printed_circuit_board_persulfate")
         .cleanroom(CleanroomType.CLEANROOM)

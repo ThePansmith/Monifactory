@@ -55,6 +55,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Tritanium.addFlags(GTMaterialFlags.GENERATE_SPRING)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Platinum.addFlags(GTMaterialFlags.GENERATE_FRAME)
+    GTMaterials.Naquadah.addFlags(GTMaterialFlags.GENERATE_FRAME)
 
     // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
@@ -107,6 +108,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // Give Zincite an ore form
     let zincite_ore_prop = new $OreProperty(2, 2);
     zincite_ore_prop.setOreByProducts(GTMaterials.Iron, GTMaterials.Manganese)
+    zincite_ore_prop.setDirectSmeltResult(GTMaterials.Zinc)
     GTMaterials.Zincite.setProperty($PropertyKey.ORE, zincite_ore_prop)
 
     // Give Borax an ore form

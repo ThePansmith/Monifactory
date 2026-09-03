@@ -9,6 +9,8 @@ StartupEvents.registry("item", event => {
         "2half",
         "2half_damaged",
         "3",
+        "3half",
+        "3half_damaged",
         "4",
         "4half",
         "4half_damaged",
@@ -27,6 +29,7 @@ StartupEvents.registry("item", event => {
 
     const stabilized_miners = [
         "2half",
+        "3half",
         "4half",
         "6",
         "7",
@@ -465,10 +468,8 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/mod/thermal/clathrate/resonant_clathrate")
 
     // Ender Spore
-    if (!doHNN) {
-        event.create("ender_spore")
-            .texture("kubejs:item/ender_spore")
-    }
+    event.create("ender_spore")
+        .texture("kubejs:item/ender_spore")
 
     // Thermal Custom Augments Classes
     const $AugmentItem = Java.loadClass("cofh.thermal.lib.common.item.AugmentItem");

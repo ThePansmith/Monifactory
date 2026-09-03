@@ -1019,6 +1019,8 @@
 				"{moni.quest.73908E06B75B9C9E.description2}"
 				""
 				"{moni.quest.73908E06B75B9C9E.description3}"
+				""
+				"{moni.quest.73908E06B75B9C9E.description4}"
 			]
 			id: "73908E06B75B9C9E"
 			rewards: [{
@@ -1872,6 +1874,61 @@
 			title: "{moni.quest.6F1530D71AA11FFE.title}"
 			x: 1.25d
 			y: 8.75d
+		}
+		{
+			dependencies: ["0EF85170074E70B3"]
+			description: [
+				"{moni.quest.51134C49D26C6D4A.description1}"
+				""
+				"{moni.quest.51134C49D26C6D4A.description2}"
+			]
+			id: "51134C49D26C6D4A"
+			rewards: [{
+				id: "483CC2BCF13CD238"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{moni.quest.51134C49D26C6D4A.subtitle}"
+			tasks: [{
+				id: "1C29AFE0918CBC8E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:4x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:16x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:64x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:256x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "megacells:mega_crafting_accelerator"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.51134C49D26C6D4A.title}"
+			x: 0.75d
+			y: 6.0d
 		}
 	]
 	title: "{moni.chapter.118959024F296F70.title}"
