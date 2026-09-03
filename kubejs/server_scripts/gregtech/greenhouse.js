@@ -97,6 +97,10 @@ ServerEvents.recipes(event => {
     Greenhouse("minecraft", "warped_fungus", 1280, ["64x minecraft:warped_stem", "32x minecraft:warped_wart_block", "16x minecraft:shroomlight"], 2, 4)
     Greenhouse("minecraft", "crimson_fungus", 1280, ["64x minecraft:crimson_stem", "32x minecraft:nether_wart_block", "16x minecraft:shroomlight"], 2, 4)
     Greenhouse("thermal", "rubberwood_sapling", 1280, ["64x thermal:rubberwood_log"], 2, 4)
+    // Add Menril Saplings if applicable.
+    if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+        Greenhouse("integrateddynamics", "menril_sapling", 1280, ["64x integrateddynamics:menril_log", "16x integrateddynamics:crystalized_menril_chunk", "4x integrateddynamics:menril_berries"], 2, 4)
+    }
 
     // //// Crops //////
     Greenhouse("minecraft", "sugar_cane", 320, ["32x minecraft:sugar_cane"], 2, 0)
