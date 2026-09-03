@@ -2101,6 +2101,7 @@
 					type: "item"
 				}
 			]
+			optional: true
 			shape: "hexagon"
 			tasks: [
 				{
