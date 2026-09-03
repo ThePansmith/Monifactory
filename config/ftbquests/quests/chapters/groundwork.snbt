@@ -1992,6 +1992,7 @@
 			disable_toast: true
 			hide_until_deps_visible: true
 			id: "0C10EC03A01E7334"
+			optional: true
 			shape: "hexagon"
 			tasks: [{
 				id: "5326C255DC39819A"
