@@ -3581,8 +3581,10 @@
 				"{moni.quest.7BC6E67521545949.description2}"
 				""
 				"{moni.quest.7BC6E67521545949.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.7BC6E67521545949.description4}"
+				""
+				"{moni.quest.7BC6E67521545949.description5}"
 			]
 			icon: "gtceu:ev_energy_input_hatch_4a"
 			id: "7BC6E67521545949"
