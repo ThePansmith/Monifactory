@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
             .duration(128)
             .EUt(GTValues.VH[GTValues.ULV])
     }
-    OilLube("gtceu:oil_light", "light", 1.25)
-    OilLube("gtceu:oil_medium", "raw", 0.25)
-    OilLube("gtceu:oil_heavy", "heavy", 2)
+    OilLube("gtceu:oil_light", "light", 0.25)
+    OilLube("gtceu:oil_medium", "raw", 0.5)
+    OilLube("gtceu:oil_heavy", "heavy", 1.5)
 })
