@@ -2064,6 +2064,7 @@
 			hide_until_deps_visible: true
 			icon: "laserio:laser_node"
 			id: "4F239316765C7CA1"
+			optional: true
 			rewards: [
 				{
 					id: "733BCE50584B7FC8"
@@ -2101,7 +2102,6 @@
 					type: "item"
 				}
 			]
-			optional: true
 			shape: "hexagon"
 			tasks: [
 				{
