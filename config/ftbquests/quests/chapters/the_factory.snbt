@@ -60,12 +60,6 @@
 			x: 6.25d
 			y: 6.75d
 		}
-		{
-			id: "4373D49C9462A56A"
-			linked_quest: "2C89DAD26E08E382"
-			x: -1.75d
-			y: 10.5d
-		}
 	]
 	quests: [
 		{
