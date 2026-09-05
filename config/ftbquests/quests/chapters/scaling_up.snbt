@@ -3892,8 +3892,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.64035276DDDD7325.title}"
-			x: 9.0d
-			y: 1.0d
+			x: 7.0d
+			y: 1.25d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"
