@@ -854,7 +854,7 @@
     "moni.quest.201B129579ACF449.title": "Quartzite and Certus Quartz Dust",
     "moni.quest.20745EB9A695E365.description1": "&aLasers&r are &9GregTech&r's native solution to high-volume power transfer. Each power tier starting at &9IV&r has &aLaser Hatches&r capable of transferring &9256A&r, &91,024A&r and &94,096A&r of their voltage's power!",
     "moni.quest.20745EB9A695E365.description2": "Energy in the Laser Network flows from &aLaser Source Hatches&r through &6Laser Pipes&r to &aLaser Target Hatches&r. All these must be in a straight line - lasers don't bend, after all. Similarly to other power-related blocks, the tier of the &aLaser Target&r must not be lower than the tier of the &aLaser Source&r.",
-    "moni.quest.20745EB9A695E365.description3": "You can choose to use these when moving power between &3Active Transformers&r and your &3Power Substation&r.",
+    "moni.quest.20745EB9A695E365.description3": "It is recommended to use these when moving power between &3Active Transformers&r and your &3Power Substation&r, and as part of your &aPower Spine&r.",
     "moni.quest.20745EB9A695E365.title": "&2Laser Network",
     "moni.quest.20CB8F878CADA235.description1": "&9Bathyal Energy Cores&r are the second tier of core, used for intermediate crafting recipes.",
     "moni.quest.20CB8F878CADA235.title": "&9Bathyal Energy Core",

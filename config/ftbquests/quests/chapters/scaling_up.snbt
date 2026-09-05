@@ -3753,12 +3753,13 @@
 			]
 			icon: "gtceu:empty_tier_i_battery"
 			id: "6CFAAF68D4B10062"
+			size: 2.0d
 			tasks: [{
 				id: "5AF8E611CFEF3599"
 				type: "checkmark"
 			}]
 			title: "{moni.quest.6CFAAF68D4B10062.title}"
-			x: -0.75d
+			x: -1.0d
 			y: -11.0d
 		}
 		{
