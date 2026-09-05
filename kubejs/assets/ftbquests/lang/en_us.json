@@ -2121,6 +2121,8 @@
     "moni.quest.59CC348BC6199793.title": "Sapling",
     "moni.quest.5A07988F5AD20A06.description1": "The precursor to &6Optical Processing Units&r.",
     "moni.quest.5A07988F5AD20A06.title": "&9Optical Circuit Board",
+    "moni.quest.5A1F4D5E41787B93.description1": "&aTectonic Grenades&r are a helpful tool to hasten your mining trips. They break blocks in a sphere 11 blocks in diameter, which is an area much larger than any drill you have access to currently.",
+    "moni.quest.5A1F4D5E41787B93.description2": "They also operate at range, which can be convenient when paired with a wide-area &aitem magnet&r.",
     "moni.quest.5A25A4DEF1CCA576.title": "Element 020: Calcium",
     "moni.quest.31EE6E41F509A8CF.description1": "These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing.",
     "moni.quest.31EE6E41F509A8CF.description2": "Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks.",
