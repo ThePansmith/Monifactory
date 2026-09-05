@@ -1537,11 +1537,11 @@
 		{
 			dependencies: ["34CA940B412284F2"]
 			description: [
-				"{moni.quest.5F90D0FC382C0A30.description1.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description1}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description2.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description2}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description3.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description3}"
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"
