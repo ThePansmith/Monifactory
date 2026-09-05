@@ -216,7 +216,7 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 4. Do not leave any unused files or assets in these folders! One example is how there used to be an entire suite of Draconic Evolution-themed casings before the theming was switched to the Deep Dark instead. Those unused assets were left in the folder for _months_ after the switch. Debug assets such as those in `kubejs\assets\kubejs\textures\block\debug` are exempt.
 
 ## Optional Compats ##
-Optional Compatiblities for mods should be balanced so that they fit naturally in the modpack's progression without overshadowing existing options. For example, an optional compatability should not have wireless be unlocked before it's possible in the base modpack. Optional Compatibilies serve to extend and add additional options, not replace.
+Optional Compatibilities for mods should be balanced so that they fit naturally in the modpack's progression without overshadowing existing options. For example, an optional compatibility should not have wireless be unlocked before it's possible in the base modpack. Optional Compatibilities serve to extend and add additional options, not replace.
 
 ## Updating Mods ##
 

@@ -80,7 +80,7 @@ If you want to switch the pack mode on a dedicated server, follow these instruct
       java -jar ${Server Root}\mods\monilabs-*.jar ${N/H/E}
       ```
     - You'll need to replace ${Server Root} with the path of your server, E.G ``C:\MonilabsServer`` or ``/var/opt/moniserver/``.
-    Keep in mind these are most likely **not** be the path of your Monifactory server, open your perfered shell/command interface, for Windows run ``cd`` without any parameters, for Mac/Linux/FreeBSD, run ``pwd``.
+    Keep in mind these are most likely **not** be the path of your Monifactory server, open your preferred shell/command interface, for Windows run ``cd`` without any parameters, for Mac/Linux/FreeBSD, run ``pwd``.
     - ${N/H/E} is the mode of Moni you want to switch to, N is for Normal Mode, H is for Hard Mode, and E is for Expert Mode
     - Typing in nothing will prompt you to change your pack mode
 
@@ -98,6 +98,7 @@ To spice up your Monifactory experience, you can add any of the following mods t
 6. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
 7. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
 8. [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
+9. [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics) and [Integrated Tunnels](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels) (Needs both installed)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
@@ -108,7 +109,7 @@ To spice up your Monifactory experience, you can add any of the following mods t
 6. ``unzip server.zip``
 7. If you have already or will install ProjectRed Illumination as an optional dependency for clients, you must remember to manually copy the mod ``ProjectRed-VERSION-illumination.jar`` from your client mods folder to the server mods folder to avoid crashes. Note: GTMolDraw is purely client side and thus does not need to be copied as well.
 8. On Monifactory versions 0.12.X and older, move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
-9. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+9. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be necessary.
 10. To upgrade an existing Monifactory server, see [FAQ.md](FAQ.md).
 
 ## Contributing

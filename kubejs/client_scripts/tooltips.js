@@ -14,6 +14,7 @@ ItemEvents.tooltip(tooltip => {
     }
 
     tooltip.add("kubejs:microminer_t2half", Text.translatable("item.kubejs.microminer_t2half.desc"))
+    tooltip.add("kubejs:microminer_t3half", Text.translatable("item.kubejs.microminer_t3half.desc"))
     tooltip.add("kubejs:microminer_t4half", Text.translatable("item.kubejs.microminer_t4half.desc"))
 
     tooltip.addAdvanced(["/kubejs:stabilized_microminer/"], (item, adv, text) => {
@@ -276,5 +277,10 @@ ItemEvents.tooltip(tooltip => {
     // Tempad
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
+    }
+
+    // Integrated Dynamics & Tunnels
+    if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+        tooltip.add("integrateddynamics:on_the_dyanmics_of_integration", Text.translatable("integrateddynamics.on_the_dynamics_of_integration.tooltip"))
     }
 })

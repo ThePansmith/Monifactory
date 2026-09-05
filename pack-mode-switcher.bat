@@ -35,8 +35,8 @@ if not defined MODE (
     color 9
 
     set CURRENT_MODE="normal"
-    if exist %modeFile% (
-        set /p CURRENT_MODE=<%modeFile%
+    if exist "%modeFile%" (
+        set /p CURRENT_MODE=<"%modeFile%"
     )
     if "%SILENT%"=="false" (
         echo Monifactory ^| Pack Mode Switcher
@@ -68,24 +68,24 @@ exit /b 1
 
 :copyNormal
 robocopy "%normalCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
-echo normal > %modeFile%
+echo normal > "%modeFile%"
 goto success
 
 :copyHard
 robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
-echo hard > %modeFile%
+echo hard > "%modeFile%"
 goto success
 
 :copyExpert
 robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
 robocopy "%expertCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
-echo expert > %modeFile%
+echo expert > "%modeFile%"
 goto success
 
 
 :success
 if "%SILENT%"=="false" (
-    set /p NEWMODE=<%modeFile%
+    set /p NEWMODE=<"%modeFile%"
     echo Successfully switched pack mode to !NEWMODE!
 )
 exit /b 0
