@@ -2410,10 +2410,12 @@
 				"{moni.quest.4EC59BC9BCCB3C5D.description2}"
 				""
 				"{moni.quest.4EC59BC9BCCB3C5D.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.4EC59BC9BCCB3C5D.description4}"
 				""
 				"{moni.quest.4EC59BC9BCCB3C5D.description5}"
+				""
+				"{moni.quest.4EC59BC9BCCB3C5D.description6}"
 			]
 			icon: "gtceu:large_assembler"
 			id: "4EC59BC9BCCB3C5D"
@@ -3894,8 +3896,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.64035276DDDD7325.title}"
-			x: 9.0d
-			y: 1.0d
+			x: 7.0d
+			y: 1.25d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"
