@@ -1122,7 +1122,7 @@
     "moni.quest.2BBAF93506DD79C1.description2": "If the Active Transformer is enabled and has power moving through it, &cbreaking &lANY&r&c block of the structure will destroy the controller. &rIn Hard/Expert Mode this will also cause a &cviolent explosion&r.",
     "moni.quest.2BBAF93506DD79C1.description3": "Since &3Energy Converters&r and &9RF Cards&r only go up to &6HV&r and &5EV&r respectively, this is the best option for high-volume power transfer and distribution. It is strongly recommended that you begin to set these up once they become available.",
     "moni.quest.2BBAF93506DD79C1.title": "&2Active Transformer",
-    "moni.quest.2BCE3E3E0B8180F7.description1": "In &bMV&r, you unlock new gasses that are cheaper to produce or last longer in your generators. In particular, &9Benzene&r and &9LPG&r are good options at this stage. You'll likely need one of them, as &6Advanced Gas Turbine Generators&r consume 4x as much fuel to generate 4x as much &eEU&r.",
+    "moni.quest.2BCE3E3E0B8180F7.description1": "In &bMV&r, you unlock new gasses that are cheaper to produce or last longer in your generators. In particular, &9Refinery Gas&r and &9LPG&r are good options at this stage. You'll likely need one of them, as &6Advanced Gas Turbine Generators&r consume 4x as much fuel to generate 4x as much &eEU&r.",
     "moni.quest.2BD54071AD23C73C.description1": "Making yourself a space suit is the most important step towards your space adventures.",
     "moni.quest.2BD54071AD23C73C.description2": "This suit lets you breathe in space, which is kind of important.",
     "moni.quest.2BD54071AD23C73C.description3": "If you wish, you can hide the spacesuit from your playermodel via the cosmetic armor buttons.",
