@@ -2801,8 +2801,12 @@
 				"{moni.quest.02B78A0C4F3C4ECA.description2}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.02B78A0C4F3C4ECA.description4}"
+				""
+				"{moni.quest.02B78A0C4F3C4ECA.description5}"
+				""
+				"[\"\",{\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"31AE366B15538079\"}},{\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description3\"}]"
 			]
 			icon: "gtceu:lv_voltage_coil"
 			id: "02B78A0C4F3C4ECA"
