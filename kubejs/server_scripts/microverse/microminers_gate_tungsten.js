@@ -1,6 +1,6 @@
 /**
  * Changes small details about obtaining Tungsten
- * so that the T2 or T2.5MM are required to produce the first batches.
+ * so that the T2MM is required to produce the first batches.
  */
 
 ServerEvents.recipes(event => {
@@ -11,6 +11,8 @@ ServerEvents.recipes(event => {
         .itemOutputs("7x gtceu:tungstic_acid_dust", "2x gtceu:lithium_chloride_dust")
         .duration(10.5 / 2 * GTValues.SECONDS)
         .EUt(GTValues.VHA[GTValues.IV])
+
+    // Stolzite processing also moved up to IV in aa_planet_resources.js
 })
 
 GTCEuServerEvents.oreVeins(event => {

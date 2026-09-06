@@ -156,8 +156,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_scheelite",
                 "32x gtceu:raw_scheelite",
-                "64x gtceu:raw_tungstate",
-                "32x gtceu:raw_tungstate",
+                "64x gtceu:raw_wolframite",
+                "32x gtceu:raw_wolframite",
             )
     })
 
