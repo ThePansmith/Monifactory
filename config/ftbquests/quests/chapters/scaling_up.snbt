@@ -1939,6 +1939,7 @@
 				""
 				"{moni.quest.3B3F46345D39CAE2.description4}"
 			]
+			icon: "gtceu:tungsten_dust"
 			id: "3B3F46345D39CAE2"
 			rewards: [{
 				id: "56277B0B269AC0D5"
@@ -1947,11 +1948,23 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			tasks: [{
-				id: "5B04A772005B3D99"
-				item: "gtceu:tungsten_dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6062E6C36F2DF938"
+					item: "gtceu:scheelite_dust"
+					type: "item"
+				}
+				{
+					id: "16DAA041787CE890"
+					item: "gtceu:stolzite_dust"
+					type: "item"
+				}
+				{
+					id: "5B04A772005B3D99"
+					item: "gtceu:tungsten_dust"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.3B3F46345D39CAE2.title}"
 			x: 4.0d
 			y: 8.75d
