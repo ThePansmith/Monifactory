@@ -1486,9 +1486,9 @@
 		}
 		{
 			dependencies: [
-				"1BC6DDC2D50F9C46"
 				"7A7907EE1F3FCFBF"
 				"0B5613CC79261800"
+				"1BC6DDC2D50F9C46"
 			]
 			description: [
 				"{moni.quest.3AB0402B19DD5BA8.description1}"
@@ -1730,8 +1730,6 @@
 				"{moni.quest.5C4E189A3E401566.description1}"
 				""
 				"{moni.quest.5C4E189A3E401566.description2}"
-				""
-				"{moni.quest.5C4E189A3E401566.description3}"
 			]
 			id: "5C4E189A3E401566"
 			rewards: [{
@@ -2775,18 +2773,19 @@
 				"{moni.quest.02B78A0C4F3C4ECA.description2}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.02B78A0C4F3C4ECA.description4}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description5}"
 				""
-				"{moni.quest.02B78A0C4F3C4ECA.description6}"
+				"[\"\",{\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"31AE366B15538079\"}},{\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description3\"}]"
 			]
 			icon: "gtceu:lv_voltage_coil"
 			id: "02B78A0C4F3C4ECA"
 			require_sequential_tasks: false
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "{moni.quest.02B78A0C4F3C4ECA.subtitle}"
 			tasks: [{
 				id: "480CE98BB705369B"
 				type: "checkmark"
@@ -2796,7 +2795,10 @@
 			y: 11.25d
 		}
 		{
-			dependencies: ["3BD20358F137E7C6"]
+			dependencies: [
+				"3BD20358F137E7C6"
+				"5BE3E37772FAF6CB"
+			]
 			description: [
 				"{moni.quest.7A67E519745A8361.description1}"
 				""
@@ -2811,6 +2813,7 @@
 			]
 			hide_until_deps_visible: true
 			id: "7A67E519745A8361"
+			optional: true
 			rewards: [{
 				id: "5E252CA9C37789FE"
 				item: "kubejs:moni_nickel"
@@ -2895,6 +2898,28 @@
 			y: 16.0d
 		}
 		{
+			dependencies: ["5C4E189A3E401566"]
+			description: [
+				"{moni.quest.31AE366B15538079.description1}"
+				""
+				"{moni.quest.31AE366B15538079.description2}"
+				""
+				"{moni.quest.31AE366B15538079.description3}"
+				""
+				"{moni.quest.31AE366B15538079.description4}"
+			]
+			icon: "minecraft:clock"
+			id: "31AE366B15538079"
+			subtitle: "{moni.quest.31AE366B15538079.subtitle}"
+			tasks: [{
+				id: "2C6BF4196CE9468F"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.31AE366B15538079.title}"
+			x: -4.0d
+			y: 15.0d
+    }
+    {
 			dependencies: ["1BC6DDC2D50F9C46"]
 			description: [
 				"{moni.quest.14C50EFF4EB257E3.description1}"
