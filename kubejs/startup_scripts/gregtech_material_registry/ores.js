@@ -61,12 +61,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // Mars
     event.create("wolframite")
-        .dust().ore(2, 2)
+        .dust().ore(1, 1)
         .color(0xa0734e).secondaryColor(0x405275)
         .components(GTMaterials.Iron.multiply(1), GTMaterials.Manganese.multiply(1), GTMaterials.Tungsten.multiply(2), GTMaterials.Oxygen.multiply(8))
         .formula("(Fe,Mn)(WO3)O")
         .addOreByproducts(GTMaterials.Iron, GTMaterials.Manganese, GTMaterials.get("fluorite"))
-        .washedIn(GTMaterials.NitricAcid)
+        .washedIn(GTMaterials.Mercury)
         .separatedInto(GTMaterials.Iron)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
