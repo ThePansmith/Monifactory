@@ -1147,7 +1147,7 @@ ServerEvents.recipes(event => {
     }).id("kubejs:ae2netanalyser/network_analyser")
     // Remove these recipes (minus the GTMUtils one) when the mod is updated to GTM V8
     // ME Output Bus
-    event.remove({ output: "gtceu:me_output_bus" })
+    event.remove({ output: "gtceu:me_output_bus", type: "gtceu:assembler" })
     event.recipes.gtceu.assembler("kubejs:me_output_bus")
         .itemInputs("gtceu:hv_output_bus", "ae2:cable_interface", "2x ae2:speed_card")
         .itemOutputs("gtceu:me_output_bus")
@@ -1156,7 +1156,7 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     // ME Output Hatch
-    event.remove({ output: "gtceu:me_output_hatch" })
+    event.remove({ output: "gtceu:me_output_hatch", type: "gtceu:assembler" })
     event.recipes.gtceu.assembler("kubejs:me_output_hatch")
         .itemInputs("gtceu:hv_output_hatch", "ae2:cable_interface", "2x ae2:speed_card")
         .itemOutputs("gtceu:me_output_hatch")
@@ -1165,7 +1165,7 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     // ME Input Bus
-    event.remove({ output: "gtceu:me_input_bus" })
+    event.remove({ output: "gtceu:me_input_bus", type: "gtceu:assembler" })
     event.recipes.gtceu.assembler("kubejs:me_input_bus")
         .itemInputs("gtceu:hv_input_bus", "ae2:cable_interface", "2x ae2:speed_card")
         .itemOutputs("gtceu:me_input_bus")
@@ -1174,7 +1174,7 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     // ME Input Hatch
-    event.remove({ output: "gtceu:me_input_hatch" })
+    event.remove({ output: "gtceu:me_input_hatch", type: "gtceu:assembler" })
     event.recipes.gtceu.assembler("kubejs:me_input_hatch")
         .itemInputs("gtceu:hv_input_hatch", "ae2:cable_interface", "2x ae2:speed_card")
         .itemOutputs("gtceu:me_input_hatch")
