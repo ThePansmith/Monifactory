@@ -1362,7 +1362,7 @@
 				""
 				"More advanced types of cables will require an &3Assembler&f and liquid &9Rubber&f, but you can do it the simple way for now."
 				""
-				"&2GT cables support RF conversion natively! &eYou can plug a &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r
+				"&2GT cables support RF conversion natively! &eYou can plug a &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r"
 				"{@pagebreak}"
 				"All cables have 3 main properties:"
 				"- &aMax Voltage&r: The maximum tier of voltage that can pass through the cable safely. Voltage tiers below the maximum can also be conducted!"
