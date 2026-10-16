@@ -95,6 +95,16 @@ ServerEvents.tags("item", event => {
     event.add("gtceu:field_generators", "monilabs:field_generator")
 
     unifyChisel(event);
+
+    event.add("forge:plastic_plates", "gtceu:polyvinyl_chloride_plate")
+    event.add("forge:plastic_plates", "gtceu:polybenzimidazole_plate")
+    event.add("forge:plastic_plates", "gtceu:polyethylene_plate")
+    event.add("forge:plastic_plates", "gtceu:polytetrafluoroethylene_plate")
+    event.add("forge:plastic_plates", "gtceu:polyethyl_cyanoacrylate_plate")
+
+    event.add("forge:rubber_plates", "gtceu:silicone_rubber_plate")
+    event.add("forge:rubber_plates", "gtceu:styrene_butadiene_rubber_plate")
+    event.add("forge:rubber_plates", "gtceu:rubber_plate")
 })
 
 ServerEvents.tags("block", event => {
@@ -106,14 +116,4 @@ ServerEvents.tags("block", event => {
     event.add("framedblocks:camo_sustain_plant", compacted_sand);
 
     unifyChisel(event);
-
-    event.add("forge:plastic_plates", "gtceu:polyvinyl_chloride_plate")
-    event.add("forge:plastic_plates", "gtceu:polybenzimidazole_plate")
-    event.add("forge:plastic_plates", "gtceu:polyethylene_plate")
-    event.add("forge:plastic_plates", "gtceu:polytetrafluoroethylene_plate")
-    event.add("forge:plastic_plates", "gtceu:polyethyl_cyanoacrylate_plate")
-
-    event.add("forge:rubber_plates", "gtceu:silicone_rubber_plate")
-    event.add("forge:rubber_plates", "gtceu:styrene_butadiene_rubber_plate")
-    event.add("forge:rubber_plates", "gtceu:rubber_plate")
 })
