@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
             .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "32x minecraft:glowstone",
-                "64x gtceu:raw_gold",
+                "64x minecraft:raw_gold",
                 "48x gtceu:raw_coal",
             )
     })
