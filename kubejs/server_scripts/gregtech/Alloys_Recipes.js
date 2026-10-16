@@ -70,30 +70,9 @@ ServerEvents.recipes(event => {
         "gtceu:soularium", 6, GTValues.VA[GTValues.LV], true);
 
     alloySmeltingVariant(
-        ["4x #forge:dusts/steel", "4x #forge:ingots/steel"],
-        ["#forge:dusts/boron"],
-        "5x nuclearcraft:ferroboron", 15, GTValues.VA[GTValues.MV], true);
-
-    alloySmeltingVariant(
-        ["#forge:ingots/ferroboron"],
-        ["#forge:dusts/lithium"],
-        "2x nuclearcraft:tough_alloy", 15, GTValues.VHA[GTValues.LV], false);
-
-    alloySmeltingVariant(
-        ["#forge:dusts/diamond", "#forge:gems/diamond"],
-        ["3x #forge:dusts/steel", "3x #forge:ingots/steel"],
-        "nuclearcraft:hard_carbon", 15, GTValues.VA[GTValues.HV], true);
-
-    alloySmeltingVariant(
         ["4x #forge:dusts/gold", "4x #forge:ingots/gold"],
         ["4x #forge:dusts/netherite_scrap", "4x #forge:ingots/netherite_scrap"],
         "minecraft:netherite", 5, GTValues.VA[GTValues.LV], false);
-
-    event.recipes.gtceu.alloy_smelter("kubejs:fission_reactor_glass")
-        .itemInputs("nuclearcraft:fission_reactor_casing", "#forge:glass/colorless")
-        .itemOutputs("nuclearcraft:fission_reactor_glass")
-        .duration(50)
-        .EUt(GTValues.VHA[GTValues.LV])
 })
 
 // Change base GT alloy recipes
