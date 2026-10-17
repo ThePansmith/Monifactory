@@ -93,8 +93,8 @@ ServerEvents.recipes(event => {
         A: "gtceu:ev_field_generator",
         B: "gtceu:mv_super_chest",
         F: "kubejs:signalum_micro_miner_core",
-        C: "nuclearcraft:fission_reactor_controller",
-        P: "nuclearcraft:fission_reactor_port",
+        C: "monilabs:large_lapotronic_generator",
+        P: "monilabs:energetic_titanium_casing",
         T: "kubejs:vibrant_thruster",
     })
 
@@ -114,8 +114,8 @@ ServerEvents.recipes(event => {
         A: "gtceu:mv_super_chest",
         F: "kubejs:enderium_micro_miner_core",
         B: "gtceu:iv_field_generator",
-        C: "nuclearcraft:fission_reactor_controller",
-        P: "nuclearcraft:fission_reactor_port",
+        C: "monilabs:extreme_lapotronic_generator",
+        P: "monilabs:lapotronic_tungstensteel_casing",
         T: "kubejs:resonant_thruster"
     })
 
