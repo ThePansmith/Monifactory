@@ -2531,7 +2531,7 @@
 		}
 		{
 			dependencies: ["605062720747B482"]
-			description: ["An Insane Voltage tier &bGregTech&r battery. &2Equivalent to 400 Reinforced Redstone Flux Cells!"]
+			description: ["An Insane Voltage tier &bGregTech&r battery. &2Holds 250M EU or 10 times the previous tier!"]
 			id: "46A56A5E3CC2403F"
 			rewards: [{
 				id: "265B4D5F6DAD55AC"

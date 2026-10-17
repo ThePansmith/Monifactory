@@ -1540,7 +1540,7 @@
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
-			description: ["&6Capacitors&r are devices that store electrical energy, which is useful for circuits. Not to be confused with &bEnder IO&r's capacitors&r, which store redstone flux."]
+			description: ["&6Capacitors&r are devices that store electrical energy, which is useful for circuits. Not to be confused with &bEnder IO&r's capacitors&r, which enable and boost the performance of &bEnder IO&r machines."]
 			id: "7D0351942F4DB8E0"
 			rewards: [{
 				id: "258264528D30B707"
