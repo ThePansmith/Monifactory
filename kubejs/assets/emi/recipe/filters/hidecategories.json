@@ -33,84 +33,6 @@
             "category": "ironfurnaces:generator_blasting"
         },
         {
-            "category": "nuclearcraft:supercooler"
-        },
-        {
-            "category": "nuclearcraft:rock_crusher"
-        },
-        {
-            "category": "nuclearcraft:decay_hastener"
-        },
-        {
-            "category": "nuclearcraft:irradiator"
-        },
-        {
-            "category": "nuclearcraft:nuclear_furnace"
-        },
-        {
-            "category": "nuclearcraft:extractor"
-        },
-        {
-            "category": "nuclearcraft:electrolyzer"
-        },
-        {
-            "category": "nuclearcraft:pressurizer"
-        },
-        {
-            "category": "nuclearcraft:alloy_smelter"
-        },
-        {
-            "category": "nuclearcraft:centrifuge"
-        },
-        {
-            "category": "nuclearcraft:manufactory"
-        },
-        {
-            "category": "nuclearcraft:gas_scrubber"
-        },
-        {
-            "category": "nuclearcraft:fluid_enricher"
-        },
-        {
-            "category": "nuclearcraft:isotope_separator"
-        },
-        {
-            "category": "nuclearcraft:fluid_infuser"
-        },
-        {
-            "category": "nuclearcraft:chemical_reactor"
-        },
-        {
-            "category": "nuclearcraft:analyzer"
-        },
-        {
-            "category": "nuclearcraft:ingot_former"
-        },
-        {
-            "category": "nuclearcraft:pump"
-        },
-        {
-            "category": "nuclearcraft:fuel_reprocessor"
-        },
-        {
-            "category": "nuclearcraft:leacher"
-        },
-        {
-            "category": "nuclearcraft:crystallizer"
-        },
-        {
-            "category": "nuclearcraft:assembler"
-        },
-        {
-            "category": "nuclearcraft:steam_turbine"
-        },
-        {
-            "category": "nuclearcraft:melter"
-        },
-        {
-            "category": "nuclearcraft:nc_ore_veins"
-        },
-        {
             "category": "ftbquests:quest"
         },
         {
@@ -235,15 +157,6 @@
         },
         {
             "category": "create:pressing" 
-        },
-        {
-            "category": "nuclearcraft:fusion_coolant" 
-        },
-        {
-            "category": "nuclearcraft:fusion_core" 
-        },
-        {
-            "category": "nuclearcraft:turbine_controller" 
         },
         {
             "category": "enderio:primitive_alloy_smelting" 
