@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.MV])
         .duration(300)
 
-        event.recipes.gtceu.laser_engraver("lapotron_crystal")
+    event.recipes.gtceu.laser_engraver("lapotron_crystal")
         .itemInputs("gtceu:lapotron_block", "2x #gtceu:circuits/hv")
         .itemOutputs("gtceu:lapotron_crystal")
         .EUt(GTValues.VA[GTValues.EV])
