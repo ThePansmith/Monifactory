@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     }).addMaterialInfo()
 
     // ELG
-    event.recipes.gtceu.shapedshaped("monilabs:extreme_lapotronic_generator", [
+    event.recipes.gtceu.shaped("monilabs:extreme_lapotronic_generator", [
         "WCW",
         "LHL",
         "GEG"
