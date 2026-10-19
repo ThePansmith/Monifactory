@@ -5,7 +5,7 @@
 ServerEvents.recipes(event => {
 
     // LLG
-    event.shaped("monilabs:large_lapotronic_generator", [
+    event.recipes.gtceu.shaped("monilabs:large_lapotronic_generator", [
         "WCW",
         "LHL",
         "GEG"
@@ -16,10 +16,10 @@ ServerEvents.recipes(event => {
         H: "gtceu:ev_machine_hull",
         G: "gtceu:titanium_gear",
         E: "gtceu:ev_emitter"
-    })
+    }).addMaterialInfo()
 
     // ELG
-    event.shaped("monilabs:extreme_lapotronic_generator", [
+    event.recipes.gtceu.shapedshaped("monilabs:extreme_lapotronic_generator", [
         "WCW",
         "LHL",
         "GEG"
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_machine_hull",
         G: "gtceu:tungsten_steel_gear",
         E: "gtceu:iv_emitter"
-    })
+    }).addMaterialInfo()
 
     event.recipes.gtceu.assembler("energetic_titanium_casing")
         .itemInputs("2x gtceu:double_titanium_plate", "gtceu:energium_block", "gtceu:titanium_frame")
