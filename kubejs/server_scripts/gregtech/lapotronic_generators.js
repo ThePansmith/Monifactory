@@ -3,6 +3,31 @@
  */
 
 ServerEvents.recipes(event => {
+    // Singleblock Lapotronic Generators (no LV one)
+    event.recipes.gtceu.shaped("monilabs:mv_lapotronic", [
+        "ABA",
+        "CDC",
+        "EFE"
+    ], {
+        A: "gtceu:long_silver_rod",
+        B: "gtceu:mv_sensor",
+        C: "gtceu:energetic_alloy_quadruple_wire",
+        D: "gtceu:mv_machine_hull",
+        E: "gtceu:mv_electric_motor",
+        F: "gtceu:copper_single_cable"
+    }).addMaterialInfo()
+    event.recipes.gtceu.shaped("monilabs:hv_lapotronic", [
+        "ABA",
+        "CDC",
+        "EFE"
+    ], {
+        A: "gtceu:long_electrum_rod",
+        B: "gtceu:hv_sensor",
+        C: "gtceu:vibrant_alloy_quadruple_wire",
+        D: "gtceu:hv_machine_hull",
+        E: "gtceu:hv_electric_motor",
+        F: "gtceu:gold_single_cable"
+    }).addMaterialInfo()
 
     // LLG
     event.recipes.gtceu.shaped("monilabs:large_lapotronic_generator", [
