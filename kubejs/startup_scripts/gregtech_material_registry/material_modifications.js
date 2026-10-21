@@ -125,6 +125,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     if (doHarderProcessing) {
         GTMaterials.RhodiumSulfate.setProperty($PropertyKey.DUST, new $DustProperty());
     }
+
+    // Withers crashes out
+    GTMaterials.Lapotron.setMaterialARGB(0x7395E7)
+    GTMaterials.Lapotron.setMaterialSecondaryARGB(0x4750F6)
+    GTMaterials.Lapotron.setMaterialIconSet(GTMaterialIconSet.getByName("dilithium"))
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -162,4 +167,8 @@ GTCEuStartupEvents.materialModification(event => {
 
     // Change Fluix block to only have 4 gems instead of 9
     TagPrefix.block.modifyMaterialAmount(GTMaterials.get("fluix"), 4)
+
+    // Withers crashes out
+    TagPrefix.block.removeIgnored(GTMaterials.Lapotron)
+    TagPrefix.block.modifyMaterialAmount(GTMaterials.Lapotron, 15)
 })

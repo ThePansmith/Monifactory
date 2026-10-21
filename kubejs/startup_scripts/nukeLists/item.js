@@ -324,7 +324,7 @@ global.itemNukeList = [
 ];
 
 // Create Compat
-// Removes machines related to processing
+// Removes machines related to processing and recipe-less items
 if (Platform.isLoaded("create")) {
     global.itemNukeList.push(
         "create:millstone",
@@ -337,7 +337,15 @@ if (Platform.isLoaded("create")) {
         "create:mechanical_harvester",
         "create:mechanical_press",
         "create:mechanical_roller",
-        "create:encased_fan"
+        "create:encased_fan",
+        /^create:raw_.*$/,
+        /^create:.*_ore$/,
+        /^create:.*_ingot$/,
+        /^create:.*_nugget$/,
+        /^create:.*_sheet$/,
+        "create:zinc_block",
+        "create:brass_block",
+        "create:powdered_obsidian"
     );
 }
 
