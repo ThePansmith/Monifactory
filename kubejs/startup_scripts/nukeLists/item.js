@@ -319,6 +319,7 @@ global.itemNukeList = [
     "wirelesschargers:advanced_wireless_block_charger",
 
     // Pipez
+    "pipez:energy_pipe",
     "pipez:gas_pipe",
     "pipez:universal_pipe",
     "pipez:infinity_upgrade"

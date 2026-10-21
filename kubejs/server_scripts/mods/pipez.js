@@ -38,23 +38,6 @@ ServerEvents.recipes(event => {
         .duration(10 * GTValues.SECONDS)
         .addMaterialInfo(true)
 
-    event.recipes.gtceu.shaped(Item.of("pipez:energy_pipe", 6), [
-        "SGS",
-        "PPP",
-        "SGS"
-    ], {
-        S: "#forge:plates/steel",
-        G: "#forge:plates/red_alloy",
-        P: "gtceu:lead_double_cable"
-    }).id("pipez:energy_pipe")
-
-    event.recipes.gtceu.assembler("pipez:energy_pipe")
-        .itemInputs("4x #forge:plates/steel", "2x #forge:plates/red_alloy", Item.of("gtceu:lead_double_cable", 2))
-        .itemOutputs(Item.of("pipez:energy_pipe", 8))
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(10 * GTValues.SECONDS)
-        .addMaterialInfo(true)
-
     // Upgrades
     // Defined in this very specific order to somehow make recursive MaterialInfo work.
     event.recipes.gtceu.shaped(Item.of("pipez:ultimate_upgrade", 3), [
