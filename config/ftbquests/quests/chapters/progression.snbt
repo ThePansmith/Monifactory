@@ -2538,7 +2538,7 @@
 			description: [
 				"Welcome to the &9IV&r Age!"
 				""
-				"In this age, you can start making Multiblock versions of most of your machines, delve into &aFission&r, and finish up the &3Platline&r."
+				"In this age, you can start making Multiblock versions of most of your machines, finish up the &3Platline&r. and start constructing &3Assembly Lines&r."
 			]
 			icon: "gtceu:iv_machine_hull"
 			id: "6E27637A9C94A0AA"
