@@ -31,30 +31,30 @@ ServerEvents.recipes(event => {
 
     // LLG
     event.recipes.gtceu.shaped("monilabs:large_lapotronic_generator", [
-        "WCW",
-        "LHL",
-        "GEG"
+        "LSL",
+        "WHW",
+        "GCG"
     ], {
-        W: "gtceu:platinum_quadruple_wire",
+        W: "gtceu:end_steel_quadruple_wire",
         C: "#gtceu:circuits/iv",
         L: "gtceu:energium_block",
         H: "gtceu:ev_machine_hull",
-        G: "gtceu:titanium_gear",
-        E: "gtceu:ev_emitter"
+        G: "gtceu:ev_electric_motor",
+        S: "gtceu:ev_sensor"
     }).addMaterialInfo()
 
     // ELG
     event.recipes.gtceu.shaped("monilabs:extreme_lapotronic_generator", [
-        "WCW",
-        "LHL",
-        "GEG"
+        "LSL",
+        "WHW",
+        "GCG"
     ], {
         W: "gtceu:neptunium_palladium_aluminium_quadruple_wire",
         C: "#gtceu:circuits/luv",
         L: "gtceu:lapotron_block",
         H: "gtceu:iv_machine_hull",
-        G: "gtceu:tungsten_steel_gear",
-        E: "gtceu:iv_emitter"
+        G: "gtceu:iv_electric_motor",
+        S: "gtceu:iv_sensor"
     }).addMaterialInfo()
 
     event.recipes.gtceu.assembler("energetic_titanium_casing")
