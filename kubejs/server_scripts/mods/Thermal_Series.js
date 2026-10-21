@@ -12,7 +12,6 @@ ServerEvents.recipes(event => {
     event.remove({ type: "thermal:rock_gen", not: [{ id: "thermal:devices/rock_gen/rock_gen_cobblestone" }, { id: "thermal:devices/rock_gen/rock_gen_stone" }]})
 
     event.remove({ id: /^thermal:.*_cast/ })
-    event.remove({ id: /^thermal:dynamo_/}) // Remove non-downgrade recipes for Thermal dynamos
     event.remove({ id: "thermal:fire_charge/obsidian_glass_2" }) // Our recipe for Obsidian glass is different
 
     // Unify Thermal with GT rubber
@@ -244,29 +243,6 @@ ServerEvents.recipes(event => {
         event.shapeless(augment, augment)
     })
 
-    // Machine and Dynamo augments
-    event.recipes.gtceu.shaped("thermal:dynamo_fuel_augment", [
-        "PIP",
-        "GCG",
-        "PIP"
-    ], {
-        I: "#forge:ingots/wrought_iron",
-        P: "gtceu:wrought_iron_plate",
-        C: "thermal:rf_coil",
-        G: "gtceu:small_copper_gear"
-    }).id("thermal:augments/dynamo_fuel_augment").addMaterialInfo()
-
-    event.recipes.gtceu.shaped("thermal:dynamo_output_augment", [
-        "SEI",
-        "ECE",
-        "IES"
-    ], {
-        S: "#forge:ingots/sterling_silver",
-        E: "#forge:ingots/energetic_alloy",
-        I: "#forge:storage_blocks/conductive_alloy",
-        C: "kubejs:redstone_transmission_coil"
-    }).id("thermal:augments/dynamo_output_augment").addMaterialInfo();
-
     event.recipes.gtceu.shaped("thermal:machine_output_augment", [
         "MGM",
         "PCP",
@@ -287,17 +263,6 @@ ServerEvents.recipes(event => {
         N: "#forge:nuggets/mythril",
         C: "minecraft:cactus" // since we use cactus to delete items now
     }).id("thermal:augments/machine_null_augment").addMaterialInfo();
-
-    event.recipes.gtceu.shaped("thermal:dynamo_throttle_augment", [
-        "SES",
-        "NCN",
-        "SES"
-    ], {
-        S: "#forge:plates/stainless_steel",
-        E: "#forge:ingots/electrum",
-        N: "#forge:springs/lead",
-        C: "kubejs:excitationcoil"
-    }).id("thermal:augments/dynamo_throttle_augment").addMaterialInfo();
 
     event.recipes.gtceu.shaped("thermal:machine_catalyst_augment", [
         " A ",
@@ -322,159 +287,6 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ id: "thermal:augments/item_filter_augment" }, "#forge:ingots/signalum", "gtceu:item_filter")
     event.replaceInput({ id: "thermal:augments/fluid_filter_augment" }, "#forge:ingots/signalum", "gtceu:fluid_filter")
-
-    // Dynamos
-    event.shaped("kubejs:excitationcoil", [
-        " B ",
-        "BAB",
-        "CAC"
-    ], {
-        A: "kubejs:redstone_transmission_coil",
-        B: "#forge:plates/red_alloy",
-        C: "#forge:plates/tin"
-    })
-    event.recipes.gtceu.assembler("kubejs:excitationcoil_assembly")
-        .itemInputs("kubejs:redstone_transmission_coil", "2x #forge:plates/red_alloy", "1x #forge:plates/tin")
-        .itemOutputs("kubejs:excitationcoil")
-        .duration(180)
-        .EUt(GTValues.VA[GTValues.LV])
-        .addMaterialInfo(true)
-
-    if (doBoilers) {
-        event.recipes.gtceu.shaped("systeams:steam_dynamo", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:copper_plate",
-            C: "ironfurnaces:iron_furnace",
-            D: "gtceu:wrought_iron_gear",
-            E: "thermal:rf_coil"
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped("systeams:boiler_pipe", [
-            "  A",
-            " B ",
-            "A  "
-        ], {
-            A: "gtceu:copper_plate",
-            B: "#enderio:fused_quartz"
-        }).addMaterialInfo()
-
-        // Steam Dynamo upgrade (Does not work with the systeams:upgrade_shapeless recipe type in this direction,
-        // so we recreate the special recipe stuff using KJS here)
-        event.shapeless("systeams:stirling_boiler", ["steamdynamo:steam_dynamo", "systeams:boiler_pipe"])
-            .modifyResult((grid, result) => {
-                let input = grid.find("steamdynamo:steam_dynamo")
-                return result.withNBT(input.nbt)
-            })
-            .replaceIngredient("steamdynamo:steam_dynamo", "thermal:rf_coil")
-            .id("systeams:boiler/upgrades/stirling_upgrade")
-
-
-        // Steam Dynamo downgrade
-        event.custom(
-            {
-                "type": "systeams:upgrade_shapeless",
-                "ingredients": [
-                    {"item":"systeams:stirling_boiler"},
-                    {"item":"thermal:rf_coil"}
-                ],
-                "result": {
-                    "item": "steamdynamo:steam_dynamo"
-                },
-                "replacement": "systeams:boiler_pipe"
-            }
-        )
-
-        // Remove recipes for boilers that aren't the upgrade from dynamo recipe
-        event.remove({ id: /^systeams:boilers\/(?!upgrade)/ })
-    }
-
-    // Dynamo and Boiler recipes
-    function defineDynamoRecipes(asBoiler) {
-        event.recipes.gtceu.shaped(asBoiler ? "systeams:stirling_boiler" : "steamdynamo:steam_dynamo", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:wrought_iron_plate",
-            C: "ironfurnaces:iron_furnace",
-            D: "gtceu:wrought_iron_gear",
-            E: asBoiler ? "systeams:boiler_pipe" : "thermal:rf_coil"
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped(asBoiler ? "systeams:magmatic_boiler" : "thermal:dynamo_magmatic", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:dark_steel_plate",
-            C: "ironfurnaces:copper_furnace",
-            D: "enderio:dark_bimetal_gear",
-            E: asBoiler ? "systeams:boiler_pipe" : "thermal:rf_coil"
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped(asBoiler ? "systeams:compression_boiler" : "thermal:dynamo_compression", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:energetic_alloy_plate",
-            C: "ironfurnaces:gold_furnace",
-            D: "enderio:energized_gear",
-            E: asBoiler ? "systeams:boiler_pipe" : "thermal:rf_coil"
-        }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped(asBoiler ? "systeams:gourmand_boiler" : "thermal:dynamo_gourmand", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:blue_alloy_plate",
-            C: "ironfurnaces:silver_furnace",
-            D: "enderio:iron_gear",
-            E: asBoiler ? "systeams:boiler_pipe" : "thermal:rf_coil"
-        }).addMaterialInfo()
-
-        // Numis can have different recipes
-        if(doHarderRecipes) {
-            event.recipes.gtceu.shaped(asBoiler ? "systeams:numismatic_boiler" : "thermal:dynamo_numismatic", [
-                " A ",
-                "BCB",
-                "DED"
-            ], {
-                A: "kubejs:excitationcoil",
-                B: "gtceu:zeron_100_plate",
-                C: "ironfurnaces:diamond_furnace",
-                D: "enderio:vibrant_gear",
-                E: asBoiler ? "systeams:boiler_pipe" : "thermal:rf_coil"
-            }).addMaterialInfo()
-        } else {
-            event.recipes.gtceu.shaped(asBoiler ? "systeams:numismatic_boiler" : "thermal:dynamo_numismatic", [
-                " A ",
-                "BCB",
-                "DED"
-            ], {
-                A: "kubejs:excitationcoil",
-                B: "gtceu:vibrant_alloy_plate",
-                C: "ironfurnaces:diamond_furnace",
-                D: "enderio:vibrant_gear",
-                E: asBoiler ? "systeams:boiler_pipe" : "thermal:rf_coil"
-            }).addMaterialInfo()
-        }
-    }
-    /*
-    I had concluded that defining & calling a function
-    would be the best way to adhere to the DRY principle.
-    */
-    defineDynamoRecipes(false)
-    if(doBoilers) defineDynamoRecipes(true)
 
     // Machines
     event.remove({ id: "thermal:machine_frame" })
@@ -555,7 +367,7 @@ ServerEvents.recipes(event => {
         O: "kubejs:redstone_transmission_coil"
     }).addMaterialInfo()
 
-    // Diamond as Fuel
+    // Diamond as Fuel (only here for backwards compatibility)
     event.recipes.thermal.numismatic_fuel("minecraft:diamond").energy(1200000)
     event.recipes.thermal.numismatic_fuel("gtceu:topaz_gem").energy(200000)
     event.recipes.thermal.numismatic_fuel("gtceu:malachite_gem").energy(200000)

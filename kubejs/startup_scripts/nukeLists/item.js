@@ -264,10 +264,11 @@ global.itemNukeList = [
     // Look in configs/sophisticatedcore-common.toml.
     // SophStorage offers a way to remove items from the registry with config.
 
+    // Steam Dynamo (Mod can be removed in .15)
+    "steamdynamo:steam_dynamo",
+
     // Systeams
-    "systeams:disenchantment_boiler",
-    "systeams:lapidary_boiler",
-    "systeams:steamiestest_ball",
+    /^systeams:.*/,
 
     // Telepastries
     "telepastries:custom_cake2",
@@ -283,9 +284,7 @@ global.itemNukeList = [
     "thermal:constantan_coin",
     "thermal:cured_rubber",
     "thermal:drill_head",
-    "thermal:dynamo_disenchantment",
-    "thermal:dynamo_lapidary",
-    "thermal:dynamo_stirling",
+    /^thermal:dynamo_.*/,
     "thermal:niter",
     "thermal:oil_red_sand",
     "thermal:oil_sand",

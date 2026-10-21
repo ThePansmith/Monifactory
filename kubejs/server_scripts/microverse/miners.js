@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:hv_field_generator",
         F: "kubejs:signalum_micro_miner_core",
         T: "kubejs:energetic_thruster",
-        D: "thermal:dynamo_compression"
+        D: "gtceu:hv_combustion_generator"
     })
 
     // T5 Microminer
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
         Q: "thermal:potion_quiver",
         B: "gtceu:bronze_crate",
         T: "kubejs:hardened_thruster",
-        M: "thermal:dynamo_magmatic"
+        M: "gtceu:hv_gas_turbine" // Feel free to change this if y'all have a better idea.
     })
 
     // T3.5 Microminer
@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
         A: "gtceu:hv_robot_arm",
         c: "kubejs:signalum_micro_miner_core",
         f: "gtceu:hv_field_generator",
-        d: "thermal:dynamo_compression",
+        d: "gtceu:hv_combustion",
         T: "kubejs:energetic_thruster"
     }).id("kubejs:microminer/t4half")
 })
