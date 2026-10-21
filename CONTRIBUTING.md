@@ -61,7 +61,7 @@ Git sometimes is a hard program to master, there are a few ways to use git
 
 - Each pull request has some checks run against it to ensure the quality of contributions made to the project.
 - One of these checks is a lint check. It ensures that the source code style and formatting meet our standards.
-- Three other checks are gametests. They launch the game and ensure no errors occur when loading into a world. Due to the way they are structured, they will automatically fail if the pull request comes from a third-party repository and modpack manifest is changed. Any pull requests with changes to the modpack manifest must be made from a branch on [the main repository](https://github.com/Omicron-Industries/Monifactory).
+- Three other checks are gametests. They launch the game and ensure no errors occur when loading into a world. Due to the way they are structured, they will automatically fail if a pull request comes from a third-party repository and modpack manifest is changed. As such, they are not required to pass for pull requests that modify for the modpack manifest, but we request that those PRs do not modify any other files to mitigate the risks of this exception.
 
 ## What Contributions Are We Seeking? ##
 
