@@ -135,7 +135,7 @@ global.itemNukeList = [
     "gtceu:zpm_solar_panel",
     "gtceu:uv_solar_panel",
     "gtceu:configurable_maintenance_hatch",
-    /^gtceu:(ev|iv|luv|zpm|uv|uhv|uev|max)_\w+a_energy_converter/,
+    /^gtceu.*a_energy_converter$/,
     /^gtceu:\w+_world_accelerator/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
@@ -222,6 +222,8 @@ global.itemNukeList = [
     // LaserIO
     "laserio:logic_chip",
     "laserio:logic_chip_raw",
+    "laserio:card_energy",
+    /^laserio:energy_overclocker_card_.*/,
 
     // Megacells
     "megacells:mega_crafting_accelerator",
