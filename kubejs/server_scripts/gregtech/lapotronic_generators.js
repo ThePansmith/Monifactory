@@ -79,6 +79,7 @@ ServerEvents.recipes(event => {
 
     LapoFuel("minecraft", "diamond", 64, -GTValues.V[GTValues.MV])
     LapoFuel("minecraft", "emerald", 32, -GTValues.V[GTValues.MV])
+    LapoFuel("gtceu", "sapphire_gem", 32, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "energium_gem", 40, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "lapotron_gem", 72, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "topaz_gem", 64, -GTValues.V[GTValues.MV])
