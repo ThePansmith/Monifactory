@@ -341,32 +341,6 @@ ServerEvents.recipes(event => {
         C: "#forge:small_gears/copper"
     }).id("thermal:machine_insolator").addMaterialInfo()
 
-    // Energy Cell
-    event.recipes.remove({ id: "thermal:energy_cell_frame" })
-    event.recipes.gtceu.shaped("thermal:energy_cell_frame", [
-        "ABA",
-        "BCB",
-        "ABA"
-    ], {
-        A: "#forge:ingots/lead",
-        B: "#forge:plates/electrum",
-        C: "enderio:vibrant_crystal"
-    }).id("thermal:energy_cell_frame").addMaterialInfo()
-
-    event.remove("thermal:energy_cell");
-    event.recipes.gtceu.shaped("thermal:energy_cell", [
-        "RBR",
-        "IFO",
-        "RCR"
-    ], {
-        R: "#forge:rubber_plates",
-        B: "#forge:storage_blocks/redstone",
-        F: "thermal:energy_cell_frame",
-        C: "#gtceu:circuits/ulv",
-        I: "thermal:rf_coil",
-        O: "kubejs:redstone_transmission_coil"
-    }).addMaterialInfo()
-
     // Diamond as Fuel (only here for backwards compatibility)
     event.recipes.thermal.numismatic_fuel("minecraft:diamond").energy(1200000)
     event.recipes.thermal.numismatic_fuel("gtceu:topaz_gem").energy(200000)
