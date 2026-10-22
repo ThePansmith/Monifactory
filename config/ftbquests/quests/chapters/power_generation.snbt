@@ -1452,11 +1452,15 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["11CF72393601F450"]
 			id: "3E9842ABB6C5B16A"
+			optional: true
+			size: 0.2d
 			tasks: [{
 				id: "661057768850D9B1"
 				type: "checkmark"
 			}]
+			title: " "
 			x: 2.5d
 			y: -4.0d
 		}
