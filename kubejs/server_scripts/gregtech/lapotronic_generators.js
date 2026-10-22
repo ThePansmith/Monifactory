@@ -85,5 +85,4 @@ ServerEvents.recipes(event => {
     LapoFuel("gtceu", "topaz_gem", 64, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "blue_topaz_gem", 64, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "dilithium_gem", 24, -GTValues.V[GTValues.MV])
-    LapoFuel("gtceu", "sapphire_gem", 32, -GTValues.V[GTValues.MV])
 })
