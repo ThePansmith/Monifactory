@@ -33,7 +33,7 @@
 			linked_quest: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
 			x: 2.0d
-			y: 4.25d
+			y: 4.5d
 		}
 		{
 			id: "2C514C36E06DC5FA"
@@ -41,7 +41,7 @@
 			shape: "gear"
 			size: 1.5d
 			x: 2.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			id: "2DE45181A83AEBEB"
@@ -290,7 +290,7 @@
 			}]
 			title: "&9&lCreative Chest&r"
 			x: 0.0d
-			y: 9.25d
+			y: 9.75d
 		}
 		{
 			dependencies: [
@@ -583,8 +583,8 @@
 				type: "item"
 			}]
 			title: "&9Dimensional Superassembler"
-			x: -6.5d
-			y: 2.0d
+			x: -6.25d
+			y: 3.25d
 		}
 		{
 			dependencies: ["040B3FCD82533BD9"]
@@ -600,7 +600,7 @@
 			}]
 			title: "&9Tier Twelve Microminer"
 			x: -2.0d
-			y: 3.75d
+			y: 4.25d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
@@ -615,7 +615,7 @@
 			}]
 			title: "&9Monium"
 			x: -2.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -774,7 +774,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 4.25d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -922,7 +922,7 @@
 				type: "item"
 			}]
 			title: "&9Eltz"
-			x: -4.5d
+			x: -3.25d
 			y: 3.25d
 		}
 		{
@@ -1195,12 +1195,13 @@
 			}]
 			title: "Causality Exempt Monic Heavy Plating"
 			x: -2.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"060A5766B021FC77"
 				"5601A05D8361551D"
+				"19084E91F357C8C2"
 			]
 			description: [
 				"With &6Monium&r and &6Extradimensional Mainframes&r, you can make &cMAX&r &6Energy Hatches&r. A 16A &cMAX&r hatch provides 256x the power compared to a &aUEV&r one, if you can supply it."
@@ -1217,7 +1218,7 @@
 			}]
 			title: "MAX Energy Hatches"
 			x: 0.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
