@@ -60,6 +60,7 @@ global.itemNukeList = [
     "enderio:dark_steel_grinding_ball",
     "enderio:end_steel_grinding_ball",
     "enderio:energetic_alloy_grinding_ball",
+    /^enderio:extraction_speed_upgrade_./,
     "enderio:flour",
     "enderio:industrial_insulation_block",
     "enderio:nethercotta",
@@ -135,7 +136,7 @@ global.itemNukeList = [
     "gtceu:zpm_solar_panel",
     "gtceu:uv_solar_panel",
     "gtceu:configurable_maintenance_hatch",
-    /^gtceu:(ev|iv|luv|zpm|uv|uhv|uev|max)_\w+a_energy_converter/,
+    /^gtceu.*a_energy_converter$/,
     /^gtceu:\w+_world_accelerator/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
@@ -222,6 +223,8 @@ global.itemNukeList = [
     // LaserIO
     "laserio:logic_chip",
     "laserio:logic_chip_raw",
+    "laserio:card_energy",
+    /^laserio:energy_overclocker_card_.*/,
 
     // Megacells
     "megacells:mega_crafting_accelerator",
@@ -262,10 +265,11 @@ global.itemNukeList = [
     // Look in configs/sophisticatedcore-common.toml.
     // SophStorage offers a way to remove items from the registry with config.
 
+    // Steam Dynamo (Mod can be removed in .15)
+    "steamdynamo:steam_dynamo",
+
     // Systeams
-    "systeams:disenchantment_boiler",
-    "systeams:lapidary_boiler",
-    "systeams:steamiestest_ball",
+    /^systeams:.*/,
 
     // Telepastries
     "telepastries:custom_cake2",
@@ -281,9 +285,9 @@ global.itemNukeList = [
     "thermal:constantan_coin",
     "thermal:cured_rubber",
     "thermal:drill_head",
-    "thermal:dynamo_disenchantment",
-    "thermal:dynamo_lapidary",
-    "thermal:dynamo_stirling",
+    /^thermal:dynamo_.*/,
+    "thermal:energy_cell",
+    "thermal:energy_cell_frame",
     "thermal:niter",
     "thermal:oil_red_sand",
     "thermal:oil_sand",
@@ -318,6 +322,7 @@ global.itemNukeList = [
     "wirelesschargers:advanced_wireless_block_charger",
 
     // Pipez
+    "pipez:energy_pipe",
     "pipez:gas_pipe",
     "pipez:universal_pipe",
     "pipez:infinity_upgrade"

@@ -6,10 +6,10 @@ ServerEvents.recipes(event => {
 
     // Generate thermal thruster recipes
     const thermalThrusters = [
-        ["leadstone", "lead", "lead", "steamdynamo:steam_dynamo"],
-        ["hardened", "invar", "invar", "thermal:dynamo_magmatic"],
-        ["reinforced", "aluminium", "electrum", "thermal:dynamo_compression"],
-        ["resonant", "enderium", "enderium", "thermal:dynamo_numismatic"]
+        ["leadstone", "lead", "lead", "gtceu:lv_steam_turbine"],
+        ["hardened", "invar", "invar", "gtceu:lv_gas_turbine"],
+        ["reinforced", "aluminium", "electrum", "gtceu:mv_combustion"],
+        ["resonant", "enderium", "enderium", "monilabs:hv_lapotronic"]
     ]
 
     thermalThrusters.forEach(([newTier, plate1, plate2, dynamo]) => {
