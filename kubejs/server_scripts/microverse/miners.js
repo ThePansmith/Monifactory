@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:hv_field_generator",
         F: "kubejs:signalum_micro_miner_core",
         T: "kubejs:energetic_thruster",
-        D: "gtceu:hv_combustion_generator"
+        D: "gtceu:hv_combustion"
     })
 
     // T5 Microminer
