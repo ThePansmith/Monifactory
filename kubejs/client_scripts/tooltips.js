@@ -201,7 +201,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(2, Text.translatable("extendedcrafting.auto_table.tooltip.2"))
     })
 
-    tooltip.add("kubejs:excitationcoil", Text.translatable("kubejs.excitationcoil.tooltip"));
     tooltip.add("gtceu:terminal", Text.translatable("gtceu.terminal.tooltip"));
 
     tooltip.add(["gtceu:prospector.lv", "gtceu:prospector.hv", "gtceu:prospector.luv"], Text.translatable("gtceu.prospector.tooltip.1"));

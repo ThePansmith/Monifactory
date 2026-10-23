@@ -168,21 +168,6 @@ StartupEvents.registry("block", event => {
         .tag("mineable/shovel").displayName("Dust Block")
         .property(BlockProperties.FALLING);
 
-    event.create("excitationcoil")
-        .displayName("Excitation Coil")
-        .soundType("metal")
-        .renderType("solid")
-        .notSolid()
-        .fullBlock(false)
-        .noValidSpawns(true)
-        .property(BlockProperties.FACING)
-        .property(BlockProperties.WATERLOGGED)
-        .placementState((/** @type {Internal.BlockStateModifyPlacementCallbackJS} */ context) => context.set(BlockProperties.FACING, context.clickedFace))
-        .tag("mineable/pickaxe")
-        .tagBlock("forge:mineable/wrench")
-        .requiresTool(true)
-        .lightLevel(0.5);
-
     event.create("lyso_ce_glass")
         .displayName("Cerium-doped Lutetium Yttrium Oxyorthosilicate Glass")
         .soundType("glass")

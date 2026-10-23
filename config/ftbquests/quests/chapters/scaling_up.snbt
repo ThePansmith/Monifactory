@@ -2162,7 +2162,7 @@
 			description: [
 				"An Extreme Voltage tier &bGregTech&r battery."
 				""
-				"&2Higher tier GT Batteries have been buffed to be quite strong - this one holds 25 MEU, or 100 MRF. You may want to consider using them over RF storage."
+				"&2Higher tier GT Batteries have been buffed to be quite strong - this one holds 25 MEU."
 			]
 			id: "2DDD4B4EC8065980"
 			rewards: [{
@@ -2531,7 +2531,7 @@
 		}
 		{
 			dependencies: ["605062720747B482"]
-			description: ["An Insane Voltage tier &bGregTech&r battery. &2Equivalent to 400 Reinforced Redstone Flux Cells!"]
+			description: ["An Insane Voltage tier &bGregTech&r battery. &2Holds 250M EU or 10 times the previous tier!"]
 			id: "46A56A5E3CC2403F"
 			rewards: [{
 				id: "265B4D5F6DAD55AC"
@@ -2815,7 +2815,7 @@
 				""
 				"&aExample: &r&6Large Gas Turbine&r, with &3HSS-E Rotor&r and &3IV Rotor Holder&r:"
 				""
-				"&aProduction:&r 4096 * 2.80 * 2=22938 EU/t (91752 RF/t)"
+				"&aProduction:&r 4096 * 2.80 * 2=22938 EU/t"
 				"&aEfficiency:&r 1.40 * 1.10=154.0%%"
 				"&aDurability:&r 205,600 s (57.1 h)"
 				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, or &9Nitrobenzene&r from &6Wood&r."
@@ -3402,7 +3402,7 @@
 				""
 				"As usual with PackagedAuto crafters, you need to encode the recipe in the correct mode and place a copy in two places: a &3Packager&r somewhere on your network, and an &3Unpackager&r adjacent to the &3Combination Package Crafter&r."
 				""
-				"These recipes require large amounts of RF and it &ewill not use power from your &aME Network&r, so you must also connect the package crafter directly to a source of RF."
+				"These recipes require large amounts of power and it &ewill not use power from your &aME Network&r, so you must also connect the package crafter directly to a source of power."
 			]
 			icon: "packagedexcrafting:combination_crafter"
 			id: "13B12457AA9BF90D"

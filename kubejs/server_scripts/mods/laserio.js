@@ -14,12 +14,11 @@ ServerEvents.recipes(event => {
 
     // Replace Logic chips with circuits.
     event.remove({ output: ["laserio:logic_chip_raw", "laserio:logic_chip"] })
-    event.replaceInput({ mod: "laserio", not: [{ id: "laserio:card_item" }, { id: "laserio:card_fluid" }, { id: "laserio:card_energy" }, { id: "laserio:card_redstone" }] }, "laserio:logic_chip", cardChip)
+    event.replaceInput({ mod: "laserio", not: [{ id: "laserio:card_item" }, { id: "laserio:card_fluid" }, { id: "laserio:card_redstone" }] }, "laserio:logic_chip", cardChip)
 
     const Cards = [
         ["item", "gtceu:pulsating_alloy_plate"],
         ["fluid", "gtceu:lazurite_plate"],
-        ["energy", "gtceu:gold_plate"],
         ["redstone", "gtceu:red_alloy_plate"]
     ]
 
@@ -103,74 +102,4 @@ ServerEvents.recipes(event => {
         }).id("laserio:laser_connector_advanced")
             .addMaterialInfo()
     }
-
-
-    // Energy Overclockers  //
-
-    // Conductive Iron
-    event.shaped("3x laserio:energy_overclocker_card_tier_1", [
-        "AAA",
-        "BBB",
-        "AAA"
-    ], {
-        A: "gtceu:conductive_alloy_single_wire",
-        B: "gtceu:iron_plate"
-    }).id("kubejs:conductive_card")
-
-    event.recipes.gtceu.assembler("kubejs:conductive_card")
-        .itemInputs("6x gtceu:conductive_alloy_single_wire", "3x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_1")
-        .duration(80)
-        .EUt(GTValues.VHA[GTValues.LV])
-
-    // Energetic Alloy
-    event.shaped("3x laserio:energy_overclocker_card_tier_2", [
-        "AAA",
-        "BCB",
-        "AAA"
-    ], {
-        A: "gtceu:energetic_alloy_single_wire",
-        B: "gtceu:iron_plate",
-        C: "laserio:energy_overclocker_card_tier_1"
-    }).id("kubejs:energetic_card")
-
-    event.recipes.gtceu.assembler("kubejs:energetic_card")
-        .itemInputs("6x gtceu:energetic_alloy_single_wire", "laserio:energy_overclocker_card_tier_1", "2x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_2")
-        .duration(80)
-        .EUt(GTValues.VHA[GTValues.LV])
-
-    // Vibrant Alloy
-    event.shaped("3x laserio:energy_overclocker_card_tier_3", [
-        "AAA",
-        "BCB",
-        "AAA"
-    ], {
-        A: "gtceu:vibrant_alloy_single_wire",
-        B: "gtceu:iron_plate",
-        C: "laserio:energy_overclocker_card_tier_2"
-    }).id("kubejs:vibrant_card")
-
-    event.recipes.gtceu.assembler("kubejs:vibrant_card")
-        .itemInputs("6x gtceu:vibrant_alloy_single_wire", "laserio:energy_overclocker_card_tier_2", "2x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_3")
-        .duration(80)
-        .EUt(GTValues.VHA[GTValues.LV])
-
-    // Endsteel
-    event.shaped("3x laserio:energy_overclocker_card_tier_4", [
-        "AAA",
-        "BCB",
-        "AAA"
-    ], {
-        A: "gtceu:end_steel_single_wire",
-        B: "gtceu:iron_plate",
-        C: "laserio:energy_overclocker_card_tier_3"
-    }).id("kubejs:endsteel_card")
-
-    event.recipes.gtceu.assembler("kubejs:endsteel_card")
-        .itemInputs("6x gtceu:end_steel_single_wire", "laserio:energy_overclocker_card_tier_3", "2x gtceu:iron_plate")
-        .itemOutputs("4x laserio:energy_overclocker_card_tier_4")
-        .duration(80)
-        .EUt(GTValues.VHA[GTValues.LV])
 })

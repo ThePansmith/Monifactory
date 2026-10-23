@@ -8,7 +8,7 @@
 	order_index: 3
 	quest_links: [
 		{
-			id: "6DAB58DBB9C88AB0"
+			id: "20D596271688188F"
 			linked_quest: "0D6C8FFD01BE5C21"
 			shape: "hexagon"
 			x: 7.5d
@@ -178,69 +178,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"5C4E189A3E401566"
-				"2A11706D3D63925C"
-			]
-			description: [
-				"Keep the MV area separate from your LV area. &eHooking up an LV machine to MV current will result in the machine being destroyed, and LV cables will burn up if you put MV current through them&r."
-				""
-				"Once you're comfortable and confident with voltages, you can use transformers to switch voltages within a single setup, but don't feel forced to try that until you've got a grasp on the basics."
-				""
-				"For your MV cables, you can use &6Copper&r to start with. &6Energetic Alloy cables&r are lossless though, so consider them if you're able to mass produce those ingots."
-				"{@pagebreak}"
-				"By contrast, &aall RF power&r is lossless, and any RF supplier can send energy to any RF receiver without consequence. This means you can use Pipez or LaserIO to route power from wherever you're generating it to an &3Energy Converter&r for each tier of GregTech machine you have."
-				""
-				"That kind of setup is the most foolproof one for a beginner, but be warned: &cEnergy Converters only go up to HV&r. You &lwill&r have to get accustomed to GregTech power transfer in order to deal with larger quantities of power."
-			]
-			hide_until_deps_visible: true
-			icon: "gtceu:mv_4a_energy_converter"
-			id: "5C40007C206EA41D"
-			optional: true
-			rewards: [{
-				id: "64FBF31779D183B9"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "01807F8926FD9970"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:mv_1a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_4a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_8a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_16a_energy_converter"
-							}
-						]
-					}
-				}
-				title: "Any MV Converter"
-				type: "item"
-			}]
-			title: "MV Energy Converter"
-			x: -7.75d
-			y: -10.75d
-		}
-		{
-			dependencies: [
-				"0B62AD25CDD86A6B"
-				"74935A3553451178"
-			]
+			dependencies: ["74935A3553451178"]
 			dependency_requirement: "one_completed"
 			description: ["&aMV Batteries&r function essentially the same as &aLV Batteries&r, only stronger. They also need to be put into &3MV Machines, MV Battery Buffers&r or &3MV Turbo Chargers&r."]
 			icon: {
@@ -262,8 +200,8 @@
 				type: "item"
 			}]
 			title: "MV Power Storage"
-			x: -7.75d
-			y: -9.0d
+			x: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["61CC4AD6FAE15248"]
@@ -994,7 +932,7 @@
 		{
 			dependencies: ["604CCBE824D03A74"]
 			description: ["The place for your very first chemical reactions, namely making some improved substrates."]
-			id: "3BF1EA06D25F5462"
+			id: "3E51686E2DBD380F"
 			rewards: [{
 				id: "26A4B2BEE66A6D19"
 				item: "kubejs:moni_quarter"
@@ -1087,7 +1025,7 @@
 		{
 			dependencies: ["1A30472430354F1E"]
 			description: ["An advanced component used for the Circuit Assembler."]
-			id: "5BC3ECC64E4B01E2"
+			id: "3E42B4AAA6D2A05B"
 			rewards: [{
 				id: "1FBA4265C2C37787"
 				item: "kubejs:moni_nickel"
@@ -1359,7 +1297,7 @@
 		{
 			dependencies: ["500E619D568C07C2"]
 			description: ["&6Annealed Copper&r is made &2in an Arc Furnace&r by treating &6Copper&r with &9Oxygen&r. It has less power loss than regular Copper when used as a cable, and is also required for more advanced electronic components."]
-			id: "140DB266F19D28FE"
+			id: "6C8DE5DC18CDADF0"
 			rewards: [{
 				id: "0C61DFCA18ECFB1A"
 				item: "kubejs:moni_nickel"
@@ -1602,8 +1540,8 @@
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
-			description: ["&6Capacitors&r are devices that store electrical energy, which is useful for circuits. Not to be confused with &bEnder IO&r's capacitors&r, which store redstone flux."]
-			id: "6D5D5F7F21D7B5B9"
+			description: ["&6Capacitors&r are devices that store electrical energy, which is useful for circuits. Not to be confused with &bEnder IO&r's capacitors&r, which enable and boost the performance of &bEnder IO&r machines."]
+			id: "7D0351942F4DB8E0"
 			rewards: [{
 				id: "5097A1FD412A43A8"
 				item: "kubejs:moni_nickel"
@@ -1655,7 +1593,7 @@
 				"6169C04DF463502F"
 			]
 			description: ["&2The next tier of Assembler. This one can make quite a few nice things - check the surrounding quests."]
-			id: "2DFBD7F90141B367"
+			id: "0C4E18B05F9E68DE"
 			rewards: [{
 				id: "1502A18676124CF8"
 				item: "kubejs:moni_nickel"
@@ -1724,7 +1662,8 @@
 					type: "item"
 				}
 				{
-					id: "50247B373B4C7911"
+					id: "6C13CB1FDE79CC66"
+					optional_task: true
 					type: "checkmark"
 				}
 			]
@@ -1867,7 +1806,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"&6Sulfur&r will be used in a variety of upcoming chemical reactions."
 				""
@@ -2171,41 +2109,12 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: [
-				"Upgrades to carry even MORE &aFE&r power."
-				""
-				"You're making these in an &3Assembler&r, right?"
-			]
-			id: "53205E306EE07F6F"
-			rewards: [{
-				id: "7AAE565791B28655"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "2F9C846B8ABD620C"
-					item: "laserio:energy_overclocker_card_tier_3"
-					type: "item"
-				}
-				{
-					id: "71545946FA1828C9"
-					item: "pipez:advanced_upgrade"
-					type: "item"
-				}
-			]
-			title: "Vibrant Alloy Energy Cards"
-			x: 5.75d
-			y: 10.0d
-		}
-		{
 			dependencies: [
 				"64F45D98FA48D834"
 				"73C1AB31431B5C11"
 			]
 			description: ["A pair of &6Double-Layer RF Capacitors&r combined with some &6Vibrant Alloy&r and &6Glowstone&r creates an &6Octadic RF Capacitor&r, which is a tier three &bEnder IO&r capacitor."]
-			id: "6F629B176E2F5F97"
+			id: "0607A59215F0F8B3"
 			rewards: [{
 				id: "553BD8341913437B"
 				item: "kubejs:moni_nickel"
@@ -2295,7 +2204,8 @@
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
 			description: ["Placing a &9Wireless Charger&r in an area that you frequent (such as where you do your crafting) will ensure that your RF-based items are always topped off on energy. &4Does not charge EU-based items!&r"]
-			id: "145947959BF6F394"
+			hide_dependency_lines: true
+			id: "1AA0A089DCA17FC8"
 			rewards: [{
 				id: "7CF4371856D78553"
 				item: "kubejs:moni_nickel"
@@ -2323,8 +2233,8 @@
 				type: "item"
 			}]
 			title: "&9Charging Items Wirelessly"
-			x: 2.5d
-			y: -1.0d
+			x: 10.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["64ABEB1EF9F81EA4"]
@@ -2376,25 +2286,6 @@
 			y: -9.75d
 		}
 		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: ["&6Redstone Flux Cells&r can store large amounts of power. They can be upgraded with the &6Holding&r enchantment, &6Integral Components&r, and &6RF Coil augments&r to boost their capacity."]
-			id: "4AAA3F0EBD40066C"
-			rewards: [{
-				id: "55E8860F7FB0757A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				id: "0F041A58A6F4A84E"
-				item: "thermal:energy_cell"
-				type: "item"
-			}]
-			title: "RF Storage"
-			x: 6.5d
-			y: 12.25d
-		}
-		{
 			dependencies: ["3E42B4AAA6D2A05B"]
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
@@ -2408,7 +2299,7 @@
 				"By default, the config GUI is bound to &8G&r."
 			]
 			icon: "buildinggadgets2:gadget_building"
-			id: "2A45D32B79D88C2E"
+			id: "5F9C7FB40AD2640B"
 			subtitle: "This pack has &bBuilding Gadgets&r."
 			tasks: [{
 				id: "619BDAF43151E7EF"
@@ -2449,7 +2340,7 @@
 		{
 			dependencies: ["3B639F4061B00F1A"]
 			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
-			id: "656D99EA24F7B83B"
+			id: "6DAA25CA26AE05E9"
 			optional: true
 			subtitle: "Multi smelter, sort of!"
 			tasks: [{
@@ -2537,7 +2428,7 @@
 		{
 			dependencies: ["417D97D9E3562F45"]
 			description: ["&6Inductors&r, known as &2Small Coils&r in other versions of GregTech, are another circuit component you will need. For the best results, use &6Nickel Zinc Ferrite&r and &6Annealed Copper&r to make these. But depending on which setups you build first, you may not need to make many of the basic version over the SMD version."]
-			id: "4EA547FAC33F6335"
+			id: "66E1F1B28E4577B2"
 			shape: "hexagon"
 			tasks: [{
 				id: "71AA40FF97ED3E56"
@@ -2617,7 +2508,7 @@
 				""
 				"By default, the context menu GUI is bound to &8Left Alt&r."
 			]
-			id: "1F3E32E694371B71"
+			id: "31EE6E41F509A8CF"
 			subtitle: "This pack has &bSpatial Tools Compatible&r."
 			tasks: [{
 				id: "5D491AF17319AAC2"

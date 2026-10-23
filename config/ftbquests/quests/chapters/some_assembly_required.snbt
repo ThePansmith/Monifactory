@@ -841,7 +841,7 @@
 				""
 				"If the Active Transformer is enabled and has power moving through it, &cbreaking &lANY&r&c block of the structure will destroy the controller. &rIn Hard/Expert Mode this will also cause a &cviolent explosion&r."
 				""
-				"Since &3Energy Converters&r and &9RF Cards&r only go up to &6HV&r and &5EV&r respectively, this is the best option for high-volume power transfer and distribution. It is strongly recommended that you begin to set these up once they become available."
+				"This is the best option for high-volume power transfer and distribution. It is strongly recommended that you begin to set these up once they become available."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:active_transformer"

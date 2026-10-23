@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("kubejs:creative_power")
-        .itemInputs("4x #gtceu:circuits/uev", "8x kubejs:dimensionally_stabilized_infinity_heavy_plating", "4x monilabs:dimensional_stabilization_netherite_casing", "4x gtceu:uev_field_generator", "8x gtceu:uev_emitter", "4x gtceu:max_battery")
+        .itemInputs("4x #gtceu:circuits/uev", "8x kubejs:dimensionally_stabilized_infinity_heavy_plating", "4x gtceu:atomic_casing", "kubejs:field_stabilized_prismatic_pulsar_compound", "8x gtceu:uev_emitter", "4x gtceu:max_battery")
         .inputFluids("gtceu:living_soldering_alloy 576", "gtceu:polyether_ether_ketone 1152")
         .itemOutputs("monilabs:creative_energy_multi")
         .stationResearch(b => b
@@ -11,8 +11,8 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UIV])
             .CWUt(144, 512000)
         )
-        .duration(1200)
-        .EUt(GTValues.VA[GTValues.UHV])
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UIV])
         .addMaterialInfo(true)
 
     event.recipes.gtceu.assembly_line("omniscience_research_beacon")

@@ -9,12 +9,6 @@
 	order_index: 3
 	quest_links: [
 		{
-			id: "7D217833035647CD"
-			linked_quest: "04A0863937695AC4"
-			x: 17.0d
-			y: -8.5d
-		}
-		{
 			id: "4CA98E8FC9082FA2"
 			linked_quest: "5F9C7FB40AD2640B"
 			x: 17.0d
@@ -496,7 +490,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
 			dependency_requirement: "all_started"
 			description: ["Carry stuff."]
 			disable_toast: true
@@ -532,6 +525,7 @@
 				"3F6EDC2481D5877F"
 				"2C89DAD26E08E382"
 			]
+			dependency_requirement: "all_started"
 			description: ["Carry &oeven more&r stuff."]
 			icon: {
 				Count: 1
@@ -698,7 +692,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
+			dependencies: ["06E9B9DDDB245F38"]
 			description: [
 				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
 				""
@@ -756,6 +750,7 @@
 			dependencies: [
 				"64F45D98FA48D834"
 				"6ABF927014F8B79D"
+				"1AA0A089DCA17FC8"
 			]
 			description: ["Flying faster is nice."]
 			disable_toast: true
@@ -1105,7 +1100,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["0D37D05A6B66055F"]
+			dependencies: ["7FA0E6F3B466576C"]
 			dependency_requirement: "one_completed"
 			description: [
 				"A \"&esubstrate&f\" is the \"board\" part of a circuit board — the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
@@ -1142,8 +1137,8 @@
 		}
 		{
 			dependencies: [
-				"12B95158E4C792DB"
 				"77670BF761084AA2"
+				"12B95158E4C792DB"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -2542,7 +2537,7 @@
 			description: [
 				"Welcome to the &9IV&r Age!"
 				""
-				"In this age, you can start making Multiblock versions of most of your machines, delve into &aFission&r, and finish up the &3Platline&r."
+				"In this age, you can start making Multiblock versions of most of your machines, finish up the &3Platline&r. and start constructing &3Assembly Lines&r."
 			]
 			icon: "gtceu:iv_machine_hull"
 			id: "6E27637A9C94A0AA"
@@ -3401,11 +3396,7 @@
 			y: 12.5d
 		}
 		{
-			dependencies: [
-				"3270496124969A51"
-				"1229234A71CE0A99"
-				"61E5D7EEE745C6FB"
-			]
+			dependencies: ["3270496124969A51"]
 			dependency_requirement: "all_started"
 			description: ["Carry more stuff."]
 			hide_dependency_lines: false

@@ -14,26 +14,26 @@
 			shape: "gear"
 			size: 1.5d
 			x: 0.0d
-			y: 13.75d
+			y: 16.0d
 		}
 		{
 			id: "6DC914192E886D47"
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
 			x: -1.5d
-			y: 13.25d
+			y: 13.75d
 		}
 		{
 			id: "070539F2FEF35EF9"
 			linked_quest: "712023557B5B1812"
-			x: -4.0d
-			y: 15.75d
+			x: -3.0d
+			y: 18.0d
 		}
 		{
 			id: "412B0192D3658F7C"
 			linked_quest: "2280472741683581"
-			x: 2.75d
-			y: 14.5d
+			x: 3.0d
+			y: 16.75d
 		}
 		{
 			id: "4373D49C9462A56A"
@@ -1069,7 +1069,7 @@
 				}
 			]
 			title: "&2Primitive Steelworks"
-			x: 1.0d
+			x: 1.75d
 			y: 11.0d
 		}
 		{
@@ -1183,8 +1183,8 @@
 				}
 			]
 			title: "&9Steam Grinder"
-			x: 2.5d
-			y: 8.0d
+			x: 1.75d
+			y: 9.75d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1236,8 +1236,8 @@
 				}
 			]
 			title: "&9Steam Foundry"
-			x: 2.5d
-			y: 9.0d
+			x: -1.5d
+			y: 9.75d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
@@ -1261,7 +1261,7 @@
 				item: "telepastries:nether_cake"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.25d
 			y: 11.0d
 		}
 		{
@@ -1288,8 +1288,8 @@
 				type: "item"
 			}]
 			title: "Rubber Sheets"
-			x: 4.0d
-			y: 12.5d
+			x: 4.25d
+			y: 12.25d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
@@ -1349,8 +1349,8 @@
 				}
 			]
 			title: "From Ingots to Wires"
-			x: -1.0d
-			y: 11.0d
+			x: 0.0d
+			y: 13.75d
 		}
 		{
 			dependencies: [
@@ -1362,7 +1362,7 @@
 				""
 				"More advanced types of cables will require an &3Assembler&f and liquid &9Rubber&f, but you can do it the simple way for now."
 				""
-				"&2GT cables support RF conversion natively! &eYou can plug an &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r You cannot, however, plug an &9RF&r power source directly into an &9EU&r cable."
+				"&2GT cables support RF conversion natively! &eYou can plug a &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r"
 				"{@pagebreak}"
 				"All cables have 3 main properties:"
 				"- &aMax Voltage&r: The maximum tier of voltage that can pass through the cable safely. Voltage tiers below the maximum can also be conducted!"
@@ -1385,8 +1385,8 @@
 				type: "item"
 			}]
 			title: "&2Cables"
-			x: 1.5d
-			y: 13.25d
+			x: 1.75d
+			y: 13.75d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1476,7 +1476,7 @@
 			]
 			title: "Steam Machines"
 			x: 0.0d
-			y: 9.75d
+			y: 11.0d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
@@ -1519,8 +1519,8 @@
 				}
 			]
 			title: "Molds"
-			x: 2.0d
-			y: 11.75d
+			x: 1.75d
+			y: 12.25d
 		}
 		{
 			dependencies: ["754C416FB3F5DBDA"]
@@ -1538,7 +1538,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 11.75d
+			y: 12.25d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1586,7 +1586,7 @@
 				}
 			]
 			title: "&9Steam Separator"
-			x: 1.5d
+			x: -1.5d
 			y: 8.5d
 		}
 		{
@@ -1613,7 +1613,7 @@
 			}]
 			title: "Energy Converters"
 			x: 0.0d
-			y: 15.75d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -1656,8 +1656,8 @@
 				type: "item"
 			}]
 			title: "Battery Buffers"
-			x: 1.5d
-			y: 15.75d
+			x: 1.75d
+			y: 18.0d
 		}
 		{
 			dependencies: ["12B95158E4C792DB"]
@@ -1701,8 +1701,8 @@
 				type: "item"
 			}]
 			title: "LV Power Storage"
-			x: 1.5d
-			y: 14.5d
+			x: 1.75d
+			y: 16.75d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1757,59 +1757,12 @@
 			}]
 			title: "&9Charging Items"
 			x: -1.5d
-			y: 15.75d
-		}
-		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: [
-				"Basic &aFlux Capacitors&r hold a whopping &9500 kRF&r of energy and are useful for keeping your &aRF-powered&r equipment and tools charged."
-				""
-				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
-				""
-				"The Flux Capacitor is a &bCurio&r, so open your inventory and look for the Curios button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
-			]
-			icon: {
-				Count: 1
-				id: "thermal:flux_capacitor"
-				tag: { }
-			}
-			id: "3A5387B2003177B2"
-			rewards: [{
-				id: "18D835350F2E6BBE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "5EF5A8A2767A69E3"
-					item: {
-						Count: 1
-						id: "thermal:flux_capacitor"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "63EE7A1364F6888B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dusts/sulfur"
-						}
-					}
-					title: "Sulfur Dust"
-					type: "item"
-				}
-			]
-			title: "&9Flux Capacitors"
-			x: -2.75d
-			y: 15.75d
+			y: 18.0d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
 			description: [
-				"Unlike &aRF power&r, which is safe to transport with &bPipez&r, &aEU power &erequires caution&r. Without proper attention, it is possible that your expensive wires, cables, or machines could be destroyed."
+				"Unlike the &aRF power&r you may be familiar with, &aEU power &erequires caution&r. Without proper attention, it is possible that your expensive wires, cables, or machines could be destroyed."
 				""
 				"EU is transported in &aamperes&r (&aamps&r), which can be thought of as packets of energy. The amount of energy stored in the packet is the &avoltage tier&r."
 				"{@pagebreak}"
@@ -1826,7 +1779,7 @@
 			}]
 			title: "A Primer on Power"
 			x: 0.0d
-			y: 17.0d
+			y: 19.25d
 		}
 		{
 			dependencies: ["5A94534682807314"]
@@ -1856,7 +1809,7 @@
 			}]
 			title: "Putting it all Together"
 			x: 0.0d
-			y: 18.5d
+			y: 20.75d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2111,7 +2064,7 @@
 			}]
 			title: "Wrought Iron"
 			x: -1.5d
-			y: 9.75d
+			y: 11.0d
 		}
 		{
 			can_repeat: false

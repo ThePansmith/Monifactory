@@ -58,8 +58,8 @@
 	quests: [
 		{
 			dependencies: ["5F688F22A3DB2ADD"]
-			description: ["&6Black Steel&r will be used to make various items from &bExtended Crafting&r. It will also be the basis of other Steel types later on."]
-			id: "1354A17A800169AE"
+			description: ["{moni.quest.74FEF82CA2FB3D02.description1}"]
+			id: "74FEF82CA2FB3D02"
 			rewards: [{
 				id: "181CA17C25013620"
 				item: "kubejs:moni_nickel"
@@ -103,8 +103,8 @@
 		}
 		{
 			dependencies: ["74FEF82CA2FB3D02"]
-			description: ["A component used for more advanced items related to &bExtended Crafting&r."]
-			id: "139EAD4FF281F216"
+			description: ["{moni.quest.718AF2C9476BE1F4.description1}"]
+			id: "718AF2C9476BE1F4"
 			rewards: [{
 				id: "0162618662B31232"
 				item: "kubejs:moni_nickel"
@@ -121,8 +121,8 @@
 		}
 		{
 			dependencies: ["01F946C4A4BF4FFE"]
-			description: ["Combine several components into a catalyst."]
-			id: "0022A1E2CC9791E9"
+			description: ["{moni.quest.52B20235882063BF.description1}"]
+			id: "52B20235882063BF"
 			rewards: [{
 				id: "054EEB2BC8D8E4B1"
 				item: "kubejs:moni_nickel"
@@ -244,8 +244,8 @@
 		}
 		{
 			dependencies: ["3BB7400C8BB392D9"]
-			description: ["&6Luminessence&r is used in a number of things, but right now, it will be a component in your &aExtended Crafting Tables&r."]
-			id: "191B2D1E219C2A9D"
+			description: ["{moni.quest.004344AC70AE88F1.description1}"]
+			id: "004344AC70AE88F1"
 			rewards: [{
 				id: "736F1A6A51C728B9"
 				item: "kubejs:moni_nickel"
@@ -266,8 +266,8 @@
 				"74FEF82CA2FB3D02"
 				"004344AC70AE88F1"
 			]
-			description: ["A common component used by &bExtended Crafting&r."]
-			id: "54922EFBD6575EC2"
+			description: ["{moni.quest.56BAC68878E11DF4.description1}"]
+			id: "56BAC68878E11DF4"
 			rewards: [{
 				id: "43E03E40DC856904"
 				item: "kubejs:moni_nickel"
@@ -287,8 +287,8 @@
 				"27692C4A58F1A183"
 				"52B20235882063BF"
 			]
-			description: ["An advanced ingredient used for the &aUltimate Extended Crafting Table&r and the &aEpic Extended Crafting Table&r."]
-			id: "696EAAA95A9EAADA"
+			description: ["{moni.quest.04475771966A92C3.description1}"]
+			id: "04475771966A92C3"
 			rewards: [{
 				id: "57C733695C4A4BF8"
 				item: "kubejs:moni_quarter"
@@ -308,8 +308,8 @@
 				"04475771966A92C3"
 				"77582C534A994D7C"
 			]
-			description: ["This is an even larger Extended Crafting Table, capable of handling 9x9 recipes."]
-			id: "3B007FCBA7FFB1E5"
+			description: ["{moni.quest.555BEBF7FD6012B7.description1}"]
+			id: "555BEBF7FD6012B7"
 			rewards: [{
 				id: "1D9B626A9FE51F59"
 				item: "kubejs:moni_dollar"
@@ -379,8 +379,8 @@
 		}
 		{
 			dependencies: ["718AF2C9476BE1F4"]
-			description: ["Again, combining a few Components will make a Catalyst."]
-			id: "72191245CC1BA661"
+			description: ["{moni.quest.27692C4A58F1A183.description1}"]
+			id: "27692C4A58F1A183"
 			rewards: [{
 				id: "0AC07F27C4932179"
 				item: "kubejs:moni_nickel"
@@ -488,8 +488,8 @@
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"
-				id: "3EA21103B2A9E43F"
-				title: "Reach the Moon"
+				id: "3458BC33000F9D0A"
+				title: "{moni.task.3458BC33000F9D0A}"
 				type: "dimension"
 			}]
 			title: "&9Fly Me To The Moon"
@@ -712,8 +712,8 @@
 				"2181102841205407"
 				"01CC71429CFCAE0B"
 			]
-			description: ["The &9Nasa Workbench&r is used to create rockets from various parts."]
-			id: "40767D7BE0D185E9"
+			description: ["{moni.quest.193B7038EAB6EFA3.description1}"]
+			id: "193B7038EAB6EFA3"
 			rewards: [{
 				id: "3D22138C90885458"
 				item: "kubejs:moni_nickel"
@@ -732,8 +732,8 @@
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
-			description: ["Even simple rockets demand &6Double Plates&r for their construction. In this case, made out of &6Steel&r."]
-			id: "2DA4D43D6B8B79EE"
+			description: ["{moni.quest.247F4985B9ACE568.description1}"]
+			id: "247F4985B9ACE568"
 			rewards: [{
 				id: "3E3820290231C63E"
 				item: "kubejs:moni_nickel"
@@ -1201,7 +1201,7 @@
 				""
 				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time."
 				"{@pagebreak}"
-				"Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
+				"{moni.quest.0DB8063A7972E1C0.description4}"
 				""
 				"In compensation for the cost of confusing logistics, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
 			]
@@ -1247,7 +1247,7 @@
 		{
 			dependencies: ["193B7038EAB6EFA3"]
 			description: [
-				"The &3Oxygen Loader&r is used to load &9Oxygen&r into your Space Suit, making it usable for exploring the great beyond. It will need &aRedstone Flux (RF)&r to do so. You may alternatively use a &3Canner&r."
+				"{moni.quest.4672EE66D51C32FF.description1}"
 				""
 				"If you run out of Oxygen, then you will &cSuffocate&r. If you plan to spend several hours on &bThe Moon&r, consider bringing an additional &6Gas Tank&r filled with &9Oxygen&r."
 			]
@@ -1342,8 +1342,8 @@
 		}
 		{
 			dependencies: ["6169C04DF463502F"]
-			description: ["Some Microminer missions use a &6Gemstone Sensor&r to scout out gems instead of ores, as well as other &6rare materials&r."]
-			id: "150A0DEC26AF30CE"
+			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
+			id: "2D0DF78F71760F00"
 			rewards: [{
 				id: "4EBCBD26CFB43E2E"
 				item: "kubejs:moni_nickel"
@@ -1386,11 +1386,11 @@
 			description: [
 				"If you wish to create an off-Earth base or otherwise conduct operations longer than a mining trip, &3Ad Astra&r offers a few machines that will be helpful or even necessary to your objective."
 				""
-				"1. The &3Oxygen Distributor&r. When supplied with &aRedstone Flux (RF)&r and &9Oxygen&r, this machine creates a breathable volume of air around it which expands to fit the environment it's contained in up to six thousand (6000) blocks in volume. It also prevents &9Water&r in this area from freezing, and is therefore necessary for the operation of a &3Rock Crusher&r."
+				"{moni.quest.4288A253129B1E75.description2}"
 				""
 				"2. The &3Oxygen Sensor&r. This block emits a redstone signal and displays a green light when it's in an oxygenated environment. Check one before you take your helmet off to ensure you don't suffocate!"
 				""
-				"3. The &3Gravity Normalizer&r. This machine unlocks in &5EV&r, and when supplied with &aRF&r it allows you to control gravity nearby similar to the Oxygen Distributor. If the low gravity on &bThe Moon&r or in &bOrbit&r bothers you, then give it a whirl!"
+				"{moni.quest.4288A253129B1E75.description4}"
 			]
 			icon: "ad_astra:space_painting"
 			id: "6D83FFDA99A0A092"

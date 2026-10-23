@@ -14,34 +14,34 @@
 			shape: "gear"
 			size: 1.5d
 			x: 0.0d
-			y: 13.75d
+			y: 15.0d
 		}
 		{
 			id: "6DC914192E886D47"
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
 			x: -2.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			id: "070539F2FEF35EF9"
 			linked_quest: "712023557B5B1812"
 			shape: "hexagon"
-			x: -4.5d
-			y: 15.5d
+			x: -3.0d
+			y: 17.0d
 		}
 		{
 			id: "4A1F5C2E65873DDB"
 			linked_quest: "2280472741683581"
 			shape: "hexagon"
 			x: 4.0d
-			y: 14.75d
+			y: 15.25d
 		}
 		{
 			id: "1D806F3BD32F739C"
 			linked_quest: "34876F54406B6A04"
-			x: 0.75d
-			y: 15.5d
+			x: 0.0d
+			y: 17.0d
 		}
 		{
 			id: "4373D49C9462A56A"
@@ -1133,10 +1133,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"545CCC24D9401794"
-				"34CA940B412284F2"
-			]
+			dependencies: ["34CA940B412284F2"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
@@ -1307,7 +1304,7 @@
 			}]
 			title: "Rubber Sheets"
 			x: 4.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
@@ -1367,7 +1364,7 @@
 				}
 			]
 			title: "From Ingots to Wires"
-			x: 0.0d
+			x: -2.0d
 			y: 12.0d
 		}
 		{
@@ -1380,7 +1377,7 @@
 				""
 				"More advanced types of cables will require an &3Assembler&f and liquid &9Rubber&f, but you can do it the simple way for now."
 				""
-				"&2GT cables support RF conversion natively! &eYou can plug an &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r You cannot, however, plug an &9RF&r power source directly into an &9EU&r cable."
+				"&2GT cables support RF conversion natively! &eYou can plug an &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r"
 				"{@pagebreak}"
 				"All cables have 3 main properties:"
 				"- &aMax Voltage&r: The maximum tier of voltage that can pass through the cable safely. Voltage tiers below the maximum can also be conducted!"
@@ -1403,13 +1400,13 @@
 				type: "item"
 			}]
 			title: "&2Cables"
-			x: 2.0d
-			y: 13.75d
+			x: 0.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"Your initial method of &9Steam&r production, to fuel your first machines. They automatically output Steam on all faces except the bottom. Water converts to steam at a 1:150 ratio."
+				"Your initial method of &9Steam&r production, to fuel your first machines. They automatically output Steam on all faces except the bottom. Water converts to steam at a 1:160 ratio."
 				""
 				"Once you get Steel, consider investing in HP Solar Boilers."
 			]
@@ -1555,8 +1552,8 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 13.75d
+			x: 0.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1608,60 +1605,9 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["64AAF0CD958D836A"]
+			dependencies: ["7FA0E6F3B466576C"]
 			description: [
-				""
-				"The &6Steam Dynamo&r will be your source of &9power&r for the early game. It requires &6Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
-				""
-				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block/cable attached directly to the coil will get provided with power&f."
-			]
-			id: "39D4174834F3879D"
-			rewards: [{
-				id: "565EAB360615C53E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "Your first major crafting project!"
-			tasks: [{
-				id: "78D31068BB10B20B"
-				item: "steamdynamo:steam_dynamo"
-				type: "item"
-			}]
-			title: "Steam Dynamo"
-			x: -4.0d
-			y: 13.75d
-		}
-		{
-			dependencies: ["39D4174834F3879D"]
-			description: ["More fuel energy means you need to use less fuel."]
-			id: "098CF1FD284B09E7"
-			rewards: [{
-				id: "5ECF74D124102662"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				count: 2L
-				id: "66B9B329F6ED7939"
-				item: { Count: 2, id: "thermal:dynamo_fuel_augment" }
-				type: "item"
-			}]
-			title: "&9More Efficient"
-			x: -5.0d
-			y: 13.75d
-		}
-		{
-			dependencies: [
-				"7FA0E6F3B466576C"
-				"39D4174834F3879D"
-			]
-			description: [
-				"&bPipez&r is your first available option for transporting &aForge Energy&r, (&aFE&r) and is also the simplest option."
-				""
-				"To use them, connect your sources and destinations with Energy Pipes and Shift-Right-Click the connection of a Pipe to a block with a &6Pipe Wrench&r to begin extracting from that block."
-				""
-				"Pipez can also transport &6Items&r and &9Fluids&r with the corresponding type of pipe."
+				"Pipez can transport &6Items&r and &9Fluids&r with the corresponding type of pipe."
 				""
 				"Extraction speed is increased and Redstone control, filtering, and routing options are unlocked with &6Pipe Upgrades&r."
 			]
@@ -1675,71 +1621,15 @@
 			tasks: [{
 				count: 6L
 				id: "39A6A20C833ABC94"
-				item: "pipez:energy_pipe"
+				item: "pipez:item_pipe"
 				type: "item"
 			}]
 			title: "&9Pipez"
-			x: -2.0d
-			y: 13.75d
+			x: -4.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
-				"1A30472430354F1E"
-				"08948A23B3A17923"
-			]
-			description: [
-				"&rThe &3Steam Dynamos&r&r&r you have made are generating &aRF power&r, but &bGregTech&r machines require &aEU power&r. With your first &6circuit&r in hand, you are ready to build a &eLow Voltage (LV) &3&2Energy Converter&r."
-				""
-				"The &2Energy Converter&r is a special device that &econverts &2between &aRF power&r and &aEU power&r. They come in &2four sizes: 1A, 4A, 8A, and 16A."
-				""
-				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a &6Soft Mallet&2 to change the conversion direction."
-				""
-				"&eNote that you need an RF buffer to output into when you convert EU->RF!&r"
-			]
-			icon: "gtceu:lv_4a_energy_converter"
-			id: "297B523B6C503957"
-			rewards: [{
-				id: "6F305739BEEDF49B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			subtitle: "Green=Input, Red=Output"
-			tasks: [{
-				id: "3217FC6AD2AFA67A"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_1a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lv_4a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lv_8a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lv_16a_energy_converter"
-							}
-						]
-					}
-				}
-				title: "Any LV Converter"
-				type: "item"
-			}]
-			title: "Energy Converters"
-			x: -0.75d
-			y: 15.5d
-		}
-		{
-			dependencies: [
-				"297B523B6C503957"
 				"34876F54406B6A04"
 				"077AA27F26B7831F"
 			]
@@ -1780,8 +1670,8 @@
 				type: "item"
 			}]
 			title: "Battery Buffers"
-			x: 3.0d
-			y: 15.5d
+			x: 2.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["12B95158E4C792DB"]
@@ -1827,13 +1717,10 @@
 			}]
 			title: "LV Power Storage"
 			x: 2.0d
-			y: 14.75d
+			y: 15.25d
 		}
 		{
-			dependencies: [
-				"297B523B6C503957"
-				"34876F54406B6A04"
-			]
+			dependencies: ["34876F54406B6A04"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading &bThermal&9 items&r."
@@ -1885,65 +1772,14 @@
 				type: "item"
 			}]
 			title: "&9Charging Items"
-			x: -2.0d
-			y: 15.5d
+			x: -1.5d
+			y: 17.0d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: [
-				"Basic &aFlux Capacitors&r hold a whopping &9500 kRF&r of energy and are useful for keeping your &aRF-powered&r equipment and tools charged."
-				""
-				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
-				""
-				"The Flux Capacitor is a &bCurio&r, so open your inventory and look for the Curios button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
-			]
-			icon: {
-				Count: 1
-				id: "thermal:flux_capacitor"
-				tag: { }
-			}
-			id: "3A5387B2003177B2"
-			rewards: [{
-				id: "18D835350F2E6BBE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "5EF5A8A2767A69E3"
-					item: {
-						Count: 1
-						id: "thermal:flux_capacitor"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "63EE7A1364F6888B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dusts/sulfur"
-						}
-					}
-					title: "Sulfur Dust"
-					type: "item"
-				}
-			]
-			title: "&9Flux Capacitors"
-			x: -3.25d
-			y: 15.5d
-		}
-		{
-			dependencies: [
-				"297B523B6C503957"
-				"34876F54406B6A04"
-			]
+			dependencies: ["34876F54406B6A04"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Unlike &aRF power&r, which is safe to transport with &bPipez&r, &aEU power &erequires caution&r. Without proper attention, it is possible that your expensive wires, cables, or machines could be destroyed."
+				"Unlike the &aRF power&r you may be familiar with, &aEU power &erequires caution&r. Without proper attention, it is possible that your expensive wires, cables, or machines could be destroyed."
 				""
 				"EU is transported in &aamperes&r (&aamps&r), which can be thought of as packets of energy. The amount of energy stored in the packet is the &avoltage tier&r."
 				"{@pagebreak}"
@@ -1954,47 +1790,14 @@
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "60242EACEEB6B6C8"
 				type: "checkmark"
 			}]
 			title: "A Primer on Power"
 			x: 0.0d
-			y: 17.0d
-		}
-		{
-			dependencies: ["5A94534682807314"]
-			description: [
-				"Now that you have everything you need to power your machines, it's time to put it all together."
-				""
-				"Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r if needed."
-				""
-				"&3Pipez&r can be used to transfer that RF power, but the dynamo can also output RF directly into an Energy Converter by pointing the Excitation Coil into the Energy Converter. Alternately, the Converter can be skipped entirely by using &eGT Steam Turbines&r for power."
-				"{@pagebreak}"
-				"The Energy Converter transforms RF power into EU, outputting the resulting EU through the side with a red dot. The orientation can be adjusted using a &aWrench&r. Attach your &6Conductive Iron Wires&r to the output side of the Energy Converter. Be sure to use wires or cables that can handle the output amperage of the Converter."
-				""
-				"Now all you need are some &bGregTech&r machines to power up! You can make whatever you want, but its recommended that you get these two first:"
-				""
-				"The &6Wiremill&r will make crafting wires much, much easier."
-				""
-				"The &2Bender&r will make Plates from one ingot instead of two."
-			]
-			icon: "gtceu:uhpic_wafer"
-			id: "2D31856F6EF1ED69"
-			rewards: [{
-				id: "56BBC13076DA2EA4"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "44E7A2BF6528EC4E"
-				type: "checkmark"
-			}]
-			title: "Putting it all Together"
-			x: 0.0d
-			y: 18.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]

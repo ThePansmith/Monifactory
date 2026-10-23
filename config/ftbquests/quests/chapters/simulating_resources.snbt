@@ -5,8 +5,41 @@
 	group: "7A7ECB813BC25B77"
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
-	order_index: 3
-	quest_links: [ ]
+	order_index: 2
+	quest_links: [
+		{
+			id: "6EE0A9137212A27C"
+			linked_quest: "51FD757E07E397A1"
+			shape: "hexagon"
+			size: 1.5d
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			id: "710EE32CD2237464"
+			linked_quest: "7A716485BBDA8629"
+			shape: "hexagon"
+			size: 1.5d
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "7C96B978ECCC01E4"
+			linked_quest: "5A70898C99B828E3"
+			shape: "hexagon"
+			size: 1.75d
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			id: "58C105ED6ECB1E6D"
+			linked_quest: "161F61C28DBC5941"
+			shape: "hexagon"
+			size: 1.75d
+			x: 1.5d
+			y: -5.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: [
@@ -273,7 +306,7 @@
 		{
 			dependencies: ["73C6E2724EBEC997"]
 			description: [
-				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Prediction Matrices&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Prediction Matrices and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Mob Predictions&r."
+				"Provide your &3Simulation Chamber&r with power and &6Pulsating Prediction Matrices&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Prediction Matrices and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Mob Predictions&r."
 				""
 				"&6Overworldian Matter&r can be eaten to gain experience, or combined with other materials to obtain drops from Overworld mobs, as well as other forms of matter. With these drops and the other kinds of matter, you can then create Data Models for lots of other mob types!"
 			]
